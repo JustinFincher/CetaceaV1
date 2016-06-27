@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
+		0D6A5E201D2100BB00211AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1F1D2100BB00211AFC /* main.m */; };
+		0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E241D2100BB00211AFC /* Assets.xcassets */; };
+		0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E261D2100BB00211AFC /* Main.storyboard */; };
+		0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */; };
+		0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */; };
+		0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D6A5E2F1D2100BB00211AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6A5E101D2100BB00211AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6A5E171D2100BB00211AFC;
+			remoteInfo = "Cetacea-Mac";
+		};
+		0D6A5E3A1D2100BB00211AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6A5E101D2100BB00211AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6A5E171D2100BB00211AFC;
+			remoteInfo = "Cetacea-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D6A5E1F1D2100BB00211AFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D6A5E241D2100BB00211AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D6A5E271D2100BB00211AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D6A5E291D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E2E1D2100BB00211AFC /* Cetacea-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cetacea-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cetacea_MacTests.m; sourceTree = "<group>"; };
+		0D6A5E341D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E391D2100BB00211AFC /* Cetacea-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cetacea-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cetacea_MacUITests.m; sourceTree = "<group>"; };
+		0D6A5E3F1D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainWindowController.h; sourceTree = "<group>"; };
+		0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D6A5E151D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2B1D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E361D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6A5E0F1D2100BB00211AFC = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */,
+				0D6A5E311D2100BB00211AFC /* Cetacea-MacTests */,
+				0D6A5E3C1D2100BB00211AFC /* Cetacea-MacUITests */,
+				0D6A5E191D2100BB00211AFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D6A5E191D2100BB00211AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */,
+				0D6A5E2E1D2100BB00211AFC /* Cetacea-MacTests.xctest */,
+				0D6A5E391D2100BB00211AFC /* Cetacea-MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
+				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
+				0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */,
+				0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */,
+				0D6A5E241D2100BB00211AFC /* Assets.xcassets */,
+				0D6A5E261D2100BB00211AFC /* Main.storyboard */,
+				0D6A5E291D2100BB00211AFC /* Info.plist */,
+				0D6A5E1E1D2100BB00211AFC /* Supporting Files */,
+			);
+			path = "Cetacea-Mac";
+			sourceTree = "<group>";
+		};
+		0D6A5E1E1D2100BB00211AFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E1F1D2100BB00211AFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D6A5E311D2100BB00211AFC /* Cetacea-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */,
+				0D6A5E341D2100BB00211AFC /* Info.plist */,
+			);
+			path = "Cetacea-MacTests";
+			sourceTree = "<group>";
+		};
+		0D6A5E3C1D2100BB00211AFC /* Cetacea-MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */,
+				0D6A5E3F1D2100BB00211AFC /* Info.plist */,
+			);
+			path = "Cetacea-MacUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D6A5E171D2100BB00211AFC /* Cetacea-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-Mac" */;
+			buildPhases = (
+				0D6A5E141D2100BB00211AFC /* Sources */,
+				0D6A5E151D2100BB00211AFC /* Frameworks */,
+				0D6A5E161D2100BB00211AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cetacea-Mac";
+			productName = "Cetacea-Mac";
+			productReference = 0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D6A5E2D1D2100BB00211AFC /* Cetacea-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacTests" */;
+			buildPhases = (
+				0D6A5E2A1D2100BB00211AFC /* Sources */,
+				0D6A5E2B1D2100BB00211AFC /* Frameworks */,
+				0D6A5E2C1D2100BB00211AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D6A5E301D2100BB00211AFC /* PBXTargetDependency */,
+			);
+			name = "Cetacea-MacTests";
+			productName = "Cetacea-MacTests";
+			productReference = 0D6A5E2E1D2100BB00211AFC /* Cetacea-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D6A5E381D2100BB00211AFC /* Cetacea-MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacUITests" */;
+			buildPhases = (
+				0D6A5E351D2100BB00211AFC /* Sources */,
+				0D6A5E361D2100BB00211AFC /* Frameworks */,
+				0D6A5E371D2100BB00211AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D6A5E3B1D2100BB00211AFC /* PBXTargetDependency */,
+			);
+			name = "Cetacea-MacUITests";
+			productName = "Cetacea-MacUITests";
+			productReference = 0D6A5E391D2100BB00211AFC /* Cetacea-MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D6A5E101D2100BB00211AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JustZht;
+				TargetAttributes = {
+					0D6A5E171D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+					};
+					0D6A5E2D1D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D6A5E171D2100BB00211AFC;
+					};
+					0D6A5E381D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D6A5E171D2100BB00211AFC;
+					};
+				};
+			};
+			buildConfigurationList = 0D6A5E131D2100BB00211AFC /* Build configuration list for PBXProject "Cetacea-Mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6A5E0F1D2100BB00211AFC;
+			productRefGroup = 0D6A5E191D2100BB00211AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D6A5E171D2100BB00211AFC /* Cetacea-Mac */,
+				0D6A5E2D1D2100BB00211AFC /* Cetacea-MacTests */,
+				0D6A5E381D2100BB00211AFC /* Cetacea-MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D6A5E161D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
+				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2C1D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E371D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6A5E141D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
+				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
+				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2A1D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E351D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D6A5E301D2100BB00211AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D6A5E171D2100BB00211AFC /* Cetacea-Mac */;
+			targetProxy = 0D6A5E2F1D2100BB00211AFC /* PBXContainerItemProxy */;
+		};
+		0D6A5E3B1D2100BB00211AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D6A5E171D2100BB00211AFC /* Cetacea-Mac */;
+			targetProxy = 0D6A5E3A1D2100BB00211AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D6A5E261D2100BB00211AFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D6A5E271D2100BB00211AFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D6A5E401D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D6A5E411D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0D6A5E431D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D6A5E441D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0D6A5E461D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea-Mac.app/Contents/MacOS/Cetacea-Mac";
+			};
+			name = Debug;
+		};
+		0D6A5E471D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea-Mac.app/Contents/MacOS/Cetacea-Mac";
+			};
+			name = Release;
+		};
+		0D6A5E491D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = Debug;
+		};
+		0D6A5E4A1D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D6A5E131D2100BB00211AFC /* Build configuration list for PBXProject "Cetacea-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E401D2100BB00211AFC /* Debug */,
+				0D6A5E411D2100BB00211AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E431D2100BB00211AFC /* Debug */,
+				0D6A5E441D2100BB00211AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E461D2100BB00211AFC /* Debug */,
+				0D6A5E471D2100BB00211AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E491D2100BB00211AFC /* Debug */,
+				0D6A5E4A1D2100BB00211AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D6A5E101D2100BB00211AFC /* Project object */;
+}
