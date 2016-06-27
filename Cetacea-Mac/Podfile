@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Cetacea-Mac' do
+  # Uncomment this line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Cetacea-Mac
+pod 'MMMarkdown'
+  target 'Cetacea-MacTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Cetacea-MacUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

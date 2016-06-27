@@ -772,47 +772,26 @@
             <objects>
                 <splitViewController id="vzo-Un-ubn" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="rc6-1s-IXa"/>
-                        <splitViewItem id="SeK-sA-cf2"/>
+                        <splitViewItem canCollapse="YES" collapsed="YES" holdingPriority="260" behavior="sidebar" id="Yfq-aR-DGd"/>
+                        <splitViewItem id="wfQ-fA-dO9"/>
                     </splitViewItems>
                     <splitView key="splitView" vertical="YES" id="iZ0-gS-4sL">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </splitView>
                     <connections>
-                        <segue destination="jjI-Cu-9qn" kind="relationship" relationship="splitItems" id="lin-1q-r3S"/>
-                        <segue destination="2n9-IA-GAq" kind="relationship" relationship="splitItems" id="pAb-tY-JiN"/>
+                        <segue destination="63e-1t-ghk" kind="relationship" relationship="splitItems" id="Okv-c3-y72"/>
+                        <segue destination="2n9-IA-GAq" kind="relationship" relationship="splitItems" id="ZcK-PX-Fzl"/>
                     </connections>
                 </splitViewController>
                 <customObject id="9GD-lh-hQA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="809"/>
         </scene>
-        <!--Split View Controller-->
-        <scene sceneID="H20-XR-z7C">
-            <objects>
-                <splitViewController id="jjI-Cu-9qn" sceneMemberID="viewController">
-                    <splitViewItems>
-                        <splitViewItem holdingPriority="100" id="B14-Ry-Mn2"/>
-                        <splitViewItem holdingPriority="100" id="bhx-tY-VLT"/>
-                    </splitViewItems>
-                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="hTu-DA-TSU">
-                        <rect key="frame" x="0.0" y="97" width="450" height="203"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </splitView>
-                    <connections>
-                        <segue destination="63e-1t-ghk" kind="relationship" relationship="splitItems" id="Gfu-xL-tTH"/>
-                        <segue destination="VHY-Zi-QNK" kind="relationship" relationship="splitItems" id="SEP-7K-mnR"/>
-                    </connections>
-                </splitViewController>
-                <customObject id="1mF-lx-GCm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="963" y="593"/>
-        </scene>
-        <!--Split View Controller-->
+        <!--Editor Preview Split View Controller-->
         <scene sceneID="gJ4-T9-uvk">
             <objects>
-                <splitViewController id="2n9-IA-GAq" sceneMemberID="viewController">
+                <splitViewController id="2n9-IA-GAq" customClass="JZEditorPreviewSplitViewController" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="4w1-eA-yZl"/>
                         <splitViewItem id="YQV-Mt-HmC"/>
@@ -822,6 +801,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </splitView>
                     <connections>
+                        <outlet property="editorSplitViewItem" destination="4w1-eA-yZl" id="Uxn-GB-fSV"/>
+                        <outlet property="previewSplitViewItem" destination="YQV-Mt-HmC" id="CJF-vw-piE"/>
                         <segue destination="dUt-JS-MkQ" kind="relationship" relationship="splitItems" id="X7I-Dx-bld"/>
                         <segue destination="pNt-oR-fNn" kind="relationship" relationship="splitItems" id="dUq-r4-7nS"/>
                     </connections>
@@ -830,23 +811,82 @@
             </objects>
             <point key="canvasLocation" x="953" y="1310"/>
         </scene>
-        <!--View Controller-->
+        <!--Editor View Controller-->
         <scene sceneID="ohz-J8-gnK">
             <objects>
-                <viewController id="dUt-JS-MkQ" sceneMemberID="viewController">
+                <viewController id="dUt-JS-MkQ" customClass="JZEditorViewController" sceneMemberID="viewController">
                     <visualEffectView key="view" blendingMode="behindWindow" state="active" id="4P2-kS-7WU">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0e-Ca-Snf">
+                                <rect key="frame" x="8" y="52" width="434" height="240"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="bIa-Nr-fIc">
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="240"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="DAJ-gf-jWP">
+                                            <rect key="frame" x="0.0" y="0.0" width="434" height="240"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="434" height="240"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="# aaa">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <font key="NSFont" metaFont="system" size="20"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="434" height="240"/>
+                                            <size key="maxSize" width="463" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="WGB-mI-vVB">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="aMD-jc-3In">
+                                    <rect key="frame" x="418" y="0.0" width="16" height="240"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="CAN-m0-wnZ">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hn1-AF-fbl"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CAN-m0-wnZ" secondAttribute="bottom" id="5B6-OG-54P"/>
+                            <constraint firstAttribute="trailing" secondItem="CAN-m0-wnZ" secondAttribute="trailing" id="Kn5-px-iQG"/>
+                            <constraint firstItem="c0e-Ca-Snf" firstAttribute="top" secondItem="4P2-kS-7WU" secondAttribute="top" constant="8" id="LPP-kE-WPW"/>
+                            <constraint firstItem="c0e-Ca-Snf" firstAttribute="leading" secondItem="4P2-kS-7WU" secondAttribute="leading" constant="8" id="k2F-bM-Jnq"/>
+                            <constraint firstItem="CAN-m0-wnZ" firstAttribute="leading" secondItem="4P2-kS-7WU" secondAttribute="leading" id="l8T-4u-Afd"/>
+                            <constraint firstItem="CAN-m0-wnZ" firstAttribute="top" secondItem="c0e-Ca-Snf" secondAttribute="bottom" constant="8" id="nX0-wE-qP7"/>
+                            <constraint firstAttribute="trailing" secondItem="c0e-Ca-Snf" secondAttribute="trailing" constant="8" id="nkJ-po-BgW"/>
+                        </constraints>
                     </visualEffectView>
+                    <connections>
+                        <outlet property="editorScrollView" destination="c0e-Ca-Snf" id="PGy-9v-j0a"/>
+                        <outlet property="editorTextView" destination="DAJ-gf-jWP" id="Rb8-wI-g5N"/>
+                    </connections>
                 </viewController>
                 <customObject id="bYf-DF-La7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1623" y="1129"/>
         </scene>
-        <!--View Controller-->
+        <!--Preview View Controller-->
         <scene sceneID="9dM-DR-75h">
             <objects>
-                <viewController id="pNt-oR-fNn" sceneMemberID="viewController">
+                <viewController id="pNt-oR-fNn" customClass="JZPreviewViewController" sceneMemberID="viewController">
                     <visualEffectView key="view" blendingMode="behindWindow" state="active" id="0yA-KX-GMI">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -862,25 +902,12 @@
                 <viewController id="63e-1t-ghk" sceneMemberID="viewController">
                     <visualEffectView key="view" blendingMode="behindWindow" state="active" id="gHL-64-Wvr">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </visualEffectView>
                 </viewController>
                 <customObject id="YLU-0t-ET0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="406"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qXQ-Y2-vfc">
-            <objects>
-                <viewController id="VHY-Zi-QNK" sceneMemberID="viewController">
-                    <visualEffectView key="view" blendingMode="behindWindow" state="active" id="oy8-XP-UWJ">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </visualEffectView>
-                </viewController>
-                <customObject id="sZh-WN-J55" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1884" y="767"/>
+            <point key="canvasLocation" x="1129" y="550"/>
         </scene>
     </scenes>
     <resources>

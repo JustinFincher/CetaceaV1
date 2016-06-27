@@ -14,6 +14,13 @@
 		0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */; };
 		0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */; };
 		0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */; };
+		0D864A181D21210E00F47613 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A171D21210E00F47613 /* CloudKit.framework */; };
+		0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */; };
+		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
+		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
+		78CF4EA04FC69689921E22D9 /* libPods-Cetacea-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */; };
+		AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */; };
+		E54AF7928CBAF7B9E5C0E23E /* libPods-Cetacea-MacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042AA40835AA98A8913C2201 /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +57,22 @@
 		0D6A5E3F1D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainWindowController.h; sourceTree = "<group>"; };
 		0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainWindowController.m; sourceTree = "<group>"; };
+		0D864A151D21207400F47613 /* Cetacea-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cetacea-Mac.entitlements"; sourceTree = "<group>"; };
+		0D864A171D21210E00F47613 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewController.h; sourceTree = "<group>"; };
+		0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewController.m; sourceTree = "<group>"; };
+		0D864A1F1D21419F00F47613 /* JZEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorViewController.h; sourceTree = "<group>"; };
+		0D864A201D21419F00F47613 /* JZEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorViewController.m; sourceTree = "<group>"; };
+		0D864A271D2141C600F47613 /* JZPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZPreviewViewController.h; sourceTree = "<group>"; };
+		0D864A281D2141C600F47613 /* JZPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZPreviewViewController.m; sourceTree = "<group>"; };
+		2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BB4A22E1E5E215A04F47165 /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5CA07EF0CFB2F909F2F29F4 /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2767D7601198C4F97FCA111 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D864A181D21210E00F47613 /* CloudKit.framework in Frameworks */,
+				AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CF4EA04FC69689921E22D9 /* libPods-Cetacea-MacTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54AF7928CBAF7B9E5C0E23E /* libPods-Cetacea-MacUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +111,8 @@
 				0D6A5E311D2100BB00211AFC /* Cetacea-MacTests */,
 				0D6A5E3C1D2100BB00211AFC /* Cetacea-MacUITests */,
 				0D6A5E191D2100BB00211AFC /* Products */,
+				0D864A161D21210E00F47613 /* Frameworks */,
+				2A0E5B175AC83013C9FCA7F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +129,10 @@
 		0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				0D864A151D21207400F47613 /* Cetacea-Mac.entitlements */,
 				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
 				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
-				0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */,
-				0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */,
+				0D864A1E1D21417000F47613 /* Controller */,
 				0D6A5E241D2100BB00211AFC /* Assets.xcassets */,
 				0D6A5E261D2100BB00211AFC /* Main.storyboard */,
 				0D6A5E291D2100BB00211AFC /* Info.plist */,
@@ -137,6 +167,45 @@
 			path = "Cetacea-MacUITests";
 			sourceTree = "<group>";
 		};
+		0D864A161D21210E00F47613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D864A171D21210E00F47613 /* CloudKit.framework */,
+				E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */,
+				D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */,
+				A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D864A1E1D21417000F47613 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */,
+				0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */,
+				0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */,
+				0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */,
+				0D864A1F1D21419F00F47613 /* JZEditorViewController.h */,
+				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
+				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
+				0D864A281D2141C600F47613 /* JZPreviewViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2A0E5B175AC83013C9FCA7F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */,
+				B2767D7601198C4F97FCA111 /* Pods-Cetacea-Mac.release.xcconfig */,
+				042AA40835AA98A8913C2201 /* Pods-Cetacea-MacTests.debug.xcconfig */,
+				6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */,
+				A5CA07EF0CFB2F909F2F29F4 /* Pods-Cetacea-MacUITests.debug.xcconfig */,
+				8BB4A22E1E5E215A04F47165 /* Pods-Cetacea-MacUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-Mac" */;
 			buildPhases = (
+				7D2C768159C70F6464EE0F63 /* [CP] Check Pods Manifest.lock */,
 				0D6A5E141D2100BB00211AFC /* Sources */,
 				0D6A5E151D2100BB00211AFC /* Frameworks */,
 				0D6A5E161D2100BB00211AFC /* Resources */,
+				332EA809CAD03BE474713AE1 /* [CP] Embed Pods Frameworks */,
+				BBEC681CD8FA2D652967FBF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacTests" */;
 			buildPhases = (
+				BDC923B7C1BABFE6903DD159 /* [CP] Check Pods Manifest.lock */,
 				0D6A5E2A1D2100BB00211AFC /* Sources */,
 				0D6A5E2B1D2100BB00211AFC /* Frameworks */,
 				0D6A5E2C1D2100BB00211AFC /* Resources */,
+				58548B7AA6D28AF03943B0F3 /* [CP] Embed Pods Frameworks */,
+				7B21374D00C1FEEF87767E02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacUITests" */;
 			buildPhases = (
+				8903BECCEB953C8D145FCBE5 /* [CP] Check Pods Manifest.lock */,
 				0D6A5E351D2100BB00211AFC /* Sources */,
 				0D6A5E361D2100BB00211AFC /* Frameworks */,
 				0D6A5E371D2100BB00211AFC /* Resources */,
+				9E6C40BB49941EC13C9122E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +284,14 @@
 						DevelopmentTeam = 9QJ8M25J77;
 						DevelopmentTeamName = "Haotian Zheng";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					0D6A5E2D1D2100BB00211AFC = {
 						CreatedOnToolsVersion = 8.0;
@@ -270,14 +355,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		332EA809CAD03BE474713AE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58548B7AA6D28AF03943B0F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B21374D00C1FEEF87767E02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D2C768159C70F6464EE0F63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8903BECCEB953C8D145FCBE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6C40BB49941EC13C9122E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBEC681CD8FA2D652967FBF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDC923B7C1BABFE6903DD159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D6A5E141D2100BB00211AFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
+				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
+				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
+				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +620,11 @@
 		};
 		0D6A5E431D2100BB00211AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea-Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -422,8 +636,11 @@
 		};
 		0D6A5E441D2100BB00211AFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2767D7601198C4F97FCA111 /* Pods-Cetacea-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea-Mac.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -435,6 +652,7 @@
 		};
 		0D6A5E461D2100BB00211AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042AA40835AA98A8913C2201 /* Pods-Cetacea-MacTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -448,6 +666,7 @@
 		};
 		0D6A5E471D2100BB00211AFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -461,6 +680,7 @@
 		};
 		0D6A5E491D2100BB00211AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5CA07EF0CFB2F909F2F29F4 /* Pods-Cetacea-MacUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
@@ -473,6 +693,7 @@
 		};
 		0D6A5E4A1D2100BB00211AFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB4A22E1E5E215A04F47165 /* Pods-Cetacea-MacUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
@@ -502,6 +723,7 @@
 				0D6A5E441D2100BB00211AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +732,7 @@
 				0D6A5E471D2100BB00211AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-MacUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +741,7 @@
 				0D6A5E4A1D2100BB00211AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
