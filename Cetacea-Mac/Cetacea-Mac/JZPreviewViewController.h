@@ -7,7 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@import WebKit;
 
 @interface JZPreviewViewController : NSViewController
+@property (weak) IBOutlet WebView *previewWebView;
 
 @end

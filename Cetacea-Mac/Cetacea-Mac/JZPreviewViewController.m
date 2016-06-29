@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    
+    [self.previewWebView setDrawsBackground:NO];
+    
+    
+//    NSURL*url=[NSURL URLWithString:@"https://fincher.im"];
+//    NSURLRequest*request=[NSURLRequest requestWithURL:url];
+    //[[self.previewWebView mainFrame] loadRequest:request];
 }
 
 @end
