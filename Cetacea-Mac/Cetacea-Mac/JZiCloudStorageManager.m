@@ -32,6 +32,7 @@
 - (id)init {
     if (self = [super init])
     {
+    
         self.ubiquitousURL = [[NSFileManager defaultManager] URLForUbiquityContainerIdentifier:nil];
         
         self.metadataQuery = [[NSMetadataQuery alloc] init];
@@ -90,13 +91,8 @@
 - (void)loadData:(NSMetadataQuery *)query {
     //[self.backups removeAllObjects];
     
-    for (NSMetadataItem *item in [query results]) {
-        NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
-        //[self.backups addObject:url.lastPathComponent];
-        NSLog(@"%@", [url path]);
-    }
-    
-    [self.delegate iCloudFileUpdated:query];
+    id<JZiCloudStorageManagerDelegate> strongDelegate = self.delegate;
+    [strongDelegate iCloudFileUpdated:query];
 }
 
 @end

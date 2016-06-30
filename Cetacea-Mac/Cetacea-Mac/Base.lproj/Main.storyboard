@@ -3,22 +3,101 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11129.15"/>
         <plugIn identifier="com.apple.WebKitIBPlugin" version="11129.15"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
+        <!--Window Controller-->
+        <scene sceneID="mzh-Jz-AXT">
+            <objects>
+                <customObject id="vkM-hK-0fT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <windowController showSeguePresentationStyle="single" id="ZYt-J5-i8f" customClass="JZAboutWindowController" sceneMemberID="viewController">
+                    <window key="window" title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ihj-hm-l8h">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" fullSizeContentView="YES"/>
+                        <rect key="contentRect" x="1574" y="43" width="300" height="500"/>
+                        <rect key="screenRect" x="1280" y="-280" width="1920" height="1080"/>
+                    </window>
+                    <connections>
+                        <segue destination="cRa-XX-Qpu" kind="relationship" relationship="window.shadowedContentViewController" id="uvV-Os-qFl"/>
+                    </connections>
+                </windowController>
+            </objects>
+            <point key="canvasLocation" x="-1566" y="-1119"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Rrw-Kr-l20">
+            <objects>
+                <customObject id="c9b-I0-hzD" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController showSeguePresentationStyle="single" id="cRa-XX-Qpu" customClass="JZAboutViewController" sceneMemberID="viewController">
+                    <view key="view" id="ACV-0s-cVu">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="452"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-dV-OWe">
+                                <rect key="frame" x="-50" y="-76" width="400" height="604"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jmw-dV-OWe" secondAttribute="height" multiplier="75:113" id="nxC-E7-eTD"/>
+                                    <constraint firstAttribute="width" constant="400" id="qx3-Yv-5TR"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="about" id="xoI-Lu-KrJ"/>
+                            </imageView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="HMv-TD-Zna">
+                                <rect key="frame" x="20" y="20" width="260" height="412"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WpW-jr-9kq">
+                                        <rect key="frame" x="37" y="253" width="81" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Beta Version" id="4u7-Tw-MeG">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVL-4A-IvB">
+                                        <rect key="frame" x="28" y="270" width="204" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Cetacea" id="OOg-JV-m7D">
+                                            <font key="font" size="50" name="Avenir-Heavy"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="412" id="45a-t1-d6O"/>
+                                    <constraint firstAttribute="width" constant="260" id="VEb-hC-thK"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="HMv-TD-Zna" firstAttribute="centerX" secondItem="ACV-0s-cVu" secondAttribute="centerX" id="cdt-Bk-V05"/>
+                            <constraint firstItem="Jmw-dV-OWe" firstAttribute="centerY" secondItem="ACV-0s-cVu" secondAttribute="centerY" id="g7d-bL-6i6"/>
+                            <constraint firstItem="Jmw-dV-OWe" firstAttribute="centerX" secondItem="ACV-0s-cVu" secondAttribute="centerX" id="pap-Oo-T4B"/>
+                            <constraint firstItem="HMv-TD-Zna" firstAttribute="centerY" secondItem="ACV-0s-cVu" secondAttribute="centerY" id="uMT-lh-aaw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Jmw-dV-OWe" id="QAH-uy-L4G"/>
+                        <outlet property="cetaceaLabel" destination="KVL-4A-IvB" id="eaL-Hm-dEc"/>
+                        <outlet property="frontContainerView" destination="HMv-TD-Zna" id="yAR-CQ-o2J"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1946" y="-1106"/>
+        </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="Cetacea-Mac" id="1Xt-HY-uBw">
+                            <menuItem title="Cetacea" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Cetacea-Mac" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Cetacea" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About Cetacea-Mac" id="5kV-Vb-QxS">
+                                        <menuItem title="About Cetacea" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
-                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <segue destination="ZYt-J5-i8f" kind="show" id="lJy-Kg-4J7"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
@@ -587,6 +666,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="View" id="HyV-fh-RgO">
                                     <items>
+                                        <menuItem title="Toggle Sidebar" keyEquivalent="T" id="oc4-d3-jNV"/>
                                         <menuItem title="Show Toolbar" keyEquivalent="t" id="snW-S8-Cw5">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
@@ -699,16 +779,13 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" customClass="JZMainWindowController" sceneMemberID="viewController">
-                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="196" y="240" width="919" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="600" height="270"/>
                         <toolbar key="toolbar" implicitIdentifier="A953FE9C-258D-420D-9C16-9FC828514476" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="yrJ-q7-WO3">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="pnw-tF-ajj"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="kn4-Y9-32h"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Fo4-o3-vgt"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="GeD-Wb-n3B"/>
                                 <toolbarItem implicitItemIdentifier="87BCED86-EA09-4F10-ADD0-21C3B7B28A7A" label="Search" paletteLabel="Search" id="HsR-hf-eYj">
                                     <nil key="toolTip"/>
@@ -789,7 +866,7 @@
                                         <rect key="frame" x="0.0" y="14" width="56" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSColumnViewTemplate" imagePosition="only" alignment="center" continuous="YES" borderStyle="border" inset="2" id="VuI-FZ-1as">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                         <connections>
@@ -997,14 +1074,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="98" horizontalPageScroll="10" verticalLineScroll="98" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqO-qR-Q0C">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="130" horizontalPageScroll="10" verticalLineScroll="130" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqO-qR-Q0C">
+                                <rect key="frame" x="0.0" y="40" width="450" height="260"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="GJH-YR-vMd">
-                                    <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="450" height="260"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="96" rowSizeStyle="automatic" viewBased="YES" id="PCx-ak-Chc">
-                                            <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="128" rowSizeStyle="automatic" viewBased="YES" id="PCx-ak-Chc">
+                                            <rect key="frame" x="0.0" y="0.0" width="450" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1058,12 +1135,45 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="vIH-MF-AME">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="36"/>
+                                <subviews>
+                                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="UH0-eG-1BU">
+                                        <rect key="frame" x="12" y="10" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="KLh-Tb-l62"/>
+                                            <constraint firstAttribute="height" constant="16" id="yEU-bs-5rp"/>
+                                        </constraints>
+                                    </progressIndicator>
+                                    <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mqa-Af-FcS">
+                                        <rect key="frame" x="44" y="7" width="386" height="22"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="jP1-es-Smy">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UH0-eG-1BU" secondAttribute="bottom" constant="10" id="EQj-w9-IjW"/>
+                                    <constraint firstItem="UH0-eG-1BU" firstAttribute="leading" secondItem="vIH-MF-AME" secondAttribute="leading" constant="12" id="Jmx-GB-wGR"/>
+                                    <constraint firstItem="Mqa-Af-FcS" firstAttribute="leading" secondItem="UH0-eG-1BU" secondAttribute="trailing" constant="16" id="Upw-0j-krI"/>
+                                    <constraint firstItem="UH0-eG-1BU" firstAttribute="top" secondItem="vIH-MF-AME" secondAttribute="top" constant="10" id="VHc-xy-5XS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mqa-Af-FcS" secondAttribute="bottom" constant="7" id="YCM-xG-6Hd"/>
+                                    <constraint firstItem="Mqa-Af-FcS" firstAttribute="top" secondItem="vIH-MF-AME" secondAttribute="top" constant="7" id="bJ8-9e-ObG"/>
+                                    <constraint firstAttribute="height" constant="36" id="nDB-mt-zKd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mqa-Af-FcS" secondAttribute="trailing" constant="20" id="y4f-H0-D4h"/>
+                                </constraints>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="XqO-qR-Q0C" firstAttribute="top" secondItem="gHL-64-Wvr" secondAttribute="top" id="0Kb-Et-Nph"/>
                             <constraint firstAttribute="trailing" secondItem="XqO-qR-Q0C" secondAttribute="trailing" id="7Ff-8l-lfw"/>
+                            <constraint firstAttribute="trailing" secondItem="vIH-MF-AME" secondAttribute="trailing" id="884-NL-sfY"/>
+                            <constraint firstAttribute="bottom" secondItem="vIH-MF-AME" secondAttribute="bottom" id="FEz-Q8-uQN"/>
                             <constraint firstItem="XqO-qR-Q0C" firstAttribute="leading" secondItem="gHL-64-Wvr" secondAttribute="leading" id="QVs-ru-rLc"/>
-                            <constraint firstAttribute="bottom" secondItem="XqO-qR-Q0C" secondAttribute="bottom" id="a7P-is-Q3o"/>
+                            <constraint firstItem="vIH-MF-AME" firstAttribute="leading" secondItem="gHL-64-Wvr" secondAttribute="leading" id="Ulw-pZ-gs6"/>
+                            <constraint firstItem="vIH-MF-AME" firstAttribute="top" secondItem="XqO-qR-Q0C" secondAttribute="bottom" constant="4" id="owY-jz-YDn"/>
                         </constraints>
                     </visualEffectView>
                     <connections>
@@ -1084,5 +1194,6 @@
         <image name="NSMobileMe" width="32" height="32"/>
         <image name="NSQuickLookTemplate" width="19" height="12"/>
         <image name="NSShareTemplate" width="11" height="16"/>
+        <image name="about" width="1200" height="1807"/>
     </resources>
 </document>

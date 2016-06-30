@@ -8,13 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol JZiCloudStorageManagerDelegate <NSObject>
-@optional
-
-- (void)iCloudFileUpdated:(NSMetadataQuery *)query;
-
-@end
-
+@protocol JZiCloudStorageManagerDelegate;
 
 @interface JZiCloudStorageManager : NSObject
 
@@ -22,6 +16,14 @@
 
 - (NSURL *)ubiquitousURL;
 
-@property (nonatomic, weak) id <JZiCloudStorageManagerDelegate> delegate;
+@property (nonatomic, assign) id <JZiCloudStorageManagerDelegate> delegate;
+
+@end
+
+
+@protocol JZiCloudStorageManagerDelegate <NSObject>
+@optional
+
+- (void)iCloudFileUpdated:(NSMetadataQuery *)query;
 
 @end
