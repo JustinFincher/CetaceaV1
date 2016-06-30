@@ -8,6 +8,7 @@
 
 #import "JZPreviewViewController.h"
 
+
 @interface JZPreviewViewController ()
 
 @end
@@ -24,6 +25,8 @@
 //    NSURL*url=[NSURL URLWithString:@"https://fincher.im"];
 //    NSURLRequest*request=[NSURLRequest requestWithURL:url];
     //[[self.previewWebView mainFrame] loadRequest:request];
+    
+    
 }
 
 @end

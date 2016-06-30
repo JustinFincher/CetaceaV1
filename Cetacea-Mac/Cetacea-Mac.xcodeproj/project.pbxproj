@@ -14,11 +14,11 @@
 		0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */; };
 		0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */; };
 		0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */; };
-		0D864A181D21210E00F47613 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A171D21210E00F47613 /* CloudKit.framework */; };
 		0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */; };
 		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
 		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
 		0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A2A1D21451300F47613 /* WebKit.framework */; };
+		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		78CF4EA04FC69689921E22D9 /* libPods-Cetacea-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */; };
 		AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */; };
 		E54AF7928CBAF7B9E5C0E23E /* libPods-Cetacea-MacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */; };
@@ -59,7 +59,6 @@
 		0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainWindowController.h; sourceTree = "<group>"; };
 		0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainWindowController.m; sourceTree = "<group>"; };
 		0D864A151D21207400F47613 /* Cetacea-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cetacea-Mac.entitlements"; sourceTree = "<group>"; };
-		0D864A171D21210E00F47613 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewController.h; sourceTree = "<group>"; };
 		0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewController.m; sourceTree = "<group>"; };
 		0D864A1F1D21419F00F47613 /* JZEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorViewController.h; sourceTree = "<group>"; };
@@ -67,6 +66,8 @@
 		0D864A271D2141C600F47613 /* JZPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZPreviewViewController.h; sourceTree = "<group>"; };
 		0D864A281D2141C600F47613 /* JZPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZPreviewViewController.m; sourceTree = "<group>"; };
 		0D864A2A1D21451300F47613 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
+		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BB4A22E1E5E215A04F47165 /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */,
-				0D864A181D21210E00F47613 /* CloudKit.framework in Frameworks */,
 				AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +135,7 @@
 				0D864A151D21207400F47613 /* Cetacea-Mac.entitlements */,
 				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
 				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
+				0DAF37411D2510E20009C44B /* Data */,
 				0D864A1E1D21417000F47613 /* Controller */,
 				0D6A5E241D2100BB00211AFC /* Assets.xcassets */,
 				0D6A5E261D2100BB00211AFC /* Main.storyboard */,
@@ -174,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				0D864A2A1D21451300F47613 /* WebKit.framework */,
-				0D864A171D21210E00F47613 /* CloudKit.framework */,
 				E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */,
 				D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */,
 				A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */,
@@ -195,6 +195,15 @@
 				0D864A281D2141C600F47613 /* JZPreviewViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0DAF37411D2510E20009C44B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */,
+				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		2A0E5B175AC83013C9FCA7F3 /* Pods */ = {
@@ -493,6 +502,7 @@
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
+				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

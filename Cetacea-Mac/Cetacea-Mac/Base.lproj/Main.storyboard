@@ -648,14 +648,14 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593" y="-549"/>
+            <point key="canvasLocation" x="-657" y="-746"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="tJg-Pv-g5a">
             <objects>
                 <windowController id="Mlk-gw-5Ee" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="gba-aA-XQY">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="1574" y="33" width="480" height="270"/>
                         <rect key="screenRect" x="1280" y="-280" width="1920" height="1057"/>
@@ -666,12 +666,11 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="XxZ-dQ-DGd"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fzn-K0-GyY"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="gce-ai-2Bp"/>
+                                <toolbarItem implicitItemIdentifier="20F684F5-CD4A-4944-A628-966E744A33C2" label="iCloud" paletteLabel="iCloud" tag="-1" image="NSMobileMe" id="Sjw-aZ-1js"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
-                                <toolbarItem reference="VFn-uE-ZIV"/>
-                                <toolbarItem reference="qgx-VS-1s8"/>
+                                <toolbarItem reference="Sjw-aZ-1js"/>
                                 <toolbarItem reference="gce-ai-2Bp"/>
-                                <toolbarItem reference="XxZ-dQ-DGd"/>
                             </defaultToolbarItems>
                         </toolbar>
                     </window>
@@ -694,7 +693,7 @@
                 </viewController>
                 <customObject id="9fW-UH-YfQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="-231"/>
+            <point key="canvasLocation" x="396" y="-206"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -1004,6 +1003,7 @@
         <image name="NSBookmarksTemplate" width="17" height="18"/>
         <image name="NSColumnViewTemplate" width="16" height="10"/>
         <image name="NSLockLockedTemplate" width="10" height="14"/>
+        <image name="NSMobileMe" width="32" height="32"/>
         <image name="NSQuickLookTemplate" width="19" height="12"/>
         <image name="NSShareTemplate" width="11" height="16"/>
     </resources>

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JZiCloudStorageManager.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

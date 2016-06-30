@@ -8,6 +8,9 @@
 
 #import "JZMainWindowController.h"
 
+
+#import "JZiCloudStorageManager.h"
+
 @interface JZMainWindowController ()
 
 @end
@@ -23,6 +26,9 @@
     //self.window.styleMask |= NSFullSizeContentViewWindowMask;
     
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    
+    
+    NSURL *iCloudURL = [[JZiCloudStorageManager sharedManager] ubiquitousURL];
 }
 
 @end
