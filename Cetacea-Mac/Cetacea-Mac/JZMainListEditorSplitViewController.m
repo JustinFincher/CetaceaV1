@@ -19,8 +19,8 @@
     [super viewDidLoad];
     // Do view setup here.
 
-    [_listViewItem setMaximumThickness:260];
-    [_listViewItem setMinimumThickness:260];
+    [_listViewItem setMaximumThickness:280];
+    [_listViewItem setMinimumThickness:280];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(sideBarButtonPressedNotification:)

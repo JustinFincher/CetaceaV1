@@ -39,6 +39,14 @@
     [[NSNotificationCenter defaultCenter]
      postNotificationName:@"sideBarButtonPressedNotification" object:self userInfo:@{@"buttonState":[NSNumber numberWithInteger:sender.state]}];
 }
+- (IBAction)addNewButtonPressed:(NSButton *)sender
+{
+    
+}
 
+- (IBAction)editorSegmentedControlChanged:(NSSegmentedControl *)sender
+{
+    
+}
 
 @end

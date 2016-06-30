@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
+		0D5F32501D25AD1700566B82 /* JZSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
 		0D6A5E201D2100BB00211AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1F1D2100BB00211AFC /* main.m */; };
 		0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E241D2100BB00211AFC /* Assets.xcassets */; };
@@ -16,6 +17,9 @@
 		0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */; };
 		0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */; };
 		0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */; };
+		0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */; };
+		0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */; };
+		0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */; };
 		0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */; };
 		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
 		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
@@ -51,6 +55,8 @@
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
 		0D5F324C1D258B3200566B82 /* JZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutViewController.m; sourceTree = "<group>"; };
+		0D5F324E1D25AD1700566B82 /* JZSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsWindowController.h; sourceTree = "<group>"; };
+		0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsWindowController.m; sourceTree = "<group>"; };
 		0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +72,12 @@
 		0D6A5E3F1D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainWindowController.h; sourceTree = "<group>"; };
 		0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainWindowController.m; sourceTree = "<group>"; };
+		0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceViewController.h; sourceTree = "<group>"; };
+		0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceViewController.m; sourceTree = "<group>"; };
+		0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsGeneralViewController.h; sourceTree = "<group>"; };
+		0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsGeneralViewController.m; sourceTree = "<group>"; };
+		0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsTabViewController.h; sourceTree = "<group>"; };
+		0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsTabViewController.m; sourceTree = "<group>"; };
 		0D864A151D21207400F47613 /* Cetacea-Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Cetacea-Mac.entitlements"; sourceTree = "<group>"; };
 		0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewController.h; sourceTree = "<group>"; };
 		0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewController.m; sourceTree = "<group>"; };
@@ -214,6 +226,14 @@
 				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
 				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
 				0D5F324C1D258B3200566B82 /* JZAboutViewController.m */,
+				0D5F324E1D25AD1700566B82 /* JZSettingsWindowController.h */,
+				0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */,
+				0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */,
+				0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */,
+				0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */,
+				0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */,
+				0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */,
+				0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -524,14 +544,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5F32501D25AD1700566B82 /* JZSettingsWindowController.m in Sources */,
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
+				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
+				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
 				0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */,
 				0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */,
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
+				0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */,
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,

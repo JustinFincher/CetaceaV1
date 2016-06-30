@@ -65,6 +65,7 @@
 
 - (void)iCloudFileUpdated:(NSMetadataQuery *)query
 {
+
     if (!self.markdownFileArray)
     {
         self.markdownFileArray = [[NSMutableArray alloc] init];
