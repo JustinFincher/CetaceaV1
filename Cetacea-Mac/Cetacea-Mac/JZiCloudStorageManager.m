@@ -93,7 +93,7 @@
     for (NSMetadataItem *item in [query results]) {
         NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
         //[self.backups addObject:url.lastPathComponent];
-        NSLog([url path]);
+        NSLog(@"%@", [url path]);
     }
     
     [self.delegate iCloudFileUpdated:query];
