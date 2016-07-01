@@ -32,15 +32,17 @@
 {
     NSDictionary *buttonStateDict = [notification userInfo];
     NSNumber *state = [buttonStateDict objectForKey:@"buttonState"];
-    
-    if ([state intValue] == 1 && _listViewItem.collapsed)
-    {
-        [self toggleSidebar:_listViewItem];
-    }
-    if ([state intValue] == 0 && !_listViewItem.collapsed)
-    {
-        [self toggleSidebar:_listViewItem];
-    }
+//    
+//    if ([state intValue] == 1 && _listViewItem.collapsed)
+//    {
+//        [self toggleSidebar:_listViewItem];
+//    }
+//    if ([state intValue] == 0 && !_listViewItem.collapsed)
+//    {
+//        [self toggleSidebar:_listViewItem];
+//    }
+//    
+    [self toggleSidebar:_listViewItem];
 }
 
 - (void)viewDidLayout

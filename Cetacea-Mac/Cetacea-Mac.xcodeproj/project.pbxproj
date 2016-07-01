@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */; };
 		0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */; };
-		0D41891E1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */; };
-		0D41891F1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */; };
+		0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */; };
+		0D4189251D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189241D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m */; };
+		0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
@@ -58,9 +59,12 @@
 		0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZdayNightThemeManager.m; sourceTree = "<group>"; };
 		0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutBackgroundImageView.h; sourceTree = "<group>"; };
 		0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutBackgroundImageView.m; sourceTree = "<group>"; };
-		0D41891B1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListTableViewCellController.h; sourceTree = "<group>"; };
-		0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListTableViewCellController.m; sourceTree = "<group>"; };
-		0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZMarkdownListTableViewCellController.xib; sourceTree = "<group>"; };
+		0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListTableCellView.h; sourceTree = "<group>"; };
+		0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListTableCellView.m; sourceTree = "<group>"; };
+		0D4189231D26C8F400530FD7 /* JZiCloudMarkdownFileModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudMarkdownFileModel.h; sourceTree = "<group>"; };
+		0D4189241D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudMarkdownFileModel.m; sourceTree = "<group>"; };
+		0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageProcesser.h; sourceTree = "<group>"; };
+		0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageProcesser.m; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -226,9 +230,8 @@
 				0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */,
 				0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */,
 				0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */,
-				0D41891B1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.h */,
-				0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */,
-				0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */,
+				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
+				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
 				0D864A1F1D21419F00F47613 /* JZEditorViewController.h */,
 				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
 				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
@@ -254,6 +257,10 @@
 			children = (
 				0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */,
 				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
+				0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */,
+				0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */,
+				0D4189231D26C8F400530FD7 /* JZiCloudMarkdownFileModel.h */,
+				0D4189241D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m */,
 				0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */,
 				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
 			);
@@ -408,7 +415,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D41891F1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib in Resources */,
 				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
 				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
 			);
@@ -559,19 +565,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
-				0D41891E1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m in Sources */,
+				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
 				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
+				0D4189251D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m in Sources */,
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
 				0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */,
 				0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */,
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
 				0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */,
+				0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */,
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,

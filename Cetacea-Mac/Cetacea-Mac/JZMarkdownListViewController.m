@@ -7,9 +7,11 @@
 //
 
 #import "JZMarkdownListViewController.h"
-#import "JZiCloudStorageManager.h"
-#import "JZMarkdownListTableViewCellController.h"
-@interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageManagerDelegate>
+#import "JZiCloudStorageProcesser.h"
+#import "JZMarkdownListTableCellView.h"
+
+
+@interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
 
 @property (strong,nonatomic) NSMutableArray *markdownFileArray;
@@ -24,24 +26,26 @@
     self.markdownListTableView.delegate = self;
     self.markdownListTableView.dataSource = self;
     
-    JZiCloudStorageManager *iCloudStorageManager = (JZiCloudStorageManager *)[JZiCloudStorageManager sharedManager];
-    iCloudStorageManager.delegate = self;
+    JZiCloudStorageProcesser *iCloudStorageProcesser = (JZiCloudStorageProcesser *)[JZiCloudStorageProcesser sharedManager];
+    iCloudStorageProcesser.delegate = self;
+    [JZiCloudStorageProcesser sharedManager];
 }
 
 #pragma mark - NSTableViewDelegate
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
-    JZMarkdownListTableViewCellController *cellViewController = [[JZMarkdownListTableViewCellController alloc] init];
-    //NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    JZMarkdownListTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     
     if( [tableColumn.identifier isEqualToString:@"markdownColumn"] )
     {
-//        cellView.imageView.image = bugDoc.thumbImage;
-        //cellView.textField.stringValue = [self.markdownFileArray objectAtIndex:row];
-        //return cellView;
+
     }
-    return cellViewController.view;
+    JZiCloudMarkdownFileModel *markdown = [self.markdownFileArray objectAtIndex:row];
+    cellView.titleTextField.stringValue = [markdown.url lastPathComponent];
+    cellView.contentTextField.stringValue = markdown.previewString;
+    cellView.markdownReference = markdown;
+    return cellView;
 }
 
 
@@ -59,27 +63,21 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    NSLog(@"%ld",[[notification object] selectedRow]);
-}
-
-#pragma mark - JZiCloudStorageManagerDelegate
-
-- (void)iCloudFileUpdated:(NSMetadataQuery *)query
-{
-
-    if (!self.markdownFileArray)
-    {
-        self.markdownFileArray = [[NSMutableArray alloc] init];
-    }
-    [self.markdownFileArray removeAllObjects];
+    JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
+    NSLog(@"%@",selectedRow.markdownReference.previewString);
     
-    for (NSMetadataItem *item in [query results])
+    id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
+    [strongDelegate rowSelected:selectedRow.markdownReference];
+}
+#pragma mark - JZiCloudStorageProcesserDelegate
+
+- (void)iCloudFileProcessed:(NSMutableArray *)markdowns
+{
+    if (markdowns)
     {
-        NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
-        [self.markdownFileArray addObject:[url lastPathComponent]];
-        NSLog(@"%@", [url path]);
+        self.markdownFileArray = markdowns;
+        [self.markdownListTableView reloadData];
     }
-    [self.markdownListTableView reloadData];
 }
 
 @end

@@ -7,7 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JZiCloudMarkdownFileModel.h"
+
+@protocol JZMarkdownListViewDelegate;
 
 @interface JZMarkdownListViewController : NSViewController
+
+@property (nonatomic, assign) id <JZMarkdownListViewDelegate> delegate;
+
+@end
+
+@protocol JZMarkdownListViewDelegate <NSObject>
+@optional
+
+- (void)rowSelected:(JZiCloudMarkdownFileModel *)markdown;
 
 @end

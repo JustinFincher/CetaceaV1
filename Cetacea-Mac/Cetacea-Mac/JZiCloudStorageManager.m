@@ -7,6 +7,7 @@
 //
 
 #import "JZiCloudStorageManager.h"
+#import "JZiCloudStorageProcesser.h"
 
 @interface JZiCloudStorageManager()
 
@@ -38,14 +39,12 @@
         self.metadataQuery = [[NSMetadataQuery alloc] init];
         [self.metadataQuery setSearchScopes:[NSArray arrayWithObject:NSMetadataQueryUbiquitousDocumentsScope]];
         [self.metadataQuery setPredicate:[NSPredicate predicateWithFormat:@"%K like '*.md'", NSMetadataItemFSNameKey]];
-        
-        NSSortDescriptor *sortDescriptor =
-        [[NSSortDescriptor alloc] initWithKey:NSMetadataItemFSContentChangeDateKey
-                                     ascending:FALSE]; //means recent first
-        NSArray *sortDescriptors = [NSArray arrayWithObjects:
-                                    sortDescriptor,
-                                    nil];
-        [self.metadataQuery setSortDescriptors:sortDescriptors];
+//        
+//        NSSortDescriptor *sortDescriptor =
+//        [[NSSortDescriptor alloc] initWithKey:(id)kMDItemDisplayName
+//                                     ascending:NO]; //means recent first
+//        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+//        [self.metadataQuery setSortDescriptors:sortDescriptors];
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(queryDidFinishGathering:)
