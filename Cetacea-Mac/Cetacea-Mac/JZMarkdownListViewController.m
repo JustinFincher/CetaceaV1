@@ -8,7 +8,7 @@
 
 #import "JZMarkdownListViewController.h"
 #import "JZiCloudStorageManager.h"
-
+#import "JZMarkdownListTableViewCellController.h"
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageManagerDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
 
@@ -32,15 +32,16 @@
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
     
-    NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
+    JZMarkdownListTableViewCellController *cellViewController = [[JZMarkdownListTableViewCellController alloc] init];
+    //NSTableCellView *cellView = [tableView makeViewWithIdentifier:tableColumn.identifier owner:self];
     
     if( [tableColumn.identifier isEqualToString:@"markdownColumn"] )
     {
 //        cellView.imageView.image = bugDoc.thumbImage;
-        cellView.textField.stringValue = [self.markdownFileArray objectAtIndex:row];
-        return cellView;
+        //cellView.textField.stringValue = [self.markdownFileArray objectAtIndex:row];
+        //return cellView;
     }
-    return cellView;
+    return cellViewController.view;
 }
 
 

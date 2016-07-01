@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
     self.noShadowTabVIew.delegate = self;
 }
 

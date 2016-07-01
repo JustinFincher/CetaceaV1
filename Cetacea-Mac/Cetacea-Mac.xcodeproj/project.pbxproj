@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */; };
+		0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */; };
+		0D41891E1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */; };
+		0D41891F1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
@@ -50,6 +54,13 @@
 
 /* Begin PBXFileReference section */
 		042AA40835AA98A8913C2201 /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZdayNightThemeManager.h; sourceTree = "<group>"; };
+		0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZdayNightThemeManager.m; sourceTree = "<group>"; };
+		0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutBackgroundImageView.h; sourceTree = "<group>"; };
+		0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutBackgroundImageView.m; sourceTree = "<group>"; };
+		0D41891B1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListTableViewCellController.h; sourceTree = "<group>"; };
+		0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListTableViewCellController.m; sourceTree = "<group>"; };
+		0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZMarkdownListTableViewCellController.xib; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -215,6 +226,9 @@
 				0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */,
 				0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */,
 				0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */,
+				0D41891B1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.h */,
+				0D41891C1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m */,
+				0D41891D1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib */,
 				0D864A1F1D21419F00F47613 /* JZEditorViewController.h */,
 				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
 				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
@@ -223,6 +237,8 @@
 				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
 				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
 				0D5F324C1D258B3200566B82 /* JZAboutViewController.m */,
+				0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */,
+				0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */,
 				0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */,
 				0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */,
 				0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */,
@@ -238,6 +254,8 @@
 			children = (
 				0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */,
 				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
+				0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */,
+				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -390,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D41891F1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.xib in Resources */,
 				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
 				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
 			);
@@ -540,8 +559,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
+				0D41891E1D26AC4700530FD7 /* JZMarkdownListTableViewCellController.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
+				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
+				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
