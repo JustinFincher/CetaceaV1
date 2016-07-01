@@ -43,7 +43,13 @@
     }
     JZiCloudMarkdownFileModel *markdown = [self.markdownFileArray objectAtIndex:row];
     cellView.titleTextField.stringValue = [markdown.url lastPathComponent];
-    cellView.contentTextField.stringValue = markdown.previewString;
+    if (markdown.previewString)
+    {
+        cellView.contentTextField.stringValue = markdown.previewString;
+    }else
+    {
+        cellView.contentTextField.stringValue = @"";
+    }
     cellView.markdownReference = markdown;
     return cellView;
 }

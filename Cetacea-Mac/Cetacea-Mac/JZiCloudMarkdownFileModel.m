@@ -52,7 +52,12 @@
          }];
     }
     
-    self.previewString = [NSString stringWithContentsOfFile:[self.url path] encoding:NSUTF8StringEncoding error:nil];
+    NSError *error;
+    self.previewString = [NSString stringWithContentsOfFile:[self.url path] encoding:NSUTF8StringEncoding error:&error];
+    if (error)
+    {
+        NSLog(@"%@",[error localizedDescription]);
+    }
     
     self.creationDate = [_metaDataItem valueForAttribute:NSMetadataItemFSCreationDateKey];
     self.updatedDate = [_metaDataItem valueForAttribute:NSMetadataItemFSContentChangeDateKey];

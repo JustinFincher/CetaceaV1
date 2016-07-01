@@ -23,11 +23,25 @@
     [super viewDidLoad];
     // Do view setup here.
     _previewVC = (JZPreviewViewController *)(self.previewSplitViewItem.viewController);
-    _editorVC = (JZEditorViewController *)(self.previewSplitViewItem.viewController);
+    _editorVC = (JZEditorViewController *)(self.editorSplitViewItem.viewController);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(markdownEditorTextDidChanged:)
+                                                 name:@"markdownEditorTextDidChanged"
+                                               object:nil];
 }
+
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {
     _currentEditingMarkdown = currentEditingMarkdown;
+}
+- (void)markdownEditorTextDidChanged:(NSNotification *) notification
+{
+    if (_editorVC.editorTextView)
+    {
+        NSError *error;
+        [[_editorVC.editorTextView string] writeToFile:[self.currentEditingMarkdown.url path] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    }
 }
 
 @end

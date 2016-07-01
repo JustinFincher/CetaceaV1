@@ -8,7 +8,7 @@
 
 #import "JZEditorViewController.h"
 
-@interface JZEditorViewController ()
+@interface JZEditorViewController ()<NSTextViewDelegate>
 
 @end
 
@@ -18,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    self.editorTextView.delegate = self;
+}
+
+#pragma mark - NSTextViewDelegate
+-(void)textDidChange:(NSNotification *)notification
+{
+    //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];
+    [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
 }
 
 @end
