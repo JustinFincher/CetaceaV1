@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
-		0D5F32501D25AD1700566B82 /* JZSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
 		0D6A5E201D2100BB00211AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1F1D2100BB00211AFC /* main.m */; };
 		0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E241D2100BB00211AFC /* Assets.xcassets */; };
@@ -55,8 +54,6 @@
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
 		0D5F324C1D258B3200566B82 /* JZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutViewController.m; sourceTree = "<group>"; };
-		0D5F324E1D25AD1700566B82 /* JZSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsWindowController.h; sourceTree = "<group>"; };
-		0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsWindowController.m; sourceTree = "<group>"; };
 		0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -226,8 +223,6 @@
 				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
 				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
 				0D5F324C1D258B3200566B82 /* JZAboutViewController.m */,
-				0D5F324E1D25AD1700566B82 /* JZSettingsWindowController.h */,
-				0D5F324F1D25AD1700566B82 /* JZSettingsWindowController.m */,
 				0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */,
 				0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */,
 				0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */,
@@ -544,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5F32501D25AD1700566B82 /* JZSettingsWindowController.m in Sources */,
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,

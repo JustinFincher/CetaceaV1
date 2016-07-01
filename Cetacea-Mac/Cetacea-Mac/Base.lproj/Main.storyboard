@@ -101,7 +101,7 @@
                                         <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
                                         <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW">
                                             <connections>
-                                                <segue destination="DW6-uw-6Cj" kind="show" id="c56-DC-Qo3"/>
+                                                <segue destination="fY2-eJ-fQm" kind="show" id="c1E-aW-Xn7"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
@@ -728,47 +728,26 @@
             </objects>
             <point key="canvasLocation" x="-1265" y="-1603"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="E0d-Nk-KD4">
-            <objects>
-                <customObject id="be6-9w-Xfh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <windowController id="DW6-uw-6Cj" customClass="JZSettingsWindowController" sceneMemberID="viewController">
-                    <window key="window" title="Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="MOt-II-Luw">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="1574" y="43" width="480" height="270"/>
-                        <rect key="screenRect" x="1280" y="-280" width="1920" height="1057"/>
-                    </window>
-                    <connections>
-                        <segue destination="fY2-eJ-fQm" kind="relationship" relationship="window.shadowedContentViewController" id="7V9-WZ-Lj8"/>
-                    </connections>
-                </windowController>
-            </objects>
-            <point key="canvasLocation" x="-1987" y="-537"/>
-        </scene>
         <!--Settings Tab View Controller-->
         <scene sceneID="kEd-18-BLM">
             <objects>
-                <tabViewController showSeguePresentationStyle="single" selectedTabViewItemIndex="0" tabStyle="toolbar" id="fY2-eJ-fQm" customClass="JZSettingsTabViewController" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="fY2-eJ-fQm" customClass="JZSettingsTabViewController" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem identifier="" id="wx4-7C-6bR"/>
-                        <tabViewItem identifier="" id="bLw-A5-OHe"/>
-                        <tabViewItem id="am7-tY-aPs"/>
+                        <tabViewItem label="GENERAL" id="VLK-Cl-yzF"/>
+                        <tabViewItem label="APPERANCE" id="Ocu-iu-tUL"/>
                     </tabViewItems>
-                    <viewControllerTransitionOptions key="transitionOptions" crossfade="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="Lss-3S-xoL">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <font key="font" metaFont="message"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <font key="font" metaFont="system"/>
                         <tabViewItems/>
-                        <connections>
-                            <outlet property="delegate" destination="fY2-eJ-fQm" id="Gsb-ub-vQ3"/>
-                        </connections>
                     </tabView>
                     <connections>
-                        <segue destination="IAv-US-Y4U" kind="relationship" relationship="tabItems" id="hq1-tQ-y0V"/>
-                        <segue destination="ibH-D4-1CA" kind="relationship" relationship="tabItems" id="G2w-bP-x0G"/>
-                        <segue destination="W5S-lX-0jq" kind="relationship" relationship="tabItems" id="qne-Jw-Nyz"/>
+                        <outlet property="apperanceTabViewItem" destination="Ocu-iu-tUL" id="yVs-e2-FI1"/>
+                        <outlet property="generalTabViewItem" destination="VLK-Cl-yzF" id="mRD-2E-1U5"/>
+                        <outlet property="noShadowTabVIew" destination="Lss-3S-xoL" id="0gW-eq-1AD"/>
+                        <segue destination="zeD-i4-Kw1" kind="relationship" relationship="tabItems" id="y0B-mc-EMv"/>
+                        <segue destination="nQw-Sf-rJR" kind="relationship" relationship="tabItems" id="uzg-39-iEt"/>
                     </connections>
                 </tabViewController>
                 <customObject id="lW3-5d-2cL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -776,149 +755,48 @@
             <point key="canvasLocation" x="-2180" y="-64"/>
         </scene>
         <!--Settings General View Controller-->
-        <scene sceneID="Icb-WP-9Lx">
+        <scene sceneID="j2W-cz-Sr5">
             <objects>
-                <viewController id="IAv-US-Y4U" customClass="JZSettingsGeneralViewController" sceneMemberID="viewController">
-                    <visualEffectView key="view" blendingMode="behindWindow" state="followsWindowActiveState" id="r28-Kh-I3e">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-6E-nAW">
-                                <rect key="frame" x="77" y="226" width="48" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default" id="l2q-Su-8M8">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4w-rD-bu7">
-                                <rect key="frame" x="166" y="224" width="61" height="18"/>
-                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Ak5-6d-6N5">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uQE-G7-x6L">
-                                <rect key="frame" x="166" y="169" width="61" height="18"/>
-                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bd4-C9-rgs">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2a-tB-n27">
-                                <rect key="frame" x="166" y="196" width="61" height="18"/>
-                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="cTg-L0-Wx5">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zmc-wD-SoI">
-                                <rect key="frame" x="166" y="141" width="61" height="18"/>
-                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3LN-fW-8CE">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                        </subviews>
-                    </visualEffectView>
+                <customObject id="S8H-K8-RFt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="zeD-i4-Kw1" customClass="JZSettingsGeneralViewController" sceneMemberID="viewController">
+                    <view key="view" id="ZeN-9H-kh0">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
                 </viewController>
-                <customObject id="NdE-P3-EIj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1360" y="-339"/>
+            <point key="canvasLocation" x="-1358" y="-49"/>
         </scene>
         <!--Settings Apperance View Controller-->
-        <scene sceneID="vdX-Eu-jGM">
+        <scene sceneID="Wg6-3t-xQp">
             <objects>
-                <viewController id="ibH-D4-1CA" customClass="JZSettingsApperanceViewController" sceneMemberID="viewController">
-                    <visualEffectView key="view" blendingMode="behindWindow" state="followsWindowActiveState" id="SY9-SU-zFH">
-                        <rect key="frame" x="0.0" y="0.0" width="500" height="232"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3td-gT-bls">
-                                <rect key="frame" x="91" y="181" width="120" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Day / Night Theme" id="EbM-OM-Mtq">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIT-65-V2p">
-                                <rect key="frame" x="235" y="175" width="175" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Auto by Current TIme" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="09M-lb-bOp" id="TGS-8Q-8Hb">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="N3b-T0-yk0">
-                                        <items>
-                                            <menuItem title="Day (Light)" id="K1Z-6S-0aE"/>
-                                            <menuItem title="Night (Dark)" id="Hdx-2m-y18"/>
-                                            <menuItem title="Follow System Theme" id="d0B-QB-0c0"/>
-                                            <menuItem title="Auto by Current TIme" state="on" id="09M-lb-bOp"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                            </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LDB-Mf-5bd">
-                                <rect key="frame" x="179" y="130" width="32" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Font" id="1hu-EW-FHB">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-9h-BJw">
-                                <rect key="frame" x="235" y="125" width="175" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="fI9-65-9sm" id="Zch-0o-bWa">
-                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="rLb-RD-vZw">
-                                        <items>
-                                            <menuItem title="Item 1" state="on" id="fI9-65-9sm"/>
-                                            <menuItem title="Item 2" id="L5o-II-8Ji"/>
-                                            <menuItem title="Item 3" id="2XZ-Bo-YEg"/>
-                                        </items>
-                                    </menu>
-                                </popUpButtonCell>
-                            </popUpButton>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BiQ-ZR-6je">
-                                <rect key="frame" x="137" y="88" width="74" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Line Height" id="wZ4-cq-EwW">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iax-bS-bSB">
-                                <rect key="frame" x="242" y="85" width="96" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="M9J-GF-PJ9">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="64v-Td-HLG"/>
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-Ip-pFF">
-                                <rect key="frame" x="343" y="82" width="19" height="27"/>
-                                <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="Lq4-Rb-LGu"/>
-                            </stepper>
-                        </subviews>
-                    </visualEffectView>
-                </viewController>
-                <customObject id="IBu-0n-r61" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1335" y="22"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="sfV-lN-f00">
-            <objects>
-                <viewController id="W5S-lX-0jq" sceneMemberID="viewController">
-                    <visualEffectView key="view" blendingMode="behindWindow" state="followsWindowActiveState" id="fcA-Br-Xsd">
+                <customObject id="UpB-MB-ttn" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <viewController id="nQw-Sf-rJR" customClass="JZSettingsApperanceViewController" sceneMemberID="viewController">
+                    <view key="view" id="mtD-fo-vBX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </visualEffectView>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gTA-6N-cgM">
+                                <rect key="frame" x="24" y="250" width="37" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="LOc-RE-FnH"/>
+                                    <constraint firstAttribute="height" constant="17" id="RrG-C2-AIW"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="94J-ob-ieq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gTA-6N-cgM" firstAttribute="top" secondItem="mtD-fo-vBX" secondAttribute="top" constant="33" id="3SQ-KF-WIS"/>
+                            <constraint firstItem="gTA-6N-cgM" firstAttribute="leading" secondItem="mtD-fo-vBX" secondAttribute="leading" constant="26" id="M1A-8m-0gv"/>
+                        </constraints>
+                    </view>
                 </viewController>
-                <customObject id="yja-7R-vDQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1585" y="420"/>
+            <point key="canvasLocation" x="-1610" y="410"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -1263,7 +1141,7 @@
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="fgx-N1-H24">
-                                    <rect key="frame" x="0.0" y="284" width="450" height="16"/>
+                                    <rect key="frame" x="0.0" y="206" width="450" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="yFs-pe-GOJ">

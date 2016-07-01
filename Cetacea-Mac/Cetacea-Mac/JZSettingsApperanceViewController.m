@@ -23,7 +23,10 @@
     [super viewDidLoad];
     // Do view setup here.
     
-    self.preferredContentSize = NSMakeSize(500, 400);
+}
+- (CGSize)preferredMinimumSize
+{
+    return CGSizeMake(500, 400);
 }
 
 @end
