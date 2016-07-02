@@ -8,11 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType)
-{
+/**
+ *  Day / Night Theme Switch Method
+ */
+typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType) {
+    /**
+     *  Light Theme, using JZDayNightThemeSwithTypeLight
+     */
     JZDayNightThemeSwithTypeLight     = 0,
+    /**
+     *  Dark Theme, using JZDayNightThemeSwithTypeDark
+     */
     JZDayNightThemeSwithTypeDark,
+    /**
+     *  Switch Light Dark based on system ui theme
+     */
     JZDayNightThemeSwithTypeFollowSystem,
+    /**
+     *  Switch Light Dark based on time
+     */
     JZDayNightThemeSwithTypeFollowTime
 };
 
@@ -41,6 +55,21 @@ typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType)
  *  @param type a JZDayNightThemeSwithType
  */
 - (void)setDayNightThemeSwithType:(JZDayNightThemeSwithType)type;
+
+/**
+ *  Get the JZDayNightThemeSwithType string name from enum value
+ *
+ *  @param input a JZDayNightThemeSwithType enum value
+ *
+ *  @return the NSString from given enum value
+ */
 - (NSString *)stringWithJZDayNightThemeSwithType:(JZDayNightThemeSwithType)input;
+
+
+/**
+ *  Get User Default stored JZDayNightThemeSwithType enum value
+ *
+ *  @return the JZDayNightThemeSwithType enum value from User Default
+ */
 - (NSUInteger)getLocalStoredJZDayNightThemeSwithTypeIndex;
 @end

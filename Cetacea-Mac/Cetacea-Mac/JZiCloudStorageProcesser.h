@@ -18,9 +18,15 @@
 
 @end
 
+
 @protocol JZiCloudStorageProcesserDelegate <NSObject>
 @optional
 
+/**
+ *  iCloud Files Processed Delegate
+ *
+ *  @param markdowns give you processed Markdowns Array contains of JZiCloudMarkdownFileModel
+ */
 - (void)iCloudFileProcessed:(NSMutableArray *)markdowns;
 
 @end

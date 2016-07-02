@@ -24,6 +24,11 @@
 @protocol JZiCloudStorageManagerDelegate <NSObject>
 @optional
 
+/**
+ *  iCloud Drive Query updated delegate
+ *
+ *  @param query give you a query of searched NSMetadataItems
+ */
 - (void)iCloudFileUpdated:(NSMetadataQuery *)query;
 
 @end
