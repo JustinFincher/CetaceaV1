@@ -14,6 +14,7 @@
 		0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */; };
 		0D41892B1D27965300530FD7 /* JZFolderListSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41892A1D27965300530FD7 /* JZFolderListSplitViewController.m */; };
 		0D41892E1D27967900530FD7 /* JZFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41892D1D27967900530FD7 /* JZFolderViewController.m */; };
+		0D4189321D27B09300530FD7 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D4189311D27B09300530FD7 /* localizable.strings */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
@@ -71,6 +72,7 @@
 		0D41892A1D27965300530FD7 /* JZFolderListSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderListSplitViewController.m; sourceTree = "<group>"; };
 		0D41892C1D27967900530FD7 /* JZFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFolderViewController.h; sourceTree = "<group>"; };
 		0D41892D1D27967900530FD7 /* JZFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderViewController.m; sourceTree = "<group>"; };
+		0D4189311D27B09300530FD7 /* localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				0D864A1E1D21417000F47613 /* Controller */,
 				0D6A5E241D2100BB00211AFC /* Assets.xcassets */,
 				0D6A5E261D2100BB00211AFC /* Main.storyboard */,
+				0D4189311D27B09300530FD7 /* localizable.strings */,
 				0D6A5E291D2100BB00211AFC /* Info.plist */,
 				0D6A5E1E1D2100BB00211AFC /* Supporting Files */,
 			);
@@ -425,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4189321D27B09300530FD7 /* localizable.strings in Resources */,
 				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
 				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
 			);

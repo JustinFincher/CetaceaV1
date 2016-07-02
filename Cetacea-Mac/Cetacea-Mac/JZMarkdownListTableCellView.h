@@ -13,5 +13,7 @@
 @property (weak) IBOutlet NSTextField *contentTextField;
 @property (weak) IBOutlet NSTextField *titleTextField;
 @property (weak) JZiCloudMarkdownFileModel *markdownReference;
+@property (weak) IBOutlet NSTextField *updateDateTextField;
+@property (weak) IBOutlet NSImageView *isStarredImageView;
 
 @end

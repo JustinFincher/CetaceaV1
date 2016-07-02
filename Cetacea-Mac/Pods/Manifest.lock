@@ -1,12 +1,15 @@
 PODS:
+  - DateTools (1.7.0)
   - MMMarkdown (0.5.4)
 
 DEPENDENCIES:
+  - DateTools
   - MMMarkdown
 
 SPEC CHECKSUMS:
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   MMMarkdown: 754f9154136d224178f51f2b2ba67a66a89d96ea
 
-PODFILE CHECKSUM: cafa865139c460b9bfdbe9be6264bd12a5455ed2
+PODFILE CHECKSUM: 7a35f656c6a9504cfff1d72edeb4ea64fe004bc4
 
 COCOAPODS: 1.0.1

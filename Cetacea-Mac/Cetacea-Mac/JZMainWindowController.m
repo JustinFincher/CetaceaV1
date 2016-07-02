@@ -47,7 +47,10 @@
 
 - (IBAction)editorSegmentedControlChanged:(NSSegmentedControl *)sender
 {
-    
+    NSSegmentedControl *segmentControl = (NSSegmentedControl *)sender;
+    NSInteger selectInt = segmentControl.selectedSegment;
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"editPreviewSwithSegmentSelectedNotification" object:self userInfo:@{@"selectedSegment":[NSNumber numberWithInteger:selectInt]}];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "JZMarkdownListViewController.h"
 #import "JZiCloudStorageProcesser.h"
 #import "JZMarkdownListTableCellView.h"
+#import "DateTools.h"
 
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate>
@@ -51,6 +52,8 @@
         cellView.contentTextField.stringValue = @"";
     }
     cellView.markdownReference = markdown;
+    
+    cellView.updateDateTextField.stringValue = markdown.updatedDate.timeAgoSinceNow;
     return cellView;
 }
 

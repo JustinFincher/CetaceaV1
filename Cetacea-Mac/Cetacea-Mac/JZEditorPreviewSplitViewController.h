@@ -15,5 +15,7 @@
 
 
 @property (nonatomic,strong) JZiCloudMarkdownFileModel* currentEditingMarkdown;
+- (BOOL)isLeftEditorViewCollapsed;
+- (BOOL)isRightPreviewViewCollapsed;
 
 @end
