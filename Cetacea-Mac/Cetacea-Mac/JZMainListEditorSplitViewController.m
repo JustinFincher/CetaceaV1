@@ -10,9 +10,10 @@
 #import "JZMarkdownListViewController.h"
 #import "JZEditorPreviewSplitViewController.h"
 #import "JZMarkdownListViewController.h"
+#import "JZFolderListSplitViewController.h"
 
 @interface JZMainListEditorSplitViewController ()<JZMarkdownListViewDelegate>
-@property (weak) IBOutlet NSSplitViewItem *listViewItem;
+@property (weak) IBOutlet NSSplitViewItem *folderListViewItem;
 @property (weak) IBOutlet NSSplitViewItem *editorViewItem;
 @end
 
@@ -22,41 +23,69 @@
     [super viewDidLoad];
     // Do view setup here.
 
-    [_listViewItem setMaximumThickness:280];
-    [_listViewItem setMinimumThickness:280];
+    [_folderListViewItem setMaximumThickness:460];
+    [_folderListViewItem setMinimumThickness:270];
     
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(sideBarButtonPressedNotification:)
-                                                 name:@"sideBarButtonPressedNotification"
+                                             selector:@selector(sideBarSegmentSelectedNotification:)
+                                                 name:@"sideBarSegmentSelectedNotification"
                                                object:nil];
     
     
-    JZMarkdownListViewController *markdownListVC = (JZMarkdownListViewController *)(_listViewItem.viewController);
+    JZFolderListSplitViewController *folderListSplitVC = (JZFolderListSplitViewController *)(_folderListViewItem.viewController);
+    JZMarkdownListViewController *markdownListVC = (JZMarkdownListViewController *)([folderListSplitVC.markdownListSplitViewItem viewController]);
     markdownListVC.delegate = self;
 }
 
-- (void)sideBarButtonPressedNotification:(NSNotification *) notification
+- (void)sideBarSegmentSelectedNotification:(NSNotification *) notification
 {
-    //NSDictionary *buttonStateDict = [notification userInfo];
-    //NSNumber *state = [buttonStateDict objectForKey:@"buttonState"];
-//    
-//    if ([state intValue] == 1 && _listViewItem.collapsed)
-//    {
-//        [self toggleSidebar:_listViewItem];
-//    }
-//    if ([state intValue] == 0 && !_listViewItem.collapsed)
-//    {
-//        [self toggleSidebar:_listViewItem];
-//    }
-//    
-    [self toggleSidebar:_listViewItem];
+    NSDictionary *dict = [notification userInfo];
+    NSNumber * selectNumber = (NSNumber *)[dict valueForKey:@"selectedSegment"];
+    switch ([selectNumber integerValue])
+    {
+        case 2:
+            if ([self isLeftFolderListViewCollapsed])
+            {
+                //ALREADY COLLAPSED DO NOTHING
+            }else
+            {
+                [self toggleSidebar:_folderListViewItem];
+            }
+            break;
+        case 1:
+            if ([self isLeftFolderListViewCollapsed])
+            {
+                [self toggleSidebar:_folderListViewItem];
+            }else
+            {
+                //ALREADY UNCOLLAPSED DO NOTHING
+            }
+            break;
+        case 0:
+            if ([self isLeftFolderListViewCollapsed])
+            {
+                [self toggleSidebar:_folderListViewItem];
+            }else
+            {
+                //ALREADY UNCOLLAPSED DO NOTHING
+            }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)viewDidLayout
 {
 
+}
+
+- (BOOL)isLeftFolderListViewCollapsed
+{
+    return _folderListViewItem.collapsed;
 }
 
 #pragma mark - JZMarkdownListViewDelegate

@@ -22,7 +22,7 @@
     [super windowDidLoad];
     
     self.window.titlebarAppearsTransparent = YES;
-    self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
+    self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
     self.window.titleVisibility = NSWindowTitleHidden;
     //self.window.styleMask |= NSFullSizeContentViewWindowMask;
     
@@ -33,15 +33,16 @@
     
     [self.sideBarButton sendActionOn:NSLeftMouseUpMask];
 }
-
-- (IBAction)sideBarButtonPressed:(NSButton *)sender
-{
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"sideBarButtonPressedNotification" object:self userInfo:@{@"buttonState":[NSNumber numberWithInteger:sender.state]}];
-}
 - (IBAction)addNewButtonPressed:(NSButton *)sender
 {
     
+}
+- (IBAction)siderBarSegmentSelected:(NSSegmentedControl *)sender
+{
+    NSSegmentedControl *segmentControl = (NSSegmentedControl *)sender;
+    NSInteger selectInt = segmentControl.selectedSegment;
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"sideBarSegmentSelectedNotification" object:self userInfo:@{@"selectedSegment":[NSNumber numberWithInteger:selectInt]}];
 }
 
 - (IBAction)editorSegmentedControlChanged:(NSSegmentedControl *)sender

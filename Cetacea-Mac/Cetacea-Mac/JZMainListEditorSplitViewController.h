@@ -10,4 +10,6 @@
 
 @interface JZMainListEditorSplitViewController : NSSplitViewController
 
+- (BOOL)isLeftFolderListViewCollapsed;
+
 @end
