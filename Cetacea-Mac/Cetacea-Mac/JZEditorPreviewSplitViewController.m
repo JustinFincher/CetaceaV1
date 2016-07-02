@@ -45,7 +45,7 @@
     if (_currentEditingMarkdown != currentEditingMarkdown)
     {
         _currentEditingMarkdown = currentEditingMarkdown;
-        _editorVC.editorTextView.string = _currentEditingMarkdown.previewString;
+        [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
     }
     
     

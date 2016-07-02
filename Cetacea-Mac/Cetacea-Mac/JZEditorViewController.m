@@ -27,6 +27,13 @@
     
 }
 
+- (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
+{
+    self.editorTextView.string = currentEditingMarkdown.previewString;
+    [self.textStorage updateAllFileHighLight];
+}
+
+
 #pragma mark - NSTextViewDelegate
 -(void)textDidChange:(NSNotification *)notification
 {
