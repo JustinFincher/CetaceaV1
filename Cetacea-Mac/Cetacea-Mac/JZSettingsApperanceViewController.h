@@ -6,8 +6,8 @@
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "JZAutoThemeSwitchViewController.h"
 
-@interface JZSettingsApperanceViewController : NSViewController
+@interface JZSettingsApperanceViewController : JZAutoThemeSwitchViewController
 
 @end

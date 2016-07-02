@@ -10,6 +10,7 @@
 
 
 #import "JZiCloudStorageManager.h"
+#import "JZdayNightThemeManager.h"
 
 @interface JZMainWindowController ()
 @property (weak) IBOutlet NSButton *sideBarButton;
@@ -22,7 +23,7 @@
     [super windowDidLoad];
     
     self.window.titlebarAppearsTransparent = YES;
-    self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantLight];
+    self.window.appearance = [NSAppearance appearanceNamed:[[JZdayNightThemeManager sharedManager] getShouldAppliedNSAppearanceName]];
     self.window.titleVisibility = NSWindowTitleHidden;
     //self.window.styleMask |= NSFullSizeContentViewWindowMask;
     
@@ -32,6 +33,16 @@
     
     
     [self.sideBarButton sendActionOn:NSLeftMouseUpMask];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
+                                               object:nil];
+
+}
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
+    self.window.appearance = [NSAppearance appearanceNamed:[[aNotification userInfo] valueForKey:@"NSAppearanceName"]];
 }
 - (IBAction)addNewButtonPressed:(NSButton *)sender
 {

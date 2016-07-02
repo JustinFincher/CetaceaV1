@@ -7,7 +7,7 @@
 //
 
 #import "JZSettingsTabViewController.h"
-
+#import "JZdayNightThemeManager.h"
 @interface JZSettingsTabViewController ()<NSTabViewDelegate>
 @property (weak) IBOutlet NSTabView *noShadowTabVIew;
 @property (weak) IBOutlet NSTabViewItem *generalTabViewItem;
@@ -21,11 +21,25 @@
     [super viewDidLoad];
     // Do view setup here.
     self.noShadowTabVIew.delegate = self;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
+                                               object:nil];
+    
+}
+
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
+    self.view.window.appearance = [NSAppearance appearanceNamed:[[aNotification userInfo] valueForKey:@"NSAppearanceName"]];
 }
 
 - (void)viewWillAppear
 {
     [self updateWindowSizeWithItem:_generalTabViewItem];
+    [self.noShadowTabVIew.window standardWindowButton:NSWindowZoomButton].enabled = NO;
+    [self.noShadowTabVIew.window setStyleMask:[self.noShadowTabVIew.window styleMask] & ~NSResizableWindowMask];
+    self.view.window.appearance = [NSAppearance appearanceNamed:[[JZdayNightThemeManager sharedManager] getShouldAppliedNSAppearanceName]];
 }
 
 -(void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem
@@ -43,10 +57,9 @@
     frame.origin.y += frame.size.height;
     frame.origin.y -= newWindowSize.height;
     frame.size = newWindowSize;
-    
     [self.view.window setFrame:frame display:YES animate:YES];
+    window.title = item.label;
 
 }
-
 
 @end

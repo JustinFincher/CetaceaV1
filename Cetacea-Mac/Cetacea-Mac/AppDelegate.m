@@ -18,6 +18,21 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
+    
+    // register to observe notifications from the store
+    [[NSNotificationCenter defaultCenter]
+     addObserver: self
+     selector: @selector (storeDidChange:)
+     name: NSUbiquitousKeyValueStoreDidChangeExternallyNotification
+     object: [NSUbiquitousKeyValueStore defaultStore]];
+    
+    // get changes that might have happened while this
+    // instance of your app wasn't running
+    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+}
+- (void)storeDidChange:(NSNotification *)aNotification
+{
+    NSLog(@"storeDidChange:(NSNotification *)aNotification");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -15,6 +15,7 @@
 		0D41892B1D27965300530FD7 /* JZFolderListSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41892A1D27965300530FD7 /* JZFolderListSplitViewController.m */; };
 		0D41892E1D27967900530FD7 /* JZFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41892D1D27967900530FD7 /* JZFolderViewController.m */; };
 		0D4189321D27B09300530FD7 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D4189311D27B09300530FD7 /* localizable.strings */; };
+		0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
@@ -73,6 +74,8 @@
 		0D41892C1D27967900530FD7 /* JZFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFolderViewController.h; sourceTree = "<group>"; };
 		0D41892D1D27967900530FD7 /* JZFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderViewController.m; sourceTree = "<group>"; };
 		0D4189311D27B09300530FD7 /* localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
+		0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAutoThemeSwitchViewController.h; sourceTree = "<group>"; };
+		0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAutoThemeSwitchViewController.m; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */,
 				0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */,
 				0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */,
+				0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */,
+				0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -591,6 +596,7 @@
 				0D41892E1D27967900530FD7 /* JZFolderViewController.m in Sources */,
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
+				0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */,
 				0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */,
 				0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */,
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
