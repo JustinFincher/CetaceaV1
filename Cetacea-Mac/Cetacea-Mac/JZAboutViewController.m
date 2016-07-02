@@ -10,6 +10,8 @@
 
 @interface JZAboutViewController ()
 @property (weak) IBOutlet NSTextField *cetaceaLabel;
+@property (weak) IBOutlet NSTextField *versionBuildTextField;
+
 @end
 
 @implementation JZAboutViewController
@@ -23,6 +25,8 @@
     shadow.shadowOffset = NSMakeSize(0, 0);
     shadow.shadowColor = [NSColor colorWithWhite:0.0f alpha:0.6f];
     _cetaceaLabel.shadow = shadow;
+    
+    _versionBuildTextField.stringValue = [NSString stringWithFormat:@"Version %@ ( Build %@ )",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
 }
 
 

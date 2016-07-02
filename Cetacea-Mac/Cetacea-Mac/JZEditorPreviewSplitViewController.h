@@ -15,7 +15,25 @@
 
 
 @property (nonatomic,strong) JZiCloudMarkdownFileModel* currentEditingMarkdown;
+
+/**
+ *  indicates the left edit view is collasped or not
+ *
+ *  @return BOOL is collapsed
+ */
 - (BOOL)isLeftEditorViewCollapsed;
+
+/**
+ *  indicates the right preview view is collasped or not
+ *
+ *  @return BOOL is collapsed
+ */
 - (BOOL)isRightPreviewViewCollapsed;
 
+/**
+ *  Set current JZiCloudMarkdownFileModel to Split VC
+ *
+ *  @param currentEditingMarkdown the JZiCloudMarkdownFileModel to be updated on view
+ */
+- (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown;
 @end

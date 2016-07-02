@@ -10,6 +10,11 @@
 
 @interface JZMainListEditorSplitViewController : NSSplitViewController
 
+/**
+ *  indicates the Left Panel (including Folder and Markdown Lsit) is Collapsed or not
+ *
+ *  @return BOOL is Collapsed
+ */
 - (BOOL)isLeftFolderListViewCollapsed;
 
 @end

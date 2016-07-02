@@ -7,8 +7,11 @@
 //
 
 #import "JZEditorViewController.h"
+#import "JZEditorMarkdownTextStorage.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
+
+@property (nonatomic,strong) JZEditorMarkdownTextStorage *textStorage;
 
 @end
 
@@ -19,6 +22,9 @@
     [super viewDidLoad];
     // Do view setup here.
     self.editorTextView.delegate = self;
+    self.textStorage = [JZEditorMarkdownTextStorage new];
+    [self.textStorage addLayoutManager:self.editorTextView.layoutManager];
+    
 }
 
 #pragma mark - NSTextViewDelegate

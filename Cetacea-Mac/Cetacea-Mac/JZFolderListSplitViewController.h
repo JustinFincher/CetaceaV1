@@ -12,5 +12,10 @@
 @property (weak) IBOutlet NSSplitViewItem *markdownListSplitViewItem;
 @property (weak) IBOutlet NSSplitViewItem *folderSplitViewItem;
 
+/**
+ *  indicates the left folder panel is collapsed or not
+ *
+ *  @return BOOL is collapsed
+ */
 - (BOOL)isLeftFolderViewCollapsed;
 @end

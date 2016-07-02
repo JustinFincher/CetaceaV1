@@ -39,9 +39,16 @@
 
 }
 
+#pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {
-    _currentEditingMarkdown = currentEditingMarkdown;
+    if (_currentEditingMarkdown != currentEditingMarkdown)
+    {
+        _currentEditingMarkdown = currentEditingMarkdown;
+        _editorVC.editorTextView.string = _currentEditingMarkdown.previewString;
+    }
+    
+    
 }
 - (void)markdownEditorTextDidChanged:(NSNotification *) notification
 {
@@ -51,6 +58,8 @@
         [[_editorVC.editorTextView string] writeToFile:[self.currentEditingMarkdown.url path] atomically:YES encoding:NSUTF8StringEncoding error:&error];
     }
 }
+
+#pragma mark - UI
 - (void)editPreviewSwithSegmentSelectedNotification:(NSNotification *) notification
 {
     
