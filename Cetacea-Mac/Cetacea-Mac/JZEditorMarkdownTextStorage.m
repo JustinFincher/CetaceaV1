@@ -7,6 +7,7 @@
 //
 
 #import "JZEditorMarkdownTextStorage.h"
+#import "JZFontDisplayManager.h"
 @import CoreText;
 
 @interface JZEditorMarkdownTextStorage()
@@ -59,6 +60,7 @@
 {
     paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
     [self removeAttribute:NSForegroundColorAttributeName range:paragaphRange];
+    [self addAttribute:NSForegroundColorAttributeName value:[[JZFontDisplayManager sharedManager] getTextColor] range:paragaphRange];
     
     //[self proccessCJKWithRange:paragaphRange];
     [self proccessHeaderTagWithRange:paragaphRange];
@@ -79,6 +81,11 @@
     [self updateCurrentLineHighLight];
     
 }
+/**
+ *  CJK font thing, do no call this method. beacause it's handled in TextView.setFont.
+ *
+ *  @param Range NSRange
+ */
 - (void)proccessCJKWithRange:(NSRange)Range
 {
     static NSRegularExpression *CJKExpression;

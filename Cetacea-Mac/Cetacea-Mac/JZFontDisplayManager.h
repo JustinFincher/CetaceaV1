@@ -11,9 +11,25 @@
 
 @interface JZFontDisplayManager : NSObject
 
+/**
+ *  get single instance
+ *
+ *  @return JZFontDisplayManager instance
+ */
 + (id)sharedManager;
 
+/**
+ *  get user set base-font
+ *
+ *  @return NSFont user set base font
+ */
 - (NSFont *)getFont;
+
+/**
+ *  set the base font
+ *
+ *  @param font NSFont to set as base font
+ */
 - (void)setFont:(NSFont *)font;
 
 - (NSColor *)getTextColor;

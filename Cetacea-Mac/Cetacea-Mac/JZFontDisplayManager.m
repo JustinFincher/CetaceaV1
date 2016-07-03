@@ -7,6 +7,7 @@
 //
 
 #import "JZFontDisplayManager.h"
+#import "JZdayNightThemeManager.h"
 
 @interface JZFontDisplayManager()
 
@@ -77,6 +78,21 @@
          postNotificationName:@"baseFontChanged" object:self userInfo:nil];
     };
 
+}
+#pragma mark - Text Color 
+- (NSColor *)getTextColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor colorWithWhite:0.9 alpha:1.0f];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor colorWithWhite:0.2 alpha:1.0f];
+    }else
+    {
+        return [NSColor grayColor];
+    }
 }
 
 @end

@@ -100,4 +100,7 @@ typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType) {
  *  @return NSDate
  */
 - (NSDate *)getSunriseTime;
+
+- (BOOL)getEditPreviewPanelShouldUsingBlurredBackground;
+- (void)setEditPreviewPanelShouldUsingBlurredBackground:(BOOL)should;
 @end

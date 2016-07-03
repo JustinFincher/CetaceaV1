@@ -9,15 +9,19 @@
 #import "JZEditorPreviewSplitViewController.h"
 #import "JZPreviewViewController.h"
 #import "JZEditorViewController.h"
+#import "JZEditorPreviewSplitViewForegroundBlurViewController.h"
+#import "JZdayNightThemeManager.h"
 
 @interface JZEditorPreviewSplitViewController ()
 
 @property (nonatomic,strong) JZPreviewViewController* previewVC;
 @property (nonatomic,strong) JZEditorViewController* editorVC;
+@property (nonatomic,strong) JZEditorPreviewSplitViewForegroundBlurViewController *foregroundVC;
 
 @end
 
 @implementation JZEditorPreviewSplitViewController
+@synthesize foregroundVC;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,9 +40,22 @@
                                              selector:@selector(editPreviewSwithSegmentSelectedNotification:)
                                                  name:@"editPreviewSwithSegmentSelectedNotification"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
+                                               object:nil];
+    
+    foregroundVC = [[JZEditorPreviewSplitViewForegroundBlurViewController alloc] init];
+    [self.view addSubview:foregroundVC.view];
+    [foregroundVC.view setFrameSize:self.view.frame.size];
+    [foregroundVC.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 
 }
-
+- (void)viewWillAppear
+{
+    [self refreshEditPreviewBackgroundView];
+}
 #pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {
@@ -47,7 +64,10 @@
         _currentEditingMarkdown = currentEditingMarkdown;
         [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
     }
-    
+    if (!foregroundVC.view.hidden)
+    {
+        [foregroundVC.view setHidden:YES];
+    }
     
 }
 - (void)markdownEditorTextDidChanged:(NSNotification *) notification
@@ -86,6 +106,24 @@
         }
     }
 
+}
+- (void)dayNightThemeSwitched:(NSNotification *) notification
+{
+    [self refreshEditPreviewBackgroundView];
+}
+- (void)refreshEditPreviewBackgroundView
+{
+    NSVisualEffectView *editVisualView = (NSVisualEffectView *)(_editorVC.view);
+    NSVisualEffectView *previewVisualView = (NSVisualEffectView *)(_previewVC.view);
+    if ([[JZdayNightThemeManager sharedManager] getEditPreviewPanelShouldUsingBlurredBackground])
+    {
+        [editVisualView setState:NSVisualEffectStateActive];
+        [previewVisualView setState:NSVisualEffectStateActive];
+    }else
+    {
+        [editVisualView setState:NSVisualEffectStateInactive];
+        [previewVisualView setState:NSVisualEffectStateInactive];
+    }
 }
 - (BOOL)isLeftEditorViewCollapsed
 {

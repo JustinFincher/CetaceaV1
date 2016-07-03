@@ -26,19 +26,34 @@
     self.textStorage = [JZEditorMarkdownTextStorage new];
     [self.textStorage addLayoutManager:self.editorTextView.layoutManager];
     
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(baseFontChanged:)
                                                  name:@"baseFontChanged"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
                                                object:nil];
     [self refreshFont];
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {
-    self.editorTextView.string = currentEditingMarkdown.previewString;
+    NSError *error;
+    self.editorTextView.string = [NSString stringWithContentsOfFile:[currentEditingMarkdown.url path] encoding:NSUTF8StringEncoding error:&error];
+    if (error)
+    {
+        NSLog(@"%@",[error localizedDescription]);
+    }
+    [self.textStorage updateAllFileHighLight];
+    
+}
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
     [self.textStorage updateAllFileHighLight];
 }
-
 - (void)baseFontChanged:(NSNotification *)aNotification
 {
     [self refreshFont];
@@ -50,6 +65,11 @@
 }
 
 #pragma mark - NSTextViewDelegate
+/**
+ *  this delegate called when TextView 's text have delete or input
+ *
+ *  @param notification NSNotification
+ */
 -(void)textDidChange:(NSNotification *)notification
 {
     //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];

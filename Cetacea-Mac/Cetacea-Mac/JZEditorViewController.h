@@ -13,6 +13,11 @@
 @property (weak) IBOutlet NSScrollView *editorScrollView;
 @property (unsafe_unretained) IBOutlet NSTextView *editorTextView;
 
+/**
+ *  set current editing Markdown Model (aka a .md file)
+ *
+ *  @param currentEditingMarkdown a JZiCloudMarkdownFileModel
+ */
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown;
 
 @end

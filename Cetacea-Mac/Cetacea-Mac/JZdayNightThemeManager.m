@@ -200,4 +200,17 @@
     NSDate *sunrise = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey:@"sunriseTime"];
     return sunrise;
 }
+- (BOOL)getEditPreviewPanelShouldUsingBlurredBackground
+{
+    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"editPreviewPanelShouldUsingBlurredBackground"]boolValue];
+}
+- (void)setEditPreviewPanelShouldUsingBlurredBackground:(BOOL)should
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:should] forKey:@"editPreviewPanelShouldUsingBlurredBackground"];
+    if ([[NSUserDefaults standardUserDefaults] synchronize])
+    {
+        [self postThemeChanged:[self getShouldAppliedNSAppearanceName]];
+    };
+}
+
 @end

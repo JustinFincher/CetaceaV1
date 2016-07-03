@@ -27,7 +27,6 @@
     [_folderListViewItem setMinimumThickness:270];
     
     
-    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(sideBarSegmentSelectedNotification:)
                                                  name:@"sideBarSegmentSelectedNotification"

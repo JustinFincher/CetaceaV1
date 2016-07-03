@@ -11,6 +11,7 @@
 #import "DateTools.h"
 @interface JZSettingsApperanceViewController ()
 @property (weak) IBOutlet NSPopUpButton *lightDarkThemeSwitchPopup;
+@property (weak) IBOutlet NSButton *editPreviewPanelUsingBlurCheckButton;
 
 @property (weak) IBOutlet NSDatePicker *sunriseTimePicker;
 @property (weak) IBOutlet NSDatePicker *sunsetTimePicker;
@@ -37,7 +38,16 @@
 }
 - (CGSize)preferredMinimumSize
 {
-    return CGSizeMake(500, 180);
+    return CGSizeMake(500, 220);
+}
+- (IBAction)editPreviewPanelUsingBlurredBackground:(NSButton *)sender
+{
+    if ([sender state] == NSOnState) {
+        [[JZdayNightThemeManager sharedManager] setEditPreviewPanelShouldUsingBlurredBackground:YES];
+    }
+    else {
+        [[JZdayNightThemeManager sharedManager] setEditPreviewPanelShouldUsingBlurredBackground:NO];
+    }
 }
 
 - (IBAction)lightDarkThemeSwitchPopup:(NSPopUpButton *)sender

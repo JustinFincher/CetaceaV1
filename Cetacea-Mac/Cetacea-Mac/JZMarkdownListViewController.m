@@ -30,6 +30,13 @@
     JZiCloudStorageProcesser *iCloudStorageProcesser = (JZiCloudStorageProcesser *)[JZiCloudStorageProcesser sharedManager];
     iCloudStorageProcesser.delegate = self;
     [JZiCloudStorageProcesser sharedManager];
+    
+    [self.markdownListTableView reloadData];
+//    NSLog(@"self.markdownListTableView.numberOfRows %ld",(long)self.markdownListTableView.numberOfRows);
+//    if (self.markdownListTableView.numberOfRows > 0)
+//    {
+//        [self.markdownListTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:1] byExtendingSelection:NO];
+//    }
 }
 
 #pragma mark - NSTableViewDelegate

@@ -35,6 +35,8 @@
 		0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A2A1D21451300F47613 /* WebKit.framework */; };
 		0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */; };
 		0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */; };
+		0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */; };
+		0D87A52D1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */; };
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
@@ -118,6 +120,9 @@
 		0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFontDisplayManager.m; sourceTree = "<group>"; };
 		0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsEditingViewController.h; sourceTree = "<group>"; };
 		0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsEditingViewController.m; sourceTree = "<group>"; };
+		0D87A5291D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewForegroundBlurViewController.h; sourceTree = "<group>"; };
+		0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewForegroundBlurViewController.m; sourceTree = "<group>"; };
+		0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZEditorPreviewSplitViewForegroundBlurViewController.xib; sourceTree = "<group>"; };
 		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
 		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
@@ -251,6 +256,9 @@
 				0D41892A1D27965300530FD7 /* JZFolderListSplitViewController.m */,
 				0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */,
 				0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */,
+				0D87A5291D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.h */,
+				0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */,
+				0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */,
 				0D41892C1D27967900530FD7 /* JZFolderViewController.h */,
 				0D41892D1D27967900530FD7 /* JZFolderViewController.m */,
 				0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */,
@@ -449,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D87A52D1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib in Resources */,
 				0D4189321D27B09300530FD7 /* localizable.strings in Resources */,
 				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
 				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
@@ -612,6 +621,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */,
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
 				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
