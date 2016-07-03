@@ -7,6 +7,7 @@
 //
 
 #import "TSMarkdownParser.h"
+#import "JZFontDisplayManager.h"
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #else
@@ -29,7 +30,8 @@ typedef NSFont UIFont;
     NSUInteger defaultSize = 12;
 #endif
     
-    self.defaultAttributes = @{ NSFontAttributeName: [UIFont systemFontOfSize:defaultSize] };
+    self.defaultAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
+                                NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getTextColor]};
     
 #if TARGET_OS_TV
     _headerAttributes = @[ @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:76] },
@@ -39,16 +41,16 @@ typedef NSFont UIFont;
                            @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:36] },
                            @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:32] } ];
 #else
-    _headerAttributes = @[ @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:23] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:21] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:19] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:17] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:15] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } ];
+    _headerAttributes = @[ @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] } ];
 #endif
     
     _listAttributes = @[];
-    _quoteAttributes = @[@{NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Italic" size:defaultSize]}];
+    _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont]}];
     
     _imageAttributes = @{};
     _linkAttributes = @{ NSForegroundColorAttributeName: [UIColor blueColor],
@@ -57,12 +59,12 @@ typedef NSFont UIFont;
     // Courier New and Courier are the only monospace fonts compatible with watchOS 2
     _monospaceAttributes = @{ NSFontAttributeName: [UIFont fontWithName:@"Courier New" size:defaultSize],
                               NSForegroundColorAttributeName: [UIColor colorWithRed:0.95 green:0.54 blue:0.55 alpha:1] };
-    _strongAttributes = @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:defaultSize] };
+    _strongAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont]};
     
 #if TARGET_OS_IPHONE
     _emphasisAttributes = @{ NSFontAttributeName: [UIFont italicSystemFontOfSize:defaultSize] };
 #else
-    _emphasisAttributes = @{ NSFontAttributeName: [[NSFontManager sharedFontManager] convertFont:[UIFont systemFontOfSize:defaultSize] toHaveTrait:NSItalicFontMask] };
+    _emphasisAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont] };
 #endif
     
     return self;

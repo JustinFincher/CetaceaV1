@@ -24,6 +24,11 @@
  *  @return NSFont user set base font
  */
 - (NSFont *)getFont;
+- (NSString *)getFontFamilyName;
+- (CGFloat)getFontSize;
+
+- (NSFont *)getBoldFont;
+- (NSFont *)getItalicFont;
 
 /**
  *  set the base font

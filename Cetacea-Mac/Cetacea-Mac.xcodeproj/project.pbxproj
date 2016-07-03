@@ -39,6 +39,7 @@
 		0D87A52D1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */; };
 		0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5311D29ACC700F9DC34 /* TSBaseParser.m */; };
 		0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5341D29ACC700F9DC34 /* TSMarkdownParser.m */; };
+		0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */; };
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
@@ -130,6 +131,8 @@
 		0D87A5321D29ACC700F9DC34 /* TSMarkdownParser-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSMarkdownParser-Prefix.pch"; sourceTree = "<group>"; };
 		0D87A5331D29ACC700F9DC34 /* TSMarkdownParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMarkdownParser.h; sourceTree = "<group>"; };
 		0D87A5341D29ACC700F9DC34 /* TSMarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMarkdownParser.m; sourceTree = "<group>"; };
+		0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorMarkdownTextParserWithTSBaseParser.m; sourceTree = "<group>"; };
+		0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorMarkdownTextParserWithTSBaseParser.h; sourceTree = "<group>"; };
 		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
 		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
@@ -330,6 +333,8 @@
 				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
 				0D4189411D2833FA00530FD7 /* JZEditorMarkdownTextStorage.h */,
 				0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */,
+				0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */,
+				0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */,
 				0D87A5231D290E7100F9DC34 /* JZFontDisplayManager.h */,
 				0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */,
 			);
@@ -675,6 +680,7 @@
 				0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */,
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
 				0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */,
+				0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
 			);

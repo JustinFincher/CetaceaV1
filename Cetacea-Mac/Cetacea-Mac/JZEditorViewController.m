@@ -10,8 +10,6 @@
 #import "JZEditorMarkdownTextStorage.h"
 #import "JZFontDisplayManager.h"
 
-#import "TSMarkdownParser.h"
-
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
 @property (nonatomic,strong) JZEditorMarkdownTextStorage *textStorage;
@@ -26,7 +24,7 @@
     // Do view setup here.
     self.editorTextView.delegate = self;
     self.textStorage = [JZEditorMarkdownTextStorage new];
-    //[self.textStorage addLayoutManager:self.editorTextView.layoutManager];
+    [self.textStorage addLayoutManager:self.editorTextView.layoutManager];
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -49,9 +47,7 @@
     {
         NSLog(@"%@",[error localizedDescription]);
     }
-    //[self.textStorage updateAllFileHighLight];
-    NSAttributedString *string = [[TSMarkdownParser standardParser] attributedStringFromMarkdown:self.editorTextView.string];
-    [[self.editorTextView textStorage] setAttributedString:string];
+    [self.textStorage updateAllFileHighLight];
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
 {
@@ -77,8 +73,6 @@
 {
     //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
-    
-    [self refreshFont];
 }
 
 @end

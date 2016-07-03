@@ -67,6 +67,48 @@
         return [NSFont systemFontOfSize:12.0f];
     }
 }
+- (NSString *)getFontFamilyName
+{
+    NSString *name = [[NSUserDefaults standardUserDefaults]
+                      objectForKey:@"baseFontName"];
+    return name;
+}
+- (CGFloat)getFontSize
+{
+    NSNumber *size = [[NSUserDefaults standardUserDefaults]
+                      objectForKey:@"baseFontSize"];
+    return [size floatValue];
+}
+- (NSFont *)getBoldFont
+{
+    NSFont *bold = [[NSFontManager sharedFontManager] fontWithFamily:[self getFontFamilyName]
+                                              traits:NSBoldFontMask
+                                              weight:0
+                                                size:[self getFontSize]];
+    if (bold)
+    {
+        return bold;
+    }
+    else
+    {
+        return [self getFont];
+    }
+}
+- (NSFont *)getItalicFont
+{
+    NSFont *italic = [[NSFontManager sharedFontManager] fontWithFamily:[self getFontFamilyName]
+                                                              traits:NSItalicFontMask
+                                                              weight:0
+                                                                size:[self getFontSize]];
+    if (italic)
+    {
+        return italic;
+    }
+    else
+    {
+        return [self getFont];
+    }
+}
 
 - (void)setFont:(NSFont *)font
 {

@@ -14,4 +14,5 @@
  *  update this NSTextStorage with highlight attributes
  */
 - (void)updateAllFileHighLight;
+
 @end

@@ -25,7 +25,7 @@
     self = [super init];
     if (self) {
         _attributedString = [NSMutableAttributedString new];
-    }
+        }
     return self;
 }
 
@@ -73,10 +73,10 @@
     [self removeAttribute:NSBackgroundColorAttributeName range:range];
     [self addAttribute:NSForegroundColorAttributeName value:[[JZFontDisplayManager sharedManager] getTextColor] range:paragaphRange];
     [self proccessHeaderTagWithRange:range];
-    [self proccessCodeBlockTagWithRange:range];
-    [self proccessEmphasisTagWithRange:range];
     [self proccessItalicTagWithRange:range];
+    [self proccessEmphasisTagWithRange:range];
     [self proccessLinkTagWithRange:range];
+    [self proccessSingleLineCodeTagWithRange:range];
 }
 - (void)processEditing
 {
@@ -117,7 +117,11 @@
                                   options:0 range:Range
                                usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {
-         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+         NSRange range = [result rangeAtIndex:0];
+         NSString *matchString = self.attributedString.string;
+         NSRange lineRange = [matchString lineRangeForRange:range];
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:lineRange];
+         [self addAttribute:NSFontAttributeName value:[[JZFontDisplayManager sharedManager] getBoldFont] range:lineRange];
      }];
 }
 - (void)proccessEmphasisTagWithRange:(NSRange)Range
@@ -133,12 +137,13 @@
                                usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {
          [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+         [self addAttribute:NSFontAttributeName value:[[JZFontDisplayManager sharedManager] getBoldFont] range:result.range];
      }];
 }
 - (void)proccessItalicTagWithRange:(NSRange)Range
 {
     static NSRegularExpression *ItalicExpression;
-    NSString *pattern = @"\\*(\\w+)\\*";
+    NSString *pattern = @"\\*([^(*|\\n)]+)\\*";
     ItalicExpression = ItalicExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
                                                                                      options:0
                                                                                        error:NULL];
@@ -147,7 +152,8 @@
                                        options:0 range:Range
                                     usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {
-         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor yellowColor] range:result.range];
+         [self addAttribute:NSFontAttributeName value:[[JZFontDisplayManager sharedManager] getItalicFont] range:result.range];
      }];
 }
 - (void)proccessLinkTagWithRange:(NSRange)Range
@@ -162,23 +168,25 @@
                                        options:0 range:Range
                                     usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {
-         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor blueColor] range:result.range];
+         [self addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInt:NSUnderlineStyleSingle] range:result.range];
      }];
 }
-- (void)proccessCodeBlockTagWithRange:(NSRange)Range
+- (void)proccessSingleLineCodeTagWithRange:(NSRange)Range
 {
-    static NSRegularExpression *ShortHeaderExpression;
-    NSString *pattern = @"`{3}\\w+`{3}";
-    ShortHeaderExpression = ShortHeaderExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+    static NSRegularExpression *SingleLineCodeExpression;
+    NSString *pattern = @"\\`([^(`|\\n)]+)\\`";
+    SingleLineCodeExpression = SingleLineCodeExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
                                                                                  options:0
                                                                                    error:NULL];
     
-    [ShortHeaderExpression enumerateMatchesInString:self.string
+    [SingleLineCodeExpression enumerateMatchesInString:self.string
                                      options:0 range:Range
                                   usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {
-         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor greenColor] range:result.range];
      }];
 }
+
 
 @end

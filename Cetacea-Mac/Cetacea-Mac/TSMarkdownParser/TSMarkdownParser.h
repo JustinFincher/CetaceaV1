@@ -20,6 +20,7 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 /*
  Properties used by standardParser.
  */
+
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *headerAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *listAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *quoteAttributes;
