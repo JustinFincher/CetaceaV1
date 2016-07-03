@@ -59,8 +59,8 @@
 {
     paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
     [self removeAttribute:NSForegroundColorAttributeName range:paragaphRange];
-    //[self setForegroundColor:[NSColor whiteColor]];
     
+    //[self proccessCJKWithRange:paragaphRange];
     [self proccessHeaderTagWithRange:paragaphRange];
     [self proccessEmphasisTagWithRange:paragaphRange];
 
@@ -68,6 +68,7 @@
 - (void)updateAllFileHighLight
 {
     [self removeAttribute:NSForegroundColorAttributeName range:NSMakeRange(0, self.length)];
+    //[self proccessCJKWithRange:NSMakeRange(0, self.length)];
     [self proccessHeaderTagWithRange:NSMakeRange(0, self.length)];
     [self proccessEmphasisTagWithRange:NSMakeRange(0, self.length)];
     
@@ -78,15 +79,31 @@
     [self updateCurrentLineHighLight];
     
 }
+- (void)proccessCJKWithRange:(NSRange)Range
+{
+    static NSRegularExpression *CJKExpression;
+    NSString *pattern = @"[\\p{script=Han}]";
+    CJKExpression = CJKExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+                                                                                     options:NSRegularExpressionCaseInsensitive
+                                                                                       error:NULL];
+    
+    [CJKExpression enumerateMatchesInString:self.string
+                                       options:0 range:Range
+                                    usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
+     {
+         [self addAttribute:NSFontAttributeName value:[NSFont fontWithName:@"PingFangSC-Regular" size:12.0f] range:result.range];
+     }];
+
+}
 - (void)proccessHeaderTagWithRange:(NSRange)Range
 {
-    static NSRegularExpression *iExpression;
+    static NSRegularExpression *HeaderExpression;
     NSString *pattern = @"#{1,6} ";
-    iExpression = iExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+    HeaderExpression = HeaderExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
                                                                            options:0
                                                                              error:NULL];
     
-    [iExpression enumerateMatchesInString:self.string
+    [HeaderExpression enumerateMatchesInString:self.string
                                   options:0 range:Range
                                usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
      {

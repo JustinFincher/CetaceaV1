@@ -9,5 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface JZEditorMarkdownTextStorage : NSTextStorage
+
+/**
+ *  update this NSTextStorage with highlight attributes
+ */
 - (void)updateAllFileHighLight;
 @end

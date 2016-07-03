@@ -37,7 +37,7 @@
 }
 - (CGSize)preferredMinimumSize
 {
-    return CGSizeMake(500, 400);
+    return CGSizeMake(500, 180);
 }
 
 - (IBAction)lightDarkThemeSwitchPopup:(NSPopUpButton *)sender

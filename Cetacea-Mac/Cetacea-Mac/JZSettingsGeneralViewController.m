@@ -27,7 +27,7 @@
 
 - (CGSize)preferredMinimumSize
 {
-    return CGSizeMake(500, 600);
+    return CGSizeMake(500, 300);
 }
 
 @end

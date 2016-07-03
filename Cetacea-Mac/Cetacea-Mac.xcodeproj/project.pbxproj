@@ -33,6 +33,8 @@
 		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
 		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
 		0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A2A1D21451300F47613 /* WebKit.framework */; };
+		0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */; };
+		0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */; };
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
@@ -112,6 +114,10 @@
 		0D864A271D2141C600F47613 /* JZPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZPreviewViewController.h; sourceTree = "<group>"; };
 		0D864A281D2141C600F47613 /* JZPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZPreviewViewController.m; sourceTree = "<group>"; };
 		0D864A2A1D21451300F47613 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0D87A5231D290E7100F9DC34 /* JZFontDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFontDisplayManager.h; sourceTree = "<group>"; };
+		0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFontDisplayManager.m; sourceTree = "<group>"; };
+		0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsEditingViewController.h; sourceTree = "<group>"; };
+		0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsEditingViewController.m; sourceTree = "<group>"; };
 		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
 		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
@@ -255,6 +261,8 @@
 				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
 				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
 				0D864A281D2141C600F47613 /* JZPreviewViewController.m */,
+				0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */,
+				0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */,
 				0D5F32481D25828A00566B82 /* JZAboutWindowController.h */,
 				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
 				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
@@ -267,8 +275,8 @@
 				0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */,
 				0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */,
 				0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */,
-				0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */,
-				0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */,
+				0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */,
+				0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,6 +294,8 @@
 				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
 				0D4189411D2833FA00530FD7 /* JZEditorMarkdownTextStorage.h */,
 				0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */,
+				0D87A5231D290E7100F9DC34 /* JZFontDisplayManager.h */,
+				0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -606,6 +616,7 @@
 				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,
+				0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
 				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
@@ -623,6 +634,7 @@
 				0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */,
 				0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */,
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
+				0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
 			);
