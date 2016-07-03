@@ -8,6 +8,7 @@ target 'Cetacea-Mac' do
   # Pods for Cetacea-Mac
 pod 'MMMarkdown'
 pod 'DateTools'
+# pod 'TSMarkdownParser'
   target 'Cetacea-MacTests' do
     inherit! :search_paths
     # Pods for testing
