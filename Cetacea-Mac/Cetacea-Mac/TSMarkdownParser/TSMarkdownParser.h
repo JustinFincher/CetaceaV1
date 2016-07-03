@@ -17,6 +17,7 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 
 @interface TSMarkdownParser : TSBaseParser
 
+- (void)getRefreshedAttributes;
 /*
  Properties used by standardParser.
  */

@@ -24,6 +24,13 @@ typedef NSFont UIFont;
     if (!self)
         return nil;
     
+    [self getRefreshedAttributes];
+    
+    return self;
+}
+
+- (void)getRefreshedAttributes
+{
 #if TARGET_OS_TV
     NSUInteger defaultSize = 29;
 #else
@@ -41,12 +48,12 @@ typedef NSFont UIFont;
                            @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:36] },
                            @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:32] } ];
 #else
-    _headerAttributes = @[ @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont] } ];
+    _headerAttributes = @[ @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] } ];
 #endif
     
     _listAttributes = @[];
@@ -66,10 +73,7 @@ typedef NSFont UIFont;
 #else
     _emphasisAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont] };
 #endif
-    
-    return self;
 }
-
 + (instancetype)standardParser {
     TSMarkdownParser *defaultParser = [self new];
     

@@ -70,6 +70,12 @@
 - (NSString *)getFontFamilyName
 {
     NSString *name = [[NSUserDefaults standardUserDefaults]
+                      objectForKey:@"baseFontFamilyName"];
+    return name;
+}
+- (NSString *)getFontName
+{
+    NSString *name = [[NSUserDefaults standardUserDefaults]
                       objectForKey:@"baseFontName"];
     return name;
 }
@@ -85,17 +91,20 @@
                                               traits:NSBoldFontMask
                                               weight:0
                                                 size:[self getFontSize]];
+    
     if (bold)
     {
         return bold;
     }
     else
     {
+        
         return [self getFont];
     }
 }
 - (NSFont *)getItalicFont
 {
+    
     NSFont *italic = [[NSFontManager sharedFontManager] fontWithFamily:[self getFontFamilyName]
                                                               traits:NSItalicFontMask
                                                               weight:0
@@ -106,13 +115,17 @@
     }
     else
     {
+        
         return [self getFont];
     }
 }
 
 - (void)setFont:(NSFont *)font
 {
+    
     [[NSUserDefaults standardUserDefaults] setObject:[font fontName] forKey:@"baseFontName"];
+    [[NSUserDefaults standardUserDefaults] setObject:[font familyName] forKey:@"baseFontFamilyName"];
+    [[NSUserDefaults standardUserDefaults] setObject:[font displayName] forKey:@"baseFontDisplayName"];
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:[font pointSize]] forKey:@"baseFontSize"];
     if ([[NSUserDefaults standardUserDefaults] synchronize])
     {

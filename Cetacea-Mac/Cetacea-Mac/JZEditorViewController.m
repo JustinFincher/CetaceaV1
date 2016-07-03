@@ -10,9 +10,13 @@
 #import "JZEditorMarkdownTextStorage.h"
 #import "JZFontDisplayManager.h"
 
+#import "JZEditorMarkdownTextParserWithTSBaseParser.h"
+
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
 @property (nonatomic,strong) JZEditorMarkdownTextStorage *textStorage;
+
+@property (nonatomic) NSRange range;
 
 @end
 
@@ -24,7 +28,7 @@
     // Do view setup here.
     self.editorTextView.delegate = self;
     self.textStorage = [JZEditorMarkdownTextStorage new];
-    [self.textStorage addLayoutManager:self.editorTextView.layoutManager];
+    //[self.textStorage addLayoutManager:self.editorTextView.layoutManager];
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -36,7 +40,7 @@
                                              selector:@selector(dayNightThemeSwitched:)
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
-    [self refreshFont];
+    [self refreshHightLight];
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
@@ -47,20 +51,18 @@
     {
         NSLog(@"%@",[error localizedDescription]);
     }
-    [self.textStorage updateAllFileHighLight];
+    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self refreshHightLight];
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
 {
-    [self.textStorage updateAllFileHighLight];
+    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self refreshHightLight];
 }
 - (void)baseFontChanged:(NSNotification *)aNotification
 {
-    [self refreshFont];
-}
-- (void)refreshFont
-{
-    NSFont *font = [[JZFontDisplayManager sharedManager] getFont];
-    self.editorTextView.font = font;
+    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self refreshHightLight];
 }
 
 #pragma mark - NSTextViewDelegate
@@ -73,6 +75,13 @@
 {
     //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
+    [self refreshHightLight];
+}
+- (void)refreshHightLight
+{
+    self.range = self.editorTextView.selectedRange;
+    [self.editorTextView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:self.editorTextView.string]];
+    [self.editorTextView setSelectedRange:self.range];
 }
 
 @end

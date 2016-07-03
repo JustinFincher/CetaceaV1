@@ -11,6 +11,9 @@
 @interface JZEditorMarkdownTextParserWithTSBaseParser : NSObject
 
 + (id)sharedManager;
+- (void)refreshAttributesTheme;
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown;
+
+@property (nonatomic) BOOL shouldRemoveTags;
 
 @end
