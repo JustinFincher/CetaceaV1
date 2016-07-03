@@ -8,6 +8,7 @@
 
 #import "JZEditorViewController.h"
 #import "JZEditorMarkdownTextStorage.h"
+#import "JZFontDisplayManager.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
@@ -25,6 +26,11 @@
     self.textStorage = [JZEditorMarkdownTextStorage new];
     [self.textStorage addLayoutManager:self.editorTextView.layoutManager];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(baseFontChanged:)
+                                                 name:@"baseFontChanged"
+                                               object:nil];
+    [self refreshFont];
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
@@ -33,12 +39,23 @@
     [self.textStorage updateAllFileHighLight];
 }
 
+- (void)baseFontChanged:(NSNotification *)aNotification
+{
+    [self refreshFont];
+}
+- (void)refreshFont
+{
+    NSFont *font = [[JZFontDisplayManager sharedManager] getFont];
+    self.editorTextView.font = font;
+}
 
 #pragma mark - NSTextViewDelegate
 -(void)textDidChange:(NSNotification *)notification
 {
     //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
+    
+    [self refreshFont];
 }
 
 @end

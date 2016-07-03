@@ -73,7 +73,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithFloat:[font pointSize]] forKey:@"baseFontSize"];
     if ([[NSUserDefaults standardUserDefaults] synchronize])
     {
-        
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"baseFontChanged" object:self userInfo:nil];
     };
 
 }
