@@ -42,6 +42,10 @@
                                                object:nil];
     [self refreshHightLight];
 }
+- (void)viewDidAppear
+{
+    [self.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+}
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {

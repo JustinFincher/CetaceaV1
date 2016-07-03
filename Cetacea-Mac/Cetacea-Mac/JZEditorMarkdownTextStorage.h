@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+/**
+ *  DISCONITUNED
+ */
 @interface JZEditorMarkdownTextStorage : NSTextStorage
 
 /**
