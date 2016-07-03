@@ -59,21 +59,24 @@
 - (void)updateCurrentLineHighLight
 {
     paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
-    [self removeAttribute:NSForegroundColorAttributeName range:paragaphRange];
-    [self addAttribute:NSForegroundColorAttributeName value:[[JZFontDisplayManager sharedManager] getTextColor] range:paragaphRange];
-    
-    //[self proccessCJKWithRange:paragaphRange];
-    [self proccessHeaderTagWithRange:paragaphRange];
-    [self proccessEmphasisTagWithRange:paragaphRange];
+    [self proccessRange:paragaphRange];
 
 }
 - (void)updateAllFileHighLight
 {
-    [self removeAttribute:NSForegroundColorAttributeName range:NSMakeRange(0, self.length)];
-    //[self proccessCJKWithRange:NSMakeRange(0, self.length)];
-    [self proccessHeaderTagWithRange:NSMakeRange(0, self.length)];
-    [self proccessEmphasisTagWithRange:NSMakeRange(0, self.length)];
     
+    [self proccessRange:NSMakeRange(0, self.length)];
+}
+- (void)proccessRange:(NSRange)range
+{
+    [self removeAttribute:NSForegroundColorAttributeName range:range];
+    [self removeAttribute:NSBackgroundColorAttributeName range:range];
+    [self addAttribute:NSForegroundColorAttributeName value:[[JZFontDisplayManager sharedManager] getTextColor] range:paragaphRange];
+    [self proccessHeaderTagWithRange:range];
+    [self proccessCodeBlockTagWithRange:range];
+    [self proccessEmphasisTagWithRange:range];
+    [self proccessItalicTagWithRange:range];
+    [self proccessLinkTagWithRange:range];
 }
 - (void)processEditing
 {
@@ -132,6 +135,50 @@
          [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
      }];
 }
-
+- (void)proccessItalicTagWithRange:(NSRange)Range
+{
+    static NSRegularExpression *ItalicExpression;
+    NSString *pattern = @"\\*(\\w+)\\*";
+    ItalicExpression = ItalicExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+                                                                                     options:0
+                                                                                       error:NULL];
+    
+    [ItalicExpression enumerateMatchesInString:self.string
+                                       options:0 range:Range
+                                    usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
+     {
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+     }];
+}
+- (void)proccessLinkTagWithRange:(NSRange)Range
+{
+    static NSRegularExpression *LinkExpression;
+    NSString *pattern = @"\\[[^\\[]*?\\]\\([^\\)]*\\)";
+    LinkExpression = LinkExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+                                                                                     options:0
+                                                                                       error:NULL];
+    
+    [LinkExpression enumerateMatchesInString:self.string
+                                       options:0 range:Range
+                                    usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
+     {
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+     }];
+}
+- (void)proccessCodeBlockTagWithRange:(NSRange)Range
+{
+    static NSRegularExpression *ShortHeaderExpression;
+    NSString *pattern = @"`{3}\\w+`{3}";
+    ShortHeaderExpression = ShortHeaderExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
+                                                                                 options:0
+                                                                                   error:NULL];
+    
+    [ShortHeaderExpression enumerateMatchesInString:self.string
+                                     options:0 range:Range
+                                  usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
+     {
+         [self addAttribute:NSForegroundColorAttributeName value:[NSColor redColor] range:result.range];
+     }];
+}
 
 @end
