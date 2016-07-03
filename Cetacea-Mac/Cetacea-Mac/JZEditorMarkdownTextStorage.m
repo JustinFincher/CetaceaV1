@@ -59,6 +59,7 @@
 {
     paragaphRange = [self.string paragraphRangeForRange: self.editedRange];
     [self removeAttribute:NSForegroundColorAttributeName range:paragaphRange];
+    //[self setForegroundColor:[NSColor whiteColor]];
     
     [self proccessHeaderTagWithRange:paragaphRange];
     [self proccessEmphasisTagWithRange:paragaphRange];
@@ -80,7 +81,7 @@
 - (void)proccessHeaderTagWithRange:(NSRange)Range
 {
     static NSRegularExpression *iExpression;
-    NSString *pattern = @"#{1,6}";
+    NSString *pattern = @"#{1,6} ";
     iExpression = iExpression ?: [NSRegularExpression regularExpressionWithPattern:pattern
                                                                            options:0
                                                                              error:NULL];

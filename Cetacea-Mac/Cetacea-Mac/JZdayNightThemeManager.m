@@ -9,8 +9,14 @@
 #import "JZdayNightThemeManager.h"
 #import "DateTools.h"
 
-@implementation JZdayNightThemeManager
+@interface JZdayNightThemeManager()
 
+@property (nonatomic,strong) NSTimer *checkSunMovementTimer;
+
+@end
+
+@implementation JZdayNightThemeManager
+@synthesize checkSunMovementTimer;
 #pragma mark Singleton Methods
 
 + (id)sharedManager {
@@ -25,8 +31,27 @@
 - (id)init {
     if (self = [super init])
     {
+        [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(darkModeChanged:) name:@"AppleInterfaceThemeChangedNotification" object:nil];
+        checkSunMovementTimer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(checkSunMovementTimerFired) userInfo:nil repeats:YES];
     }
     return self;
+}
+- (void)checkSunMovementTimerFired
+{
+    if ([[[NSUserDefaults standardUserDefaults]
+         stringForKey:@"dayNightThemeSwithType"] isEqualToString: @"JZDayNightThemeSwithTypeFollowTime"])
+    {
+        //NSLog(@"checkSunMovementTimerFired");
+        [self postThemeChanged:[self getShouldAppliedNSAppearanceName]];
+    }
+}
+-(void)darkModeChanged:(NSNotification *)notif
+{
+    if ([[[NSUserDefaults standardUserDefaults]
+         stringForKey:@"dayNightThemeSwithType"] isEqualToString:@"JZDayNightThemeSwithTypeFollowSystem"])
+    {
+        [self postThemeChanged:[self getShouldAppliedNSAppearanceName]];
+    }
 }
 
 - (void)dealloc {
@@ -103,7 +128,41 @@
     }else if ([dayNightThemeSwithType isEqualToString:@"JZDayNightThemeSwithTypeFollowTime"])
     {
         NSDate *now = [NSDate date];
-        if (now.hour > 7 && now.hour < 18)
+        NSDate *sunrise = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey:@"sunriseTime"];
+        NSDate *sunset = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey:@"sunsetTime"];
+        
+        BOOL isInside;
+        if ([now hour] <= [sunset hour] && [now hour] >= [sunrise hour])
+        {
+            if ([now hour] == [sunset hour])
+            {
+                if ([now minute] <= [sunset minute])
+                {
+                    isInside = YES;
+                }else
+                {
+                    isInside = NO;
+                }
+            }else if ([now hour] == [sunrise hour])
+            {
+                if ([now minute] >= [sunset minute])
+                {
+                    isInside = YES;
+                }else
+                {
+                    isInside = NO;
+                }
+            }
+            else
+            {
+                isInside = YES;
+            }
+        }else
+        {
+            isInside = NO;
+        }
+        
+        if (isInside)
         {
             return @"NSAppearanceNameVibrantLight";
         }else
@@ -114,5 +173,31 @@
     {
         return nil;
     }
+}
+- (void)setSunsetTime:(NSDate *)date
+{
+    [[NSUserDefaults standardUserDefaults] setObject:date forKey:@"sunsetTime"];
+    if ([[NSUserDefaults standardUserDefaults] synchronize])
+    {
+        [self postThemeChanged:[self getShouldAppliedNSAppearanceName]];
+    };
+}
+- (void)setSunriseTime:(NSDate *)date
+{
+    [[NSUserDefaults standardUserDefaults] setObject:date forKey:@"sunriseTime"];
+    if ([[NSUserDefaults standardUserDefaults] synchronize])
+    {
+        [self postThemeChanged:[self getShouldAppliedNSAppearanceName]];
+    };
+}
+- (NSDate *)getSunsetTime
+{
+    NSDate *sunset = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey:@"sunsetTime"];
+    return sunset;
+}
+- (NSDate *)getSunriseTime
+{
+    NSDate *sunrise = (NSDate *)[[NSUserDefaults standardUserDefaults] objectForKey:@"sunriseTime"];
+    return sunrise;
 }
 @end

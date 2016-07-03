@@ -72,4 +72,32 @@ typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType) {
  *  @return the JZDayNightThemeSwithType enum value from User Default
  */
 - (NSUInteger)getLocalStoredJZDayNightThemeSwithTypeIndex;
+
+/**
+ *  set Sun set NSDate for JZDayNightThemeSwithTypeFollowTime
+ *
+ *  @param date NSDate sun set time
+ */
+- (void)setSunsetTime:(NSDate *)date;
+
+/**
+ *  set Sun rise NSDate for JZDayNightThemeSwithTypeFollowTime
+ *
+ *  @param date NSDate sun rise time
+ */
+- (void)setSunriseTime:(NSDate *)date;
+
+/**
+ *  get Sun set Time
+ *
+ *  @return NSDate
+ */
+- (NSDate *)getSunsetTime;
+
+/**
+ *  get Sun rise Time
+ *
+ *  @return NSDate
+ */
+- (NSDate *)getSunriseTime;
 @end
