@@ -8,6 +8,9 @@
 
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 #import "TSMarkdownParser.h"
+#import <AppKit/AppKit.h>
+#import "JZFontDisplayManager.h"
+
 
 @interface JZEditorMarkdownTextParserWithTSBaseParser()
 
@@ -37,6 +40,8 @@
         [self addItalicParsing];
         [self addBoldParsing];
         [self addHeaderParsing];
+        [self addQuoteParsing];
+        [self addImageParsing];
     }
     return self;
 }
@@ -96,6 +101,51 @@
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
          }
+     }];
+}
+- (void)addQuoteParsing
+{
+    NSRegularExpression *QuoteParsing = [NSRegularExpression regularExpressionWithPattern:@"^(\\>{1,3})\\s+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:QuoteParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         
+         [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:2]];
+         if(weakSelf.shouldRemoveTags)
+         {
+             [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
+         }
+     }];
+}
+- (void)addImageParsing
+{
+    NSRegularExpression *ImageParsing = [NSRegularExpression regularExpressionWithPattern:@"\\!\\[[^\\[]*?\\]\\(\\S*\\)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:ImageParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
+         NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
+         
+         NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
+         NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+         
+         [attributedString addAttributes:weakSelfParser.linkAttributes range:linkRange];
+         [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
+//         NSImage *image = [NSImage imageNamed:@"JZImageTemplate"];
+//         
+//         //NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageURL];
+//         
+//         NSTextAttachment *imageAttachment = [NSTextAttachment new];
+//         NSTextAttachmentCell *cell = [[NSTextAttachmentCell alloc] initImageCell:image];
+//         imageAttachment.attachmentCell = cell;
+//         imageAttachment.image = image;
+//         CGFloat size = [[JZFontDisplayManager sharedManager] getFontSize];
+//         NSAttributedString *imgStr = [NSAttributedString attributedStringWithAttachment:imageAttachment];
+//         [attributedString insertAttributedString:imgStr atIndex:match.range.location];
+         
+
      }];
 }
 @end

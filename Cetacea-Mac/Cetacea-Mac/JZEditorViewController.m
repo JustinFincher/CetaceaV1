@@ -11,6 +11,7 @@
 #import "JZFontDisplayManager.h"
 
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
+#import "JZEditorLinkPopoverContentViewController.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
@@ -87,5 +88,29 @@
     [self.editorTextView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:self.editorTextView.string]];
     [self.editorTextView setSelectedRange:self.range];
 }
-
+- (void)textView:(NSTextView *)textView
+   clickedOnCell:(id<NSTextAttachmentCell>)cell
+          inRect:(NSRect)cellFrame
+         atIndex:(NSUInteger)charIndex
+{
+    NSLog(@"hfad");
+}
+- (BOOL)textView:(NSTextView *)aTextView
+   clickedOnLink:(id)link
+         atIndex:(NSUInteger)charIndex
+{
+    NSPopover *linkPopover = [[NSPopover alloc] init];
+    JZEditorLinkPopoverContentViewController *vc = [[JZEditorLinkPopoverContentViewController alloc] init];
+    NSRect rect = [self.editorTextView firstRectForCharacterRange:NSMakeRange(charIndex, 1) actualRange:nil];
+    NSRect windowRect =  [self.editorTextView.window convertRectFromScreen:rect];
+    NSPoint viewPoint  = [self.editorTextView convertPoint:windowRect.origin fromView: nil];
+    vc.parentPopover = linkPopover;
+    [linkPopover setContentSize:NSMakeSize(300.0f, 200.0f)];
+    linkPopover.contentViewController = vc;
+    linkPopover.behavior = NSPopoverBehaviorTransient;
+    [linkPopover showRelativeToRect:NSMakeRect(viewPoint.x, viewPoint.y - [[JZFontDisplayManager sharedManager] getFontSize], windowRect.size.width, windowRect.size.height) ofView:aTextView preferredEdge:NSMinYEdge];
+    
+    [vc loadURL:(NSURL *)link];
+    return YES;
+}
 @end
