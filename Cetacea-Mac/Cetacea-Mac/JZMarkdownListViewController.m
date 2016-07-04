@@ -80,7 +80,7 @@
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
     JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
-    NSLog(@"%@",selectedRow.markdownReference.previewString);
+    //NSLog(@"%@",selectedRow.markdownReference.previewString);
     
     id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
     [strongDelegate rowSelected:selectedRow.markdownReference];

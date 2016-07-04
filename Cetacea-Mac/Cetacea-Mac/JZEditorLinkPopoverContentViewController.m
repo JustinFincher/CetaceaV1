@@ -11,6 +11,7 @@
 
 @interface JZEditorLinkPopoverContentViewController ()<WKNavigationDelegate,NSSharingServicePickerDelegate>
 @property (strong,nonatomic) WKWebView *webView;
+
 @property (weak) IBOutlet NSProgressIndicator *progressIndicator;
 @property (weak) IBOutlet NSView *webViewContainer;
 @property (weak) IBOutlet NSView *toolbarView;
@@ -28,22 +29,26 @@
     // Do view setup here.
     [self.view wantsLayer];
     _isResized = NO;
-    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.webViewContainer.frame.size.width, self.webViewContainer.frame.size.height)];
-    [self.webView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
-    [self.webViewContainer addSubview:self.webView];
-    [self.webView setValue:@(YES) forKey:@"drawsTransparentBackground"];
-    [self.webView setNavigationDelegate:self];
-    self.webView.allowsMagnification = YES;
-    self.webView.allowsBackForwardNavigationGestures = YES;
-    NSLog(@"TOOLBAR %f",_toolbarView.frame.size.height);
 }
-- (void)loadURL:(NSURL *)url
+
+- (void)proccessURL:(NSURL *)url
 {
     self.url = url;
+    if (self.webView == nil)
+    {
+        self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, self.webViewContainer.frame.size.width, self.webViewContainer.frame.size.height)];
+        [self.webView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+        [self.webViewContainer addSubview:self.webView];
+        [self.webView setValue:@(YES) forKey:@"drawsTransparentBackground"];
+        [self.webView setNavigationDelegate:self];
+        self.webView.allowsMagnification = YES;
+        self.webView.allowsBackForwardNavigationGestures = YES;
+    }
     [self.progressIndicator setHidden:NO];
     [self.progressIndicator startAnimation:self];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 }
+
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
 {
     [self.progressIndicator stopAnimation:self];
@@ -51,12 +56,12 @@
 }
 - (IBAction)refreshButtonPressed:(id)sender
 {
-    [self.progressIndicator setHidden:NO];
-    [self.progressIndicator startAnimation:self];
-    [self.webView reload];
+    [self proccessURL:self.url];
 }
 - (IBAction)shareButtonPressed:(NSButton *)sender {
-    NSSharingServicePicker *sharingServicePicker = [[NSSharingServicePicker alloc] initWithItems:[NSArray arrayWithObject:self.url]];
+    NSArray *shareArray;
+    shareArray =  [NSArray arrayWithObject:self.url];
+    NSSharingServicePicker *sharingServicePicker = [[NSSharingServicePicker alloc] initWithItems:shareArray];
     sharingServicePicker.delegate = self;
     [sharingServicePicker showRelativeToRect:[sender bounds]
                                       ofView:sender

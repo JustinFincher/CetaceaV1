@@ -36,7 +36,10 @@
      不要去设置 Storage...
      */
     self.layoutManager = [[JZEditorLayouManager alloc] init];
+    //self.layoutManager.allowsNonContiguousLayout = YES;
     [self.editorTextView.textContainer replaceLayoutManager:self.layoutManager];
+    self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
+                                                NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -53,6 +56,7 @@
 - (void)viewDidAppear
 {
     [self.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    [self.editorTextView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
@@ -91,11 +95,11 @@
 - (void)refreshHightLight
 {
     self.range = self.editorTextView.selectedRange;
-    NSLog(@"________________________________");
-    NSLog(@"RANGE : %lu,%lu",(unsigned long)self.range.location,(unsigned long)self.range.length);
+    //NSLog(@"________________________________");
+    //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.range.location,(unsigned long)self.range.length);
     [self.editorTextView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:self.editorTextView.string]];
     [self.editorTextView setSelectedRange:NSMakeRange(self.range.location, 0)];
-    NSLog(@"RANGE : %lu,%lu",(unsigned long)self.editorTextView.selectedRange.location,(unsigned long)self.editorTextView.selectedRange.length);
+    //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.editorTextView.selectedRange.location,(unsigned long)self.editorTextView.selectedRange.length);
 
 }
 - (void)textView:(NSTextView *)textView
@@ -120,7 +124,8 @@
     linkPopover.behavior = NSPopoverBehaviorTransient;
     [linkPopover showRelativeToRect:NSMakeRect(viewPoint.x, viewPoint.y - [[JZFontDisplayManager sharedManager] getFontSize], windowRect.size.width, windowRect.size.height) ofView:aTextView preferredEdge:NSMinYEdge];
     
-    [vc loadURL:(NSURL *)link];
+        
+    [vc proccessURL:(NSURL *)link];
     return YES;
 }
 @end

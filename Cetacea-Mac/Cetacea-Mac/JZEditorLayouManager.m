@@ -22,8 +22,8 @@
     
     NSUInteger count = rectCount;
     NSRange range = charRange;
-    NSLog(@"rectCount : %lu",(unsigned long)count);
-    NSLog(@"charRange : %lu %lu",(unsigned long)range.location,(unsigned long)range.length);
+    //NSLog(@"rectCount : %lu",(unsigned long)count);
+    //NSLog(@"charRange : %lu %lu",(unsigned long)range.location,(unsigned long)range.length);
     
     
     CGMutablePathRef path = CGPathCreateMutable();

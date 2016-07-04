@@ -42,6 +42,9 @@
         [self addHeaderParsing];
         [self addQuoteParsing];
         [self addImageParsing];
+        [self addLinkParsing];
+        [self addBackTickCodeBlockParsing];
+        [self addTildeCodeBlockParsing];
     }
     return self;
 }
@@ -122,7 +125,7 @@
 {
     NSRegularExpression *ImageParsing = [NSRegularExpression regularExpressionWithPattern:@"\\!\\[[^\\[]*?\\]\\(\\S*\\)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
     __weak TSMarkdownParser *weakSelfParser = self.parser;
-    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ImageParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
          NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
@@ -130,10 +133,50 @@
          
          NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
          NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-         
-         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
-         [attributedString addAttributes:weakSelfParser.linkAttributes range:linkRange];
          [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
+         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
+     }];
+}
+- (void)addLinkParsing
+{
+    NSRegularExpression *LinkParsing = [NSRegularExpression regularExpressionWithPattern:@"\\[[^\\[]*?\\]\\([^\\)]*\\)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:LinkParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
+         NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
+         
+         NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
+         NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+         [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
+         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
+     }];
+}
+- (void)addBackTickCodeBlockParsing
+{
+    NSRegularExpression *CodeBlockParsing = [NSRegularExpression regularExpressionWithPattern:@"(?<!\\\\)(?:\\\\\\\\)*+(`+)(.*?[^`].*?)(\\1)(?!`)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         NSRange range = [match rangeAtIndex:2];
+         
+         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
+         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
+     }];
+}
+- (void)addTildeCodeBlockParsing
+{
+    NSRegularExpression *CodeBlockParsing = [NSRegularExpression regularExpressionWithPattern:@"(?<!\\\\)(?:\\\\\\\\)*+(~+)(.*?[^~].*?)(\\1)(?!~)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         NSRange range = [match rangeAtIndex:2];
+         
+         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
+         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
      }];
 }
 @end

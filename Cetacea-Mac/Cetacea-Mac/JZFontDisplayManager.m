@@ -154,7 +154,7 @@
     NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
     if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
     {
-        return [NSColor colorWithWhite:0.5 alpha:1.0f];
+        return [NSColor colorWithWhite:0.2 alpha:1.0f];
     }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
     {
         return [NSColor colorWithWhite:0.89 alpha:1.0f];
@@ -168,7 +168,7 @@
     NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
     if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
     {
-        return [NSColor whiteColor];
+        return [NSColor colorWithRed:0.4 green:0.4 blue:1.0f alpha:1.0f];
     }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
     {
         return [NSColor blueColor];
@@ -177,5 +177,22 @@
         return [NSColor grayColor];
     }
 }
-
+- (NSColor *)getCodeBlockBackgroundColor
+{
+    return [self getLinkBackgroundColor];
+}
+- (NSColor *)getCodeBlockForegroundColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor colorWithRed:0.2f green:1.0f blue:0.2f alpha:1.0f];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor colorWithRed:0.2f green:1.0f blue:0.2f alpha:1.0f];
+    }else
+    {
+        return [NSColor grayColor];
+    }
+}
 @end

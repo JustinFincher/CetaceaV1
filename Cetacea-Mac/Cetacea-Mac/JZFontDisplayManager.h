@@ -43,4 +43,7 @@
 
 - (NSColor *)getLinkBackgroundColor;
 - (NSColor *)getLinkForegroundColor;
+
+- (NSColor *)getCodeBlockBackgroundColor;
+- (NSColor *)getCodeBlockForegroundColor;
 @end

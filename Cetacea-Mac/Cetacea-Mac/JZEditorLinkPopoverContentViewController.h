@@ -10,6 +10,6 @@
 
 @interface JZEditorLinkPopoverContentViewController : NSViewController
 
-- (void)loadURL:(NSURL *)url;
+- (void)proccessURL:(NSURL *)url;
 @property(weak)NSPopover *parentPopover;
 @end

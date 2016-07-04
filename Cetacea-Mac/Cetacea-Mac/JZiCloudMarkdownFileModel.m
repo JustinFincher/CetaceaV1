@@ -62,7 +62,7 @@
     self.creationDate = [_metaDataItem valueForAttribute:NSMetadataItemFSCreationDateKey];
     self.updatedDate = [_metaDataItem valueForAttribute:NSMetadataItemFSContentChangeDateKey];
     //NSLog(@"%@",self.creationDate);
-    NSLog(@"%@",self.updatedDate);
+    //NSLog(@"%@",self.updatedDate);
 }
 
 - (void)setMetaDataItem:(NSMetadataItem *)metaDataItem

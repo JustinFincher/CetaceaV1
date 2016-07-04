@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0024CC4072562C1D5D133964 /* libPods-Cetacea-MacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EC9094209EF8687630562F /* libPods-Cetacea-MacUITests.a */; };
 		0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */; };
 		0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */; };
 		0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */; };
@@ -46,9 +47,8 @@
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
-		78CF4EA04FC69689921E22D9 /* libPods-Cetacea-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */; };
-		AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */; };
-		E54AF7928CBAF7B9E5C0E23E /* libPods-Cetacea-MacUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */; };
+		A43B483B716AA466BA530A4C /* libPods-Cetacea-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ACB1C0157196A445E55F5D /* libPods-Cetacea-MacTests.a */; };
+		F5F648FDACDA404FD854BFA3 /* libPods-Cetacea-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9CBDEF3FD46F0D35166B66 /* libPods-Cetacea-Mac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,13 +148,13 @@
 		0DAF37491D254A480009C44B /* JZMainListEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainListEditorSplitViewController.h; sourceTree = "<group>"; };
 		0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainListEditorSplitViewController.m; sourceTree = "<group>"; };
 		2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		46EC9094209EF8687630562F /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
 		8BB4A22E1E5E215A04F47165 /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A5CA07EF0CFB2F909F2F29F4 /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacUITests/Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2767D7601198C4F97FCA111 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
-		D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3ACB1C0157196A445E55F5D /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9CBDEF3FD46F0D35166B66 /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */,
-				AB2DC8820A3DAC247349E344 /* libPods-Cetacea-Mac.a in Frameworks */,
+				F5F648FDACDA404FD854BFA3 /* libPods-Cetacea-Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78CF4EA04FC69689921E22D9 /* libPods-Cetacea-MacTests.a in Frameworks */,
+				A43B483B716AA466BA530A4C /* libPods-Cetacea-MacTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E54AF7928CBAF7B9E5C0E23E /* libPods-Cetacea-MacUITests.a in Frameworks */,
+				0024CC4072562C1D5D133964 /* libPods-Cetacea-MacUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,9 +257,9 @@
 			isa = PBXGroup;
 			children = (
 				0D864A2A1D21451300F47613 /* WebKit.framework */,
-				E932941B8AB5CC429DB214E2 /* libPods-Cetacea-Mac.a */,
-				D470BDE44DE9A9EAB973158B /* libPods-Cetacea-MacTests.a */,
-				A761B1029618260660BFAF50 /* libPods-Cetacea-MacUITests.a */,
+				EB9CBDEF3FD46F0D35166B66 /* libPods-Cetacea-Mac.a */,
+				C3ACB1C0157196A445E55F5D /* libPods-Cetacea-MacTests.a */,
+				46EC9094209EF8687630562F /* libPods-Cetacea-MacUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,9 +328,19 @@
 			path = TSMarkdownParser;
 			sourceTree = "<group>";
 		};
+		0D87A54B1D2AB3C900F9DC34 /* Depeated */ = {
+			isa = PBXGroup;
+			children = (
+				0D4189411D2833FA00530FD7 /* JZEditorMarkdownTextStorage.h */,
+				0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */,
+			);
+			name = Depeated;
+			sourceTree = "<group>";
+		};
 		0DAF37411D2510E20009C44B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0D87A54B1D2AB3C900F9DC34 /* Depeated */,
 				0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */,
 				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
 				0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */,
@@ -339,8 +349,6 @@
 				0D4189241D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m */,
 				0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */,
 				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
-				0D4189411D2833FA00530FD7 /* JZEditorMarkdownTextStorage.h */,
-				0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */,
 				0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */,
 				0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */,
 				0D87A5401D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.h */,

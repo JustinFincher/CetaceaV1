@@ -29,6 +29,14 @@
     
     sunriseTimePicker.dateValue = [[JZdayNightThemeManager sharedManager] getSunriseTime];
     sunsetTimePicker.dateValue = [[JZdayNightThemeManager sharedManager] getSunsetTime];
+    
+    if ([[JZdayNightThemeManager sharedManager] getEditPreviewPanelShouldUsingBlurredBackground])
+    {
+        [self.editPreviewPanelUsingBlurCheckButton setState:NSOnState];
+    }else
+    {
+        [self.editPreviewPanelUsingBlurCheckButton setState:NSOffState];
+    }
 }
 
 - (void)viewDidLoad {
