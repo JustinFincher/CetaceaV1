@@ -14,9 +14,9 @@
 #import "JZEditorLinkPopoverContentViewController.h"
 #import "JZEditorLayouManager.h"
 
+
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
-@property (nonatomic,strong) JZEditorMarkdownTextStorage *textStorage;
 
 @property (nonatomic) NSRange range;
 @property (nonatomic,strong) JZEditorLayouManager *layoutManager;
@@ -30,11 +30,13 @@
     [super viewDidLoad];
     // Do view setup here.
     self.editorTextView.delegate = self;
-    self.textStorage = [JZEditorMarkdownTextStorage new];
     
+    /**
+     设置 NSLAYOUTMANAGER 的正确姿势 ： 设置 textContainer 的 LayoutManager
+     不要去设置 Storage...
+     */
     self.layoutManager = [[JZEditorLayouManager alloc] init];
-    [self.editorTextView.textStorage addLayoutManager:self.layoutManager];
-    [self.layoutManager addTextContainer:self.editorTextView.textContainer];
+    [self.editorTextView.textContainer replaceLayoutManager:self.layoutManager];
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -83,22 +85,25 @@
  */
 -(void)textDidChange:(NSNotification *)notification
 {
-    //NSDictionary *userInfo = [NSDictionary dictionaryWithObject:myObject forKey:@"someKey"];
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
     [self refreshHightLight];
 }
 - (void)refreshHightLight
 {
     self.range = self.editorTextView.selectedRange;
+    NSLog(@"________________________________");
+    NSLog(@"RANGE : %lu,%lu",(unsigned long)self.range.location,(unsigned long)self.range.length);
     [self.editorTextView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:self.editorTextView.string]];
-    [self.editorTextView setSelectedRange:self.range];
+    [self.editorTextView setSelectedRange:NSMakeRange(self.range.location, 0)];
+    NSLog(@"RANGE : %lu,%lu",(unsigned long)self.editorTextView.selectedRange.location,(unsigned long)self.editorTextView.selectedRange.length);
+
 }
 - (void)textView:(NSTextView *)textView
    clickedOnCell:(id<NSTextAttachmentCell>)cell
           inRect:(NSRect)cellFrame
          atIndex:(NSUInteger)charIndex
 {
-    NSLog(@"hfad");
+    
 }
 - (BOOL)textView:(NSTextView *)aTextView
    clickedOnLink:(id)link

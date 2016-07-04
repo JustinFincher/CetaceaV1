@@ -15,13 +15,20 @@
               forCharacterRange:(NSRange)charRange
                           color:(NSColor *)color
 {
+    //[super fillBackgroundRectArray:rectArray count:rectCount forCharacterRange:charRange color:color];
+    
     CGFloat halfLineWidth = 4.; // change this to change corners radius
+    
+    
+    NSUInteger count = rectCount;
+    NSRange range = charRange;
+    NSLog(@"rectCount : %lu",(unsigned long)count);
+    NSLog(@"charRange : %lu %lu",(unsigned long)range.location,(unsigned long)range.length);
+    
     
     CGMutablePathRef path = CGPathCreateMutable();
     
-    if (rectCount == 1
-        || (rectCount == 2 && (CGRectGetMaxX(rectArray[1]) < CGRectGetMinX(rectArray[0])))
-        )
+    if (rectCount == 1 || (rectCount == 2 && (CGRectGetMaxX(rectArray[1]) < CGRectGetMinX(rectArray[0]))))
     {
         // 1 rect or 2 rects without edges in contact
         

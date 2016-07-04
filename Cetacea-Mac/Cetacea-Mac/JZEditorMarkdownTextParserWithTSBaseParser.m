@@ -131,21 +131,9 @@
          NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
          NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
          
+         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
          [attributedString addAttributes:weakSelfParser.linkAttributes range:linkRange];
          [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
-//         NSImage *image = [NSImage imageNamed:@"JZImageTemplate"];
-//         
-//         //NSImage *image = [[NSImage alloc] initWithContentsOfURL:imageURL];
-//         
-//         NSTextAttachment *imageAttachment = [NSTextAttachment new];
-//         NSTextAttachmentCell *cell = [[NSTextAttachmentCell alloc] initImageCell:image];
-//         imageAttachment.attachmentCell = cell;
-//         imageAttachment.image = image;
-//         CGFloat size = [[JZFontDisplayManager sharedManager] getFontSize];
-//         NSAttributedString *imgStr = [NSAttributedString attributedStringWithAttachment:imageAttachment];
-//         [attributedString insertAttributedString:imgStr atIndex:match.range.location];
-         
-
      }];
 }
 @end

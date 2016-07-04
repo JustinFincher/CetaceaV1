@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "JZiCloudMarkdownFileModel.h"
 
+
 @interface JZEditorViewController : NSViewController
 @property (weak) IBOutlet NSScrollView *editorScrollView;
 @property (unsafe_unretained) IBOutlet NSTextView *editorTextView;

@@ -30,6 +30,7 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSDictionary<NSString *, id> *monospaceAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *strongAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *emphasisAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *lineBlockAttributes;
 /**
  * standardParser setting for NSLinkAttributeName
  *
