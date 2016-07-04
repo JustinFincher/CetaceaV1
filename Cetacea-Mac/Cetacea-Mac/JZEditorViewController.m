@@ -12,12 +12,14 @@
 
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 #import "JZEditorLinkPopoverContentViewController.h"
+#import "JZEditorLayouManager.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
 @property (nonatomic,strong) JZEditorMarkdownTextStorage *textStorage;
 
 @property (nonatomic) NSRange range;
+@property (nonatomic,strong) JZEditorLayouManager *layoutManager;
 
 @end
 
@@ -29,7 +31,10 @@
     // Do view setup here.
     self.editorTextView.delegate = self;
     self.textStorage = [JZEditorMarkdownTextStorage new];
-    //[self.textStorage addLayoutManager:self.editorTextView.layoutManager];
+    
+    self.layoutManager = [[JZEditorLayouManager alloc] init];
+    [self.editorTextView.textStorage addLayoutManager:self.layoutManager];
+    [self.layoutManager addTextContainer:self.editorTextView.textContainer];
     
     
     [[NSNotificationCenter defaultCenter] addObserver:self

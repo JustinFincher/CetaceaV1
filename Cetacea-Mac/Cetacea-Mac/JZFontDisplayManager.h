@@ -41,4 +41,6 @@
 - (NSColor *)getHeaderColor;
 - (NSColor *)getBoldColor;
 
+- (NSColor *)getLinkBackgroundColor;
+- (NSColor *)getLinkForegroundColor;
 @end

@@ -149,5 +149,33 @@
         return [NSColor grayColor];
     }
 }
+- (NSColor *)getLinkBackgroundColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor colorWithWhite:0.5 alpha:1.0f];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor colorWithWhite:0.89 alpha:1.0f];
+    }else
+    {
+        return [NSColor grayColor];
+    }
+}
+- (NSColor *)getLinkForegroundColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor whiteColor];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor blueColor];
+    }else
+    {
+        return [NSColor grayColor];
+    }
+}
 
 @end
