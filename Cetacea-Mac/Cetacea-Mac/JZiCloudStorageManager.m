@@ -72,7 +72,10 @@
 {
     return _ubiquitousURL;
 }
-
+- (NSURL *)ubiquitousDocumentsURL
+{
+    return [_ubiquitousURL URLByAppendingPathComponent:@"Documents" isDirectory:YES];
+}
 #pragma mark - iCloud Query Notification
 
 - (void)queryDidFinishGathering:(NSNotification *)notification {

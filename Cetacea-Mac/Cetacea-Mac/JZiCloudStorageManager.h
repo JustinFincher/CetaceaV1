@@ -15,6 +15,7 @@
 + (id)sharedManager;
 
 - (NSURL *)ubiquitousURL;
+- (NSURL *)ubiquitousDocumentsURL;
 
 @property (nonatomic, assign) id <JZiCloudStorageManagerDelegate> delegate;
 

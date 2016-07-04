@@ -7,8 +7,10 @@
 //
 
 #import "JZFolderViewController.h"
+#import "JZiCloudFileSystemItem.h"
 
-@interface JZFolderViewController ()
+@interface JZFolderViewController ()<NSOutlineViewDataSource,NSOutlineViewDelegate>
+@property (weak) IBOutlet NSOutlineView *outlineView;
 
 @end
 
@@ -17,6 +19,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    self.outlineView.delegate = self;
+    self.outlineView.dataSource = self;
+}
+- (void)viewDidAppear
+{
+    [[JZiCloudFileSystemItem rootItem] refresh];
+    [self.outlineView reloadData];
+    [self.outlineView expandItem:[JZiCloudFileSystemItem rootItem] expandChildren:YES];
+}
+
+#pragma mark - NSOutlineViewDataSource
+- (NSInteger)outlineView:(NSOutlineView *)outlineView
+  numberOfChildrenOfItem:(id)item
+{
+    return (item == nil) ? 1 : [item numberOfChildren];
+}
+- (BOOL)outlineView:(NSOutlineView *)outlineView
+   isItemExpandable:(id)item
+{
+    return (item == nil) ? YES : ([item numberOfChildren] != -1);
+}
+- (id)outlineView:(NSOutlineView *)outlineView
+            child:(NSInteger)index
+           ofItem:(id)item
+{
+    return (item == nil) ? [JZiCloudFileSystemItem rootItem] : [(JZiCloudFileSystemItem *)item childAtIndex:index];
+}
+- (id)outlineView:(NSOutlineView *)outlineView
+objectValueForTableColumn:(NSTableColumn *)tableColumn
+           byItem:(id)item
+{
+    return (item == nil) ? @"/" : [item relativePath];
+}
+#pragma mark - NSOutlineViewDelegate
+
+- (NSView *)outlineView:(NSOutlineView *)outlineView
+     viewForTableColumn:(NSTableColumn *)tableColumn
+                   item:(id)item
+{
+    if (NO)
+    {
+        NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"HeaderCell" owner:self];
+        view.textField.stringValue = [[item relativePath] uppercaseString];
+        return view;
+    }else
+    {
+        NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"DataCell" owner:self];
+        view.textField.stringValue = [item relativePath];
+        return view;
+    }
+    
+}
+- (CGFloat)outlineView:(NSOutlineView *)outlineView
+     heightOfRowByItem:(id)item
+{
+    return 30.0f;
 }
 
 @end
