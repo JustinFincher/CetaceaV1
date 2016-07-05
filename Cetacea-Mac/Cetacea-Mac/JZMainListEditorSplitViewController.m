@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do view setup here.
 
-    [_folderListViewItem setMaximumThickness:460];
+    [_folderListViewItem setMaximumThickness:600];
     [_folderListViewItem setMinimumThickness:270];
     
     

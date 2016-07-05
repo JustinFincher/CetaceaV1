@@ -189,7 +189,7 @@
         return [NSColor colorWithRed:0.2f green:1.0f blue:0.2f alpha:1.0f];
     }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
     {
-        return [NSColor colorWithRed:0.2f green:1.0f blue:0.2f alpha:1.0f];
+        return [NSColor colorWithRed:0.1f green:0.7f blue:0.1f alpha:1.0f];
     }else
     {
         return [NSColor grayColor];
