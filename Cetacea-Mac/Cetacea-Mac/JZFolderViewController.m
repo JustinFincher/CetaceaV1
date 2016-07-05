@@ -8,6 +8,7 @@
 
 #import "JZFolderViewController.h"
 #import "JZiCloudFileSystemItem.h"
+#import "JZFolderOutlineCellView.h"
 
 @interface JZFolderViewController ()<NSOutlineViewDataSource,NSOutlineViewDelegate>
 @property (weak) IBOutlet NSOutlineView *outlineView;
@@ -65,8 +66,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 //        return view;
     }else
     {
-        NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"DataCell" owner:self];
+        JZFolderOutlineCellView *view = [self.outlineView makeViewWithIdentifier:@"DataCell" owner:self];
         view.textField.stringValue = [item relativePath];
+        view.childCountButton.title = [NSString stringWithFormat:@"%ld",(long)[item numberOfChildrenMD]];
         return view;
     }
     

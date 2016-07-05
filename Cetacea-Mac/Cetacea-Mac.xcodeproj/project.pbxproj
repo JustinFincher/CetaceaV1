@@ -19,6 +19,7 @@
 		0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */; };
 		0D4189431D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */; };
 		0D4FB9BD1D2AFF46001821A2 /* JZiCloudFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB9BC1D2AFF46001821A2 /* JZiCloudFileSystemItem.m */; };
+		0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
@@ -92,6 +93,8 @@
 		0D4189421D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorMarkdownTextStorage.m; sourceTree = "<group>"; };
 		0D4FB9BB1D2AFF46001821A2 /* JZiCloudFileSystemItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileSystemItem.h; sourceTree = "<group>"; };
 		0D4FB9BC1D2AFF46001821A2 /* JZiCloudFileSystemItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileSystemItem.m; sourceTree = "<group>"; };
+		0D4FB9BE1D2B8A85001821A2 /* JZFolderOutlineCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFolderOutlineCellView.h; sourceTree = "<group>"; };
+		0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderOutlineCellView.m; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -285,8 +288,6 @@
 				0D41892D1D27967900530FD7 /* JZFolderViewController.m */,
 				0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */,
 				0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */,
-				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
-				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
 				0D864A1F1D21419F00F47613 /* JZEditorViewController.h */,
 				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
 				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
@@ -370,6 +371,10 @@
 		0DAF37481D2548AB0009C44B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
+				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
+				0D4FB9BE1D2B8A85001821A2 /* JZFolderOutlineCellView.h */,
+				0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -692,6 +697,7 @@
 				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
+				0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */,
 				0D4FB9BD1D2AFF46001821A2 /* JZiCloudFileSystemItem.m in Sources */,
 				0D4189251D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m in Sources */,
 				0D41892B1D27965300530FD7 /* JZFolderListSplitViewController.m in Sources */,

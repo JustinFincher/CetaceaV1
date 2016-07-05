@@ -86,38 +86,17 @@ static NSMutableArray *leafNode = nil;
     
     if (childrenFolderOnly == nil)
     {
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSString *fullPath = [self fullPath];
-        BOOL isDir, valid;
-        
-        valid = [fileManager fileExistsAtPath:fullPath isDirectory:&isDir];
-        
-        if (valid && isDir) {
-            NSArray *array = [fileManager contentsOfDirectoryAtURL:[NSURL fileURLWithPath:fullPath isDirectory:YES]
-                                        includingPropertiesForKeys:[NSArray arrayWithObject:NSURLNameKey]
-                                                           options:NSDirectoryEnumerationSkipsHiddenFiles
-                                                             error:nil];
-            
-            
-            NSUInteger numChildren, i;
-            
-            numChildren = [array count];
-            childrenFolderOnly = [[NSMutableArray alloc] initWithCapacity:numChildren];
-            
-            for (i = 0; i < numChildren; i++)
+        childrenFolderOnly = [[NSMutableArray alloc] initWithCapacity:[[self children] count]];
+        for (NSUInteger i = 0; i < [[self children] count]; i++)
+        {
+            NSString *path = [[[self children] objectAtIndex:i] fullPath];
+            NSURL *url = [NSURL fileURLWithPath:path];
+            BOOL isDirectory;
+            BOOL fileExistsAtPath = [[NSFileManager defaultManager] fileExistsAtPath:[url path] isDirectory:&isDirectory];
+            if (isDirectory && fileExistsAtPath)
             {
-                BOOL isDirectory;
-                BOOL fileExistsAtPath = [[NSFileManager defaultManager] fileExistsAtPath:[[array objectAtIndex:i] path] isDirectory:&isDirectory];
-                if (isDirectory && fileExistsAtPath)
-                {
-                    JZiCloudFileSystemItem *newChild = [[JZiCloudFileSystemItem alloc]
-                                                        initWithPath:[[array objectAtIndex:i] path] parent:self];
-                    [childrenFolderOnly addObject:newChild];
-                }
+                [childrenFolderOnly addObject:[[self children] objectAtIndex:i]];
             }
-        }
-        else {
-            childrenFolderOnly = leafNode;
         }
     }
     return childrenFolderOnly;
@@ -127,39 +106,18 @@ static NSMutableArray *leafNode = nil;
 {
     if (childrenMDOnly == nil)
     {
-        NSFileManager *fileManager = [NSFileManager defaultManager];
-        NSString *fullPath = [self fullPath];
-        BOOL isDir, valid;
-        
-        valid = [fileManager fileExistsAtPath:fullPath isDirectory:&isDir];
-        
-        if (valid && isDir) {
-            NSArray *array = [fileManager contentsOfDirectoryAtURL:[NSURL fileURLWithPath:fullPath isDirectory:YES]
-                                        includingPropertiesForKeys:[NSArray arrayWithObject:NSURLNameKey]
-                                                           options:NSDirectoryEnumerationSkipsHiddenFiles
-                                                             error:nil];
-            
-            
-            NSUInteger numChildren, i;
-            
-            numChildren = [array count];
-            childrenFolderOnly = [[NSMutableArray alloc] initWithCapacity:numChildren];
-            
-            for (i = 0; i < numChildren; i++)
+        childrenMDOnly = [[NSMutableArray alloc] initWithCapacity:[[self children] count]];
+        for (NSUInteger i = 0; i < [[self children] count]; i++)
+        {
+            NSString *path = [[[self children] objectAtIndex:i] fullPath];
+            NSURL *url = [NSURL fileURLWithPath:path];
+            BOOL isDirectory;
+            BOOL fileExistsAtPath = [[NSFileManager defaultManager] fileExistsAtPath:[url path] isDirectory:&isDirectory];
+            BOOL isMarkdown = ([[url pathExtension] compare: @"md"] == NSOrderedSame);
+            if (fileExistsAtPath & isMarkdown)
             {
-                BOOL isDirectory;
-                BOOL fileExistsAtPath = [[NSFileManager defaultManager] fileExistsAtPath:[[array objectAtIndex:i] path] isDirectory:&isDirectory];
-                BOOL isMarkdown = ([[[array objectAtIndex:i] pathExtension] compare: @"jpg"] == NSOrderedSame);
-                if (fileExistsAtPath & isMarkdown)
-                {
-                    JZiCloudFileSystemItem *newChild = [[JZiCloudFileSystemItem alloc]
-                                                        initWithPath:[[array objectAtIndex:i] path] parent:self];
-                    [childrenMDOnly addObject:newChild];
-                }
+                [childrenMDOnly addObject:[[self children] objectAtIndex:i]];
             }
-        }
-        else {
-            childrenMDOnly = leafNode;
         }
     }
     return childrenMDOnly;
@@ -189,6 +147,7 @@ static NSMutableArray *leafNode = nil;
     return [[self childrenFolderOnly] objectAtIndex:n];
 }
 
+
 - (NSInteger)numberOfChildren
 {
     NSArray *tmp = [self children];
@@ -197,6 +156,7 @@ static NSMutableArray *leafNode = nil;
 - (NSInteger)numberOfChildrenMD
 {
     NSArray *tmp = [self childrenMDOnly];
+    
     return (tmp == leafNode) ? (-1) : [tmp count];
 }
 - (NSInteger)numberOfChildrenFolder
