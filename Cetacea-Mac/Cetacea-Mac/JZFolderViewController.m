@@ -26,25 +26,25 @@
 {
     [[JZiCloudFileSystemItem rootItem] refresh];
     [self.outlineView reloadData];
-    [self.outlineView expandItem:[JZiCloudFileSystemItem rootItem] expandChildren:YES];
+    //[self.outlineView expandItem:[JZiCloudFileSystemItem rootItem] expandChildren:YES];
 }
 
 #pragma mark - NSOutlineViewDataSource
 - (NSInteger)outlineView:(NSOutlineView *)outlineView
   numberOfChildrenOfItem:(id)item
 {
-    return (item == nil) ? 1 : [item numberOfChildren];
+    return (item == nil) ? 1 : [item numberOfChildrenFolder];
 }
 - (BOOL)outlineView:(NSOutlineView *)outlineView
    isItemExpandable:(id)item
 {
-    return (item == nil) ? YES : ([item numberOfChildren] != -1);
+    return (item == nil) ? YES : ([item numberOfChildrenFolder] != 0);
 }
 - (id)outlineView:(NSOutlineView *)outlineView
             child:(NSInteger)index
            ofItem:(id)item
 {
-    return (item == nil) ? [JZiCloudFileSystemItem rootItem] : [(JZiCloudFileSystemItem *)item childAtIndex:index];
+    return (item == nil) ? [JZiCloudFileSystemItem rootItem] : [(JZiCloudFileSystemItem *)item childFolderAtIndex:index];
 }
 - (id)outlineView:(NSOutlineView *)outlineView
 objectValueForTableColumn:(NSTableColumn *)tableColumn
@@ -60,9 +60,9 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 {
     if (NO)
     {
-        NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"HeaderCell" owner:self];
-        view.textField.stringValue = [[item relativePath] uppercaseString];
-        return view;
+//        NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"HeaderCell" owner:self];
+//        view.textField.stringValue = [[item relativePath] uppercaseString];
+//        return view;
     }else
     {
         NSTableCellView *view = [self.outlineView makeViewWithIdentifier:@"DataCell" owner:self];
