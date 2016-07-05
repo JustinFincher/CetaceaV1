@@ -14,23 +14,38 @@
 #import "JZEditorLinkPopoverContentViewController.h"
 #import "JZEditorLayouManager.h"
 
+#import "JZEditorRulerView.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
 
 @property (nonatomic) NSRange range;
 @property (nonatomic,strong) JZEditorLayouManager *layoutManager;
+@property (nonatomic,strong) JZEditorRulerView *ruleView;
+
 
 @end
 
 @implementation JZEditorViewController
-@synthesize editorTextView,editorScrollView;
+@synthesize editorTextView,editorScrollView,ruleView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
     self.editorTextView.delegate = self;
     
+    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
+                                                      orientation:NSVerticalRuler];
+    self.editorTextView.rulerView = self.ruleView;
+    self.ruleView.clientView = self.editorTextView;
+    self.editorScrollView.verticalRulerView = self.ruleView;
+    self.editorScrollView.hasVerticalRuler = YES;
+    self.editorScrollView.rulersVisible = YES;
+    
+    
+//    BOOL is1 = self.ruleView.isFlipped ;
+//    BOOL is2 = self.editorScrollView.isFlipped ;
+
     /**
      设置 NSLAYOUTMANAGER 的正确姿势 ： 设置 textContainer 的 LayoutManager
      不要去设置 Storage...
@@ -57,6 +72,8 @@
 {
     [self.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     [self.editorTextView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    self.editorScrollView.rulersVisible = YES;
+    [self.editorTextView setNeedsLayout:YES];
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
@@ -128,4 +145,6 @@
     [vc proccessURL:(NSURL *)link];
     return YES;
 }
+#pragma mark - RulerView
+
 @end

@@ -16,4 +16,5 @@
 @property (weak) IBOutlet NSTextField *updateDateTextField;
 @property (weak) IBOutlet NSImageView *isStarredImageView;
 
+
 @end

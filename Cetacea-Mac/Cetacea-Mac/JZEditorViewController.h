@@ -8,11 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "JZiCloudMarkdownFileModel.h"
-
+#import "JZEditorTextView.h"
 
 @interface JZEditorViewController : NSViewController
 @property (weak) IBOutlet NSScrollView *editorScrollView;
-@property (unsafe_unretained) IBOutlet NSTextView *editorTextView;
+@property (unsafe_unretained) IBOutlet JZEditorTextView *editorTextView;
 
 /**
  *  set current editing Markdown Model (aka a .md file)
