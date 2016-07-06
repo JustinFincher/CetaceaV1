@@ -85,6 +85,10 @@
                       objectForKey:@"baseFontSize"];
     return [size floatValue];
 }
+- (NSFont *)getMonospacedFont
+{
+    return [NSFont fontWithName:@"Courier New" size:[self getFontSize]];
+}
 - (NSFont *)getBoldFont
 {
     NSFont *bold = [[NSFontManager sharedFontManager] fontWithFamily:[self getFontFamilyName]
@@ -190,6 +194,20 @@
     }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
     {
         return [NSColor colorWithRed:0.1f green:0.7f blue:0.1f alpha:1.0f];
+    }else
+    {
+        return [NSColor grayColor];
+    }
+}
+- (NSColor *)getRuleTextForegroundColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor colorWithWhite:1.0f alpha:1.0f];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor colorWithWhite:0.0f alpha:1.0f];
     }else
     {
         return [NSColor grayColor];

@@ -27,9 +27,17 @@
 //        [self wantsLayer];
 //        self.layer.backgroundColor = [NSColor clearColor];
         _textScrollView = scrollView;
-        font = [[JZFontDisplayManager sharedManager] getFont];
+        font = [[JZFontDisplayManager sharedManager] getMonospacedFont];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(dayNightThemeSwitched:)
+                                                     name:@"dayNightThemeSwitched"
+                                                   object:nil];
     }
     return self;
+}
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
+    self.needsDisplay = YES;
 }
 - (NSTextView *)getTextView
 {
@@ -55,7 +63,7 @@
     CGFloat width = self.ruleThickness;
     NSLayoutManager *layoutManager = [self getTextView].layoutManager;
     CGFloat padding = 5.0f;
-    NSColor *textColor = [NSColor yellowColor];
+    NSColor *textColor = [[JZFontDisplayManager sharedManager] getRuleTextForegroundColor];
     
     CTFontRef ctFont = (__bridge CTFontRef)font;
     CGFontRef cgFont = CTFontCopyGraphicsFont(ctFont, nil);

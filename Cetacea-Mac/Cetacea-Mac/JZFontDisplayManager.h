@@ -29,6 +29,7 @@
 
 - (NSFont *)getBoldFont;
 - (NSFont *)getItalicFont;
+- (NSFont *)getMonospacedFont;
 
 /**
  *  set the base font
@@ -46,4 +47,6 @@
 
 - (NSColor *)getCodeBlockBackgroundColor;
 - (NSColor *)getCodeBlockForegroundColor;
+
+- (NSColor *)getRuleTextForegroundColor;
 @end

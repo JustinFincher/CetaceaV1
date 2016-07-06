@@ -78,12 +78,13 @@
 
 - (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
 {
-    NSError *error;
-    self.editorTextView.string = [NSString stringWithContentsOfFile:[currentEditingMarkdown.url path] encoding:NSUTF8StringEncoding error:&error];
-    if (error)
-    {
-        NSLog(@"%@",[error localizedDescription]);
-    }
+//    NSError *error;
+//    self.editorTextView.string = [NSString stringWithContentsOfFile:[currentEditingMarkdown.url path] encoding:NSUTF8StringEncoding error:&error];
+//    if (error)
+//    {
+//        NSLog(@"%@",[error localizedDescription]);
+//    }
+    self.editorTextView.string = currentEditingMarkdown.previewString;
     [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
     [self refreshHightLight];
 }
