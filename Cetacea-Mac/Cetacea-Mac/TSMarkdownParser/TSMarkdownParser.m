@@ -51,7 +51,7 @@ typedef NSFont UIFont;
                              NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getCodeBlockForegroundColor]};
     
     _listAttributes = @[];
-    _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont]}];
+    _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont]}];
     
     _imageAttributes = @{};
     _linkAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
@@ -65,11 +65,7 @@ typedef NSFont UIFont;
                               NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getCodeBlockForegroundColor]};
     _strongAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont]};
     
-#if TARGET_OS_IPHONE
-    _emphasisAttributes = @{ NSFontAttributeName: [UIFont italicSystemFontOfSize:defaultSize] };
-#else
     _emphasisAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont] };
-#endif
 }
 + (instancetype)standardParser {
     TSMarkdownParser *defaultParser = [self new];

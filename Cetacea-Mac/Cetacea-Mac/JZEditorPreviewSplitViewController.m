@@ -37,6 +37,11 @@
                                                object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(addNewButtonPressed:)
+                                                 name:@"addNewButtonPressedNotification"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(editPreviewSwithSegmentSelectedNotification:)
                                                  name:@"editPreviewSwithSegmentSelectedNotification"
                                                object:nil];
@@ -81,6 +86,22 @@
         [self.currentEditingMarkdown saveData];
     }
 }
+- (void)addNewButtonPressed:(NSNotification *) notification
+{
+    if (_editorVC.editorTextView)
+    {
+        NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
+        JZiCloudFileExtensionCetaceaDoc *doc = [[JZiCloudFileExtensionCetaceaDoc alloc] initWithDocPath:docPath];
+        doc.data.markdownString = @"";
+        doc.data.createDate = [NSDate new];
+        doc.data.updateDate = [NSDate new];
+        doc.data.title = @"";
+        doc.data.highLightString = [[NSAttributedString alloc] initWithString:@""];
+        [doc saveData];
+        [self setCurrentEditingMarkdown:doc];
+    }
+}
+
 
 #pragma mark - UI
 - (void)editPreviewSwithSegmentSelectedNotification:(NSNotification *) notification

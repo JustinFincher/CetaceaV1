@@ -14,7 +14,6 @@
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
-
 @property (strong,nonatomic) NSMutableArray *markdownFileArray;
 
 @end
@@ -46,6 +45,8 @@
     }
     JZiCloudFileExtensionCetaceaDoc *markdown = [self.markdownFileArray objectAtIndex:row];
     
+    NSImage *img = [markdown.data.isFavorite boolValue] ? [NSImage imageNamed:@"JZStarFilledTemplate"] : [NSImage imageNamed:@"JZStarNotFilledTemplate"];
+    cellView.isStarredImageView.image = img;
     cellView.titleTextField.stringValue = [markdown getData].title;
     if ([markdown getData].highLightString)
     {
@@ -80,6 +81,8 @@
     id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
     [strongDelegate rowSelected:selectedRow.markdownDocReference];
 }
+
+
 #pragma mark - JZiCloudStorageProcesserDelegate
 
 - (void)iCloudFileProcessed:(NSMutableArray *)markdowns

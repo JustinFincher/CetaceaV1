@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    [_markdownListSplitViewItem setMaximumThickness:270];
-    [_markdownListSplitViewItem setMinimumThickness:270];
+    [_markdownListSplitViewItem setMaximumThickness:300];
+    [_markdownListSplitViewItem setMinimumThickness:300];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(sideBarSegmentSelectedNotification:)

@@ -106,6 +106,23 @@
         return [self getFont];
     }
 }
+- (NSFont *)getBoldMonospacedFont
+{
+    NSFont *bold = [[NSFontManager sharedFontManager] fontWithFamily:@"Courier New"
+                                                              traits:NSBoldFontMask
+                                                              weight:0
+                                                                size:[self getFontSize]];
+    
+    if (bold)
+    {
+        return bold;
+    }
+    else
+    {
+        
+        return [self getFont];
+    }
+}
 - (NSFont *)getItalicFont
 {
     
@@ -216,6 +233,20 @@
     }
 }
 - (NSColor *)getRuleTextForegroundColor
+{
+    NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
+    if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])
+    {
+        return [NSColor colorWithWhite:1.0f alpha:0.8f];
+    }else if ([name isEqualToString:@"NSAppearanceNameVibrantLight"])
+    {
+        return [NSColor colorWithWhite:0.0f alpha:0.2f];
+    }else
+    {
+        return [NSColor grayColor];
+    }
+}
+- (NSColor *)getRuleTextForegroundHighLightedColor
 {
     NSString *name = [[JZdayNightThemeManager sharedManager]getShouldAppliedNSAppearanceName];
     if ([name isEqualToString:@"NSAppearanceNameVibrantDark"])

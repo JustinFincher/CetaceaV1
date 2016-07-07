@@ -41,6 +41,7 @@
 - (NSFont *)getBoldFont;
 - (NSFont *)getItalicFont;
 - (NSFont *)getMonospacedFont;
+- (NSFont *)getBoldMonospacedFont;
 
 #pragma mark - Color
 - (NSColor *)getTextColor;
@@ -54,4 +55,5 @@
 - (NSColor *)getCodeBlockForegroundColor;
 
 - (NSColor *)getRuleTextForegroundColor;
+- (NSColor *)getRuleTextForegroundHighLightedColor;
 @end

@@ -11,7 +11,7 @@
 #import "JZFontDisplayManager.h"
 @import CoreGraphics;
 @implementation JZEditorRulerView
-@synthesize font;
+@synthesize font,boldFont;
 
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -28,6 +28,7 @@
 //        self.layer.backgroundColor = [NSColor clearColor];
         _textScrollView = scrollView;
         font = [[JZFontDisplayManager sharedManager] getMonospacedFont];
+        boldFont = [[JZFontDisplayManager sharedManager] getBoldMonospacedFont];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(dayNightThemeSwitched:)
                                                      name:@"dayNightThemeSwitched"
@@ -64,9 +65,12 @@
     NSLayoutManager *layoutManager = [self getTextView].layoutManager;
     CGFloat padding = 5.0f;
     NSColor *textColor = [[JZFontDisplayManager sharedManager] getRuleTextForegroundColor];
+    NSColor *textHighLighColor = [[JZFontDisplayManager sharedManager] getRuleTextForegroundHighLightedColor];
     
     CTFontRef ctFont = (__bridge CTFontRef)font;
     CGFontRef cgFont = CTFontCopyGraphicsFont(ctFont, nil);
+    CTFontRef ctBoldFont = (__bridge CTFontRef)boldFont;
+    CGFontRef cgBoldFont = CTFontCopyGraphicsFont(ctBoldFont, nil);
     CGContextRef context = [[NSGraphicsContext currentContext] CGContext];
     if (context)
     {
@@ -108,6 +112,11 @@
         
         NSUInteger characterCount = [layoutManager characterIndexForGlyphAtIndex:visibleGlyphRange.location];
         NSUInteger glyphCount = visibleGlyphRange.location;
+        
+        NSUInteger insertionPoint = [[[layoutManager.firstTextView selectedRanges] objectAtIndex:0] rangeValue].location;
+        NSLog(@"%lu %lu %lu %lu",(unsigned long)characterCount,(unsigned long)glyphCount,(unsigned long)insertionPoint,NSMaxRange(visibleGlyphRange));
+
+        
         int lineIndex = 0;
         int lineNum = lineIndex + 1;
         int lastLineNum = 0;
@@ -127,6 +136,17 @@
             {
                 NSRange effectiveRange = NSMakeRange(0, 0);
                 NSRect lineRect = [layoutManager lineFragmentRectForGlyphAtIndex:glyphCount effectiveRange:&effectiveRange withoutAdditionalLayout:YES];
+                
+                if (insertionPoint + 1 > lineRange.location && insertionPoint <= lineRange.location + lineRange.length)
+                {
+                    CGContextSetFillColorWithColor(context, textHighLighColor.CGColor);
+                    CGContextSetFont(context, cgBoldFont);
+                }else
+                {
+                    CGContextSetFillColorWithColor(context, textColor.CGColor);
+                    CGContextSetFont(context, cgFont);
+                }
+                
                 CGFloat y = - NSMinY(lineRect);
                 if ( lastLineNum == lineNum)
                 {

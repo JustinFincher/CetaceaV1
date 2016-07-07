@@ -15,5 +15,6 @@
 @property (weak,nonatomic)NSScrollView *textScrollView;
 
 @property (nonatomic,strong) NSFont *font;
+@property (nonatomic,strong) NSFont *boldFont;
 
 @end

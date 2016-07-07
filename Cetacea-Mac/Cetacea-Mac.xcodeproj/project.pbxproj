@@ -319,8 +319,6 @@
 				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
 				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
 				0D5F324C1D258B3200566B82 /* JZAboutViewController.m */,
-				0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */,
-				0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */,
 				0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */,
 				0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */,
 				0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */,
@@ -410,6 +408,8 @@
 				0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */,
 				0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */,
 				0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */,
+				0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */,
+				0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
