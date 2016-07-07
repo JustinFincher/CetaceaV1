@@ -9,6 +9,7 @@
 #import "JZiCloudStorageProcesser.h"
 #import "JZiCloudStorageManager.h"
 #import "JZiCloudMarkdownFileModel.h"
+#import "JZiCloudFileExtensionCetaceaDataBase.h"
 
 @interface JZiCloudStorageProcesser()<JZiCloudStorageManagerDelegate>
 
@@ -45,17 +46,7 @@
 
 - (void)iCloudFileUpdated:(NSMetadataQuery *)query
 {
-    NSMutableArray *proccessedResultArray = [NSMutableArray array];
-    for (int i = 0; i < [query resultCount]; i++)
-    {
-        NSMetadataItem *item = [query resultAtIndex:i];
-        JZiCloudMarkdownFileModel *markdown = [[JZiCloudMarkdownFileModel alloc] init];
-        [markdown setMetaDataItem:item];
-        [proccessedResultArray addObject:markdown];
-    }
-    
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"updatedDate" ascending:NO];
-    [proccessedResultArray sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    NSMutableArray *proccessedResultArray = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs];
 
     id<JZiCloudStorageProcesserDelegate> strongDelegate = self.delegate;
     [strongDelegate iCloudFileProcessed:proccessedResultArray];

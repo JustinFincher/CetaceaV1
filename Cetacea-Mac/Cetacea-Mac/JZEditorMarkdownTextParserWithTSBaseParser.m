@@ -39,12 +39,16 @@
         shouldRemoveTags = NO;
         [self addItalicParsing];
         [self addBoldParsing];
-        [self addHeaderParsing];
+        [self addAtxShortHeaderParsing];
+        [self addAtxHeaderParsing];
+        [self addSetextHeaderParsing];
         [self addQuoteParsing];
         [self addImageParsing];
         [self addLinkParsing];
         [self addBackTickCodeBlockParsing];
         [self addTildeCodeBlockParsing];
+        [self addListParsing];
+        [self addTabBlockParsing];
     }
     return self;
 }
@@ -85,6 +89,7 @@
     [self.parser addParsingRuleWithRegularExpression:ItalicParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
          [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:3]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
@@ -92,17 +97,51 @@
          }
      }];
 }
-- (void)addHeaderParsing
+- (void)addAtxHeaderParsing
 {
-    NSRegularExpression *HeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"^(#{1,6})\\s*([^#].*)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+    NSRegularExpression *AtxHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"^(#{1,6})\\s+([^#].+)\\s+(#{1,6})$" options:NSRegularExpressionAnchorsMatchLines error:nil];
     __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
-    [self.parser addParsingRuleWithRegularExpression:HeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+    [self.parser addParsingRuleWithRegularExpression:AtxHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.strongAttributes range:[match rangeAtIndex:2]];
+         if([match rangeAtIndex:1].length == [match rangeAtIndex:3].length)
+         {
+             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelfParser.defaultAttributes range:[match rangeAtIndex:3]];
+             if(weakSelf.shouldRemoveTags)
+             {
+                 [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
+             }
+         }
+     }];
+}
+- (void)addAtxShortHeaderParsing
+{
+    NSRegularExpression *AtxShortHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"^(#{1,6})\\s*([^#].+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:AtxShortHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:[match rangeAtIndex:2]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
+         }
+     }];
+}
+- (void)addSetextHeaderParsing
+{
+    NSRegularExpression *SetextHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"(\n)((-{1,}|={1,})\n)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:SetextHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         NSRange firstLineChar = [match rangeAtIndex:1];
+         NSRange firstLine = [attributedString.string lineRangeForRange:firstLineChar];
+         if (firstLine.length == [match rangeAtIndex:2].length)
+         {
+             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:firstLine];
+             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:match.range];
          }
      }];
 }
@@ -177,6 +216,28 @@
          
          [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
          [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
+     }];
+}
+- (void)addListParsing
+{
+    NSRegularExpression *ListParsing = [NSRegularExpression regularExpressionWithPattern:@"^(\t?[\\*\\+\\-]{1})\\s+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
+         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:[match rangeAtIndex:1]];
+     }];
+}
+- (void)addTabBlockParsing
+{
+    NSRegularExpression *ListParsing = [NSRegularExpression regularExpressionWithPattern:@"^[\t]+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+     {
+         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:[match rangeAtIndex:1]];
      }];
 }
 @end

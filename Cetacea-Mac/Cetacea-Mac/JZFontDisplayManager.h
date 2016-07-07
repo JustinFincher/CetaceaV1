@@ -27,10 +27,6 @@
 - (NSString *)getFontFamilyName;
 - (CGFloat)getFontSize;
 
-- (NSFont *)getBoldFont;
-- (NSFont *)getItalicFont;
-- (NSFont *)getMonospacedFont;
-
 /**
  *  set the base font
  *
@@ -38,6 +34,15 @@
  */
 - (void)setFont:(NSFont *)font;
 
+#pragma mark - Font
+
+- (NSFont *)getHeaderFont;
+
+- (NSFont *)getBoldFont;
+- (NSFont *)getItalicFont;
+- (NSFont *)getMonospacedFont;
+
+#pragma mark - Color
 - (NSColor *)getTextColor;
 - (NSColor *)getHeaderColor;
 - (NSColor *)getBoldColor;

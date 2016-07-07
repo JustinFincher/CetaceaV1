@@ -7,12 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudMarkdownFileModel.h"
+#import "JZiCloudFileExtensionCetaceaDoc.h"
 
 @interface JZMarkdownListTableCellView : NSTableCellView
 @property (weak) IBOutlet NSTextField *contentTextField;
 @property (weak) IBOutlet NSTextField *titleTextField;
-@property (weak) JZiCloudMarkdownFileModel *markdownReference;
+@property (weak) JZiCloudFileExtensionCetaceaDoc *markdownDocReference;
 @property (weak) IBOutlet NSTextField *updateDateTextField;
 @property (weak) IBOutlet NSImageView *isStarredImageView;
 

@@ -38,13 +38,7 @@
         
         self.metadataQuery = [[NSMetadataQuery alloc] init];
         [self.metadataQuery setSearchScopes:[NSArray arrayWithObject:NSMetadataQueryUbiquitousDocumentsScope]];
-        [self.metadataQuery setPredicate:[NSPredicate predicateWithFormat:@"%K like '*.md'", NSMetadataItemFSNameKey]];
-//        
-//        NSSortDescriptor *sortDescriptor =
-//        [[NSSortDescriptor alloc] initWithKey:(id)kMDItemDisplayName
-//                                     ascending:NO]; //means recent first
-//        NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
-//        [self.metadataQuery setSortDescriptors:sortDescriptors];
+        [self.metadataQuery setPredicate:[NSPredicate predicateWithFormat:@"%K like '*'", NSMetadataItemFSNameKey]];
 
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(queryDidFinishGathering:)
@@ -76,6 +70,10 @@
 {
     return [_ubiquitousURL URLByAppendingPathComponent:@"Documents" isDirectory:YES];
 }
+- (NSURL *)ubiquitousDocumentsCetaceaURL
+{
+    return [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"Cetacea" isDirectory:YES];
+}
 #pragma mark - iCloud Query Notification
 
 - (void)queryDidFinishGathering:(NSNotification *)notification {
@@ -99,7 +97,6 @@
 }
 
 - (void)loadData:(NSMetadataQuery *)query {
-    //[self.backups removeAllObjects];
     
     id<JZiCloudStorageManagerDelegate> strongDelegate = self.delegate;
     [strongDelegate iCloudFileUpdated:query];

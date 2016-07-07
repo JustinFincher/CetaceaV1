@@ -38,6 +38,16 @@
                                              selector:@selector(dayNightThemeSwitched:)
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
+    
+//    
+//    NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
+//    JZiCloudFileExtensionCetaceaDoc *doc = [[JZiCloudFileExtensionCetaceaDoc alloc] initWithDocPath:docPath];
+//    doc.data.markdownString = @"HASSFDFDS";
+//    doc.data.createDate = [NSDate new];
+//    doc.data.updateDate = [NSDate new];
+//    doc.data.title = @"HASSFDFDS";
+//    doc.data.highLightString = [[NSAttributedString alloc] initWithString:@"HASFSDFSDFDS"];
+//    [doc saveData];
 
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
@@ -46,7 +56,9 @@
 }
 - (IBAction)addNewButtonPressed:(NSButton *)sender
 {
-    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"addNewButtonPressedNotification" object:self userInfo:nil];
+
 }
 - (IBAction)siderBarSegmentSelected:(NSSegmentedControl *)sender
 {

@@ -25,6 +25,7 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *headerAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *listAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *quoteAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZheaderAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *imageAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *linkAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *monospaceAttributes;

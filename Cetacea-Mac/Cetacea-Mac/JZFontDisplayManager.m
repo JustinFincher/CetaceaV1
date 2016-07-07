@@ -123,7 +123,23 @@
         return [self getFont];
     }
 }
-
+- (NSFont *)getHeaderFont
+{
+    NSFont *header = [[NSFontManager sharedFontManager] fontWithFamily:[self getFontFamilyName]
+                                                              traits:NSBoldFontMask
+                                                              weight:0
+                                                                size:[self getFontSize]*1.5];
+    
+    if (header)
+    {
+        return header;
+    }
+    else
+    {
+        
+        return [self getFont];
+    }
+}
 - (void)setFont:(NSFont *)font
 {
     

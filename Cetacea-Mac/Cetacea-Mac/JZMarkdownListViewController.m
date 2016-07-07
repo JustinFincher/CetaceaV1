@@ -32,11 +32,6 @@
     [JZiCloudStorageProcesser sharedManager];
     
     [self.markdownListTableView reloadData];
-//    NSLog(@"self.markdownListTableView.numberOfRows %ld",(long)self.markdownListTableView.numberOfRows);
-//    if (self.markdownListTableView.numberOfRows > 0)
-//    {
-//        [self.markdownListTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:1] byExtendingSelection:NO];
-//    }
 }
 
 #pragma mark - NSTableViewDelegate
@@ -49,23 +44,25 @@
     {
 
     }
-    JZiCloudMarkdownFileModel *markdown = [self.markdownFileArray objectAtIndex:row];
-    cellView.titleTextField.stringValue = [markdown.url lastPathComponent];
-    if (markdown.previewString)
+    JZiCloudFileExtensionCetaceaDoc *markdown = [self.markdownFileArray objectAtIndex:row];
+    
+    cellView.titleTextField.stringValue = [markdown getData].title;
+    if ([markdown getData].highLightString)
     {
-        cellView.contentTextField.stringValue = markdown.previewString;
+        cellView.contentTextField.attributedStringValue = markdown.data.highLightString;
     }else
     {
         cellView.contentTextField.stringValue = @"";
     }
-    cellView.markdownReference = markdown;
+    cellView.markdownDocReference = markdown;
     
-    cellView.updateDateTextField.stringValue = markdown.updatedDate.timeAgoSinceNow;
+    cellView.updateDateTextField.stringValue = [markdown getData].updateDate.timeAgoSinceNow;
     return cellView;
 }
 
 
-- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+{
     if (self.markdownFileArray)
         return [self.markdownFileArray count];
     else
@@ -80,10 +77,8 @@
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
     JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
-    //NSLog(@"%@",selectedRow.markdownReference.previewString);
-    
     id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
-    [strongDelegate rowSelected:selectedRow.markdownReference];
+    [strongDelegate rowSelected:selectedRow.markdownDocReference];
 }
 #pragma mark - JZiCloudStorageProcesserDelegate
 

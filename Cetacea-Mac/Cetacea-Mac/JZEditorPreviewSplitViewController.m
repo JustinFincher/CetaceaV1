@@ -57,7 +57,7 @@
     [self refreshEditPreviewBackgroundView];
 }
 #pragma mark - Text Editing
-- (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
     if (_currentEditingMarkdown != currentEditingMarkdown)
     {
@@ -74,8 +74,11 @@
 {
     if (_editorVC.editorTextView)
     {
-        NSError *error;
-        [[_editorVC.editorTextView string] writeToFile:[self.currentEditingMarkdown.url path] atomically:YES encoding:NSUTF8StringEncoding error:&error];
+        self.currentEditingMarkdown.data.markdownString = _editorVC.editorTextView.string;
+        self.currentEditingMarkdown.data.highLightString = _editorVC.editorTextView.attributedString;
+        self.currentEditingMarkdown.data.updateDate = [NSDate new];
+        self.currentEditingMarkdown.data.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
+        [self.currentEditingMarkdown saveData];
     }
 }
 

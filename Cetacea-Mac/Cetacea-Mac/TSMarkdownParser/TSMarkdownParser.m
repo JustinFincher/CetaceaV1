@@ -40,21 +40,15 @@ typedef NSFont UIFont;
     self.defaultAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
                                 NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getTextColor]};
     
-#if TARGET_OS_TV
-    _headerAttributes = @[ @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:76] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:57] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:48] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:40] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:36] },
-                           @{ NSFontAttributeName: [UIFont boldSystemFontOfSize:32] } ];
-#else
     _headerAttributes = @[ @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
-                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] } ];
-#endif
+                           @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] }];
+    
+    _JZheaderAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getHeaderFont],
+                             NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getCodeBlockForegroundColor]};
     
     _listAttributes = @[];
     _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont]}];

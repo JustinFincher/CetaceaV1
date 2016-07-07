@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudMarkdownFileModel.h"
+#import "JZiCloudFileExtensionCetaceaDoc.h"
 #import "JZEditorTextView.h"
 
 @interface JZEditorViewController : NSViewController
@@ -19,6 +19,6 @@
  *
  *  @param currentEditingMarkdown a JZiCloudMarkdownFileModel
  */
-- (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown;
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown;
 
 @end

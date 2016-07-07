@@ -88,7 +88,7 @@
 }
 
 #pragma mark - JZMarkdownListViewDelegate
-- (void)rowSelected:(JZiCloudMarkdownFileModel *)markdown
+- (void)rowSelected:(JZiCloudFileExtensionCetaceaDoc *)markdown
 {
     JZEditorPreviewSplitViewController *editorPreviewSplitVC = (JZEditorPreviewSplitViewController *)_editorViewItem.viewController;
     [editorPreviewSplitVC setCurrentEditingMarkdown:markdown];

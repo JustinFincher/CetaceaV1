@@ -33,10 +33,12 @@
     [super viewDidLoad];
     // Do view setup here.
     self.editorTextView.delegate = self;
+    self.editorTextView.wantsLayer = YES;
     
     self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
                                                       orientation:NSVerticalRuler];
     self.editorTextView.rulerView = self.ruleView;
+    self.editorTextView.automaticDashSubstitutionEnabled = NO;
     self.ruleView.clientView = self.editorTextView;
     self.editorScrollView.verticalRulerView = self.ruleView;
     self.editorScrollView.hasVerticalRuler = YES;
@@ -74,9 +76,10 @@
     [self.editorTextView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     self.editorScrollView.rulersVisible = YES;
     [self.editorTextView setNeedsLayout:YES];
+     self.editorTextView.layoutManager.allowsNonContiguousLayout = YES;
 }
 
-- (void)setCurrentEditingMarkdown:(JZiCloudMarkdownFileModel *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
 //    NSError *error;
 //    self.editorTextView.string = [NSString stringWithContentsOfFile:[currentEditingMarkdown.url path] encoding:NSUTF8StringEncoding error:&error];
@@ -84,7 +87,7 @@
 //    {
 //        NSLog(@"%@",[error localizedDescription]);
 //    }
-    self.editorTextView.string = currentEditingMarkdown.previewString;
+    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.data.highLightString];
     [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
     [self refreshHightLight];
 }
