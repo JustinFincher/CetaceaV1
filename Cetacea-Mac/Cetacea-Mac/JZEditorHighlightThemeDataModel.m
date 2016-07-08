@@ -9,7 +9,7 @@
 #import "JZEditorHighlightThemeDataModel.h"
 
 @implementation JZEditorHighlightThemeDataModel
-@synthesize themeName;
+@synthesize themeName,previewJPG;
 - (id)initWithDefault
 {
     self=  [super init];
@@ -23,6 +23,7 @@
     if (self = [super init])
     {
         self.themeName = [decoder decodeObjectForKey:@"themeName"];
+        self.previewJPG = [decoder decodeObjectForKey:@"previewJPG"];
     }
     return self;
 }
@@ -30,5 +31,6 @@
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
     [encoder encodeObject:themeName forKey:@"themeName"];
+    [encoder encodeObject:previewJPG forKey:@"previewJPG"];
 }
 @end

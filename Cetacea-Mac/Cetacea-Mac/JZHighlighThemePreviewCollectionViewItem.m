@@ -9,32 +9,47 @@
 #import "JZHighlighThemePreviewCollectionViewItem.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem ()
-@property (weak) IBOutlet NSView *previewContentView;
+
+@property (nonatomic,strong) NSShadow *shadow;
+@property (weak) IBOutlet NSView *shadowView;
 
 @end
 
 @implementation JZHighlighThemePreviewCollectionViewItem
-@synthesize previewContentView;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do view setup here.
+- (void)initWithisAddButton:(BOOL)isAdd
+                      Image:(NSImage *)img
+      backgroundShadowColor:(NSColor *)color
+                  themeName:(NSString *)string
+{
     self.view.wantsLayer = YES;
-    previewContentView.wantsLayer = YES;
-    previewContentView.layer.masksToBounds = NO;
-    previewContentView.layer.backgroundColor = [NSColor whiteColor].CGColor;
-    if (previewContentView.layer)
+    [_themePic setWantsLayer:YES];
+    _themePic.layer.masksToBounds = YES;
+    
+    if (_shadow == nil)
     {
-        [previewContentView.layer setCornerRadius:5.0];
-        NSShadow *dropShadow = [[NSShadow alloc] init];
-        [dropShadow setShadowColor:[NSColor colorWithWhite:0.0f alpha:0.3f]];
-        [dropShadow setShadowOffset:NSMakeSize(0, -3.0)];
-        [dropShadow setShadowBlurRadius:10.0];
-        [previewContentView setShadow: dropShadow];
+        _shadow = [[NSShadow alloc] init];
     }
-    if (self.isAddState)
+    [_shadow setShadowOffset:NSMakeSize(0, -3.0)];
+    [_shadow setShadowBlurRadius:10.0f];
+    if (isAdd)
     {
+        self.themeName.stringValue = @"Add New";
+        self.themePic.image = [NSImage imageNamed:@"JZAddNewTheme"];
+        _shadow.shadowColor = [NSColor blueColor];
+    }else
+    {
+        self.themeName.stringValue = string;
+        self.themePic.image = ((img == nil) ? [NSImage imageNamed:@"JZPlaceHolderTheme"] : img);
+        _shadow.shadowColor = color;
     }
-}
 
+    [self.shadowView setWantsLayer:YES];
+    self.shadowView.layer.backgroundColor = [NSColor whiteColor].CGColor;
+    self.shadowView.layer.masksToBounds = NO;
+    [self.shadowView setShadow:_shadow];
+    [_themePic.layer setCornerRadius:5.0];
+    _themePic.layer.masksToBounds = YES;
+
+}
 @end

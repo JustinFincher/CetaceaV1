@@ -87,5 +87,9 @@
     }
     
 }
+- (NSImage *)getPreviewImage
+{
+    return self.data.previewJPG;
+}
 
 @end

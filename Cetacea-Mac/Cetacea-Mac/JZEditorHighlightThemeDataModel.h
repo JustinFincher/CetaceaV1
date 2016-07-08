@@ -14,6 +14,7 @@
 - (id)initWithDefault;
 
 @property (nonatomic,strong) NSString *themeName;
+@property (nonatomic,strong) NSImage *previewJPG;
 
 #pragma mark - View background color
 @property (nonatomic,strong) JZColorDataModel *lightTextViewBackgroundColor;

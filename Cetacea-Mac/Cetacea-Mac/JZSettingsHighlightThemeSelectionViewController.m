@@ -69,16 +69,20 @@
      itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
     JZHighlighThemePreviewCollectionViewItem *item = [collectionView makeItemWithIdentifier:@"JZHighlighThemePreviewCollectionViewItem" forIndexPath:indexPath];
-    
-    if (indexPath.item == 0)
+    BOOL isAddButton = (indexPath.item == 0);
+    JZiCloudFileExtensionCetaceaThemeDoc *doc;
+    NSImage *img;
+    NSString *themeName;
+    NSColor *shadowColor;
+    if (!isAddButton)
     {
-        item.isAddState = YES;
-    }else
-    {
-        JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:indexPath.item - 1];
-        item.themeName.stringValue = doc.data.themeName;
+        doc = [self.themeArray objectAtIndex:indexPath.item - 1];
+        themeName = doc.data.themeName;
+        img = [doc getPreviewImage];
+        shadowColor = [doc.data.darkTextViewBackgroundColor colorFromSelf];
     }
-    
+
+    [item initWithisAddButton:isAddButton Image:img backgroundShadowColor:shadowColor themeName:themeName];
     return item;
 }
 
@@ -99,7 +103,8 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
             [self createNewAndShow];
         }else
         {
-            
+            JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:(path.item - 1)];
+            [self showThemeDoc:doc];
         }
     }
 }
@@ -109,8 +114,12 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
 {
     JZiCloudFileExtensionCetaceaThemeDoc *new = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
     [self reload];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"showiCloudFileExtensionCetaceaThemeDocEditPanel" object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:new,@"doc", nil]];
+    [self showThemeDoc:new];
     
+}
+- (void)showThemeDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"showiCloudFileExtensionCetaceaThemeDocEditPanel" object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:doc,@"doc", nil]];
 }
 
 

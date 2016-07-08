@@ -12,5 +12,9 @@
 @property (weak) IBOutlet NSTextField *themeName;
 @property (weak) IBOutlet NSImageView *themePic;
 @property (nonatomic) BOOL isAddState;
-
+@property (nonatomic,strong) NSColor *shadowColor;
+- (void)initWithisAddButton:(BOOL)isAdd
+                      Image:(NSImage *)img
+      backgroundShadowColor:(NSColor *)color
+                  themeName:(NSString *)string;
 @end
