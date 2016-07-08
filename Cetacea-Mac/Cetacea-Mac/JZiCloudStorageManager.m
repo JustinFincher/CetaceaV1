@@ -74,6 +74,10 @@
 {
     return [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"Cetacea" isDirectory:YES];
 }
+- (NSURL *)ubiquitousDocumentsHighlightThemesURL
+{
+    return [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"HighLightThemes" isDirectory:YES];
+}
 #pragma mark - iCloud Query Notification
 
 - (void)queryDidFinishGathering:(NSNotification *)notification {

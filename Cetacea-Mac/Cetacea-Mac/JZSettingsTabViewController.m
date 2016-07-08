@@ -40,6 +40,7 @@
     [self.noShadowTabVIew.window standardWindowButton:NSWindowZoomButton].enabled = NO;
     [self.noShadowTabVIew.window setStyleMask:[self.noShadowTabVIew.window styleMask] & ~NSResizableWindowMask];
     self.view.window.appearance = [NSAppearance appearanceNamed:[[JZdayNightThemeManager sharedManager] getShouldAppliedNSAppearanceName]];
+    self.view.layer.cornerRadius = 20.0f;
 }
 
 -(void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem

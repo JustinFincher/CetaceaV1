@@ -114,7 +114,7 @@
         NSUInteger glyphCount = visibleGlyphRange.location;
         
         NSUInteger insertionPoint = [[[layoutManager.firstTextView selectedRanges] objectAtIndex:0] rangeValue].location;
-        NSLog(@"%lu %lu %lu %lu",(unsigned long)characterCount,(unsigned long)glyphCount,(unsigned long)insertionPoint,NSMaxRange(visibleGlyphRange));
+        //NSLog(@"%lu %lu %lu %lu",(unsigned long)characterCount,(unsigned long)glyphCount,(unsigned long)insertionPoint,NSMaxRange(visibleGlyphRange));
 
         
         int lineIndex = 0;

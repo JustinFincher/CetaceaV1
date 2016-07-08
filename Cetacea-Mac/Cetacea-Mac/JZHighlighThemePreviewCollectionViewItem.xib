@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JZHighlighThemePreviewCollectionViewItem">
+            <connections>
+                <outlet property="previewContentView" destination="F8U-Wy-VfB" id="cFg-2l-Sch"/>
+                <outlet property="themeName" destination="r0s-rU-PeA" id="KnJ-N8-wzq"/>
+                <outlet property="themePic" destination="vxj-GX-U1N" id="jAb-mx-AkY"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="F8U-Wy-VfB">
+                    <rect key="frame" x="48" y="40" width="384" height="205"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vxj-GX-U1N">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="217"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Kj4-JK-g2W"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vxj-GX-U1N" secondAttribute="trailing" id="FJt-gi-RzY"/>
+                        <constraint firstAttribute="bottom" secondItem="vxj-GX-U1N" secondAttribute="bottom" id="Lit-f4-4fA"/>
+                        <constraint firstItem="vxj-GX-U1N" firstAttribute="leading" secondItem="F8U-Wy-VfB" secondAttribute="leading" id="U44-Fs-0DM"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-rU-PeA">
+                    <rect key="frame" x="198" y="9" width="85" height="26"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Theme Name" id="cJu-tR-OSR">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="F8U-Wy-VfB" secondAttribute="bottom" constant="40" id="DH6-LQ-dhW"/>
+                <constraint firstAttribute="bottom" secondItem="r0s-rU-PeA" secondAttribute="bottom" constant="9" id="Ejd-KG-ArC"/>
+                <constraint firstItem="r0s-rU-PeA" firstAttribute="top" secondItem="F8U-Wy-VfB" secondAttribute="bottom" constant="5" id="U2m-mx-jNI"/>
+                <constraint firstItem="F8U-Wy-VfB" firstAttribute="firstBaseline" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="27" id="dk6-pc-4P4"/>
+                <constraint firstItem="F8U-Wy-VfB" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="f1c-X7-JbM"/>
+                <constraint firstItem="r0s-rU-PeA" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="xbz-ak-SQ5"/>
+                <constraint firstItem="F8U-Wy-VfB" firstAttribute="width" secondItem="Hz6-mo-xeY" secondAttribute="width" multiplier="0.8" id="znW-3x-zty"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="EKy-nd-HbG" customClass="JZHighlighThemePreviewCollectionViewItem"/>
+    </objects>
+</document>

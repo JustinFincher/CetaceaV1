@@ -9,12 +9,16 @@
 #import "JZSettingsApperanceViewController.h"
 #import "JZdayNightThemeManager.h"
 #import "DateTools.h"
+#import "JZiCloudFileExtensionCetaceaThemeDoc.h"
+#import "JZSettingsHighlightThemeEditViewController.h"
+
 @interface JZSettingsApperanceViewController ()
 @property (weak) IBOutlet NSPopUpButton *lightDarkThemeSwitchPopup;
 @property (weak) IBOutlet NSButton *editPreviewPanelUsingBlurCheckButton;
 
 @property (weak) IBOutlet NSDatePicker *sunriseTimePicker;
 @property (weak) IBOutlet NSDatePicker *sunsetTimePicker;
+@property (weak) IBOutlet NSView *highlighThemeContainerView;
 
 @end
 
@@ -42,11 +46,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showEditPanel:) name:@"showiCloudFileExtensionCetaceaThemeDocEditPanel" object:nil];
     
+}
+- (void)showEditPanel:(NSNotification *)aNotification
+{
+    NSDictionary *dict = [aNotification userInfo];
+    JZiCloudFileExtensionCetaceaThemeDoc *doc = [dict valueForKey:@"doc"];
+    
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    JZSettingsHighlightThemeEditViewController *vc = [sb instantiateControllerWithIdentifier:@"JZSettingsHighlightThemeEditViewController"];
+    [self presentViewControllerAsSheet:vc];
 }
 - (CGSize)preferredMinimumSize
 {
-    return CGSizeMake(500, 220);
+    return CGSizeMake(800, 600);
 }
 - (IBAction)editPreviewPanelUsingBlurredBackground:(NSButton *)sender
 {
