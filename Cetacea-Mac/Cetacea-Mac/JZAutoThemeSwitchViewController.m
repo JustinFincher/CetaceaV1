@@ -32,9 +32,11 @@
     if ([name isEqualToString: @"NSAppearanceNameVibrantDark"] )
     {
         [self setBackgroundColor:[NSColor colorWithWhite:0.2 alpha:1.0]];
+        //[self.view setAppearance:[NSAppearance appearanceNamed:name]];
     }else if ([name isEqualToString: @"NSAppearanceNameVibrantLight"] )
     {
         [self setBackgroundColor:[NSColor colorWithWhite:0.9 alpha:1.0]];
+        //[self.view setAppearance:[NSAppearance appearanceNamed:name]];
     }
 }
     

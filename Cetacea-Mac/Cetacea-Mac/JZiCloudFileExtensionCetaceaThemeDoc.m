@@ -69,13 +69,14 @@
     
     [self createDataPath];
     
+    _data.previewJPG = [self getPreviewImage];
+    
     NSString *dataPath = [self.docPath stringByAppendingPathComponent:@"data.plist"];
     NSMutableData *data = [[NSMutableData alloc] init];
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     [archiver encodeObject:_data forKey:@"Data"];
     [archiver finishEncoding];
     [data writeToFile:dataPath atomically:YES];
-    
 }
 - (void)deleteDoc {
     
@@ -89,7 +90,43 @@
 }
 - (NSImage *)getPreviewImage
 {
-    return self.data.previewJPG;
+    NSTextView *pageView = [[NSTextView alloc] initWithFrame:NSMakeRect(0, 0, 200, 160)];
+    pageView.string = @"TEST";
+    
+    float scale = 2;
+    float width = scale * pageView.bounds.size.width;
+    float height = scale * pageView.bounds.size.height;
+    
+    NSRect targetRect = NSMakeRect(0.0, 0.0, width, height);
+    NSBitmapImageRep *bitmapRep;
+    
+    bitmapRep = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:nil
+                                                        pixelsWide:targetRect.size.width
+                                                        pixelsHigh:targetRect.size.height
+                                                     bitsPerSample:8
+                                                   samplesPerPixel:4
+                                                          hasAlpha:YES
+                                                          isPlanar:NO
+                                                    colorSpaceName:NSCalibratedRGBColorSpace
+                                                      bitmapFormat:0
+                                                       bytesPerRow:(4 * targetRect.size.width)
+                                                      bitsPerPixel:32];
+    
+    [NSGraphicsContext saveGraphicsState];
+    
+    NSGraphicsContext *graphicsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmapRep];
+    [NSGraphicsContext setCurrentContext:graphicsContext];
+    CGContextScaleCTM(graphicsContext.graphicsPort, scale, scale);
+    
+    [pageView displayRectIgnoringOpacity:pageView.bounds inContext:graphicsContext];
+    
+    [NSGraphicsContext restoreGraphicsState];
+    
+    NSImage *image = [[NSImage alloc] initWithSize:bitmapRep.size];
+    [image addRepresentation:bitmapRep];
+    
+    return image;
+    //return self.data.previewJPG;
 }
 
 @end
