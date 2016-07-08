@@ -62,6 +62,11 @@
 		0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */; };
 		0D9D8FD71D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */; };
 		0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FDA1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m */; };
+		0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */; };
+		0D9D8FE21D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */; };
+		0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */; };
+		0D9D8FE81D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */; };
+		0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */; };
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
@@ -194,6 +199,16 @@
 		0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaThemeDataBase.m; sourceTree = "<group>"; };
 		0D9D8FD91D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsHighlightThemeEditViewController.h; sourceTree = "<group>"; };
 		0D9D8FDA1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsHighlightThemeEditViewController.m; sourceTree = "<group>"; };
+		0D9D8FDC1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewTagCellView.h; sourceTree = "<group>"; };
+		0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewTagCellView.m; sourceTree = "<group>"; };
+		0D9D8FE01D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewSyntaxCellView.h; sourceTree = "<group>"; };
+		0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewSyntaxCellView.m; sourceTree = "<group>"; };
+		0D9D8FE31D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewLightCellView.h; sourceTree = "<group>"; };
+		0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewLightCellView.m; sourceTree = "<group>"; };
+		0D9D8FE61D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewDarkCellView.h; sourceTree = "<group>"; };
+		0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewDarkCellView.m; sourceTree = "<group>"; };
+		0D9D8FFC1D3018B2005F91F6 /* JZColorSelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZColorSelectionButton.h; sourceTree = "<group>"; };
+		0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZColorSelectionButton.m; sourceTree = "<group>"; };
 		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
 		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
@@ -411,6 +426,32 @@
 			name = HighlightColorStorage;
 			sourceTree = "<group>";
 		};
+		0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D8FDC1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.h */,
+				0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */,
+				0D9D8FE01D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.h */,
+				0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */,
+				0D9D8FE31D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.h */,
+				0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */,
+				0D9D8FE61D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.h */,
+				0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */,
+				0D9D8FFC1D3018B2005F91F6 /* JZColorSelectionButton.h */,
+				0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */,
+			);
+			name = "Settings-Appearance-ThemeSelection";
+			sourceTree = "<group>";
+		};
+		0D9D8FE91D301564005F91F6 /* ITSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FBA031D2BF051001821A2 /* ITSwitch.h */,
+				0D4FBA041D2BF051001821A2 /* ITSwitch.m */,
+			);
+			name = ITSwitch;
+			sourceTree = "<group>";
+		};
 		0DAF37411D2510E20009C44B /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,12 +487,12 @@
 		0DAF37481D2548AB0009C44B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */,
 				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
 				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
 				0D4FB9BE1D2B8A85001821A2 /* JZFolderOutlineCellView.h */,
 				0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */,
-				0D4FBA031D2BF051001821A2 /* ITSwitch.h */,
-				0D4FBA041D2BF051001821A2 /* ITSwitch.m */,
+				0D9D8FE91D301564005F91F6 /* ITSwitch */,
 				0D4FBA091D2C2933001821A2 /* JZEditorRulerView.h */,
 				0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */,
 				0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */,
@@ -773,6 +814,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9D8FE21D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m in Sources */,
 				0D9D8FD71D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
 				0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */,
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
@@ -783,6 +825,7 @@
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D6BEBBD1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m in Sources */,
 				0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */,
+				0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */,
 				0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */,
 				0D9D8FD01D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m in Sources */,
 				0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */,
@@ -791,6 +834,7 @@
 				0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */,
 				0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
+				0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */,
 				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
@@ -804,6 +848,7 @@
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
 				0D9D8FCC1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
+				0D9D8FE81D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m in Sources */,
 				0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */,
 				0D4189431D2833FA00530FD7 /* JZEditorMarkdownTextStorage.m in Sources */,
 				0D87A5431D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m in Sources */,
@@ -819,6 +864,7 @@
 				0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */,
 				0D4FBA081D2BF41F001821A2 /* JZSettingsStorageViewController.m in Sources */,
 				0D87A5471D2A7BB400F9DC34 /* JZEditorLayouManager.m in Sources */,
+				0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
 			);
