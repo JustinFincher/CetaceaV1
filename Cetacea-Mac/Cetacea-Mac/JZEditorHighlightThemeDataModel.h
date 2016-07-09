@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JZColorDataModel.h"
+#import "JZEditorHighlightThemeSingleRowDataModel.h"
 
 @interface JZEditorHighlightThemeDataModel : NSObject<NSCoding>
 
@@ -17,28 +17,13 @@
 @property (nonatomic,strong) NSImage *previewJPG;
 
 #pragma mark - View background color
-@property (nonatomic,strong) JZColorDataModel *lightTextViewBackgroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkTextViewBackgroundColor;
-
-@property (nonatomic,strong) JZColorDataModel *lightRulerViewBackgroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkRulerViewBackgroundColor;
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *TextViewDataModel;
 
 #pragma mark - Text & tag Foreground color | Block background color
-
-@property (nonatomic,strong) JZColorDataModel *lightRulerViewDefaultTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkRulerViewDefaultTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *lightRulerViewHighlightedTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkRulerViewHighlightedTextForegroundColor;
-
-@property (nonatomic,strong) JZColorDataModel *lightBoldTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkBoldTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *lightBoldTagForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkBoldTagForegroundColor;
-
-@property (nonatomic,strong) JZColorDataModel *lightItalicTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkItalicTextForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *lightItalicTagForegroundColor;
-@property (nonatomic,strong) JZColorDataModel *darkItalicTagForegroundColor;
-
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *RulerDataModel;
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *BoldDataModel;
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *ItalicDataModel;
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *CodeBlockDataModel;
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *ListDataModel;
 
 @end

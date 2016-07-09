@@ -7,7 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MKColorWell.h"
 
 @interface JZSettingsApperanceThemeTableViewDarkCellView : NSTableCellView
+
+@property (weak) IBOutlet MKColorWell *foregroundTextColorWell;
+@property (weak) IBOutlet MKColorWell *foregroundTagColorWell;
+@property (weak) IBOutlet MKColorWell *backgroundBlockColorWell;
+
 
 @end

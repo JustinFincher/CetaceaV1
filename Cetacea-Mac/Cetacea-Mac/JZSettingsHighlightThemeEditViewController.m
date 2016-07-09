@@ -75,6 +75,12 @@
 - (CGFloat)tableView:(NSTableView *)tableView
          heightOfRow:(NSInteger)row
 {
-    return 40.0f;
+    return 30.0f;
 }
+
+-(BOOL)tableView:(NSTableView *)tableView isGroupRow:(NSInteger)row
+{
+    return NO;
+}
+
 @end

@@ -67,6 +67,12 @@
 		0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */; };
 		0D9D8FE81D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */; };
 		0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */; };
+		0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */; };
+		0D9D90251D312D4B005F91F6 /* MKColorSwatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */; };
+		0D9D90261D312D4B005F91F6 /* MKColorSwatchMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */; };
+		0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D90211D312D4B005F91F6 /* MKColorWell.m */; };
+		0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */; };
+		0D9D902C1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */; };
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
@@ -209,6 +215,18 @@
 		0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewDarkCellView.m; sourceTree = "<group>"; };
 		0D9D8FFC1D3018B2005F91F6 /* JZColorSelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZColorSelectionButton.h; sourceTree = "<group>"; };
 		0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZColorSelectionButton.m; sourceTree = "<group>"; };
+		0D9D901A1D312D4B005F91F6 /* MKColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorPickerView.h; sourceTree = "<group>"; };
+		0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorPickerView.m; sourceTree = "<group>"; };
+		0D9D901C1D312D4B005F91F6 /* MKColorSwatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchCell.h; sourceTree = "<group>"; };
+		0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchCell.m; sourceTree = "<group>"; };
+		0D9D901E1D312D4B005F91F6 /* MKColorSwatchMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchMatrix.h; sourceTree = "<group>"; };
+		0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchMatrix.m; sourceTree = "<group>"; };
+		0D9D90201D312D4B005F91F6 /* MKColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorWell.h; sourceTree = "<group>"; };
+		0D9D90211D312D4B005F91F6 /* MKColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorWell.m; sourceTree = "<group>"; };
+		0D9D90221D312D4B005F91F6 /* MKColorWell+Bindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKColorWell+Bindings.h"; sourceTree = "<group>"; };
+		0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKColorWell+Bindings.m"; sourceTree = "<group>"; };
+		0D9D902A1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeSingleRowDataModel.h; sourceTree = "<group>"; };
+		0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeSingleRowDataModel.m; sourceTree = "<group>"; };
 		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
 		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
 		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
@@ -416,6 +434,8 @@
 			children = (
 				0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */,
 				0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */,
+				0D9D902A1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.h */,
+				0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */,
 				0D9D8FBE1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.h */,
 				0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */,
 				0D9D8FD21D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.h */,
@@ -450,6 +470,23 @@
 				0D4FBA041D2BF051001821A2 /* ITSwitch.m */,
 			);
 			name = ITSwitch;
+			sourceTree = "<group>";
+		};
+		0D9D90291D312D50005F91F6 /* MKColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D901A1D312D4B005F91F6 /* MKColorPickerView.h */,
+				0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */,
+				0D9D901C1D312D4B005F91F6 /* MKColorSwatchCell.h */,
+				0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */,
+				0D9D901E1D312D4B005F91F6 /* MKColorSwatchMatrix.h */,
+				0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */,
+				0D9D90201D312D4B005F91F6 /* MKColorWell.h */,
+				0D9D90211D312D4B005F91F6 /* MKColorWell.m */,
+				0D9D90221D312D4B005F91F6 /* MKColorWell+Bindings.h */,
+				0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */,
+			);
+			name = MKColorPicker;
 			sourceTree = "<group>";
 		};
 		0DAF37411D2510E20009C44B /* Data */ = {
@@ -487,6 +524,7 @@
 		0DAF37481D2548AB0009C44B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D9D90291D312D50005F91F6 /* MKColorPicker */,
 				0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */,
 				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
 				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
@@ -820,6 +858,7 @@
 				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
 				0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */,
 				0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */,
+				0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */,
 				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
 				0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
@@ -835,13 +874,17 @@
 				0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
 				0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */,
+				0D9D90261D312D4B005F91F6 /* MKColorSwatchMatrix.m in Sources */,
 				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
 				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
 				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
 				0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */,
 				0D4FB9BD1D2AFF46001821A2 /* JZiCloudFileSystemItem.m in Sources */,
+				0D9D902C1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m in Sources */,
 				0D4189251D26C8F400530FD7 /* JZiCloudMarkdownFileModel.m in Sources */,
 				0D41892B1D27965300530FD7 /* JZFolderListSplitViewController.m in Sources */,
+				0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */,
+				0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */,
 				0D9D8FC91D2F80A8005F91F6 /* JZThemeAttributesManager.m in Sources */,
 				0D41892E1D27967900530FD7 /* JZFolderViewController.m in Sources */,
 				0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */,
@@ -856,6 +899,7 @@
 				0D9D8FC01D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m in Sources */,
 				0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */,
 				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
+				0D9D90251D312D4B005F91F6 /* MKColorSwatchCell.m in Sources */,
 				0D4FBA0B1D2C2933001821A2 /* JZEditorRulerView.m in Sources */,
 				0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */,
 				0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */,

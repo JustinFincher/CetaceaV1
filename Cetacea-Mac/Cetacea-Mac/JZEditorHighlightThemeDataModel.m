@@ -16,6 +16,11 @@
     if (self)
     {
         self.themeName = @"Untitled";
+        self.RulerDataModel = [[JZEditorHighlightThemeSingleRowDataModel alloc] initWithDefaultTextStyle];
+        self.BoldDataModel = [[JZEditorHighlightThemeSingleRowDataModel alloc] initWithDefaultTextStyle];
+        self.ItalicDataModel = [[JZEditorHighlightThemeSingleRowDataModel alloc] initWithDefaultTextStyle];
+        self.CodeBlockDataModel = [[JZEditorHighlightThemeSingleRowDataModel alloc] initWithDefaultTextStyle];
+        self.ListDataModel = [[JZEditorHighlightThemeSingleRowDataModel alloc] initWithDefaultTextStyle];
     }
     return self;
 }
@@ -33,4 +38,5 @@
     [encoder encodeObject:themeName forKey:@"themeName"];
     [encoder encodeObject:previewJPG forKey:@"previewJPG"];
 }
+
 @end
