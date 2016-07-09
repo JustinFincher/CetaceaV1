@@ -79,7 +79,7 @@
         doc = [self.themeArray objectAtIndex:indexPath.item - 1];
         themeName = doc.data.themeName;
         img = [doc getPreviewImage];
-        shadowColor = [doc.data.darkTextViewBackgroundColor colorFromSelf];
+        shadowColor = [doc.data.TextViewDataModel.darkBackgroundBlockColor colorFromSelf];
     }
 
     [item initWithisAddButton:isAddButton Image:img backgroundShadowColor:shadowColor themeName:themeName];
@@ -113,6 +113,7 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
 - (void)createNewAndShow
 {
     JZiCloudFileExtensionCetaceaThemeDoc *new = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
+    //[new saveData];
     [self reload];
     [self showThemeDoc:new];
     

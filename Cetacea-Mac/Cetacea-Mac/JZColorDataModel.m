@@ -20,10 +20,11 @@
     self = [super init];
     if (self)
     {
-        self.red = color.redComponent;
-        self.green = color.greenComponent;
-        self.blue = color.blueComponent;
-        self.alpha = color.alphaComponent;
+        JZColor *rgbColor = [color colorUsingColorSpaceName:@"NSCalibratedRGBColorSpace"];
+        self.red = rgbColor.redComponent;
+        self.green = rgbColor.greenComponent;
+        self.blue = rgbColor.blueComponent;
+        self.alpha = rgbColor.alphaComponent;
     }
     return self;
 }

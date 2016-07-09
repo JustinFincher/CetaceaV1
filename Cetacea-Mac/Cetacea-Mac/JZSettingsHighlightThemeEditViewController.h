@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "JZiCloudFileExtensionCetaceaThemeDoc.h"
-
+#import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
 @interface JZSettingsHighlightThemeEditViewController : NSViewController
 
 @property (nonatomic,strong) JZiCloudFileExtensionCetaceaThemeDoc *doc;
