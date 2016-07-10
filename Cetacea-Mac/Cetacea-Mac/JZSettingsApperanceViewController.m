@@ -56,6 +56,7 @@
     
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     JZSettingsHighlightThemeEditViewController *vc = [sb instantiateControllerWithIdentifier:@"JZSettingsHighlightThemeEditViewController"];
+    vc.doc = doc;
     [self presentViewControllerAsSheet:vc];
 }
 - (CGSize)preferredMinimumSize

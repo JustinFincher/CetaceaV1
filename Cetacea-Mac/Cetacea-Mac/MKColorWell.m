@@ -10,16 +10,28 @@
 #import "MKColorPickerView.h"
 #import "MKColorWell+Bindings.h"
 
+
 @interface MKColorWell ()
 - (void)setupPopover;
 - (NSPopover *)createPopover;
 - (NSViewController *)createPopoverViewController;
 - (MKColorPickerView *)createPopoverView;
 - (NSArray *)colorsForPopover;
+
+
 @end
 
 @implementation MKColorWell
 @synthesize animatePopover = _animatePopover;
+
+- (void)setColor:(NSColor *)color
+{
+    [super setColor:color];
+    if (self.colorData)
+    {
+        [self.colorData setSelfColor:color];
+    }
+}
 
 // NOTE you can subclass and define your own colors here
 - (NSArray *)colorsForPopover

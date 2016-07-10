@@ -14,6 +14,8 @@
 #import "JZSettingsApperanceThemeTableViewSyntaxCellView.h"
 #import "KeyValueObserver.h"
 
+#import "JZEditorHighlightThemeSingleRowDataModel.h"
+
 @interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource>
 @property (weak) IBOutlet NSScrollView *scrollView;
 @property (weak) IBOutlet NSTableView *tableView;
@@ -26,12 +28,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
+    if (self.doc)
+    {
+        [self.tableView reloadData];
+    }
+        
+}
+
+ - (void)viewDidAppear
+{
+    if (self.doc == nil)
+    {
 #warning this
-    self.doc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
-    [self.tableView reloadData];
+        self.doc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
+        [self.tableView reloadData];
+    }
 }
 - (IBAction)comfirmButtonPressed:(id)sender {
+    if (self.doc)
+    {
+        [self.doc saveData];
+        [self dismissViewController:self];
+    }
 }
 - (IBAction)cancelButtonPressed:(id)sender {
     [self dismissViewController:self];
@@ -71,7 +89,8 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Tab Indent",@"(tab)text",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Tab Indent",@"(tab)text",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"TabIndentDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"YES",
@@ -79,15 +98,18 @@
                         },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Bold",@"**bold**",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Bold",@"**bold**",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"BoldDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Italic",@"*Italic*",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Italic",@"*Italic*",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"ItalicDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Strike Through",@"~~text~~",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Strike Through",@"~~text~~",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"StrikeThroughDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"YES",
@@ -95,11 +117,13 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"List",@"+ list\nOR\n- list\nOR\n* list",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"List",@"+ list\nOR\n- list\nOR\n* list",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"ListDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Quote",@"> Quote",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Quote",@"> Quote",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"QuoteDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"YES",
@@ -107,11 +131,13 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Image",@"![img name](img path)",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Image",@"![img name](img path)",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"ImageDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Link",@"[link name](link path)",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Link",@"[link name](link path)",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"LinkDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"YES",
@@ -119,11 +145,13 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"EditorViewDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Line Indicator",@"editor's sidebar view",@[@"",@"",@""],@[@"",@"",@""]]
+                            @"SectionTitles" : @[@"Line Indicator",@"editor's sidebar view",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"DataModel" : @"RuleViewDataModel"
                             },
                         
                         ];
@@ -139,7 +167,7 @@
                                                      keyPath:@"data"
                                                       target:self
                                                     selector:@selector(themeDataDidChange:)
-                                                     options:NSKeyValueObservingOptionInitial];
+                                                     options:NSKeyValueObservingOptionNew];
 }
 
 - (void)themeDataDidChange:(NSDictionary *)change;
@@ -199,6 +227,8 @@
     }else
     {
         NSString *cellIdentifer;
+        NSString* dataModelStr = [dict valueForKey:@"DataModel"];
+        JZEditorHighlightThemeSingleRowDataModel *dataModel = [self.doc.data valueForKey:dataModelStr];
         //    NSView *cellView;
         if (tableColumn == tableView.tableColumns[0])
         {
@@ -218,12 +248,24 @@
         {
             cellIdentifer = @"lightThemeCellView";
             JZSettingsApperanceThemeTableViewLightCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
+            [view.foregroundTagColorWell setColor:[dataModel.lightForegroundTagtColor colorFromSelf]];
+            [view.foregroundTextColorWell setColor:[dataModel.lightForegroundTextColor colorFromSelf]];
+            [view.backgroundBlockColorWell setColor:[dataModel.lightBackgroundBlockColor colorFromSelf]];
+            view.foregroundTagColorWell.colorData = dataModel.lightForegroundTagtColor;
+            view.foregroundTextColorWell.colorData = dataModel.lightForegroundTextColor;
+            view.backgroundBlockColorWell.colorData = dataModel.lightBackgroundBlockColor;
             return view;
         }
         else if (tableColumn == tableView.tableColumns[3])
         {
             cellIdentifer = @"darkThemeCellView";
             JZSettingsApperanceThemeTableViewDarkCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
+            [view.foregroundTagColorWell setColor:[dataModel.darkForegroundTagtColor colorFromSelf]];
+            [view.foregroundTextColorWell setColor:[dataModel.darkForegroundTextColor colorFromSelf]];
+            [view.backgroundBlockColorWell setColor:[dataModel.darkBackgroundBlockColor colorFromSelf]];
+            view.foregroundTagColorWell.colorData = dataModel.darkForegroundTagtColor;
+            view.foregroundTextColorWell.colorData = dataModel.darkForegroundTextColor;
+            view.backgroundBlockColorWell.colorData = dataModel.darkBackgroundBlockColor;
             return view;
         }
     }

@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "KeyValueObserver.h"
+#import "JZiCloudFileExtensionCetaceaThemeDoc.h"
+
 @interface MKColorWell : NSColorWell {
     NSPopover *popover;
     NSViewController *popoverViewController;
@@ -21,5 +24,8 @@
 - (void)setColorAndClose:(NSColor *)aColor;
 
 @property (nonatomic, strong) NSString *labelString;
+
+
+@property (nonatomic, strong) JZColorDataModel *colorData;
 
 @end

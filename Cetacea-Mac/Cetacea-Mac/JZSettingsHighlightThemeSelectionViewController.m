@@ -79,7 +79,7 @@
         doc = [self.themeArray objectAtIndex:indexPath.item - 1];
         themeName = doc.data.themeName;
         img = [doc getPreviewImage];
-        shadowColor = [doc.data.TextViewDataModel.darkBackgroundBlockColor colorFromSelf];
+        shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor colorFromSelf];
     }
 
     [item initWithisAddButton:isAddButton Image:img backgroundShadowColor:shadowColor themeName:themeName];

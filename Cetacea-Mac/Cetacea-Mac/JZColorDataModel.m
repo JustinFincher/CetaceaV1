@@ -39,6 +39,14 @@
     }
     return self;
 }
+- (void)setSelfColor:(JZColor *)color
+{
+    JZColor *rgbColor = [color colorUsingColorSpaceName:@"NSCalibratedRGBColorSpace"];
+    self.red = rgbColor.redComponent;
+    self.green = rgbColor.greenComponent;
+    self.blue = rgbColor.blueComponent;
+    self.alpha = rgbColor.alphaComponent;
+}
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeFloat:self.red forKey:@"red"];

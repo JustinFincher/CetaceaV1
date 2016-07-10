@@ -25,4 +25,5 @@
 
 - (id)initWithColor:(JZColor *)color;
 - (JZColor *)colorFromSelf;
+- (void)setSelfColor:(JZColor *)color;
 @end
