@@ -46,7 +46,7 @@
         [self addImageParsing];
         [self addLinkParsing];
         [self addBackTickCodeBlockParsing];
-        [self addTildeCodeBlockParsing];
+        [self addTildeStrikeThroughParsing];
         [self addListParsing];
         [self addTabBlockParsing];
     }
@@ -205,7 +205,7 @@
          [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
      }];
 }
-- (void)addTildeCodeBlockParsing
+- (void)addTildeStrikeThroughParsing
 {
     NSRegularExpression *CodeBlockParsing = [NSRegularExpression regularExpressionWithPattern:@"(?<!\\\\)(?:\\\\\\\\)*+(~+)(.*?[^~].*?)(\\1)(?!~)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
     __weak TSMarkdownParser *weakSelfParser = self.parser;
@@ -214,7 +214,7 @@
      {
          NSRange range = [match rangeAtIndex:2];
          
-         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
+//         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
          [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
      }];
 }
