@@ -16,10 +16,11 @@
 
 #import "JZEditorHighlightThemeSingleRowDataModel.h"
 
-@interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource>
+@interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource,NSTextFieldDelegate>
 @property (weak) IBOutlet NSScrollView *scrollView;
 @property (weak) IBOutlet NSTableView *tableView;
 @property (nonatomic, strong) id themeObserveToken;
+@property (weak) IBOutlet NSTextField *themeNameTextField;
 
 @end
 
@@ -28,8 +29,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    self.themeNameTextField.delegate = self;
     if (self.doc)
     {
+        self.themeNameTextField.stringValue = self.doc.data.themeName;
         [self.tableView reloadData];
     }
         
@@ -49,6 +52,7 @@
     {
         [self.doc saveData];
         [self dismissViewController:self];
+#warning make notifcation that collectionview vc dismiss this vc and refresh collectionview
     }
 }
 - (IBAction)cancelButtonPressed:(id)sender {
@@ -296,6 +300,13 @@
 -(BOOL)tableView:(NSTableView *)tableView isGroupRow:(NSInteger)row
 {
     return NO;
+}
+
+#pragma mark - NSTextFieldDelegate
+- (void)controlTextDidChange:(NSNotification *)obj
+{
+    NSTextField *field = [obj object];
+    self.doc.data.themeName = [field stringValue];
 }
 
 

@@ -16,6 +16,7 @@
 @property (nonatomic,strong) NSString *themeName;
 @property (nonatomic,strong) NSImage *previewJPG;
 
+
 #pragma mark - Text & tag Foreground color | Block background color
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *AtxHeaderDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *SetextHeaderDataModel;
@@ -31,5 +32,19 @@
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *EditorViewDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *RuleViewDataModel;
 
+@property (nonatomic,strong)NSDictionary<NSString *, id> *DefaultAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *AtxHeaderTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *AtxHeaderTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *SetextHeaderTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *SetextHeaderTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *CodeBlockTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *CodeBlockTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *TabIndentTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *TabIndentTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *BoldTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *BoldTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ItalicTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ItalicTagAttributes;
 - (void)getAttributes;
+
 @end
