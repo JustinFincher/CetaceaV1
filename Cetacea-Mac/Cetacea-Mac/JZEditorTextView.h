@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "JZEditorRulerView.h"
 #import "JZEditorLayouManager.h"
+#import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
 @interface JZEditorTextView : NSTextView
 
@@ -17,6 +18,8 @@
 @property (strong,nonatomic) JZEditorLayouManager *layoutManager;
 
 @property (nonatomic)BOOL hasSetup;
+- (void)setupTextView;
+@property (nonatomic,strong) JZEditorMarkdownTextParserWithTSBaseParser *parser;
 
 
 @end

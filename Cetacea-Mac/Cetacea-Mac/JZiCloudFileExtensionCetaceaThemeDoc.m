@@ -96,20 +96,17 @@
 }
 - (NSImage *)getPreviewImage
 {
-    NSScrollView *scrollView = [[NSScrollView alloc] initWithFrame:NSMakeRect(0, 0, 200, 160)];
-    [scrollView setBorderType:NSNoBorder];
-    [scrollView setAutoresizesSubviews:NO];
-    NSSize contentSize = [scrollView contentSize];
-    JZEditorTextView *pageView = [[JZEditorTextView alloc] initWithFrame:NSMakeRect(0, 0, contentSize.width, contentSize.height)];
+    JZEditorTextView *pageView = [[JZEditorTextView alloc] initWithFrame:NSMakeRect(0, 0, 200,160)];
     [[pageView textContainer] setWidthTracksTextView:YES];
-    [pageView setFrameSize:NSMakeSize(200, 160)];
-    [scrollView setDocumentView:pageView];
-    
-    pageView.string = @"# About Cetacea\nCetacea is a `markdown editor` designed to make writing things simple, with various themes and multi-platform sync.";
 
-    [pageView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:pageView.string]];
-    [pageView viewDidMoveToSuperview];
+    pageView.string = @"# About Cetacea\nCetacea is a `markdown editor` **designed** *to* ~~make~~ writing things simple, with various themes and multi-platform sync.";
+    pageView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+    pageView.parser.themeDoc = self;
 
+    [pageView.parser refreshAttributesTheme];
+    [pageView.textStorage setAttributedString: [pageView.parser attributedStringFromMarkdown:pageView.string]];
+
+    [pageView setupTextView];
     float scale = 2;
     float width = scale * pageView.bounds.size.width;
     float height = scale * pageView.bounds.size.height;
@@ -135,7 +132,7 @@
     [NSGraphicsContext setCurrentContext:graphicsContext];
     CGContextScaleCTM(graphicsContext.graphicsPort, scale, scale);
     
-    [scrollView displayRectIgnoringOpacity:scrollView.bounds inContext:graphicsContext];
+    [pageView displayRectIgnoringOpacity:pageView.bounds inContext:graphicsContext];
     
     [NSGraphicsContext restoreGraphicsState];
     

@@ -33,27 +33,6 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSDictionary<NSString *, id> *lineBlockAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *codeBlockAttributes;
 
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZCodeBlockTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZCodeBlockTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZBoldTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZBoldTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTagAttributes;
-
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTextAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTagAttributes;
-
 /**
  * standardParser setting for NSLinkAttributeName
  *

@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
+
 
 typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 {
@@ -22,10 +24,33 @@ typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 
 @interface JZEditorMarkdownTextParserWithTSBaseParser : NSObject
 
-+ (id)sharedManager;
 - (void)refreshAttributesTheme;
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown;
 
+@property (nonatomic,weak) JZiCloudFileExtensionCetaceaThemeDoc *themeDoc;
+
 @property (nonatomic) BOOL shouldRemoveTags;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *defaultAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZCodeBlockTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZCodeBlockTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZBoldTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZBoldTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTagAttributes;
 
 @end

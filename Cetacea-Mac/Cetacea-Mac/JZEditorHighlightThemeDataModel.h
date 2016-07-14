@@ -50,5 +50,5 @@
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ListTextAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ListTagAttributes;
 - (void)getAttributes;
-
+- (NSColor *)getBackgroundColor;
 @end

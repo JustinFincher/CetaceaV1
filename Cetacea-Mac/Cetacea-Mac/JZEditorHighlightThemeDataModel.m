@@ -96,6 +96,13 @@
     }
 }
 
+
+- (NSColor *)getBackgroundColor
+{
+    NSColor *backgroundViewColor = [self shouldApplyLightTheme]? [self.EditorViewDataModel.lightBackgroundBlockColor colorFromSelf] : [self.EditorViewDataModel.darkBackgroundBlockColor colorFromSelf];
+    return backgroundViewColor;
+}
+
 - (NSDictionary<NSString *,id> *)DefaultTextAttributes
 {
     NSColor *defaultTextForegroundColor = [self shouldApplyLightTheme]? [self.DefaultDataModel.lightForegroundTextColor colorFromSelf] : [self.DefaultDataModel.darkForegroundTextColor colorFromSelf];

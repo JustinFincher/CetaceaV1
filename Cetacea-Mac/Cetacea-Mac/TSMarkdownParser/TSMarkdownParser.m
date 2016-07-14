@@ -48,28 +48,6 @@ typedef NSFont UIFont;
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] }];
     
-    _JZAtxHeaderTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] AtxHeaderTextAttributes];
-    _JZAtxHeaderTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] AtxHeaderTagAttributes];
-    
-    _JZSetextHeaderTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] SetextHeaderTextAttributes];
-    _JZSetextHeaderTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] SetextHeaderTagAttributes];
-    
-    _JZBoldTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] BoldTextAttributes];
-    _JZBoldTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] BoldTagAttributes];
-    
-    _JZItalicTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ItalicTextAttributes];
-    _JZItalicTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ItalicTagAttributes];
-    
-    _JZCodeBlockTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] CodeBlockTextAttributes];
-    _JZCodeBlockTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] CodeBlockTagAttributes];
-
-    _JZTabIndentTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] TabIndentTextAttributes];
-    _JZTabIndentTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] TabIndentTagAttributes];
-    
-    _JZListTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ListTextAttributes];
-    _JZListTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ListTagAttributes];
-
-    
     _listAttributes = @[];
     _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont]}];
     

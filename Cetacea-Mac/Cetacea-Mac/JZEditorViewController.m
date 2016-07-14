@@ -15,6 +15,7 @@
 #import "JZEditorLayouManager.h"
 
 #import "JZEditorRulerView.h"
+#import "JZEditorHighlightThemeManager.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
@@ -34,6 +35,8 @@
     // Do view setup here.
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
+    self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+
 //    
 //    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
 //                                                      orientation:NSVerticalRuler];
@@ -87,17 +90,17 @@
 //        NSLog(@"%@",[error localizedDescription]);
 //    }
     [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.data.highLightString];
-    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self.editorTextView.parser refreshAttributesTheme];
     [self refreshHightLight];
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
 {
-    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self.editorTextView.parser refreshAttributesTheme];
     [self refreshHightLight];
 }
 - (void)baseFontChanged:(NSNotification *)aNotification
 {
-    [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] refreshAttributesTheme];
+    [self.editorTextView.parser refreshAttributesTheme];
     [self refreshHightLight];
 }
 
@@ -117,7 +120,7 @@
     self.range = self.editorTextView.selectedRange;
     //NSLog(@"________________________________");
     //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.range.location,(unsigned long)self.range.length);
-    [self.editorTextView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:self.editorTextView.string]];
+    [self.editorTextView.textStorage setAttributedString: [self.editorTextView.parser attributedStringFromMarkdown:self.editorTextView.string]];
     [self.editorTextView setSelectedRange:NSMakeRange(self.range.location, 0)];
     //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.editorTextView.selectedRange.location,(unsigned long)self.editorTextView.selectedRange.length);
 

@@ -23,14 +23,6 @@
 
 #pragma mark Singleton Methods
 
-+ (id)sharedManager {
-    static JZEditorMarkdownTextParserWithTSBaseParser *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
-    });
-    return sharedMyManager;
-}
 
 - (id)init {
     if (self = [super init])
@@ -49,17 +41,35 @@
         [self addTildeStrikeThroughParsing];
         [self addListParsing];
         [self addTabBlockParsing];
+        self.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
     }
     return self;
 }
 
-- (void)dealloc {
-    // Should never be called, but just here for clarity really.
-}
-
 - (void)refreshAttributesTheme
 {
-    [self.parser getRefreshedAttributes];
+//    [self.parser getRefreshedAttributes];
+    _defaultAttributes = [[self.themeDoc getData] DefaultTextAttributes];
+    _JZAtxHeaderTextAttributes =  [[self.themeDoc getData] AtxHeaderTextAttributes];
+    _JZAtxHeaderTagAttributes =  [[self.themeDoc getData] AtxHeaderTagAttributes];
+    
+    _JZSetextHeaderTextAttributes =  [[self.themeDoc getData] SetextHeaderTextAttributes];
+    _JZSetextHeaderTagAttributes =  [[self.themeDoc getData] SetextHeaderTagAttributes];
+    
+    _JZBoldTextAttributes =  [[self.themeDoc getData] BoldTextAttributes];
+    _JZBoldTagAttributes =  [[self.themeDoc getData] BoldTagAttributes];
+    
+    _JZItalicTextAttributes =  [[self.themeDoc getData] ItalicTextAttributes];
+    _JZItalicTagAttributes =  [[self.themeDoc getData] ItalicTagAttributes];
+    
+    _JZCodeBlockTextAttributes =  [[self.themeDoc getData] CodeBlockTextAttributes];
+    _JZCodeBlockTagAttributes =  [[self.themeDoc getData] CodeBlockTagAttributes];
+    
+    _JZTabIndentTextAttributes =  [[self.themeDoc getData] TabIndentTextAttributes];
+    _JZTabIndentTagAttributes =  [[self.themeDoc getData] TabIndentTagAttributes];
+    
+    _JZListTextAttributes =  [[self.themeDoc getData] ListTextAttributes];
+    _JZListTagAttributes =  [[self.themeDoc getData] ListTagAttributes];
 }
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown
 {
@@ -73,9 +83,9 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:boldParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
     {
-        [attributedString addAttributes:weakSelfParser.JZBoldTextAttributes range:[match rangeAtIndex:2]];
-        [attributedString addAttributes:weakSelfParser.JZBoldTagAttributes range:[match rangeAtIndex:1]];
-        [attributedString addAttributes:weakSelfParser.JZBoldTagAttributes range:[match rangeAtIndex:3]];
+        [attributedString addAttributes:weakSelf.JZBoldTextAttributes range:[match rangeAtIndex:2]];
+        [attributedString addAttributes:weakSelf.JZBoldTagAttributes range:[match rangeAtIndex:1]];
+        [attributedString addAttributes:weakSelf.JZBoldTagAttributes range:[match rangeAtIndex:3]];
         if(weakSelf.shouldRemoveTags)
         {
             [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
@@ -90,9 +100,9 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ItalicParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.JZItalicTextAttributes range:[match rangeAtIndex:2]];
-         [attributedString addAttributes:weakSelfParser.JZItalicTagAttributes range:[match rangeAtIndex:1]];
-         [attributedString addAttributes:weakSelfParser.JZItalicTagAttributes range:[match rangeAtIndex:3]];
+         [attributedString addAttributes:weakSelf.JZItalicTextAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:3]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
@@ -109,9 +119,9 @@
      {
          if([match rangeAtIndex:1].length == [match rangeAtIndex:3].length)
          {
-             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
-             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
-             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:3]];
+             [attributedString addAttributes:weakSelf.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelf.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelf.JZAtxHeaderTagAttributes range:[match rangeAtIndex:3]];
              if(weakSelf.shouldRemoveTags)
              {
                  [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
@@ -126,8 +136,8 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:AtxShortHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
-         [attributedString addAttributes:weakSelfParser.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelf.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelf.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
@@ -138,15 +148,15 @@
 {
     NSRegularExpression *SetextHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"(\n)((-{1,}|={1,})\n)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
     __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:SetextHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
          NSRange firstLineChar = [match rangeAtIndex:1];
          NSRange firstLine = [attributedString.string lineRangeForRange:firstLineChar];
          if (firstLine.length == [match rangeAtIndex:2].length)
          {
-             [attributedString addAttributes:weakSelfParser.JZSetextHeaderTextAttributes range:firstLine];
-             [attributedString addAttributes:weakSelfParser.JZSetextHeaderTagAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelf.JZSetextHeaderTextAttributes range:firstLine];
+             [attributedString addAttributes:weakSelf.JZSetextHeaderTagAttributes range:[match rangeAtIndex:2]];
          }
      }];
 }
@@ -201,15 +211,15 @@
 {
     NSRegularExpression *CodeBlockParsing = [NSRegularExpression regularExpressionWithPattern:@"(?<!\\\\)(?:\\\\\\\\)*+(`+)(.*?[^`].*?)(\\1)(?!`)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
     __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
          NSLog(@"%lu",(unsigned long)match.numberOfRanges);
          if (match.numberOfRanges == 4)
          {
-             [attributedString addAttributes:weakSelfParser.JZCodeBlockTextAttributes range:[match rangeAtIndex:2]];
-             [attributedString addAttributes:weakSelfParser.JZCodeBlockTagAttributes range:[match rangeAtIndex:1]];
-             [attributedString addAttributes:weakSelfParser.JZCodeBlockTagAttributes range:[match rangeAtIndex:3]];
+             [attributedString addAttributes:weakSelf.JZCodeBlockTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelf.JZCodeBlockTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelf.JZCodeBlockTagAttributes range:[match rangeAtIndex:3]];
          }
      }];
 }
@@ -229,22 +239,22 @@
 - (void)addListParsing
 {
     NSRegularExpression *ListParsing = [NSRegularExpression regularExpressionWithPattern:@"^(\t?[\\*\\+\\-]{1})\\s+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.JZListTextAttributes range:[match rangeAtIndex:2]];
-         [attributedString addAttributes:weakSelfParser.JZListTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelf.JZListTextAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelf.JZListTagAttributes range:[match rangeAtIndex:1]];
      }];
 }
 - (void)addTabBlockParsing
 {
     NSRegularExpression *ListParsing = [NSRegularExpression regularExpressionWithPattern:@"^[\t]+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.JZTabIndentTextAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelf.JZTabIndentTextAttributes range:[match rangeAtIndex:1]];
      }];
 }
 @end
