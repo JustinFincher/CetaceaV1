@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "JZEditorHighlightThemeSingleRowDataModel.h"
+#import "JZFontDisplayManager.h"
 
 @interface JZEditorHighlightThemeDataModel : NSObject<NSCoding>
 
@@ -18,6 +19,7 @@
 
 
 #pragma mark - Text & tag Foreground color | Block background color
+@property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *DefaultDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *AtxHeaderDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *SetextHeaderDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *CodeBlockDataModel;
@@ -32,7 +34,7 @@
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *EditorViewDataModel;
 @property (nonatomic,strong) JZEditorHighlightThemeSingleRowDataModel *RuleViewDataModel;
 
-@property (nonatomic,strong)NSDictionary<NSString *, id> *DefaultAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *DefaultTextAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *AtxHeaderTextAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *AtxHeaderTagAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *SetextHeaderTextAttributes;
