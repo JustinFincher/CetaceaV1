@@ -73,7 +73,9 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:boldParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
     {
-        [attributedString addAttributes:weakSelfParser.strongAttributes range:[match rangeAtIndex:2]];
+        [attributedString addAttributes:weakSelfParser.JZBoldTextAttributes range:[match rangeAtIndex:2]];
+        [attributedString addAttributes:weakSelfParser.JZBoldTagAttributes range:[match rangeAtIndex:1]];
+        [attributedString addAttributes:weakSelfParser.JZBoldTagAttributes range:[match rangeAtIndex:3]];
         if(weakSelf.shouldRemoveTags)
         {
             [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
@@ -88,8 +90,9 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ItalicParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:2]];
-         [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:3]];
+         [attributedString addAttributes:weakSelfParser.JZItalicTextAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelfParser.JZItalicTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelfParser.JZItalicTagAttributes range:[match rangeAtIndex:3]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
@@ -201,10 +204,13 @@
     //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         NSRange range = [match rangeAtIndex:2];
-         
-         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
-         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
+         NSLog(@"%lu",(unsigned long)match.numberOfRanges);
+         if (match.numberOfRanges == 4)
+         {
+             [attributedString addAttributes:weakSelfParser.JZCodeBlockTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelfParser.JZCodeBlockTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelfParser.JZCodeBlockTagAttributes range:[match rangeAtIndex:3]];
+         }
      }];
 }
 - (void)addTildeStrikeThroughParsing
@@ -238,8 +244,7 @@
     //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:[match rangeAtIndex:1]];
-         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelfParser.JZTabIndentTextAttributes range:[match rangeAtIndex:1]];
      }];
 }
 @end
