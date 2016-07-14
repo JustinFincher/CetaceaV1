@@ -7,9 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JZEditorRulerView.h"
+#import "JZEditorLayouManager.h"
 
 @interface JZEditorTextView : NSTextView
 
-@property (weak,nonatomic) NSRulerView *rulerView;
+
+@property (strong,nonatomic) JZEditorRulerView *rulerView;
+@property (strong,nonatomic) JZEditorLayouManager *layoutManager;
+
+@property (nonatomic)BOOL hasSetup;
+
 
 @end

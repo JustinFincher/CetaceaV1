@@ -7,6 +7,9 @@
 //
 
 #import "JZiCloudFileExtensionCetaceaThemeDoc.h"
+#import "JZEditorLayouManager.h"
+#import "JZEditorTextView.h"
+#import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
 @implementation JZiCloudFileExtensionCetaceaThemeDoc
 
@@ -93,9 +96,20 @@
 }
 - (NSImage *)getPreviewImage
 {
-    NSTextView *pageView = [[NSTextView alloc] initWithFrame:NSMakeRect(0, 0, 200, 160)];
-    pageView.string = @"TEST";
+    NSScrollView *scrollView = [[NSScrollView alloc] initWithFrame:NSMakeRect(0, 0, 200, 160)];
+    [scrollView setBorderType:NSNoBorder];
+    [scrollView setAutoresizesSubviews:NO];
+    NSSize contentSize = [scrollView contentSize];
+    JZEditorTextView *pageView = [[JZEditorTextView alloc] initWithFrame:NSMakeRect(0, 0, contentSize.width, contentSize.height)];
+    [[pageView textContainer] setWidthTracksTextView:YES];
+    [pageView setFrameSize:NSMakeSize(200, 160)];
+    [scrollView setDocumentView:pageView];
     
+    pageView.string = @"# About Cetacea\nCetacea is a `markdown editor` designed to make writing things simple, with various themes and multi-platform sync.";
+
+    [pageView.textStorage setAttributedString: [[JZEditorMarkdownTextParserWithTSBaseParser sharedManager] attributedStringFromMarkdown:pageView.string]];
+    [pageView viewDidMoveToSuperview];
+
     float scale = 2;
     float width = scale * pageView.bounds.size.width;
     float height = scale * pageView.bounds.size.height;
@@ -121,7 +135,7 @@
     [NSGraphicsContext setCurrentContext:graphicsContext];
     CGContextScaleCTM(graphicsContext.graphicsPort, scale, scale);
     
-    [pageView displayRectIgnoringOpacity:pageView.bounds inContext:graphicsContext];
+    [scrollView displayRectIgnoringOpacity:scrollView.bounds inContext:graphicsContext];
     
     [NSGraphicsContext restoreGraphicsState];
     

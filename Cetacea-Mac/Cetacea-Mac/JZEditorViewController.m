@@ -34,27 +34,26 @@
     // Do view setup here.
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
-    
-    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
-                                                      orientation:NSVerticalRuler];
-    self.editorTextView.rulerView = self.ruleView;
-    self.editorTextView.automaticDashSubstitutionEnabled = NO;
-    self.ruleView.clientView = self.editorTextView;
-    self.editorScrollView.verticalRulerView = self.ruleView;
-    self.editorScrollView.hasVerticalRuler = YES;
-    self.editorScrollView.rulersVisible = YES;
-    
-    
-//    BOOL is1 = self.ruleView.isFlipped ;
-//    BOOL is2 = self.editorScrollView.isFlipped ;
-
-    /**
-     设置 NSLAYOUTMANAGER 的正确姿势 ： 设置 textContainer 的 LayoutManager
-     不要去设置 Storage...
-     */
-    self.layoutManager = [[JZEditorLayouManager alloc] init];
-    //self.layoutManager.allowsNonContiguousLayout = YES;
-    [self.editorTextView.textContainer replaceLayoutManager:self.layoutManager];
+//    
+//    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
+//                                                      orientation:NSVerticalRuler];
+//    self.editorTextView.rulerView = self.ruleView;
+//    self.editorTextView.automaticDashSubstitutionEnabled = NO;
+//    self.ruleView.clientView = self.editorTextView;
+//    self.editorScrollView.verticalRulerView = self.ruleView;
+//    self.editorScrollView.hasVerticalRuler = YES;
+//    self.editorScrollView.rulersVisible = YES;
+//    
+//    
+////    BOOL is1 = self.ruleView.isFlipped ;
+////    BOOL is2 = self.editorScrollView.isFlipped ;
+//
+//    /**
+//     设置 NSLAYOUTMANAGER 的正确姿势 ： 设置 textContainer 的 LayoutManager
+//     不要去设置 Storage...
+//     */
+//    self.layoutManager = [[JZEditorLayouManager alloc] init];
+//    [self.editorTextView.textContainer replaceLayoutManager:self.layoutManager];
     self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
                                                 NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     
