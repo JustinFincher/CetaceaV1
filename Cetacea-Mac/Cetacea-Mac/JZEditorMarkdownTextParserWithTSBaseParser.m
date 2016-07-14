@@ -233,8 +233,8 @@
     //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
-         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelfParser.JZListTextAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelfParser.JZListTagAttributes range:[match rangeAtIndex:1]];
      }];
 }
 - (void)addTabBlockParsing

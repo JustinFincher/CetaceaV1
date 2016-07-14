@@ -47,6 +47,8 @@
 @property (nonatomic,strong)NSDictionary<NSString *, id> *BoldTagAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ItalicTextAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ItalicTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ListTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ListTagAttributes;
 - (void)getAttributes;
 
 @end

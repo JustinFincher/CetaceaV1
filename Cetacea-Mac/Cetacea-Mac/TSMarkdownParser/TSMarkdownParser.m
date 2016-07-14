@@ -65,6 +65,9 @@ typedef NSFont UIFont;
 
     _JZTabIndentTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] TabIndentTextAttributes];
     _JZTabIndentTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] TabIndentTagAttributes];
+    
+    _JZListTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ListTextAttributes];
+    _JZListTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] ListTagAttributes];
 
     
     _listAttributes = @[];

@@ -51,6 +51,9 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTextAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTagAttributes;
 
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTagAttributes;
+
 /**
  * standardParser setting for NSLinkAttributeName
  *

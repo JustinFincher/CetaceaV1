@@ -199,5 +199,21 @@
               NSForegroundColorAttributeName: ItalicTagForegroundColor,
               NSBackgroundColorAttributeName: ItalicTagBackgroundColor};
 }
+- (NSDictionary<NSString *,id> *)ListTextAttributes
+{
+    NSColor *ListTextForegroundColor = [self shouldApplyLightTheme]? [self.ListDataModel.lightForegroundTextColor colorFromSelf] : [self.ListDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *ListTextBackgroundColor = [self shouldApplyLightTheme]? [self.ListDataModel.lightBackgroundBlockColor colorFromSelf] : [self.ListDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont],
+              NSForegroundColorAttributeName: ListTextForegroundColor,
+              NSBackgroundColorAttributeName: ListTextBackgroundColor};
+}
 
+- (NSDictionary<NSString *,id> *)ListTagAttributes
+{
+    NSColor *ListTagForegroundColor = [self shouldApplyLightTheme]? [self.ListDataModel.lightForegroundTagtColor colorFromSelf] : [self.ListDataModel.darkForegroundTagtColor colorFromSelf];
+    NSColor *ListTagBackgroundColor = [self shouldApplyLightTheme]? [self.ListDataModel.lightBackgroundBlockColor colorFromSelf] : [self.ListDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
+              NSForegroundColorAttributeName: ListTagForegroundColor,
+              NSBackgroundColorAttributeName: ListTagBackgroundColor};
+}
 @end

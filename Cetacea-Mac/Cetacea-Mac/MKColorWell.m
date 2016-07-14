@@ -168,7 +168,7 @@
     NSRect colorBlockBounds = NSInsetRect(offsetBounds, 2, 2);
     
     if ([self isEnabled]) {
-        if ([self.color isEqualTo:[NSColor clearColor]]) {
+        if ([self.color isEqualTo:[NSColor clearColor]] || self.colorData.alpha == 0.0f) {
             [[NSColor whiteColor] setFill];
             NSRectFill(colorBlockBounds);
             
