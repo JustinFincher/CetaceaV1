@@ -147,5 +147,14 @@
               NSForegroundColorAttributeName: CodeBlockTagForegroundColor};
 }
 
+ - (NSDictionary<NSString *,id> *)TabIndentTextAttributes
+{
+    NSColor *TabIndentTextForegroundColor = [self shouldApplyLightTheme]? [self.TabIndentDataModel.lightForegroundTextColor colorFromSelf] : [self.TabIndentDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *TabIndentTextBackgroundColor = [self shouldApplyLightTheme]? [self.TabIndentDataModel.lightBackgroundBlockColor colorFromSelf] : [self.TabIndentDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
+              NSForegroundColorAttributeName: TabIndentTextForegroundColor,
+              NSBackgroundColorAttributeName: TabIndentTextBackgroundColor};
+}
+
 
 @end

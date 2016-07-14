@@ -8,6 +8,7 @@
 
 #import "TSMarkdownParser.h"
 #import "JZFontDisplayManager.h"
+#import "JZEditorHighlightThemeManager.h"
 #if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 #else
@@ -36,10 +37,10 @@ typedef NSFont UIFont;
 #else
     NSUInteger defaultSize = 12;
 #endif
-    
-    self.defaultAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
-                                NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getTextColor]};
-    
+    self.defaultAttributes = [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] DefaultTextAttributes];
+//    self.defaultAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
+//                                NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getTextColor]};
+
     _headerAttributes = @[ @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
@@ -47,8 +48,11 @@ typedef NSFont UIFont;
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] },
                            @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont] }];
     
-    _JZheaderAttributes = @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getHeaderFont],
-                             NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getCodeBlockForegroundColor]};
+    _JZAtxHeaderTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] AtxHeaderTextAttributes];
+    _JZAtxHeaderTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] AtxHeaderTagAttributes];
+    
+    _JZSetextHeaderTextAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] SetextHeaderTextAttributes];
+    _JZSetextHeaderTagAttributes =  [[[[JZEditorHighlightThemeManager sharedManager] selectedDoc] getData] SetextHeaderTagAttributes];
     
     _listAttributes = @[];
     _quoteAttributes = @[@{NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont]}];

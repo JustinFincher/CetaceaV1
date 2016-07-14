@@ -10,7 +10,7 @@
 #import "TSMarkdownParser.h"
 #import <AppKit/AppKit.h>
 #import "JZFontDisplayManager.h"
-
+#import "JZEditorHighlightThemeManager.h"
 
 @interface JZEditorMarkdownTextParserWithTSBaseParser()
 
@@ -106,8 +106,9 @@
      {
          if([match rangeAtIndex:1].length == [match rangeAtIndex:3].length)
          {
-             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:[match rangeAtIndex:2]];
-             [attributedString addAttributes:weakSelfParser.defaultAttributes range:[match rangeAtIndex:3]];
+             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:3]];
              if(weakSelf.shouldRemoveTags)
              {
                  [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
@@ -122,7 +123,8 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:AtxShortHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelfParser.JZAtxHeaderTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelfParser.JZAtxHeaderTextAttributes range:[match rangeAtIndex:2]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
@@ -140,8 +142,8 @@
          NSRange firstLine = [attributedString.string lineRangeForRange:firstLineChar];
          if (firstLine.length == [match rangeAtIndex:2].length)
          {
-             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:firstLine];
-             [attributedString addAttributes:weakSelfParser.JZheaderAttributes range:match.range];
+             [attributedString addAttributes:weakSelfParser.JZSetextHeaderTextAttributes range:firstLine];
+             [attributedString addAttributes:weakSelfParser.JZSetextHeaderTagAttributes range:[match rangeAtIndex:2]];
          }
      }];
 }

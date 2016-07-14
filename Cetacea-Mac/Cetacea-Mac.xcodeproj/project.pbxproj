@@ -76,6 +76,7 @@
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
+		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
 		A43B483B716AA466BA530A4C /* libPods-Cetacea-MacTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ACB1C0157196A445E55F5D /* libPods-Cetacea-MacTests.a */; };
 		F5F648FDACDA404FD854BFA3 /* libPods-Cetacea-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9CBDEF3FD46F0D35166B66 /* libPods-Cetacea-Mac.a */; };
 /* End PBXBuildFile section */
@@ -233,6 +234,8 @@
 		0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListViewController.m; sourceTree = "<group>"; };
 		0DAF37491D254A480009C44B /* JZMainListEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainListEditorSplitViewController.h; sourceTree = "<group>"; };
 		0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainListEditorSplitViewController.m; sourceTree = "<group>"; };
+		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
+		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
 		2ED70EDDBC8A38063A9EC843 /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		46EC9094209EF8687630562F /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6126264517E2CEFC10D4B491 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea-MacTests/Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -442,6 +445,8 @@
 				0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */,
 				0D9D8FD51D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.h */,
 				0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */,
+				0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */,
+				0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */,
 			);
 			name = HighlightColorStorage;
 			sourceTree = "<group>";
@@ -863,6 +868,7 @@
 				0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0D6BEBBD1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m in Sources */,
+				0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */,
 				0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */,
 				0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */,
 				0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */,

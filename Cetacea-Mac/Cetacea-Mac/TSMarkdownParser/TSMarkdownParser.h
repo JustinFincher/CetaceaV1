@@ -25,7 +25,6 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *headerAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *listAttributes;
 @property (nonatomic, strong) NSArray<NSDictionary<NSString *, id> *> *quoteAttributes;
-@property (nonatomic, strong) NSDictionary<NSString *, id> *JZheaderAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *imageAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *linkAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *monospaceAttributes;
@@ -33,6 +32,12 @@ typedef void (^TSMarkdownParserLinkFormattingBlock)(NSMutableAttributedString *a
 @property (nonatomic, strong) NSDictionary<NSString *, id> *emphasisAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *lineBlockAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *codeBlockAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZAtxHeaderTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZSetextHeaderTagAttributes;
 /**
  * standardParser setting for NSLinkAttributeName
  *
