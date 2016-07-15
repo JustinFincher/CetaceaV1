@@ -11,6 +11,8 @@
 #import "JZEditorTextView.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation JZiCloudFileExtensionCetaceaThemeDoc
 
 
@@ -131,16 +133,17 @@
     NSGraphicsContext *graphicsContext = [NSGraphicsContext graphicsContextWithBitmapImageRep:bitmapRep];
     [NSGraphicsContext setCurrentContext:graphicsContext];
     CGContextScaleCTM(graphicsContext.graphicsPort, scale, scale);
-    
+
     [pageView displayRectIgnoringOpacity:pageView.bounds inContext:graphicsContext];
     
     [NSGraphicsContext restoreGraphicsState];
     
     NSImage *image = [[NSImage alloc] initWithSize:bitmapRep.size];
-    [image addRepresentation:bitmapRep];
     
+    [image addRepresentation:bitmapRep];
+
     return image;
-    //return self.data.previewJPG;
+
 }
 
 @end

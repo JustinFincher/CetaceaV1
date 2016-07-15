@@ -53,4 +53,7 @@ typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTextAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZListTagAttributes;
 
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZQuoteTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZQuoteTagAttributes;
+
 @end

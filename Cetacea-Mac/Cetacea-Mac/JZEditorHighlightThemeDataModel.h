@@ -49,6 +49,13 @@
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ItalicTagAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ListTextAttributes;
 @property (nonatomic,strong)NSDictionary<NSString *, id> *ListTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *QuoteTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *QuoteTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ImageTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *ImageTagAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *LinkTextAttributes;
+@property (nonatomic,strong)NSDictionary<NSString *, id> *LinkTagAttributes;
+
 - (void)getAttributes;
 - (NSColor *)getBackgroundColor;
 @end

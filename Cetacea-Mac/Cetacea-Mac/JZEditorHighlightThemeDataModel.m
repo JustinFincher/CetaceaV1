@@ -223,4 +223,21 @@
               NSForegroundColorAttributeName: ListTagForegroundColor,
               NSBackgroundColorAttributeName: ListTagBackgroundColor};
 }
+- (NSDictionary<NSString *,id> *)QuoteTextAttributes
+{
+    NSColor *QuoteTextForegroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightForegroundTextColor colorFromSelf] : [self.QuoteDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *QuoteTextBackgroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightBackgroundBlockColor colorFromSelf] : [self.QuoteDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont],
+              NSForegroundColorAttributeName: QuoteTextForegroundColor,
+              NSBackgroundColorAttributeName: QuoteTextBackgroundColor};
+}
+
+- (NSDictionary<NSString *,id> *)QuoteTagAttributes
+{
+    NSColor *QuoteTagForegroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightForegroundTagtColor colorFromSelf] : [self.QuoteDataModel.darkForegroundTagtColor colorFromSelf];
+    NSColor *QuoteTagBackgroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightBackgroundBlockColor colorFromSelf] : [self.QuoteDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getFont],
+              NSForegroundColorAttributeName: QuoteTagForegroundColor,
+              NSBackgroundColorAttributeName: QuoteTagBackgroundColor};
+}
 @end

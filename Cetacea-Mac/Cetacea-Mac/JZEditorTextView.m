@@ -13,8 +13,8 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
-    
     // Drawing code here.
+    
 }
 
 - (id)init
@@ -44,7 +44,9 @@
 
 - (void)setupTextView
 {
-    //[self setWantsLayer:YES];
+//    [self setWantsLayer:YES];
+//    [self.layer setBackgroundColor:[[NSColor blueColor] CGColor]];
+
 
     self.automaticDashSubstitutionEnabled = NO;
     if (self.enclosingScrollView)
@@ -60,7 +62,6 @@
     [self.textContainer replaceLayoutManager:layoutManager];
     
     _hasSetup = YES;
-
 }
 - (void)viewDidMoveToSuperview
 {

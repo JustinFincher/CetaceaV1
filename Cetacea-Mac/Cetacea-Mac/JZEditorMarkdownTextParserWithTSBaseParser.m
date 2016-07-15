@@ -70,6 +70,11 @@
     
     _JZListTextAttributes =  [[self.themeDoc getData] ListTextAttributes];
     _JZListTagAttributes =  [[self.themeDoc getData] ListTagAttributes];
+    
+    _JZQuoteTextAttributes =  [[self.themeDoc getData] QuoteTextAttributes];
+    _JZQuoteTagAttributes =  [[self.themeDoc getData] QuoteTagAttributes];
+    
+    
 }
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown
 {
@@ -79,7 +84,7 @@
 - (void)addBoldParsing
 {
     NSRegularExpression *boldParsing = [NSRegularExpression regularExpressionWithPattern:@"(\\*\\*|__)(.+?)(\\1)" options:kNilOptions error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:boldParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
     {
@@ -96,7 +101,7 @@
 - (void)addItalicParsing
 {
     NSRegularExpression *ItalicParsing = [NSRegularExpression regularExpressionWithPattern:@"(\\*|_)(.+?)(\\1)" options:kNilOptions error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ItalicParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
@@ -113,7 +118,7 @@
 - (void)addAtxHeaderParsing
 {
     NSRegularExpression *AtxHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"^(#{1,6})\\s+([^#].+)\\s+(#{1,6})$" options:NSRegularExpressionAnchorsMatchLines error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:AtxHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
@@ -132,7 +137,7 @@
 - (void)addAtxShortHeaderParsing
 {
     NSRegularExpression *AtxShortHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"^(#{1,6})\\s*([^#].+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:AtxShortHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
@@ -147,7 +152,7 @@
 - (void)addSetextHeaderParsing
 {
     NSRegularExpression *SetextHeaderParsing = [NSRegularExpression regularExpressionWithPattern:@"(\n)((-{1,}|={1,})\n)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:SetextHeaderParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
@@ -163,12 +168,12 @@
 - (void)addQuoteParsing
 {
     NSRegularExpression *QuoteParsing = [NSRegularExpression regularExpressionWithPattern:@"^(\\>{1,3})\\s+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
+//    __weak TSMarkdownParser *weakSelfParser = self.parser;
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:QuoteParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         
-         [attributedString addAttributes:weakSelfParser.emphasisAttributes range:[match rangeAtIndex:2]];
+         [attributedString addAttributes:weakSelf.JZQuoteTagAttributes range:[match rangeAtIndex:1]];
+         [attributedString addAttributes:weakSelf.JZQuoteTextAttributes range:[match rangeAtIndex:2]];
          if(weakSelf.shouldRemoveTags)
          {
              [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
