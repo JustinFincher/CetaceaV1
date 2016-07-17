@@ -116,6 +116,14 @@
     return aPopoverViewController;
 }
 
+- (void)setLabelString:(NSString *)labelString
+{
+    _labelString = labelString;
+    MKColorPickerView *view  = (MKColorPickerView *)popoverView;
+    view.label.stringValue = labelString;
+}
+
+
 - (MKColorPickerView *)createPopoverView
 {
     NSArray *colors = [self colorsForPopover];

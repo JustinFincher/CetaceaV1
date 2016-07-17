@@ -10,10 +10,11 @@
 
 @interface MKColorPickerView : NSView {
     NSMatrix *matrix;
-    NSTextField *label;
 }
 
 @property NSMatrix *matrix;
+
+@property (nonatomic,strong)  NSTextField *label;
 
 - (id)initWithColors:(NSArray *)colors
         numberOfRows:(NSInteger)rows

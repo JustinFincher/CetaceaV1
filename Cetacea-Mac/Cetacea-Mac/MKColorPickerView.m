@@ -14,7 +14,7 @@
 #define COLORWELL_LABEL_HEIGHT 30
 
 @implementation MKColorPickerView
-@synthesize matrix;
+@synthesize matrix,label;
 
 //- (void)drawRect:(NSRect)dirtyRect
 //{

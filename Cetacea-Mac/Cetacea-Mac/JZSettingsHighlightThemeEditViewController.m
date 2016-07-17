@@ -74,12 +74,12 @@
                         //AtxHeader Row
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Atx Header",@"# level 1 header\n## level 2 header\n### level 3 header\n#### level 4 header\n##### level 5 header\n###### level 6 header",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Atx Header",@"# level 1 header\n## level 2 header\n### level 3 header\n#### level 4 header\n##### level 5 header\n###### level 6 header",@[@"Header Tag Color",@"Header Text Color",@"Header Background Color"],@[@"Header Tag Color",@"Header Text Color",@"Header Background Color"]],
                             @"DataModel" : @"AtxHeaderDataModel"
                         },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Setext Header",@"level 1 header\n--------------\nlevel 2 header\n==============",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Setext Header",@"level 1 header\n--------------\nlevel 2 header\n==============",@[@"Header Tag Color",@"Header Text Color",@"Header Background Color"],@[@"Header Tag Color",@"Header Text Color",@"Header Background Color"]],
                             @"DataModel" : @"SetextHeaderDataModel"
                         },
                         @{
@@ -88,12 +88,12 @@
                         },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Code Block",@"`code`\nOR\n```\ncode\n```",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Code Block",@"`code`\nOR\n```\ncode\n```",@[@"Code Block Tag Color",@"Code Block Text Color",@"Code Block Background Color"],@[@"Code Block Tag Color",@"Code Block Text Color",@"Code Block Background Color"]],
                             @"DataModel" : @"CodeBlockDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Tab Indent",@"(tab)text",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Tab Indent",@"(tab)text",@[@"Tab Indent Tag Color",@"Tab Indent Text Color",@"Tab Indent Background Color"],@[@"Tab Indent Tag Color",@"Tab Indent Text Color",@"Tab Indent Background Color"]],
                             @"DataModel" : @"TabIndentDataModel"
                             },
                         @{
@@ -102,12 +102,12 @@
                         },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Defalut",@"(blank)",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Defalut",@"(blank)",@[@"Default Tag Color",@"Default Text Color",@"Default Background Color"],@[@"Default Tag Color",@"Default Text Color",@"Default Background Color"]],
                             @"DataModel" : @"DefaultDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Bold",@"**bold**",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Bold",@"**bold**",@[@"Bold Tag Color",@"Bold Text Color",@"Bold Background Color"],@[@"Bold Tag Color",@"Bold Text Color",@"Bold Background Color"]],
                             @"DataModel" : @"BoldDataModel"
                             },
                         @{
@@ -256,6 +256,7 @@
         else if (tableColumn == tableView.tableColumns[2])
         {
             cellIdentifer = @"lightThemeCellView";
+            NSArray *descrptionArray = [titlesArray objectAtIndex:2];
             JZSettingsApperanceThemeTableViewLightCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
             [view.foregroundTagColorWell setColor:[dataModel.lightForegroundTagtColor colorFromSelf]];
             [view.foregroundTextColorWell setColor:[dataModel.lightForegroundTextColor colorFromSelf]];
@@ -263,6 +264,9 @@
             view.foregroundTagColorWell.colorData = dataModel.lightForegroundTagtColor;
             view.foregroundTextColorWell.colorData = dataModel.lightForegroundTextColor;
             view.backgroundBlockColorWell.colorData = dataModel.lightBackgroundBlockColor;
+            view.foregroundTagColorWell.labelString = [descrptionArray objectAtIndex:0];
+            view.foregroundTextColorWell.labelString = [descrptionArray objectAtIndex:1];
+            view.backgroundBlockColorWell.labelString = [descrptionArray objectAtIndex:2];
             return view;
         }
         else if (tableColumn == tableView.tableColumns[3])
