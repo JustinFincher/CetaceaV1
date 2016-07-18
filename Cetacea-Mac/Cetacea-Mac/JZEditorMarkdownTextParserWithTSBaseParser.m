@@ -62,6 +62,9 @@
     _JZItalicTextAttributes =  [[self.themeDoc getData] ItalicTextAttributes];
     _JZItalicTagAttributes =  [[self.themeDoc getData] ItalicTagAttributes];
     
+    _JZStrikeThroughTextAttributes =  [[self.themeDoc getData] StrikeThroughTextAttributes];
+    _JZStrikeThroughTagAttributes =  [[self.themeDoc getData] StrikeThroughTagAttributes];
+    
     _JZCodeBlockTextAttributes =  [[self.themeDoc getData] CodeBlockTextAttributes];
     _JZCodeBlockTagAttributes =  [[self.themeDoc getData] CodeBlockTagAttributes];
     
@@ -74,6 +77,11 @@
     _JZQuoteTextAttributes =  [[self.themeDoc getData] QuoteTextAttributes];
     _JZQuoteTagAttributes =  [[self.themeDoc getData] QuoteTagAttributes];
     
+    _JZImageTextAttributes =  [[self.themeDoc getData] ImageTextAttributes];
+    _JZImageTagAttributes =  [[self.themeDoc getData] ImageTagAttributes];
+    
+    _JZLinkTextAttributes =  [[self.themeDoc getData] LinkTextAttributes];
+    _JZLinkTagAttributes =  [[self.themeDoc getData] LinkTagAttributes];
     
 }
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown
@@ -183,24 +191,27 @@
 - (void)addImageParsing
 {
     NSRegularExpression *ImageParsing = [NSRegularExpression regularExpressionWithPattern:@"\\!\\[[^\\[]*?\\]\\(\\S*\\)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    //__weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ImageParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
-         NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
-         
-         NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
-         NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-         [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
-         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
+         if (match.range.length > 0)
+         {
+             NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
+             NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
+             
+             NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
+             NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+             [attributedString addAttributes:weakSelf.JZImageTextAttributes range:match.range];
+             [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
+         }
      }];
 }
 - (void)addLinkParsing
 {
     NSRegularExpression *LinkParsing = [NSRegularExpression regularExpressionWithPattern:@"\\[[^\\[]*?\\]\\([^\\)]*\\)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    //__weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:LinkParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
          NSUInteger imagePathStart = [attributedString.string rangeOfString:@"(" options:(NSStringCompareOptions)0 range:match.range].location;
@@ -208,8 +219,8 @@
          
          NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
          NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+         [attributedString addAttributes:weakSelf.JZLinkTextAttributes range:match.range];
          [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
-         [attributedString addAttributes:weakSelfParser.lineBlockAttributes range:match.range];
      }];
 }
 - (void)addBackTickCodeBlockParsing
@@ -231,14 +242,16 @@
 - (void)addTildeStrikeThroughParsing
 {
     NSRegularExpression *CodeBlockParsing = [NSRegularExpression regularExpressionWithPattern:@"(?<!\\\\)(?:\\\\\\\\)*+(~+)(.*?[^~].*?)(\\1)(?!~)" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
-    __weak TSMarkdownParser *weakSelfParser = self.parser;
-    //__weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
+    //__weak TSMarkdownParser *weakSelfParser = self.parser;
+    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         NSRange range = [match rangeAtIndex:2];
-         
-//         [attributedString addAttributes:weakSelfParser.codeBlockAttributes range:match.range];
-         [attributedString addAttributes:weakSelfParser.monospaceAttributes range:match.range];
+         if (match.numberOfRanges == 4)
+         {
+             [attributedString addAttributes:weakSelf.JZStrikeThroughTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelf.JZStrikeThroughTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelf.JZStrikeThroughTagAttributes range:[match rangeAtIndex:3]];
+         }
      }];
 }
 - (void)addListParsing

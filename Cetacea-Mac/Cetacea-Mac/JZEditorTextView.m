@@ -61,6 +61,9 @@
     JZEditorLayouManager *layoutManager = [[JZEditorLayouManager alloc] init];
     [self.textContainer replaceLayoutManager:layoutManager];
     
+    self.allowsDocumentBackgroundColorChange = YES;
+    self.layoutManager.allowsNonContiguousLayout = YES;
+    
     _hasSetup = YES;
 }
 - (void)viewDidMoveToSuperview

@@ -206,6 +206,25 @@
               NSForegroundColorAttributeName: ItalicTagForegroundColor,
               NSBackgroundColorAttributeName: ItalicTagBackgroundColor};
 }
+- (NSDictionary<NSString *,id> *)StrikeThroughTextAttributes
+{
+    NSColor *StrikeThroughTextForegroundColor = [self shouldApplyLightTheme]? [self.ItalicDataModel.lightForegroundTextColor colorFromSelf] : [self.ItalicDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *StrikeThroughTextBackgroundColor = [self shouldApplyLightTheme]? [self.ItalicDataModel.lightBackgroundBlockColor colorFromSelf] : [self.ItalicDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont],
+              NSForegroundColorAttributeName: StrikeThroughTextForegroundColor,
+              NSBackgroundColorAttributeName: StrikeThroughTextBackgroundColor,
+              NSStrikethroughStyleAttributeName:
+                  [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+}
+
+- (NSDictionary<NSString *,id> *)StrikeThroughTagAttributes
+{
+    NSColor *StrikeThroughTagForegroundColor = [self shouldApplyLightTheme]? [self.StrikeThroughDataModel.lightForegroundTagtColor colorFromSelf] : [self.StrikeThroughDataModel.darkForegroundTagtColor colorFromSelf];
+    NSColor *StrikeThroughTagBackgroundColor = [self shouldApplyLightTheme]? [self.StrikeThroughDataModel.lightBackgroundBlockColor colorFromSelf] : [self.StrikeThroughDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont],
+              NSForegroundColorAttributeName: StrikeThroughTagForegroundColor,
+              NSBackgroundColorAttributeName: StrikeThroughTagBackgroundColor};
+}
 - (NSDictionary<NSString *,id> *)ListTextAttributes
 {
     NSColor *ListTextForegroundColor = [self shouldApplyLightTheme]? [self.ListDataModel.lightForegroundTextColor colorFromSelf] : [self.ListDataModel.darkForegroundTextColor colorFromSelf];
@@ -239,5 +258,39 @@
     return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont],
               NSForegroundColorAttributeName: QuoteTagForegroundColor,
               NSBackgroundColorAttributeName: QuoteTagBackgroundColor};
+}
+- (NSDictionary<NSString *,id> *)ImageTextAttributes
+{
+    NSColor *ImageTextForegroundColor = [self shouldApplyLightTheme]? [self.ImageDataModel.lightForegroundTextColor colorFromSelf] : [self.ImageDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *ImageTextBackgroundColor = [self shouldApplyLightTheme]? [self.ImageDataModel.lightBackgroundBlockColor colorFromSelf] : [self.ImageDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont],
+              NSForegroundColorAttributeName: ImageTextForegroundColor,
+              NSBackgroundColorAttributeName: ImageTextBackgroundColor};
+}
+
+- (NSDictionary<NSString *,id> *)ImageTagAttributes
+{
+    NSColor *ImageTagForegroundColor = [self shouldApplyLightTheme]? [self.ImageDataModel.lightForegroundTagtColor colorFromSelf] : [self.ImageDataModel.darkForegroundTagtColor colorFromSelf];
+    NSColor *ImageTagBackgroundColor = [self shouldApplyLightTheme]? [self.ImageDataModel.lightBackgroundBlockColor colorFromSelf] : [self.ImageDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont],
+              NSForegroundColorAttributeName: ImageTagForegroundColor,
+              NSBackgroundColorAttributeName: ImageTagBackgroundColor};
+}
+- (NSDictionary<NSString *,id> *)LinkTextAttributes
+{
+    NSColor *LinkTextForegroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightForegroundTextColor colorFromSelf] : [self.QuoteDataModel.darkForegroundTextColor colorFromSelf];
+    NSColor *LinkTextBackgroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightBackgroundBlockColor colorFromSelf] : [self.QuoteDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getItalicFont],
+              NSForegroundColorAttributeName: LinkTextForegroundColor,
+              NSBackgroundColorAttributeName: LinkTextBackgroundColor};
+}
+
+- (NSDictionary<NSString *,id> *)LinkTagAttributes
+{
+    NSColor *LinkTagForegroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightForegroundTagtColor colorFromSelf] : [self.QuoteDataModel.darkForegroundTagtColor colorFromSelf];
+    NSColor *LinkTagBackgroundColor = [self shouldApplyLightTheme]? [self.QuoteDataModel.lightBackgroundBlockColor colorFromSelf] : [self.QuoteDataModel.darkBackgroundBlockColor colorFromSelf];
+    return @{ NSFontAttributeName: [[JZFontDisplayManager sharedManager] getBoldFont],
+              NSForegroundColorAttributeName: LinkTagForegroundColor,
+              NSBackgroundColorAttributeName: LinkTagBackgroundColor};
 }
 @end

@@ -77,9 +77,12 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
-    id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
-    [strongDelegate rowSelected:selectedRow.markdownDocReference];
+    if ([[notification object] selectedRow] >= 0)
+    {
+        JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
+        id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
+        [strongDelegate rowSelected:selectedRow.markdownDocReference];
+    }
 }
 
 

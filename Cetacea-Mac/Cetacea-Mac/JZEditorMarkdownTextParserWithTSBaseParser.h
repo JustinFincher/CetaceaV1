@@ -47,6 +47,9 @@ typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTextAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZItalicTagAttributes;
 
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZStrikeThroughTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZStrikeThroughTagAttributes;
+
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTextAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZTabIndentTagAttributes;
 
@@ -55,5 +58,11 @@ typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZQuoteTextAttributes;
 @property (nonatomic, strong) NSDictionary<NSString *, id> *JZQuoteTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZImageTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZImageTagAttributes;
+
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZLinkTextAttributes;
+@property (nonatomic, strong) NSDictionary<NSString *, id> *JZLinkTagAttributes;
 
 @end

@@ -112,12 +112,12 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Italic",@"*Italic*",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Italic",@"*Italic*",@[@"Italic Tag Color",@"Italic Text Color",@"Italic Background Color"],@[@"Italic Tag Color",@"Italic Text Color",@"Italic Background Color"]],
                             @"DataModel" : @"ItalicDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Strike Through",@"~~text~~",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Strike Through",@"~~text~~",@[@"Strike Through Tag Color",@"Strike Through Text Color",@"Strike Through Background Color"],@[@"Strike Through Tag Color",@"Strike Through Text Color",@"Strike Through Background Color"]],
                             @"DataModel" : @"StrikeThroughDataModel"
                             },
                         @{
@@ -126,12 +126,12 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"List",@"+ list\nOR\n- list\nOR\n* list",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"List",@"+ list\nOR\n- list\nOR\n* list",@[@"List Tag Color",@"List Text Color",@"List Background Color"],@[@"List Tag Color",@"List Text Color",@"List Background Color"]],
                             @"DataModel" : @"ListDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Quote",@"> Quote",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Quote",@"> Quote",@[@"Quote Tag Color",@"Quote Text Color",@"Quote Background Color"],@[@"Quote Tag Color",@"Quote Text Color",@"Quote Background Color"]],
                             @"DataModel" : @"QuoteDataModel"
                             },
                         @{
@@ -140,12 +140,12 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Image",@"![img name](img path)",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Image",@"![img name](img path)",@[@"Image Tag Color",@"Image Text Color",@"Image Background Color"],@[@"Image Tag Color",@"Image Text Color",@"Image Background Color"]],
                             @"DataModel" : @"ImageDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Link",@"[link name](link path)",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Link",@"[link name](link path)",@[@"Link Tag Color",@"Link Text Color",@"Link Background Color"],@[@"Link Tag Color",@"Link Text Color",@"Link Background Color"]],
                             @"DataModel" : @"LinkDataModel"
                             },
                         @{
@@ -154,12 +154,12 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"Link",@"[link name](link path)",@[@"View Tag Color",@"View Text Color",@"View Background Color"],@[@"View Tag Color",@"View Text Color",@"View Background Color"]]],
                             @"DataModel" : @"EditorViewDataModel"
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Line Indicator",@"editor's sidebar view",@[@"",@"",@""],@[@"",@"",@""]],
+                            @"SectionTitles" : @[@"Line Indicator",@"editor's sidebar view",@[@"Line Indicator HighLight Color",@"Line Indicator Text Color",@"Line Indicator Background Color"],@[@"Line Indicator HighLight Color",@"Line Indicator Text Color",@"Line Indicator Background Color"]],
                             @"DataModel" : @"RuleViewDataModel"
                             },
                         

@@ -24,18 +24,23 @@
 @property (nonatomic,strong) JZEditorLayouManager *layoutManager;
 @property (nonatomic,strong) JZEditorRulerView *ruleView;
 
-
+@property (nonatomic) int refreshHighLightCounter;
+@property (nonatomic,strong) NSTimer *refreshHighLightTimer;
 @end
 
 @implementation JZEditorViewController
 @synthesize editorTextView,editorScrollView,ruleView;
+@synthesize refreshHighLightCounter,refreshHighLightTimer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    refreshHighLightCounter = 0;
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
     self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+    
+    refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
 
 //    
 //    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
@@ -80,6 +85,14 @@
     [self.editorTextView setNeedsLayout:YES];
      self.editorTextView.layoutManager.allowsNonContiguousLayout = YES;
 }
+- (void)refreshHighLightTimerFired:(NSTimer *)timer
+{
+    if (refreshHighLightCounter > 0)
+    {
+        [self refreshHightLight];
+        refreshHighLightCounter = 0;
+    }
+}
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
@@ -113,7 +126,7 @@
 -(void)textDidChange:(NSNotification *)notification
 {
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
-    [self refreshHightLight];
+    refreshHighLightCounter++;
 }
 - (void)refreshHightLight
 {
