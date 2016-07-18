@@ -20,6 +20,6 @@
 - (void)deleteDoc;
 - (JZEditorHighlightThemeDataModel *)getData;
 
-- (NSImage *)getPreviewImage;
+//- (NSImage *)getPreviewImage;
 
 @end

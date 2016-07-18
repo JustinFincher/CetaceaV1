@@ -154,7 +154,7 @@
                             },
                         @{
                             @"isSectionHeaderRow": @"NO",
-                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"Link",@"[link name](link path)",@[@"View Tag Color",@"View Text Color",@"View Background Color"],@[@"View Tag Color",@"View Text Color",@"View Background Color"]]],
+                            @"SectionTitles" : @[@"Background",@"editor's background view",@[@"Background Tag Color",@"Background Text Color",@"Background Color"],@[@"Background Tag Color",@"Background Text Color",@"Background Color"]],
                             @"DataModel" : @"EditorViewDataModel"
                             },
                         @{

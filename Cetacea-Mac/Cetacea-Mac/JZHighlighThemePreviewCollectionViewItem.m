@@ -7,6 +7,7 @@
 //
 
 #import "JZHighlighThemePreviewCollectionViewItem.h"
+#import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem ()
 
@@ -18,13 +19,13 @@
 @implementation JZHighlighThemePreviewCollectionViewItem
 
 - (void)initWithisAddButton:(BOOL)isAdd
-                      Image:(NSImage *)img
-      backgroundShadowColor:(NSColor *)color
+                      Theme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
                   themeName:(NSString *)string
 {
-    self.view.wantsLayer = YES;
-    [_themePic setWantsLayer:YES];
-    _themePic.layer.masksToBounds = YES;
+    [_themePreviewTextView setEditable:NO];
+    _themePreviewScrollView.hasVerticalScroller = NO;
+    [_themePreviewScrollView setWantsLayer:YES];
+    _themePreviewScrollView.layer.masksToBounds = YES;
     
     if (_shadow == nil)
     {
@@ -35,21 +36,30 @@
     if (isAdd)
     {
         self.themeName.stringValue = @"Add New";
-        self.themePic.image = [NSImage imageNamed:@"JZAddNewTheme"];
-        _shadow.shadowColor = [NSColor blueColor];
+        _themePreviewTextView.string = @"Add New Markdown Theme Here";
+        _shadow.shadowColor = [NSColor blackColor];
     }else
     {
         self.themeName.stringValue = string;
-        self.themePic.image = ((img == nil) ? [NSImage imageNamed:@"JZPlaceHolderTheme"] : img);
-        _shadow.shadowColor = color;
+        _shadow.shadowColor = [doc.getData getBackgroundColor];
+        //high light
+        _themePreviewTextView.string = @"# About Cetacea\nCetacea is a `markdown editor` **designed** *to* ~~make~~ writing things simple, with various themes and multi-platform sync.";
+        _themePreviewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+        _themePreviewTextView.parser.themeDoc = doc;
+        [_themePreviewTextView.parser refreshAttributesTheme];
+        [_themePreviewTextView.textStorage setAttributedString: [_themePreviewTextView.parser attributedStringFromMarkdown:_themePreviewTextView.string]];
     }
 
     [self.shadowView setWantsLayer:YES];
     self.shadowView.layer.backgroundColor = [NSColor whiteColor].CGColor;
     self.shadowView.layer.masksToBounds = NO;
     [self.shadowView setShadow:_shadow];
-    [_themePic.layer setCornerRadius:5.0];
-    _themePic.layer.masksToBounds = YES;
+    [_themePreviewScrollView.layer setCornerRadius:5.0f];
+    _themePreviewScrollView.layer.masksToBounds = YES;
+    [_themePreviewScrollView.contentView setWantsLayer:YES];
+    [_themePreviewScrollView.contentView.layer setCornerRadius:5.0f];
+    [_themePreviewTextView refreshHightLight];
+    
 
 }
 @end

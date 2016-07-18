@@ -61,28 +61,26 @@
 {
     if (_themeArray)
     {
-        return _themeArray.count + 1;
+        return _themeArray.count;
     }
-    return 1;
+    return 0;
 }
 - (NSCollectionViewItem *)collectionView:(NSCollectionView *)collectionView
      itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
     JZHighlighThemePreviewCollectionViewItem *item = [collectionView makeItemWithIdentifier:@"JZHighlighThemePreviewCollectionViewItem" forIndexPath:indexPath];
-    BOOL isAddButton = (indexPath.item == 0);
+    BOOL isAddButton = NO;
     JZiCloudFileExtensionCetaceaThemeDoc *doc;
-    NSImage *img;
     NSString *themeName;
     NSColor *shadowColor;
     if (!isAddButton)
     {
-        doc = [self.themeArray objectAtIndex:indexPath.item - 1];
+        doc = [self.themeArray objectAtIndex:indexPath.item];
         themeName = doc.data.themeName;
-        img = [doc getPreviewImage];
         shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor colorFromSelf];
-    }
+        [item initWithisAddButton:isAddButton Theme:doc themeName:themeName];
 
-    [item initWithisAddButton:isAddButton Image:img backgroundShadowColor:shadowColor themeName:themeName];
+    }
     return item;
 }
 
@@ -97,15 +95,8 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
         return;
     }else
     {
-        NSLog(@"%ld",(long)path.item);
-        if (path.item == 0)
-        {
-            [self createNewAndShow];
-        }else
-        {
-            JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:(path.item - 1)];
-            [self showThemeDoc:doc];
-        }
+        JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:(path.item)];
+        [self showThemeDoc:doc];
     }
 }
 
@@ -117,6 +108,9 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
     [self reload];
     [self showThemeDoc:new];
     
+}
+- (IBAction)addButtonPressed:(id)sender {
+    [self createNewAndShow];
 }
 - (void)showThemeDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
 {

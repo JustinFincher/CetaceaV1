@@ -9,7 +9,8 @@
             <connections>
                 <outlet property="shadowView" destination="GFU-t7-vpt" id="mDY-6B-43c"/>
                 <outlet property="themeName" destination="r0s-rU-PeA" id="KnJ-N8-wzq"/>
-                <outlet property="themePic" destination="vxj-GX-U1N" id="jAb-mx-AkY"/>
+                <outlet property="themePreviewScrollView" destination="gkb-FV-r2m" id="azT-2G-CGl"/>
+                <outlet property="themePreviewTextView" destination="0Px-CF-P5v" id="oj9-Qz-h84"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -26,14 +27,6 @@
                         <constraint firstAttribute="height" constant="150" id="Stz-WG-rro"/>
                     </constraints>
                 </customView>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxj-GX-U1N">
-                    <rect key="frame" x="20" y="25" width="200" height="160"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="200" id="3GC-0Q-xY0"/>
-                        <constraint firstAttribute="height" constant="160" id="rzH-fM-Es5"/>
-                    </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="Kj4-JK-g2W"/>
-                </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-rU-PeA">
                     <rect key="frame" x="78" y="4" width="85" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Theme Name" id="cJu-tR-OSR">
@@ -42,12 +35,44 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkb-FV-r2m">
+                    <rect key="frame" x="20" y="25" width="200" height="160"/>
+                    <clipView key="contentView" id="DoY-wI-5KL">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView editable="NO" selectable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="0Px-CF-P5v" customClass="JZEditorTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="200" height="160"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                                <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <size key="minSize" width="200" height="160"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="GlR-yQ-gt7"/>
+                        <constraint firstAttribute="width" constant="200" id="OiT-oj-0Uu"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="gsH-Sk-NPm">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="bMA-pQ-pkz">
+                        <rect key="frame" x="184" y="0.0" width="16" height="160"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
             </subviews>
             <constraints>
-                <constraint firstItem="vxj-GX-U1N" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="48Y-Fb-tJW"/>
-                <constraint firstItem="r0s-rU-PeA" firstAttribute="top" secondItem="vxj-GX-U1N" secondAttribute="bottom" constant="4" id="SmG-vN-xP7"/>
+                <constraint firstItem="r0s-rU-PeA" firstAttribute="top" secondItem="gkb-FV-r2m" secondAttribute="bottom" constant="4" id="8XQ-Qc-x29"/>
+                <constraint firstItem="gkb-FV-r2m" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="MHC-M1-bBk"/>
                 <constraint firstItem="GFU-t7-vpt" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" constant="-5" id="dLG-mH-oDW"/>
-                <constraint firstItem="vxj-GX-U1N" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" constant="-5" id="nKG-9c-WLc"/>
+                <constraint firstItem="gkb-FV-r2m" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" constant="-5" id="vAF-kX-AwX"/>
                 <constraint firstItem="GFU-t7-vpt" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="vs9-gg-PtN"/>
                 <constraint firstItem="r0s-rU-PeA" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="yl0-gz-pyC"/>
             </constraints>

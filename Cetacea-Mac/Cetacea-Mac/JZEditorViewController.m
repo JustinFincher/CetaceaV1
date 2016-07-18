@@ -75,7 +75,7 @@
                                              selector:@selector(dayNightThemeSwitched:)
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
-    [self refreshHightLight];
+    [self.editorTextView refreshHightLight];
 }
 - (void)viewDidAppear
 {
@@ -89,32 +89,26 @@
 {
     if (refreshHighLightCounter > 0)
     {
-        [self refreshHightLight];
+        [self.editorTextView refreshHightLight];
         refreshHighLightCounter = 0;
     }
 }
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
-//    NSError *error;
-//    self.editorTextView.string = [NSString stringWithContentsOfFile:[currentEditingMarkdown.url path] encoding:NSUTF8StringEncoding error:&error];
-//    if (error)
-//    {
-//        NSLog(@"%@",[error localizedDescription]);
-//    }
     [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.data.highLightString];
     [self.editorTextView.parser refreshAttributesTheme];
-    [self refreshHightLight];
+    [self.editorTextView refreshHightLight];
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
 {
     [self.editorTextView.parser refreshAttributesTheme];
-    [self refreshHightLight];
+    [self.editorTextView  refreshHightLight];
 }
 - (void)baseFontChanged:(NSNotification *)aNotification
 {
     [self.editorTextView.parser refreshAttributesTheme];
-    [self refreshHightLight];
+    [self.editorTextView  refreshHightLight];
 }
 
 #pragma mark - NSTextViewDelegate
@@ -127,16 +121,6 @@
 {
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
     refreshHighLightCounter++;
-}
-- (void)refreshHightLight
-{
-    self.range = self.editorTextView.selectedRange;
-    //NSLog(@"________________________________");
-    //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.range.location,(unsigned long)self.range.length);
-    [self.editorTextView.textStorage setAttributedString: [self.editorTextView.parser attributedStringFromMarkdown:self.editorTextView.string]];
-    [self.editorTextView setSelectedRange:NSMakeRange(self.range.location, 0)];
-    //NSLog(@"RANGE : %lu,%lu",(unsigned long)self.editorTextView.selectedRange.location,(unsigned long)self.editorTextView.selectedRange.length);
-
 }
 - (void)textView:(NSTextView *)textView
    clickedOnCell:(id<NSTextAttachmentCell>)cell

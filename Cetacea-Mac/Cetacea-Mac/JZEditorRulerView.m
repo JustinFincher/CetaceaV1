@@ -241,4 +241,8 @@
 {
     return NO;
 }
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 @end

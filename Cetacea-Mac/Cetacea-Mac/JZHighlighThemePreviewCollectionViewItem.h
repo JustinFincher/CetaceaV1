@@ -7,14 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JZEditorTextView.h"
+#import "JZiCloudFileExtensionCetaceaThemeDoc.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem : NSCollectionViewItem
 @property (weak) IBOutlet NSTextField *themeName;
-@property (weak) IBOutlet NSImageView *themePic;
+@property (weak) IBOutlet NSScrollView *themePreviewScrollView;
+@property (unsafe_unretained) IBOutlet JZEditorTextView *themePreviewTextView;
+
 @property (nonatomic) BOOL isAddState;
 @property (nonatomic,strong) NSColor *shadowColor;
 - (void)initWithisAddButton:(BOOL)isAdd
-                      Image:(NSImage *)img
-      backgroundShadowColor:(NSColor *)color
+                      Theme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
                   themeName:(NSString *)string;
 @end

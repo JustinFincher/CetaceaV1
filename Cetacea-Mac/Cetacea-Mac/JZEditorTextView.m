@@ -44,17 +44,15 @@
 
 - (void)setupTextView
 {
-//    [self setWantsLayer:YES];
-//    [self.layer setBackgroundColor:[[NSColor blueColor] CGColor]];
-
-
+    
+    _hasSetup = YES;
+    NSLog(@"setupTextView");
     self.automaticDashSubstitutionEnabled = NO;
     if (self.enclosingScrollView)
     {
-        self.rulerView = [[JZEditorRulerView alloc] initWithScrollView:self.enclosingScrollView
-                                                           orientation:NSVerticalRuler];
-        self.rulerView.clientView = self;
-        self.enclosingScrollView.verticalRulerView = self.rulerView;
+        self.enclosingScrollView.verticalRulerView = [[JZEditorRulerView alloc] initWithScrollView:self.enclosingScrollView
+                                                                                       orientation:NSVerticalRuler];
+        self.enclosingScrollView.verticalRulerView.clientView = self;
         self.enclosingScrollView.hasVerticalRuler = YES;
         self.enclosingScrollView.rulersVisible = YES;
     }
@@ -64,20 +62,37 @@
     self.allowsDocumentBackgroundColorChange = YES;
     self.layoutManager.allowsNonContiguousLayout = YES;
     
-    _hasSetup = YES;
+    self.enclosingScrollView.rulersVisible = YES;
 }
-- (void)viewDidMoveToSuperview
+
+- (void)viewDidMoveToWindow
 {
     if (!_hasSetup)
     {
         [self setupTextView];
     }
 }
-
+- (void)refreshHightLight
+{
+    if (self.string)
+    {
+        NSRange range = self.selectedRange;
+        NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
+        [self.textStorage setAttributedString: attStr];
+        [self setSelectedRange:NSMakeRange(range.location, 0)];
+    }
+    
+     [self setWantsLayer:YES];
+    NSColor *color = [[self.parser.themeDoc getData] getBackgroundColor];
+    [self setBackgroundColor:color];
+}
 - (void)updateRuler
 {
     [super updateRuler];
-    self.rulerView.needsDisplay = YES;
+    self.enclosingScrollView.verticalRulerView.needsDisplay = YES;
+}
+- (void)dealloc
+{
 }
 
 @end

@@ -13,13 +13,10 @@
 
 @interface JZEditorTextView : NSTextView
 
-
-@property (strong,nonatomic) JZEditorRulerView *rulerView;
-@property (strong,nonatomic) JZEditorLayouManager *layoutManager;
-
-@property (nonatomic)BOOL hasSetup;
+@property (atomic)BOOL hasSetup;
 - (void)setupTextView;
 @property (nonatomic,strong) JZEditorMarkdownTextParserWithTSBaseParser *parser;
 
+- (void)refreshHightLight;
 
 @end
