@@ -7,14 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "JZEditorTextView.h"
 @import AppKit;
 
+@class JZEditorTextView;
 @interface JZEditorRulerView : NSRulerView
 
-- (NSTextView *)getTextView;
 @property (weak,nonatomic)NSScrollView *textScrollView;
-
 @property (nonatomic,strong) NSFont *font;
 @property (nonatomic,strong) NSFont *boldFont;
+
+- (JZEditorTextView *)getTextView;
 
 @end

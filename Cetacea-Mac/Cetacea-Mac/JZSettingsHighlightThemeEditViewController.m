@@ -15,6 +15,7 @@
 #import "KeyValueObserver.h"
 
 #import "JZEditorHighlightThemeSingleRowDataModel.h"
+#import "JZdayNightThemeManager.h"
 
 @interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource,NSTextFieldDelegate>
 @property (weak) IBOutlet NSScrollView *scrollView;

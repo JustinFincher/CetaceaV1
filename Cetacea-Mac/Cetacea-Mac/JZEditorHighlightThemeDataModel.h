@@ -60,4 +60,7 @@
 
 - (void)getAttributes;
 - (NSColor *)getBackgroundColor;
+- (NSColor *)getRulerViewBackgroundColor;
+- (NSColor *)getRulerViewForegroundTextColor;
+- (NSColor *)getRulerViewForegroundHightlightTextColor;
 @end

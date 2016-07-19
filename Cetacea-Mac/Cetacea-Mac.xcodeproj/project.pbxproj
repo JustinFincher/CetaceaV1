@@ -857,10 +857,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
 				0D9D8FE21D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m in Sources */,
 				0D9D8FD71D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
 				0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */,
-				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
 				0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */,
 				0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */,
 				0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */,
@@ -876,7 +876,6 @@
 				0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */,
 				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,
 				0D9D8FC61D2F7888005F91F6 /* JZColorDataModel.m in Sources */,
-				0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */,
 				0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */,
 				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
 				0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */,
@@ -917,6 +916,7 @@
 				0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */,
 				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
 				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
+				0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

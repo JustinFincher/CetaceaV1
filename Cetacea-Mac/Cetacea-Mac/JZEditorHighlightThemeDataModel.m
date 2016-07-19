@@ -102,6 +102,21 @@
     NSColor *backgroundViewColor = [self shouldApplyLightTheme]? [self.EditorViewDataModel.lightBackgroundBlockColor colorFromSelf] : [self.EditorViewDataModel.darkBackgroundBlockColor colorFromSelf];
     return backgroundViewColor;
 }
+- (NSColor *)getRulerViewBackgroundColor
+{
+    NSColor *color = [self shouldApplyLightTheme]? [self.RuleViewDataModel.lightBackgroundBlockColor colorFromSelf] : [self.RuleViewDataModel.darkBackgroundBlockColor colorFromSelf];
+    return color;
+}
+- (NSColor *)getRulerViewForegroundTextColor
+{
+    NSColor *color = [self shouldApplyLightTheme]? [self.RuleViewDataModel.lightForegroundTextColor colorFromSelf] : [self.RuleViewDataModel.darkForegroundTextColor colorFromSelf];
+    return color;
+}
+- (NSColor *)getRulerViewForegroundHightlightTextColor
+{
+    NSColor *color = [self shouldApplyLightTheme]? [self.RuleViewDataModel.lightForegroundTagtColor colorFromSelf] : [self.RuleViewDataModel.darkForegroundTagtColor colorFromSelf];
+    return color;
+}
 
 - (NSDictionary<NSString *,id> *)DefaultTextAttributes
 {

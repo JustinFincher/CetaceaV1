@@ -57,7 +57,7 @@
     [_themePreviewScrollView.layer setCornerRadius:5.0f];
     _themePreviewScrollView.layer.masksToBounds = YES;
     [_themePreviewScrollView.contentView setWantsLayer:YES];
-    [_themePreviewScrollView.contentView.layer setCornerRadius:5.0f];
+    //[_themePreviewScrollView.contentView.layer setCornerRadius:5.0f];
     [_themePreviewTextView refreshHightLight];
     
 

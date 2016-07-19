@@ -76,6 +76,7 @@
 {
     if (self.string)
     {
+//        self.textColor = [self.parser.themeDoc.data.DefaultTextAttributes]
         NSRange range = self.selectedRange;
         NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
         [self.textStorage setAttributedString: attStr];

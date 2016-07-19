@@ -40,7 +40,7 @@
 {
     self.needsDisplay = YES;
 }
-- (NSTextView *)getTextView
+- (JZEditorTextView *)getTextView
 {
     return self.scrollView.contentView.documentView;
 }
@@ -56,16 +56,16 @@
 
 - (void)drawHashMarksAndLabelsInRect:(NSRect)rect
 {
-    [[NSColor colorWithCalibratedWhite:0.85 alpha:0.0] set];
+    JZEditorTextView *textView = [self getTextView];
+    [[textView.parser.themeDoc.getData getRulerViewBackgroundColor] set];
      NSRectFill(rect);
-    
-    NSTextView *textView = [self getTextView];
+
     NSString *string = [self getTextView].string;
     CGFloat width = self.ruleThickness;
     NSLayoutManager *layoutManager = [self getTextView].layoutManager;
     CGFloat padding = 5.0f;
-    NSColor *textColor = [[JZFontDisplayManager sharedManager] getRuleTextForegroundColor];
-    NSColor *textHighLighColor = [[JZFontDisplayManager sharedManager] getRuleTextForegroundHighLightedColor];
+    NSColor *textColor = [textView.parser.themeDoc.getData getRulerViewForegroundTextColor];
+    NSColor *textHighLighColor = [textView.parser.themeDoc.getData getRulerViewForegroundHightlightTextColor];
     
     CTFontRef ctFont = (__bridge CTFontRef)font;
     CGFontRef cgFont = CTFontCopyGraphicsFont(ctFont, nil);

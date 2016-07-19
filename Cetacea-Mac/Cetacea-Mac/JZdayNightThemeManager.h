@@ -45,6 +45,7 @@ typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType) {
  */
 - (NSString *)getShouldAppliedNSAppearanceName;
 
+- (void)postThemeChanged:(NSString *)NSAppearanceName;
 /**
  *  Set the theme switch type, currently Four type to choose,
  @"JZDayNightThemeSwithTypeLight",
