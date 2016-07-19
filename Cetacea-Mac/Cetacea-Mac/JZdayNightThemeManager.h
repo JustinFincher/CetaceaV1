@@ -45,7 +45,13 @@ typedef NS_OPTIONS(NSUInteger, JZDayNightThemeSwithType) {
  */
 - (NSString *)getShouldAppliedNSAppearanceName;
 
+/**
+ *  Post a Theme Changed Notifcation, you should use getShouldAppliedNSAppearanceName method to get the NSAppearanceName
+ *
+ *  @param NSAppearanceName NSAppearanceName to be applied
+ */
 - (void)postThemeChanged:(NSString *)NSAppearanceName;
+
 /**
  *  Set the theme switch type, currently Four type to choose,
  @"JZDayNightThemeSwithTypeLight",

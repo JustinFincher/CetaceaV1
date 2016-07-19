@@ -10,9 +10,24 @@
 
 @interface JZiCloudFileExtensionCetaceaDataModel : NSObject<NSCoding>
 
+/**
+ *  Markdown String
+ */
 @property (nonatomic,strong) NSString *markdownString;
+
+/**
+ *  Title
+ */
 @property (nonatomic,strong) NSString *title;
+
+/**
+ *  Cached Highlight NSAttributedString
+ */
 @property (nonatomic,strong) NSAttributedString *highLightString;
+
+/**
+ *  Tags Array
+ */
 @property (nonatomic,strong) NSMutableArray *tags;
 @property (nonatomic,strong) NSNumber *isFavorite;
 @property (nonatomic,strong) NSDate *createDate;

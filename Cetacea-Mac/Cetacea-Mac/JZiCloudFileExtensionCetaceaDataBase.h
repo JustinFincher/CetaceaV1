@@ -13,7 +13,19 @@
 
 + (id)sharedManager;
 
+
+/**
+ *  Get All JZiCloudFileExtensionCetaceaDocs
+ *
+ *  @return NSMutableArray of JZiCloudFileExtensionCetaceaDocs
+ */
 - (NSMutableArray *)loadDocs;
+
+/**
+ *  Get Next Available Doc Path
+ *
+ *  @return NSString
+ */
 - (NSString *)nextDocPath;
 
 @end
