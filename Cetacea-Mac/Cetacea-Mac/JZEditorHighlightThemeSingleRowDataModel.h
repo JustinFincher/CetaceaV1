@@ -19,6 +19,11 @@
 @property (nonatomic,strong) JZColorDataModel *darkForegroundTagtColor;
 @property (nonatomic,strong) JZColorDataModel *darkBackgroundBlockColor;
 
+/**
+ *  Default Style
+ *
+ *  @return JZEditorHighlightThemeSingleRowDataModel Instance
+ */
 - (id)initWithDefaultTextStyle;
 
 @end
