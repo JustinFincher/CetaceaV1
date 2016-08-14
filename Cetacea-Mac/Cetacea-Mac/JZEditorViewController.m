@@ -75,6 +75,11 @@
                                              selector:@selector(dayNightThemeSwitched:)
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(themeChangedOnHighLightEditView:)
+                                                 name:@"themeChangedOnHighLightEditView"
+                                               object:nil];
     [self.editorTextView refreshHightLight];
 }
 - (void)viewDidAppear
@@ -109,6 +114,13 @@
 {
     [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView  refreshHightLight];
+}
+- (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
+{
+    self.editorTextView.parser.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
+    [self.editorTextView.parser refreshAttributesTheme];
+    [self.editorTextView  refreshHightLight];
+    [self.editorTextView updateRuler];
 }
 
 #pragma mark - NSTextViewDelegate

@@ -113,13 +113,16 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:ItalicParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         [attributedString addAttributes:weakSelf.JZItalicTextAttributes range:[match rangeAtIndex:2]];
-         [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:1]];
-         [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:3]];
-         if(weakSelf.shouldRemoveTags)
+         if (match.numberOfRanges >= 3)
          {
-             [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
-             [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelf.JZItalicTextAttributes range:[match rangeAtIndex:2]];
+             [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:1]];
+             [attributedString addAttributes:weakSelf.JZItalicTagAttributes range:[match rangeAtIndex:3]];
+             if(weakSelf.shouldRemoveTags)
+             {
+                 [attributedString deleteCharactersInRange:[match rangeAtIndex:3]];
+                 [attributedString deleteCharactersInRange:[match rangeAtIndex:1]];
+             }
          }
      }];
 }

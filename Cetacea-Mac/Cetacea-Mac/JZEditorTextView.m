@@ -9,6 +9,7 @@
 #import "JZEditorTextView.h"
 #import "JZEditorHighlightThemeManager.h"
 
+
 @implementation JZEditorTextView
 
 - (void)drawRect:(NSRect)dirtyRect {

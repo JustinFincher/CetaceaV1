@@ -29,6 +29,16 @@
 
     [self configureCollectionView];
     [self reload];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(themeChangedOnHighLightEditView:)
+                                                 name:@"themeChangedOnHighLightEditView"
+                                               object:nil];
+    
+}
+- (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
+{
+    [self reload];
 }
 - (void)reload
 {

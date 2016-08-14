@@ -17,6 +17,8 @@
 #import "JZEditorHighlightThemeSingleRowDataModel.h"
 #import "JZdayNightThemeManager.h"
 
+#import "JZEditorHighlightThemeManager.h"
+
 @interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource,NSTextFieldDelegate>
 @property (weak) IBOutlet NSScrollView *scrollView;
 @property (weak) IBOutlet NSTableView *tableView;
@@ -48,12 +50,23 @@
         [self.tableView reloadData];
     }
 }
+- (IBAction)comfirmnUseButtonPressed:(NSButton *)sender
+{
+    if (self.doc)
+    {
+        [self.doc saveData];
+        [[JZEditorHighlightThemeManager sharedManager] setSelectedDoc:self.doc];
+        [self dismissViewController:self];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
+#warning apply theme to userdefaults
+    }
+}
 - (IBAction)comfirmButtonPressed:(id)sender {
     if (self.doc)
     {
         [self.doc saveData];
         [self dismissViewController:self];
-#warning make notifcation that collectionview vc dismiss this vc and refresh collectionview
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
     }
 }
 - (IBAction)cancelButtonPressed:(id)sender {
