@@ -58,7 +58,7 @@
         [[JZEditorHighlightThemeManager sharedManager] setSelectedDoc:self.doc];
         [self dismissViewController:self];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
-#warning apply theme to userdefaults
+//#warning apply theme to userdefaults
     }
 }
 - (IBAction)comfirmButtonPressed:(id)sender {

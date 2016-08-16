@@ -10,11 +10,13 @@
 #import "JZiCloudStorageProcesser.h"
 #import "JZMarkdownListTableCellView.h"
 #import "DateTools.h"
-
+#import "JZMarkdownListSortSelectionMenu.h"
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
 @property (strong,nonatomic) NSMutableArray *markdownFileArray;
+@property (strong,nonatomic) JZMarkdownListSortSelectionMenu* sortMenu;
+@property (weak) IBOutlet NSButton *sortMenuButton;
 
 @end
 
@@ -96,5 +98,23 @@
         [self.markdownListTableView reloadData];
     }
 }
+
+#pragma mark - Update List
+- (IBAction)sortMenuButtonPressed:(NSButton *)sender
+{
+    if (!_sortMenu)
+    {
+        _sortMenu = [[JZMarkdownListSortSelectionMenu alloc]init];
+    }
+    [_sortMenu popUpMenuPositioningItem:nil atLocation:CGPointMake(0, 0) inView:sender];
+}
+
+#pragma mark - JZMarkdownListSortSelectionMenuDelegate
+- (void)selectionChangedWithMethod:(JZMarkdownListSortMethod)method
+                         Direction:(JZMarkdownListSortDirection)direction
+{
+    
+}
+
 
 @end

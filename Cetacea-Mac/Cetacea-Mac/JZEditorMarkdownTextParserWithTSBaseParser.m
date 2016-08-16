@@ -40,7 +40,7 @@
         [self addBackTickCodeBlockParsing];
         [self addTildeStrikeThroughParsing];
         [self addListParsing];
-        [self addTabBlockParsing];
+//        [self addTabBlockParsing];
         self.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
     }
     return self;
