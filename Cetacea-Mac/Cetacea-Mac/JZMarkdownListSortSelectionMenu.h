@@ -31,6 +31,9 @@ typedef NS_ENUM(NSUInteger, JZMarkdownListSortDirection)
 @property (nonatomic) JZMarkdownListSortMethod sortMethod;
 @property (nonatomic) JZMarkdownListSortDirection sortDirection;
 
+- (id)initWithSortMethod:(JZMarkdownListSortMethod)method
+           SortDirection:(JZMarkdownListSortDirection)direction;
+
 @end
 
 @protocol JZMarkdownListSortSelectionMenuDelegate <NSObject>

@@ -106,7 +106,7 @@
     {
         _sortMenu = [[JZMarkdownListSortSelectionMenu alloc]init];
     }
-    [_sortMenu popUpMenuPositioningItem:nil atLocation:CGPointMake(0, 0) inView:sender];
+    [_sortMenu popUpMenuPositioningItem:nil atLocation:CGPointMake(sender.frame.size.width, 0) inView:sender];
 }
 
 #pragma mark - JZMarkdownListSortSelectionMenuDelegate

@@ -33,11 +33,85 @@
         [self addItem:[NSMenuItem separatorItem]];
         [self addItem:_byAscending];
         [self addItem:_byDescending];
+        
+        NSString *method = [[NSUserDefaults standardUserDefaults] valueForKey:@"MARKDOWN_LIST_SORT_METHOD"];
+        NSString *direction = [[NSUserDefaults standardUserDefaults] valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"];
+        
+        if ([method isEqualToString:@"JZMarkdownListSortMethodByEditDate"])
+        {
+              [_byEditDateItem setState:NSOnState];
+        }
+        else if ([method isEqualToString:@"JZMarkdownListSortMethodByTitle"])
+        {
+             [_byTitleItem setState:NSOnState];
+        }
+        
+        if ([direction isEqualToString:@"JZMarkdownListSortDirectionAscending"])
+        {
+            [_byAscending setState:NSOnState];
+        }
+        else if ([direction isEqualToString:@"JZMarkdownListSortDirectionDescending"])
+        {
+            [_byDescending setState:NSOnState];
+        }
 
     }
     return self;
 }
 
+- (id)initWithSortMethod:(JZMarkdownListSortMethod)method
+           SortDirection:(JZMarkdownListSortDirection)direction
+{
+    self = [super init];
+    if (self)
+    {
+        _byEditDateItem = [[NSMenuItem alloc] initWithTitle:@"By Edit Date" action:@selector(setByEditDate) keyEquivalent:@"d"];
+        _byTitleItem = [[NSMenuItem alloc] initWithTitle:@"By Title" action:@selector(setByTitle) keyEquivalent:@"t"];
+        _byAscending = [[NSMenuItem alloc] initWithTitle:@"Ascending" action:@selector(setByAscending) keyEquivalent:@"a"];
+        [_byAscending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        _byDescending = [[NSMenuItem alloc] initWithTitle:@"Descending" action:@selector(setByDescending) keyEquivalent:@"d"];
+        [_byDescending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        
+        _byEditDateItem.target = self;
+        _byTitleItem.target = self;
+        _byAscending.target = self;
+        _byDescending.target = self;
+        
+        [self addItem:_byEditDateItem];
+        [self addItem:_byTitleItem];
+        [self addItem:[NSMenuItem separatorItem]];
+        [self addItem:_byAscending];
+        [self addItem:_byDescending];
+        
+        switch (method)
+        {
+            case JZMarkdownListSortMethodByTitle:
+                [_byTitleItem setState:NSOnState];
+                break;
+            case JZMarkdownListSortMethodByEditDate:
+                [_byEditDateItem setState:NSOnState];
+                break;
+                
+            default:
+                break;
+        }
+        switch (direction)
+        {
+            case JZMarkdownListSortDirectionAscending:
+                [_byAscending setState:NSOnState];
+                break;
+            case JZMarkdownListSortDirectionDescending:
+                [_byDescending setState:NSOnState];
+                break;
+                
+            default:
+                break;
+        }
+        
+        
+    }
+    return self;
+}
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem
 {
     return [menuItem isEnabled];
