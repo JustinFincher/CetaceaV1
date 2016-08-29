@@ -42,6 +42,7 @@
         [self addListParsing];
 //        [self addTabBlockParsing];
         self.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
+        [self refreshAttributesTheme];
     }
     return self;
 }
@@ -49,7 +50,10 @@
 - (void)refreshAttributesTheme
 {
 //    [self.parser getRefreshedAttributes];
-    _defaultAttributes = [[self.themeDoc getData] DefaultTextAttributes];
+//    self.defaultAttributes = [[self.themeDoc getData] DefaultTextAttributes];
+    self.defaultAttributes = [[self.themeDoc getData] DefaultTextAttributes];
+    self.parser.defaultAttributes = self.defaultAttributes;
+    
     _JZAtxHeaderTextAttributes =  [[self.themeDoc getData] AtxHeaderTextAttributes];
     _JZAtxHeaderTagAttributes =  [[self.themeDoc getData] AtxHeaderTagAttributes];
     
