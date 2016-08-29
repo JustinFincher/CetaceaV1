@@ -95,6 +95,14 @@
 {
     if (markdowns)
     {
+        [self reloadDataWithMarkdowns:markdowns];
+    }
+}
+
+- (void)reloadDataWithMarkdowns :(NSMutableArray *)markdowns
+{
+    if (self.markdownListTableView.selectedRow != -1)
+    {
         NSString *selectedDocPath = [(JZiCloudFileExtensionCetaceaDoc *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow] docPath];
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
@@ -106,7 +114,10 @@
                 [self.markdownListTableView selectRow:i byExtendingSelection:NO];
             }
         }
-        
+    }else
+    {
+        self.markdownFileArray = [self sortedArrayFrom:markdowns];
+        [self.markdownListTableView reloadData];
     }
 }
 
@@ -204,8 +215,8 @@
 #pragma mark - JZMarkdownListSortSelectionMenuDelegate
 - (void)selectionChanged
 {
-    self.markdownFileArray = [self sortedArrayFrom:self.markdownFileArray];
-    [self.markdownListTableView reloadData];
+//    self.markdownFileArray = [self sortedArrayFrom:self.markdownFileArray];
+    [self reloadDataWithMarkdowns:self.markdownFileArray];
 }
 
 
