@@ -11,6 +11,7 @@
 typedef NS_ENUM(NSUInteger, JZMarkdownListSortMethod)
 {
     JZMarkdownListSortMethodByEditDate,
+    JZMarkdownListSortMethodByCreateDate,
     JZMarkdownListSortMethodByTitle,
 };
 typedef NS_ENUM(NSUInteger, JZMarkdownListSortDirection)
@@ -24,6 +25,7 @@ typedef NS_ENUM(NSUInteger, JZMarkdownListSortDirection)
 @interface JZMarkdownListSortSelectionMenu : NSMenu
 @property (nonatomic, assign) id <JZMarkdownListSortSelectionMenuDelegate> sortResultDelegate;
 @property (nonatomic,strong) NSMenuItem *byEditDateItem;
+@property (nonatomic,strong) NSMenuItem *byCreateDateItem;
 @property (nonatomic,strong) NSMenuItem *byTitleItem;
 @property (nonatomic,strong) NSMenuItem *byAscending;
 @property (nonatomic,strong) NSMenuItem *byDescending;
@@ -39,7 +41,6 @@ typedef NS_ENUM(NSUInteger, JZMarkdownListSortDirection)
 @protocol JZMarkdownListSortSelectionMenuDelegate <NSObject>
 @optional
 
-- (void)selectionChangedWithMethod:(JZMarkdownListSortMethod)method
-                         Direction:(JZMarkdownListSortDirection)direction;
+- (void)selectionChanged;
 
 @end

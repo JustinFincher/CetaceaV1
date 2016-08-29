@@ -12,11 +12,12 @@
 #import "DateTools.h"
 #import "JZMarkdownListSortSelectionMenu.h"
 
-@interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate>
+@interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate,JZMarkdownListSortSelectionMenuDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
 @property (strong,nonatomic) NSMutableArray *markdownFileArray;
 @property (strong,nonatomic) JZMarkdownListSortSelectionMenu* sortMenu;
 @property (weak) IBOutlet NSButton *sortMenuButton;
+
 
 @end
 
@@ -94,9 +95,89 @@
 {
     if (markdowns)
     {
-        self.markdownFileArray = markdowns;
+        self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
     }
+}
+
+- (NSMutableArray *)sortedArrayFrom:(NSMutableArray *)icloudFileMarkdowns
+{
+    JZMarkdownListSortMethod method;
+    JZMarkdownListSortDirection direction;
+    
+    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_METHOD"] isEqualToString:@"JZMarkdownListSortMethodByEditDate"])
+    {
+        method = JZMarkdownListSortMethodByEditDate;
+    }else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_METHOD"] isEqualToString:@"JZMarkdownListSortMethodByTitle"])
+    {
+        method = JZMarkdownListSortMethodByTitle;
+    }
+    
+    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"] isEqualToString:@"JZMarkdownListSortDirectionAscending"])
+    {
+        direction = JZMarkdownListSortDirectionAscending;
+    }else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"] isEqualToString:@"JZMarkdownListSortDirectionDescending"])
+    {
+        direction = JZMarkdownListSortDirectionDescending;
+    }
+    NSLog(@"method:%lu",(unsigned long)method);
+    NSLog(@"direction:%lu",(unsigned long)direction);
+    
+    NSArray *sortedArray;
+    sortedArray = [icloudFileMarkdowns sortedArrayUsingComparator:^NSComparisonResult(id a, id b)
+    {
+        switch (method)
+        {
+            case JZMarkdownListSortMethodByCreateDate:
+            {
+                NSDate *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] createDate];
+                NSDate *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] createDate];
+                switch (direction)
+                {
+                    case JZMarkdownListSortDirectionAscending:
+                        return [first compare:second];
+                        break;
+                    case JZMarkdownListSortDirectionDescending:
+                        return [second compare:first];
+                        break;
+                }
+            }
+                break;
+            case JZMarkdownListSortMethodByEditDate:
+            {
+                NSDate *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] updateDate];
+                NSDate *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] updateDate];
+                switch (direction)
+                {
+                    case JZMarkdownListSortDirectionAscending:
+                        return [first compare:second];
+                        break;
+                    case JZMarkdownListSortDirectionDescending:
+                        return [second compare:first];
+                        break;
+                }
+            }
+                break;
+            case JZMarkdownListSortMethodByTitle:
+            {
+                NSString *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] title];
+                NSString *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] title];
+                switch (direction)
+                {
+                    case JZMarkdownListSortDirectionAscending:
+                        return [first compare:second];
+                        break;
+                    case JZMarkdownListSortDirectionDescending:
+                        return [second compare:first];
+                        break;
+                }
+            }
+                break;
+            default:
+                break;
+        }
+    }];
+    return (NSMutableArray *)sortedArray;
 }
 
 #pragma mark - Update List
@@ -106,14 +187,15 @@
     {
         _sortMenu = [[JZMarkdownListSortSelectionMenu alloc]init];
     }
+    _sortMenu.sortResultDelegate = self;
     [_sortMenu popUpMenuPositioningItem:nil atLocation:CGPointMake(sender.frame.size.width, 0) inView:sender];
 }
 
 #pragma mark - JZMarkdownListSortSelectionMenuDelegate
-- (void)selectionChangedWithMethod:(JZMarkdownListSortMethod)method
-                         Direction:(JZMarkdownListSortDirection)direction
+- (void)selectionChanged
 {
-    
+    self.markdownFileArray = [self sortedArrayFrom:self.markdownFileArray];
+    [self.markdownListTableView reloadData];
 }
 
 
