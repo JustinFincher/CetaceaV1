@@ -95,8 +95,18 @@
 {
     if (markdowns)
     {
+        NSString *selectedDocPath = [(JZiCloudFileExtensionCetaceaDoc *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow] docPath];
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
+        for (int i = 0; i < self.markdownFileArray.count; i++)
+        {
+            JZiCloudFileExtensionCetaceaDoc *a = [self.markdownFileArray objectAtIndex:i];
+            if ([a.docPath isEqualToString:selectedDocPath])
+            {
+                [self.markdownListTableView selectRow:i byExtendingSelection:NO];
+            }
+        }
+        
     }
 }
 
