@@ -112,6 +112,7 @@
             if ([a.docPath isEqualToString:selectedDocPath])
             {
                 [self.markdownListTableView selectRow:i byExtendingSelection:NO];
+                [self.markdownListTableView scrollRowToVisible:i];
             }
         }
     }else
