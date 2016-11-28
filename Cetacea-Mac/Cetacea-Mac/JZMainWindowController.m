@@ -13,7 +13,8 @@
 #import "JZdayNightThemeManager.h"
 
 @interface JZMainWindowController ()
-@property (weak) IBOutlet NSButton *sideBarButton;
+//@property (weak) IBOutlet NSButton *sideBarButton;
+@property (weak) IBOutlet NSSegmentedControl *sideBarSwitch;
 
 @end
 
@@ -31,13 +32,19 @@
     
     NSURL *iCloudURL = [[JZiCloudStorageManager sharedManager] ubiquitousURL];
     
-    
-    [self.sideBarButton sendActionOn:NSLeftMouseUpMask];
+//    
+//    [self.sideBarButton sendActionOn:NSLeftMouseUpMask];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(dayNightThemeSwitched:)
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(sideBarSegmentWillSelectNotification:)
+                                                 name:@"sideBarSegmentWillSelectNotification"
+                                               object:nil];
+
 
 }
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
@@ -56,6 +63,13 @@
     NSInteger selectInt = segmentControl.selectedSegment;
     [[NSNotificationCenter defaultCenter]
      postNotificationName:@"sideBarSegmentSelectedNotification" object:self userInfo:@{@"selectedSegment":[NSNumber numberWithInteger:selectInt]}];
+}
+
+- (void)sideBarSegmentWillSelectNotification:(NSNotification *) notification
+{
+    NSDictionary *dict = [notification userInfo];
+    NSNumber * selectNumber = (NSNumber *)[dict valueForKey:@"selectedSegment"];
+    [self.sideBarSwitch setSelectedSegment:[selectNumber integerValue]];
 }
 
 - (IBAction)editorSegmentedControlChanged:(NSSegmentedControl *)sender

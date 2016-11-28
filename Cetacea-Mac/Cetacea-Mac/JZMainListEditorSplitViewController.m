@@ -10,9 +10,8 @@
 #import "JZMarkdownListViewController.h"
 #import "JZEditorPreviewSplitViewController.h"
 #import "JZMarkdownListViewController.h"
-#import "JZFolderListSplitViewController.h"
 
-@interface JZMainListEditorSplitViewController ()<JZMarkdownListViewDelegate>
+@interface JZMainListEditorSplitViewController ()<JZMarkdownListViewDelegate,NSSplitViewDelegate>
 @property (weak) IBOutlet NSSplitViewItem *folderListViewItem;
 @property (weak) IBOutlet NSSplitViewItem *editorViewItem;
 @end
@@ -23,6 +22,7 @@
     [super viewDidLoad];
     // Do view setup here.
 
+    self.splitView.delegate = self;
     [_folderListViewItem setMaximumThickness:600];
     [_folderListViewItem setMinimumThickness:270];
     
@@ -33,8 +33,7 @@
                                                object:nil];
     
     
-    JZFolderListSplitViewController *folderListSplitVC = (JZFolderListSplitViewController *)(_folderListViewItem.viewController);
-    JZMarkdownListViewController *markdownListVC = (JZMarkdownListViewController *)([folderListSplitVC.markdownListSplitViewItem viewController]);
+    JZMarkdownListViewController *markdownListVC = (JZMarkdownListViewController *)(_folderListViewItem.viewController);
     markdownListVC.delegate = self;
 }
 
@@ -44,22 +43,13 @@
     NSNumber * selectNumber = (NSNumber *)[dict valueForKey:@"selectedSegment"];
     switch ([selectNumber integerValue])
     {
-        case 2:
+        case 1:
             if ([self isLeftFolderListViewCollapsed])
             {
                 //ALREADY COLLAPSED DO NOTHING
             }else
             {
                 [self toggleSidebar:_folderListViewItem];
-            }
-            break;
-        case 1:
-            if ([self isLeftFolderListViewCollapsed])
-            {
-                [self toggleSidebar:_folderListViewItem];
-            }else
-            {
-                //ALREADY UNCOLLAPSED DO NOTHING
             }
             break;
         case 0:
@@ -87,6 +77,12 @@
     return _folderListViewItem.collapsed;
 }
 
+- (BOOL)splitView:(NSSplitView *)splitView
+canCollapseSubview:(NSView *)subview
+{
+    return [super splitView:splitView canCollapseSubview:subview];
+}
+
 #pragma mark - JZMarkdownListViewDelegate
 - (void)rowSelected:(JZiCloudFileExtensionCetaceaDoc *)markdown
 {
@@ -94,4 +90,16 @@
     [editorPreviewSplitVC setCurrentEditingMarkdown:markdown];
 }
 
+#pragma mark - NSSplitViewDelegate
+- (void)splitViewDidResizeSubviews:(NSNotification *)notification
+{
+    if (notification.object == self.splitView)
+    {
+        if (self.folderListViewItem.isCollapsed)
+        {
+            [[NSNotificationCenter defaultCenter]
+             postNotificationName:@"sideBarSegmentWillSelectNotification" object:self userInfo:@{@"selectedSegment":@1}];
+        }
+    }
+}
 @end
