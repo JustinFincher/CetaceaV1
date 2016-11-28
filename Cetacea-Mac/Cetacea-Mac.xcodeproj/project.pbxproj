@@ -19,7 +19,6 @@
 		0D4FB9BD1D2AFF46001821A2 /* JZiCloudFileSystemItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB9BC1D2AFF46001821A2 /* JZiCloudFileSystemItem.m */; };
 		0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */; };
 		0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA041D2BF051001821A2 /* ITSwitch.m */; };
-		0D4FBA081D2BF41F001821A2 /* JZSettingsStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA071D2BF41F001821A2 /* JZSettingsStorageViewController.m */; };
 		0D4FBA0B1D2C2933001821A2 /* JZEditorRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */; };
 		0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
@@ -120,8 +119,6 @@
 		0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderOutlineCellView.m; sourceTree = "<group>"; };
 		0D4FBA031D2BF051001821A2 /* ITSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSwitch.h; sourceTree = "<group>"; };
 		0D4FBA041D2BF051001821A2 /* ITSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSwitch.m; sourceTree = "<group>"; };
-		0D4FBA061D2BF41F001821A2 /* JZSettingsStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsStorageViewController.h; sourceTree = "<group>"; };
-		0D4FBA071D2BF41F001821A2 /* JZSettingsStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsStorageViewController.m; sourceTree = "<group>"; };
 		0D4FBA091D2C2933001821A2 /* JZEditorRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorRulerView.h; sourceTree = "<group>"; };
 		0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorRulerView.m; sourceTree = "<group>"; };
 		0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorTextView.h; sourceTree = "<group>"; };
@@ -386,8 +383,6 @@
 				0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */,
 				0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */,
 				0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */,
-				0D4FBA061D2BF41F001821A2 /* JZSettingsStorageViewController.h */,
-				0D4FBA071D2BF41F001821A2 /* JZSettingsStorageViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -904,7 +899,6 @@
 				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
 				0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */,
 				0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */,
-				0D4FBA081D2BF41F001821A2 /* JZSettingsStorageViewController.m in Sources */,
 				0D9D90341D32741B005F91F6 /* KeyValueObserver.m in Sources */,
 				0D87A5471D2A7BB400F9DC34 /* JZEditorLayouManager.m in Sources */,
 				0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */,

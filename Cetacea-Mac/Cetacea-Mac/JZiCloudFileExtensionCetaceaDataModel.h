@@ -29,7 +29,6 @@
  *  Tags Array
  */
 @property (nonatomic,strong) NSMutableArray *tags;
-@property (nonatomic,strong) NSNumber *isFavorite;
 @property (nonatomic,strong) NSDate *createDate;
 @property (nonatomic,strong) NSDate *updateDate;
 

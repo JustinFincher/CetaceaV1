@@ -48,8 +48,6 @@
     }
     JZiCloudFileExtensionCetaceaDoc *markdown = [self.markdownFileArray objectAtIndex:row];
     
-    NSImage *img = [markdown.data.isFavorite boolValue] ? [NSImage imageNamed:@"JZStarFilledTemplate"] : [NSImage imageNamed:@"JZStarNotFilledTemplate"];
-    cellView.isStarredImageView.image = img;
     cellView.titleTextField.stringValue = [markdown getData].title;
     if ([markdown getData].highLightString)
     {

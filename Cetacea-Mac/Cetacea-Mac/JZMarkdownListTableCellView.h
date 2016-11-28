@@ -14,7 +14,6 @@
 @property (weak) IBOutlet NSTextField *titleTextField;
 @property (weak) JZiCloudFileExtensionCetaceaDoc *markdownDocReference;
 @property (weak) IBOutlet NSTextField *updateDateTextField;
-@property (weak) IBOutlet NSImageView *isStarredImageView;
 
 @property (weak) NSTableView *tableView;
 
