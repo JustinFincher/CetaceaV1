@@ -7,63 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08DDB39F398641BB7B5DE3E676A8170F /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0C118EA84A58649A57D7BDE7CF5BC9A7 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F30464F58DA45C32F1D344C168DE98F7 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0D159DAA98493F5045EA9DEB5B483FF4 /* Pods-Cetacea-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */; };
-		1996B47C7BAF27F9B910C07FD9D96BC6 /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7483E2733ACA708F7688C8340ADC2EBF /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF89EDF3AD68E4690D6147DCD6062FD /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		24E182F8F4421B0A959EA3637986BC13 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C6806FD6A0195BFE11BC8B9FA32F079 /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3971D598267558B94FF665FECDA82111 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		45D88F0A81A7AF91710DDC4C6BFFE072 /* Pods-Cetacea-MacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */; };
-		4A32E817A9E0324D99E2D014EE7A1077 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = F93E8B228088E4F13979479CE5EC7BBE /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5182E0C86E90464213951C1CEE4FD76A /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B49362DDB2D90A171DEDC85E4CBCD5 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C7A37E07EF02F0BBDBDE669683987C9 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C8E458BA1C159DDB8D24C215B0CFEE7 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EA0D6A8FB253D12C6FEDAEB87ED6E0 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D791122DABB604F4501FF74FA336268 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		70528E7EBDD7860D6CD13AB83B5FD74A /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F2144335D69CA663AD3829FD552151 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		729D58C773B135F31836E9F240968E38 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7EB438B37174942C0E35A91D6F100D /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C597BE9FE63E375730503B71A907D4 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8DBAE4BE8A114ED7FA30E5811C7C9F15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		93F880C24A7037EC95F2D86229DED4C1 /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 832D27424954CF991998280A3C55EB95 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C3E095663A91660777D0C284588F704 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DA2609B71A9860982B0687802F8D6CB /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC2B55E148559A284B60EC8A5A79FFB /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A332D7818A980BA048D68D4CB7F33097 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		A6B1DF59915B1E66F5B492E3DC382FBD /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */; };
-		AAB0292C1A7AE20437B13F3167FA507E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		AEF39CCCA47BF107AEC783739E8D6844 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B35F15E5408C4491A7EF59EA7EB33326 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7A47D8AC273EFA3B24DA712D611CC /* MMMarkdown-dummy.m */; };
-		B41E7D31B34527CF5A001926809E5DC8 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B946CE2C7DA66422033B37AF5F8F3260 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C5DC5991FDA16B055FC9774544D90B2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		C6E277CA70064AE2D1F7361009CEB41B /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C75E14C79496F074C1ADA8D90429F3FF /* Pods-Cetacea-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */; };
-		C9F6437DC7F2B70D2FE916BB69B5CFC8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
-		D738D6E26E361F077482E52F5395569D /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DE6303DE14BD8A3A264FE96645E8075A /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF56699030CB0CE372337A1B567B8034 /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E16E8BDAB38D17926DA4F26C95B4B6F0 /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 748BB6C1F3863AED92BDBA0BDB2441B1 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EAD8F7B9B19071EB9D3EAA582AD7FAAF /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5759BEB2068128C778A7FCF5AFE91263 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECDC9BE70EBB30AFA33016F779BB7E3D /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEDC3187A927CFFE0F35E045FD5A2C /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EEAB14D96ED25A3E42275F0F858BE7ED /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76D6A6AC2EDFFDD44C4A4014FB2F70 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EF8197F179C59888AD8DC30DF746D15E /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 463150E84EF6A76CB212F5958771C1B5 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F51B616C66B2C2019A26988145D3E143 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FFE2567B49A337EB78F00F0264847EFD /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F239F7E7A2A91089B662DCAA7CFC610E /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BE708A47E963B8F2B4FF73BE6C49418 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EA0D6A8FB253D12C6FEDAEB87ED6E0 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B49362DDB2D90A171DEDC85E4CBCD5 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F239F7E7A2A91089B662DCAA7CFC610E /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7483E2733ACA708F7688C8340ADC2EBF /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56BF367E18D170AB72E269AA1DD35CC1 /* Pods-Cetacea-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */; };
+		583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEDC3187A927CFFE0F35E045FD5A2C /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */; };
+		636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7A47D8AC273EFA3B24DA712D611CC /* MMMarkdown-dummy.m */; };
+		647487A1230B96EEE77397B9ED67579F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 463150E84EF6A76CB212F5958771C1B5 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = F93E8B228088E4F13979479CE5EC7BBE /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F2144335D69CA663AD3829FD552151 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DA70B7342254D3093F74BE3C689E681 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76D6A6AC2EDFFDD44C4A4014FB2F70 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A10298C8AFBF03FFF423ED010075CED6 /* Pods-Cetacea-MacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */; };
+		A4906CEF83571A5A6B510523D1E602BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 832D27424954CF991998280A3C55EB95 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA65FF6FC54B66BE40CAEB3FDF261E39 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5759BEB2068128C778A7FCF5AFE91263 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC2B55E148559A284B60EC8A5A79FFB /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F30464F58DA45C32F1D344C168DE98F7 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C597BE9FE63E375730503B71A907D4 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9CC5B639597BEC6D152627DDFA2CF6 /* Pods-Cetacea-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */; };
+		DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 748BB6C1F3863AED92BDBA0BDB2441B1 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4631208C12769C3AD85E389CC8257F67 /* PBXContainerItemProxy */ = {
+		4A2C74DD709BA1F054810EF278275C63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 31FF44B5E2FF8CF00090950A8B67AFF6;
+			remoteGlobalIDString = B36F6D48026E14827529F787D63D61B8;
 			remoteInfo = DateTools;
 		};
-		CEC1782B3F2A6873B214356006322B92 /* PBXContainerItemProxy */ = {
+		C0208F60E2B9F6B47567BEA8FEDBCE3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F0C7F9FBF3A825957E5748F71026206C;
+			remoteGlobalIDString = 159A0E298F8E774F387C4F68CC095B9D;
 			remoteInfo = MMMarkdown;
 		};
 /* End PBXContainerItemProxy section */
@@ -71,20 +71,20 @@
 /* Begin PBXFileReference section */
 		004E92875487A7FAAC6ECDBA9D1B856E /* Pods-Cetacea-MacTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-frameworks.sh"; sourceTree = "<group>"; };
 		0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
-		0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacTests.a"; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		0E6D8C54F8C6B1ABE09D86F5D3C6E6AB /* Pods-Cetacea-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
 		11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMGenerator.h; path = Source/MMGenerator.h; sourceTree = "<group>"; };
 		13FBA96202C5D5A328507A48D0B40958 /* Pods-Cetacea-MacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
 		1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
 		245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
-		2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacUITests.a"; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
 		2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
-		301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-Mac.a"; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		37F5EF7559AAD6B73BF11DCFE5CDD8F3 /* Pods-Cetacea-MacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3AAD9A27CD3A273D2247C5B4AB096225 /* Pods-Cetacea-MacTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-resources.sh"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
 		5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
 		62C597BE9FE63E375730503B71A907D4 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
-		6478537602952271E300DF4C19098E3F /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6478537602952271E300DF4C19098E3F /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDateTools.a; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		6A3AD2FBD1249E22935D8FD91517BF47 /* Pods-Cetacea-MacUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-resources.sh"; sourceTree = "<group>"; };
 		73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		85F2144335D69CA663AD3829FD552151 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
 		89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
 		8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-Mac-dummy.m"; sourceTree = "<group>"; };
 		A8628F4457582F9D7BF83A4A5B7530A6 /* Pods-Cetacea-MacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
 		AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
 		AFA530F290D0F43845AF7E7F82DE6376 /* Pods-Cetacea-MacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-frameworks.sh"; sourceTree = "<group>"; };
-		B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMMMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMMarkdown.a; path = libMMMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
 		CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
@@ -139,49 +139,57 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46E2EEA9EC24B1ACCEB570189E7D3FD4 /* Frameworks */ = {
+		0F264000D85D92554F869770618FD8C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D791122DABB604F4501FF74FA336268 /* Cocoa.framework in Frameworks */,
+				AA65FF6FC54B66BE40CAEB3FDF261E39 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A3F23223F3769EA39805AD7C969381E /* Frameworks */ = {
+		1679853336D09C6D59AB1EAD932D0AD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9F6437DC7F2B70D2FE916BB69B5CFC8 /* Cocoa.framework in Frameworks */,
+				0BE708A47E963B8F2B4FF73BE6C49418 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664D8DA2C0A8995F8805284E4D4F343F /* Frameworks */ = {
+		34B42B783727F282B0EACD0FCA45C1CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB0292C1A7AE20437B13F3167FA507E /* Cocoa.framework in Frameworks */,
+				9DA70B7342254D3093F74BE3C689E681 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90A9107AC1C567DC6F0CA2B4693D7A46 /* Frameworks */ = {
+		B9FC59FE48B3E0FD1C78D3D34DF4A20F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5DC5991FDA16B055FC9774544D90B2B /* Cocoa.framework in Frameworks */,
+				647487A1230B96EEE77397B9ED67579F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5AB1CCBB5651C5B7F5A0CD0D7CCD029 /* Frameworks */ = {
+		DD35EE7631FF32F84975868C2C181D21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A332D7818A980BA048D68D4CB7F33097 /* Cocoa.framework in Frameworks */,
+				A4906CEF83571A5A6B510523D1E602BB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
 		1053CC42117ABA8FE99B91420C886931 /* Pods-Cetacea-MacTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,15 +238,8 @@
 				7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */,
 				B452DDF85A8220B09956BE0D60097CAD /* Support Files */,
 			);
+			name = MMMarkdown;
 			path = MMMarkdown;
-			sourceTree = "<group>";
-		};
-		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
-			);
-			name = "OS X";
 			sourceTree = "<group>";
 		};
 		39B641A4EDA46D683325DA090DFE2F80 /* Targets Support Files */ = {
@@ -254,7 +255,7 @@
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
+				04C068A18C5413F804A2959126093416 /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +308,7 @@
 				B4EEF859982604A1F625D6E6C33C9170 /* Resources */,
 				128FBB67F7612EC9D34DA71795DFF68B /* Support Files */,
 			);
+			name = DateTools;
 			path = DateTools;
 			sourceTree = "<group>";
 		};
@@ -367,46 +369,81 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2E9C10B7C11E98B9E457E5516966620A /* Headers */ = {
+		1DC5926BF41F775023DFA4FCB41BA95A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7A37E07EF02F0BBDBDE669683987C9 /* MMDocument.h in Headers */,
-				729D58C773B135F31836E9F240968E38 /* MMDocument_Private.h in Headers */,
-				24E182F8F4421B0A959EA3637986BC13 /* MMElement.h in Headers */,
-				2C6806FD6A0195BFE11BC8B9FA32F079 /* MMGenerator.h in Headers */,
-				1996B47C7BAF27F9B910C07FD9D96BC6 /* MMHTMLParser.h in Headers */,
-				93F880C24A7037EC95F2D86229DED4C1 /* MMMarkdown.h in Headers */,
-				7D7EB438B37174942C0E35A91D6F100D /* MMParser.h in Headers */,
-				4A32E817A9E0324D99E2D014EE7A1077 /* MMScanner.h in Headers */,
-				DF56699030CB0CE372337A1B567B8034 /* MMSpanParser.h in Headers */,
+				09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */,
+				64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */,
+				9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */,
+				166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */,
+				BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */,
+				AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */,
+				1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */,
+				B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B7C15A3768ACB7BE38A3DD453625300 /* Headers */ = {
+		30DB9124C225BC1B5C55BD21A5FA662F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E277CA70064AE2D1F7361009CEB41B /* DateTools.h in Headers */,
-				DE6303DE14BD8A3A264FE96645E8075A /* DTConstants.h in Headers */,
-				70528E7EBDD7860D6CD13AB83B5FD74A /* DTError.h in Headers */,
-				9C3E095663A91660777D0C284588F704 /* DTTimePeriod.h in Headers */,
-				9DA2609B71A9860982B0687802F8D6CB /* DTTimePeriodChain.h in Headers */,
-				B41E7D31B34527CF5A001926809E5DC8 /* DTTimePeriodCollection.h in Headers */,
-				6C8E458BA1C159DDB8D24C215B0CFEE7 /* DTTimePeriodGroup.h in Headers */,
-				EAD8F7B9B19071EB9D3EAA582AD7FAAF /* NSDate+DateTools.h in Headers */,
+				AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */,
+				08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */,
+				B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */,
+				3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */,
+				5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */,
+				A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */,
+				C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */,
+				6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */,
+				29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1EC70A34707A1092976F1181F4C8C1BD /* Pods-Cetacea-MacTests */ = {
+		159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 267B2588E626CCDD764BC30B8E05ACB0 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */;
+			buildConfigurationList = 2D1FD3ED1D098C33461678138C8B4343 /* Build configuration list for PBXNativeTarget "MMMarkdown" */;
 			buildPhases = (
-				1E9DF4ED2811CDE165006F3D3AE9F1F7 /* Sources */,
-				B5AB1CCBB5651C5B7F5A0CD0D7CCD029 /* Frameworks */,
+				C2097B24E119C6B1B06D8C295E6B6048 /* Sources */,
+				B9FC59FE48B3E0FD1C78D3D34DF4A20F /* Frameworks */,
+				30DB9124C225BC1B5C55BD21A5FA662F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMMarkdown;
+			productName = MMMarkdown;
+			productReference = B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3A56C242432437270B8D1A536F9FE59F /* Pods-Cetacea-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E775C3775AEB6BABD294B19C40F8FD1E /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */;
+			buildPhases = (
+				AA397712045BDA737DF5FC6A7EF60D9E /* Sources */,
+				0F264000D85D92554F869770618FD8C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CA838EF9455923BDF81AD106EFCD2D1 /* PBXTargetDependency */,
+				37C778EA3927AB5A99BEF561A24BCF09 /* PBXTargetDependency */,
+			);
+			name = "Pods-Cetacea-Mac";
+			productName = "Pods-Cetacea-Mac";
+			productReference = 301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4E3F502504860FC72B3F65EAB3E1EA4B /* Pods-Cetacea-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3EAE7CC97C3E091C83BA5DE8B61C6A /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */;
+			buildPhases = (
+				2D44DBF96A65FE4A8BC6251713BFE5ED /* Sources */,
+				34B42B783727F282B0EACD0FCA45C1CC /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -417,13 +454,13 @@
 			productReference = 0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */ = {
+		B36F6D48026E14827529F787D63D61B8 /* DateTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D080F77A97056851915A3DCE6F7F6EA5 /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildConfigurationList = 83C57ED88BD343EDFD50AEF30C9399D5 /* Build configuration list for PBXNativeTarget "DateTools" */;
 			buildPhases = (
-				A862A599170D3CC6A194F9C6C9EB7143 /* Sources */,
-				46E2EEA9EC24B1ACCEB570189E7D3FD4 /* Frameworks */,
-				5B7C15A3768ACB7BE38A3DD453625300 /* Headers */,
+				749A09D02C846B49D9FF9864272CF47B /* Sources */,
+				1679853336D09C6D59AB1EAD932D0AD7 /* Frameworks */,
+				1DC5926BF41F775023DFA4FCB41BA95A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -434,12 +471,12 @@
 			productReference = 6478537602952271E300DF4C19098E3F /* libDateTools.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B26D817EC092CE752A9814778E0D6BE1 /* Pods-Cetacea-MacUITests */ = {
+		BAF85707D4B365E161F77F127287A99C /* Pods-Cetacea-MacUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6BD4F5E2CBAD5EAF07AE7D53CB58D0F /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */;
+			buildConfigurationList = CEC1AE9DD46A78C17D4EA2E4443907EF /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */;
 			buildPhases = (
-				E8C56D4A51F51FA14ACCDF23AE8AC775 /* Sources */,
-				664D8DA2C0A8995F8805284E4D4F343F /* Frameworks */,
+				05B7653C8E9E63CBD3732E8B30A14D4D /* Sources */,
+				DD35EE7631FF32F84975868C2C181D21 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -448,41 +485,6 @@
 			name = "Pods-Cetacea-MacUITests";
 			productName = "Pods-Cetacea-MacUITests";
 			productReference = 2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C668C230A8B97DD1135BEE239132B352 /* Pods-Cetacea-Mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 916EB06564F412C106F455AA5456E201 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */;
-			buildPhases = (
-				9FD74A07ED52A8BF41099AE7398D6391 /* Sources */,
-				4A3F23223F3769EA39805AD7C969381E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B84C318338EEA2CB932820D59BD7C46 /* PBXTargetDependency */,
-				DCCF308A3AA79B9E8DD65EA727D61234 /* PBXTargetDependency */,
-			);
-			name = "Pods-Cetacea-Mac";
-			productName = "Pods-Cetacea-Mac";
-			productReference = 301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F0C7F9FBF3A825957E5748F71026206C /* MMMarkdown */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9BC367714C3C23895B09B54A5BE415D /* Build configuration list for PBXNativeTarget "MMMarkdown" */;
-			buildPhases = (
-				84277D3E9526AB6AD7E23A0CA69B4594 /* Sources */,
-				90A9107AC1C567DC6F0CA2B4693D7A46 /* Frameworks */,
-				2E9C10B7C11E98B9E457E5516966620A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MMMarkdown;
-			productName = MMMarkdown;
-			productReference = B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -506,90 +508,189 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */,
-				F0C7F9FBF3A825957E5748F71026206C /* MMMarkdown */,
-				C668C230A8B97DD1135BEE239132B352 /* Pods-Cetacea-Mac */,
-				1EC70A34707A1092976F1181F4C8C1BD /* Pods-Cetacea-MacTests */,
-				B26D817EC092CE752A9814778E0D6BE1 /* Pods-Cetacea-MacUITests */,
+				B36F6D48026E14827529F787D63D61B8 /* DateTools */,
+				159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */,
+				3A56C242432437270B8D1A536F9FE59F /* Pods-Cetacea-Mac */,
+				4E3F502504860FC72B3F65EAB3E1EA4B /* Pods-Cetacea-MacTests */,
+				BAF85707D4B365E161F77F127287A99C /* Pods-Cetacea-MacUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E9DF4ED2811CDE165006F3D3AE9F1F7 /* Sources */ = {
+		05B7653C8E9E63CBD3732E8B30A14D4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45D88F0A81A7AF91710DDC4C6BFFE072 /* Pods-Cetacea-MacTests-dummy.m in Sources */,
+				CD9CC5B639597BEC6D152627DDFA2CF6 /* Pods-Cetacea-MacUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84277D3E9526AB6AD7E23A0CA69B4594 /* Sources */ = {
+		2D44DBF96A65FE4A8BC6251713BFE5ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5182E0C86E90464213951C1CEE4FD76A /* MMDocument.m in Sources */,
-				F51B616C66B2C2019A26988145D3E143 /* MMElement.m in Sources */,
-				FFE2567B49A337EB78F00F0264847EFD /* MMGenerator.m in Sources */,
-				D738D6E26E361F077482E52F5395569D /* MMHTMLParser.m in Sources */,
-				B35F15E5408C4491A7EF59EA7EB33326 /* MMMarkdown-dummy.m in Sources */,
-				E16E8BDAB38D17926DA4F26C95B4B6F0 /* MMMarkdown.m in Sources */,
-				1CF89EDF3AD68E4690D6147DCD6062FD /* MMParser.m in Sources */,
-				EEAB14D96ED25A3E42275F0F858BE7ED /* MMScanner.m in Sources */,
-				B946CE2C7DA66422033B37AF5F8F3260 /* MMSpanParser.m in Sources */,
+				A10298C8AFBF03FFF423ED010075CED6 /* Pods-Cetacea-MacTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FD74A07ED52A8BF41099AE7398D6391 /* Sources */ = {
+		749A09D02C846B49D9FF9864272CF47B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D159DAA98493F5045EA9DEB5B483FF4 /* Pods-Cetacea-Mac-dummy.m in Sources */,
+				5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */,
+				562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */,
+				5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */,
+				6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */,
+				BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */,
+				B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */,
+				F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */,
+				C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A862A599170D3CC6A194F9C6C9EB7143 /* Sources */ = {
+		AA397712045BDA737DF5FC6A7EF60D9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6B1DF59915B1E66F5B492E3DC382FBD /* DateTools-dummy.m in Sources */,
-				AEF39CCCA47BF107AEC783739E8D6844 /* DTConstants.m in Sources */,
-				ECDC9BE70EBB30AFA33016F779BB7E3D /* DTError.m in Sources */,
-				EF8197F179C59888AD8DC30DF746D15E /* DTTimePeriod.m in Sources */,
-				3971D598267558B94FF665FECDA82111 /* DTTimePeriodChain.m in Sources */,
-				08DDB39F398641BB7B5DE3E676A8170F /* DTTimePeriodCollection.m in Sources */,
-				8DBAE4BE8A114ED7FA30E5811C7C9F15 /* DTTimePeriodGroup.m in Sources */,
-				0C118EA84A58649A57D7BDE7CF5BC9A7 /* NSDate+DateTools.m in Sources */,
+				56BF367E18D170AB72E269AA1DD35CC1 /* Pods-Cetacea-Mac-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8C56D4A51F51FA14ACCDF23AE8AC775 /* Sources */ = {
+		C2097B24E119C6B1B06D8C295E6B6048 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C75E14C79496F074C1ADA8D90429F3FF /* Pods-Cetacea-MacUITests-dummy.m in Sources */,
+				25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */,
+				25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */,
+				3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */,
+				C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */,
+				636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */,
+				DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */,
+				872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */,
+				A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */,
+				583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B84C318338EEA2CB932820D59BD7C46 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DateTools;
-			target = 31FF44B5E2FF8CF00090950A8B67AFF6 /* DateTools */;
-			targetProxy = 4631208C12769C3AD85E389CC8257F67 /* PBXContainerItemProxy */;
-		};
-		DCCF308A3AA79B9E8DD65EA727D61234 /* PBXTargetDependency */ = {
+		37C778EA3927AB5A99BEF561A24BCF09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMMarkdown;
-			target = F0C7F9FBF3A825957E5748F71026206C /* MMMarkdown */;
-			targetProxy = CEC1782B3F2A6873B214356006322B92 /* PBXContainerItemProxy */;
+			target = 159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */;
+			targetProxy = C0208F60E2B9F6B47567BEA8FEDBCE3B /* PBXContainerItemProxy */;
+		};
+		3CA838EF9455923BDF81AD106EFCD2D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DateTools;
+			target = B36F6D48026E14827529F787D63D61B8 /* DateTools */;
+			targetProxy = 4A2C74DD709BA1F054810EF278275C63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+		18DC735CFF2E4869EAC9E86AAFEB043E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C1EF0293299A7D59557689B3C829084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2F36ECCA27E4A1F51D821875B1CBEE2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4E307D4FBF6EE5E0BBAE88523B399A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5D622BA00757EC20ADAD24C580904C04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -607,6 +708,121 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6314A847E3A36E66B80B9A5A8D20D773 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B2F535F3399B611263DA5CE4FEC9A1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8387317095A2E645E7F3A3EA5DEDA486 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -626,248 +842,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		102FAAC8066455B213D0AA54D198B72C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		1F359114D6358D9AE17AF78402242453 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		211F9475356AFD92F9003FB146A35F4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		2782F41CE18DD2D4EE3DFEB6079D1A40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		362F4EE9D92A5CEA442DE8A31E387514 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3B82EC72178AD9A96B8CFD5F03FCF303 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		96DC1B7938378A6F2648112A0F6D1C48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A900EA99DB3825CC1353BBEB3D8FD97B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		BF52D708637529D6318B2B91CBA63C2A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		E50D785F11E8E5F58FF8C181B0F4709D /* Release */ = {
+		BB9652AEEA183DC2E4D90888BB1F9D1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
@@ -882,17 +870,65 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DD52FDBB4A243EF0ED3BC8B47DBD4FDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E12E56586BB111A05CECBCD0D26A731C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		267B2588E626CCDD764BC30B8E05ACB0 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */ = {
+		2D1FD3ED1D098C33461678138C8B4343 /* Build configuration list for PBXNativeTarget "MMMarkdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2782F41CE18DD2D4EE3DFEB6079D1A40 /* Debug */,
-				362F4EE9D92A5CEA442DE8A31E387514 /* Release */,
+				DD52FDBB4A243EF0ED3BC8B47DBD4FDF /* Debug */,
+				E12E56586BB111A05CECBCD0D26A731C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -900,44 +936,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
-				578820E498FFD85CA5D93A33D365FBED /* Release */,
+				AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */,
+				5D622BA00757EC20ADAD24C580904C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		916EB06564F412C106F455AA5456E201 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */ = {
+		83C57ED88BD343EDFD50AEF30C9399D5 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				211F9475356AFD92F9003FB146A35F4B /* Debug */,
-				1F359114D6358D9AE17AF78402242453 /* Release */,
+				8387317095A2E645E7F3A3EA5DEDA486 /* Debug */,
+				2C1EF0293299A7D59557689B3C829084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6BD4F5E2CBAD5EAF07AE7D53CB58D0F /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */ = {
+		AB3EAE7CC97C3E091C83BA5DE8B61C6A /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96DC1B7938378A6F2648112A0F6D1C48 /* Debug */,
-				E50D785F11E8E5F58FF8C181B0F4709D /* Release */,
+				2F36ECCA27E4A1F51D821875B1CBEE2F /* Debug */,
+				18DC735CFF2E4869EAC9E86AAFEB043E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D080F77A97056851915A3DCE6F7F6EA5 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+		CEC1AE9DD46A78C17D4EA2E4443907EF /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF52D708637529D6318B2B91CBA63C2A /* Debug */,
-				A900EA99DB3825CC1353BBEB3D8FD97B /* Release */,
+				4E307D4FBF6EE5E0BBAE88523B399A73 /* Debug */,
+				BB9652AEEA183DC2E4D90888BB1F9D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9BC367714C3C23895B09B54A5BE415D /* Build configuration list for PBXNativeTarget "MMMarkdown" */ = {
+		E775C3775AEB6BABD294B19C40F8FD1E /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				102FAAC8066455B213D0AA54D198B72C /* Debug */,
-				3B82EC72178AD9A96B8CFD5F03FCF303 /* Release */,
+				6314A847E3A36E66B80B9A5A8D20D773 /* Debug */,
+				6B2F535F3399B611263DA5CE4FEC9A1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
