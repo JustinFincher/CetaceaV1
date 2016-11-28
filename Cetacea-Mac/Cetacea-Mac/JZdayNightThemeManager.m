@@ -86,7 +86,8 @@
         return 3;
     }else
     {
-        NSAssert(NO, @"dayNightThemeSwithType from NSUserDefaults not one of any validate theme.");
+        NSAssert(YES, @"dayNightThemeSwithType from NSUserDefaults not one of any validate theme.");
+        [[NSUserDefaults standardUserDefaults] setObject:@"JZDayNightThemeSwithTypeLight" forKey:@"dayNightThemeSwithType"];
         return 0;
     }
 }
