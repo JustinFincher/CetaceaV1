@@ -12,7 +12,6 @@
 @interface JZiCloudStorageManager()
 
 @property (nonatomic,strong) NSURL *ubiquitousURL;
-@property (nonatomic,strong) NSMetadataQuery *metadataQuery;
 
 @end
 
@@ -102,8 +101,10 @@
 
 - (void)loadData:(NSMetadataQuery *)query {
     
+    [query stopQuery];
     id<JZiCloudStorageManagerDelegate> strongDelegate = self.delegate;
     [strongDelegate iCloudFileUpdated:query];
+    [query enableUpdates];
 }
 
 @end

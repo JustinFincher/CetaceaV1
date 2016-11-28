@@ -7,6 +7,7 @@
 //
 
 #import "JZiCloudFileExtensionCetaceaDoc.h"
+#import "JZHeader.h"
 
 @implementation JZiCloudFileExtensionCetaceaDoc
 
@@ -29,7 +30,7 @@
     BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:self.docPath withIntermediateDirectories:YES attributes:nil error:&error];
     if (!success)
     {
-        NSLog(@"Error creating data path: %@", [error localizedDescription]);
+        JZLog(@"Error creating data path: %@", [error localizedDescription]);
     }
     return success;
     
@@ -87,7 +88,7 @@
     BOOL success = [[NSFileManager defaultManager] removeItemAtPath:self.docPath error:&error];
     if (!success)
     {
-        NSLog(@"Error removing document path: %@", error.localizedDescription);
+        JZLog(@"Error removing document path: %@", error.localizedDescription);
     }
     
 }
@@ -117,5 +118,11 @@
         imageData = [imageRep representationUsingType:NSPNGFileType properties:imageProps];
     }
     [imageData writeToFile:imagePath atomically:YES];
+}
+
+- (BOOL)isEqualToDoc:(JZiCloudFileExtensionCetaceaDoc *)doc
+{
+    BOOL isEqual = [doc.docPath isEqualTo: self.docPath];
+    return isEqual;
 }
 @end

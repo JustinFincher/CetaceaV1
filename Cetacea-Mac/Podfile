@@ -8,6 +8,8 @@ target 'Cetacea-Mac' do
   # Pods for Cetacea-Mac
 pod 'MMMarkdown'
 pod 'DateTools'
+pod 'HockeySDK-Mac', '~> 4.1.1'
+
 #pod 'SyntaxKit'
   target 'Cetacea-MacTests' do
     inherit! :search_paths

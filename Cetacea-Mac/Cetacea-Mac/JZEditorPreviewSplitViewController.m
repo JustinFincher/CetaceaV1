@@ -11,6 +11,8 @@
 #import "JZEditorViewController.h"
 #import "JZEditorPreviewSplitViewForegroundBlurViewController.h"
 #import "JZdayNightThemeManager.h"
+#import <MMMarkdown/MMMarkdown.h>
+#import "JZHeader.h"
 
 @interface JZEditorPreviewSplitViewController ()
 
@@ -37,6 +39,11 @@
                                                object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(markdownEditorTextHighLightRefreshed:)
+                                                 name:@"markdownEditorTextHighLightRefreshed"
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(addNewButtonPressed:)
                                                  name:@"addNewButtonPressedNotification"
                                                object:nil];
@@ -51,6 +58,7 @@
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
     
+    
     foregroundVC = [[JZEditorPreviewSplitViewForegroundBlurViewController alloc] init];
     [self.view addSubview:foregroundVC.view];
     [foregroundVC.view setFrameSize:self.view.frame.size];
@@ -64,7 +72,7 @@
 #pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
-    if (_currentEditingMarkdown != currentEditingMarkdown)
+    if (![_currentEditingMarkdown isEqualToDoc:currentEditingMarkdown])
     {
         _currentEditingMarkdown = currentEditingMarkdown;
         [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
@@ -75,16 +83,32 @@
     }
     
 }
-- (void)markdownEditorTextDidChanged:(NSNotification *) notification
+
+- (void)markdownEditorTextHighLightRefreshed:(NSNotification *) notification
 {
     if (_editorVC.editorTextView)
     {
-        self.currentEditingMarkdown.data.markdownString = _editorVC.editorTextView.string;
-        self.currentEditingMarkdown.data.highLightString = _editorVC.editorTextView.attributedString;
-        self.currentEditingMarkdown.data.updateDate = [NSDate new];
-        self.currentEditingMarkdown.data.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
-        [self.currentEditingMarkdown saveData];
+        __block NSString *htmlString;
+        NSOperationQueue *myQueue = [[NSOperationQueue alloc] init];
+        [myQueue addOperationWithBlock:^{
+            
+            // Background work
+            self.currentEditingMarkdown.data.markdownString = _editorVC.editorTextView.string;
+            self.currentEditingMarkdown.data.highLightString = _editorVC.editorTextView.attributedString;
+            self.currentEditingMarkdown.data.updateDate = [NSDate new];
+            self.currentEditingMarkdown.data.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
+            [self.currentEditingMarkdown saveData];
+            
+            htmlString = [MMMarkdown HTMLStringWithMarkdown:_editorVC.editorTextView.string extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
+            
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                _previewVC.previewHtmlString = htmlString;
+            }];
+        }];
     }
+}
+- (void)markdownEditorTextDidChanged:(NSNotification *) notification
+{
 }
 - (void)addNewButtonPressed:(NSNotification *) notification
 {

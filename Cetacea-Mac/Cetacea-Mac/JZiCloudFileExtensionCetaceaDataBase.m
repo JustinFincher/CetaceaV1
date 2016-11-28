@@ -8,6 +8,7 @@
 
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
 #import "JZiCloudStorageManager.h"
+#import "JZHeader.h"
 
 @implementation JZiCloudFileExtensionCetaceaDataBase
 
@@ -45,13 +46,13 @@
     
     // Get private docs dir
     NSString *documentsDirectory = [self getPrivateDocsDir];
-    NSLog(@"Loading from %@", documentsDirectory);
+    JZLog(@"Loading from %@", documentsDirectory);
     
     // Get contents of documents directory
     NSError *error;
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
     if (files == nil) {
-        NSLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
+        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
         return nil;
     }
     
@@ -78,7 +79,7 @@
     NSError *error;
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
     if (files == nil) {
-        NSLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
+        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
         return nil;
     }
     

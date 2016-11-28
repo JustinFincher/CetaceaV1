@@ -8,6 +8,7 @@
 
 #import "JZdayNightThemeManager.h"
 #import "DateTools.h"
+#import "JZHeader.h"
 
 @interface JZdayNightThemeManager()
 
@@ -86,7 +87,8 @@
         return 3;
     }else
     {
-        NSAssert(YES, @"dayNightThemeSwithType from NSUserDefaults not one of any validate theme.");
+//        NSAssert(NO, @"dayNightThemeSwithType from NSUserDefaults not one of any validate theme.");
+        JZLog(@"dayNightThemeSwithType from NSUserDefaults not one of any validate theme.");
         [[NSUserDefaults standardUserDefaults] setObject:@"JZDayNightThemeSwithTypeLight" forKey:@"dayNightThemeSwithType"];
         return 0;
     }

@@ -5,7 +5,7 @@
 //  Created by Fincher Justin on 16/7/14.
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
-
+#import "JZHeader.h"
 #import "JZEditorHighlightThemeManager.h"
 #import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
 
@@ -56,7 +56,7 @@
             {
                 //        NSAssert(NO, @"selectedDoc should not be nil");
                 self.selectedDoc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
-                NSLog(@" NSAssert(NO, selectedDoc should not be nil);");
+                JZLog(@" NSAssert(NO, selectedDoc should not be nil);");
             }
         }
     }else
@@ -70,7 +70,7 @@
         {
             //        NSAssert(NO, @"selectedDoc should not be nil");
             self.selectedDoc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
-            NSLog(@" NSAssert(NO, selectedDoc should not be nil);");
+            JZLog(@" NSAssert(NO, selectedDoc should not be nil);");
         }
     }
 }

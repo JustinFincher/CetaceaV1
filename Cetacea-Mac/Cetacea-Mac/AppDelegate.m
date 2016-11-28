@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "JZiCloudStorageManager.h"
+#import "JZHeader.h"
+@import HockeySDK;
 
 @interface AppDelegate ()
 
@@ -17,7 +19,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"e323c3d1d75240f89492b38042bfdbac"];
+    // Do some additional configuration if needed here
+//    [[BITHockeyManager sharedHockeyManager] startManager];
+
     
     // register to observe notifications from the store
     [[NSNotificationCenter defaultCenter]
@@ -32,7 +37,7 @@
 }
 - (void)storeDidChange:(NSNotification *)aNotification
 {
-    NSLog(@"storeDidChange:(NSNotification *)aNotification");
+    JZLog(@"storeDidChange:(NSNotification *)aNotification");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

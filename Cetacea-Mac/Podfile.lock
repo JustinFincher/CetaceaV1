@@ -1,15 +1,18 @@
 PODS:
   - DateTools (1.7.0)
+  - HockeySDK-Mac (4.1.1)
   - MMMarkdown (0.5.5)
 
 DEPENDENCIES:
   - DateTools
+  - HockeySDK-Mac (~> 4.1.1)
   - MMMarkdown
 
 SPEC CHECKSUMS:
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  HockeySDK-Mac: c19aec63894d716ad48fba9f121921e5f4f2ca39
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
 
-PODFILE CHECKSUM: fe0e6b9f23b10953fcc6fbe04faece6db72002c2
+PODFILE CHECKSUM: 232219d6f4934957d583036ae5682ae814c4240c
 
 COCOAPODS: 1.1.1

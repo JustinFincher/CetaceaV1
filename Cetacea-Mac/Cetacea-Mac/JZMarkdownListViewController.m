@@ -11,6 +11,7 @@
 #import "JZMarkdownListTableCellView.h"
 #import "DateTools.h"
 #import "JZMarkdownListSortSelectionMenu.h"
+#import "JZHeader.h"
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate,JZMarkdownListSortSelectionMenuDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
@@ -109,8 +110,8 @@
             JZiCloudFileExtensionCetaceaDoc *a = [self.markdownFileArray objectAtIndex:i];
             if ([a.docPath isEqualToString:selectedDocPath])
             {
-                [self.markdownListTableView selectRow:i byExtendingSelection:NO];
                 [self.markdownListTableView scrollRowToVisible:i];
+                [self.markdownListTableView selectRow:i byExtendingSelection:NO];
             }
         }
     }else
@@ -140,8 +141,8 @@
     {
         direction = JZMarkdownListSortDirectionDescending;
     }
-    NSLog(@"method:%lu",(unsigned long)method);
-    NSLog(@"direction:%lu",(unsigned long)direction);
+//    JZLog(@"method:%lu",(unsigned long)method);
+//    JZLog(@"direction:%lu",(unsigned long)direction);
     
     NSArray *sortedArray;
     sortedArray = [icloudFileMarkdowns sortedArrayUsingComparator:^NSComparisonResult(id a, id b)

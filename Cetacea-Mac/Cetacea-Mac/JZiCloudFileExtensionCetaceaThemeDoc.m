@@ -10,7 +10,7 @@
 #import "JZEditorLayouManager.h"
 #import "JZEditorTextView.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
-
+#import "JZHeader.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation JZiCloudFileExtensionCetaceaThemeDoc
@@ -38,7 +38,7 @@
     BOOL success = [[NSFileManager defaultManager] createDirectoryAtPath:self.docPath withIntermediateDirectories:YES attributes:nil error:&error];
     if (!success)
     {
-        NSLog(@"Error creating data path: %@", [error localizedDescription]);
+        JZLog(@"Error creating data path: %@", [error localizedDescription]);
     }
     return success;
     
@@ -92,7 +92,7 @@
     BOOL success = [[NSFileManager defaultManager] removeItemAtPath:self.docPath error:&error];
     if (!success)
     {
-        NSLog(@"Error removing document path: %@", error.localizedDescription);
+        JZLog(@"Error removing document path: %@", error.localizedDescription);
     }
     
 }

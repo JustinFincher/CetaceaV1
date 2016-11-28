@@ -8,8 +8,8 @@
 
 #import "JZiCloudStorageProcesser.h"
 #import "JZiCloudStorageManager.h"
-#import "JZiCloudMarkdownFileModel.h"
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
+#import "JZHeader.h"
 
 @interface JZiCloudStorageProcesser()<JZiCloudStorageManagerDelegate>
 
@@ -46,6 +46,7 @@
 
 - (void)iCloudFileUpdated:(NSMetadataQuery *)query
 {
+    JZLog(@"iCloudFileUpdated");
     NSMutableArray *proccessedResultArray = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs];
 
     id<JZiCloudStorageProcesserDelegate> strongDelegate = self.delegate;

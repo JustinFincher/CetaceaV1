@@ -7,7 +7,6 @@
 //
 
 #import "JZEditorViewController.h"
-#import "JZEditorMarkdownTextStorage.h"
 #import "JZFontDisplayManager.h"
 
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
@@ -40,7 +39,7 @@
     self.editorTextView.wantsLayer = YES;
     self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
     
-    refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
+    refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
 
 //    
 //    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
@@ -95,6 +94,7 @@
     if (refreshHighLightCounter > 0)
     {
         [self.editorTextView refreshHightLight];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownEditorTextHighLightRefreshed" object:nil userInfo:nil];
         refreshHighLightCounter = 0;
     }
 }

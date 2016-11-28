@@ -13,6 +13,7 @@
 @interface JZiCloudStorageManager : NSObject
 
 + (id)sharedManager;
+@property (nonatomic,strong) NSMetadataQuery *metadataQuery;
 
 - (NSURL *)ubiquitousURL;
 - (NSURL *)ubiquitousDocumentsURL;

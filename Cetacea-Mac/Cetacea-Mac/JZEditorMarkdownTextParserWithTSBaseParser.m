@@ -10,6 +10,7 @@
 #import "TSMarkdownParser.h"
 #import <AppKit/AppKit.h>
 #import "JZFontDisplayManager.h"
+#import "JZHeader.h"
 #import "JZEditorHighlightThemeManager.h"
 
 @interface JZEditorMarkdownTextParserWithTSBaseParser()
@@ -237,7 +238,7 @@
     __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
     [self.parser addParsingRuleWithRegularExpression:CodeBlockParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
      {
-         NSLog(@"%lu",(unsigned long)match.numberOfRanges);
+         JZLog(@"%lu",(unsigned long)match.numberOfRanges);
          if (match.numberOfRanges == 4)
          {
              [attributedString addAttributes:weakSelf.JZCodeBlockTextAttributes range:[match rangeAtIndex:2]];

@@ -46,6 +46,7 @@
 - (void)saveImage:(NSImage *)image
          withName:(NSString *)imageName;
 
+- (BOOL)isEqualToDoc:(JZiCloudFileExtensionCetaceaDoc *)doc;
 
 
 @end

@@ -8,7 +8,7 @@
 
 #import "JZEditorTextView.h"
 #import "JZEditorHighlightThemeManager.h"
-
+#import "JZHeader.h"
 
 @implementation JZEditorTextView
 
@@ -47,7 +47,7 @@
 {
     
     _hasSetup = YES;
-    NSLog(@"setupTextView");
+    JZLog(@"setupTextView");
     self.automaticDashSubstitutionEnabled = NO;
     if (self.enclosingScrollView)
     {

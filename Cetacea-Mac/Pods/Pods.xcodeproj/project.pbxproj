@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BE708A47E963B8F2B4FF73BE6C49418 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A8EA0D6A8FB253D12C6FEDAEB87ED6E0 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B49362DDB2D90A171DEDC85E4CBCD5 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F239F7E7A2A91089B662DCAA7CFC610E /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7483E2733ACA708F7688C8340ADC2EBF /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FF871FEBF878512150079CAC90D1CE85 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		56BF367E18D170AB72E269AA1DD35CC1 /* Pods-Cetacea-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */; };
-		583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = FADEDC3187A927CFFE0F35E045FD5A2C /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */; };
-		636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E7A47D8AC273EFA3B24DA712D611CC /* MMMarkdown-dummy.m */; };
+		583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */; };
+		636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */; };
 		647487A1230B96EEE77397B9ED67579F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 463150E84EF6A76CB212F5958771C1B5 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = F93E8B228088E4F13979479CE5EC7BBE /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F2144335D69CA663AD3829FD552151 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 28742F0F4609717F39AF695460FC0418 /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 58434528104F5D380B598BF474159495 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DA70B7342254D3093F74BE3C689E681 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = EA76D6A6AC2EDFFDD44C4A4014FB2F70 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		A10298C8AFBF03FFF423ED010075CED6 /* Pods-Cetacea-MacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */; };
 		A4906CEF83571A5A6B510523D1E602BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 832D27424954CF991998280A3C55EB95 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA65FF6FC54B66BE40CAEB3FDF261E39 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 5759BEB2068128C778A7FCF5AFE91263 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FC2B55E148559A284B60EC8A5A79FFB /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F30464F58DA45C32F1D344C168DE98F7 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C597BE9FE63E375730503B71A907D4 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD9CC5B639597BEC6D152627DDFA2CF6 /* Pods-Cetacea-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */; };
-		DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 748BB6C1F3863AED92BDBA0BDB2441B1 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,72 +70,73 @@
 
 /* Begin PBXFileReference section */
 		004E92875487A7FAAC6ECDBA9D1B856E /* Pods-Cetacea-MacTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-frameworks.sh"; sourceTree = "<group>"; };
-		0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
+		0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
 		0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacTests.a"; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
 		0E6D8C54F8C6B1ABE09D86F5D3C6E6AB /* Pods-Cetacea-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
-		11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMGenerator.h; path = Source/MMGenerator.h; sourceTree = "<group>"; };
 		13FBA96202C5D5A328507A48D0B40958 /* Pods-Cetacea-MacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
+		15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
+		1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
+		19FE8D31780216D97DFED5AD4A2BDD9F /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
 		1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
-		22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
-		245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
+		24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacUITests.a"; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
-		2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
+		28742F0F4609717F39AF695460FC0418 /* MMScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMScanner.h; path = Source/MMScanner.h; sourceTree = "<group>"; };
+		2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
 		301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-Mac.a"; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
+		32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMMarkdown.xcconfig; sourceTree = "<group>"; };
+		358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
 		37F5EF7559AAD6B73BF11DCFE5CDD8F3 /* Pods-Cetacea-MacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3AAD9A27CD3A273D2247C5B4AB096225 /* Pods-Cetacea-MacTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-resources.sh"; sourceTree = "<group>"; };
 		3B7BE9C1BCD6397194FD2F0DB5BAB5DF /* Pods-Cetacea-Mac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-frameworks.sh"; sourceTree = "<group>"; };
 		3D37C147B4D2C94467154BEE02ADA600 /* Pods-Cetacea-Mac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-Mac-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3FC2B55E148559A284B60EC8A5A79FFB /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
 		3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacUITests-dummy.m"; sourceTree = "<group>"; };
-		450E5CDF9130CCBF5CF0174488097CEC /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
-		463150E84EF6A76CB212F5958771C1B5 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
 		4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
-		5759BEB2068128C778A7FCF5AFE91263 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
-		57B49362DDB2D90A171DEDC85E4CBCD5 /* MMDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDocument.m; path = Source/MMDocument.m; sourceTree = "<group>"; };
-		5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
-		5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
-		62C597BE9FE63E375730503B71A907D4 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
+		4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
+		58434528104F5D380B598BF474159495 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
+		641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		6478537602952271E300DF4C19098E3F /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDateTools.a; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		6A3AD2FBD1249E22935D8FD91517BF47 /* Pods-Cetacea-MacUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-resources.sh"; sourceTree = "<group>"; };
-		73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		7483E2733ACA708F7688C8340ADC2EBF /* MMHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHTMLParser.h; path = Source/MMHTMLParser.h; sourceTree = "<group>"; };
-		748BB6C1F3863AED92BDBA0BDB2441B1 /* MMMarkdown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMMarkdown.m; path = Source/MMMarkdown.m; sourceTree = "<group>"; };
-		7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSpanParser.m; path = Source/MMSpanParser.m; sourceTree = "<group>"; };
-		7EE60825D98D0EFDA370725231CA0461 /* MMMarkdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMMarkdown-prefix.pch"; sourceTree = "<group>"; };
-		832D27424954CF991998280A3C55EB95 /* MMMarkdown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMMarkdown.h; path = Source/MMMarkdown.h; sourceTree = "<group>"; };
-		85F2144335D69CA663AD3829FD552151 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
-		89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
-		8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSpanParser.m; path = Source/MMSpanParser.m; sourceTree = "<group>"; };
+		6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHTMLParser.h; path = Source/MMHTMLParser.h; sourceTree = "<group>"; };
+		707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
+		7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
+		7CB720168DFC97E2F4466CC4F13A64E4 /* MMMarkdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMMarkdown-prefix.pch"; sourceTree = "<group>"; };
+		8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
+		8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
+		A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
+		A6BDAE7C6199D3446A3408C9BFB03F71 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
 		A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-Mac-dummy.m"; sourceTree = "<group>"; };
 		A8628F4457582F9D7BF83A4A5B7530A6 /* Pods-Cetacea-MacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8EA0D6A8FB253D12C6FEDAEB87ED6E0 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
-		AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
-		AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
 		AFA530F290D0F43845AF7E7F82DE6376 /* Pods-Cetacea-MacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMMarkdown.h; path = Source/MMMarkdown.h; sourceTree = "<group>"; };
 		B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMMarkdown.a; path = libMMMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
+		BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
+		CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMGenerator.m; path = Source/MMGenerator.m; sourceTree = "<group>"; };
 		CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
-		E039186DEC15E50A00121C0045F895B4 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
 		E11A28BEA3971B981482B8E5EAF3366C /* Pods-Cetacea-MacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMScanner.m; path = Source/MMScanner.m; sourceTree = "<group>"; };
 		E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacTests-dummy.m"; sourceTree = "<group>"; };
 		E939CE275F11A582C913E095E9F20804 /* Pods-Cetacea-Mac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-resources.sh"; sourceTree = "<group>"; };
-		EA76D6A6AC2EDFFDD44C4A4014FB2F70 /* MMScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMScanner.m; path = Source/MMScanner.m; sourceTree = "<group>"; };
-		F1E7A47D8AC273EFA3B24DA712D611CC /* MMMarkdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMMarkdown-dummy.m"; sourceTree = "<group>"; };
-		F239F7E7A2A91089B662DCAA7CFC610E /* MMGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMGenerator.m; path = Source/MMGenerator.m; sourceTree = "<group>"; };
-		F30464F58DA45C32F1D344C168DE98F7 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
-		F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMMarkdown.xcconfig; sourceTree = "<group>"; };
-		F93E8B228088E4F13979479CE5EC7BBE /* MMScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMScanner.h; path = Source/MMScanner.h; sourceTree = "<group>"; };
-		FADEDC3187A927CFFE0F35E045FD5A2C /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDocument.m; path = Source/MMDocument.m; sourceTree = "<group>"; };
+		F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMMarkdown-dummy.m"; sourceTree = "<group>"; };
+		FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMMarkdown.m; path = Source/MMMarkdown.m; sourceTree = "<group>"; };
+		FDCCD0B75677B298466239C8EF4A8F3F /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-Mac/HockeySDK.framework"; sourceTree = "<group>"; };
+		FF871FEBF878512150079CAC90D1CE85 /* MMGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMGenerator.h; path = Source/MMGenerator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,43 +206,6 @@
 			path = "Target Support Files/Pods-Cetacea-MacTests";
 			sourceTree = "<group>";
 		};
-		128FBB67F7612EC9D34DA71795DFF68B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */,
-				30FB2996CE469B42E88CE30AF7006FE0 /* DateTools-dummy.m */,
-				450E5CDF9130CCBF5CF0174488097CEC /* DateTools-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DateTools";
-			sourceTree = "<group>";
-		};
-		1F759717D86E6798DB0B4AF2DEE63DD4 /* MMMarkdown */ = {
-			isa = PBXGroup;
-			children = (
-				14B8253703CBFEFCDF42D0CB9DEA1233 /* MMDocument.h */,
-				57B49362DDB2D90A171DEDC85E4CBCD5 /* MMDocument.m */,
-				27B565D24F79D4AD373A9A76BCCE93D8 /* MMDocument_Private.h */,
-				C9D70D1DBE63D11FEEBE34BCF6202EAC /* MMElement.h */,
-				89A05D7F9A0B3818F11F2226F3AEF144 /* MMElement.m */,
-				11BF67808FF88DC4033844C68B2888E0 /* MMGenerator.h */,
-				F239F7E7A2A91089B662DCAA7CFC610E /* MMGenerator.m */,
-				7483E2733ACA708F7688C8340ADC2EBF /* MMHTMLParser.h */,
-				DA315CF34364D160F84CD09D9D626B69 /* MMHTMLParser.m */,
-				832D27424954CF991998280A3C55EB95 /* MMMarkdown.h */,
-				748BB6C1F3863AED92BDBA0BDB2441B1 /* MMMarkdown.m */,
-				62C597BE9FE63E375730503B71A907D4 /* MMParser.h */,
-				0120FC7CCEE2A59C1BDC6F4BB724B115 /* MMParser.m */,
-				F93E8B228088E4F13979479CE5EC7BBE /* MMScanner.h */,
-				EA76D6A6AC2EDFFDD44C4A4014FB2F70 /* MMScanner.m */,
-				2FDA8C39550645A6BAB63A67734BBF2D /* MMSpanParser.h */,
-				7923C479D0390DA0B6E5F0912468761B /* MMSpanParser.m */,
-				B452DDF85A8220B09956BE0D60097CAD /* Support Files */,
-			);
-			name = MMMarkdown;
-			path = MMMarkdown;
-			sourceTree = "<group>";
-		};
 		39B641A4EDA46D683325DA090DFE2F80 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +239,39 @@
 			path = "Target Support Files/Pods-Cetacea-MacUITests";
 			sourceTree = "<group>";
 		};
+		57258AC76A67F25046005E94629B716C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5A5E0EB08EF7859450D8C7904B989678 /* MMMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */,
+				EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */,
+				15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */,
+				6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */,
+				974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */,
+				FF871FEBF878512150079CAC90D1CE85 /* MMGenerator.h */,
+				CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */,
+				6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */,
+				707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */,
+				B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */,
+				FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */,
+				7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */,
+				1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */,
+				28742F0F4609717F39AF695460FC0418 /* MMScanner.h */,
+				E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */,
+				8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */,
+				6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */,
+				938E2BA53158EEAEF6C625B365FEA94E /* Support Files */,
+			);
+			name = MMMarkdown;
+			path = MMMarkdown;
+			sourceTree = "<group>";
+		};
 		62EA51AC9E03071D942BC7473D643CB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,68 +284,98 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FE84FA6BC44B86A3BC868DB7B0A9351 /* DateTools */ = {
-			isa = PBXGroup;
-			children = (
-				AB171556EFF7C4306EAFD8E4FFA5A6C6 /* DateTools.h */,
-				245EB1F16B40B1D3337F64A06BA962F0 /* DTConstants.h */,
-				5B22318D3077E5C83D52264E45E8C840 /* DTConstants.m */,
-				85F2144335D69CA663AD3829FD552151 /* DTError.h */,
-				FADEDC3187A927CFFE0F35E045FD5A2C /* DTError.m */,
-				8AE313F33C142F47E67FFCBFB5898C4F /* DTTimePeriod.h */,
-				463150E84EF6A76CB212F5958771C1B5 /* DTTimePeriod.m */,
-				3FC2B55E148559A284B60EC8A5A79FFB /* DTTimePeriodChain.h */,
-				AD6FF5750AED50D96B1EF9FFE06DA12E /* DTTimePeriodChain.m */,
-				22BF1DEC75334B64EFC014AE2DFD4013 /* DTTimePeriodCollection.h */,
-				659E2C7B124FD987A0BAA84547D34492 /* DTTimePeriodCollection.m */,
-				A8EA0D6A8FB253D12C6FEDAEB87ED6E0 /* DTTimePeriodGroup.h */,
-				73BA5EF8BA07FF1C02B4BECB153F05FC /* DTTimePeriodGroup.m */,
-				5759BEB2068128C778A7FCF5AFE91263 /* NSDate+DateTools.h */,
-				F30464F58DA45C32F1D344C168DE98F7 /* NSDate+DateTools.m */,
-				B4EEF859982604A1F625D6E6C33C9170 /* Resources */,
-				128FBB67F7612EC9D34DA71795DFF68B /* Support Files */,
-			);
-			name = DateTools;
-			path = DateTools;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				A215B06CCE04954C0370116C1F14C063 /* Pods */,
+				932B4E4E8158C4D466B1E8AFC3B80842 /* Pods */,
 				62EA51AC9E03071D942BC7473D643CB9 /* Products */,
 				39B641A4EDA46D683325DA090DFE2F80 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A215B06CCE04954C0370116C1F14C063 /* Pods */ = {
+		932B4E4E8158C4D466B1E8AFC3B80842 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6FE84FA6BC44B86A3BC868DB7B0A9351 /* DateTools */,
-				1F759717D86E6798DB0B4AF2DEE63DD4 /* MMMarkdown */,
+				9DE5509E40331334700A87CB9E250EA5 /* DateTools */,
+				B2645600FCC585E8038AEEB602AE9699 /* HockeySDK-Mac */,
+				5A5E0EB08EF7859450D8C7904B989678 /* MMMarkdown */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B452DDF85A8220B09956BE0D60097CAD /* Support Files */ = {
+		938E2BA53158EEAEF6C625B365FEA94E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */,
-				F1E7A47D8AC273EFA3B24DA712D611CC /* MMMarkdown-dummy.m */,
-				7EE60825D98D0EFDA370725231CA0461 /* MMMarkdown-prefix.pch */,
+				32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */,
+				F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */,
+				7CB720168DFC97E2F4466CC4F13A64E4 /* MMMarkdown-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MMMarkdown";
 			sourceTree = "<group>";
 		};
-		B4EEF859982604A1F625D6E6C33C9170 /* Resources */ = {
+		9DE5509E40331334700A87CB9E250EA5 /* DateTools */ = {
 			isa = PBXGroup;
 			children = (
-				E039186DEC15E50A00121C0045F895B4 /* DateTools.bundle */,
+				A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */,
+				24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */,
+				358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */,
+				58434528104F5D380B598BF474159495 /* DTError.h */,
+				BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */,
+				2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */,
+				1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */,
+				CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */,
+				7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */,
+				4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */,
+				8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */,
+				0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */,
+				3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */,
+				641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */,
+				E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */,
+				B2F82BF0AFF2DB4153C188A81D67B41F /* Resources */,
+				B0463F2A0DC163E8AFFFBA0B5C575815 /* Support Files */,
+			);
+			name = DateTools;
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		B0463F2A0DC163E8AFFFBA0B5C575815 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */,
+				0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */,
+				A6BDAE7C6199D3446A3408C9BFB03F71 /* DateTools-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTools";
+			sourceTree = "<group>";
+		};
+		B2645600FCC585E8038AEEB602AE9699 /* HockeySDK-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				EFB08D561885F8DDDA2DDD09A04FE3E5 /* Frameworks */,
+				57258AC76A67F25046005E94629B716C /* Resources */,
+			);
+			name = "HockeySDK-Mac";
+			path = "HockeySDK-Mac";
+			sourceTree = "<group>";
+		};
+		B2F82BF0AFF2DB4153C188A81D67B41F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19FE8D31780216D97DFED5AD4A2BDD9F /* DateTools.bundle */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		EFB08D561885F8DDDA2DDD09A04FE3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDCCD0B75677B298466239C8EF4A8F3F /* HockeySDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F59587D19C68CC7B38468E572458AEE5 /* Pods-Cetacea-Mac */ = {
@@ -618,7 +645,7 @@
 		};
 		2C1EF0293299A7D59557689B3C829084 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
+			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -782,7 +809,7 @@
 		};
 		8387317095A2E645E7F3A3EA5DEDA486 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B70C65920EA098A8840FD51102FF4B3 /* DateTools.xcconfig */;
+			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -875,7 +902,7 @@
 		};
 		DD52FDBB4A243EF0ED3BC8B47DBD4FDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -899,7 +926,7 @@
 		};
 		E12E56586BB111A05CECBCD0D26A731C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7EEB20160123B68C57D67E8B339CBAA /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

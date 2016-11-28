@@ -8,6 +8,7 @@
 
 #import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
 #import "JZiCloudStorageManager.h"
+#import "JZHeader.h"
 
 @implementation JZiCloudFileExtensionCetaceaThemeDataBase
 + (id)sharedManager {
@@ -43,13 +44,13 @@
     
     // Get private docs dir
     NSString *documentsDirectory = [self getPrivateDocsDir];
-    NSLog(@"Loading from %@", documentsDirectory);
+    JZLog(@"Loading from %@", documentsDirectory);
     
     // Get contents of documents directory
     NSError *error;
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
     if (files == nil) {
-        NSLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
+        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
         return nil;
     }
     
@@ -75,7 +76,7 @@
     NSError *error;
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
     if (files == nil) {
-        NSLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
+        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
         return nil;
     }
     
@@ -92,7 +93,7 @@
     // Get available name
     NSString *availableName = [NSString stringWithFormat:@"%d.hightlight", maxNumber+1];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:availableName];
-    NSLog(@"%@",path);
+    JZLog(@"%@",path);
     return path;
     
 }
