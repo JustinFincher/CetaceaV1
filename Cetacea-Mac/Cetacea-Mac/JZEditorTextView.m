@@ -137,7 +137,7 @@
         [finalAttString appendAttributedString:attStrAfterVisiableRange];
     }
     
-    [self.attParagraphStrWithAllRange enumerateAttributesInRange:NSMakeRange(0, [self.string length]) options:0 usingBlock:^(NSDictionary<NSString *,id> *attrs, NSRange range, BOOL *stop)
+    [self.attParagraphStrWithAllRange enumerateAttributesInRange:NSMakeRange(0, [self.attParagraphStrWithAllRange.string length]) options:0 usingBlock:^(NSDictionary<NSString *,id> *attrs, NSRange range, BOOL *stop)
     {
         if (![attrs isEqualToDictionary:self.parser.defaultAttributes])
         {
