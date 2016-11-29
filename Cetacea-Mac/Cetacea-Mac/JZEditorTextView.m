@@ -78,8 +78,10 @@
     if (self.string)
     {
         NSRange range = self.selectedRange;
-        NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
-        [self.textStorage setAttributedString: attStr];
+//        NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
+//        [self.textStorage setAttributedString: attStr];
+        
+         [self.textStorage setAttributedString: [self proccessTextWithVisibleRectOnly]];
         [self setSelectedRange:NSMakeRange(range.location, 0)];
     }
     
@@ -97,7 +99,7 @@
     NSAttributedString *attStrWithinVisiableRange = [self.parser attributedStringFromMarkdown:[self.string substringWithRange:range]];
     finalAttString = [attStrWithinVisiableRange mutableCopy];
     
-    if (range.location == 0 )
+    if (range.location != 0 )
     {
         // before
         NSMutableAttributedString *attStrBeforeVisiableRange = [[[NSAttributedString alloc] initWithString:[self.string substringWithRange:NSMakeRange(0, range.location)] attributes:self.parser.defaultAttributes] mutableCopy];
