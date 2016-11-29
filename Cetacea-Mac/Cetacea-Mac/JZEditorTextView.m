@@ -73,7 +73,7 @@
     self.enclosingScrollView.rulersVisible = YES;
     
     [self.enclosingScrollView.contentView setPostsBoundsChangedNotifications:YES];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(boundsDidChange:) name:NSViewBoundsDidChangeNotification object:self.enclosingScrollView.contentView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewDidEndLiveScroll:) name:NSScrollViewDidEndLiveScrollNotification object:self.enclosingScrollView];
     
 }
 
@@ -85,12 +85,12 @@
     }
 }
 
-- (void)boundsDidChange:(NSNotification *)notif
+- (void)scrollViewDidEndLiveScroll:(NSNotification *)notif
 {
-//    JZLog(@"boundsDidChange, refresh attLineStrWithinVisiableRange");
-//    NSRange range = [self characterRangeFromVisibleRect];
-//    self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:range]];
-//    [self updateTextView];
+    JZLog(@"scrollViewDidEndLiveScroll, refresh attLineStrWithinVisiableRange");
+    NSRange range = [self characterRangeFromVisibleRect];
+    self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:range]];
+    [self updateTextView];
 }
 
 - (void)updateTextView
@@ -144,13 +144,6 @@
             [finalAttString addAttributes:attrs range:range];
         }
     }];
-    
-//    NSMutableAttributedString *finalAttString = [self.attParagraphStrWithAllRange mutableCopy];
-//    [lineAttString enumerateAttributesInRange:NSMakeRange(0, [self.string length]) options:0 usingBlock:^(NSDictionary<NSString *,id> *attrs, NSRange range, BOOL *stop)
-//     {
-//         [finalAttString addAttributes:attrs range:range];
-//         
-//     }];
     return finalAttString;
 }
 
