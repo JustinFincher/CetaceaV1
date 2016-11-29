@@ -78,7 +78,6 @@
     if (self.string)
     {
         NSRange range = self.selectedRange;
-//        [self.parser refreshAttributesTheme];
         NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
         [self.textStorage setAttributedString: attStr];
         [self setSelectedRange:NSMakeRange(range.location, 0)];
@@ -88,6 +87,64 @@
     NSColor *color = [[self.parser.themeDoc getData] getBackgroundColor];
     [self setBackgroundColor:color];
 }
+
+- (NSAttributedString *)proccessTextWithVisibleRectOnly
+{
+    NSRange range = [self characterRangeFromVisibleRect];
+    NSMutableAttributedString *finalAttString;
+    
+    
+    NSAttributedString *attStrWithinVisiableRange = [self.parser attributedStringFromMarkdown:[self.string substringWithRange:range]];
+    finalAttString = [attStrWithinVisiableRange mutableCopy];
+    
+    if (range.location == 0 )
+    {
+        // before
+        NSMutableAttributedString *attStrBeforeVisiableRange = [[[NSAttributedString alloc] initWithString:[self.string substringWithRange:NSMakeRange(0, range.location)] attributes:self.parser.defaultAttributes] mutableCopy];
+        
+        [attStrBeforeVisiableRange appendAttributedString:attStrWithinVisiableRange];
+        finalAttString = attStrBeforeVisiableRange;
+    }
+    
+    if (range.length + range.location < [self.string length])
+    {
+        // after
+        NSMutableAttributedString *attStrAfterVisiableRange = [[[NSAttributedString alloc] initWithString:[self.string substringWithRange:NSMakeRange(range.length + range.location, [self.string length] - range.length - range.location)] attributes:self.parser.defaultAttributes] mutableCopy];
+        [finalAttString appendAttributedString:attStrAfterVisiableRange];
+    }
+    
+    return finalAttString;
+}
+
+- (NSRange)characterRangeFromVisibleRect
+{
+    return [self characterRangeForRect: [self visibleRect]];
+}
+
+- (NSRange)characterRangeForRect:(NSRect)aRect
+{
+    NSRange glyphRange, charRange;
+    NSLayoutManager *layoutManager = [self
+                                      layoutManager];
+    NSTextContainer *textContainer = [self
+                                      textContainer];
+    NSPoint containerOrigin = [self
+                               textContainerOrigin];
+    
+    // Convert from view coordinates to container coordinates
+    aRect = NSOffsetRect(aRect, -containerOrigin.x,
+                         -containerOrigin.y);
+    
+    glyphRange = [layoutManager
+                  glyphRangeForBoundingRect:aRect
+                  inTextContainer:textContainer];
+    charRange = [layoutManager
+                 characterRangeForGlyphRange:glyphRange
+                 actualGlyphRange:NULL];
+    
+    return charRange;
+}
+
 - (void)updateRuler
 {
     [super updateRuler];
