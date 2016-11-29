@@ -10,6 +10,13 @@
 #import "JZEditorHighlightThemeManager.h"
 #import "JZHeader.h"
 
+@interface JZEditorTextView()
+
+@property (nonatomic,strong) NSAttributedString *attParagraphStrWithAllRange;
+@property (nonatomic,strong) NSAttributedString *attLineStrWithinVisiableRange;
+
+@end
+
 @implementation JZEditorTextView
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -64,6 +71,10 @@
     self.layoutManager.allowsNonContiguousLayout = YES;
     
     self.enclosingScrollView.rulersVisible = YES;
+    
+    [self.enclosingScrollView.contentView setPostsBoundsChangedNotifications:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(boundsDidChange:) name:NSViewBoundsDidChangeNotification object:self.enclosingScrollView.contentView];
+    
 }
 
 - (void)viewDidMoveToWindow
@@ -73,19 +84,33 @@
         [self setupTextView];
     }
 }
+
+- (void)boundsDidChange:(NSNotification *)notif
+{
+//    JZLog(@"boundsDidChange, refresh attLineStrWithinVisiableRange");
+//    NSRange range = [self characterRangeFromVisibleRect];
+//    self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:range]];
+//    [self updateTextView];
+}
+
+- (void)updateTextView
+{
+    NSRange range = self.selectedRange;
+    NSAttributedString *string = [self proccessTextWithVisibleRectOnly];
+    [self.textStorage setAttributedString: string];
+    [self setSelectedRange:NSMakeRange(range.location, 0)];
+
+}
 - (void)refreshHightLight
 {
     if (self.string)
     {
-        NSRange range = self.selectedRange;
-//        NSAttributedString *attStr = [self.parser attributedStringFromMarkdown:self.string];
-//        [self.textStorage setAttributedString: attStr];
-        
-         [self.textStorage setAttributedString: [self proccessTextWithVisibleRectOnly]];
-        [self setSelectedRange:NSMakeRange(range.location, 0)];
+        self.attParagraphStrWithAllRange = [self.parser attributedParagraphParserStringFromMarkdown:self.string];
+        self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:[self characterRangeFromVisibleRect]]];
+        [self updateTextView];
     }
     
-     [self setWantsLayer:YES];
+    [self setWantsLayer:YES];
     NSColor *color = [[self.parser.themeDoc getData] getBackgroundColor];
     [self setBackgroundColor:color];
 }
@@ -95,16 +120,13 @@
     NSRange range = [self characterRangeFromVisibleRect];
     NSMutableAttributedString *finalAttString;
     
-    
-    NSAttributedString *attStrWithinVisiableRange = [self.parser attributedStringFromMarkdown:[self.string substringWithRange:range]];
-    finalAttString = [attStrWithinVisiableRange mutableCopy];
-    
+    finalAttString = [self.attLineStrWithinVisiableRange mutableCopy];
     if (range.location != 0 )
     {
         // before
         NSMutableAttributedString *attStrBeforeVisiableRange = [[[NSAttributedString alloc] initWithString:[self.string substringWithRange:NSMakeRange(0, range.location)] attributes:self.parser.defaultAttributes] mutableCopy];
         
-        [attStrBeforeVisiableRange appendAttributedString:attStrWithinVisiableRange];
+        [attStrBeforeVisiableRange appendAttributedString:self.attLineStrWithinVisiableRange];
         finalAttString = attStrBeforeVisiableRange;
     }
     
@@ -115,6 +137,20 @@
         [finalAttString appendAttributedString:attStrAfterVisiableRange];
     }
     
+    [self.attParagraphStrWithAllRange enumerateAttributesInRange:NSMakeRange(0, [self.string length]) options:0 usingBlock:^(NSDictionary<NSString *,id> *attrs, NSRange range, BOOL *stop)
+    {
+        if (![attrs isEqualToDictionary:self.parser.defaultAttributes])
+        {
+            [finalAttString addAttributes:attrs range:range];
+        }
+    }];
+    
+//    NSMutableAttributedString *finalAttString = [self.attParagraphStrWithAllRange mutableCopy];
+//    [lineAttString enumerateAttributesInRange:NSMakeRange(0, [self.string length]) options:0 usingBlock:^(NSDictionary<NSString *,id> *attrs, NSRange range, BOOL *stop)
+//     {
+//         [finalAttString addAttributes:attrs range:range];
+//         
+//     }];
     return finalAttString;
 }
 

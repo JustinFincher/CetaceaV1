@@ -25,6 +25,8 @@ typedef NS_OPTIONS(NSUInteger, JZMarkdownHighLightSyntax)
 @interface JZEditorMarkdownTextParserWithTSBaseParser : NSObject
 
 - (void)refreshAttributesTheme;
+- (NSAttributedString *)attributedParagraphParserStringFromMarkdown:(NSString *)markdown;
+- (NSAttributedString *)attributedLineParserStringFromMarkdown:(NSString *)markdown;
 - (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown;
 
 @property (nonatomic,weak) JZiCloudFileExtensionCetaceaThemeDoc *themeDoc;
