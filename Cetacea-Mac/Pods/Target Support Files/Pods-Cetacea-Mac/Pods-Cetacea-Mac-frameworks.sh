@@ -89,3 +89,9 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework"
 fi
+if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
+  install_framework "${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework"
+fi
+if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "${PODS_ROOT}/HockeySDK-Mac/HockeySDK-Mac/HockeySDK.framework"
+fi

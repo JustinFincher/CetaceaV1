@@ -7,131 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BE708A47E963B8F2B4FF73BE6C49418 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FF871FEBF878512150079CAC90D1CE85 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		56BF367E18D170AB72E269AA1DD35CC1 /* Pods-Cetacea-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */; };
-		583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */; };
-		636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */; };
-		647487A1230B96EEE77397B9ED67579F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 28742F0F4609717F39AF695460FC0418 /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 58434528104F5D380B598BF474159495 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DA70B7342254D3093F74BE3C689E681 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A10298C8AFBF03FFF423ED010075CED6 /* Pods-Cetacea-MacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */; };
-		A4906CEF83571A5A6B510523D1E602BB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA65FF6FC54B66BE40CAEB3FDF261E39 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD9CC5B639597BEC6D152627DDFA2CF6 /* Pods-Cetacea-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */; };
-		DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		02960C3D34F5BF6242CBF59FC7E6BDDD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0960855FB5F2432E3BF22D435970FA82 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A6E1B79C46114D9888612885D55C88D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		13CEA58551DDE188F38D841AB69924F3 /* Pods-Cetacea-MacTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7393045DF422B1C9B5FE83D8736BE3 /* Pods-Cetacea-MacTests-dummy.m */; };
+		264E110246129B300E8E3B8AFED4AF21 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DDE628FC791D1578675BC1D9E4F50F /* Pods-Cetacea-Mac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B4DD6529DFBF4520D2661DA27E56CE /* Pods-Cetacea-Mac-dummy.m */; };
+		2E38E2ADF4CBBC95DD8F831EAD92C3E4 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2E4DE0024E20F8E7CE6FE1DDF35D894B /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		385B6FEAC5868BEA4A4CC45B57581E47 /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C6529137AB326EC72AF3A7644913A21 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D033BB399373C8A6B1254AA4623B89 /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		543AECBECD34D9F761869972424BA7B8 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57BBACC29CE7F8B64508970E40823BAA /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E99922C27F23856814FB23A6CD16F0B /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5F8947589F39D9FBAFCC162F084466F3 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		604402CB855004DE071C74457A0A004C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		62E55CEFBD08A23FD51FFD4EA1C348D5 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6AC05FD4F6A636A0B87E5D7A3A1F31D1 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6BFE4D78C5B280DD1000DAF2CBE314DE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FF871FEBF878512150079CAC90D1CE85 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9F12625E7901F30360FF2C30B1356C /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EBF80DE4F099412E8E62AAFDF633ABC /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */; };
+		7185B2EF74C50A9F484B2DD73F0CF9E7 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		71990C99231B8750E458FFEF2A9217FB /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		722E9DBB2C1BC768C0E14AFDAD816935 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F4A31DB6AAC0DD28B2A5C137B285D0B /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8088D524522D512F034796C2B9415B99 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		85700BAD3BD246C4D3C967659FA5DB15 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		914F15931E0E919F65527D78CDCB93C8 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */; };
+		92075C06E2C1271FCF9FB8DA1F8709BA /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9462103F989E960462998222DA7F604E /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 28742F0F4609717F39AF695460FC0418 /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F378BCAA59FCE97D0A99C165859B350 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		9F87A9E07319BBB939FA80A674487266 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = 58434528104F5D380B598BF474159495 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD32E8BEC4F0F1E5F6F3716120FDFD30 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B383101C7D3D3C0934AE070B6428DA38 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6371B275CAFFF6B4ECF929B8A57BFD9 /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9B2E03239C98D331EC5A6CF6D9F75E3 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDA9F25437448C50183D19A32E60A7EF /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C59D144AA39696CA0BC51F9B72F1D8D9 /* Pods-Cetacea-MacUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B35B5569739C564B760AE86A39C4E6B /* Pods-Cetacea-MacUITests-dummy.m */; };
+		C77EE4499B004F8B28827BDCC9837F2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		CB46540C24ABC9DF41612881E5B61F81 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB2B6311602139F94C766E3C3BBD67B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		FB43909B99CE9589176D5CA6065A93E9 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A2C74DD709BA1F054810EF278275C63 /* PBXContainerItemProxy */ = {
+		039A0ED6FDB5672853CD6683151E14E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B36F6D48026E14827529F787D63D61B8;
+			remoteGlobalIDString = D28E277C9943DDFFC61B7CD1CDF5C18A;
 			remoteInfo = DateTools;
 		};
-		C0208F60E2B9F6B47567BEA8FEDBCE3B /* PBXContainerItemProxy */ = {
+		6335E223350E7B1F82A1D87EB27BC4B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 159A0E298F8E774F387C4F68CC095B9D;
+			remoteGlobalIDString = C2FFA47AE57F2DF7C5B58B1DC5AE8617;
 			remoteInfo = MMMarkdown;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004E92875487A7FAAC6ECDBA9D1B856E /* Pods-Cetacea-MacTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-frameworks.sh"; sourceTree = "<group>"; };
 		0169A41301EFF9C4C2A30458EA8F8DC7 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		03CE2E8672064DD0BAAD8EA45E50DE1E /* Pods-Cetacea-MacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07546CE1DA563017ABC1A492200CC2E6 /* Pods-Cetacea-MacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacTests.a"; path = "libPods-Cetacea-MacTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		0D0A3B9E2C68D9E57C856DA0D5DFEDF3 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
-		0E6D8C54F8C6B1ABE09D86F5D3C6E6AB /* Pods-Cetacea-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
-		13FBA96202C5D5A328507A48D0B40958 /* Pods-Cetacea-MacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F6EEC0829FAAACEA29D446569A2665A /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15937554E808A09332BAFB9DF650994D /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
 		1794920564FD5838BE86BCFBF73977D9 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
 		19FE8D31780216D97DFED5AD4A2BDD9F /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1BACBC3DA0B4F82A4CC2E3E852D1BA72 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
+		1E22F2AE957027E35C658E4FFEEC4FE0 /* Pods-Cetacea-MacTests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.non-appstore.xcconfig"; sourceTree = "<group>"; };
 		24E2E88F6C104C26627F82378DE7E115 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
+		254245C54C075BAA2774744920AD1E8D /* Pods-Cetacea-MacUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.appstore.xcconfig"; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-MacUITests.a"; path = "libPods-Cetacea-MacUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28742F0F4609717F39AF695460FC0418 /* MMScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMScanner.h; path = Source/MMScanner.h; sourceTree = "<group>"; };
 		2AED81E793833977D94F787756EC7ED9 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
+		2C7393045DF422B1C9B5FE83D8736BE3 /* Pods-Cetacea-MacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacTests-dummy.m"; sourceTree = "<group>"; };
+		2DF3178881914415C1334B943F6BD352 /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
 		301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea-Mac.a"; path = "libPods-Cetacea-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMMarkdown.xcconfig; sourceTree = "<group>"; };
 		358820B8615C6D482D3E04ED07BF409B /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
-		37F5EF7559AAD6B73BF11DCFE5CDD8F3 /* Pods-Cetacea-MacTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3AAD9A27CD3A273D2247C5B4AB096225 /* Pods-Cetacea-MacTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-resources.sh"; sourceTree = "<group>"; };
-		3B7BE9C1BCD6397194FD2F0DB5BAB5DF /* Pods-Cetacea-Mac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-frameworks.sh"; sourceTree = "<group>"; };
-		3D37C147B4D2C94467154BEE02ADA600 /* Pods-Cetacea-Mac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-Mac-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B35B5569739C564B760AE86A39C4E6B /* Pods-Cetacea-MacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacUITests-dummy.m"; sourceTree = "<group>"; };
+		3B7AB16C9890EA2534E8A0EBF726610C /* Pods-Cetacea-Mac-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-frameworks.sh"; sourceTree = "<group>"; };
+		3CDF71C37208765147668533B54A792D /* Pods-Cetacea-Mac-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-Mac-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3E9833717AAC033F0219781DE2C45C5D /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacUITests-dummy.m"; sourceTree = "<group>"; };
-		4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		4207E1BF373ABA1351CA6BFE57B639B5 /* Pods-Cetacea-MacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-frameworks.sh"; sourceTree = "<group>"; };
 		4BEA1AD56AB7A2316D273BC23D611DF9 /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		4F3BC0DC98AECB26F58C0F508ABD0B1E /* Pods-Cetacea-MacTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-resources.sh"; sourceTree = "<group>"; };
 		52920C0DC9470A86AD1390BA019D85D3 /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
+		566BCC6055B9A2C273AE888CD6E90978 /* Pods-Cetacea-MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57A527644119CE3EBEEEE0DD8572E1D5 /* Pods-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
 		58434528104F5D380B598BF474159495 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
+		5C1C306CD97A597FF74D633F9A602256 /* Pods-Cetacea-MacTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		6345B663A9F714C040837A5DD87DF6E4 /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
 		641BA70A032D4ECE2A5CE5620E129E2C /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		6478537602952271E300DF4C19098E3F /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDateTools.a; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A3AD2FBD1249E22935D8FD91517BF47 /* Pods-Cetacea-MacUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-resources.sh"; sourceTree = "<group>"; };
+		67D4AFD6C11DF86D6C3BBEBFB7BF69A6 /* Pods-Cetacea-MacTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacTests-frameworks.sh"; sourceTree = "<group>"; };
 		6ACAAB11CF8AB5DF9FE49CD4FD53FA7F /* MMSpanParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSpanParser.m; path = Source/MMSpanParser.m; sourceTree = "<group>"; };
 		6ECA807E34EED821648582242BB0319F /* MMHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHTMLParser.h; path = Source/MMHTMLParser.h; sourceTree = "<group>"; };
 		707D78E840A88C7B667D47D4C978F1E9 /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
 		7BD4C4F2D6BC041952AADAAEC2331FC8 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
 		7C557E71173685E5BA32D70158CB8C94 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
 		7CB720168DFC97E2F4466CC4F13A64E4 /* MMMarkdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMMarkdown-prefix.pch"; sourceTree = "<group>"; };
+		7F9D91461AED6ABEFF04458CA42BE36F /* Pods-Cetacea-Mac-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-Mac-acknowledgements.plist"; sourceTree = "<group>"; };
 		8268EBBF21DEFCE155AC92A81401D2F3 /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
+		86673916C0745EEB78912D2A8D114FBC /* Pods-Cetacea-Mac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-resources.sh"; sourceTree = "<group>"; };
+		8CC069C964BACA466E43D785C97E0E43 /* Pods-Cetacea-MacUITests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.non-appstore.xcconfig"; sourceTree = "<group>"; };
 		8FF74D96EC4DB7F5EF65E5C0480EC994 /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		974F23F6C87E7E7AD82B7A13B7DDA751 /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
+		A2B4DD6529DFBF4520D2661DA27E56CE /* Pods-Cetacea-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-Mac-dummy.m"; sourceTree = "<group>"; };
 		A45273D415B49A02C6606F59A5DA3821 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
 		A6BDAE7C6199D3446A3408C9BFB03F71 /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
-		A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-Mac-dummy.m"; sourceTree = "<group>"; };
-		A8628F4457582F9D7BF83A4A5B7530A6 /* Pods-Cetacea-MacUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-MacUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AFA530F290D0F43845AF7E7F82DE6376 /* Pods-Cetacea-MacUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A7365BE423D19041855FBB957096FD4F /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		B2BFB0C3CF5002706EE2C8A8EE13F0B1 /* Pods-Cetacea-MacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7528E681AD0634CAB0C0244DC145A28 /* MMMarkdown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMMarkdown.h; path = Source/MMMarkdown.h; sourceTree = "<group>"; };
 		B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMMarkdown.a; path = libMMMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0E4D04EE5F4FFE379976DC6C5B1679 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		BB61ABB88084F0674B54F055CCEF00CF /* Pods-Cetacea-MacUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-MacUITests-resources.sh"; sourceTree = "<group>"; };
 		CABECE34BEA9C1AC396AFAD5C827931D /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
 		CAD01F1F7A84B27790E3185D0038F121 /* MMGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMGenerator.m; path = Source/MMGenerator.m; sourceTree = "<group>"; };
-		CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E11A28BEA3971B981482B8E5EAF3366C /* Pods-Cetacea-MacTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6069DC666FCF00304A5B2F4B82E7777 /* Pods-Cetacea-MacUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-MacUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E192DB46E822EF7D0D82187B7A47000F /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F325EB8A7B2FDA21150D51BFBE3D03 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 		E618B9FBE4627B1D52EA46CD90215114 /* MMScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMScanner.m; path = Source/MMScanner.m; sourceTree = "<group>"; };
-		E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-MacTests-dummy.m"; sourceTree = "<group>"; };
-		E939CE275F11A582C913E095E9F20804 /* Pods-Cetacea-Mac-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-Mac-resources.sh"; sourceTree = "<group>"; };
+		EB13B0F45FCB0C6B1D598BBF20CEF898 /* Pods-Cetacea-MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-MacTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF9D6091F91E1E7044FC35F246FC8DB3 /* MMDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDocument.m; path = Source/MMDocument.m; sourceTree = "<group>"; };
+		F0BC4B9514E4274292F3E14CFB3C2CB5 /* Pods-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
 		F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
 		F658ED78408BEA44B07CC5B5C01B4AB2 /* MMMarkdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMMarkdown-dummy.m"; sourceTree = "<group>"; };
 		FC21D38FCB0682A01272009DE861CC85 /* MMMarkdown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMMarkdown.m; path = Source/MMMarkdown.m; sourceTree = "<group>"; };
@@ -140,43 +146,43 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0F264000D85D92554F869770618FD8C3 /* Frameworks */ = {
+		5343F22C3CF496979B14507C25BEC5CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA65FF6FC54B66BE40CAEB3FDF261E39 /* Cocoa.framework in Frameworks */,
+				9F378BCAA59FCE97D0A99C165859B350 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1679853336D09C6D59AB1EAD932D0AD7 /* Frameworks */ = {
+		76F673C90189F0458B230251600AEDDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BE708A47E963B8F2B4FF73BE6C49418 /* Cocoa.framework in Frameworks */,
+				C77EE4499B004F8B28827BDCC9837F2D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34B42B783727F282B0EACD0FCA45C1CC /* Frameworks */ = {
+		7F60B052E56CB0D65C37B524DB34B865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA70B7342254D3093F74BE3C689E681 /* Cocoa.framework in Frameworks */,
+				FB2B6311602139F94C766E3C3BBD67B8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9FC59FE48B3E0FD1C78D3D34DF4A20F /* Frameworks */ = {
+		B038F3458424480C0A8AD8EAE111EA81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647487A1230B96EEE77397B9ED67579F /* Cocoa.framework in Frameworks */,
+				0A6E1B79C46114D9888612885D55C88D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD35EE7631FF32F84975868C2C181D21 /* Frameworks */ = {
+		F7C0440C3435D31424D0106D2ABEF1B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4906CEF83571A5A6B510523D1E602BB /* Cocoa.framework in Frameworks */,
+				604402CB855004DE071C74457A0A004C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,27 +197,29 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		1053CC42117ABA8FE99B91420C886931 /* Pods-Cetacea-MacTests */ = {
+		11C3FDDAA76097E414D990C67FEB0AB3 /* Pods-Cetacea-MacUITests */ = {
 			isa = PBXGroup;
 			children = (
-				37F5EF7559AAD6B73BF11DCFE5CDD8F3 /* Pods-Cetacea-MacTests-acknowledgements.markdown */,
-				E11A28BEA3971B981482B8E5EAF3366C /* Pods-Cetacea-MacTests-acknowledgements.plist */,
-				E918BAD4018A19D2130451683494DFE8 /* Pods-Cetacea-MacTests-dummy.m */,
-				004E92875487A7FAAC6ECDBA9D1B856E /* Pods-Cetacea-MacTests-frameworks.sh */,
-				3AAD9A27CD3A273D2247C5B4AB096225 /* Pods-Cetacea-MacTests-resources.sh */,
-				1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */,
-				E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */,
+				03CE2E8672064DD0BAAD8EA45E50DE1E /* Pods-Cetacea-MacUITests-acknowledgements.markdown */,
+				D6069DC666FCF00304A5B2F4B82E7777 /* Pods-Cetacea-MacUITests-acknowledgements.plist */,
+				3B35B5569739C564B760AE86A39C4E6B /* Pods-Cetacea-MacUITests-dummy.m */,
+				4207E1BF373ABA1351CA6BFE57B639B5 /* Pods-Cetacea-MacUITests-frameworks.sh */,
+				BB61ABB88084F0674B54F055CCEF00CF /* Pods-Cetacea-MacUITests-resources.sh */,
+				254245C54C075BAA2774744920AD1E8D /* Pods-Cetacea-MacUITests.appstore.xcconfig */,
+				0F6EEC0829FAAACEA29D446569A2665A /* Pods-Cetacea-MacUITests.debug.xcconfig */,
+				8CC069C964BACA466E43D785C97E0E43 /* Pods-Cetacea-MacUITests.non-appstore.xcconfig */,
+				2DF3178881914415C1334B943F6BD352 /* Pods-Cetacea-MacUITests.release.xcconfig */,
 			);
-			name = "Pods-Cetacea-MacTests";
-			path = "Target Support Files/Pods-Cetacea-MacTests";
+			name = "Pods-Cetacea-MacUITests";
+			path = "Target Support Files/Pods-Cetacea-MacUITests";
 			sourceTree = "<group>";
 		};
-		39B641A4EDA46D683325DA090DFE2F80 /* Targets Support Files */ = {
+		156C0EFC0C75BB943781645BA884AA26 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F59587D19C68CC7B38468E572458AEE5 /* Pods-Cetacea-Mac */,
-				1053CC42117ABA8FE99B91420C886931 /* Pods-Cetacea-MacTests */,
-				422D3CA8B4711A14D16709B090E22214 /* Pods-Cetacea-MacUITests */,
+				FFE18412688B862E20AAC1D4B6E171ED /* Pods-Cetacea-Mac */,
+				9F6AD509B93F76C15CCFD38084B0F089 /* Pods-Cetacea-MacTests */,
+				11C3FDDAA76097E414D990C67FEB0AB3 /* Pods-Cetacea-MacUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -222,21 +230,6 @@
 				04C068A18C5413F804A2959126093416 /* OS X */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		422D3CA8B4711A14D16709B090E22214 /* Pods-Cetacea-MacUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A8628F4457582F9D7BF83A4A5B7530A6 /* Pods-Cetacea-MacUITests-acknowledgements.markdown */,
-				13FBA96202C5D5A328507A48D0B40958 /* Pods-Cetacea-MacUITests-acknowledgements.plist */,
-				3FC8A0C2DB7DBB7584E4ADA464C3F43A /* Pods-Cetacea-MacUITests-dummy.m */,
-				AFA530F290D0F43845AF7E7F82DE6376 /* Pods-Cetacea-MacUITests-frameworks.sh */,
-				6A3AD2FBD1249E22935D8FD91517BF47 /* Pods-Cetacea-MacUITests-resources.sh */,
-				CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */,
-				A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */,
-			);
-			name = "Pods-Cetacea-MacUITests";
-			path = "Target Support Files/Pods-Cetacea-MacUITests";
 			sourceTree = "<group>";
 		};
 		57258AC76A67F25046005E94629B716C /* Resources */ = {
@@ -291,7 +284,7 @@
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
 				932B4E4E8158C4D466B1E8AFC3B80842 /* Pods */,
 				62EA51AC9E03071D942BC7473D643CB9 /* Products */,
-				39B641A4EDA46D683325DA090DFE2F80 /* Targets Support Files */,
+				156C0EFC0C75BB943781645BA884AA26 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,6 +334,23 @@
 			path = DateTools;
 			sourceTree = "<group>";
 		};
+		9F6AD509B93F76C15CCFD38084B0F089 /* Pods-Cetacea-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				07546CE1DA563017ABC1A492200CC2E6 /* Pods-Cetacea-MacTests-acknowledgements.markdown */,
+				B2BFB0C3CF5002706EE2C8A8EE13F0B1 /* Pods-Cetacea-MacTests-acknowledgements.plist */,
+				2C7393045DF422B1C9B5FE83D8736BE3 /* Pods-Cetacea-MacTests-dummy.m */,
+				67D4AFD6C11DF86D6C3BBEBFB7BF69A6 /* Pods-Cetacea-MacTests-frameworks.sh */,
+				4F3BC0DC98AECB26F58C0F508ABD0B1E /* Pods-Cetacea-MacTests-resources.sh */,
+				5C1C306CD97A597FF74D633F9A602256 /* Pods-Cetacea-MacTests.appstore.xcconfig */,
+				566BCC6055B9A2C273AE888CD6E90978 /* Pods-Cetacea-MacTests.debug.xcconfig */,
+				1E22F2AE957027E35C658E4FFEEC4FE0 /* Pods-Cetacea-MacTests.non-appstore.xcconfig */,
+				EB13B0F45FCB0C6B1D598BBF20CEF898 /* Pods-Cetacea-MacTests.release.xcconfig */,
+			);
+			name = "Pods-Cetacea-MacTests";
+			path = "Target Support Files/Pods-Cetacea-MacTests";
+			sourceTree = "<group>";
+		};
 		B0463F2A0DC163E8AFFFBA0B5C575815 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,16 +388,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F59587D19C68CC7B38468E572458AEE5 /* Pods-Cetacea-Mac */ = {
+		FFE18412688B862E20AAC1D4B6E171ED /* Pods-Cetacea-Mac */ = {
 			isa = PBXGroup;
 			children = (
-				3D37C147B4D2C94467154BEE02ADA600 /* Pods-Cetacea-Mac-acknowledgements.markdown */,
-				0E6D8C54F8C6B1ABE09D86F5D3C6E6AB /* Pods-Cetacea-Mac-acknowledgements.plist */,
-				A75E6C714066AA689F1515EC2AF8B07B /* Pods-Cetacea-Mac-dummy.m */,
-				3B7BE9C1BCD6397194FD2F0DB5BAB5DF /* Pods-Cetacea-Mac-frameworks.sh */,
-				E939CE275F11A582C913E095E9F20804 /* Pods-Cetacea-Mac-resources.sh */,
-				4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */,
-				0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */,
+				3CDF71C37208765147668533B54A792D /* Pods-Cetacea-Mac-acknowledgements.markdown */,
+				7F9D91461AED6ABEFF04458CA42BE36F /* Pods-Cetacea-Mac-acknowledgements.plist */,
+				A2B4DD6529DFBF4520D2661DA27E56CE /* Pods-Cetacea-Mac-dummy.m */,
+				3B7AB16C9890EA2534E8A0EBF726610C /* Pods-Cetacea-Mac-frameworks.sh */,
+				86673916C0745EEB78912D2A8D114FBC /* Pods-Cetacea-Mac-resources.sh */,
+				F0BC4B9514E4274292F3E14CFB3C2CB5 /* Pods-Cetacea-Mac.appstore.xcconfig */,
+				E192DB46E822EF7D0D82187B7A47000F /* Pods-Cetacea-Mac.debug.xcconfig */,
+				57A527644119CE3EBEEEE0DD8572E1D5 /* Pods-Cetacea-Mac.non-appstore.xcconfig */,
+				A7365BE423D19041855FBB957096FD4F /* Pods-Cetacea-Mac.release.xcconfig */,
 			);
 			name = "Pods-Cetacea-Mac";
 			path = "Target Support Files/Pods-Cetacea-Mac";
@@ -396,81 +408,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1DC5926BF41F775023DFA4FCB41BA95A /* Headers */ = {
+		6C650DA8AAB6528DB46B67BB1013CEDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09802BBE42B46A16FAC92B6E8AC061C0 /* DateTools.h in Headers */,
-				64D6BB0F154428CF3ED71655DA71E7DA /* DTConstants.h in Headers */,
-				9D8694E0A1BDFF89A5AF95386C38461D /* DTError.h in Headers */,
-				166BEE8A2092D76B2C158F63C5907582 /* DTTimePeriod.h in Headers */,
-				BE2ACBD43BC39B63DAE0BBF8DDCB4189 /* DTTimePeriodChain.h in Headers */,
-				AD991630F3D812F1E8E617712B5B814F /* DTTimePeriodCollection.h in Headers */,
-				1A0F8FD77A40182AEB8402A243EDC9D8 /* DTTimePeriodGroup.h in Headers */,
-				B9D78C57D59DB387DB626378F5A0BA40 /* NSDate+DateTools.h in Headers */,
+				0960855FB5F2432E3BF22D435970FA82 /* MMDocument.h in Headers */,
+				6E9F12625E7901F30360FF2C30B1356C /* MMDocument_Private.h in Headers */,
+				AD32E8BEC4F0F1E5F6F3716120FDFD30 /* MMElement.h in Headers */,
+				6BFE4D78C5B280DD1000DAF2CBE314DE /* MMGenerator.h in Headers */,
+				B6371B275CAFFF6B4ECF929B8A57BFD9 /* MMHTMLParser.h in Headers */,
+				385B6FEAC5868BEA4A4CC45B57581E47 /* MMMarkdown.h in Headers */,
+				CB46540C24ABC9DF41612881E5B61F81 /* MMParser.h in Headers */,
+				9462103F989E960462998222DA7F604E /* MMScanner.h in Headers */,
+				48D033BB399373C8A6B1254AA4623B89 /* MMSpanParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30DB9124C225BC1B5C55BD21A5FA662F /* Headers */ = {
+		7E62CA5E794CEBA8B902A06935E5A098 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0FF9D44FF36602641944B322F70575 /* MMDocument.h in Headers */,
-				08365936285D5FB8EFB7543252E4E029 /* MMDocument_Private.h in Headers */,
-				B5388393A0CE03A20DAC8DA07505A906 /* MMElement.h in Headers */,
-				3D4F61F2B8BE993420B2AF664B1D9FEE /* MMGenerator.h in Headers */,
-				5226D3525514997EE67176CF236A04BA /* MMHTMLParser.h in Headers */,
-				A8381F4CA8D88E218BB1F519C9C9181B /* MMMarkdown.h in Headers */,
-				C5F01DB071773CB21ACFC963F9030D01 /* MMParser.h in Headers */,
-				6830046FE7EAFE91797E2C4C00829798 /* MMScanner.h in Headers */,
-				29BE20CE53C275CBBFF7C6D77BC0E8BF /* MMSpanParser.h in Headers */,
+				85700BAD3BD246C4D3C967659FA5DB15 /* DateTools.h in Headers */,
+				264E110246129B300E8E3B8AFED4AF21 /* DTConstants.h in Headers */,
+				9F87A9E07319BBB939FA80A674487266 /* DTError.h in Headers */,
+				5F8947589F39D9FBAFCC162F084466F3 /* DTTimePeriod.h in Headers */,
+				57BBACC29CE7F8B64508970E40823BAA /* DTTimePeriodChain.h in Headers */,
+				3C6529137AB326EC72AF3A7644913A21 /* DTTimePeriodCollection.h in Headers */,
+				92075C06E2C1271FCF9FB8DA1F8709BA /* DTTimePeriodGroup.h in Headers */,
+				B383101C7D3D3C0934AE070B6428DA38 /* NSDate+DateTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */ = {
+		09FA36E364EE0220BA0D2F1AFA2792D7 /* Pods-Cetacea-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1FD3ED1D098C33461678138C8B4343 /* Build configuration list for PBXNativeTarget "MMMarkdown" */;
+			buildConfigurationList = 0F6180489262E159521A69931685610F /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */;
 			buildPhases = (
-				C2097B24E119C6B1B06D8C295E6B6048 /* Sources */,
-				B9FC59FE48B3E0FD1C78D3D34DF4A20F /* Frameworks */,
-				30DB9124C225BC1B5C55BD21A5FA662F /* Headers */,
+				79D2B98466B070D6D089E7222227D563 /* Sources */,
+				F7C0440C3435D31424D0106D2ABEF1B7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = MMMarkdown;
-			productName = MMMarkdown;
-			productReference = B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		3A56C242432437270B8D1A536F9FE59F /* Pods-Cetacea-Mac */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E775C3775AEB6BABD294B19C40F8FD1E /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */;
-			buildPhases = (
-				AA397712045BDA737DF5FC6A7EF60D9E /* Sources */,
-				0F264000D85D92554F869770618FD8C3 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3CA838EF9455923BDF81AD106EFCD2D1 /* PBXTargetDependency */,
-				37C778EA3927AB5A99BEF561A24BCF09 /* PBXTargetDependency */,
+				F72C1E669A0651EAB5C508BB1F89BEB6 /* PBXTargetDependency */,
+				704B277A2C851C2CC8F3C6195BE62171 /* PBXTargetDependency */,
 			);
 			name = "Pods-Cetacea-Mac";
 			productName = "Pods-Cetacea-Mac";
 			productReference = 301E82AEAEC807195FB8224FFD365A8E /* libPods-Cetacea-Mac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		4E3F502504860FC72B3F65EAB3E1EA4B /* Pods-Cetacea-MacTests */ = {
+		5C21496643E5CBDBC97F96E07E097A71 /* Pods-Cetacea-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB3EAE7CC97C3E091C83BA5DE8B61C6A /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */;
+			buildConfigurationList = 7433CB9C930DA7CF510B4F5139DE3840 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */;
 			buildPhases = (
-				2D44DBF96A65FE4A8BC6251713BFE5ED /* Sources */,
-				34B42B783727F282B0EACD0FCA45C1CC /* Frameworks */,
+				69AE93F46BF3DEB71399979FC232BA0A /* Sources */,
+				7F60B052E56CB0D65C37B524DB34B865 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,29 +476,12 @@
 			productReference = 0C869049A31E9FFF2A84D973207EBAC2 /* libPods-Cetacea-MacTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B36F6D48026E14827529F787D63D61B8 /* DateTools */ = {
+		6979B6C8EC521C60C8484BF0892FCB6A /* Pods-Cetacea-MacUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83C57ED88BD343EDFD50AEF30C9399D5 /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildConfigurationList = 6F7C9E6B107386AC10D52B1ECE330054 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */;
 			buildPhases = (
-				749A09D02C846B49D9FF9864272CF47B /* Sources */,
-				1679853336D09C6D59AB1EAD932D0AD7 /* Frameworks */,
-				1DC5926BF41F775023DFA4FCB41BA95A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DateTools;
-			productName = DateTools;
-			productReference = 6478537602952271E300DF4C19098E3F /* libDateTools.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		BAF85707D4B365E161F77F127287A99C /* Pods-Cetacea-MacUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CEC1AE9DD46A78C17D4EA2E4443907EF /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */;
-			buildPhases = (
-				05B7653C8E9E63CBD3732E8B30A14D4D /* Sources */,
-				DD35EE7631FF32F84975868C2C181D21 /* Frameworks */,
+				62C809472FC10BA6829B89E14F72A234 /* Sources */,
+				B038F3458424480C0A8AD8EAE111EA81 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -512,6 +490,40 @@
 			name = "Pods-Cetacea-MacUITests";
 			productName = "Pods-Cetacea-MacUITests";
 			productReference = 2799986506A5506B3F6BADD480318D2B /* libPods-Cetacea-MacUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C2FFA47AE57F2DF7C5B58B1DC5AE8617 /* MMMarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A95F17B53850BFDEBAFFE195ADE0D29 /* Build configuration list for PBXNativeTarget "MMMarkdown" */;
+			buildPhases = (
+				41207D04876C22909B2E9F02CD5E22B1 /* Sources */,
+				5343F22C3CF496979B14507C25BEC5CD /* Frameworks */,
+				6C650DA8AAB6528DB46B67BB1013CEDA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMMarkdown;
+			productName = MMMarkdown;
+			productReference = B927A3B0077B0902669512A1E5BDF4F3 /* libMMMarkdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D28E277C9943DDFFC61B7CD1CDF5C18A /* DateTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A205ABDB0494CA47BE66056B75FCDDBA /* Build configuration list for PBXNativeTarget "DateTools" */;
+			buildPhases = (
+				DB4FAAC2CA3AD6C2D5F2897CD5A8B7CF /* Sources */,
+				76F673C90189F0458B230251600AEDDA /* Frameworks */,
+				7E62CA5E794CEBA8B902A06935E5A098 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateTools;
+			productName = DateTools;
+			productReference = 6478537602952271E300DF4C19098E3F /* libDateTools.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -535,92 +547,92 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B36F6D48026E14827529F787D63D61B8 /* DateTools */,
-				159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */,
-				3A56C242432437270B8D1A536F9FE59F /* Pods-Cetacea-Mac */,
-				4E3F502504860FC72B3F65EAB3E1EA4B /* Pods-Cetacea-MacTests */,
-				BAF85707D4B365E161F77F127287A99C /* Pods-Cetacea-MacUITests */,
+				D28E277C9943DDFFC61B7CD1CDF5C18A /* DateTools */,
+				C2FFA47AE57F2DF7C5B58B1DC5AE8617 /* MMMarkdown */,
+				09FA36E364EE0220BA0D2F1AFA2792D7 /* Pods-Cetacea-Mac */,
+				5C21496643E5CBDBC97F96E07E097A71 /* Pods-Cetacea-MacTests */,
+				6979B6C8EC521C60C8484BF0892FCB6A /* Pods-Cetacea-MacUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05B7653C8E9E63CBD3732E8B30A14D4D /* Sources */ = {
+		41207D04876C22909B2E9F02CD5E22B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD9CC5B639597BEC6D152627DDFA2CF6 /* Pods-Cetacea-MacUITests-dummy.m in Sources */,
+				722E9DBB2C1BC768C0E14AFDAD816935 /* MMDocument.m in Sources */,
+				7F4A31DB6AAC0DD28B2A5C137B285D0B /* MMElement.m in Sources */,
+				2E38E2ADF4CBBC95DD8F831EAD92C3E4 /* MMGenerator.m in Sources */,
+				5E99922C27F23856814FB23A6CD16F0B /* MMHTMLParser.m in Sources */,
+				914F15931E0E919F65527D78CDCB93C8 /* MMMarkdown-dummy.m in Sources */,
+				BDA9F25437448C50183D19A32E60A7EF /* MMMarkdown.m in Sources */,
+				B9B2E03239C98D331EC5A6CF6D9F75E3 /* MMParser.m in Sources */,
+				543AECBECD34D9F761869972424BA7B8 /* MMScanner.m in Sources */,
+				6AC05FD4F6A636A0B87E5D7A3A1F31D1 /* MMSpanParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D44DBF96A65FE4A8BC6251713BFE5ED /* Sources */ = {
+		62C809472FC10BA6829B89E14F72A234 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10298C8AFBF03FFF423ED010075CED6 /* Pods-Cetacea-MacTests-dummy.m in Sources */,
+				C59D144AA39696CA0BC51F9B72F1D8D9 /* Pods-Cetacea-MacUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		749A09D02C846B49D9FF9864272CF47B /* Sources */ = {
+		69AE93F46BF3DEB71399979FC232BA0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C005FEA13C57459EC499B737D039896 /* DateTools-dummy.m in Sources */,
-				562A0D6C764DB248304502617DA1BCB1 /* DTConstants.m in Sources */,
-				5B00A8CA9A0F486F119C100E2B46325C /* DTError.m in Sources */,
-				6815A68B4AA21BBF90679B07B7169560 /* DTTimePeriod.m in Sources */,
-				BC18A26588E820C8D62B1CF75F23502C /* DTTimePeriodChain.m in Sources */,
-				B814BBB5BA6A8BE204365BDE56565EFA /* DTTimePeriodCollection.m in Sources */,
-				F0BCA36564F4C3AC13D31C7DE9AF6D15 /* DTTimePeriodGroup.m in Sources */,
-				C081809B83D124476BD219FFFAF067FD /* NSDate+DateTools.m in Sources */,
+				13CEA58551DDE188F38D841AB69924F3 /* Pods-Cetacea-MacTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA397712045BDA737DF5FC6A7EF60D9E /* Sources */ = {
+		79D2B98466B070D6D089E7222227D563 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BF367E18D170AB72E269AA1DD35CC1 /* Pods-Cetacea-Mac-dummy.m in Sources */,
+				28DDE628FC791D1578675BC1D9E4F50F /* Pods-Cetacea-Mac-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2097B24E119C6B1B06D8C295E6B6048 /* Sources */ = {
+		DB4FAAC2CA3AD6C2D5F2897CD5A8B7CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A741F2FF6296A6924A9B76844CBD80 /* MMDocument.m in Sources */,
-				25F301EC2F400120E96BE8FFEF8C6103 /* MMElement.m in Sources */,
-				3D9AA63AE7EC663AF4D51CD850C62293 /* MMGenerator.m in Sources */,
-				C3E36FAAC3306D910BC4036F2A54AABC /* MMHTMLParser.m in Sources */,
-				636949A778978CE4D99E77297DE85860 /* MMMarkdown-dummy.m in Sources */,
-				DC6CA78663CECBA282EBC959A9FC4F4F /* MMMarkdown.m in Sources */,
-				872752A0AD5FFA325D716A13E448A779 /* MMParser.m in Sources */,
-				A03A8CB6B2DBA04B8365DE645166DF09 /* MMScanner.m in Sources */,
-				583EEDEE260B8AEC91FD9CF008E9BE5A /* MMSpanParser.m in Sources */,
+				6EBF80DE4F099412E8E62AAFDF633ABC /* DateTools-dummy.m in Sources */,
+				71990C99231B8750E458FFEF2A9217FB /* DTConstants.m in Sources */,
+				2E4DE0024E20F8E7CE6FE1DDF35D894B /* DTError.m in Sources */,
+				7185B2EF74C50A9F484B2DD73F0CF9E7 /* DTTimePeriod.m in Sources */,
+				8088D524522D512F034796C2B9415B99 /* DTTimePeriodChain.m in Sources */,
+				62E55CEFBD08A23FD51FFD4EA1C348D5 /* DTTimePeriodCollection.m in Sources */,
+				FB43909B99CE9589176D5CA6065A93E9 /* DTTimePeriodGroup.m in Sources */,
+				02960C3D34F5BF6242CBF59FC7E6BDDD /* NSDate+DateTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37C778EA3927AB5A99BEF561A24BCF09 /* PBXTargetDependency */ = {
+		704B277A2C851C2CC8F3C6195BE62171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMMarkdown;
-			target = 159A0E298F8E774F387C4F68CC095B9D /* MMMarkdown */;
-			targetProxy = C0208F60E2B9F6B47567BEA8FEDBCE3B /* PBXContainerItemProxy */;
+			target = C2FFA47AE57F2DF7C5B58B1DC5AE8617 /* MMMarkdown */;
+			targetProxy = 6335E223350E7B1F82A1D87EB27BC4B3 /* PBXContainerItemProxy */;
 		};
-		3CA838EF9455923BDF81AD106EFCD2D1 /* PBXTargetDependency */ = {
+		F72C1E669A0651EAB5C508BB1F89BEB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DateTools;
-			target = B36F6D48026E14827529F787D63D61B8 /* DateTools */;
-			targetProxy = 4A2C74DD709BA1F054810EF278275C63 /* PBXContainerItemProxy */;
+			target = D28E277C9943DDFFC61B7CD1CDF5C18A /* DateTools */;
+			targetProxy = 039A0ED6FDB5672853CD6683151E14E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		18DC735CFF2E4869EAC9E86AAFEB043E /* Release */ = {
+		03FE422F8DF5DCC2D44FA69E07DA521D /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E17455628ED5013456F0654094943FC8 /* Pods-Cetacea-MacTests.release.xcconfig */;
+			baseConfigurationReference = 57A527644119CE3EBEEEE0DD8572E1D5 /* Pods-Cetacea-Mac.non-appstore.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -641,9 +653,58 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = "Non-AppStore";
 		};
-		2C1EF0293299A7D59557689B3C829084 /* Release */ = {
+		08952D351CDBC00D8C9CB567DE30DF87 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC069C964BACA466E43D785C97E0E43 /* Pods-Cetacea-MacUITests.non-appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = "Non-AppStore";
+		};
+		0A15D8BE13DB319F9CC1C7E8E4E13D9F /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = "Non-AppStore";
+		};
+		0F0B17807043847788DE1A0B7050E82D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
 			buildSettings = {
@@ -667,9 +728,98 @@
 			};
 			name = Release;
 		};
-		2F36ECCA27E4A1F51D821875B1CBEE2F /* Debug */ = {
+		1ACD91DF3923C1DCD1BC752657B1B317 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1AFB2C4F0F551E86B0FA42A9EC445F2A /* Pods-Cetacea-MacTests.debug.xcconfig */;
+			baseConfigurationReference = A7365BE423D19041855FBB957096FD4F /* Pods-Cetacea-Mac.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22A3CA8936FD9C4D7F8451976BB64B48 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_NON_APP_STORE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Non-AppStore";
+		};
+		3B64ABCEB4F1F3357C48814F587DF6D4 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254245C54C075BAA2774744920AD1E8D /* Pods-Cetacea-MacUITests.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = AppStore;
+		};
+		3C4BB037D4FB303974C07FAC256E7FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6EEC0829FAAACEA29D446569A2665A /* Pods-Cetacea-MacUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -692,21 +842,45 @@
 			};
 			name = Debug;
 		};
-		4E307D4FBF6EE5E0BBAE88523B399A73 /* Debug */ = {
+		48C12566EFF43239D4CD2122F94F6C14 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE1524B9A4B502D047FF5DE09099CB72 /* Pods-Cetacea-MacUITests.debug.xcconfig */;
+			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		55E7699437E785648777382C2571C347 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1C306CD97A597FF74D633F9A602256 /* Pods-Cetacea-MacTests.appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -715,7 +889,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = AppStore;
 		};
 		5D622BA00757EC20ADAD24C580904C04 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -757,9 +931,9 @@
 			};
 			name = Release;
 		};
-		6314A847E3A36E66B80B9A5A8D20D773 /* Debug */ = {
+		753D32046D94B4DDAA81A254A7A0F7CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4852218A73AB05183368DFACFA07396D /* Pods-Cetacea-Mac.debug.xcconfig */;
+			baseConfigurationReference = 566BCC6055B9A2C273AE888CD6E90978 /* Pods-Cetacea-MacTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -782,9 +956,9 @@
 			};
 			name = Debug;
 		};
-		6B2F535F3399B611263DA5CE4FEC9A1A /* Release */ = {
+		80AF9539F04BDB6566D80D1ED909A34B /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CE1FA3CC75690D5022CEF4C21A0F7F7 /* Pods-Cetacea-Mac.release.xcconfig */;
+			baseConfigurationReference = F0BC4B9514E4274292F3E14CFB3C2CB5 /* Pods-Cetacea-Mac.appstore.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -805,11 +979,11 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = AppStore;
 		};
-		8387317095A2E645E7F3A3EA5DEDA486 /* Debug */ = {
+		836E6F19CBDC8B6719A7FC9FB70456F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
+			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -819,7 +993,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -830,6 +1004,54 @@
 				SDKROOT = macosx;
 			};
 			name = Debug;
+		};
+		87BF107702EA3F5067FC4144ECFBCB54 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		9A6CB1679745F722E4A9FB048318CCA5 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = "Non-AppStore";
 		};
 		AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -875,9 +1097,73 @@
 			};
 			name = Debug;
 		};
-		BB9652AEEA183DC2E4D90888BB1F9D1C /* Release */ = {
+		D5454054BE11ECA13452CB6885EF10E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A748D983604EC64C173AD147F7F7F98E /* Pods-Cetacea-MacUITests.release.xcconfig */;
+			baseConfigurationReference = E192DB46E822EF7D0D82187B7A47000F /* Pods-Cetacea-Mac.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA34F1E2D6A38C9B09B08B17B17B081C /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_APP_STORE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		E328CFF6FDC6357408164BDBD3024062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DF3178881914415C1334B943F6BD352 /* Pods-Cetacea-MacUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -900,9 +1186,59 @@
 			};
 			name = Release;
 		};
-		DD52FDBB4A243EF0ED3BC8B47DBD4FDF /* Debug */ = {
+		EBE094B377E554C099A11115FE3F661C /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = 1E22F2AE957027E35C658E4FFEEC4FE0 /* Pods-Cetacea-MacTests.non-appstore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = "Non-AppStore";
+		};
+		F6441470E8F15FD2E427E391D1D74052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB13B0F45FCB0C6B1D598BBF20CEF898 /* Pods-Cetacea-MacTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F67AEA0AF0B36E7552A3F7754A52FB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DD52A83842C880B472D31E22D58B4C /* DateTools.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -912,7 +1248,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MMMarkdown/MMMarkdown-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -924,7 +1260,7 @@
 			};
 			name = Debug;
 		};
-		E12E56586BB111A05CECBCD0D26A731C /* Release */ = {
+		FD297A687579F2C18FF15643F00BDCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32B98F01559A89D6A63684648388E485 /* MMMarkdown.xcconfig */;
 			buildSettings = {
@@ -951,11 +1287,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D1FD3ED1D098C33461678138C8B4343 /* Build configuration list for PBXNativeTarget "MMMarkdown" */ = {
+		0F6180489262E159521A69931685610F /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD52FDBB4A243EF0ED3BC8B47DBD4FDF /* Debug */,
-				E12E56586BB111A05CECBCD0D26A731C /* Release */,
+				80AF9539F04BDB6566D80D1ED909A34B /* AppStore */,
+				D5454054BE11ECA13452CB6885EF10E9 /* Debug */,
+				03FE422F8DF5DCC2D44FA69E07DA521D /* Non-AppStore */,
+				1ACD91DF3923C1DCD1BC752657B1B317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -963,44 +1301,54 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
+				DA34F1E2D6A38C9B09B08B17B17B081C /* AppStore */,
 				AB74B5E09B30AE94F1D9671501EA01E8 /* Debug */,
+				22A3CA8936FD9C4D7F8451976BB64B48 /* Non-AppStore */,
 				5D622BA00757EC20ADAD24C580904C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83C57ED88BD343EDFD50AEF30C9399D5 /* Build configuration list for PBXNativeTarget "DateTools" */ = {
+		3A95F17B53850BFDEBAFFE195ADE0D29 /* Build configuration list for PBXNativeTarget "MMMarkdown" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8387317095A2E645E7F3A3EA5DEDA486 /* Debug */,
-				2C1EF0293299A7D59557689B3C829084 /* Release */,
+				48C12566EFF43239D4CD2122F94F6C14 /* AppStore */,
+				836E6F19CBDC8B6719A7FC9FB70456F8 /* Debug */,
+				0A15D8BE13DB319F9CC1C7E8E4E13D9F /* Non-AppStore */,
+				FD297A687579F2C18FF15643F00BDCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB3EAE7CC97C3E091C83BA5DE8B61C6A /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */ = {
+		6F7C9E6B107386AC10D52B1ECE330054 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F36ECCA27E4A1F51D821875B1CBEE2F /* Debug */,
-				18DC735CFF2E4869EAC9E86AAFEB043E /* Release */,
+				3B64ABCEB4F1F3357C48814F587DF6D4 /* AppStore */,
+				3C4BB037D4FB303974C07FAC256E7FF8 /* Debug */,
+				08952D351CDBC00D8C9CB567DE30DF87 /* Non-AppStore */,
+				E328CFF6FDC6357408164BDBD3024062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEC1AE9DD46A78C17D4EA2E4443907EF /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacUITests" */ = {
+		7433CB9C930DA7CF510B4F5139DE3840 /* Build configuration list for PBXNativeTarget "Pods-Cetacea-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E307D4FBF6EE5E0BBAE88523B399A73 /* Debug */,
-				BB9652AEEA183DC2E4D90888BB1F9D1C /* Release */,
+				55E7699437E785648777382C2571C347 /* AppStore */,
+				753D32046D94B4DDAA81A254A7A0F7CD /* Debug */,
+				EBE094B377E554C099A11115FE3F661C /* Non-AppStore */,
+				F6441470E8F15FD2E427E391D1D74052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E775C3775AEB6BABD294B19C40F8FD1E /* Build configuration list for PBXNativeTarget "Pods-Cetacea-Mac" */ = {
+		A205ABDB0494CA47BE66056B75FCDDBA /* Build configuration list for PBXNativeTarget "DateTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6314A847E3A36E66B80B9A5A8D20D773 /* Debug */,
-				6B2F535F3399B611263DA5CE4FEC9A1A /* Release */,
+				87BF107702EA3F5067FC4144ECFBCB54 /* AppStore */,
+				F67AEA0AF0B36E7552A3F7754A52FB32 /* Debug */,
+				9A6CB1679745F722E4A9FB048318CCA5 /* Non-AppStore */,
+				0F0B17807043847788DE1A0B7050E82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
