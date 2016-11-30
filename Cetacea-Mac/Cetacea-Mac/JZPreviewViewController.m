@@ -7,9 +7,12 @@
 //
 
 #import "JZPreviewViewController.h"
+#import <MMMarkdown/MMMarkdown.h>
 
 
 @interface JZPreviewViewController ()
+
+@property (weak, nonatomic) JZiCloudFileExtensionCetaceaDoc *currentEditingMarkdown;
 
 @end
 
@@ -18,9 +21,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-
+    
     [self.previewWebView setDrawsBackground:NO];
     self.previewHtmlString = [NSString stringWithFormat:@""];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
+                                               object:nil];
     
 }
 
@@ -30,4 +38,21 @@
     [[self.previewWebView mainFrame] loadHTMLString:_previewHtmlString baseURL:[NSURL URLWithString:@""]];
 }
 
+- (void)refreshPreview
+{
+    if (_currentEditingMarkdown)
+    {
+        self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:_currentEditingMarkdown.data.markdownString extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
+    }
+}
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
+{
+    _currentEditingMarkdown = currentEditingMarkdown;
+    [self refreshPreview];
+}
+
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
+    
+}
 @end

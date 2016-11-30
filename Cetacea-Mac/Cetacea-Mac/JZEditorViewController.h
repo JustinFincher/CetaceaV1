@@ -21,4 +21,6 @@
  */
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown;
 
+- (void)refreshHighLight;
+
 @end

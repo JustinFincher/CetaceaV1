@@ -95,10 +95,30 @@
 
 - (void)updateTextView
 {
-    NSRange range = self.selectedRange;
-    NSAttributedString *string = [self proccessTextWithVisibleRectOnly];
-    [self.textStorage setAttributedString: string];
-    [self setSelectedRange:NSMakeRange(range.location, 0)];
+    if (self.markedRange.location == NSNotFound && self.markedRange.length == 0)
+    {
+        NSRange range = self.selectedRange;
+        NSAttributedString *attrString = [self proccessTextWithVisibleRectOnly];
+        [self.textStorage setAttributedString: attrString];
+        
+        if ([attrString.string length] >= range.location + range.length)
+        {
+            // [begin--range--end]--stringend
+            [self setSelectedRange:range];
+        }
+        else if ([attrString.string length] < range.location + range.length && [attrString.string length] > range.location)
+        {
+            // [begin--range--stringend--end]
+            [self setSelectedRange:NSMakeRange(range.location, 0)];
+        }else
+        {
+            // stringend--[begin--range--end]
+            [self setSelectedRange:NSMakeRange([attrString.string length], 0)];
+        }
+    }else
+    {
+        //正在输入拼音 不能替换
+    }
 
 }
 - (void)refreshHightLight

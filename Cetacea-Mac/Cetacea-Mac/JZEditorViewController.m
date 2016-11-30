@@ -23,44 +23,18 @@
 @property (nonatomic,strong) JZEditorLayouManager *layoutManager;
 @property (nonatomic,strong) JZEditorRulerView *ruleView;
 
-@property (nonatomic) int refreshHighLightCounter;
-@property (nonatomic,strong) NSTimer *refreshHighLightTimer;
 @end
 
 @implementation JZEditorViewController
 @synthesize editorTextView,editorScrollView,ruleView;
-@synthesize refreshHighLightCounter,refreshHighLightTimer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    refreshHighLightCounter = 0;
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
     self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
-    
-    refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
 
-//    
-//    self.ruleView = [[JZEditorRulerView alloc] initWithScrollView:self.editorScrollView
-//                                                      orientation:NSVerticalRuler];
-//    self.editorTextView.rulerView = self.ruleView;
-//    self.editorTextView.automaticDashSubstitutionEnabled = NO;
-//    self.ruleView.clientView = self.editorTextView;
-//    self.editorScrollView.verticalRulerView = self.ruleView;
-//    self.editorScrollView.hasVerticalRuler = YES;
-//    self.editorScrollView.rulersVisible = YES;
-//    
-//    
-////    BOOL is1 = self.ruleView.isFlipped ;
-////    BOOL is2 = self.editorScrollView.isFlipped ;
-//
-//    /**
-//     设置 NSLAYOUTMANAGER 的正确姿势 ： 设置 textContainer 的 LayoutManager
-//     不要去设置 Storage...
-//     */
-//    self.layoutManager = [[JZEditorLayouManager alloc] init];
-//    [self.editorTextView.textContainer replaceLayoutManager:self.layoutManager];
     self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
                                                 NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     
@@ -89,15 +63,6 @@
     [self.editorTextView setNeedsLayout:YES];
      self.editorTextView.layoutManager.allowsNonContiguousLayout = YES;
 }
-- (void)refreshHighLightTimerFired:(NSTimer *)timer
-{
-    if (refreshHighLightCounter > 0)
-    {
-        [self.editorTextView refreshHightLight];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownEditorTextHighLightRefreshed" object:nil userInfo:nil];
-        refreshHighLightCounter = 0;
-    }
-}
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
@@ -122,6 +87,11 @@
     [self.editorTextView  refreshHightLight];
     [self.editorTextView updateRuler];
 }
+- (void)refreshHighLight
+{
+    [self.editorTextView refreshHightLight];
+}
+
 
 #pragma mark - NSTextViewDelegate
 /**
@@ -132,7 +102,6 @@
 -(void)textDidChange:(NSNotification *)notification
 {
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
-    refreshHighLightCounter++;
 }
 - (void)textView:(NSTextView *)textView
    clickedOnCell:(id<NSTextAttachmentCell>)cell

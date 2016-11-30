@@ -11,7 +11,6 @@
 #import "JZEditorViewController.h"
 #import "JZEditorPreviewSplitViewForegroundBlurViewController.h"
 #import "JZdayNightThemeManager.h"
-#import <MMMarkdown/MMMarkdown.h>
 #import "JZHeader.h"
 
 @interface JZEditorPreviewSplitViewController ()
@@ -20,10 +19,14 @@
 @property (nonatomic,strong) JZEditorViewController* editorVC;
 @property (nonatomic,strong) JZEditorPreviewSplitViewForegroundBlurViewController *foregroundVC;
 
+@property (nonatomic) int refreshHighLightCounter;
+@property (nonatomic,strong) NSTimer *refreshHighLightTimer;
+
 @end
 
 @implementation JZEditorPreviewSplitViewController
 @synthesize foregroundVC;
+@synthesize refreshHighLightCounter,refreshHighLightTimer;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,11 +39,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(markdownEditorTextDidChanged:)
                                                  name:@"markdownEditorTextDidChanged"
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(markdownEditorTextHighLightRefreshed:)
-                                                 name:@"markdownEditorTextHighLightRefreshed"
                                                object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -63,12 +61,28 @@
     [self.view addSubview:foregroundVC.view];
     [foregroundVC.view setFrameSize:self.view.frame.size];
     [foregroundVC.view setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    
+    refreshHighLightCounter = 0;
+    refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
 
 }
 - (void)viewWillAppear
 {
     [self refreshEditPreviewBackgroundView];
 }
+
+- (void)refreshHighLightTimerFired:(NSTimer *)timer
+{
+    if (refreshHighLightCounter > 0)
+    {
+        [self.editorVC refreshHighLight];
+        [self.previewVC refreshPreview];
+        
+        refreshHighLightCounter = 0;
+    }
+}
+
+
 #pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
 {
@@ -76,6 +90,7 @@
     {
         _currentEditingMarkdown = currentEditingMarkdown;
         [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
+        [_previewVC setCurrentEditingMarkdown:currentEditingMarkdown];
     }
     if (!foregroundVC.view.hidden)
     {
@@ -84,11 +99,12 @@
     
 }
 
-- (void)markdownEditorTextHighLightRefreshed:(NSNotification *) notification
+
+- (void)markdownEditorTextDidChanged:(NSNotification *) notification
 {
+    
     if (_editorVC.editorTextView)
     {
-        __block NSString *htmlString;
         NSOperationQueue *myQueue = [[NSOperationQueue alloc] init];
         [myQueue addOperationWithBlock:^{
             
@@ -99,16 +115,13 @@
             self.currentEditingMarkdown.data.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
             [self.currentEditingMarkdown saveData];
             
-            htmlString = [MMMarkdown HTMLStringWithMarkdown:_editorVC.editorTextView.string extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
-            
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                _previewVC.previewHtmlString = htmlString;
-            }];
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^
+             {
+                 JZLog(@"Text Changed and Saved. RefreshHighLightCounter ++ ")
+                 refreshHighLightCounter++;
+             }];
         }];
     }
-}
-- (void)markdownEditorTextDidChanged:(NSNotification *) notification
-{
 }
 - (void)addNewButtonPressed:(NSNotification *) notification
 {
