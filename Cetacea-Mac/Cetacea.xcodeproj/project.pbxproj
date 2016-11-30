@@ -1,0 +1,1425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */; };
+		0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */; };
+		0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */; };
+		0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */; };
+		0D4189321D27B09300530FD7 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D4189311D27B09300530FD7 /* localizable.strings */; };
+		0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */; };
+		0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */; };
+		0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA041D2BF051001821A2 /* ITSwitch.m */; };
+		0D4FBA0B1D2C2933001821A2 /* JZEditorRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */; };
+		0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */; };
+		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
+		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
+		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
+		0D6A5E201D2100BB00211AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1F1D2100BB00211AFC /* main.m */; };
+		0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E241D2100BB00211AFC /* Assets.xcassets */; };
+		0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E261D2100BB00211AFC /* Main.storyboard */; };
+		0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */; };
+		0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */; };
+		0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */; };
+		0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */; };
+		0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */; };
+		0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */; };
+		0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBB91D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m */; };
+		0D6BEBBD1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */; };
+		0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */; };
+		0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */; };
+		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
+		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
+		0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D864A2A1D21451300F47613 /* WebKit.framework */; };
+		0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */; };
+		0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */; };
+		0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */; };
+		0D87A52D1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */; };
+		0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5311D29ACC700F9DC34 /* TSBaseParser.m */; };
+		0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5341D29ACC700F9DC34 /* TSMarkdownParser.m */; };
+		0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */; };
+		0D87A5431D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5411D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m */; };
+		0D87A5441D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D87A5421D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib */; };
+		0D87A5471D2A7BB400F9DC34 /* JZEditorLayouManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D87A5461D2A7BB400F9DC34 /* JZEditorLayouManager.m */; };
+		0D9D8FC01D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */; };
+		0D9D8FC61D2F7888005F91F6 /* JZColorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */; };
+		0D9D8FCC1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FCB1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m */; };
+		0D9D8FD01D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FCE1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m */; };
+		0D9D8FD11D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D9D8FCF1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib */; };
+		0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */; };
+		0D9D8FD71D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */; };
+		0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FDA1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m */; };
+		0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */; };
+		0D9D8FE21D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */; };
+		0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */; };
+		0D9D8FE81D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */; };
+		0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */; };
+		0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */; };
+		0D9D90251D312D4B005F91F6 /* MKColorSwatchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */; };
+		0D9D90261D312D4B005F91F6 /* MKColorSwatchMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */; };
+		0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D90211D312D4B005F91F6 /* MKColorWell.m */; };
+		0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */; };
+		0D9D902C1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */; };
+		0D9D90341D32741B005F91F6 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D90331D32741B005F91F6 /* KeyValueObserver.m */; };
+		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
+		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
+		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
+		0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */; };
+		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
+		229BEBBA63633FA90CE2D0EF /* libPods-Cetacea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3F2C385448ADDC0B078CBF /* libPods-Cetacea.a */; };
+		7B1CCB60B5ED709BA2DA538E /* libPods-CetaceaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D455A9311F1111E39CCE61 /* libPods-CetaceaTests.a */; };
+		FE6AA94C4539EE8B9EB63321 /* libPods-CetaceaUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F220213505B33604C4C6AD /* libPods-CetaceaUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D6A5E2F1D2100BB00211AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6A5E101D2100BB00211AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6A5E171D2100BB00211AFC;
+			remoteInfo = "Cetacea-Mac";
+		};
+		0D6A5E3A1D2100BB00211AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6A5E101D2100BB00211AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D6A5E171D2100BB00211AFC;
+			remoteInfo = "Cetacea-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070463824DBBCB5B0B27173E /* Pods-Cetacea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.debug.xcconfig"; sourceTree = "<group>"; };
+		0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZdayNightThemeManager.h; sourceTree = "<group>"; };
+		0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZdayNightThemeManager.m; sourceTree = "<group>"; };
+		0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutBackgroundImageView.h; sourceTree = "<group>"; };
+		0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutBackgroundImageView.m; sourceTree = "<group>"; };
+		0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListTableCellView.h; sourceTree = "<group>"; };
+		0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListTableCellView.m; sourceTree = "<group>"; };
+		0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageProcesser.h; sourceTree = "<group>"; };
+		0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageProcesser.m; sourceTree = "<group>"; };
+		0D4189311D27B09300530FD7 /* localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
+		0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAutoThemeSwitchViewController.h; sourceTree = "<group>"; };
+		0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAutoThemeSwitchViewController.m; sourceTree = "<group>"; };
+		0D4FB9BE1D2B8A85001821A2 /* JZFolderOutlineCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFolderOutlineCellView.h; sourceTree = "<group>"; };
+		0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFolderOutlineCellView.m; sourceTree = "<group>"; };
+		0D4FBA031D2BF051001821A2 /* ITSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSwitch.h; sourceTree = "<group>"; };
+		0D4FBA041D2BF051001821A2 /* ITSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSwitch.m; sourceTree = "<group>"; };
+		0D4FBA091D2C2933001821A2 /* JZEditorRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorRulerView.h; sourceTree = "<group>"; };
+		0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorRulerView.m; sourceTree = "<group>"; };
+		0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorTextView.h; sourceTree = "<group>"; };
+		0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorTextView.m; sourceTree = "<group>"; };
+		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
+		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
+		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
+		0D5F324C1D258B3200566B82 /* JZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutViewController.m; sourceTree = "<group>"; };
+		0D6A5E181D2100BB00211AFC /* Cetacea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cetacea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0D6A5E1F1D2100BB00211AFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D6A5E241D2100BB00211AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D6A5E271D2100BB00211AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D6A5E291D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E2E1D2100BB00211AFC /* CetaceaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CetaceaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cetacea_MacTests.m; sourceTree = "<group>"; };
+		0D6A5E341D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E391D2100BB00211AFC /* CetaceaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CetaceaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cetacea_MacUITests.m; sourceTree = "<group>"; };
+		0D6A5E3F1D2100BB00211AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainWindowController.h; sourceTree = "<group>"; };
+		0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainWindowController.m; sourceTree = "<group>"; };
+		0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceViewController.h; sourceTree = "<group>"; };
+		0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceViewController.m; sourceTree = "<group>"; };
+		0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsGeneralViewController.h; sourceTree = "<group>"; };
+		0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsGeneralViewController.m; sourceTree = "<group>"; };
+		0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsTabViewController.h; sourceTree = "<group>"; };
+		0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsTabViewController.m; sourceTree = "<group>"; };
+		0D6BEBB81D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDataModel.h; sourceTree = "<group>"; };
+		0D6BEBB91D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDataModel.m; sourceTree = "<group>"; };
+		0D6BEBBB1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDoc.h; sourceTree = "<group>"; };
+		0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDoc.m; sourceTree = "<group>"; };
+		0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
+		0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
+		0D864A151D21207400F47613 /* Cetacea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cetacea.entitlements; sourceTree = "<group>"; };
+		0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewController.h; sourceTree = "<group>"; };
+		0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewController.m; sourceTree = "<group>"; };
+		0D864A1F1D21419F00F47613 /* JZEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorViewController.h; sourceTree = "<group>"; };
+		0D864A201D21419F00F47613 /* JZEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorViewController.m; sourceTree = "<group>"; };
+		0D864A271D2141C600F47613 /* JZPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZPreviewViewController.h; sourceTree = "<group>"; };
+		0D864A281D2141C600F47613 /* JZPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZPreviewViewController.m; sourceTree = "<group>"; };
+		0D864A2A1D21451300F47613 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0D87A5231D290E7100F9DC34 /* JZFontDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFontDisplayManager.h; sourceTree = "<group>"; };
+		0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFontDisplayManager.m; sourceTree = "<group>"; };
+		0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsEditingViewController.h; sourceTree = "<group>"; };
+		0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsEditingViewController.m; sourceTree = "<group>"; };
+		0D87A5291D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewForegroundBlurViewController.h; sourceTree = "<group>"; };
+		0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewForegroundBlurViewController.m; sourceTree = "<group>"; };
+		0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZEditorPreviewSplitViewForegroundBlurViewController.xib; sourceTree = "<group>"; };
+		0D87A5301D29ACC700F9DC34 /* TSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseParser.h; sourceTree = "<group>"; };
+		0D87A5311D29ACC700F9DC34 /* TSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseParser.m; sourceTree = "<group>"; };
+		0D87A5321D29ACC700F9DC34 /* TSMarkdownParser-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSMarkdownParser-Prefix.pch"; sourceTree = "<group>"; };
+		0D87A5331D29ACC700F9DC34 /* TSMarkdownParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMarkdownParser.h; sourceTree = "<group>"; };
+		0D87A5341D29ACC700F9DC34 /* TSMarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMarkdownParser.m; sourceTree = "<group>"; };
+		0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorMarkdownTextParserWithTSBaseParser.m; sourceTree = "<group>"; };
+		0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorMarkdownTextParserWithTSBaseParser.h; sourceTree = "<group>"; };
+		0D87A5401D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorLinkPopoverContentViewController.h; sourceTree = "<group>"; };
+		0D87A5411D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorLinkPopoverContentViewController.m; sourceTree = "<group>"; };
+		0D87A5421D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZEditorLinkPopoverContentViewController.xib; sourceTree = "<group>"; };
+		0D87A5451D2A7BB400F9DC34 /* JZEditorLayouManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorLayouManager.h; sourceTree = "<group>"; };
+		0D87A5461D2A7BB400F9DC34 /* JZEditorLayouManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorLayouManager.m; sourceTree = "<group>"; };
+		0D98E2641DEC66D100F130E2 /* JZHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHeader.h; sourceTree = "<group>"; };
+		0D9D8FBE1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeDataModel.h; sourceTree = "<group>"; };
+		0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeDataModel.m; sourceTree = "<group>"; };
+		0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZColorDataModel.h; sourceTree = "<group>"; };
+		0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZColorDataModel.m; sourceTree = "<group>"; };
+		0D9D8FCA1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsHighlightThemeSelectionViewController.h; sourceTree = "<group>"; };
+		0D9D8FCB1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsHighlightThemeSelectionViewController.m; sourceTree = "<group>"; };
+		0D9D8FCD1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZHighlighThemePreviewCollectionViewItem.h; sourceTree = "<group>"; };
+		0D9D8FCE1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZHighlighThemePreviewCollectionViewItem.m; sourceTree = "<group>"; };
+		0D9D8FCF1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZHighlighThemePreviewCollectionViewItem.xib; sourceTree = "<group>"; };
+		0D9D8FD21D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaThemeDoc.h; sourceTree = "<group>"; };
+		0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaThemeDoc.m; sourceTree = "<group>"; };
+		0D9D8FD51D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaThemeDataBase.h; sourceTree = "<group>"; };
+		0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaThemeDataBase.m; sourceTree = "<group>"; };
+		0D9D8FD91D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsHighlightThemeEditViewController.h; sourceTree = "<group>"; };
+		0D9D8FDA1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsHighlightThemeEditViewController.m; sourceTree = "<group>"; };
+		0D9D8FDC1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewTagCellView.h; sourceTree = "<group>"; };
+		0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewTagCellView.m; sourceTree = "<group>"; };
+		0D9D8FE01D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewSyntaxCellView.h; sourceTree = "<group>"; };
+		0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewSyntaxCellView.m; sourceTree = "<group>"; };
+		0D9D8FE31D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewLightCellView.h; sourceTree = "<group>"; };
+		0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewLightCellView.m; sourceTree = "<group>"; };
+		0D9D8FE61D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsApperanceThemeTableViewDarkCellView.h; sourceTree = "<group>"; };
+		0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsApperanceThemeTableViewDarkCellView.m; sourceTree = "<group>"; };
+		0D9D8FFC1D3018B2005F91F6 /* JZColorSelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZColorSelectionButton.h; sourceTree = "<group>"; };
+		0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZColorSelectionButton.m; sourceTree = "<group>"; };
+		0D9D901A1D312D4B005F91F6 /* MKColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorPickerView.h; sourceTree = "<group>"; };
+		0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorPickerView.m; sourceTree = "<group>"; };
+		0D9D901C1D312D4B005F91F6 /* MKColorSwatchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchCell.h; sourceTree = "<group>"; };
+		0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchCell.m; sourceTree = "<group>"; };
+		0D9D901E1D312D4B005F91F6 /* MKColorSwatchMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorSwatchMatrix.h; sourceTree = "<group>"; };
+		0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorSwatchMatrix.m; sourceTree = "<group>"; };
+		0D9D90201D312D4B005F91F6 /* MKColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKColorWell.h; sourceTree = "<group>"; };
+		0D9D90211D312D4B005F91F6 /* MKColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKColorWell.m; sourceTree = "<group>"; };
+		0D9D90221D312D4B005F91F6 /* MKColorWell+Bindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKColorWell+Bindings.h"; sourceTree = "<group>"; };
+		0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKColorWell+Bindings.m"; sourceTree = "<group>"; };
+		0D9D902A1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeSingleRowDataModel.h; sourceTree = "<group>"; };
+		0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeSingleRowDataModel.m; sourceTree = "<group>"; };
+		0D9D90321D32741B005F91F6 /* KeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueObserver.h; sourceTree = "<group>"; };
+		0D9D90331D32741B005F91F6 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
+		0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudStorageManager.h; sourceTree = "<group>"; };
+		0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudStorageManager.m; sourceTree = "<group>"; };
+		0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListViewController.h; sourceTree = "<group>"; };
+		0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListViewController.m; sourceTree = "<group>"; };
+		0DAF37491D254A480009C44B /* JZMainListEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainListEditorSplitViewController.h; sourceTree = "<group>"; };
+		0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainListEditorSplitViewController.m; sourceTree = "<group>"; };
+		0DC89B9A1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListSortSelectionMenu.h; sourceTree = "<group>"; };
+		0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListSortSelectionMenu.m; sourceTree = "<group>"; };
+		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
+		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
+		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
+		24F220213505B33604C4C6AD /* libPods-CetaceaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CetaceaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3F2C385448ADDC0B078CBF /* libPods-Cetacea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cetacea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		382B17B39A4BC1523BADD40A /* Pods-Cetacea.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.appstore.xcconfig"; sourceTree = "<group>"; };
+		414CCAF0CE10C6B145F64EFE /* Pods-CetaceaTests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.non-appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		47A4B61B0BA198573C757F98 /* Pods-CetaceaTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.appstore.xcconfig"; sourceTree = "<group>"; };
+		692E912653DC718EE1D4D006 /* Pods-CetaceaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E086EF9435B1C08F54ADAA2 /* Pods-CetaceaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EEF94420CF2E9B3AEE3C5A8 /* Pods-CetaceaUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaUITests.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests.appstore.xcconfig"; sourceTree = "<group>"; };
+		9F7BEC5472B6E0C7384A2B26 /* Pods-Cetacea.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.non-appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		A5527D95337E74C32C222D39 /* Pods-CetaceaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9A4EAA2A766EE2DAA325BEC /* Pods-CetaceaUITests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaUITests.non-appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		CF5BE49EA8A5A1C3C2F7C64F /* Pods-CetaceaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7D455A9311F1111E39CCE61 /* libPods-CetaceaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CetaceaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE044441781EDED8808D49B /* Pods-Cetacea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D6A5E151D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */,
+				229BEBBA63633FA90CE2D0EF /* libPods-Cetacea.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2B1D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1CCB60B5ED709BA2DA538E /* libPods-CetaceaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E361D2100BB00211AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6AA94C4539EE8B9EB63321 /* libPods-CetaceaUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D6A5E0F1D2100BB00211AFC = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */,
+				0D6A5E311D2100BB00211AFC /* Cetacea-MacTests */,
+				0D6A5E3C1D2100BB00211AFC /* Cetacea-MacUITests */,
+				0D6A5E191D2100BB00211AFC /* Products */,
+				0D864A161D21210E00F47613 /* Frameworks */,
+				EAD3CB8327BBBDD41EE3A4C2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0D6A5E191D2100BB00211AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E181D2100BB00211AFC /* Cetacea.app */,
+				0D6A5E2E1D2100BB00211AFC /* CetaceaTests.xctest */,
+				0D6A5E391D2100BB00211AFC /* CetaceaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				0D864A151D21207400F47613 /* Cetacea.entitlements */,
+				0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */,
+				0D98E2641DEC66D100F130E2 /* JZHeader.h */,
+				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
+				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
+				0D87A52E1D29ACB400F9DC34 /* Framework */,
+				0DAF37411D2510E20009C44B /* Data */,
+				0DAF37481D2548AB0009C44B /* View */,
+				0D864A1E1D21417000F47613 /* Controller */,
+				0D6A5E241D2100BB00211AFC /* Assets.xcassets */,
+				0D6A5E261D2100BB00211AFC /* Main.storyboard */,
+				0D4189311D27B09300530FD7 /* localizable.strings */,
+				0D6A5E291D2100BB00211AFC /* Info.plist */,
+				0D6A5E1E1D2100BB00211AFC /* Supporting Files */,
+			);
+			path = "Cetacea-Mac";
+			sourceTree = "<group>";
+		};
+		0D6A5E1E1D2100BB00211AFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E1F1D2100BB00211AFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D6A5E311D2100BB00211AFC /* Cetacea-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E321D2100BB00211AFC /* Cetacea_MacTests.m */,
+				0D6A5E341D2100BB00211AFC /* Info.plist */,
+			);
+			path = "Cetacea-MacTests";
+			sourceTree = "<group>";
+		};
+		0D6A5E3C1D2100BB00211AFC /* Cetacea-MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E3D1D2100BB00211AFC /* Cetacea_MacUITests.m */,
+				0D6A5E3F1D2100BB00211AFC /* Info.plist */,
+			);
+			path = "Cetacea-MacUITests";
+			sourceTree = "<group>";
+		};
+		0D864A161D21210E00F47613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D864A2A1D21451300F47613 /* WebKit.framework */,
+				2C3F2C385448ADDC0B078CBF /* libPods-Cetacea.a */,
+				D7D455A9311F1111E39CCE61 /* libPods-CetaceaTests.a */,
+				24F220213505B33604C4C6AD /* libPods-CetaceaUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D864A1E1D21417000F47613 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D6A5E4B1D2102A900211AFC /* JZMainWindowController.h */,
+				0D6A5E4C1D2102A900211AFC /* JZMainWindowController.m */,
+				0DAF37491D254A480009C44B /* JZMainListEditorSplitViewController.h */,
+				0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */,
+				0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */,
+				0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */,
+				0D87A5291D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.h */,
+				0D87A52A1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m */,
+				0D87A52B1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib */,
+				0DAF37421D2541E60009C44B /* JZMarkdownListViewController.h */,
+				0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */,
+				0D864A1F1D21419F00F47613 /* JZEditorViewController.h */,
+				0D864A201D21419F00F47613 /* JZEditorViewController.m */,
+				0D864A271D2141C600F47613 /* JZPreviewViewController.h */,
+				0D864A281D2141C600F47613 /* JZPreviewViewController.m */,
+				0D41893D1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.h */,
+				0D41893E1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m */,
+				0D5F32481D25828A00566B82 /* JZAboutWindowController.h */,
+				0D5F32491D25828A00566B82 /* JZAboutWindowController.m */,
+				0D5F324B1D258B3200566B82 /* JZAboutViewController.h */,
+				0D5F324C1D258B3200566B82 /* JZAboutViewController.m */,
+				0D6AA0FB1D25BA07003DAAB3 /* JZSettingsTabViewController.h */,
+				0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */,
+				0D6AA0F51D25B702003DAAB3 /* JZSettingsApperanceViewController.h */,
+				0D6AA0F61D25B702003DAAB3 /* JZSettingsApperanceViewController.m */,
+				0D9D8FCA1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.h */,
+				0D9D8FCB1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m */,
+				0D9D8FD91D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.h */,
+				0D9D8FDA1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m */,
+				0D6AA0F81D25B7CA003DAAB3 /* JZSettingsGeneralViewController.h */,
+				0D6AA0F91D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m */,
+				0D87A5261D29339500F9DC34 /* JZSettingsEditingViewController.h */,
+				0D87A5271D29339500F9DC34 /* JZSettingsEditingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0D87A52E1D29ACB400F9DC34 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0D87A52F1D29ACC700F9DC34 /* TSMarkdownParser */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		0D87A52F1D29ACC700F9DC34 /* TSMarkdownParser */ = {
+			isa = PBXGroup;
+			children = (
+				0D87A5301D29ACC700F9DC34 /* TSBaseParser.h */,
+				0D87A5311D29ACC700F9DC34 /* TSBaseParser.m */,
+				0D87A5321D29ACC700F9DC34 /* TSMarkdownParser-Prefix.pch */,
+				0D87A5331D29ACC700F9DC34 /* TSMarkdownParser.h */,
+				0D87A5341D29ACC700F9DC34 /* TSMarkdownParser.m */,
+			);
+			path = TSMarkdownParser;
+			sourceTree = "<group>";
+		};
+		0D9D8FD81D2F917C005F91F6 /* HighlightColorStorage */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */,
+				0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */,
+				0D9D902A1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.h */,
+				0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */,
+				0D9D8FBE1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.h */,
+				0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */,
+				0D9D8FD21D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.h */,
+				0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */,
+				0D9D8FD51D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.h */,
+				0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */,
+				0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */,
+				0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */,
+			);
+			name = HighlightColorStorage;
+			sourceTree = "<group>";
+		};
+		0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D8FDC1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.h */,
+				0D9D8FDD1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m */,
+				0D9D8FE01D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.h */,
+				0D9D8FE11D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m */,
+				0D9D8FE31D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.h */,
+				0D9D8FE41D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m */,
+				0D9D8FE61D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.h */,
+				0D9D8FE71D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m */,
+				0D9D8FFC1D3018B2005F91F6 /* JZColorSelectionButton.h */,
+				0D9D8FFD1D3018B2005F91F6 /* JZColorSelectionButton.m */,
+			);
+			name = "Settings-Appearance-ThemeSelection";
+			sourceTree = "<group>";
+		};
+		0D9D8FE91D301564005F91F6 /* ITSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				0D4FBA031D2BF051001821A2 /* ITSwitch.h */,
+				0D4FBA041D2BF051001821A2 /* ITSwitch.m */,
+			);
+			name = ITSwitch;
+			sourceTree = "<group>";
+		};
+		0D9D90291D312D50005F91F6 /* MKColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D901A1D312D4B005F91F6 /* MKColorPickerView.h */,
+				0D9D901B1D312D4B005F91F6 /* MKColorPickerView.m */,
+				0D9D901C1D312D4B005F91F6 /* MKColorSwatchCell.h */,
+				0D9D901D1D312D4B005F91F6 /* MKColorSwatchCell.m */,
+				0D9D901E1D312D4B005F91F6 /* MKColorSwatchMatrix.h */,
+				0D9D901F1D312D4B005F91F6 /* MKColorSwatchMatrix.m */,
+				0D9D90201D312D4B005F91F6 /* MKColorWell.h */,
+				0D9D90211D312D4B005F91F6 /* MKColorWell.m */,
+				0D9D90221D312D4B005F91F6 /* MKColorWell+Bindings.h */,
+				0D9D90231D312D4B005F91F6 /* MKColorWell+Bindings.m */,
+			);
+			name = MKColorPicker;
+			sourceTree = "<group>";
+		};
+		0DAF37411D2510E20009C44B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF373E1D2510DD0009C44B /* JZiCloudStorageManager.h */,
+				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
+				0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */,
+				0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */,
+				0D6BEBB81D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.h */,
+				0D6BEBB91D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m */,
+				0D6BEBBB1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.h */,
+				0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */,
+				0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */,
+				0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */,
+				0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */,
+				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
+				0D9D8FD81D2F917C005F91F6 /* HighlightColorStorage */,
+				0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */,
+				0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */,
+				0D87A5401D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.h */,
+				0D87A5411D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m */,
+				0D87A5421D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib */,
+				0D87A5231D290E7100F9DC34 /* JZFontDisplayManager.h */,
+				0D87A5241D290E7100F9DC34 /* JZFontDisplayManager.m */,
+				0D87A5451D2A7BB400F9DC34 /* JZEditorLayouManager.h */,
+				0D87A5461D2A7BB400F9DC34 /* JZEditorLayouManager.m */,
+				0D9D90321D32741B005F91F6 /* KeyValueObserver.h */,
+				0D9D90331D32741B005F91F6 /* KeyValueObserver.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		0DAF37481D2548AB0009C44B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D90291D312D50005F91F6 /* MKColorPicker */,
+				0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */,
+				0D4189201D26BFC300530FD7 /* JZMarkdownListTableCellView.h */,
+				0D4189211D26BFC300530FD7 /* JZMarkdownListTableCellView.m */,
+				0D4FB9BE1D2B8A85001821A2 /* JZFolderOutlineCellView.h */,
+				0D4FB9BF1D2B8A85001821A2 /* JZFolderOutlineCellView.m */,
+				0D9D8FE91D301564005F91F6 /* ITSwitch */,
+				0D4FBA091D2C2933001821A2 /* JZEditorRulerView.h */,
+				0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */,
+				0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */,
+				0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */,
+				0DC89B9A1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.h */,
+				0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */,
+				0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */,
+				0D4189141D26A78200530FD7 /* JZAboutBackgroundImageView.m */,
+				0D9D8FCD1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.h */,
+				0D9D8FCE1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m */,
+				0D9D8FCF1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EAD3CB8327BBBDD41EE3A4C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				070463824DBBCB5B0B27173E /* Pods-Cetacea.debug.xcconfig */,
+				EAE044441781EDED8808D49B /* Pods-Cetacea.release.xcconfig */,
+				9F7BEC5472B6E0C7384A2B26 /* Pods-Cetacea.non-appstore.xcconfig */,
+				382B17B39A4BC1523BADD40A /* Pods-Cetacea.appstore.xcconfig */,
+				CF5BE49EA8A5A1C3C2F7C64F /* Pods-CetaceaTests.debug.xcconfig */,
+				A5527D95337E74C32C222D39 /* Pods-CetaceaTests.release.xcconfig */,
+				414CCAF0CE10C6B145F64EFE /* Pods-CetaceaTests.non-appstore.xcconfig */,
+				47A4B61B0BA198573C757F98 /* Pods-CetaceaTests.appstore.xcconfig */,
+				7E086EF9435B1C08F54ADAA2 /* Pods-CetaceaUITests.debug.xcconfig */,
+				692E912653DC718EE1D4D006 /* Pods-CetaceaUITests.release.xcconfig */,
+				B9A4EAA2A766EE2DAA325BEC /* Pods-CetaceaUITests.non-appstore.xcconfig */,
+				7EEF94420CF2E9B3AEE3C5A8 /* Pods-CetaceaUITests.appstore.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D6A5E171D2100BB00211AFC /* Cetacea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea" */;
+			buildPhases = (
+				9BC36C3CD7EFA67C5C8D83B8 /* [CP] Check Pods Manifest.lock */,
+				0D6A5E141D2100BB00211AFC /* Sources */,
+				0D6A5E151D2100BB00211AFC /* Frameworks */,
+				0D6A5E161D2100BB00211AFC /* Resources */,
+				0D98E2631DEC40D700F130E2 /* ShellScript */,
+				0D4189401D281D5300530FD7 /* ShellScript */,
+				0DF4105E1DEF24F900318EF4 /* ShellScript */,
+				5B92501E8284D3EAFF53F999 /* [CP] Embed Pods Frameworks */,
+				23557FE6CAAEC8B24D37F74F /* [CP] Copy Pods Resources */,
+				0DA4E3ED1DEF577500074705 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cetacea;
+			productName = "Cetacea-Mac";
+			productReference = 0D6A5E181D2100BB00211AFC /* Cetacea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D6A5E2D1D2100BB00211AFC /* CetaceaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "CetaceaTests" */;
+			buildPhases = (
+				B7EAD84684DCA88015985AB4 /* [CP] Check Pods Manifest.lock */,
+				0D6A5E2A1D2100BB00211AFC /* Sources */,
+				0D6A5E2B1D2100BB00211AFC /* Frameworks */,
+				0D6A5E2C1D2100BB00211AFC /* Resources */,
+				F57960595E19A2CC2FDB96E3 /* [CP] Embed Pods Frameworks */,
+				856186CFB140012B9067C8FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D6A5E301D2100BB00211AFC /* PBXTargetDependency */,
+			);
+			name = CetaceaTests;
+			productName = "Cetacea-MacTests";
+			productReference = 0D6A5E2E1D2100BB00211AFC /* CetaceaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D6A5E381D2100BB00211AFC /* CetaceaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "CetaceaUITests" */;
+			buildPhases = (
+				2788529F64D91AEA968A5290 /* [CP] Check Pods Manifest.lock */,
+				0D6A5E351D2100BB00211AFC /* Sources */,
+				0D6A5E361D2100BB00211AFC /* Frameworks */,
+				0D6A5E371D2100BB00211AFC /* Resources */,
+				6B3C8E70BAA2DD7AE1F258B2 /* [CP] Embed Pods Frameworks */,
+				4E802795E446D85E70C2BA1B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D6A5E3B1D2100BB00211AFC /* PBXTargetDependency */,
+			);
+			name = CetaceaUITests;
+			productName = "Cetacea-MacUITests";
+			productReference = 0D6A5E391D2100BB00211AFC /* CetaceaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D6A5E101D2100BB00211AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = JustZht;
+				TargetAttributes = {
+					0D6A5E171D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					0D6A5E2D1D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D6A5E171D2100BB00211AFC;
+					};
+					0D6A5E381D2100BB00211AFC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						DevelopmentTeamName = "Haotian Zheng";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D6A5E171D2100BB00211AFC;
+					};
+				};
+			};
+			buildConfigurationList = 0D6A5E131D2100BB00211AFC /* Build configuration list for PBXProject "Cetacea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6A5E0F1D2100BB00211AFC;
+			productRefGroup = 0D6A5E191D2100BB00211AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D6A5E171D2100BB00211AFC /* Cetacea */,
+				0D6A5E2D1D2100BB00211AFC /* CetaceaTests */,
+				0D6A5E381D2100BB00211AFC /* CetaceaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D6A5E161D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D87A52D1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.xib in Resources */,
+				0D4189321D27B09300530FD7 /* localizable.strings in Resources */,
+				0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */,
+				0D87A5441D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib in Resources */,
+				0D9D8FD11D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib in Resources */,
+				0D6A5E281D2100BB00211AFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2C1D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E371D2100BB00211AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4189401D281D5300530FD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		0D98E2631DEC40D700F130E2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-Mac/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+		0DA4E3ED1DEF577500074705 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LOCATION=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\n# Usually set by Xcode\nCODE_SIGN_IDENTITY=\"Developer ID Application: Haotian Zheng (9QJ8M25J77)\"\n\ncodesign --verbose --force --sign \"$CODE_SIGN_IDENTITY\" \"$LOCATION/Sparkle.framework/Versions/A\"";
+		};
+		0DF4105E1DEF24F900318EF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		23557FE6CAAEC8B24D37F74F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2788529F64D91AEA968A5290 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E802795E446D85E70C2BA1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B92501E8284D3EAFF53F999 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B3C8E70BAA2DD7AE1F258B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetaceaUITests/Pods-CetaceaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856186CFB140012B9067C8FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC36C3CD7EFA67C5C8D83B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EAD84684DCA88015985AB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F57960595E19A2CC2FDB96E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D6A5E141D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E201D2100BB00211AFC /* main.m in Sources */,
+				0D9D8FE21D3010D2005F91F6 /* JZSettingsApperanceThemeTableViewSyntaxCellView.m in Sources */,
+				0D9D8FD71D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
+				0D87A52C1D29655C00F9DC34 /* JZEditorPreviewSplitViewForegroundBlurViewController.m in Sources */,
+				0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */,
+				0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */,
+				0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */,
+				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
+				0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
+				0D6BEBBD1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m in Sources */,
+				0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */,
+				0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */,
+				0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */,
+				0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */,
+				0D9D8FD01D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m in Sources */,
+				0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */,
+				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,
+				0D9D8FC61D2F7888005F91F6 /* JZColorDataModel.m in Sources */,
+				0D87A5281D29339500F9DC34 /* JZSettingsEditingViewController.m in Sources */,
+				0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */,
+				0D9D8FFE1D3018B2005F91F6 /* JZColorSelectionButton.m in Sources */,
+				0D9D90261D312D4B005F91F6 /* MKColorSwatchMatrix.m in Sources */,
+				0D4189151D26A78200530FD7 /* JZAboutBackgroundImageView.m in Sources */,
+				0D6AA0FA1D25B7CA003DAAB3 /* JZSettingsGeneralViewController.m in Sources */,
+				0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */,
+				0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */,
+				0D9D902C1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m in Sources */,
+				0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */,
+				0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */,
+				0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */,
+				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
+				0D9D8FCC1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m in Sources */,
+				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,
+				0D9D8FE81D3010F4005F91F6 /* JZSettingsApperanceThemeTableViewDarkCellView.m in Sources */,
+				0D41893F1D27F8D900530FD7 /* JZAutoThemeSwitchViewController.m in Sources */,
+				0D87A5431D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.m in Sources */,
+				0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */,
+				0D9D8FC01D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m in Sources */,
+				0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */,
+				0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */,
+				0D9D90251D312D4B005F91F6 /* MKColorSwatchCell.m in Sources */,
+				0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */,
+				0D4FBA0B1D2C2933001821A2 /* JZEditorRulerView.m in Sources */,
+				0D6AA0FD1D25BA07003DAAB3 /* JZSettingsTabViewController.m in Sources */,
+				0D4189281D26CBB800530FD7 /* JZiCloudStorageProcesser.m in Sources */,
+				0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */,
+				0D87A5251D290E7100F9DC34 /* JZFontDisplayManager.m in Sources */,
+				0D87A53C1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m in Sources */,
+				0D9D90341D32741B005F91F6 /* KeyValueObserver.m in Sources */,
+				0D87A5471D2A7BB400F9DC34 /* JZEditorLayouManager.m in Sources */,
+				0D9D8FDE1D301076005F91F6 /* JZSettingsApperanceThemeTableViewTagCellView.m in Sources */,
+				0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */,
+				0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */,
+				0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E2A1D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E331D2100BB00211AFC /* Cetacea_MacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D6A5E351D2100BB00211AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6A5E3E1D2100BB00211AFC /* Cetacea_MacUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D6A5E301D2100BB00211AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D6A5E171D2100BB00211AFC /* Cetacea */;
+			targetProxy = 0D6A5E2F1D2100BB00211AFC /* PBXContainerItemProxy */;
+		};
+		0D6A5E3B1D2100BB00211AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D6A5E171D2100BB00211AFC /* Cetacea */;
+			targetProxy = 0D6A5E3A1D2100BB00211AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D6A5E261D2100BB00211AFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D6A5E271D2100BB00211AFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D6A5E401D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D6A5E411D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0D6A5E431D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070463824DBBCB5B0B27173E /* Pods-Cetacea.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		0D6A5E441D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE044441781EDED8808D49B /* Pods-Cetacea.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		0D6A5E461D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5BE49EA8A5A1C3C2F7C64F /* Pods-CetaceaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea.app/Contents/MacOS/Cetacea";
+			};
+			name = Debug;
+		};
+		0D6A5E471D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5527D95337E74C32C222D39 /* Pods-CetaceaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea.app/Contents/MacOS/Cetacea";
+			};
+			name = Release;
+		};
+		0D6A5E491D2100BB00211AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E086EF9435B1C08F54ADAA2 /* Pods-CetaceaUITests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = Debug;
+		};
+		0D6A5E4A1D2100BB00211AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 692E912653DC718EE1D4D006 /* Pods-CetaceaUITests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = Release;
+		};
+		0DF410561DEF22C700318EF4 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = AppStore;
+		};
+		0DF410571DEF22C700318EF4 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 382B17B39A4BC1523BADD40A /* Pods-Cetacea.appstore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = AppStore;
+		};
+		0DF410581DEF22C700318EF4 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A4B61B0BA198573C757F98 /* Pods-CetaceaTests.appstore.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea.app/Contents/MacOS/Cetacea";
+			};
+			name = AppStore;
+		};
+		0DF410591DEF22C700318EF4 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EEF94420CF2E9B3AEE3C5A8 /* Pods-CetaceaUITests.appstore.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = AppStore;
+		};
+		0DF4105A1DEF22E000318EF4 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = "Non-AppStore";
+		};
+		0DF4105B1DEF22E000318EF4 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7BEC5472B6E0C7384A2B26 /* Pods-Cetacea.non-appstore.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea-NonAppStore.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application: Haotian Zheng (9QJ8M25J77)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-Mac",
+				);
+				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = "Non-AppStore";
+		};
+		0DF4105C1DEF22E000318EF4 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414CCAF0CE10C6B145F64EFE /* Pods-CetaceaTests.non-appstore.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cetacea.app/Contents/MacOS/Cetacea";
+			};
+			name = "Non-AppStore";
+		};
+		0DF4105D1DEF22E000318EF4 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A4EAA2A766EE2DAA325BEC /* Pods-CetaceaUITests.non-appstore.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cetacea-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Cetacea-Mac";
+			};
+			name = "Non-AppStore";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D6A5E131D2100BB00211AFC /* Build configuration list for PBXProject "Cetacea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E401D2100BB00211AFC /* Debug */,
+				0D6A5E411D2100BB00211AFC /* Release */,
+				0DF4105A1DEF22E000318EF4 /* Non-AppStore */,
+				0DF410561DEF22C700318EF4 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Non-AppStore";
+		};
+		0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E431D2100BB00211AFC /* Debug */,
+				0D6A5E441D2100BB00211AFC /* Release */,
+				0DF4105B1DEF22E000318EF4 /* Non-AppStore */,
+				0DF410571DEF22C700318EF4 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Non-AppStore";
+		};
+		0D6A5E451D2100BB00211AFC /* Build configuration list for PBXNativeTarget "CetaceaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E461D2100BB00211AFC /* Debug */,
+				0D6A5E471D2100BB00211AFC /* Release */,
+				0DF4105C1DEF22E000318EF4 /* Non-AppStore */,
+				0DF410581DEF22C700318EF4 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Non-AppStore";
+		};
+		0D6A5E481D2100BB00211AFC /* Build configuration list for PBXNativeTarget "CetaceaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D6A5E491D2100BB00211AFC /* Debug */,
+				0D6A5E4A1D2100BB00211AFC /* Release */,
+				0DF4105D1DEF22E000318EF4 /* Non-AppStore */,
+				0DF410591DEF22C700318EF4 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Non-AppStore";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D6A5E101D2100BB00211AFC /* Project object */;
+}

@@ -11,8 +11,11 @@
 #import "JZHeader.h"
 
 #import <HockeySDK/HockeySDK.h>
+#import <Sparkle/Sparkle.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<SUUpdaterDelegate>
+
+@property (weak) IBOutlet SUUpdater *sparkleUpdater;
 
 @end
 
@@ -21,6 +24,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"e323c3d1d75240f89492b38042bfdbac"];
+    [[BITHockeyManager sharedHockeyManager].crashManager setAutoSubmitCrashReport: YES];
     [[BITHockeyManager sharedHockeyManager] startManager];
 
     
@@ -35,6 +39,8 @@
     // instance of your app wasn't running
     [[NSUbiquitousKeyValueStore defaultStore] synchronize];
     
+    self.sparkleUpdater.sendsSystemProfile = YES;
+    
 }
 - (void)storeDidChange:(NSNotification *)aNotification
 {
@@ -47,5 +53,12 @@
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     return YES;
+}
+
+#pragma mark - SUUpdaterDelegate
+- (NSArray *)feedParametersForUpdater:(SUUpdater *)updater
+                 sendingSystemProfile:(BOOL)sendingProfile
+{
+    return [[BITSystemProfile sharedSystemProfile] systemUsageData];
 }
 @end
