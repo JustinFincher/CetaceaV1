@@ -61,13 +61,11 @@
     }else
     {
         NSMutableArray *docs = [[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] loadDocs];
-        if ([docs count] > 0)
-        {
+        if (docs.count > 0) {
             JZiCloudFileExtensionCetaceaThemeDoc *doc = [docs objectAtIndex:0];
             self.selectedDoc = doc;
-        }
-        else
-        {
+        } else {
+            //        NSAssert(NO, @"selectedDoc should not be nil");
             self.selectedDoc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
         }
     }
