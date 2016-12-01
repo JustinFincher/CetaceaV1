@@ -4,8 +4,9 @@ xcode_scheme: CetaceaTravisCI
 osx_image: xcode8.2
 
 script:
-
-  xctool
+  
+  ./build/xcbuild
+  -executor ninja
   -workspace Cetacea-Mac/Cetacea.xcworkspace
   -scheme CetaceaTravisCI
   build 
@@ -16,10 +17,14 @@ script:
 
 before_install:
   - brew update
-  - brew uninstall xctool && brew install --HEAD xctool
+  - brew install cmake ninja
+  - git clone https://github.com/facebook/xcbuild
+  - cd xcbuild
+  - git submodule update --init
+  - make
+
 
 notifications:
   slack:
     rooms:
       - fingameworks:Jq17wRjDEUVQiKlrVlNqzKr1#general
-      - fingameworks:Jq17wRjDEUVQiKlrVlNqzKr1#justzht

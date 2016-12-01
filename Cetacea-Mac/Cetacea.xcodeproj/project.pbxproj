@@ -32,6 +32,7 @@
 		0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBB91D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m */; };
 		0D6BEBBD1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */; };
 		0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */; };
+		0D7F182A1DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */; };
 		0D864A1D1D21416A00F47613 /* JZEditorPreviewSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */; };
 		0D864A211D21419F00F47613 /* JZEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A201D21419F00F47613 /* JZEditorViewController.m */; };
 		0D864A291D2141C600F47613 /* JZPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D864A281D2141C600F47613 /* JZPreviewViewController.m */; };
@@ -145,6 +146,8 @@
 		0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDoc.m; sourceTree = "<group>"; };
 		0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
 		0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
+		0D7F18281DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDocument.h; sourceTree = "<group>"; };
+		0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDocument.m; sourceTree = "<group>"; };
 		0D864A151D21207400F47613 /* Cetacea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cetacea.entitlements; sourceTree = "<group>"; };
 		0D864A1B1D21416A00F47613 /* JZEditorPreviewSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorPreviewSplitViewController.h; sourceTree = "<group>"; };
 		0D864A1C1D21416A00F47613 /* JZEditorPreviewSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorPreviewSplitViewController.m; sourceTree = "<group>"; };
@@ -479,6 +482,8 @@
 				0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */,
 				0D6BEBB81D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.h */,
 				0D6BEBB91D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m */,
+				0D7F18281DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.h */,
+				0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */,
 				0D6BEBBB1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.h */,
 				0D6BEBBC1D2E16AB00F3483F /* JZiCloudFileExtensionCetaceaDoc.m */,
 				0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */,
@@ -908,6 +913,7 @@
 				0D6BEBBA1D2E142200F3483F /* JZiCloudFileExtensionCetaceaDataModel.m in Sources */,
 				0D4FBA051D2BF051001821A2 /* ITSwitch.m in Sources */,
 				0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */,
+				0D7F182A1DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m in Sources */,
 				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
 				0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
