@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: Cetacea-Mac/Cetacea.xcworkspace
+xcode_scheme: Cetacea Travis CI
