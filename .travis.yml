@@ -1,12 +1,12 @@
 language: objective-c
 xcode_workspace: Cetacea-Mac/Cetacea.xcworkspace
-xcode_scheme: Cetacea Travis CI
+xcode_scheme: CetaceaTravisCI
 
 script:
 
   xctool
   -workspace Cetacea-Mac/Cetacea.xcworkspace
-  -scheme Cetacea Travis CI
+  -scheme CetaceaTravisCI
   clean
   build 
   test
