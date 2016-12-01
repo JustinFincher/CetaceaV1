@@ -7,6 +7,11 @@
 //
 
 #import "JZiCloudFileExtensionCetaceaDocument.h"
+#import "JZHeader.h"
+
+@interface JZiCloudFileExtensionCetaceaDocument ()
+
+@end
 
 @implementation JZiCloudFileExtensionCetaceaDocument
 
@@ -22,9 +27,15 @@
 {
     if ([super init])
     {
-        self.title = @"";
-        self.markdownString = @"";
-        self.highLightString = [[NSAttributedString alloc] initWithString:@""];
+    }
+    return self;
+}
+- (id)initWithURL:(NSURL *)url
+{
+    if ([super init])
+    {
+        self.urlWhenInited = url;
+        [self readFromFileWrapper:self.documentFileWrapper ofType:@"cetacea" error:nil];
     }
     return self;
 }
@@ -64,36 +75,75 @@
 {
     self.documentFileWrapper = fileWrapper;
     
-    NSFileWrapper *subWrapper;
+    NSFileWrapper *subFileWrapper;
     NSData *data;
+
+    subFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:@"title"];
+    data = [subFileWrapper regularFileContents];
+    self.title = [[NSString alloc] initWithData:data
+encoding:NSUTF8StringEncoding];
+    JZLog(@"Title : %@",_title);
     
-    subWrapper = [[fileWrapper fileWrappers] objectForKey:@"markdownString"];
-    data = [subWrapper regularFileContents];
-    self.markdownString = [NSKeyedUnarchiver unarchiveObjectWithData: data];
+    subFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:@"markdownString"];
+    data = [subFileWrapper regularFileContents];
+    self.markdownString = [[NSString alloc] initWithData:data
+                                                encoding:NSUTF8StringEncoding];
+    JZLog(@"MarkdownString : %@",_markdownString);
     
-    subWrapper = [[fileWrapper fileWrappers] objectForKey:@"highLightString"];
-    data = [subWrapper regularFileContents];
+    subFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:@"highLightString"];
+    data = [subFileWrapper regularFileContents];
     self.highLightString = [NSKeyedUnarchiver unarchiveObjectWithData: data];
+    JZLog(@"HighLightString : %@",_highLightString);
+    
+    
+    self.title = self.title ? self.title : @"";
+    self.markdownString = self.markdownString ? self.markdownString : @"";
+    self.highLightString = self.highLightString ? self.highLightString : [[NSAttributedString alloc] initWithString:@""];
     
     return YES;
 }
+
 - (NSFileWrapper *)documentFileWrapper
 {
     if (!_documentFileWrapper)
     {
-        _documentFileWrapper = [[NSFileWrapper alloc] initDirectoryWithFileWrappers:[NSDictionary dictionary]];
-        [_documentFileWrapper addRegularFileWithContents:[NSKeyedArchiver archivedDataWithRootObject:self.markdownString]
-                             preferredFilename:@"markdownString"];
-        [_documentFileWrapper addRegularFileWithContents:[NSKeyedArchiver archivedDataWithRootObject:self.highLightString]
-                             preferredFilename:@"highLightString"];
+        _documentFileWrapper = [[NSFileWrapper alloc] initWithURL:self.urlWhenInited options:0 error:nil];
     }
+    JZLog(@"%@",[_documentFileWrapper fileWrappers]);
     return _documentFileWrapper;
 }
-
+- (void)updateFileWrappers
+{
+    [self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];
+    [self updateFileWrappersByPreferredFileName:@"markdownString" Contents:[self.markdownString dataUsingEncoding:NSUTF8StringEncoding]];
+    [self updateFileWrappersByPreferredFileName:@"highLightString" Contents:[NSKeyedArchiver archivedDataWithRootObject:self.highLightString]];
+}
+- (void)updateFileWrappersByPreferredFileName:(NSString *)fileName
+                                     Contents:(NSData *)data
+{
+    NSFileWrapper *oldFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:fileName];
+    if (oldFileWrapper)
+    {
+        JZLog(@"updateFileWrappersByPreferredFileName : %@ Has Old File Wrapper : YES",fileName);
+        [_documentFileWrapper removeFileWrapper:oldFileWrapper];
+    }else
+    {
+        JZLog(@"updateFileWrappersByPreferredFileName : %@ Has Old File Wrapper : NO",fileName);
+    }
+    
+    [_documentFileWrapper addRegularFileWithContents:data
+                               preferredFilename:fileName];
+}
+- (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    [self updateFileWrappers];
+    return [self.documentFileWrapper writeToURL:url options:NSFileWrapperWritingAtomic originalContentsURL:nil error:outError];
+}
 
 + (BOOL)autosavesInPlace {
     return YES;
 }
+
 - (BOOL)isEqualToDocument:(JZiCloudFileExtensionCetaceaDocument *)doc
 {
     return [[[doc fileURL] absoluteString] isEqualToString:[[self fileURL] absoluteString]];

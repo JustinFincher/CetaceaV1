@@ -113,11 +113,19 @@
             self.currentEditingMarkdown.markdownString = _editorVC.editorTextView.string;
             self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
             self.currentEditingMarkdown.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
-//            [self.currentEditingMarkdown saveData];
+            
+
+            NSError *err;
+            BOOL isSuccess = [self.currentEditingMarkdown writeToURL:self.currentEditingMarkdown.urlWhenInited ofType:@"cetacea" error:&err];
+            if(!isSuccess && err)
+            {
+                JZLog(@"%@",[err localizedDescription]);
+            }
+
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^
              {
-                 JZLog(@"Text Changed and Saved. RefreshHighLightCounter ++ ")
+//                 JZLog(@"Text Changed and Saved. RefreshHighLightCounter ++ ")
                  refreshHighLightCounter++;
              }];
         }];
@@ -128,7 +136,8 @@
     if (_editorVC.editorTextView)
     {
         NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
-        JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] init];
+        NSURL *url = [[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES];
+        JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] initWithURL:url];
         
         NSError *err;
         BOOL isSuccess = [doc.documentFileWrapper writeToURL:[[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES] options:0 originalContentsURL:nil error:&err];

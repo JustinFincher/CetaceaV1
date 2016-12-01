@@ -12,21 +12,16 @@
 
 @property (nonatomic,strong) NSFileWrapper * documentFileWrapper;
 
-/**
- *  Markdown String
- */
 @property (nonatomic,strong) NSString *markdownString;
-/**
- *  Cached Highlight NSAttributedString
- */
 @property (nonatomic,strong) NSAttributedString *highLightString;
-
-/**
- *  Title
- */
 @property (nonatomic,strong) NSString *title;
 
+
 - (BOOL)isEqualToDocument:(JZiCloudFileExtensionCetaceaDocument *)doc;
+
+
+- (id)initWithURL:(NSURL *)url;
+@property (nonatomic,strong) NSURL *urlWhenInited;
 
 
 @end

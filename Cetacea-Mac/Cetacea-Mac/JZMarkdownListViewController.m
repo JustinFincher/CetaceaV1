@@ -59,7 +59,10 @@
     }
     cellView.markdownDocReference = markdown;
     
-    cellView.updateDateTextField.stringValue = markdown.fileModificationDate.timeAgoSinceNow;
+    if (markdown.fileModificationDate)
+    {
+        cellView.updateDateTextField.stringValue = markdown.fileModificationDate.timeAgoSinceNow;
+    }
     return cellView;
 }
 

@@ -63,12 +63,14 @@
         if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
         {
             NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
-            JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] init];
-            [doc.documentFileWrapper readFromURL:[NSURL URLWithString:fullPath] options:0 error:nil];
-            if ([doc readFromFileWrapper:doc.documentFileWrapper ofType:@"cetacea" error:nil])
-            {
-                [retval addObject:doc];
-            }
+            NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
+            JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] initWithURL:url];
+//            [doc.documentFileWrapper readFromURL:[NSURL URLWithString:fullPath] options:0 error:nil];
+//            if ([doc readFromFileWrapper:doc.documentFileWrapper ofType:@"cetacea" error:nil])
+//            {
+//                
+//            }
+            [retval addObject:doc];
         }
     }
     
