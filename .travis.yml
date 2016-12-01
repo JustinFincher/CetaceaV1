@@ -3,4 +3,23 @@ xcode_workspace: Cetacea-Mac/Cetacea.xcworkspace
 xcode_scheme: Cetacea Travis CI
 
 script:
-  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
+
+  xctool
+  -workspace Cetacea-Mac/Cetacea.xcworkspace
+  -scheme Cetacea Travis CI
+  clean
+  build 
+  test
+  ONLY_ACTIVE_ARCH=NO
+  CODE_SIGN_IDENTITY=""
+  CODE_SIGNING_REQUIRED=NO
+
+before_install:
+  - brew update
+  - brew uninstall xctool && brew install --HEAD xctool
+
+notifications:
+  slack:
+    rooms:
+      - fingameworks:Jq17wRjDEUVQiKlrVlNqzKr1#general
+      - fingameworks:Jq17wRjDEUVQiKlrVlNqzKr1#justzht
