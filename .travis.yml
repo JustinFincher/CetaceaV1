@@ -8,7 +8,6 @@ script:
   xctool
   -workspace Cetacea-Mac/Cetacea.xcworkspace
   -scheme CetaceaTravisCI
-  clean
   build 
   test
   ONLY_ACTIVE_ARCH=NO

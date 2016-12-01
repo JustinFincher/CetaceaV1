@@ -22,6 +22,10 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    
+//    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+//    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+//    [NSUserDefaults resetStandardUserDefaults];
 
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"e323c3d1d75240f89492b38042bfdbac"];
 //    [[BITHockeyManager sharedHockeyManager].crashManager setAutoSubmitCrashReport: YES];

@@ -126,23 +126,33 @@
     JZMarkdownListSortMethod method;
     JZMarkdownListSortDirection direction;
     
-    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_METHOD"] isEqualToString:@"JZMarkdownListSortMethodByEditDate"])
+    NSString *MARKDOWN_LIST_SORT_METHOD = [[NSUserDefaults standardUserDefaults] valueForKey:@"MARKDOWN_LIST_SORT_METHOD"];
+    if (!MARKDOWN_LIST_SORT_METHOD)
+    {
+        MARKDOWN_LIST_SORT_METHOD = @"JZMarkdownListSortMethodByEditDate";
+        [[NSUserDefaults standardUserDefaults] setValue:MARKDOWN_LIST_SORT_METHOD forKey:@"MARKDOWN_LIST_SORT_METHOD"];
+    }
+    if ([MARKDOWN_LIST_SORT_METHOD isEqualToString:@"JZMarkdownListSortMethodByEditDate"])
     {
         method = JZMarkdownListSortMethodByEditDate;
-    }else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_METHOD"] isEqualToString:@"JZMarkdownListSortMethodByTitle"])
+    }else if ([MARKDOWN_LIST_SORT_METHOD isEqualToString:@"JZMarkdownListSortMethodByTitle"])
     {
         method = JZMarkdownListSortMethodByTitle;
     }
     
-    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"] isEqualToString:@"JZMarkdownListSortDirectionAscending"])
+    NSString *MARKDOWN_LIST_SORT_DIRECTION = [[NSUserDefaults standardUserDefaults] valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"];
+    if (!MARKDOWN_LIST_SORT_DIRECTION)
+    {
+        MARKDOWN_LIST_SORT_DIRECTION = @"JZMarkdownListSortDirectionDescending";
+        [[NSUserDefaults standardUserDefaults] setValue:MARKDOWN_LIST_SORT_DIRECTION forKey:@"MARKDOWN_LIST_SORT_DIRECTION"];
+    }
+    if ([MARKDOWN_LIST_SORT_DIRECTION isEqualToString:@"JZMarkdownListSortDirectionAscending"])
     {
         direction = JZMarkdownListSortDirectionAscending;
-    }else if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"MARKDOWN_LIST_SORT_DIRECTION"] isEqualToString:@"JZMarkdownListSortDirectionDescending"])
+    }else if ([MARKDOWN_LIST_SORT_DIRECTION isEqualToString:@"JZMarkdownListSortDirectionDescending"])
     {
         direction = JZMarkdownListSortDirectionDescending;
     }
-//    JZLog(@"method:%lu",(unsigned long)method);
-//    JZLog(@"direction:%lu",(unsigned long)direction);
     
     NSArray *sortedArray;
     sortedArray = [icloudFileMarkdowns sortedArrayUsingComparator:^NSComparisonResult(id a, id b)

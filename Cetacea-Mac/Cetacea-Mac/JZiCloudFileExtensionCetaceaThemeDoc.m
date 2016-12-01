@@ -21,9 +21,6 @@
     if ((self = [super init]))
     {
         self.docPath = docPath;
-        
-        //just init a data instance
-        JZEditorHighlightThemeDataModel *data = self.data;
     }
     return self;
 }
