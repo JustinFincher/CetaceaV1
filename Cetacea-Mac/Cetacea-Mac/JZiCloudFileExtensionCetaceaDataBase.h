@@ -7,25 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JZiCloudFileExtensionCetaceaDoc.h"
-@interface JZiCloudFileExtensionCetaceaDataBase : NSObject
+#import "JZiCloudFileExtensionCetaceaDocument.h"
 
+@interface JZiCloudFileExtensionCetaceaDataBase : NSObject
 
 + (id)sharedManager;
 
-
-/**
- *  Get All JZiCloudFileExtensionCetaceaDocs
- *
- *  @return NSMutableArray of JZiCloudFileExtensionCetaceaDocs
- */
 - (NSMutableArray *)loadDocs;
 
-/**
- *  Get Next Available Doc Path
- *
- *  @return NSString
- */
 - (NSString *)nextDocPath;
 
 @end

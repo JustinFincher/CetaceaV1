@@ -47,19 +47,19 @@
     {
 
     }
-    JZiCloudFileExtensionCetaceaDoc *markdown = [self.markdownFileArray objectAtIndex:row];
+    JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:row];
     
-    cellView.titleTextField.stringValue = [markdown getData].title;
-    if ([markdown getData].highLightString)
+    cellView.titleTextField.stringValue = markdown.title;
+    if (markdown.highLightString)
     {
-        cellView.contentTextField.attributedStringValue = markdown.data.highLightString;
+        cellView.contentTextField.attributedStringValue = markdown.highLightString;
     }else
     {
         cellView.contentTextField.stringValue = @"";
     }
     cellView.markdownDocReference = markdown;
     
-    cellView.updateDateTextField.stringValue = [markdown getData].updateDate.timeAgoSinceNow;
+    cellView.updateDateTextField.stringValue = markdown.fileModificationDate.timeAgoSinceNow;
     return cellView;
 }
 
@@ -102,13 +102,13 @@
 {
     if (self.markdownListTableView.selectedRow != -1)
     {
-        NSString *selectedDocPath = [(JZiCloudFileExtensionCetaceaDoc *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow] docPath];
+        NSString *selectedDocPath = [[(JZiCloudFileExtensionCetaceaDocument *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow] fileURL] absoluteString];
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
         for (int i = 0; i < self.markdownFileArray.count; i++)
         {
-            JZiCloudFileExtensionCetaceaDoc *a = [self.markdownFileArray objectAtIndex:i];
-            if ([a.docPath isEqualToString:selectedDocPath])
+            JZiCloudFileExtensionCetaceaDocument *a = [self.markdownFileArray objectAtIndex:i];
+            if ([[[a fileURL]absoluteString] isEqualToString:selectedDocPath])
             {
                 [self.markdownListTableView scrollRowToVisible:i];
                 [self.markdownListTableView selectRow:i byExtendingSelection:NO];
@@ -161,8 +161,8 @@
         {
             case JZMarkdownListSortMethodByCreateDate:
             {
-                NSDate *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] createDate];
-                NSDate *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] createDate];
+                NSDate *first = [(JZiCloudFileExtensionCetaceaDocument*)a fileModificationDate];
+                NSDate *second = [(JZiCloudFileExtensionCetaceaDocument*)b fileModificationDate];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:
@@ -176,8 +176,8 @@
                 break;
             case JZMarkdownListSortMethodByEditDate:
             {
-                NSDate *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] updateDate];
-                NSDate *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] updateDate];
+                NSDate *first = [(JZiCloudFileExtensionCetaceaDocument*)a fileModificationDate];
+                NSDate *second = [(JZiCloudFileExtensionCetaceaDocument*)b fileModificationDate];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:
@@ -191,8 +191,8 @@
                 break;
             case JZMarkdownListSortMethodByTitle:
             {
-                NSString *first = [[(JZiCloudFileExtensionCetaceaDoc*)a getData] title];
-                NSString *second = [[(JZiCloudFileExtensionCetaceaDoc*)b getData] title];
+                NSString *first = [(JZiCloudFileExtensionCetaceaDocument*)a title];
+                NSString *second = [(JZiCloudFileExtensionCetaceaDocument*)b title];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:

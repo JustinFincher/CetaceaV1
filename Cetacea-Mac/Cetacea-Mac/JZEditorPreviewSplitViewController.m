@@ -12,6 +12,7 @@
 #import "JZEditorPreviewSplitViewForegroundBlurViewController.h"
 #import "JZdayNightThemeManager.h"
 #import "JZHeader.h"
+#import "JZiCloudFileExtensionCetaceaDataBase.h"
 
 @interface JZEditorPreviewSplitViewController ()
 
@@ -84,9 +85,9 @@
 
 
 #pragma mark - Text Editing
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    if (![_currentEditingMarkdown isEqualToDoc:currentEditingMarkdown])
+    if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
     {
         _currentEditingMarkdown = currentEditingMarkdown;
         [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
@@ -109,11 +110,10 @@
         [myQueue addOperationWithBlock:^{
             
             // Background work
-            self.currentEditingMarkdown.data.markdownString = _editorVC.editorTextView.string;
-            self.currentEditingMarkdown.data.highLightString = _editorVC.editorTextView.attributedString;
-            self.currentEditingMarkdown.data.updateDate = [NSDate new];
-            self.currentEditingMarkdown.data.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
-            [self.currentEditingMarkdown saveData];
+            self.currentEditingMarkdown.markdownString = _editorVC.editorTextView.string;
+            self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
+            self.currentEditingMarkdown.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
+//            [self.currentEditingMarkdown saveData];
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^
              {
@@ -128,13 +128,14 @@
     if (_editorVC.editorTextView)
     {
         NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
-        JZiCloudFileExtensionCetaceaDoc *doc = [[JZiCloudFileExtensionCetaceaDoc alloc] initWithDocPath:docPath];
-        doc.data.markdownString = @"";
-        doc.data.createDate = [NSDate new];
-        doc.data.updateDate = [NSDate new];
-        doc.data.title = @"";
-        doc.data.highLightString = [[NSAttributedString alloc] initWithString:@""];
-        [doc saveData];
+        JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] init];
+        
+        NSError *err;
+        BOOL isSuccess = [doc.documentFileWrapper writeToURL:[[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES] options:0 originalContentsURL:nil error:&err];
+        if(!isSuccess && err)
+        {
+            JZLog(@"%@",[err localizedDescription]);
+        }
         [self setCurrentEditingMarkdown:doc];
     }
 }

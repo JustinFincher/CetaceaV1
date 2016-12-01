@@ -10,6 +10,8 @@
 
 @interface JZiCloudFileExtensionCetaceaDocument : NSDocument
 
+@property (nonatomic,strong) NSFileWrapper * documentFileWrapper;
+
 /**
  *  Markdown String
  */
@@ -23,6 +25,8 @@
  *  Title
  */
 @property (nonatomic,strong) NSString *title;
+
+- (BOOL)isEqualToDocument:(JZiCloudFileExtensionCetaceaDocument *)doc;
 
 
 @end

@@ -7,19 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudFileExtensionCetaceaDoc.h"
+#import "JZiCloudFileExtensionCetaceaDocument.h"
 #import "JZEditorTextView.h"
 
 @interface JZEditorViewController : NSViewController
 @property (weak) IBOutlet NSScrollView *editorScrollView;
 @property (unsafe_unretained) IBOutlet JZEditorTextView *editorTextView;
 
-/**
- *  set current editing Markdown Model (aka a .md file)
- *
- *  @param currentEditingMarkdown a JZiCloudMarkdownFileModel
- */
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown;
+
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;
 
 - (void)refreshHighLight;
 

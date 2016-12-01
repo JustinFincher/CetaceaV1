@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudFileExtensionCetaceaDoc.h"
+#import "JZiCloudFileExtensionCetaceaDocument.h"
 @import WebKit;
 
 @interface JZPreviewViewController : NSViewController
@@ -20,7 +20,7 @@
  *
  *  @param currentEditingMarkdown a JZiCloudMarkdownFileModel
  */
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown;
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;
 
 - (void)refreshPreview;
 

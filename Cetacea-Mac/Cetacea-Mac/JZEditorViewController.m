@@ -64,9 +64,9 @@
      self.editorTextView.layoutManager.allowsNonContiguousLayout = YES;
 }
 
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.data.highLightString];
+    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.highLightString];
     [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
 }

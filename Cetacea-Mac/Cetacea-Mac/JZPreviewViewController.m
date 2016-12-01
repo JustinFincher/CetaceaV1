@@ -12,7 +12,7 @@
 
 @interface JZPreviewViewController ()
 
-@property (weak, nonatomic) JZiCloudFileExtensionCetaceaDoc *currentEditingMarkdown;
+@property (weak, nonatomic) JZiCloudFileExtensionCetaceaDocument *currentEditingMarkdown;
 
 @end
 
@@ -42,10 +42,10 @@
 {
     if (_currentEditingMarkdown)
     {
-        self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:_currentEditingMarkdown.data.markdownString extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
+        self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:_currentEditingMarkdown.markdownString extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
     }
 }
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
     _currentEditingMarkdown = currentEditingMarkdown;
     [self refreshPreview];

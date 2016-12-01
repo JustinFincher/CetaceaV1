@@ -7,14 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudFileExtensionCetaceaDoc.h"
+#import "JZiCloudFileExtensionCetaceaDocument.h"
 
 @interface JZEditorPreviewSplitViewController : NSSplitViewController
 @property (weak) IBOutlet NSSplitViewItem *editorSplitViewItem;
 @property (weak) IBOutlet NSSplitViewItem *previewSplitViewItem;
 
 
-@property (nonatomic,strong) JZiCloudFileExtensionCetaceaDoc* currentEditingMarkdown;
+@property (nonatomic,strong) JZiCloudFileExtensionCetaceaDocument* currentEditingMarkdown;
 
 /**
  *  indicates the left edit view is collasped or not
@@ -35,5 +35,5 @@
  *
  *  @param currentEditingMarkdown the JZiCloudMarkdownFileModel to be updated on view
  */
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDoc *)currentEditingMarkdown;
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;
 @end
