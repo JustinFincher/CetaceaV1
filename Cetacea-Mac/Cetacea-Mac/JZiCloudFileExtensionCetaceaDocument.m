@@ -139,14 +139,18 @@ encoding:NSUTF8StringEncoding];
     [self updateFileWrappers];
     return [self.documentFileWrapper writeToURL:url options:NSFileWrapperWritingAtomic originalContentsURL:nil error:outError];
 }
-
+- (BOOL)save
+{
+    return [self writeToURL:self.urlWhenInited ofType:@"cetacea" error:nil];
+}
 + (BOOL)autosavesInPlace {
     return YES;
 }
 
 - (BOOL)isEqualToDocument:(JZiCloudFileExtensionCetaceaDocument *)doc
 {
-    return [[[doc fileURL] absoluteString] isEqualToString:[[self fileURL] absoluteString]];
-        
+    BOOL isEqual = [[[doc urlWhenInited] absoluteString] isEqualToString:[[self urlWhenInited] absoluteString]];
+    return isEqual;
+
 }
 @end

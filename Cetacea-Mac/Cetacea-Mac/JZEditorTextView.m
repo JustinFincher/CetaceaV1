@@ -109,11 +109,10 @@
 
 - (void)updateTextView
 {
-    if (self.markedRange.location == NSNotFound && self.markedRange.length == 0)
+    JZLog(@"TextView MarkedRange : %lu:%lu",(unsigned long)self.markedRange.location,(unsigned long)self.markedRange.length);
+    if (self.markedRange.length == 0)
     {
-        //正在输入拼音 不能替换
-    }else
-    {
+        //不在输入拼音
         NSRange range = self.selectedRange;
         NSAttributedString *attrString = [self proccessTextWithVisibleRectOnly];
         [self.textStorage setAttributedString: attrString];
@@ -132,6 +131,9 @@
             // stringend--[begin--range--end]
             [self setSelectedRange:NSMakeRange([attrString.string length], 0)];
         }
+    }else
+    {
+        //正在输入拼音 不能替换
     }
     
 }

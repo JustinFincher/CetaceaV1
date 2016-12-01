@@ -114,18 +114,9 @@
             self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
             self.currentEditingMarkdown.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
             
-
-            NSError *err;
-            BOOL isSuccess = [self.currentEditingMarkdown writeToURL:self.currentEditingMarkdown.urlWhenInited ofType:@"cetacea" error:&err];
-            if(!isSuccess && err)
-            {
-                JZLog(@"%@",[err localizedDescription]);
-            }
-
-            
+            [self.currentEditingMarkdown save];
             [[NSOperationQueue mainQueue] addOperationWithBlock:^
              {
-//                 JZLog(@"Text Changed and Saved. RefreshHighLightCounter ++ ")
                  refreshHighLightCounter++;
              }];
         }];

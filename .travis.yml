@@ -1,7 +1,7 @@
 language: objective-c
 xcode_workspace: Cetacea-Mac/Cetacea.xcworkspace
 xcode_scheme: CetaceaTravisCI
-osx_image: xcode8.2
+osx_image: xcode8.1
 
 script:
   
