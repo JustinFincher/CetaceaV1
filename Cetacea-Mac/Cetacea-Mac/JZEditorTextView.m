@@ -93,9 +93,26 @@
     [self updateTextView];
 }
 
+- (void)refreshHightLight
+{
+    if (self.string)
+    {
+        self.attParagraphStrWithAllRange = [self.parser attributedParagraphParserStringFromMarkdown:self.string];
+        self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:[self characterRangeFromVisibleRect]]];
+        [self updateTextView];
+    }
+    
+    [self setWantsLayer:YES];
+    NSColor *color = [[self.parser.themeDoc getData] getBackgroundColor];
+    [self setBackgroundColor:color];
+}
+
 - (void)updateTextView
 {
     if (self.markedRange.location == NSNotFound && self.markedRange.length == 0)
+    {
+        //正在输入拼音 不能替换
+    }else
     {
         NSRange range = self.selectedRange;
         NSAttributedString *attrString = [self proccessTextWithVisibleRectOnly];
@@ -115,24 +132,8 @@
             // stringend--[begin--range--end]
             [self setSelectedRange:NSMakeRange([attrString.string length], 0)];
         }
-    }else
-    {
-        //正在输入拼音 不能替换
-    }
-
-}
-- (void)refreshHightLight
-{
-    if (self.string)
-    {
-        self.attParagraphStrWithAllRange = [self.parser attributedParagraphParserStringFromMarkdown:self.string];
-        self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:[self characterRangeFromVisibleRect]]];
-        [self updateTextView];
     }
     
-    [self setWantsLayer:YES];
-    NSColor *color = [[self.parser.themeDoc getData] getBackgroundColor];
-    [self setBackgroundColor:color];
 }
 
 - (NSAttributedString *)proccessTextWithVisibleRectOnly
