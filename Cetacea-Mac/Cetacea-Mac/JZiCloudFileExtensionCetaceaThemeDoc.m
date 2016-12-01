@@ -21,6 +21,8 @@
     if ((self = [super init]))
     {
         self.docPath = docPath;
+        //just init a data instance
+        [self getData];
     }
     return self;
 }
