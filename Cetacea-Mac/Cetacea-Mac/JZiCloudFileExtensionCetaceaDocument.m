@@ -196,7 +196,7 @@ encoding:NSUTF8StringEncoding];
 
 - (BOOL)isEqualToDocument:(JZiCloudFileExtensionCetaceaDocument *)doc
 {
-    BOOL isEqual = [[[doc urlWhenInited] absoluteString] isEqualToString:[[self urlWhenInited] absoluteString]];
+    BOOL isEqual = [[[doc urlWhenInited] path] isEqualToString:[[self urlWhenInited] path]];
     return isEqual;
 
 }

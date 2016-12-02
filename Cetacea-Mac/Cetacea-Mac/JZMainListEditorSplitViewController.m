@@ -10,6 +10,7 @@
 #import "JZMarkdownListViewController.h"
 #import "JZEditorPreviewSplitViewController.h"
 #import "JZMarkdownListViewController.h"
+#import "JZHeader.h"
 
 @interface JZMainListEditorSplitViewController ()<JZMarkdownListViewDelegate,NSSplitViewDelegate>
 @property (weak) IBOutlet NSSplitViewItem *folderListViewItem;
@@ -86,6 +87,7 @@ canCollapseSubview:(NSView *)subview
 #pragma mark - JZMarkdownListViewDelegate
 - (void)rowSelected:(JZiCloudFileExtensionCetaceaDocument *)markdown
 {
+    JZLog(@"rowSelected: %@",markdown.markdownString);
     JZEditorPreviewSplitViewController *editorPreviewSplitVC = (JZEditorPreviewSplitViewController *)_editorViewItem.viewController;
     [editorPreviewSplitVC setCurrentEditingMarkdown:markdown];
 }

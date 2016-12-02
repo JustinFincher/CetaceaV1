@@ -101,10 +101,10 @@
 
 - (void)loadData:(NSMetadataQuery *)query {
     
-    [query stopQuery];
+//    [query stopQuery];
     id<JZiCloudStorageManagerDelegate> strongDelegate = self.delegate;
     [strongDelegate iCloudFileUpdated:query];
-    [query enableUpdates];
+//    [query enableUpdates];
 }
 
 @end

@@ -16,12 +16,15 @@
 #import "JZEditorRulerView.h"
 #import "JZEditorHighlightThemeManager.h"
 
+#import "JZHeader.h"
+
 @interface JZEditorViewController ()<NSTextViewDelegate>
 
 
 @property (nonatomic) NSRange range;
 @property (nonatomic,strong) JZEditorLayouManager *layoutManager;
 @property (nonatomic,strong) JZEditorRulerView *ruleView;
+
 
 @end
 
@@ -31,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
     self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
@@ -66,7 +70,8 @@
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.highLightString];
+//    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.highLightString];
+    [self.editorTextView setString:currentEditingMarkdown.markdownString];
     [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
 }

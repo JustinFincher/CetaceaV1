@@ -57,7 +57,6 @@
     {
         cellView.contentTextField.stringValue = @"";
     }
-    cellView.markdownDocReference = markdown;
     
     if (markdown.fileModificationDate)
     {
@@ -82,11 +81,13 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    if ([[notification object] selectedRow] >= 0)
+    NSInteger row = [[notification object] selectedRow];
+    if (row >= 0)
     {
-        JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
+        JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:row];
+//        JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
         id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
-        [strongDelegate rowSelected:selectedRow.markdownDocReference];
+        [strongDelegate rowSelected:markdown];
     }
 }
 
@@ -105,13 +106,13 @@
 {
     if (self.markdownListTableView.selectedRow != -1)
     {
-        NSString *selectedDocPath = [[(JZiCloudFileExtensionCetaceaDocument *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow] fileURL] absoluteString];
+        JZiCloudFileExtensionCetaceaDocument *selectedDoc = (JZiCloudFileExtensionCetaceaDocument *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow];
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
         for (int i = 0; i < self.markdownFileArray.count; i++)
         {
             JZiCloudFileExtensionCetaceaDocument *a = [self.markdownFileArray objectAtIndex:i];
-            if ([[[a fileURL]absoluteString] isEqualToString:selectedDocPath])
+            if ([a isEqualToDocument:selectedDoc])
             {
                 [self.markdownListTableView scrollRowToVisible:i];
                 [self.markdownListTableView selectRow:i byExtendingSelection:NO];

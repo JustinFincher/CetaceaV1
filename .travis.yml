@@ -5,9 +5,8 @@ osx_image: xcode8.1
 
 script:
   
-  ./build/xcbuild
-  -executor ninja
-  -workspace Cetacea.xcworkspace
+  xcodebuild
+  -workspace Cetacea-Mac/Cetacea.xcworkspace
   -scheme CetaceaTravisCI
   build
   ONLY_ACTIVE_ARCH=NO
@@ -16,12 +15,6 @@ script:
 
 before_install:
   - brew update
-  - brew install cmake ninja
-  - git clone https://github.com/facebook/xcbuild
-  - cd xcbuild
-  - git submodule update --init
-  - make
-
 
 notifications:
   slack:

@@ -1,4 +1,4 @@
-//
+#//
 //  JZEditorPreviewSplitViewController.m
 //  Cetacea-Mac
 //
@@ -23,6 +23,8 @@
 @property (nonatomic) int refreshHighLightCounter;
 @property (nonatomic,strong) NSTimer *refreshHighLightTimer;
 
+@property () BOOL isSwitchingDocumentFlag;
+
 @end
 
 @implementation JZEditorPreviewSplitViewController
@@ -32,6 +34,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    
+    self.isSwitchingDocumentFlag = NO;
+    
     [self.previewSplitViewItem setCanCollapse:YES];
     [self.editorSplitViewItem setCanCollapse:YES];
     _previewVC = (JZPreviewViewController *)(self.previewSplitViewItem.viewController);
@@ -87,6 +92,9 @@
 #pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
+    self.isSwitchingDocumentFlag = YES;
+    JZLog(@"Previous MD : %@", _currentEditingMarkdown.markdownString);
+    JZLog(@"New MD : %@", currentEditingMarkdown.markdownString);
     if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
     {
         _currentEditingMarkdown = currentEditingMarkdown;
@@ -97,29 +105,21 @@
     {
         [foregroundVC.view setHidden:YES];
     }
-    
+    self.isSwitchingDocumentFlag = NO;
 }
 
 
 - (void)markdownEditorTextDidChanged:(NSNotification *) notification
 {
-    
-    if (_editorVC.editorTextView)
+    if (!self.isSwitchingDocumentFlag)
     {
-        NSOperationQueue *myQueue = [[NSOperationQueue alloc] init];
-        [myQueue addOperationWithBlock:^{
-            
-            // Background work
-            self.currentEditingMarkdown.markdownString = _editorVC.editorTextView.string;
-            self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
-            self.currentEditingMarkdown.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
-            
-            [self.currentEditingMarkdown saveCetaceaDocument];
-            [[NSOperationQueue mainQueue] addOperationWithBlock:^
-             {
-                 refreshHighLightCounter++;
-             }];
-        }];
+        self.currentEditingMarkdown.markdownString = _editorVC.editorTextView.string;
+        self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
+        self.currentEditingMarkdown.title = [self.currentEditingMarkdown.markdownString substringWithRange:[self.currentEditingMarkdown.markdownString lineRangeForRange:NSMakeRange(0, 0)]];
+        
+        [self.currentEditingMarkdown saveCetaceaDocument];
+        
+        refreshHighLightCounter++;
     }
 }
 - (void)addNewButtonPressed:(NSNotification *) notification
