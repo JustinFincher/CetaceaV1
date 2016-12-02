@@ -114,7 +114,7 @@
             self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
             self.currentEditingMarkdown.title = [_editorVC.editorTextView.string substringWithRange:[_editorVC.editorTextView.string lineRangeForRange:NSMakeRange(0, 0)]];
             
-            [self.currentEditingMarkdown save];
+            [self.currentEditingMarkdown saveCetaceaDocument];
             [[NSOperationQueue mainQueue] addOperationWithBlock:^
              {
                  refreshHighLightCounter++;
@@ -124,18 +124,9 @@
 }
 - (void)addNewButtonPressed:(NSNotification *) notification
 {
-    if (_editorVC.editorTextView)
+    JZiCloudFileExtensionCetaceaDocument *doc = [JZiCloudFileExtensionCetaceaDocument newCetaceaDocument];
+    if (doc)
     {
-        NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
-        NSURL *url = [[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES];
-        JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] initWithURL:url];
-        
-        NSError *err;
-        BOOL isSuccess = [doc.documentFileWrapper writeToURL:[[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES] options:0 originalContentsURL:nil error:&err];
-        if(!isSuccess && err)
-        {
-            JZLog(@"%@",[err localizedDescription]);
-        }
         [self setCurrentEditingMarkdown:doc];
     }
 }

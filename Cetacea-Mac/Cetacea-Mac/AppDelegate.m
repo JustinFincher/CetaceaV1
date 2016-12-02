@@ -23,6 +23,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
+    
 //    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
 //    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
 //    [NSUserDefaults resetStandardUserDefaults];
@@ -64,5 +65,16 @@
                  sendingSystemProfile:(BOOL)sendingProfile
 {
     return [[BITSystemProfile sharedSystemProfile] systemUsageData];
+}
+
+#pragma mark - NSDocumentController
+- (IBAction)newDocument:(id)sender
+{
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"addNewButtonPressedNotification" object:self userInfo:nil];
+}
+- (IBAction)openDocument:(id)sender
+{
+    
 }
 @end

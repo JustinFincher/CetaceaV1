@@ -8,6 +8,8 @@
 
 #import "JZiCloudFileExtensionCetaceaDocument.h"
 #import "JZHeader.h"
+#import "JZMainWindowController.h"
+#import "JZiCloudFileExtensionCetaceaDataBase.h"
 
 @interface JZiCloudFileExtensionCetaceaDocument ()
 
@@ -23,6 +25,26 @@
 }
 */
 
+- (void)makeWindowControllers
+{
+    BOOL hasWindow = NO;
+    for (NSWindow *window in [[NSApplication sharedApplication] windows])
+    {
+        if ([window.contentViewController isKindOfClass:[JZMainWindowController class]])
+        {
+            hasWindow = YES;
+            JZMainWindowController *controller = (JZMainWindowController *)window.contentViewController;
+            [self addWindowController:controller];
+        }
+    }
+    if (!hasWindow)
+    {
+        NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        JZMainWindowController *controller = [sb instantiateControllerWithIdentifier:@"JZMainWindowController"];
+        [self addWindowController:controller];
+    }
+}
+
 - (id)init
 {
     if ([super init])
@@ -35,7 +57,7 @@
     if ([super init])
     {
         self.urlWhenInited = url;
-        [self readFromFileWrapper:self.documentFileWrapper ofType:@"cetacea" error:nil];
+        [self readFromFileWrapper:[self getDocumentFileWrapper] ofType:@"cetacea" error:nil];
     }
     return self;
 }
@@ -43,26 +65,6 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController {
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
-}
-
-#pragma mark - Save / Load from NSData
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
-    // Insert code here to write your document to data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning nil.
-    // You can also choose to override -fileWrapperOfType:error:, -writeToURL:ofType:error:, or -writeToURL:ofType:forSaveOperation:originalContentsURL:error: instead.
-    if (outError) {
-        *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:nil];
-    }
-    return nil;
-}
-
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
-    // Insert code here to read your document from the given data of the specified type. If outError != NULL, ensure that you create and set an appropriate error when returning NO.
-    // You can also choose to override -readFromFileWrapper:ofType:error: or -readFromURL:ofType:error: instead.
-    // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
-    if (outError) {
-        *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:nil];
-    }
-    return NO;
 }
 
 #pragma mark - Save / Load from NSFileWrapper
@@ -103,14 +105,28 @@ encoding:NSUTF8StringEncoding];
     return YES;
 }
 
-- (NSFileWrapper *)documentFileWrapper
+- (NSFileWrapper *)getDocumentFileWrapper
 {
+    if (self.urlWhenInited)
+    {
+        NSString *path = [self.urlWhenInited path];
+        if (! [[NSWorkspace sharedWorkspace] isFilePackageAtPath:path] )
+        {
+            NSError *error;
+            [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+        }
+    }
     if (!_documentFileWrapper)
     {
-        _documentFileWrapper = [[NSFileWrapper alloc] initWithURL:self.urlWhenInited options:0 error:nil];
+        NSError *err;
+        self.documentFileWrapper = [[NSFileWrapper alloc] initWithURL:self.urlWhenInited options:0 error:&err];
+        if (err)
+        {
+            JZLog(@"%@",[err localizedDescription]);
+        }
     }
-    JZLog(@"%@",[_documentFileWrapper fileWrappers]);
-    return _documentFileWrapper;
+    JZLog(@"%@",[self.documentFileWrapper fileWrappers]);
+    return self.documentFileWrapper;
 }
 - (void)updateFileWrappers
 {
@@ -137,12 +153,43 @@ encoding:NSUTF8StringEncoding];
 - (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
 {
     [self updateFileWrappers];
-    return [self.documentFileWrapper writeToURL:url options:NSFileWrapperWritingAtomic originalContentsURL:nil error:outError];
+    NSError *err;
+    BOOL isSucess = [self.documentFileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+    if (err)
+    {
+        JZLog(@"%@",[err localizedDescription]);
+    }
+    return isSucess;
 }
-- (BOOL)save
+
+
++ (JZiCloudFileExtensionCetaceaDocument *)newCetaceaDocument
 {
-    return [self writeToURL:self.urlWhenInited ofType:@"cetacea" error:nil];
+    NSString *docPath = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
+    NSURL *url = [[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES];
+    JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] initWithURL:url];
+    
+    BOOL isSuccess = [doc saveCetaceaDocument];
+    if(!isSuccess)
+    {
+        JZLog(@"Cetacea New Document Save Not Sucess");
+        return nil;
+    }else
+    {
+         return doc;
+    }
 }
+- (BOOL)saveCetaceaDocument
+{
+    NSError *err;
+    BOOL isSuccess = [self writeToURL:self.urlWhenInited ofType:@"cetacea" error:&err];
+    if (!isSuccess)
+    {
+        JZLog(@"saveCetaceaDocument Not Success");
+    }
+    return isSuccess;
+}
+
 + (BOOL)autosavesInPlace {
     return YES;
 }

@@ -68,6 +68,7 @@
 		0DAF37401D2510DD0009C44B /* JZiCloudStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */; };
 		0DAF37441D2541E60009C44B /* JZMarkdownListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */; };
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
+		0DB4CD451DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */; };
 		0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */; };
 		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
 		229BEBBA63633FA90CE2D0EF /* libPods-Cetacea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3F2C385448ADDC0B078CBF /* libPods-Cetacea.a */; };
@@ -215,6 +216,8 @@
 		0DAF37431D2541E60009C44B /* JZMarkdownListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListViewController.m; sourceTree = "<group>"; };
 		0DAF37491D254A480009C44B /* JZMainListEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainListEditorSplitViewController.h; sourceTree = "<group>"; };
 		0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainListEditorSplitViewController.m; sourceTree = "<group>"; };
+		0DB4CD431DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaThemeDocument.h; sourceTree = "<group>"; };
+		0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaThemeDocument.m; sourceTree = "<group>"; };
 		0DC89B9A1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListSortSelectionMenu.h; sourceTree = "<group>"; };
 		0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListSortSelectionMenu.m; sourceTree = "<group>"; };
 		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
@@ -416,6 +419,8 @@
 				0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */,
 				0D9D8FD21D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.h */,
 				0D9D8FD31D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m */,
+				0DB4CD431DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.h */,
+				0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */,
 				0D9D8FD51D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.h */,
 				0D9D8FD61D2F9171005F91F6 /* JZiCloudFileExtensionCetaceaThemeDataBase.m */,
 				0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */,
@@ -926,6 +931,7 @@
 				0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */,
 				0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */,
 				0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */,
+				0DB4CD451DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m in Sources */,
 				0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */,
 				0D9D8FCC1D2F856F005F91F6 /* JZSettingsHighlightThemeSelectionViewController.m in Sources */,
 				0D6A5E4D1D2102A900211AFC /* JZMainWindowController.m in Sources */,

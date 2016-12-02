@@ -45,7 +45,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2636</string>
+	<string>2670</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
@@ -79,6 +79,22 @@
 	<true/>
 	<key>SUFeedURL</key>
 	<string>https://rink.hockeyapp.net/api/2/apps/e323c3d1d75240f89492b38042bfdbac</string>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Cetacea Theme File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.JustZht.Cetacea.theme</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cetaceatheme</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 	<key>UTImportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -99,6 +115,20 @@
 				</array>
 				<key>public.mime-type</key>
 				<array/>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeDescription</key>
+			<string>Cetacea Theme File</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.JustZht.Cetacea.theme</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>cetaceatheme</string>
+					<string>Cetaceatheme</string>
+				</array>
 			</dict>
 		</dict>
 	</array>

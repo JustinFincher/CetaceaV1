@@ -23,7 +23,8 @@
 - (id)initWithURL:(NSURL *)url;
 @property (nonatomic,strong) NSURL *urlWhenInited;
 
-- (BOOL)save;
++ (JZiCloudFileExtensionCetaceaDocument *)newCetaceaDocument;
+- (BOOL)saveCetaceaDocument;
 
 
 @end
