@@ -36,6 +36,9 @@
     
     JZMarkdownListViewController *markdownListVC = (JZMarkdownListViewController *)(_folderListViewItem.viewController);
     markdownListVC.delegate = self;
+    
+    [self.folderListViewItem setCollapseBehavior:NSSplitViewItemCollapseBehaviorUseConstraints];
+    [self.editorViewItem setCollapseBehavior:NSSplitViewItemCollapseBehaviorUseConstraints];
 }
 
 - (void)sideBarSegmentSelectedNotification:(NSNotification *) notification
@@ -62,10 +65,8 @@
                 //ALREADY UNCOLLAPSED DO NOTHING
             }
             break;
-            
-        default:
-            break;
     }
+    [self.splitView adjustSubviews];
 }
 
 - (void)viewDidLayout

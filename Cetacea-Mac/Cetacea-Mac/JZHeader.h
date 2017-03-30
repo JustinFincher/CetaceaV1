@@ -9,12 +9,6 @@
 #ifndef JZHeader_h
 #define JZHeader_h
 
-//#ifdef DEBUG
-//#define JZLog(s, ...) NSLog(s, ##__VA_ARGS__)
-//#else
-//#define JZLog(s, ...)
-//#endif
-
 #ifdef DEBUG
 #   define JZLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else

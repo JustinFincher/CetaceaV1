@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02960C3D34F5BF6242CBF59FC7E6BDDD /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF5B71351F01D09A31DE61995E5C4 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0960855FB5F2432E3BF22D435970FA82 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4CC2726F877A0ADA4373A02C7C9501 /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		264E110246129B300E8E3B8AFED4AF21 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E03822E49BBC9A66B629547CEB9F73 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E38E2ADF4CBBC95DD8F831EAD92C3E4 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = BA1B879F7D2CF5C0D015860ED0660E25 /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2E4DE0024E20F8E7CE6FE1DDF35D894B /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 004C7051A982E1B1E4DBACDA2A9A59EA /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		385B6FEAC5868BEA4A4CC45B57581E47 /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = DD1D04E731038A1991E9D1FBBB66D850 /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C6529137AB326EC72AF3A7644913A21 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = C483329A66D0AED8E931D70DC2FF50CC /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48D033BB399373C8A6B1254AA4623B89 /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 061F532159519E4C7ECF652BDF5D79BA /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		543AECBECD34D9F761869972424BA7B8 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECAFF7F2F8F5D15E1E54158743968EC /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		57BBACC29CE7F8B64508970E40823BAA /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = A171FAED7CE7CCD925E79D71A4CCBA6D /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0960855FB5F2432E3BF22D435970FA82 /* MMDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE8F2BDA50C131F5B9FAE044E9B93AD /* MMDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11BF5D0D08E1DD5F472DE7457707362C /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 9642D858CFBDDDBBFE716EE43231877F /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14184157813D242A13DB36DF7A347E77 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = D7033FF36910FCA8D29F375D43A4C150 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E38E2ADF4CBBC95DD8F831EAD92C3E4 /* MMGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9EC39870E21757AF5AD94CAF808822 /* MMGenerator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		385B6FEAC5868BEA4A4CC45B57581E47 /* MMMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0F8493E2665A04712BBAE5C54689D /* MMMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459C19578B10D2B8FFE310C08DF0A158 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A28208F38DBEEFCD3A982238B942C96F /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D033BB399373C8A6B1254AA4623B89 /* MMSpanParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A20441C51E67558748097F2F69116A3 /* MMSpanParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A16FEFACBFAD9F6DB17A9A4BE104089 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C5A4DC4C12ED84107DB994194357ED /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		543AECBECD34D9F761869972424BA7B8 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A6E88BE78B5E3A61AB464EF06C97 /* MMScanner.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		58CC47E8795758ADC5595F0F535B6668 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB924A4DFD6C94BBE3DF1EBF75095C8 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A85A99E6B1BBC49111E5B4DD6BBDA2B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		5E99922C27F23856814FB23A6CD16F0B /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446183F4F9E7ABC385A294307AE61DF /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5F8947589F39D9FBAFCC162F084466F3 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC59D786F0B1C001F160B0248C05419 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62E55CEFBD08A23FD51FFD4EA1C348D5 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 929043C56E29CBD2C07F118221BDFEBD /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6AC05FD4F6A636A0B87E5D7A3A1F31D1 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5E6D1FCD621C40C1F19E4FC87BE0B7 /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6BFE4D78C5B280DD1000DAF2CBE314DE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CC7772F3F1154F1EBCB6392607C9E8 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E9F12625E7901F30360FF2C30B1356C /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E9345CB8DD9F4380477686DD351F61E9 /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EBF80DE4F099412E8E62AAFDF633ABC /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A208B99BFD8C3F2C5A300122A5B838EE /* DateTools-dummy.m */; };
-		7185B2EF74C50A9F484B2DD73F0CF9E7 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = E81ABB40CFEC575EF6DCC27DA1877A12 /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		71990C99231B8750E458FFEF2A9217FB /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 76224FA8DE9DD036FF10EEC0C51337D6 /* DTConstants.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		722E9DBB2C1BC768C0E14AFDAD816935 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B09E6B5E8C9CB7CC3170484F4F6072D7 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7F4A31DB6AAC0DD28B2A5C137B285D0B /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D78913DAD18A8653A71A224CB92C53 /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8088D524522D512F034796C2B9415B99 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1DDDAAED42EA0028E3DE401360664 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5E99922C27F23856814FB23A6CD16F0B /* MMHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BEEADE8A4D644EE1AF3D1C51DE4ACCA /* MMHTMLParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6AC05FD4F6A636A0B87E5D7A3A1F31D1 /* MMSpanParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC7A07AAAFC06770647F4306CA153D5 /* MMSpanParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6BFE4D78C5B280DD1000DAF2CBE314DE /* MMGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CF15D3B6B3921B31DCE1A420E5A8901 /* MMGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9F12625E7901F30360FF2C30B1356C /* MMDocument_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB1BBCD566D0462C4A2E0255CAB1252 /* MMDocument_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EBF80DE4F099412E8E62AAFDF633ABC /* DateTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA0090BA6D0BD5425D046ACF9C53863 /* DateTools-dummy.m */; };
+		722E9DBB2C1BC768C0E14AFDAD816935 /* MMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B738D825933B6181B7715CBD53CF3F16 /* MMDocument.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7427BC55317BB620B5244DF3FE7C8B5A /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6369401B5E0D48E41C325CF7BAB88 /* NSDate+DateTools.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F4A31DB6AAC0DD28B2A5C137B285D0B /* MMElement.m in Sources */ = {isa = PBXBuildFile; fileRef = A78046546403EA9FE11B602E5D1E25AE /* MMElement.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		809C61A663D8D57B3D01D33017C8DFA7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
 		82E0C0E9F76EFF6A0FC4447CDDE40F51 /* Pods-CetaceaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC096206433DF7C9F9AC949A4CA0ED /* Pods-CetaceaTests-dummy.m */; };
-		85700BAD3BD246C4D3C967659FA5DB15 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = A744B1C6C7264C0F7636D8AAB11CD2F6 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		914F15931E0E919F65527D78CDCB93C8 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FBE68B0331ACD07ED3854D6DB70666 /* MMMarkdown-dummy.m */; };
-		92075C06E2C1271FCF9FB8DA1F8709BA /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 40C0C6291552318BBAAB3ED5B8E4FA1C /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9462103F989E960462998222DA7F604E /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 089E40EC587D1B05688AD7CC63F870C1 /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88AE21309A6D38A0E4CBA266D7D75D3B /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 6198405D55813F5324767FE408648E3D /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8939372738F31A50143E6834E0170115 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = A71909576F4BB4C64C323870853DFEBD /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		914F15931E0E919F65527D78CDCB93C8 /* MMMarkdown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B49FCD3C07488FCDA018877697A29BF2 /* MMMarkdown-dummy.m */; };
+		9462103F989E960462998222DA7F604E /* MMScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 09FF7BEFCFE417573D652F0641F8D7FF /* MMScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94DAB0CEDBF25C57347627861A8746CC /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7822A846B4EE8FBB225579BDBC5EB46A /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9F378BCAA59FCE97D0A99C165859B350 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		9F87A9E07319BBB939FA80A674487266 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BA6492D78B9A607A840E24C26417B8 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AD32E8BEC4F0F1E5F6F3716120FDFD30 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D6916D1CA9CD301D4B827458501E54 /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A293E4C20F6FA4C785DE46BAE7C68717 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5759EE7F982D0B7CC86734C68A27FD /* DTTimePeriod.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD32E8BEC4F0F1E5F6F3716120FDFD30 /* MMElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 8188D0DE5360BFCF76C12BD2D451C1A2 /* MMElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B04E6C3CDA2D371747356E1E4AF7A7C0 /* Pods-Cetacea-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF8941856A3DF9DBAFDA5B3905A451A /* Pods-Cetacea-dummy.m */; };
-		B383101C7D3D3C0934AE070B6428DA38 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C62EFB1FF3C62DD8FC02D1917AA850 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6371B275CAFFF6B4ECF929B8A57BFD9 /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 740FAE69108C373D710600ED693534DC /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A60C0321ECF9AACCA2AB6B801D312F /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = E520504D29FDF3C14A555641F5885BA4 /* DTError.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B6371B275CAFFF6B4ECF929B8A57BFD9 /* MMHTMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C467B1D638A5EE57CB3E6068403EA /* MMHTMLParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6855574E2739BF3AD2F3207CAB98D77 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		B9B2E03239C98D331EC5A6CF6D9F75E3 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D99540E7D94FF6B0B1D7B442F8BF2D57 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B9B2E03239C98D331EC5A6CF6D9F75E3 /* MMParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0657DEF34E6DE989D724B4EC342DCB91 /* MMParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BBE0C75505D535DCBF790FB53D50CBC4 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 40893C127DF696AA2046A6C915583E1E /* DTTimePeriodCollection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BD9A986364D88FB5310D08344017E81D /* Pods-CetaceaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC330034C76457F5628C1CFAE55BD0CC /* Pods-CetaceaUITests-dummy.m */; };
-		BDA9F25437448C50183D19A32E60A7EF /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 1927E491217A3F65F01B60CC84EB9357 /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BDA9F25437448C50183D19A32E60A7EF /* MMMarkdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EEB0AC3B41EF8BC91BD34DD4F7FC8E /* MMMarkdown.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3CD809B67C375CF9A41EAEEAB450627 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 0079E5D4CEF1168EC85E00D52C6D8362 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C77EE4499B004F8B28827BDCC9837F2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
-		CB46540C24ABC9DF41612881E5B61F81 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 029E503FDF21F0549BB6DFA5877D2270 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB43909B99CE9589176D5CA6065A93E9 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DB00B5A2415E8C2D96D5F622511039DF /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CB46540C24ABC9DF41612881E5B61F81 /* MMParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FA54F853C2CECF7353945E33FFDE3E29 /* MMParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE81BC53D882D3F019851A8C5484AE34 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C90AF2A722743AC8E0537CD9C76528AE /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF5B28C0C917AA1461BB60386595D57C /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 050F94E3023F66C32EB1562440D0A071 /* DTTimePeriodGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,80 +69,89 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004C7051A982E1B1E4DBACDA2A9A59EA /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DTError.m; sourceTree = "<group>"; };
+		0079E5D4CEF1168EC85E00D52C6D8362 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
 		01CFB6E3DD7B801AC411860524CAE5DC /* Pods-CetaceaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CetaceaUITests-frameworks.sh"; sourceTree = "<group>"; };
-		029E503FDF21F0549BB6DFA5877D2270 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
-		0446183F4F9E7ABC385A294307AE61DF /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
-		061F532159519E4C7ECF652BDF5D79BA /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
+		050F94E3023F66C32EB1562440D0A071 /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
+		0657DEF34E6DE989D724B4EC342DCB91 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
 		07917A3AA3330BEAD841692CAC0DF209 /* libPods-CetaceaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CetaceaTests.a"; path = "libPods-CetaceaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		089E40EC587D1B05688AD7CC63F870C1 /* MMScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMScanner.h; path = Source/MMScanner.h; sourceTree = "<group>"; };
-		0E4CC2726F877A0ADA4373A02C7C9501 /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
-		123B638F71D5612431C9A040A50060C4 /* MMMarkdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMMarkdown-prefix.pch"; sourceTree = "<group>"; };
+		09FF7BEFCFE417573D652F0641F8D7FF /* MMScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMScanner.h; path = Source/MMScanner.h; sourceTree = "<group>"; };
+		0D7CBB11739C8F7419D777F828BCDEE0 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = OSX/Crashlytics.framework/Versions/A/Headers/Answers.h; sourceTree = "<group>"; };
 		12FF26C602027896582AA406DC58D923 /* Pods-CetaceaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CetaceaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		133119610338F6B3191797D806A16757 /* Pods-CetaceaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CetaceaUITests-resources.sh"; sourceTree = "<group>"; };
 		13EABBDCE53302F36216366518959B8C /* Pods-CetaceaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CetaceaTests-frameworks.sh"; sourceTree = "<group>"; };
-		1927E491217A3F65F01B60CC84EB9357 /* MMMarkdown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMMarkdown.m; path = Source/MMMarkdown.m; sourceTree = "<group>"; };
+		1EA0090BA6D0BD5425D046ACF9C53863 /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
+		1F05894006D38952A355B6E57BF8C053 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = OSX/Crashlytics.framework/Versions/A/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		21D695D4DF82D449E0EC6CF007ACE7E0 /* Pods-CetaceaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaTests.release.xcconfig"; sourceTree = "<group>"; };
-		22A1DDDAAED42EA0028E3DE401360664 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
-		25D6916D1CA9CD301D4B827458501E54 /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
-		26FBE68B0331ACD07ED3854D6DB70666 /* MMMarkdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMMarkdown-dummy.m"; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2A5759EE7F982D0B7CC86734C68A27FD /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
 		2A5CE7DFFAD5A0F23DBF285D0414AB8C /* Pods-CetaceaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
+		2AB1BBCD566D0462C4A2E0255CAB1252 /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
+		2C2572CBD29CADBD1B3ACD6E0F5218B6 /* MMMarkdown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMMarkdown-prefix.pch"; sourceTree = "<group>"; };
+		2F9A27FBAFD9E57BB93E998CC24767B3 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = OSX/Crashlytics.framework; sourceTree = "<group>"; };
+		30C5A4DC4C12ED84107DB994194357ED /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DateTools/DTConstants.m; sourceTree = "<group>"; };
+		3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateTools.xcconfig; sourceTree = "<group>"; };
 		324BEADAC183FAF7947F7AC6A9768B15 /* libDateTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDateTools.a; path = libDateTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		34677F76A5D806F78A551E29CEB955FE /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = "HockeySDK-Mac/HockeySDK.framework"; sourceTree = "<group>"; };
 		34742465D0BA3C8E068E17ECABFEAB9C /* Pods-CetaceaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CetaceaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		37D21D7A51C300AB9522271C2ADD171D /* Pods-CetaceaUITests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaUITests.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		3A20441C51E67558748097F2F69116A3 /* MMSpanParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMSpanParser.h; path = Source/MMSpanParser.h; sourceTree = "<group>"; };
 		3CCE2B3B20A934AB8DD420417970579C /* libMMMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMMMarkdown.a; path = libMMMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2DC1BBFD43E5C6163C256D5D92CE14 /* Pods-Cetacea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea.debug.xcconfig"; sourceTree = "<group>"; };
+		3FC6369401B5E0D48E41C325CF7BAB88 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
 		3FDC096206433DF7C9F9AC949A4CA0ED /* Pods-CetaceaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CetaceaTests-dummy.m"; sourceTree = "<group>"; };
-		40C0C6291552318BBAAB3ED5B8E4FA1C /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodGroup.h; path = DateTools/DTTimePeriodGroup.h; sourceTree = "<group>"; };
+		40893C127DF696AA2046A6C915583E1E /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		45E79C0425BEC3AFE59F480E6717EEF4 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = OSX/Crashlytics.framework/Versions/A/Headers/CLSReport.h; sourceTree = "<group>"; };
+		48232C6F49F26FB45AB061549CA9E31A /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		4BEEADE8A4D644EE1AF3D1C51DE4ACCA /* MMHTMLParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMHTMLParser.m; path = Source/MMHTMLParser.m; sourceTree = "<group>"; };
 		4FFCCB8A63EF68D2D59BED632419FC38 /* Pods-Cetacea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea.release.xcconfig"; sourceTree = "<group>"; };
 		572DA33A2976B87752F2B5F77472DAE9 /* Pods-CetaceaTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		57C03A39DF484C4DEEF3203988F7EA40 /* Pods-Cetacea-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cetacea-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B853512D0700EA7F18976EE95A6E6C2 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		65E03822E49BBC9A66B629547CEB9F73 /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DTConstants.h; sourceTree = "<group>"; };
-		6ECAFF7F2F8F5D15E1E54158743968EC /* MMScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMScanner.m; path = Source/MMScanner.m; sourceTree = "<group>"; };
-		740FAE69108C373D710600ED693534DC /* MMHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHTMLParser.h; path = Source/MMHTMLParser.h; sourceTree = "<group>"; };
-		76224FA8DE9DD036FF10EEC0C51337D6 /* DTConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTConstants.m; path = DateTools/DTConstants.m; sourceTree = "<group>"; };
+		6198405D55813F5324767FE408648E3D /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
+		61D233E4853022380A768FB4D9A88E92 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = OSX/Fabric.framework; sourceTree = "<group>"; };
+		63E0F8493E2665A04712BBAE5C54689D /* MMMarkdown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMMarkdown.h; path = Source/MMMarkdown.h; sourceTree = "<group>"; };
+		72D2992F6DF6BBBDDCDB63008A6E903A /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		74DFD105847212874B0DFDAB0F223142 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = OSX/Crashlytics.framework/Versions/A/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		7822A846B4EE8FBB225579BDBC5EB46A /* DTTimePeriodChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodChain.m; path = DateTools/DateTools/DTTimePeriodChain.m; sourceTree = "<group>"; };
+		7CF15D3B6B3921B31DCE1A420E5A8901 /* MMGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMGenerator.h; path = Source/MMGenerator.h; sourceTree = "<group>"; };
+		7F19A6E88BE78B5E3A61AB464EF06C97 /* MMScanner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMScanner.m; path = Source/MMScanner.m; sourceTree = "<group>"; };
 		7FE022E34383F925FD122545C14471C9 /* Pods-Cetacea-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-resources.sh"; sourceTree = "<group>"; };
-		8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMMarkdown.xcconfig; sourceTree = "<group>"; };
+		8188D0DE5360BFCF76C12BD2D451C1A2 /* MMElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMElement.h; path = Source/MMElement.h; sourceTree = "<group>"; };
+		81EEB0AC3B41EF8BC91BD34DD4F7FC8E /* MMMarkdown.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMMarkdown.m; path = Source/MMMarkdown.m; sourceTree = "<group>"; };
+		864AD48A084B565461C3E2D62EAA0DC1 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = OSX/Crashlytics.framework/Versions/A/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		89C0BC4AE5557C1C4D45CAE12F246F0E /* Pods-Cetacea-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cetacea-acknowledgements.plist"; sourceTree = "<group>"; };
 		8C1B344C6EF6B73B161C90586D05EB50 /* Pods-CetaceaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		907769031FB12DEFE14346177957B2C8 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		929043C56E29CBD2C07F118221BDFEBD /* DTTimePeriodCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodCollection.m; path = DateTools/DTTimePeriodCollection.m; sourceTree = "<group>"; };
+		8CD3F0F272934AF43314BDC2BD668738 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = OSX/Fabric.framework/Versions/A/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9642D858CFBDDDBBFE716EE43231877F /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
 		99EB0220F915527F9E7B11E0BB491BF5 /* Pods-CetaceaTests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaTests.non-appstore.xcconfig"; sourceTree = "<group>"; };
-		A171FAED7CE7CCD925E79D71A4CCBA6D /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
-		A208B99BFD8C3F2C5A300122A5B838EE /* DateTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateTools-dummy.m"; sourceTree = "<group>"; };
+		A0F1CBE6912ED7933B134CCDB79D0827 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = OSX/Crashlytics.framework/Versions/A/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		A28208F38DBEEFCD3A982238B942C96F /* DTConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTConstants.h; path = DateTools/DateTools/DTConstants.h; sourceTree = "<group>"; };
 		A5D78CB65C82EC43430F469972260FC4 /* Pods-CetaceaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A744B1C6C7264C0F7636D8AAB11CD2F6 /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools.h; sourceTree = "<group>"; };
-		A9CC7772F3F1154F1EBCB6392607C9E8 /* MMGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMGenerator.h; path = Source/MMGenerator.h; sourceTree = "<group>"; };
-		B09E6B5E8C9CB7CC3170484F4F6072D7 /* MMDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDocument.m; path = Source/MMDocument.m; sourceTree = "<group>"; };
-		B1D78913DAD18A8653A71A224CB92C53 /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
+		A68C467B1D638A5EE57CB3E6068403EA /* MMHTMLParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMHTMLParser.h; path = Source/MMHTMLParser.h; sourceTree = "<group>"; };
+		A6F3096D21F81A1D278D9A7296C5D7CA /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = OSX/Crashlytics.framework/Versions/A/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		A71909576F4BB4C64C323870853DFEBD /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DateTools/DTError.h; sourceTree = "<group>"; };
+		A78046546403EA9FE11B602E5D1E25AE /* MMElement.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMElement.m; path = Source/MMElement.m; sourceTree = "<group>"; };
+		AFC7A07AAAFC06770647F4306CA153D5 /* MMSpanParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSpanParser.m; path = Source/MMSpanParser.m; sourceTree = "<group>"; };
 		B383C1862A4DAF0661215F9F0BF26E24 /* Pods-CetaceaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CetaceaTests-resources.sh"; sourceTree = "<group>"; };
-		BA1B879F7D2CF5C0D015860ED0660E25 /* MMGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMGenerator.m; path = Source/MMGenerator.m; sourceTree = "<group>"; };
+		B49FCD3C07488FCDA018877697A29BF2 /* MMMarkdown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMMarkdown-dummy.m"; sourceTree = "<group>"; };
+		B738D825933B6181B7715CBD53CF3F16 /* MMDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMDocument.m; path = Source/MMDocument.m; sourceTree = "<group>"; };
 		BA4999CF9C5320B93DB3B855C6E6505F /* Pods-Cetacea-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cetacea-frameworks.sh"; sourceTree = "<group>"; };
+		BEB924A4DFD6C94BBE3DF1EBF75095C8 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
 		C1213364F0302BE7C4D5FEEC671FE32A /* libPods-Cetacea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Cetacea.a"; path = "libPods-Cetacea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3BA6492D78B9A607A840E24C26417B8 /* DTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTError.h; path = DateTools/DTError.h; sourceTree = "<group>"; };
-		C483329A66D0AED8E931D70DC2FF50CC /* DTTimePeriodCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodCollection.h; path = DateTools/DTTimePeriodCollection.h; sourceTree = "<group>"; };
-		C4EEF5B71351F01D09A31DE61995E5C4 /* NSDate+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+DateTools.m"; path = "DateTools/NSDate+DateTools.m"; sourceTree = "<group>"; };
+		C90AF2A722743AC8E0537CD9C76528AE /* DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateTools.h; path = DateTools/DateTools/DateTools.h; sourceTree = "<group>"; };
 		D02A942EF8015054DFEF0E16EBA2953A /* Pods-CetaceaUITests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CetaceaUITests.appstore.xcconfig"; sourceTree = "<group>"; };
-		D8C62EFB1FF3C62DD8FC02D1917AA850 /* NSDate+DateTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+DateTools.h"; path = "DateTools/NSDate+DateTools.h"; sourceTree = "<group>"; };
+		D7033FF36910FCA8D29F375D43A4C150 /* DTTimePeriodChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriodChain.h; path = DateTools/DateTools/DTTimePeriodChain.h; sourceTree = "<group>"; };
 		D987A2E0C996C237484D0E87515558D4 /* Pods-CetaceaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CetaceaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D99540E7D94FF6B0B1D7B442F8BF2D57 /* MMParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMParser.m; path = Source/MMParser.m; sourceTree = "<group>"; };
-		DB00B5A2415E8C2D96D5F622511039DF /* DTTimePeriodGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriodGroup.m; path = DateTools/DTTimePeriodGroup.m; sourceTree = "<group>"; };
-		DD1D04E731038A1991E9D1FBBB66D850 /* MMMarkdown.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMMarkdown.h; path = Source/MMMarkdown.h; sourceTree = "<group>"; };
-		E81ABB40CFEC575EF6DCC27DA1877A12 /* DTTimePeriod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTTimePeriod.m; path = DateTools/DTTimePeriod.m; sourceTree = "<group>"; };
-		E9345CB8DD9F4380477686DD351F61E9 /* MMDocument_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument_Private.h; path = Source/MMDocument_Private.h; sourceTree = "<group>"; };
+		DEE8F2BDA50C131F5B9FAE044E9B93AD /* MMDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMDocument.h; path = Source/MMDocument.h; sourceTree = "<group>"; };
+		E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMMarkdown.xcconfig; sourceTree = "<group>"; };
+		E520504D29FDF3C14A555641F5885BA4 /* DTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DTError.m; path = DateTools/DateTools/DTError.m; sourceTree = "<group>"; };
+		E5B50A381109AC0280CF3E19B8B47644 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = OSX/Fabric.framework/Versions/A/Headers/Fabric.h; sourceTree = "<group>"; };
+		EB9EC39870E21757AF5AD94CAF808822 /* MMGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMGenerator.m; path = Source/MMGenerator.m; sourceTree = "<group>"; };
 		EBF8941856A3DF9DBAFDA5B3905A451A /* Pods-Cetacea-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cetacea-dummy.m"; sourceTree = "<group>"; };
 		EC330034C76457F5628C1CFAE55BD0CC /* Pods-CetaceaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CetaceaUITests-dummy.m"; sourceTree = "<group>"; };
-		ED5E6D1FCD621C40C1F19E4FC87BE0B7 /* MMSpanParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMSpanParser.m; path = Source/MMSpanParser.m; sourceTree = "<group>"; };
 		F360784EAEEC912BE56D433A1DF76DF4 /* libPods-CetaceaUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CetaceaUITests.a"; path = "libPods-CetaceaUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36692031662A3E1B4265F58823BB059 /* Pods-Cetacea.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea.non-appstore.xcconfig"; sourceTree = "<group>"; };
-		F4A12BB3193D8A89D5FBF4C3A1333CDF /* DateTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateTools-prefix.pch"; sourceTree = "<group>"; };
+		FA54F853C2CECF7353945E33FFDE3E29 /* MMParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMParser.h; path = Source/MMParser.h; sourceTree = "<group>"; };
 		FB7D9B543578098B5AF1E38E1C45469A /* Pods-CetaceaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CetaceaTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FBC59D786F0B1C001F160B0248C05419 /* DTTimePeriod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DTTimePeriod.h; path = DateTools/DTTimePeriod.h; sourceTree = "<group>"; };
 		FF075F9589F141A17A07E8598CEC696C /* Pods-Cetacea.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cetacea.appstore.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,17 +207,6 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		05FE16BC7962EC83224D21580C12D923 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */,
-				26FBE68B0331ACD07ED3854D6DB70666 /* MMMarkdown-dummy.m */,
-				123B638F71D5612431C9A040A50060C4 /* MMMarkdown-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MMMarkdown";
-			sourceTree = "<group>";
-		};
 		0957014DE9DD73CA7BB963B4F358B915 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +215,25 @@
 				64E0795CAA26FCEF0DEDDFD9F746D0FD /* Pods-CetaceaUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D6EE58C27C36F8B47A17CA60AD36722 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */,
+				1EA0090BA6D0BD5425D046ACF9C53863 /* DateTools-dummy.m */,
+				72D2992F6DF6BBBDDCDB63008A6E903A /* DateTools-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateTools";
+			sourceTree = "<group>";
+		};
+		0ECCE13BB9F77546BAE65F518865EEA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				48232C6F49F26FB45AB061549CA9E31A /* DateTools.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		0FE00EE4C72B47241F0487D553671066 /* Pods-CetaceaTests */ = {
@@ -236,23 +253,48 @@
 			path = "Target Support Files/Pods-CetaceaTests";
 			sourceTree = "<group>";
 		};
-		270D4C336591B3FDA8B97E6263817736 /* Frameworks */ = {
+		14520DE97A150C74E5DA2E2852B2DD3D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B853512D0700EA7F18976EE95A6E6C2 /* Sparkle.framework */,
+				E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */,
+				B49FCD3C07488FCDA018877697A29BF2 /* MMMarkdown-dummy.m */,
+				2C2572CBD29CADBD1B3ACD6E0F5218B6 /* MMMarkdown-prefix.pch */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/MMMarkdown";
 			sourceTree = "<group>";
 		};
-		369AC6FA63CEA26BF66B13CF92D6532D /* Pods */ = {
+		269727A85B8F6E864B03206F798A0C15 /* DateTools */ = {
 			isa = PBXGroup;
 			children = (
-				5033D8E59097BEDC5AA3AC243B1AE0BC /* DateTools */,
-				DBD579E6BF66905EBDD7ADDA7F0CD6CC /* HockeySDK-Mac */,
-				DBB4C0D1D71D226A01A4146201F1BD47 /* MMMarkdown */,
-				B60F436A8EC68B35A0ED3253EDDF3528 /* Sparkle */,
+				C90AF2A722743AC8E0537CD9C76528AE /* DateTools.h */,
+				A28208F38DBEEFCD3A982238B942C96F /* DTConstants.h */,
+				30C5A4DC4C12ED84107DB994194357ED /* DTConstants.m */,
+				A71909576F4BB4C64C323870853DFEBD /* DTError.h */,
+				E520504D29FDF3C14A555641F5885BA4 /* DTError.m */,
+				BEB924A4DFD6C94BBE3DF1EBF75095C8 /* DTTimePeriod.h */,
+				2A5759EE7F982D0B7CC86734C68A27FD /* DTTimePeriod.m */,
+				D7033FF36910FCA8D29F375D43A4C150 /* DTTimePeriodChain.h */,
+				7822A846B4EE8FBB225579BDBC5EB46A /* DTTimePeriodChain.m */,
+				6198405D55813F5324767FE408648E3D /* DTTimePeriodCollection.h */,
+				40893C127DF696AA2046A6C915583E1E /* DTTimePeriodCollection.m */,
+				0079E5D4CEF1168EC85E00D52C6D8362 /* DTTimePeriodGroup.h */,
+				050F94E3023F66C32EB1562440D0A071 /* DTTimePeriodGroup.m */,
+				9642D858CFBDDDBBFE716EE43231877F /* NSDate+DateTools.h */,
+				3FC6369401B5E0D48E41C325CF7BAB88 /* NSDate+DateTools.m */,
+				0ECCE13BB9F77546BAE65F518865EEA1 /* Resources */,
+				0D6EE58C27C36F8B47A17CA60AD36722 /* Support Files */,
 			);
-			name = Pods;
+			name = DateTools;
+			path = DateTools;
+			sourceTree = "<group>";
+		};
+		2E0C1227630C706F1FCAA0A9B55E7BDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D233E4853022380A768FB4D9A88E92 /* Fabric.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -263,22 +305,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3AFF3E923CE6430ECB6F919AFB76445D /* Resources */ = {
+		4010B204F770D58D05A106778F47C58F /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
+				8CD3F0F272934AF43314BDC2BD668738 /* FABAttributes.h */,
+				E5B50A381109AC0280CF3E19B8B47644 /* Fabric.h */,
+				2E0C1227630C706F1FCAA0A9B55E7BDE /* Frameworks */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		3DE2F8176F24B31CCE99E95AE866CE5B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */,
-				A208B99BFD8C3F2C5A300122A5B838EE /* DateTools-dummy.m */,
-				F4A12BB3193D8A89D5FBF4C3A1333CDF /* DateTools-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DateTools";
+			name = Fabric;
+			path = Fabric;
 			sourceTree = "<group>";
 		};
 		46F53BC861A3EF3D3D84F232D0CB602C /* Pods-Cetacea */ = {
@@ -296,31 +331,6 @@
 			);
 			name = "Pods-Cetacea";
 			path = "Target Support Files/Pods-Cetacea";
-			sourceTree = "<group>";
-		};
-		5033D8E59097BEDC5AA3AC243B1AE0BC /* DateTools */ = {
-			isa = PBXGroup;
-			children = (
-				A744B1C6C7264C0F7636D8AAB11CD2F6 /* DateTools.h */,
-				65E03822E49BBC9A66B629547CEB9F73 /* DTConstants.h */,
-				76224FA8DE9DD036FF10EEC0C51337D6 /* DTConstants.m */,
-				C3BA6492D78B9A607A840E24C26417B8 /* DTError.h */,
-				004C7051A982E1B1E4DBACDA2A9A59EA /* DTError.m */,
-				FBC59D786F0B1C001F160B0248C05419 /* DTTimePeriod.h */,
-				E81ABB40CFEC575EF6DCC27DA1877A12 /* DTTimePeriod.m */,
-				A171FAED7CE7CCD925E79D71A4CCBA6D /* DTTimePeriodChain.h */,
-				22A1DDDAAED42EA0028E3DE401360664 /* DTTimePeriodChain.m */,
-				C483329A66D0AED8E931D70DC2FF50CC /* DTTimePeriodCollection.h */,
-				929043C56E29CBD2C07F118221BDFEBD /* DTTimePeriodCollection.m */,
-				40C0C6291552318BBAAB3ED5B8E4FA1C /* DTTimePeriodGroup.h */,
-				DB00B5A2415E8C2D96D5F622511039DF /* DTTimePeriodGroup.m */,
-				D8C62EFB1FF3C62DD8FC02D1917AA850 /* NSDate+DateTools.h */,
-				C4EEF5B71351F01D09A31DE61995E5C4 /* NSDate+DateTools.m */,
-				A769ACBD8D2F1492A0C63D2E9177DEB9 /* Resources */,
-				3DE2F8176F24B31CCE99E95AE866CE5B /* Support Files */,
-			);
-			name = DateTools;
-			path = DateTools;
 			sourceTree = "<group>";
 		};
 		64E0795CAA26FCEF0DEDDFD9F746D0FD /* Pods-CetaceaUITests */ = {
@@ -345,71 +355,63 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				369AC6FA63CEA26BF66B13CF92D6532D /* Pods */,
+				DE0968B8C40E566A91BB231C71E3FA0B /* Pods */,
 				E776B0250230B1D4BEAA8D3730A455BA /* Products */,
 				0957014DE9DD73CA7BB963B4F358B915 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A769ACBD8D2F1492A0C63D2E9177DEB9 /* Resources */ = {
+		D362719251D71D9953239363065EB93B /* MMMarkdown */ = {
 			isa = PBXGroup;
 			children = (
-				907769031FB12DEFE14346177957B2C8 /* DateTools.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		B31921E2565A7E210426680EA6E63AE5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				34677F76A5D806F78A551E29CEB955FE /* HockeySDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B60F436A8EC68B35A0ED3253EDDF3528 /* Sparkle */ = {
-			isa = PBXGroup;
-			children = (
-				270D4C336591B3FDA8B97E6263817736 /* Frameworks */,
-			);
-			name = Sparkle;
-			path = Sparkle;
-			sourceTree = "<group>";
-		};
-		DBB4C0D1D71D226A01A4146201F1BD47 /* MMMarkdown */ = {
-			isa = PBXGroup;
-			children = (
-				0E4CC2726F877A0ADA4373A02C7C9501 /* MMDocument.h */,
-				B09E6B5E8C9CB7CC3170484F4F6072D7 /* MMDocument.m */,
-				E9345CB8DD9F4380477686DD351F61E9 /* MMDocument_Private.h */,
-				25D6916D1CA9CD301D4B827458501E54 /* MMElement.h */,
-				B1D78913DAD18A8653A71A224CB92C53 /* MMElement.m */,
-				A9CC7772F3F1154F1EBCB6392607C9E8 /* MMGenerator.h */,
-				BA1B879F7D2CF5C0D015860ED0660E25 /* MMGenerator.m */,
-				740FAE69108C373D710600ED693534DC /* MMHTMLParser.h */,
-				0446183F4F9E7ABC385A294307AE61DF /* MMHTMLParser.m */,
-				DD1D04E731038A1991E9D1FBBB66D850 /* MMMarkdown.h */,
-				1927E491217A3F65F01B60CC84EB9357 /* MMMarkdown.m */,
-				029E503FDF21F0549BB6DFA5877D2270 /* MMParser.h */,
-				D99540E7D94FF6B0B1D7B442F8BF2D57 /* MMParser.m */,
-				089E40EC587D1B05688AD7CC63F870C1 /* MMScanner.h */,
-				6ECAFF7F2F8F5D15E1E54158743968EC /* MMScanner.m */,
-				061F532159519E4C7ECF652BDF5D79BA /* MMSpanParser.h */,
-				ED5E6D1FCD621C40C1F19E4FC87BE0B7 /* MMSpanParser.m */,
-				05FE16BC7962EC83224D21580C12D923 /* Support Files */,
+				DEE8F2BDA50C131F5B9FAE044E9B93AD /* MMDocument.h */,
+				B738D825933B6181B7715CBD53CF3F16 /* MMDocument.m */,
+				2AB1BBCD566D0462C4A2E0255CAB1252 /* MMDocument_Private.h */,
+				8188D0DE5360BFCF76C12BD2D451C1A2 /* MMElement.h */,
+				A78046546403EA9FE11B602E5D1E25AE /* MMElement.m */,
+				7CF15D3B6B3921B31DCE1A420E5A8901 /* MMGenerator.h */,
+				EB9EC39870E21757AF5AD94CAF808822 /* MMGenerator.m */,
+				A68C467B1D638A5EE57CB3E6068403EA /* MMHTMLParser.h */,
+				4BEEADE8A4D644EE1AF3D1C51DE4ACCA /* MMHTMLParser.m */,
+				63E0F8493E2665A04712BBAE5C54689D /* MMMarkdown.h */,
+				81EEB0AC3B41EF8BC91BD34DD4F7FC8E /* MMMarkdown.m */,
+				FA54F853C2CECF7353945E33FFDE3E29 /* MMParser.h */,
+				0657DEF34E6DE989D724B4EC342DCB91 /* MMParser.m */,
+				09FF7BEFCFE417573D652F0641F8D7FF /* MMScanner.h */,
+				7F19A6E88BE78B5E3A61AB464EF06C97 /* MMScanner.m */,
+				3A20441C51E67558748097F2F69116A3 /* MMSpanParser.h */,
+				AFC7A07AAAFC06770647F4306CA153D5 /* MMSpanParser.m */,
+				14520DE97A150C74E5DA2E2852B2DD3D /* Support Files */,
 			);
 			name = MMMarkdown;
 			path = MMMarkdown;
 			sourceTree = "<group>";
 		};
-		DBD579E6BF66905EBDD7ADDA7F0CD6CC /* HockeySDK-Mac */ = {
+		DE0968B8C40E566A91BB231C71E3FA0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B31921E2565A7E210426680EA6E63AE5 /* Frameworks */,
-				3AFF3E923CE6430ECB6F919AFB76445D /* Resources */,
+				E52CE0209E10FA73AC096D697C2F7B47 /* Crashlytics */,
+				269727A85B8F6E864B03206F798A0C15 /* DateTools */,
+				4010B204F770D58D05A106778F47C58F /* Fabric */,
+				D362719251D71D9953239363065EB93B /* MMMarkdown */,
 			);
-			name = "HockeySDK-Mac";
-			path = "HockeySDK-Mac";
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E52CE0209E10FA73AC096D697C2F7B47 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				A6F3096D21F81A1D278D9A7296C5D7CA /* ANSCompatibility.h */,
+				0D7CBB11739C8F7419D777F828BCDEE0 /* Answers.h */,
+				A0F1CBE6912ED7933B134CCDB79D0827 /* CLSAttributes.h */,
+				864AD48A084B565461C3E2D62EAA0DC1 /* CLSLogging.h */,
+				45E79C0425BEC3AFE59F480E6717EEF4 /* CLSReport.h */,
+				1F05894006D38952A355B6E57BF8C053 /* CLSStackFrame.h */,
+				74DFD105847212874B0DFDAB0F223142 /* Crashlytics.h */,
+				F64C9C8E514F1745E0B806BA8C1DC772 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
 			sourceTree = "<group>";
 		};
 		E776B0250230B1D4BEAA8D3730A455BA /* Products */ = {
@@ -422,6 +424,14 @@
 				F360784EAEEC912BE56D433A1DF76DF4 /* libPods-CetaceaUITests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F64C9C8E514F1745E0B806BA8C1DC772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F9A27FBAFD9E57BB93E998CC24767B3 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,14 +457,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85700BAD3BD246C4D3C967659FA5DB15 /* DateTools.h in Headers */,
-				264E110246129B300E8E3B8AFED4AF21 /* DTConstants.h in Headers */,
-				9F87A9E07319BBB939FA80A674487266 /* DTError.h in Headers */,
-				5F8947589F39D9FBAFCC162F084466F3 /* DTTimePeriod.h in Headers */,
-				57BBACC29CE7F8B64508970E40823BAA /* DTTimePeriodChain.h in Headers */,
-				3C6529137AB326EC72AF3A7644913A21 /* DTTimePeriodCollection.h in Headers */,
-				92075C06E2C1271FCF9FB8DA1F8709BA /* DTTimePeriodGroup.h in Headers */,
-				B383101C7D3D3C0934AE070B6428DA38 /* NSDate+DateTools.h in Headers */,
+				CE81BC53D882D3F019851A8C5484AE34 /* DateTools.h in Headers */,
+				459C19578B10D2B8FFE310C08DF0A158 /* DTConstants.h in Headers */,
+				8939372738F31A50143E6834E0170115 /* DTError.h in Headers */,
+				58CC47E8795758ADC5595F0F535B6668 /* DTTimePeriod.h in Headers */,
+				14184157813D242A13DB36DF7A347E77 /* DTTimePeriodChain.h in Headers */,
+				88AE21309A6D38A0E4CBA266D7D75D3B /* DTTimePeriodCollection.h in Headers */,
+				C3CD809B67C375CF9A41EAEEAB450627 /* DTTimePeriodGroup.h in Headers */,
+				11BF5D0D08E1DD5F472DE7457707362C /* NSDate+DateTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,13 +623,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBF80DE4F099412E8E62AAFDF633ABC /* DateTools-dummy.m in Sources */,
-				71990C99231B8750E458FFEF2A9217FB /* DTConstants.m in Sources */,
-				2E4DE0024E20F8E7CE6FE1DDF35D894B /* DTError.m in Sources */,
-				7185B2EF74C50A9F484B2DD73F0CF9E7 /* DTTimePeriod.m in Sources */,
-				8088D524522D512F034796C2B9415B99 /* DTTimePeriodChain.m in Sources */,
-				62E55CEFBD08A23FD51FFD4EA1C348D5 /* DTTimePeriodCollection.m in Sources */,
-				FB43909B99CE9589176D5CA6065A93E9 /* DTTimePeriodGroup.m in Sources */,
-				02960C3D34F5BF6242CBF59FC7E6BDDD /* NSDate+DateTools.m in Sources */,
+				4A16FEFACBFAD9F6DB17A9A4BE104089 /* DTConstants.m in Sources */,
+				B4A60C0321ECF9AACCA2AB6B801D312F /* DTError.m in Sources */,
+				A293E4C20F6FA4C785DE46BAE7C68717 /* DTTimePeriod.m in Sources */,
+				94DAB0CEDBF25C57347627861A8746CC /* DTTimePeriodChain.m in Sources */,
+				BBE0C75505D535DCBF790FB53D50CBC4 /* DTTimePeriodCollection.m in Sources */,
+				EF5B28C0C917AA1461BB60386595D57C /* DTTimePeriodGroup.m in Sources */,
+				7427BC55317BB620B5244DF3FE7C8B5A /* NSDate+DateTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,7 +711,7 @@
 		};
 		0A15D8BE13DB319F9CC1C7E8E4E13D9F /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -722,30 +732,6 @@
 				SDKROOT = macosx;
 			};
 			name = "Non-AppStore";
-		};
-		0F0B17807043847788DE1A0B7050E82D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
 		};
 		13E114C9FB2599A854363BD4AA458408 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -861,6 +847,30 @@
 			};
 			name = "Non-AppStore";
 		};
+		354EA699235A937BDD3D3FD842C48EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		40CEC5E67276699D6E8DE74E09204BF5 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37D21D7A51C300AB9522271C2ADD171D /* Pods-CetaceaUITests.non-appstore.xcconfig */;
@@ -913,7 +923,7 @@
 		};
 		48C12566EFF43239D4CD2122F94F6C14 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -975,6 +985,30 @@
 			};
 			name = Release;
 		};
+		60FCDE521B842CA934C319675BA8BD53 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = "Non-AppStore";
+		};
 		7280EB7DC0E3F3A4E1305C8C923FDF59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D2DC1BBFD43E5C6163C256D5D92CE14 /* Pods-Cetacea.debug.xcconfig */;
@@ -1002,7 +1036,7 @@
 		};
 		836E6F19CBDC8B6719A7FC9FB70456F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1049,54 +1083,6 @@
 			};
 			name = Release;
 		};
-		87BF107702EA3F5067FC4144ECFBCB54 /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = AppStore;
-		};
-		9A6CB1679745F722E4A9FB048318CCA5 /* Non-AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = "Non-AppStore";
-		};
 		A8BCBF41A560DB42AC287ACAE9D2846E /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D02A942EF8015054DFEF0E16EBA2953A /* Pods-CetaceaUITests.appstore.xcconfig */;
@@ -1119,6 +1105,30 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = AppStore;
+		};
+		AB234B7D956F89D3211966A029E990A0 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
 			};
 			name = AppStore;
 		};
@@ -1230,6 +1240,30 @@
 			};
 			name = AppStore;
 		};
+		E7EF71C11F4C6A744976D6267F82B9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3231FD2104842B8243C8C5F82C79DEB9 /* DateTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
 		F3EA76E94714684DA9EDD89BAF1243C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C1B344C6EF6B73B161C90586D05EB50 /* Pods-CetaceaUITests.release.xcconfig */;
@@ -1255,33 +1289,9 @@
 			};
 			name = Release;
 		};
-		F67AEA0AF0B36E7552A3F7754A52FB32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3036080AA3CE945300D982A9F8ACD2D3 /* DateTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				EXECUTABLE_PREFIX = lib;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools/DateTools-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
 		FD297A687579F2C18FF15643F00BDCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8954A12E985EFA955A2EB5DC7769B6F5 /* MMMarkdown.xcconfig */;
+			baseConfigurationReference = E05120B94FF209ABB4E00AC665412385 /* MMMarkdown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1364,10 +1374,10 @@
 		A205ABDB0494CA47BE66056B75FCDDBA /* Build configuration list for PBXNativeTarget "DateTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87BF107702EA3F5067FC4144ECFBCB54 /* AppStore */,
-				F67AEA0AF0B36E7552A3F7754A52FB32 /* Debug */,
-				9A6CB1679745F722E4A9FB048318CCA5 /* Non-AppStore */,
-				0F0B17807043847788DE1A0B7050E82D /* Release */,
+				AB234B7D956F89D3211966A029E990A0 /* AppStore */,
+				E7EF71C11F4C6A744976D6267F82B9ED /* Debug */,
+				60FCDE521B842CA934C319675BA8BD53 /* Non-AppStore */,
+				354EA699235A937BDD3D3FD842C48EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

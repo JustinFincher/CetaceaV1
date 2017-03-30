@@ -9,9 +9,6 @@ script:
   -workspace Cetacea-Mac/Cetacea.xcworkspace
   -scheme CetaceaTravisCI
   build
-  ONLY_ACTIVE_ARCH=NO
-  CODE_SIGN_IDENTITY=""
-  CODE_SIGNING_REQUIRED=NO
 
 before_install:
   - brew update

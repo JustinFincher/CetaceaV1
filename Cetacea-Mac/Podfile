@@ -8,10 +8,11 @@ target 'Cetacea' do
   # Pods for Cetacea
 pod 'MMMarkdown'
 pod 'DateTools'
-pod 'Sparkle'
-pod 'HockeySDK-Mac', '~> 4.1.1'
-
+#pod 'Sparkle'
+pod 'Fabric'
+pod 'Crashlytics'
 #pod 'SyntaxKit'
+
   target 'CetaceaTests' do
     inherit! :search_paths
     # Pods for testing

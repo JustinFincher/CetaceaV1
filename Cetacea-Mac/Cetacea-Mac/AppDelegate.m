@@ -10,12 +10,10 @@
 #import "JZiCloudStorageManager.h"
 #import "JZHeader.h"
 
-#import <HockeySDK/HockeySDK.h>
-#import <Sparkle/Sparkle.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
-@interface AppDelegate ()<SUUpdaterDelegate>
-
-@property (weak) IBOutlet SUUpdater *sparkleUpdater;
+@interface AppDelegate ()
 
 @end
 
@@ -24,13 +22,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     
-//    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+//    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];v
 //    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
 //    [NSUserDefaults resetStandardUserDefaults];
 
-    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"e323c3d1d75240f89492b38042bfdbac"];
-//    [[BITHockeyManager sharedHockeyManager].crashManager setAutoSubmitCrashReport: YES];
-    [[BITHockeyManager sharedHockeyManager] startManager];
+    [Fabric with:@[[Crashlytics class]]];
 
     
     // register to observe notifications from the store
@@ -44,8 +40,6 @@
     // instance of your app wasn't running
     [[NSUbiquitousKeyValueStore defaultStore] synchronize];
     
-    self.sparkleUpdater.sendsSystemProfile = YES;
-    
 }
 - (void)storeDidChange:(NSNotification *)aNotification
 {
@@ -58,13 +52,6 @@
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     return YES;
-}
-
-#pragma mark - SUUpdaterDelegate
-- (NSArray *)feedParametersForUpdater:(SUUpdater *)updater
-                 sendingSystemProfile:(BOOL)sendingProfile
-{
-    return [[BITSystemProfile sharedSystemProfile] systemUsageData];
 }
 
 #pragma mark - NSDocumentController

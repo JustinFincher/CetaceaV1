@@ -33,7 +33,7 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.JustZht.Cetacea-Mac</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -41,11 +41,25 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.18</string>
+	<string>0.0.25</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2690</string>
+	<string>2717</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>a16b406fd4e2436ed428a29739ef5d3c14fb0569</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.productivity</string>
 	<key>LSMinimumSystemVersion</key>
@@ -78,7 +92,7 @@
 	<key>SUEnableSystemProfiling</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://rink.hockeyapp.net/api/2/apps/e323c3d1d75240f89492b38042bfdbac</string>
+	<string>https://rink.hockeyapp.net/api/2/apps/0bc8dae04dde46efad91192d663f81ca</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

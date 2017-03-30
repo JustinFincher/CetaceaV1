@@ -1,4 +1,4 @@
-#//
+//
 //  JZEditorPreviewSplitViewController.m
 //  Cetacea-Mac
 //
@@ -62,6 +62,16 @@
                                                  name:@"dayNightThemeSwitched"
                                                object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(splitViewWillResizeSubviews:)
+                                                 name:NSSplitViewWillResizeSubviewsNotification
+                                               object:self.splitView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(splitViewDidResizeSubviews:)
+                                                 name:NSSplitViewDidResizeSubviewsNotification
+                                               object:self.splitView];
+    
     
     foregroundVC = [[JZEditorPreviewSplitViewForegroundBlurViewController alloc] init];
     [self.view addSubview:foregroundVC.view];
@@ -71,6 +81,8 @@
     refreshHighLightCounter = 0;
     refreshHighLightTimer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(refreshHighLightTimerFired:) userInfo:nil repeats:YES];
 
+    [self.editorSplitViewItem setCollapseBehavior:NSSplitViewItemCollapseBehaviorUseConstraints];
+    [self.previewSplitViewItem setCollapseBehavior:NSSplitViewItemCollapseBehaviorUseConstraints];
 }
 - (void)viewWillAppear
 {
@@ -158,6 +170,7 @@
             [self.previewSplitViewItem setCollapsed:YES];
         }
     }
+    [self.splitView adjustSubviews];
 
 }
 - (void)dayNightThemeSwitched:(NSNotification *) notification
@@ -185,6 +198,23 @@
 - (BOOL)isRightPreviewViewCollapsed
 {
     return _previewSplitViewItem.collapsed;
+}
+- (void)splitViewWillResizeSubviews:(NSNotification *)notification
+{
+    
+}
+- (void)splitViewDidResizeSubviews:(NSNotification *)notification
+{
+
+}
+- (NSRect)splitView:(NSSplitView *)splitView effectiveRect:(NSRect)proposedEffectiveRect forDrawnRect:(NSRect)drawnRect ofDividerAtIndex:(NSInteger)dividerIndex
+{
+    if (splitView == self.splitView)
+    {
+        // make divider not draggable
+        return NSZeroRect;
+    }
+    return [super splitView:splitView effectiveRect:proposedEffectiveRect forDrawnRect:drawnRect ofDividerAtIndex:dividerIndex];
 }
 
 @end
