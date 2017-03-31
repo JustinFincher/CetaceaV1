@@ -107,7 +107,20 @@
 -(void)textDidChange:(NSNotification *)notification
 {
     [[NSNotificationCenter defaultCenter] postNotificationName: @"markdownEditorTextDidChanged" object:nil userInfo:nil];
+    
+    __block int wordCount = 0;
+    __block int charCount = 0;
+    [self.editorTextView.string enumerateSubstringsInRange:NSMakeRange(0, [self.editorTextView.string length])
+                               options:NSStringEnumerationByWords
+                            usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
+                                wordCount += 1;
+                                charCount += substringRange.length;
+                            }];
+    NSLog(@"%d", wordCount); // Output: 4
+    NSLog(@"%d", charCount); // Output: 16
+    self.editorBottomStatLabel.stringValue = [NSString stringWithFormat:@"%d words, %d chars",wordCount,charCount];
 }
+
 - (void)textView:(NSTextView *)textView
    clickedOnCell:(id<NSTextAttachmentCell>)cell
           inRect:(NSRect)cellFrame

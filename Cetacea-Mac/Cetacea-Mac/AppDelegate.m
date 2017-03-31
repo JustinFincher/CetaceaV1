@@ -19,14 +19,15 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"NSApplicationCrashOnExceptions": @YES }];
+#if DEBUG
     
-    
-//    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];v
-//    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
-//    [NSUserDefaults resetStandardUserDefaults];
-
+#else
     [Fabric with:@[[Crashlytics class]]];
+#endif
+    
 
     
     // register to observe notifications from the store

@@ -72,7 +72,7 @@
     NSString *jqueryContent = [NSString stringWithContentsOfFile:jqueryPath encoding:NSUTF8StringEncoding error:nil];
     [self addJSStringToHead:jqueryContent byDomDocument:domDocument];
     
-    NSString *csspath = [[NSBundle mainBundle] pathForResource:@"monokai-sublime" ofType:@"css"];
+    NSString *csspath = [[NSBundle mainBundle] pathForResource:@"atom-one-light" ofType:@"css"];
     NSString *csscontent = [NSString stringWithContentsOfFile:csspath encoding:NSUTF8StringEncoding error:nil];
     [self addCSSStringToHead:csscontent byDomDocument:domDocument];
     

@@ -13,6 +13,8 @@
 @interface JZEditorViewController : NSViewController
 @property (weak) IBOutlet NSScrollView *editorScrollView;
 @property (unsafe_unretained) IBOutlet JZEditorTextView *editorTextView;
+@property (weak) IBOutlet NSView *editorBottomHelperView;
+@property (weak) IBOutlet NSTextField *editorBottomStatLabel;
 
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;
