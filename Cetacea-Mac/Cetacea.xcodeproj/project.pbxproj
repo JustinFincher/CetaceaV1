@@ -19,6 +19,7 @@
 		0D4FBA141D2C3AC7001821A2 /* JZEditorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */; };
 		0D5F324A1D25828A00566B82 /* JZAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F32491D25828A00566B82 /* JZAboutWindowController.m */; };
 		0D5F324D1D258B3200566B82 /* JZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5F324C1D258B3200566B82 /* JZAboutViewController.m */; };
+		0D619F071E8E06830081DFA4 /* JZApplicationInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D619F061E8E06830081DFA4 /* JZApplicationInfoManager.m */; };
 		0D6A5E1D1D2100BB00211AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */; };
 		0D6A5E201D2100BB00211AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6A5E1F1D2100BB00211AFC /* main.m */; };
 		0D6A5E251D2100BB00211AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D6A5E241D2100BB00211AFC /* Assets.xcassets */; };
@@ -118,6 +119,8 @@
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
 		0D5F324C1D258B3200566B82 /* JZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutViewController.m; sourceTree = "<group>"; };
+		0D619F051E8E06830081DFA4 /* JZApplicationInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZApplicationInfoManager.h; sourceTree = "<group>"; };
+		0D619F061E8E06830081DFA4 /* JZApplicationInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZApplicationInfoManager.m; sourceTree = "<group>"; };
 		0D6A5E181D2100BB00211AFC /* Cetacea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cetacea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 				0D87A5461D2A7BB400F9DC34 /* JZEditorLayouManager.m */,
 				0D9D90321D32741B005F91F6 /* KeyValueObserver.h */,
 				0D9D90331D32741B005F91F6 /* KeyValueObserver.m */,
+				0D619F051E8E06830081DFA4 /* JZApplicationInfoManager.h */,
+				0D619F061E8E06830081DFA4 /* JZApplicationInfoManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -915,6 +920,7 @@
 				0D4FB9C01D2B8A85001821A2 /* JZFolderOutlineCellView.m in Sources */,
 				0D9D902C1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m in Sources */,
 				0D9D90271D312D4B005F91F6 /* MKColorWell.m in Sources */,
+				0D619F071E8E06830081DFA4 /* JZApplicationInfoManager.m in Sources */,
 				0D9D90281D312D4B005F91F6 /* MKColorWell+Bindings.m in Sources */,
 				0D87A5351D29ACC700F9DC34 /* TSBaseParser.m in Sources */,
 				0DB4CD451DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m in Sources */,
@@ -1091,7 +1097,7 @@
 				);
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1115,7 +1121,7 @@
 				);
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1232,7 +1238,7 @@
 				);
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1323,7 +1329,7 @@
 				);
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

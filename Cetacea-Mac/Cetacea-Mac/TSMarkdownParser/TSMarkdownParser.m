@@ -116,7 +116,7 @@ typedef NSFont UIFont;
         } else {
             if (!weakParser.skipLinkAttribute) {
                 NSURL *url = [NSURL URLWithString:link] ?: [NSURL URLWithString:
-                                                            [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                                                            [link stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
                 if (url.scheme) {
                     [attributedString addAttribute:NSLinkAttributeName
                                              value:url
@@ -130,7 +130,7 @@ typedef NSFont UIFont;
     [defaultParser addLinkParsingWithLinkFormattingBlock:^(NSMutableAttributedString *attributedString, NSRange range, NSString * _Nullable link) {
         if (!weakParser.skipLinkAttribute) {
             NSURL *url = [NSURL URLWithString:link] ?: [NSURL URLWithString:
-                                                        [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                                                        [link stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
             if (url) {
                 [attributedString addAttribute:NSLinkAttributeName
                                          value:url

@@ -8,9 +8,10 @@
 
 #import "JZPreviewViewController.h"
 #import <MMMarkdown/MMMarkdown.h>
+#import "JZHeader.h"
 
 
-@interface JZPreviewViewController ()
+@interface JZPreviewViewController ()<WebFrameLoadDelegate>
 
 @property (weak, nonatomic) JZiCloudFileExtensionCetaceaDocument *currentEditingMarkdown;
 
@@ -21,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
     [self.previewWebView setDrawsBackground:NO];
+    self.previewWebView.frameLoadDelegate = self;
     self.previewHtmlString = [NSString stringWithFormat:@""];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -55,4 +56,16 @@
 {
     
 }
+
+#pragma mark - WebFrameLoadDelegate
+- (void)webView:(WebView *)webView didClearWindowObject:(WebScriptObject *)windowObject forFrame:(WebFrame *)frame
+{
+    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getBuildNumber] forKey:@"AppBuildNumber"];
+    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getAppVersion] forKey:@"AppVersion"];
+}
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
+{
+    
+}
+
 @end

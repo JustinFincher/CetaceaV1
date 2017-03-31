@@ -15,4 +15,6 @@
 #   define JZLog(...)
 #endif
 
+#import "JZApplicationInfoManager.h"
+
 #endif /* JZHeader_h */

@@ -247,7 +247,7 @@
             NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
             
             NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
-            NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+            NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
             [attributedString addAttributes:weakSelf.JZImageTextAttributes range:match.range];
             [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
         }
@@ -267,7 +267,7 @@
         NSRange linkRange = NSMakeRange(imagePathStart, match.range.length + match.range.location - imagePathStart - 1);
         
         NSString *imagePath = [attributedString.string substringWithRange:NSMakeRange(linkRange.location + 1, linkRange.length - 1)];
-        NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        NSURL *imageURL = [NSURL URLWithString:[imagePath stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLPathAllowedCharacterSet]]];
         [attributedString addAttributes:weakSelf.JZLinkTextAttributes range:match.range];
         [attributedString addAttribute:NSLinkAttributeName value:imageURL range:linkRange];
     };
