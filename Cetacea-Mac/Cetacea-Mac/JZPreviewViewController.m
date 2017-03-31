@@ -32,13 +32,11 @@
                                                object:nil];
     
 }
-
-- (void)setPreviewHtmlString:(NSString *)previewHtmlString
+- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    _previewHtmlString = previewHtmlString;
-    [[self.previewWebView mainFrame] loadHTMLString:_previewHtmlString baseURL:[NSURL URLWithString:@""]];
+    _currentEditingMarkdown = currentEditingMarkdown;
+    [self refreshPreview];
 }
-
 - (void)refreshPreview
 {
     if (_currentEditingMarkdown)
@@ -46,10 +44,10 @@
         self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:_currentEditingMarkdown.markdownString extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
     }
 }
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
+- (void)setPreviewHtmlString:(NSString *)previewHtmlString
 {
-    _currentEditingMarkdown = currentEditingMarkdown;
-    [self refreshPreview];
+    _previewHtmlString = previewHtmlString;
+    [[self.previewWebView mainFrame] loadHTMLString:_previewHtmlString baseURL:[NSURL URLWithString:@""]];
 }
 
 - (void)dayNightThemeSwitched:(NSNotification *)aNotification
@@ -60,12 +58,49 @@
 #pragma mark - WebFrameLoadDelegate
 - (void)webView:(WebView *)webView didClearWindowObject:(WebScriptObject *)windowObject forFrame:(WebFrame *)frame
 {
-    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getBuildNumber] forKey:@"AppBuildNumber"];
-    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getAppVersion] forKey:@"AppVersion"];
+    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getBuildNumber] forKey:@"CetaceaMainAppBuildNumber"];
+    [windowObject setValue:[[JZApplicationInfoManager sharedManager] getAppVersion] forKey:@"CetaceaMainAppVersion"];
+}
+- (void)webView:(WebView *)sender didCommitLoadForFrame:(WebFrame *)frame
+{
+    
 }
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
 {
+    DOMDocument* domDocument = [sender mainFrameDocument];
+    NSString *jqueryPath = [[NSBundle mainBundle] pathForResource:@"jquery.min" ofType:@"js"];
+    NSString *jqueryContent = [NSString stringWithContentsOfFile:jqueryPath encoding:NSUTF8StringEncoding error:nil];
+    [self addJSStringToHead:jqueryContent byDomDocument:domDocument];
     
+    NSString *csspath = [[NSBundle mainBundle] pathForResource:@"monokai-sublime" ofType:@"css"];
+    NSString *csscontent = [NSString stringWithContentsOfFile:csspath encoding:NSUTF8StringEncoding error:nil];
+    [self addCSSStringToHead:csscontent byDomDocument:domDocument];
+    
+    NSString *jspath = [[NSBundle mainBundle] pathForResource:@"highlight.pack" ofType:@"js"];
+    NSString *jscontent = [NSString stringWithContentsOfFile:jspath encoding:NSUTF8StringEncoding error:nil];
+    [self addJSStringToHead:jscontent byDomDocument:domDocument];
+    
+    [self addJSStringToHead:@"$(document).ready(function() {$('pre code').each(function(i, block) {hljs.highlightBlock(block);});});" byDomDocument:domDocument];
+}
+#pragma mark - Helpers
+- (void)addCSSStringToHead:(NSString *)string
+       byDomDocument:(DOMDocument *)domDocument
+{
+    DOMElement* styleElement = [domDocument createElement:@"style"];
+    [styleElement setAttribute:@"type" value:@"text/css"];
+    DOMText* cssText = [domDocument createTextNode:string];
+    [styleElement appendChild:cssText];
+    DOMElement* headElement=(DOMElement*)[[domDocument getElementsByTagName:@"head"] item:0];
+    [headElement appendChild:styleElement];
+}
+- (void)addJSStringToHead:(NSString *)string
+             byDomDocument:(DOMDocument *)domDocument
+{
+    DOMElement* styleElement = [domDocument createElement:@"script"];
+    DOMText* jsText = [domDocument createTextNode:string];
+    [styleElement appendChild:jsText];
+    DOMElement* headElement=(DOMElement*)[[domDocument getElementsByTagName:@"head"] item:0];
+    [headElement appendChild:styleElement];
 }
 
 @end
