@@ -8,7 +8,7 @@
 
 #import "JZSettingsApperanceViewController.h"
 #import "JZdayNightThemeManager.h"
-#import "DateTools.h"
+#import "JZHeader.h"
 #import "JZiCloudFileExtensionCetaceaThemeDoc.h"
 #import "JZSettingsHighlightThemeEditViewController.h"
 

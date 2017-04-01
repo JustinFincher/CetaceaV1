@@ -2,6 +2,7 @@ PODS:
   - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - DateTools (2.0.0)
+  - DynamicColor (3.2.1)
   - Fabric (1.6.11)
   - MMMarkdown (0.5.5)
   - ReactiveObjC (2.1.2)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Crashlytics
   - DateTools
+  - DynamicColor (~> 3.2.1)
   - Fabric
   - MMMarkdown
   - ReactiveObjC
@@ -16,10 +18,11 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
+  DynamicColor: 4786d650c69da6c3f2cbfe068348288ec4e5521f
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
 
-PODFILE CHECKSUM: 9266adab5b8b07d672f45609b4504de4b4b6e316
+PODFILE CHECKSUM: 3c0d171811d94e39bf471c6728499d315fd57be4
 
 COCOAPODS: 1.2.0

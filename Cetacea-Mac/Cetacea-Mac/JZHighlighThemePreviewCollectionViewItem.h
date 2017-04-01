@@ -15,9 +15,7 @@
 @property (weak) IBOutlet NSScrollView *themePreviewScrollView;
 @property (unsafe_unretained) IBOutlet JZEditorTextView *themePreviewTextView;
 
-@property (nonatomic) BOOL isAddState;
 @property (nonatomic,strong) NSColor *shadowColor;
-- (void)initWithisAddButton:(BOOL)isAdd
-                      Theme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
-                  themeName:(NSString *)string;
+- (void)initWithTheme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
+            themeName:(NSString *)string;
 @end

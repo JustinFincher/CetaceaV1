@@ -9,6 +9,7 @@
 #import "JZHeader.h"
 #import "JZHighlighThemePreviewCollectionViewItem.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
+#import "DynamicColor-Swift.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem ()
 
@@ -19,42 +20,38 @@
 
 @implementation JZHighlighThemePreviewCollectionViewItem
 
-- (void)initWithisAddButton:(BOOL)isAdd
-                      Theme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
-                  themeName:(NSString *)string
+- (void)initWithTheme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
+            themeName:(NSString *)string
 {
     [_themePreviewTextView setEditable:NO];
     _themePreviewScrollView.hasVerticalScroller = NO;
     [_themePreviewScrollView setWantsLayer:YES];
     _themePreviewScrollView.layer.masksToBounds = YES;
     
-    if (_shadow == nil)
+    if (self.shadow == nil)
     {
-        _shadow = [[NSShadow alloc] init];
+        self.shadow = [[NSShadow alloc] init];
     }
-    [_shadow setShadowOffset:NSMakeSize(0, -3.0)];
-    [_shadow setShadowBlurRadius:10.0f];
-    if (isAdd)
-    {
-        self.themeName.stringValue = @"Add New";
-        _themePreviewTextView.string = @"Add New Markdown Theme Here";
-        _shadow.shadowColor = [NSColor blackColor];
-    }else
-    {
-        self.themeName.stringValue = string;
-        _shadow.shadowColor = [doc.getData getBackgroundColor];
-        //high light
-        _themePreviewTextView.string = JZ_MARKDOWN_SAMPLE_TEXT;
-        _themePreviewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
-        _themePreviewTextView.parser.themeDoc = doc;
-        [_themePreviewTextView.parser refreshAttributesTheme];
-        [_themePreviewTextView.textStorage setAttributedString: [_themePreviewTextView.parser attributedStringFromMarkdown:_themePreviewTextView.string]];
-    }
-
+    [self.shadow setShadowOffset:NSMakeSize(0, -3.0)];
+    [self.shadow setShadowBlurRadius:10.0f];
+    self.shadow.shadowColor = [JZColor blackColor];
+    
     [self.shadowView setWantsLayer:YES];
     self.shadowView.layer.backgroundColor = [NSColor whiteColor].CGColor;
     self.shadowView.layer.masksToBounds = NO;
-    [self.shadowView setShadow:_shadow];
+    [self.shadowView setShadow:self.shadow];
+    
+    self.themeName.stringValue = string;
+    
+    JZColor *color = [doc.getData getBackgroundColor];
+    _shadow.shadowColor = [color isLight] ? [color darkened:0.2] : [color lighter:0.2];
+    
+    //high light
+    _themePreviewTextView.string = JZ_MARKDOWN_SAMPLE_TEXT;
+    _themePreviewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+    _themePreviewTextView.parser.themeDoc = doc;
+    [_themePreviewTextView.parser refreshAttributesTheme];
+    [_themePreviewTextView.textStorage setAttributedString: [_themePreviewTextView.parser attributedStringFromMarkdown:_themePreviewTextView.string]];
     [_themePreviewScrollView.layer setCornerRadius:5.0f];
     _themePreviewScrollView.layer.masksToBounds = YES;
     [_themePreviewScrollView.contentView setWantsLayer:YES];

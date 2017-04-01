@@ -18,6 +18,7 @@
 #import "JZApplicationInfoManager.h"
 #import "JZStaticValues.h"
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <DateTools/DateTools.h>
 #import "JZColorDataModel.h"
 
 #endif /* JZHeader_h */

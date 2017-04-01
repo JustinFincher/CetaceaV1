@@ -57,6 +57,7 @@
                                              selector:@selector(themeChangedOnHighLightEditView:)
                                                  name:@"themeChangedOnHighLightEditView"
                                                object:nil];
+    [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
 }
 - (void)viewDidAppear

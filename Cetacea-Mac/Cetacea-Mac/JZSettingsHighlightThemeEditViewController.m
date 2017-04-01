@@ -42,8 +42,9 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorInThemeFileChanged:) name:JZ_NOTIFICATION_HIGHLIGHT_THEME_COLOR_CHANGED object:nil];
 }
 
- - (void)viewDidAppear
+- (void)viewDidAppear
 {
+    [super viewDidAppear];
     if (self.doc == nil)
     {
         self.doc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
@@ -66,8 +67,8 @@
     {
         self.previewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
     }
-    [self.previewTextView.parser refreshAttributesTheme];
     self.previewTextView.parser.themeDoc = self.doc;
+    [self.previewTextView.parser refreshAttributesTheme];
     [self.previewTextView refreshHightLight];
 }
 - (IBAction)comfirmnUseButtonPressed:(NSButton *)sender

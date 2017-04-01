@@ -87,6 +87,31 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
+fi
+if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
+fi
+if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

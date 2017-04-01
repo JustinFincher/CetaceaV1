@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C8E599315381B245F606F64666A5D21"
-               BuildableName = "libPods-Cetacea.a"
+               BlueprintIdentifier = "2C8F11012C5CF8730D084ADDEB5F0FD7"
+               BuildableName = "Pods_Cetacea.framework"
                BlueprintName = "Pods-Cetacea"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
             </BuildableReference>

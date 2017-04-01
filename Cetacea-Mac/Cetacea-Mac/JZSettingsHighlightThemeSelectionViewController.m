@@ -36,6 +36,10 @@
                                                object:nil];
     
 }
+- (void)viewWillAppear
+{
+    [self reload];
+}
 - (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
 {
     [self reload];
@@ -79,18 +83,14 @@
      itemForRepresentedObjectAtIndexPath:(NSIndexPath *)indexPath
 {
     JZHighlighThemePreviewCollectionViewItem *item = [collectionView makeItemWithIdentifier:@"JZHighlighThemePreviewCollectionViewItem" forIndexPath:indexPath];
-    BOOL isAddButton = NO;
+    
     JZiCloudFileExtensionCetaceaThemeDoc *doc;
     NSString *themeName;
     NSColor *shadowColor;
-    if (!isAddButton)
-    {
-        doc = [self.themeArray objectAtIndex:indexPath.item];
-        themeName = doc.data.themeName;
-        shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor color];
-        [item initWithisAddButton:isAddButton Theme:doc themeName:themeName];
-
-    }
+    doc = [self.themeArray objectAtIndex:indexPath.item];
+    themeName = doc.data.themeName;
+    shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor color];
+    [item initWithTheme:doc themeName:themeName];
     return item;
 }
 
@@ -107,6 +107,7 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
     {
         JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:(path.item)];
         [self showThemeDoc:doc];
+        // reset selection
         self.collectionView.selectionIndexPaths = [NSSet set];
     }
 }
@@ -115,10 +116,8 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
 - (void)createNewAndShow
 {
     JZiCloudFileExtensionCetaceaThemeDoc *new = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
-    //[new saveData];
     [self reload];
     [self showThemeDoc:new];
-    
 }
 - (IBAction)addButtonPressed:(id)sender {
     [self createNewAndShow];
