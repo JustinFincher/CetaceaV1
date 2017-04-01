@@ -38,6 +38,7 @@
 }
 - (void)viewWillAppear
 {
+    [super viewWillAppear];
     [self reload];
 }
 - (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification

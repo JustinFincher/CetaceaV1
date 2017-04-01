@@ -193,7 +193,6 @@
     return _staticData;
 }
 
-#pragma mark - KVO Stuff
 - (void)setDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
 {
     _doc = doc;
@@ -330,6 +329,7 @@
 {
     NSTextField *field = [obj object];
     self.doc.data.themeName = [field stringValue];
+    [self.doc saveData];
 }
 
 

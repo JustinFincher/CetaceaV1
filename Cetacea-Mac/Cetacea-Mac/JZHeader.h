@@ -20,5 +20,6 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <DateTools/DateTools.h>
 #import "JZColorDataModel.h"
+#import "DynamicColor-Swift.h"
 
 #endif /* JZHeader_h */

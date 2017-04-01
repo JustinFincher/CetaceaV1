@@ -6,6 +6,7 @@
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
 #import "JZdayNightThemeManager.h"
+#import "JZHeader.h"
 #import "JZEditorHighlightThemeDataModel.h"
 
 @implementation JZEditorHighlightThemeDataModel
@@ -100,6 +101,15 @@
 - (NSColor *)getBackgroundColor
 {
     NSColor *backgroundViewColor = [self shouldApplyLightTheme]? [self.EditorViewDataModel.lightBackgroundBlockColor color] : [self.EditorViewDataModel.darkBackgroundBlockColor color];
+    return backgroundViewColor;
+}
+- (NSColor *)getNonAlphaBackgroundColor
+{
+    NSColor *backgroundViewColor = [self shouldApplyLightTheme]? [self.EditorViewDataModel.lightBackgroundBlockColor color] : [self.EditorViewDataModel.darkBackgroundBlockColor color];
+    if (backgroundViewColor.alphaComponent < 1.0f)
+    {
+        backgroundViewColor = [self shouldApplyLightTheme]? JZColor.blackColor : JZColor.whiteColor;
+    }
     return backgroundViewColor;
 }
 - (NSColor *)getRulerViewBackgroundColor

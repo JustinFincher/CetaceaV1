@@ -76,14 +76,22 @@
     
     [self createDataPath];
     
-    _data.previewJPG = [self getPreviewImage];
-    
-    NSString *dataPath = [self.docPath stringByAppendingPathComponent:@"data.plist"];
-    NSMutableData *data = [[NSMutableData alloc] init];
-    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
-    [archiver encodeObject:_data forKey:@"Data"];
-    [archiver finishEncoding];
-    [data writeToFile:dataPath atomically:YES];
+    NSOperationQueue *saveQuene = [[NSOperationQueue alloc] init];
+    [saveQuene addOperationWithBlock:^{
+        
+        // Background work
+        //    _data.previewJPG = [self getPreviewImage];
+        NSString *dataPath = [self.docPath stringByAppendingPathComponent:@"data.plist"];
+        NSMutableData *data = [[NSMutableData alloc] init];
+        NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+        [archiver encodeObject:_data forKey:@"Data"];
+        [archiver finishEncoding];
+        [data writeToFile:dataPath atomically:YES];
+        
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // Main thread work (UI usually)
+        }];
+    }];
 }
 - (void)deleteDoc {
     

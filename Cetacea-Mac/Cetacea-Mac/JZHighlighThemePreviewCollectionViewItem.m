@@ -32,9 +32,11 @@
     {
         self.shadow = [[NSShadow alloc] init];
     }
-    [self.shadow setShadowOffset:NSMakeSize(0, -3.0)];
+    [self.shadow setShadowOffset:NSMakeSize(0, -6.0)];
     [self.shadow setShadowBlurRadius:10.0f];
     self.shadow.shadowColor = [JZColor blackColor];
+    JZColor *color = [doc.getData getNonAlphaBackgroundColor];
+    self.shadow.shadowColor = [color isLight] ? [color darkened:0.5] : [color darkened:0.05];
     
     [self.shadowView setWantsLayer:YES];
     self.shadowView.layer.backgroundColor = [NSColor whiteColor].CGColor;
@@ -42,9 +44,6 @@
     [self.shadowView setShadow:self.shadow];
     
     self.themeName.stringValue = string;
-    
-    JZColor *color = [doc.getData getBackgroundColor];
-    _shadow.shadowColor = [color isLight] ? [color darkened:0.2] : [color lighter:0.2];
     
     //high light
     _themePreviewTextView.string = JZ_MARKDOWN_SAMPLE_TEXT;
