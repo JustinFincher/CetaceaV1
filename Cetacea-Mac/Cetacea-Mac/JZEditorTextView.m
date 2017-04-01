@@ -55,6 +55,7 @@
     
     _hasSetup = YES;
     JZLog(@"setupTextView");
+    self.wantsLayer = YES;
     self.automaticDashSubstitutionEnabled = NO;
     if (self.enclosingScrollView)
     {
@@ -115,7 +116,10 @@
         //不在输入拼音
         NSRange range = self.selectedRange;
         NSAttributedString *attrString = [self proccessTextWithVisibleRectOnly];
-        [self.textStorage setAttributedString: attrString];
+        if (attrString != nil)
+        {
+            [self.textStorage setAttributedString: attrString];
+        }
         
         if ([attrString.string length] >= range.location + range.length)
         {

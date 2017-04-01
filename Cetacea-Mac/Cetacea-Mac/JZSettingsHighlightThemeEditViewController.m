@@ -5,25 +5,25 @@
 //  Created by Fincher Justin on 16/7/8.
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
-
+#import "JZHeader.h"
 #import "JZSettingsHighlightThemeEditViewController.h"
 
 #import "JZSettingsApperanceThemeTableViewLightCellView.h"
 #import "JZSettingsApperanceThemeTableViewTagCellView.h"
 #import "JZSettingsApperanceThemeTableViewDarkCellView.h"
 #import "JZSettingsApperanceThemeTableViewSyntaxCellView.h"
-#import "KeyValueObserver.h"
-
 #import "JZEditorHighlightThemeSingleRowDataModel.h"
 #import "JZdayNightThemeManager.h"
 
 #import "JZEditorHighlightThemeManager.h"
+#import "JZEditorTextView.h"
+#import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
 @interface JZSettingsHighlightThemeEditViewController ()<NSTableViewDelegate,NSTableViewDataSource,NSTextFieldDelegate>
 @property (weak) IBOutlet NSScrollView *scrollView;
 @property (weak) IBOutlet NSTableView *tableView;
-@property (nonatomic, strong) id themeObserveToken;
 @property (weak) IBOutlet NSTextField *themeNameTextField;
+@property (unsafe_unretained) IBOutlet JZEditorTextView *previewTextView;
 
 @end
 
@@ -36,35 +36,45 @@
     if (self.doc)
     {
         self.themeNameTextField.stringValue = self.doc.data.themeName;
+        [self.previewTextView setString:JZ_MARKDOWN_SAMPLE_TEXT];
         [self.tableView reloadData];
     }
-        
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorInThemeFileChanged:) name:JZ_NOTIFICATION_HIGHLIGHT_THEME_COLOR_CHANGED object:nil];
 }
 
  - (void)viewDidAppear
 {
     if (self.doc == nil)
     {
-#warning this
         self.doc = [[JZiCloudFileExtensionCetaceaThemeDoc alloc] initWithDocPath:[[JZiCloudFileExtensionCetaceaThemeDataBase sharedManager] nextDocPath]];
         [self.tableView reloadData];
     }
+    [self updatePreviewHighlight];
+}
+
+- (void)colorInThemeFileChanged:(NSNotification *)notif
+{
+    if (self.doc)
+    {
+        [self.doc saveData];
+        [self updatePreviewHighlight];
+    }
+}
+- (void)updatePreviewHighlight
+{
+    if (self.previewTextView.parser == nil)
+    {
+        self.previewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+    }
+    [self.previewTextView.parser refreshAttributesTheme];
+    self.previewTextView.parser.themeDoc = self.doc;
+    [self.previewTextView refreshHightLight];
 }
 - (IBAction)comfirmnUseButtonPressed:(NSButton *)sender
 {
     if (self.doc)
     {
-        [self.doc saveData];
         [[JZEditorHighlightThemeManager sharedManager] setSelectedDoc:self.doc];
-        [self dismissViewController:self];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
-//#warning apply theme to userdefaults
-    }
-}
-- (IBAction)comfirmButtonPressed:(id)sender {
-    if (self.doc)
-    {
-        [self.doc saveData];
         [self dismissViewController:self];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
     }
@@ -186,16 +196,6 @@
 - (void)setDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
 {
     _doc = doc;
-    self.themeObserveToken = [KeyValueObserver observeObject:doc
-                                                     keyPath:@"data"
-                                                      target:self
-                                                    selector:@selector(themeDataDidChange:)
-                                                     options:NSKeyValueObservingOptionNew];
-}
-
-- (void)themeDataDidChange:(NSDictionary *)change;
-{
-    
 }
 
 #pragma mark - NSTableViewDataSource
@@ -272,9 +272,9 @@
             cellIdentifer = @"lightThemeCellView";
             NSArray *descrptionArray = [titlesArray objectAtIndex:2];
             JZSettingsApperanceThemeTableViewLightCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
-            [view.foregroundTagColorWell setColor:[dataModel.lightForegroundTagtColor colorFromSelf]];
-            [view.foregroundTextColorWell setColor:[dataModel.lightForegroundTextColor colorFromSelf]];
-            [view.backgroundBlockColorWell setColor:[dataModel.lightBackgroundBlockColor colorFromSelf]];
+            [view.foregroundTagColorWell setColor:[dataModel.lightForegroundTagtColor color]];
+            [view.foregroundTextColorWell setColor:[dataModel.lightForegroundTextColor color]];
+            [view.backgroundBlockColorWell setColor:[dataModel.lightBackgroundBlockColor color]];
             view.foregroundTagColorWell.colorData = dataModel.lightForegroundTagtColor;
             view.foregroundTextColorWell.colorData = dataModel.lightForegroundTextColor;
             view.backgroundBlockColorWell.colorData = dataModel.lightBackgroundBlockColor;
@@ -287,9 +287,9 @@
         {
             cellIdentifer = @"darkThemeCellView";
             JZSettingsApperanceThemeTableViewDarkCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
-            [view.foregroundTagColorWell setColor:[dataModel.darkForegroundTagtColor colorFromSelf]];
-            [view.foregroundTextColorWell setColor:[dataModel.darkForegroundTextColor colorFromSelf]];
-            [view.backgroundBlockColorWell setColor:[dataModel.darkBackgroundBlockColor colorFromSelf]];
+            [view.foregroundTagColorWell setColor:[dataModel.darkForegroundTagtColor color]];
+            [view.foregroundTextColorWell setColor:[dataModel.darkForegroundTextColor color]];
+            [view.backgroundBlockColorWell setColor:[dataModel.darkBackgroundBlockColor color]];
             view.foregroundTagColorWell.colorData = dataModel.darkForegroundTagtColor;
             view.foregroundTextColorWell.colorData = dataModel.darkForegroundTextColor;
             view.backgroundBlockColorWell.colorData = dataModel.darkBackgroundBlockColor;
@@ -309,7 +309,6 @@
     }
     else
     {
-        
         NSDictionary *dict = [[JZSettingsHighlightThemeEditViewController staticData] objectAtIndex:row];
         NSArray* titlesArray = [dict valueForKey:@"SectionTitles"];
         NSString *exampleString = [titlesArray objectAtIndex:1];

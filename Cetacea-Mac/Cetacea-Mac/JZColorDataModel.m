@@ -25,6 +25,7 @@
         self.green = rgbColor.greenComponent;
         self.blue = rgbColor.blueComponent;
         self.alpha = rgbColor.alphaComponent;
+        _color = rgbColor;
     }
     return self;
 }
@@ -36,12 +37,14 @@
         self.green = [decoder decodeFloatForKey:@"green"];
         self.blue = [decoder decodeFloatForKey:@"blue"];
         self.alpha = [decoder decodeFloatForKey:@"alpha"];
+        _color = [decoder decodeObjectForKey:@"color"];
     }
     return self;
 }
-- (void)setSelfColor:(JZColor *)color
+- (void)setColor:(JZColor *)color
 {
     JZColor *rgbColor = [color colorUsingColorSpaceName:@"NSCalibratedRGBColorSpace"];
+    _color = rgbColor;
     self.red = rgbColor.redComponent;
     self.green = rgbColor.greenComponent;
     self.blue = rgbColor.blueComponent;
@@ -53,12 +56,6 @@
     [encoder encodeFloat:self.green forKey:@"green"];
     [encoder encodeFloat:self.blue forKey:@"blue"];
     [encoder encodeFloat:self.alpha forKey:@"alpha"];
+    [encoder encodeObject:self.color forKey:@"color"];
 }
-
-- (JZColor *)colorFromSelf
-{
-    JZColor *color = [JZColor colorWithRed:self.red green:self.green blue:self.blue alpha:self.alpha];
-    return color;
-}
-
 @end

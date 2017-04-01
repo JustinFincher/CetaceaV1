@@ -50,7 +50,7 @@
 
 - (void)changedCustomFont:(id)sender
 {
-    //NSLog(@"New font: %@", [[NSFontManager sharedFontManager] selectedFont]);
+//    NSLog(@"New font: %@", [[NSFontManager sharedFontManager] selectedFont]);
 }
 
 - (CGSize)preferredMinimumSize

@@ -153,6 +153,7 @@
 		0DAF374B1D254A480009C44B /* JZMainListEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DAF374A1D254A480009C44B /* JZMainListEditorSplitViewController.m */; };
 		0DB4CD451DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */; };
 		0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */; };
+		0DD6D15E1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */; };
 		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
 		229BEBBA63633FA90CE2D0EF /* libPods-Cetacea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3F2C385448ADDC0B078CBF /* libPods-Cetacea.a */; };
 		7B1CCB60B5ED709BA2DA538E /* libPods-CetaceaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D455A9311F1111E39CCE61 /* libPods-CetaceaTests.a */; };
@@ -387,6 +388,9 @@
 		0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaThemeDocument.m; sourceTree = "<group>"; };
 		0DC89B9A1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMarkdownListSortSelectionMenu.h; sourceTree = "<group>"; };
 		0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMarkdownListSortSelectionMenu.m; sourceTree = "<group>"; };
+		0DD6D15C1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeColorDataModel.h; sourceTree = "<group>"; };
+		0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeColorDataModel.m; sourceTree = "<group>"; };
+		0DD6D15F1E8E5E4200EA28C8 /* JZStaticValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZStaticValues.h; sourceTree = "<group>"; };
 		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
 		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
@@ -446,14 +450,13 @@
 		0D619F091E8E0A300081DFA4 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				0D619FAD1E8E10620081DFA4 /* jquery.min.js */,
-				0D619F0A1E8E0A490081DFA4 /* highlight.pack.js */,
-				0D619F0C1E8E0A5A0081DFA4 /* styles */,
+				0DD6D1581E8E36D700EA28C8 /* js */,
+				0DD6D1591E8E36DA00EA28C8 /* css */,
 			);
 			name = WebView;
 			sourceTree = "<group>";
 		};
-		0D619F0C1E8E0A5A0081DFA4 /* styles */ = {
+		0D619F0C1E8E0A5A0081DFA4 /* highlightjs.styles */ = {
 			isa = PBXGroup;
 			children = (
 				0D619F0D1E8E0A5A0081DFA4 /* agate.css */,
@@ -537,6 +540,7 @@
 				0D619F5B1E8E0A5A0081DFA4 /* xt256.css */,
 				0D619F5C1E8E0A5A0081DFA4 /* zenburn.css */,
 			);
+			name = highlightjs.styles;
 			path = styles;
 			sourceTree = "<group>";
 		};
@@ -568,6 +572,7 @@
 				0D864A151D21207400F47613 /* Cetacea.entitlements */,
 				0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */,
 				0D98E2641DEC66D100F130E2 /* JZHeader.h */,
+				0DD6D15F1E8E5E4200EA28C8 /* JZStaticValues.h */,
 				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
 				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
 				0D619F081E8E0A130081DFA4 /* Resouces */,
@@ -681,11 +686,11 @@
 			path = TSMarkdownParser;
 			sourceTree = "<group>";
 		};
-		0D9D8FD81D2F917C005F91F6 /* HighlightColorStorage */ = {
+		0D9D8FD81D2F917C005F91F6 /* Highlight File */ = {
 			isa = PBXGroup;
 			children = (
-				0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */,
-				0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */,
+				0DD6D15C1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.h */,
+				0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */,
 				0D9D902A1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.h */,
 				0D9D902B1D3141AC005F91F6 /* JZEditorHighlightThemeSingleRowDataModel.m */,
 				0D9D8FBE1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.h */,
@@ -699,7 +704,7 @@
 				0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */,
 				0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */,
 			);
-			name = HighlightColorStorage;
+			name = "Highlight File";
 			sourceTree = "<group>";
 		};
 		0D9D8FDF1D301087005F91F6 /* Settings-Appearance-ThemeSelection */ = {
@@ -752,13 +757,12 @@
 				0DAF373F1D2510DD0009C44B /* JZiCloudStorageManager.m */,
 				0D4189261D26CBB800530FD7 /* JZiCloudStorageProcesser.h */,
 				0D4189271D26CBB800530FD7 /* JZiCloudStorageProcesser.m */,
-				0D7F18281DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.h */,
-				0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */,
-				0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */,
-				0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */,
+				0DD6D15B1E8E55D100EA28C8 /* Cetace File */,
 				0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */,
 				0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */,
-				0D9D8FD81D2F917C005F91F6 /* HighlightColorStorage */,
+				0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */,
+				0D9D8FC51D2F7888005F91F6 /* JZColorDataModel.m */,
+				0D9D8FD81D2F917C005F91F6 /* Highlight File */,
 				0D87A53B1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.h */,
 				0D87A53A1D29C73D00F9DC34 /* JZEditorMarkdownTextParserWithTSBaseParser.m */,
 				0D87A5401D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.h */,
@@ -799,6 +803,42 @@
 				0D9D8FCF1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		0DD6D1581E8E36D700EA28C8 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				0D619FAD1E8E10620081DFA4 /* jquery.min.js */,
+				0D619F0A1E8E0A490081DFA4 /* highlight.pack.js */,
+			);
+			name = js;
+			sourceTree = "<group>";
+		};
+		0DD6D1591E8E36DA00EA28C8 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6D15A1E8E36E600EA28C8 /* basic.styles */,
+				0D619F0C1E8E0A5A0081DFA4 /* highlightjs.styles */,
+			);
+			name = css;
+			sourceTree = "<group>";
+		};
+		0DD6D15A1E8E36E600EA28C8 /* basic.styles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = basic.styles;
+			sourceTree = "<group>";
+		};
+		0DD6D15B1E8E55D100EA28C8 /* Cetace File */ = {
+			isa = PBXGroup;
+			children = (
+				0D7F18281DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.h */,
+				0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */,
+				0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */,
+				0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */,
+			);
+			name = "Cetace File";
 			sourceTree = "<group>";
 		};
 		EAD3CB8327BBBDD41EE3A4C2 /* Pods */ = {
@@ -1252,6 +1292,7 @@
 				0D9D90241D312D4B005F91F6 /* MKColorPickerView.m in Sources */,
 				0D7F182A1DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m in Sources */,
 				0D4189221D26BFC300530FD7 /* JZMarkdownListTableCellView.m in Sources */,
+				0DD6D15E1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m in Sources */,
 				0D6BEBC01D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D6AA0F71D25B702003DAAB3 /* JZSettingsApperanceViewController.m in Sources */,
 				0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */,

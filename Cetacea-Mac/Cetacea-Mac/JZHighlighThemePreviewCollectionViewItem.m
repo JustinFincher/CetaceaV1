@@ -6,6 +6,7 @@
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
 
+#import "JZHeader.h"
 #import "JZHighlighThemePreviewCollectionViewItem.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 
@@ -43,7 +44,7 @@
         self.themeName.stringValue = string;
         _shadow.shadowColor = [doc.getData getBackgroundColor];
         //high light
-        _themePreviewTextView.string = @"# About Cetacea\nCetacea is a `markdown editor` **designed** *to* ~~make~~ writing things simple, with various themes and multi-platform sync.";
+        _themePreviewTextView.string = JZ_MARKDOWN_SAMPLE_TEXT;
         _themePreviewTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
         _themePreviewTextView.parser.themeDoc = doc;
         [_themePreviewTextView.parser refreshAttributesTheme];

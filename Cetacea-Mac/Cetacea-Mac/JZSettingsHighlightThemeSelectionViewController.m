@@ -87,7 +87,7 @@
     {
         doc = [self.themeArray objectAtIndex:indexPath.item];
         themeName = doc.data.themeName;
-        shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor colorFromSelf];
+        shadowColor = [doc.data.EditorViewDataModel.lightBackgroundBlockColor color];
         [item initWithisAddButton:isAddButton Theme:doc themeName:themeName];
 
     }
@@ -107,6 +107,7 @@ didSelectItemsAtIndexPaths:(NSSet<NSIndexPath *> *)indexPaths
     {
         JZiCloudFileExtensionCetaceaThemeDoc *doc = [self.themeArray objectAtIndex:(path.item)];
         [self showThemeDoc:doc];
+        self.collectionView.selectionIndexPaths = [NSSet set];
     }
 }
 

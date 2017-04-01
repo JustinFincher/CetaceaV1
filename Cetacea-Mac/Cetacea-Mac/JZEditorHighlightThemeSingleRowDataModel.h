@@ -7,17 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JZColorDataModel.h"
+#import "JZEditorHighlightThemeColorDataModel.h"
+@class JZEditorHighlightThemeDataModel;
 
 @interface JZEditorHighlightThemeSingleRowDataModel : NSObject<NSCoding>
 
-@property (nonatomic,strong) JZColorDataModel *lightForegroundTextColor;
-@property (nonatomic,strong) JZColorDataModel *lightForegroundTagtColor;
-@property (nonatomic,strong) JZColorDataModel *lightBackgroundBlockColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *lightForegroundTextColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *lightForegroundTagtColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *lightBackgroundBlockColor;
 
-@property (nonatomic,strong) JZColorDataModel *darkForegroundTextColor;
-@property (nonatomic,strong) JZColorDataModel *darkForegroundTagtColor;
-@property (nonatomic,strong) JZColorDataModel *darkBackgroundBlockColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *darkForegroundTextColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *darkForegroundTagtColor;
+@property (nonatomic,strong) JZEditorHighlightThemeColorDataModel *darkBackgroundBlockColor;
 
 /**
  *  Default Style

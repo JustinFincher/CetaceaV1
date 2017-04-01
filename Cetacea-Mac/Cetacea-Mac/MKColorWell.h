@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
+#import "JZEditorHighlightThemeColorDataModel.h"
 #import "KeyValueObserver.h"
 #import "JZiCloudFileExtensionCetaceaThemeDoc.h"
 
@@ -25,7 +25,6 @@
 
 @property (nonatomic, strong) NSString *labelString;
 
-
-@property (nonatomic, strong) JZColorDataModel *colorData;
+@property (nonatomic, strong) JZEditorHighlightThemeColorDataModel *colorData;
 
 @end

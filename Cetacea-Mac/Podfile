@@ -12,6 +12,7 @@ pod 'DateTools'
 pod 'Fabric'
 pod 'Crashlytics'
 #pod 'SyntaxKit'
+pod 'ReactiveObjC'
 
   target 'CetaceaTests' do
     inherit! :search_paths

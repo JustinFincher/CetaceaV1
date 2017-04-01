@@ -22,6 +22,8 @@
 @property (nonatomic) float green;
 @property (nonatomic) float blue;
 @property (nonatomic) float alpha;
+@property (nonatomic, strong) JZColor *color;
+
 
 /**
  *  Init With Given Color
@@ -31,18 +33,4 @@
  *  @return instance
  */
 - (id)initWithColor:(JZColor *)color;
-
-/**
- *  Get NSColor / UIColor from JZColorDataModel
- *
- *  @return JZColor (NSColor / UIColor)
- */
-- (JZColor *)colorFromSelf;
-
-/**
- *  Update self JZColor
- *
- *  @param color color to replace
- */
-- (void)setSelfColor:(JZColor *)color;
 @end

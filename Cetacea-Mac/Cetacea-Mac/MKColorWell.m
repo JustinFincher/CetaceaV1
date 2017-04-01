@@ -29,7 +29,7 @@
     [super setColor:color];
     if (self.colorData)
     {
-        [self.colorData setSelfColor:color];
+        [self.colorData setColor:color];
     }
 }
 
