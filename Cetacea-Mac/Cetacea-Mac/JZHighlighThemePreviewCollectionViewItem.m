@@ -23,6 +23,7 @@
 - (void)initWithTheme:(JZiCloudFileExtensionCetaceaThemeDoc *)doc
             themeName:(NSString *)string
 {
+    self.themePreviewScrollView.scrollEnabled = false;
     [_themePreviewTextView setEditable:NO];
     _themePreviewScrollView.hasVerticalScroller = NO;
     [_themePreviewScrollView setWantsLayer:YES];

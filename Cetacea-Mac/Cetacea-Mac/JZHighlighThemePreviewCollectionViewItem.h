@@ -8,11 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 #import "JZEditorTextView.h"
+#import "JZOptionalScrollableView.h"
 #import "JZiCloudFileExtensionCetaceaThemeDoc.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem : NSCollectionViewItem
 @property (weak) IBOutlet NSTextField *themeName;
-@property (weak) IBOutlet NSScrollView *themePreviewScrollView;
+@property (weak) IBOutlet JZOptionalScrollableView *themePreviewScrollView;
 @property (unsafe_unretained) IBOutlet JZEditorTextView *themePreviewTextView;
 
 @property (nonatomic,strong) NSColor *shadowColor;

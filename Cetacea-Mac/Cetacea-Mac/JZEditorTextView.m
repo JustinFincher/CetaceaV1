@@ -110,7 +110,7 @@
 
 - (void)updateTextView
 {
-    JZLog(@"TextView MarkedRange : %lu:%lu",(unsigned long)self.markedRange.location,(unsigned long)self.markedRange.length);
+//    JZLog(@"TextView MarkedRange : %lu:%lu",(unsigned long)self.markedRange.location,(unsigned long)self.markedRange.length);
     if (self.markedRange.length == 0)
     {
         //不在输入拼音

@@ -15,6 +15,7 @@
 @property (unsafe_unretained) IBOutlet JZEditorTextView *editorTextView;
 @property (weak) IBOutlet NSView *editorBottomHelperView;
 @property (weak) IBOutlet NSTextField *editorBottomStatLabel;
+@property (strong) IBOutlet NSVisualEffectView *visualEffectBackgroundView;
 
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;

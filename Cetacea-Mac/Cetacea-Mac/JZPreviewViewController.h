@@ -12,6 +12,7 @@
 
 @interface JZPreviewViewController : NSViewController
 @property (weak) IBOutlet WebView *previewWebView;
+@property (strong) IBOutlet NSVisualEffectView *visualEffectBackgroundView;
 
 @property (strong,nonatomic) NSString * previewHtmlString;
 

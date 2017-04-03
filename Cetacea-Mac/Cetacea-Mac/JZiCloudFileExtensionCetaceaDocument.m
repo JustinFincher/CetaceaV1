@@ -84,18 +84,18 @@
     data = [subFileWrapper regularFileContents];
     self.title = [[NSString alloc] initWithData:data
 encoding:NSUTF8StringEncoding];
-    JZLog(@"Title : %@",_title);
+//    JZLog(@"Title : %@",_title);
     
     subFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:@"markdownString"];
     data = [subFileWrapper regularFileContents];
     self.markdownString = [[NSString alloc] initWithData:data
                                                 encoding:NSUTF8StringEncoding];
-    JZLog(@"MarkdownString : %@",_markdownString);
+//    JZLog(@"MarkdownString : %@",_markdownString);
     
     subFileWrapper = [_documentFileWrapper.fileWrappers objectForKey:@"highLightString"];
     data = [subFileWrapper regularFileContents];
     self.highLightString = [NSKeyedUnarchiver unarchiveObjectWithData: data];
-    JZLog(@"HighLightString : %@",_highLightString);
+//    JZLog(@"HighLightString : %@",_highLightString);
     
     
     self.title = self.title ? self.title : @"";

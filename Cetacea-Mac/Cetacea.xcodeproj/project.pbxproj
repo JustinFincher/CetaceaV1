@@ -155,6 +155,7 @@
 		0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */; };
 		0DD6D15E1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */; };
 		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
+		0DEEB5351E9238150056F969 /* JZOptionalScrollableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */; };
 		548E448E7E451D957A4FBAFD /* Pods_CetaceaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DA6D7D5C05027BDD0FF8BB /* Pods_CetaceaTests.framework */; };
 		70EE18C69F651032F883D4F4 /* Pods_CetaceaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A3E5788E1E5FA40BEE334 /* Pods_CetaceaUITests.framework */; };
 		C57A77D9866B9F81A6086C2A /* Pods_Cetacea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6452BD79D97870605650D980 /* Pods_Cetacea.framework */; };
@@ -393,6 +394,8 @@
 		0DD6D15F1E8E5E4200EA28C8 /* JZStaticValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZStaticValues.h; sourceTree = "<group>"; };
 		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
 		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
+		0DEEB5331E9238150056F969 /* JZOptionalScrollableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZOptionalScrollableView.h; sourceTree = "<group>"; };
+		0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZOptionalScrollableView.m; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
 		382B17B39A4BC1523BADD40A /* Pods-Cetacea.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.appstore.xcconfig"; sourceTree = "<group>"; };
 		414CCAF0CE10C6B145F64EFE /* Pods-CetaceaTests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.non-appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.non-appstore.xcconfig"; sourceTree = "<group>"; };
@@ -801,6 +804,8 @@
 				0D9D8FCD1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.h */,
 				0D9D8FCE1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m */,
 				0D9D8FCF1D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.xib */,
+				0DEEB5331E9238150056F969 /* JZOptionalScrollableView.h */,
+				0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1300,6 +1305,7 @@
 				0D87A5361D29ACC700F9DC34 /* TSMarkdownParser.m in Sources */,
 				0D9D8FE51D3010E4005F91F6 /* JZSettingsApperanceThemeTableViewLightCellView.m in Sources */,
 				0D9D8FD41D2F9146005F91F6 /* JZiCloudFileExtensionCetaceaThemeDoc.m in Sources */,
+				0DEEB5351E9238150056F969 /* JZOptionalScrollableView.m in Sources */,
 				0D9D8FD01D2F895E005F91F6 /* JZHighlighThemePreviewCollectionViewItem.m in Sources */,
 				0D9D8FDB1D2FA780005F91F6 /* JZSettingsHighlightThemeEditViewController.m in Sources */,
 				0D41890F1D268FA500530FD7 /* JZdayNightThemeManager.m in Sources */,

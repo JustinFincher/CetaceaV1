@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
-    
+    self.visualEffectBackgroundView.translatesAutoresizingMaskIntoConstraints = YES;
     self.editorTextView.delegate = self;
     self.editorTextView.wantsLayer = YES;
     self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];

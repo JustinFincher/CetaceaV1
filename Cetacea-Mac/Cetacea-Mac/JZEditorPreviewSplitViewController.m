@@ -105,8 +105,8 @@
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
     self.isSwitchingDocumentFlag = YES;
-    JZLog(@"Previous MD : %@", _currentEditingMarkdown.markdownString);
-    JZLog(@"New MD : %@", currentEditingMarkdown.markdownString);
+//    JZLog(@"Previous MD : %@", _currentEditingMarkdown.markdownString);
+//    JZLog(@"New MD : %@", currentEditingMarkdown.markdownString);
     if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
     {
         _currentEditingMarkdown = currentEditingMarkdown;

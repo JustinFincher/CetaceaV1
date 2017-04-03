@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
+    self.visualEffectBackgroundView.translatesAutoresizingMaskIntoConstraints = true;
     [self.previewWebView setDrawsBackground:NO];
     self.previewWebView.frameLoadDelegate = self;
     self.previewHtmlString = [NSString stringWithFormat:@""];

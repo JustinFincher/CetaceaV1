@@ -16,4 +16,13 @@
     // Drawing code here.
 }
 
+- (void)mouseDown:(NSEvent *)event
+{
+    [super mouseDown:event];
+    
+    NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Edit Article"];
+    
+    [NSMenu popUpContextMenu:menu withEvent:event forView:self];
+}
+
 @end
