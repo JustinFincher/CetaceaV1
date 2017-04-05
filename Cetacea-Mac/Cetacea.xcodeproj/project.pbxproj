@@ -289,7 +289,7 @@
 		0D619FAD1E8E10620081DFA4 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 		0D6832F51E94DFBD001C32D1 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		0D6832F61E94DFC5001C32D1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		0D6832F81E94E14A001C32D1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0D6832FA1E94E6E5001C32D1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		0D6A5E181D2100BB00211AFC /* Cetacea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cetacea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1394,7 +1394,7 @@
 				0D6A5E271D2100BB00211AFC /* Base */,
 				0D6832F51E94DFBD001C32D1 /* zh-Hant */,
 				0D6832F61E94DFC5001C32D1 /* ja */,
-				0D6832F81E94E14A001C32D1 /* zh-Hans */,
+				0D6832FA1E94E6E5001C32D1 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

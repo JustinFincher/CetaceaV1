@@ -27,9 +27,10 @@
 #else
     [Fabric with:@[[Crashlytics class]]];
 #endif
-    
-
-    
+    if ([[NSApplication sharedApplication] respondsToSelector:@selector(isAutomaticCustomizeTouchBarMenuItemEnabled)])
+    {
+        [NSApplication sharedApplication].automaticCustomizeTouchBarMenuItemEnabled = YES;
+    }
     // register to observe notifications from the store
     [[NSNotificationCenter defaultCenter]
      addObserver: self
