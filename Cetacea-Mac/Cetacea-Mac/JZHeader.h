@@ -21,5 +21,6 @@
 #import <DateTools/DateTools.h>
 #import "JZColorDataModel.h"
 #import "DynamicColor-Swift.h"
+#import "SyntaxKit-Swift.h"
 
 #endif /* JZHeader_h */

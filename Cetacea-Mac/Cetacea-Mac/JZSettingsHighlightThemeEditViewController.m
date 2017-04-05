@@ -286,6 +286,7 @@
         else if (tableColumn == tableView.tableColumns[3])
         {
             cellIdentifer = @"darkThemeCellView";
+            NSArray *descrptionArray = [titlesArray objectAtIndex:3];
             JZSettingsApperanceThemeTableViewDarkCellView *view = [self.tableView makeViewWithIdentifier:cellIdentifer owner:nil];
             [view.foregroundTagColorWell setColor:[dataModel.darkForegroundTagtColor color]];
             [view.foregroundTextColorWell setColor:[dataModel.darkForegroundTextColor color]];
@@ -293,6 +294,9 @@
             view.foregroundTagColorWell.colorData = dataModel.darkForegroundTagtColor;
             view.foregroundTextColorWell.colorData = dataModel.darkForegroundTextColor;
             view.backgroundBlockColorWell.colorData = dataModel.darkBackgroundBlockColor;
+            view.foregroundTagColorWell.labelString = [descrptionArray objectAtIndex:0];
+            view.foregroundTextColorWell.labelString = [descrptionArray objectAtIndex:1];
+            view.backgroundBlockColorWell.labelString = [descrptionArray objectAtIndex:2];
             return view;
         }
     }

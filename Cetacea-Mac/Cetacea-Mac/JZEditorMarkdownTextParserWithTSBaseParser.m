@@ -327,12 +327,18 @@
 }
 //- (void)addTabBlockParsing
 //{
-//    NSRegularExpression *ListParsing = [NSRegularExpression regularExpressionWithPattern:@"^[\t]+(.+)$" options:NSRegularExpressionAnchorsMatchLines error:nil];
+//    NSRegularExpression *TabParsing = [NSRegularExpression regularExpressionWithPattern:@"[\t]*\n([\t]+.+\n)+[\t]*" options:NSRegularExpressionAnchorsMatchLines error:nil];
 ////    __weak TSMarkdownParser *weakSelfParser = self.parser;
 //    __weak JZEditorMarkdownTextParserWithTSBaseParser *weakSelf = self;
-//    [self.lineParser addParsingRuleWithRegularExpression:ListParsing block:^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
-//     {
-//         [attributedString addAttributes:weakSelf.JZTabIndentTextAttributes range:[match rangeAtIndex:1]];
-//     }];
+//    
+//    TSMarkdownParserMatchBlock block = ^(NSTextCheckingResult *match, NSMutableAttributedString *attributedString)
+//    {
+//        for (int i = 0; i < [match numberOfRanges]; i ++)
+//        {
+//            [attributedString addAttributes:weakSelf.JZTabIndentTextAttributes range:[match rangeAtIndex:i]];
+//        }
+//    };
+//    [self.paragraphParser addParsingRuleWithRegularExpression:TabParsing block:block];
+//    [self.fullParser addParsingRuleWithRegularExpression:TabParsing block:block];
 //}
 @end

@@ -11,7 +11,7 @@
 #import "MKColorSwatchCell.h"
 #import "MKColorWell.h"
 
-#define COLORWELL_LABEL_HEIGHT 30
+#define COLORWELL_LABEL_HEIGHT 50
 
 @implementation MKColorPickerView
 @synthesize matrix,label;
@@ -82,6 +82,7 @@
         label.font = [NSFont boldSystemFontOfSize:12.0f];
         label.drawsBackground = NO;
         label.editable = NO;
+        label.lineBreakMode = NSLineBreakByWordWrapping;
         label.alignment = NSTextAlignmentCenter;
         label.textColor = [NSColor controlTextColor];
         label.bordered = NO;
