@@ -49,6 +49,10 @@
     [markdown deleteCetaceDocument:^(BOOL isSuccessful)
     {
         [self.markdownListTableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:clickedRowIndex] withAnimation:NSTableViewAnimationSlideUp];
+        if (clickedRowIndex == self.markdownListTableView.selectedRow)
+        {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys: nil, @"newValue" ,nil]];
+        }
     }];
 }
 
@@ -100,9 +104,12 @@
     if (row >= 0)
     {
         JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:row];
-//        JZMarkdownListTableCellView *selectedRow = [self.markdownListTableView viewAtColumn:0 row:[[notification object] selectedRow] makeIfNecessary:YES];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys:markdown, @"newValue" ,nil]];
         id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
         [strongDelegate rowSelected:markdown];
+    }else
+    {
+        
     }
 }
 
@@ -137,6 +144,7 @@
     {
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys:nil, @"newValue" ,nil]];
     }
 }
 
@@ -244,7 +252,6 @@
 #pragma mark - JZMarkdownListSortSelectionMenuDelegate
 - (void)selectionChanged
 {
-//    self.markdownFileArray = [self sortedArrayFrom:self.markdownFileArray];
     [self reloadDataWithMarkdowns:self.markdownFileArray];
 }
 

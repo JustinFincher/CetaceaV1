@@ -72,6 +72,11 @@
                                                  name:NSSplitViewDidResizeSubviewsNotification
                                                object:self.splitView];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(markdownListSelectionChanged:)
+                                                 name:@"markdownListSelectionChanged"
+                                               object:nil];
+    
     
     foregroundVC = [[JZEditorPreviewSplitViewForegroundBlurViewController alloc] init];
     [self.view addSubview:foregroundVC.view];
@@ -104,22 +109,36 @@
 #pragma mark - Text Editing
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    self.isSwitchingDocumentFlag = YES;
-//    JZLog(@"Previous MD : %@", _currentEditingMarkdown.markdownString);
-//    JZLog(@"New MD : %@", currentEditingMarkdown.markdownString);
-    if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
+    if (currentEditingMarkdown == nil)
     {
-        _currentEditingMarkdown = currentEditingMarkdown;
-        [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
-        [_previewVC setCurrentEditingMarkdown:currentEditingMarkdown];
-    }
-    if (!foregroundVC.view.hidden)
+        _currentEditingMarkdown = nil;
+        if (foregroundVC.view.hidden)
+        {
+            [foregroundVC.view setHidden:NO];
+            [_editorVC setCurrentEditingMarkdown:nil];
+            [_previewVC setCurrentEditingMarkdown:nil];
+        }
+    }else
     {
-        [foregroundVC.view setHidden:YES];
+        self.isSwitchingDocumentFlag = YES;
+        if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
+        {
+            _currentEditingMarkdown = currentEditingMarkdown;
+            [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
+            [_previewVC setCurrentEditingMarkdown:currentEditingMarkdown];
+        }
+        if (!foregroundVC.view.hidden)
+        {
+            [foregroundVC.view setHidden:YES];
+        }
+        self.isSwitchingDocumentFlag = NO;
     }
-    self.isSwitchingDocumentFlag = NO;
 }
-
+- (void)markdownListSelectionChanged:(NSNotification *) notification
+{
+    JZiCloudFileExtensionCetaceaDocument * doc = notification.userInfo[@"newValue"];
+    [self setCurrentEditingMarkdown:doc];
+}
 
 - (void)markdownEditorTextDidChanged:(NSNotification *) notification
 {

@@ -40,10 +40,8 @@
 }
 - (void)refreshPreview
 {
-    if (_currentEditingMarkdown)
-    {
-        self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:_currentEditingMarkdown.markdownString extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
-    }
+    NSString *stringToPreview = self.currentEditingMarkdown.markdownString != nil ? self.currentEditingMarkdown.markdownString : @"";
+    self.previewHtmlString = [MMMarkdown HTMLStringWithMarkdown:stringToPreview extensions:MMMarkdownExtensionsGitHubFlavored error:NULL];
 }
 - (void)setPreviewHtmlString:(NSString *)previewHtmlString
 {

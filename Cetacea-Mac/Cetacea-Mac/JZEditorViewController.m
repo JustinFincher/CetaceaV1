@@ -62,8 +62,13 @@
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-//    [self.editorTextView.textStorage setAttributedString:currentEditingMarkdown.highLightString];
-    [self.editorTextView setString:currentEditingMarkdown.markdownString];
+    if (currentEditingMarkdown == nil)
+    {
+        [self.editorTextView setString:@""];
+    }else
+    {
+        [self.editorTextView setString:currentEditingMarkdown.markdownString];
+    }
     [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
     [self updateStatView];

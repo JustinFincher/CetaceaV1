@@ -19,9 +19,9 @@
         _byCreateDateItem = [[NSMenuItem alloc] initWithTitle:@"By Create Date" action:@selector(setByCreateDate) keyEquivalent:@"c"];
         _byTitleItem = [[NSMenuItem alloc] initWithTitle:@"By Title" action:@selector(setByTitle) keyEquivalent:@"t"];
         _byAscending = [[NSMenuItem alloc] initWithTitle:@"Ascending" action:@selector(setByAscending) keyEquivalent:@"a"];
-        [_byAscending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        [_byAscending setKeyEquivalentModifierMask:NSEventModifierFlagShift];
         _byDescending = [[NSMenuItem alloc] initWithTitle:@"Descending" action:@selector(setByDescending) keyEquivalent:@"d"];
-        [_byDescending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        [_byDescending setKeyEquivalentModifierMask:NSEventModifierFlagShift];
         
         _byEditDateItem.target = self;
         _byCreateDateItem.target = self;
@@ -76,9 +76,9 @@
         _byCreateDateItem = [[NSMenuItem alloc] initWithTitle:@"By Create Date" action:@selector(setByCreateDate) keyEquivalent:@"c"];
         _byTitleItem = [[NSMenuItem alloc] initWithTitle:@"By Title" action:@selector(setByTitle) keyEquivalent:@"t"];
         _byAscending = [[NSMenuItem alloc] initWithTitle:@"Ascending" action:@selector(setByAscending) keyEquivalent:@"a"];
-        [_byAscending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        [_byAscending setKeyEquivalentModifierMask:NSEventModifierFlagShift];
         _byDescending = [[NSMenuItem alloc] initWithTitle:@"Descending" action:@selector(setByDescending) keyEquivalent:@"d"];
-        [_byDescending setKeyEquivalentModifierMask:NSShiftKeyMask];
+        [_byDescending setKeyEquivalentModifierMask:NSEventModifierFlagShift];
         
         _byEditDateItem.target = self;
         _byCreateDateItem.target = self;
