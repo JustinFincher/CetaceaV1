@@ -6,6 +6,7 @@ PODS:
   - Fabric (1.6.11)
   - MMMarkdown (0.5.5)
   - ReactiveObjC (2.1.2)
+  - SyntaxKit (1.0)
 
 DEPENDENCIES:
   - Crashlytics
@@ -14,6 +15,16 @@ DEPENDENCIES:
   - Fabric
   - MMMarkdown
   - ReactiveObjC
+  - SyntaxKit (from `https://github.com/SecondRenaissance/SyntaxKit.git`)
+
+EXTERNAL SOURCES:
+  SyntaxKit:
+    :git: https://github.com/SecondRenaissance/SyntaxKit.git
+
+CHECKOUT OPTIONS:
+  SyntaxKit:
+    :commit: 929049ce235c937f44b69dfe108c17599de421b4
+    :git: https://github.com/SecondRenaissance/SyntaxKit.git
 
 SPEC CHECKSUMS:
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
@@ -22,7 +33,8 @@ SPEC CHECKSUMS:
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: 3c0d171811d94e39bf471c6728499d315fd57be4
+PODFILE CHECKSUM: d6da1f75bc6bfdf66f81006f7eb253530a8cf772
 
 COCOAPODS: 1.2.0

@@ -42,23 +42,14 @@
     self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
                                                 NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(baseFontChanged:)
-                                                 name:@"baseFontChanged"
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(dayNightThemeSwitched:)
-                                                 name:@"dayNightThemeSwitched"
-                                               object:nil];
+    [self.editorTextView.parser refreshAttributesTheme];
+    [self.editorTextView refreshHightLight];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(themeChangedOnHighLightEditView:)
-                                                 name:@"themeChangedOnHighLightEditView"
+                                                 name:JZ_NOTIFICATION_CURRENT_USING_HIGHLIGHT_THEME_CHANGED
                                                object:nil];
-    [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView refreshHightLight];
+    
 }
 - (void)viewDidAppear
 {
@@ -77,21 +68,11 @@
     [self.editorTextView refreshHightLight];
     [self updateStatView];
 }
-- (void)dayNightThemeSwitched:(NSNotification *)aNotification
-{
-    [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView  refreshHightLight];
-}
-- (void)baseFontChanged:(NSNotification *)aNotification
-{
-    [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView  refreshHightLight];
-}
 - (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
 {
     self.editorTextView.parser.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
     [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView  refreshHightLight];
+    [self.editorTextView refreshHightLight];
     [self.editorTextView updateRuler];
 }
 - (void)refreshHighLight

@@ -396,6 +396,7 @@
 		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
 		0DEEB5331E9238150056F969 /* JZOptionalScrollableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZOptionalScrollableView.h; sourceTree = "<group>"; };
 		0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZOptionalScrollableView.m; sourceTree = "<group>"; };
+		0DEEB5361E949FCB0056F969 /* Cetacea.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cetacea.pch; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
 		382B17B39A4BC1523BADD40A /* Pods-Cetacea.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-Cetacea/Pods-Cetacea.appstore.xcconfig"; sourceTree = "<group>"; };
 		414CCAF0CE10C6B145F64EFE /* Pods-CetaceaTests.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaTests.non-appstore.xcconfig"; path = "Pods/Target Support Files/Pods-CetaceaTests/Pods-CetaceaTests.non-appstore.xcconfig"; sourceTree = "<group>"; };
@@ -572,6 +573,7 @@
 		0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				0DEEB5361E949FCB0056F969 /* Cetacea.pch */,
 				0D864A151D21207400F47613 /* Cetacea.entitlements */,
 				0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */,
 				0D98E2641DEC66D100F130E2 /* JZHeader.h */,
@@ -1495,6 +1497,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
+				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1520,6 +1523,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
+				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1638,6 +1642,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
+				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1730,6 +1735,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/HockeySDK-Mac",
 				);
+				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;

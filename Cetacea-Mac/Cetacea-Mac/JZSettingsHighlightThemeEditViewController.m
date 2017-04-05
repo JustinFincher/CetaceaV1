@@ -77,7 +77,7 @@
     {
         [[JZEditorHighlightThemeManager sharedManager] setSelectedDoc:self.doc];
         [self dismissViewController:self];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"themeChangedOnHighLightEditView" object:self.doc userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:JZ_NOTIFICATION_CURRENT_USING_HIGHLIGHT_THEME_CHANGED object:self.doc userInfo:nil];
     }
 }
 - (IBAction)cancelButtonPressed:(id)sender {

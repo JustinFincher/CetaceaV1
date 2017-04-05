@@ -7,6 +7,7 @@
 //
 
 #import "JZSettingsHighlightThemeSelectionViewController.h"
+#import "JZHeader.h"
 #import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
 
 
@@ -32,7 +33,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(themeChangedOnHighLightEditView:)
-                                                 name:@"themeChangedOnHighLightEditView"
+                                                 name:JZ_NOTIFICATION_CURRENT_USING_HIGHLIGHT_THEME_CHANGED
                                                object:nil];
     
 }

@@ -1,9 +1,9 @@
 CODE_SIGN_IDENTITY =
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools" "$PODS_CONFIGURATION_BUILD_DIR/DynamicColor" "$PODS_CONFIGURATION_BUILD_DIR/MMMarkdown" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools" "$PODS_CONFIGURATION_BUILD_DIR/DynamicColor" "$PODS_CONFIGURATION_BUILD_DIR/MMMarkdown" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC" "$PODS_CONFIGURATION_BUILD_DIR/SyntaxKit"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DynamicColor/DynamicColor.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MMMarkdown/MMMarkdown.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC/ReactiveObjC.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DynamicColor/DynamicColor.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MMMarkdown/MMMarkdown.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC/ReactiveObjC.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SyntaxKit/SyntaxKit.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric"
 OTHER_LDFLAGS = $(inherited) -l"c++" -l"z" -framework "Security" -framework "SystemConfiguration"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

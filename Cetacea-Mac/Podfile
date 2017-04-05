@@ -14,6 +14,7 @@ pod 'Crashlytics'
 #pod 'SyntaxKit'
 pod 'ReactiveObjC'
 pod 'DynamicColor', '~> 3.2.1'
+pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
 
   target 'CetaceaTests' do
     inherit! :search_paths

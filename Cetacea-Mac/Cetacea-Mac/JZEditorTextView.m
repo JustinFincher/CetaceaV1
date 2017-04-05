@@ -52,7 +52,6 @@
 
 - (void)setupTextView
 {
-    
     _hasSetup = YES;
     JZLog(@"setupTextView");
     self.wantsLayer = YES;
@@ -74,8 +73,28 @@
     self.enclosingScrollView.rulersVisible = YES;
     
     [self.enclosingScrollView.contentView setPostsBoundsChangedNotifications:YES];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(scrollViewDidEndLiveScroll:) name:NSScrollViewDidEndLiveScrollNotification object:self.enclosingScrollView];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(scrollViewDidEndLiveScroll:)
+                                                 name:NSScrollViewDidEndLiveScrollNotification
+                                               object:self.enclosingScrollView];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(dayNightThemeSwitched:)
+                                                 name:@"dayNightThemeSwitched"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(baseFontChanged:)
+                                                 name:@"baseFontChanged"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(themeChangedOnHighLightEditView:)
+                                                 name:JZ_NOTIFICATION_CURRENT_USING_HIGHLIGHT_THEME_CHANGED
+                                               object:nil];
     
+}
+
+- (BOOL)isFlipped
+{
+    return YES;
 }
 
 - (void)viewDidMoveToWindow
@@ -93,7 +112,19 @@
     self.attLineStrWithinVisiableRange = [self.parser attributedLineParserStringFromMarkdown:[self.string substringWithRange:range]];
     [self updateTextView];
 }
-
+- (void)dayNightThemeSwitched:(NSNotification *)aNotification
+{
+    [self.parser refreshAttributesTheme];
+    [self refreshHightLight];
+}
+- (void)baseFontChanged:(NSNotification *)aNotification
+{
+    [self.parser refreshAttributesTheme];
+    [self refreshHightLight];
+}
+- (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
+{
+}
 - (void)refreshHightLight
 {
     if (self.string)
