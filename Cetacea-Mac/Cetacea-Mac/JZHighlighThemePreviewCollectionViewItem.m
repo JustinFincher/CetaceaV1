@@ -10,6 +10,7 @@
 #import "JZHighlighThemePreviewCollectionViewItem.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 #import "DynamicColor-Swift.h"
+#import "JZEditorHighlightThemeManager.h"
 
 @interface JZHighlighThemePreviewCollectionViewItem ()
 
@@ -44,7 +45,7 @@
     self.shadowView.layer.masksToBounds = NO;
     [self.shadowView setShadow:self.shadow];
     
-    self.themeName.stringValue = string;
+    self.themeName.stringValue = [NSString stringWithFormat:@"%@ %@",string,([doc isSelectedDoc] ? @"(Selected)" : @"")];
     
     //high light
     _themePreviewTextView.string = JZ_MARKDOWN_SAMPLE_TEXT;

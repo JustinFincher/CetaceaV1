@@ -19,6 +19,8 @@
 - (void)saveData;
 - (void)deleteDoc;
 - (JZEditorHighlightThemeDataModel *)getData;
+- (BOOL)isEqualToDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)object;
+- (BOOL)isSelectedDoc;
 
 //- (NSImage *)getPreviewImage;
 

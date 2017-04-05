@@ -12,6 +12,7 @@
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 #import "JZHeader.h"
 #import <QuartzCore/QuartzCore.h>
+#import "JZEditorHighlightThemeManager.h"
 
 @implementation JZiCloudFileExtensionCetaceaThemeDoc
 
@@ -151,6 +152,15 @@
 
     return image;
 
+}
+
+- (BOOL)isEqualToDoc:(JZiCloudFileExtensionCetaceaThemeDoc *)object
+{
+    return ([self.docPath isEqualToString:object.docPath]);
+}
+- (BOOL)isSelectedDoc
+{
+    return [self isEqualToDoc:[[JZEditorHighlightThemeManager sharedManager] selectedDoc]];
 }
 
 @end
