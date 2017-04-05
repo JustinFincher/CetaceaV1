@@ -25,6 +25,6 @@
 
 + (JZiCloudFileExtensionCetaceaDocument *)newCetaceaDocument;
 - (BOOL)saveCetaceaDocument;
-
+- (void)deleteCetaceDocument:(void (^)(BOOL isSuccessful))completed;
 
 @end

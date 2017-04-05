@@ -19,7 +19,7 @@
 @property (strong,nonatomic) JZMarkdownListSortSelectionMenu* sortMenu;
 @property (weak) IBOutlet NSButton *sortMenuButton;
 
-
+@property (strong, nonatomic) NSMenu *markdownListTableViewCellMenu;
 @end
 
 @implementation JZMarkdownListViewController
@@ -35,7 +35,23 @@
     [JZiCloudStorageProcesser sharedManager];
     
     [self.markdownListTableView reloadData];
+    
+    self.markdownListTableViewCellMenu = [[NSMenu alloc] initWithTitle:@"Article Edit"];
+    [self.markdownListTableViewCellMenu addItem:[[NSMenuItem alloc] initWithTitle:@"Delete" action:@selector(articleEditDeleteMenuClicked:) keyEquivalent:@""]];
+    self.markdownListTableView.menu = self.markdownListTableViewCellMenu;
 }
+
+#pragma mark - Article Edit Menu
+- (void)articleEditDeleteMenuClicked:(id)sender
+{
+    NSInteger clickedRowIndex = self.markdownListTableView.clickedRow;
+    JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:clickedRowIndex];
+    [markdown deleteCetaceDocument:^(BOOL isSuccessful)
+    {
+        [self.markdownListTableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:clickedRowIndex] withAnimation:NSTableViewAnimationSlideUp];
+    }];
+}
+
 
 #pragma mark - NSTableViewDelegate
 
@@ -64,7 +80,6 @@
     }
     return cellView;
 }
-
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {

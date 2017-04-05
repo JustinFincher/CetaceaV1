@@ -190,6 +190,12 @@ encoding:NSUTF8StringEncoding];
     return isSuccess;
 }
 
+- (void)deleteCetaceDocument:(void (^)(BOOL isSuccessful))completed
+{
+#warning Error may not be handled
+    [[NSFileManager defaultManager] removeItemAtURL:self.urlWhenInited error:nil];
+    completed(YES);
+}
 + (BOOL)autosavesInPlace {
     return YES;
 }
