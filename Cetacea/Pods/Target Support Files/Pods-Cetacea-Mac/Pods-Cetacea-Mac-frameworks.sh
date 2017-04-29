@@ -89,32 +89,32 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit/SyntaxKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit/SyntaxKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit/SyntaxKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor/DynamicColor.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown/MMMarkdown.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit/SyntaxKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

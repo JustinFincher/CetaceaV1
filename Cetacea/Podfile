@@ -1,12 +1,21 @@
 workspace 'Cetacea'
 
 target 'Cetacea-iOS' do
+platform :ios, '10.0'
 project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
 workspace 'Cetacea'
 use_frameworks!
+pod 'MMMarkdown'
+pod 'DateTools'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'ReactiveObjC'
+pod 'DynamicColor', '~> 3.2.1'
+pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
 end
 
 target 'Cetacea-Mac' do
+platform :osx, '10.12'
 project 'Cetacea-Mac/Cetacea-Mac.xcodeproj'
 workspace 'Cetacea'
 use_frameworks!

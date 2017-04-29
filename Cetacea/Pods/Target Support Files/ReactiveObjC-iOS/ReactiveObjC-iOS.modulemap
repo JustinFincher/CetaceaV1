@@ -1,0 +1,6 @@
+framework module ReactiveObjC {
+  umbrella header "ReactiveObjC-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -87,6 +87,21 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-iOS/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-iOS/SyntaxKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-iOS/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-iOS/SyntaxKit.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

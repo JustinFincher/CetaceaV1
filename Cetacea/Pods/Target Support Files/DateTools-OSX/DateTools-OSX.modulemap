@@ -1,0 +1,6 @@
+framework module DateTools {
+  umbrella header "DateTools-OSX-umbrella.h"
+
+  export *
+  module * { export * }
+}
