@@ -1,6 +1,0 @@
-framework module Pods_CetaceaTests {
-  umbrella header "Pods-CetaceaTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
