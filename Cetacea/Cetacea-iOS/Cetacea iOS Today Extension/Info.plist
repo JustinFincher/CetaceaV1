@@ -15,19 +15,17 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.28</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>28</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-	</array>
-	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.JustZht.Cetacea-iOS</string>
-	<key>WKWatchKitApp</key>
-	<true/>
+	<string>1</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.widget-extension</string>
+	</dict>
 </dict>
 </plist>

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Cetacea_Cetacea_MacVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Cetacea_Cetacea_MacVersionString[];
+FOUNDATION_EXPORT double Pods_Cetacea_MacVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Cetacea_MacVersionString[];
 

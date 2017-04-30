@@ -152,9 +152,20 @@
 		0DB4CD451DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB4CD441DF18EDB00980BF1 /* JZiCloudFileExtensionCetaceaThemeDocument.m */; };
 		0DC89B9C1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC89B9B1D607A88005E2F07 /* JZMarkdownListSortSelectionMenu.m */; };
 		0DD6D15E1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */; };
+		0DD9024A1EB62D3A00AEDCB1 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD902491EB62D3A00AEDCB1 /* NotificationCenter.framework */; };
+		0DD902501EB62D3A00AEDCB1 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9024F1EB62D3A00AEDCB1 /* TodayViewController.m */; };
+		0DD902531EB62D3A00AEDCB1 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902511EB62D3A00AEDCB1 /* TodayViewController.xib */; };
+		0DD902571EB62D3A00AEDCB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902551EB62D3A00AEDCB1 /* InfoPlist.strings */; };
+		0DD9025B1EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DD902481EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
 		0DEEB5351E9238150056F969 /* JZOptionalScrollableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */; };
 		1539522E9A15861899B24633 /* Pods_Cetacea_Cetacea_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */; };
+		2C247E4BCE5DE611FA746969 /* Pods-Cetacea-Mac-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A14FFE2C6DD1D3FD5CC6E41 /* Pods-Cetacea-Mac-settings-metadata.plist */; };
+		46ADEE544B213E37A7B3E16D /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BDFA9AC3B1CB5C6D6071762 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */; };
+		5D757BEB4A9003A61F3EE3A0 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B4D8190B848170EED44C0F9 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */; };
+		BC74C7F4A1525AA2C9CBF069 /* Pods-Cetacea-Mac-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 382EB448AC539559C7BDE080 /* Pods-Cetacea-Mac-metadata.plist */; };
+		C53D33CB4F47E7073BDAAD6A /* Pods-Cetacea-Cetacea-Mac-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150544A7A3D5DC0A62B925AB /* Pods-Cetacea-Cetacea-Mac-metadata.plist */; };
+		EC89A2F253F6EF4A5F9BC609 /* Pods_Cetacea_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CCB61FAF8D4D759E2C4C23B /* Pods_Cetacea_Mac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,9 +183,31 @@
 			remoteGlobalIDString = 0D6A5E171D2100BB00211AFC;
 			remoteInfo = "Cetacea-Mac";
 		};
+		0DD902581EB62D3A00AEDCB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D6A5E101D2100BB00211AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DD902471EB62D3A00AEDCB1;
+			remoteInfo = "Cetacea Mac Today Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0DD9025A1EB62D3A00AEDCB1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0DD9025B1EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A812BFC2C3A02E442E89089 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZdayNightThemeManager.h; sourceTree = "<group>"; };
 		0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZdayNightThemeManager.m; sourceTree = "<group>"; };
 		0D4189131D26A78200530FD7 /* JZAboutBackgroundImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutBackgroundImageView.h; sourceTree = "<group>"; };
@@ -388,16 +421,34 @@
 		0DD6D15C1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeColorDataModel.h; sourceTree = "<group>"; };
 		0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeColorDataModel.m; sourceTree = "<group>"; };
 		0DD6D15F1E8E5E4200EA28C8 /* JZStaticValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZStaticValues.h; sourceTree = "<group>"; };
+		0DD902481EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cetacea Mac Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD902491EB62D3A00AEDCB1 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		0DD9024D1EB62D3A00AEDCB1 /* Cetacea_Mac_Today_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cetacea_Mac_Today_Extension.entitlements; sourceTree = "<group>"; };
+		0DD9024E1EB62D3A00AEDCB1 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		0DD9024F1EB62D3A00AEDCB1 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		0DD902521EB62D3A00AEDCB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		0DD902541EB62D3A00AEDCB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD902561EB62D3A00AEDCB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0DDB6A471D37727C00540606 /* JZEditorHighlightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeManager.h; sourceTree = "<group>"; };
 		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
 		0DEEB5331E9238150056F969 /* JZOptionalScrollableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZOptionalScrollableView.h; sourceTree = "<group>"; };
 		0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZOptionalScrollableView.m; sourceTree = "<group>"; };
 		0DEEB5361E949FCB0056F969 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
+		150544A7A3D5DC0A62B925AB /* Pods-Cetacea-Cetacea-Mac-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-metadata.plist"; path = "../Pods/Pods-Cetacea-Cetacea-Mac-metadata.plist"; sourceTree = "<group>"; };
+		1A14FFE2C6DD1D3FD5CC6E41 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
 		35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		382EB448AC539559C7BDE080 /* Pods-Cetacea-Mac-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-metadata.plist"; path = "../Pods/Pods-Cetacea-Mac-metadata.plist"; sourceTree = "<group>"; };
+		6BDFA9AC3B1CB5C6D6071762 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CCB61FAF8D4D759E2C4C23B /* Pods_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		9B4D8190B848170EED44C0F9 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Settings.bundle/Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		9D6DFD1AAAB98D429A46E136 /* Pods-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		C4FD233CF1A509B17B12FA0F /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		CB4CD699B0802BA2752A0AD1 /* Pods-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
+		D098CA908365B168546D562A /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -408,6 +459,7 @@
 			files = (
 				0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */,
 				1539522E9A15861899B24633 /* Pods_Cetacea_Cetacea_Mac.framework in Frameworks */,
+				EC89A2F253F6EF4A5F9BC609 /* Pods_Cetacea_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +474,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DD902451EB62D3A00AEDCB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD9024A1EB62D3A00AEDCB1 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */,
+				0DD9024B1EB62D3A00AEDCB1 /* Cetacea Mac Today Extension */,
 				0D6A5E191D2100BB00211AFC /* Products */,
 				0D864A161D21210E00F47613 /* Frameworks */,
 				C85316108435F71892D185CA /* Pods */,
@@ -549,6 +610,7 @@
 				0D6A5E181D2100BB00211AFC /* Cetacea-Mac.app */,
 				0D6A5E2E1D2100BB00211AFC /* Cetacea-MacTests.xctest */,
 				0D6A5E391D2100BB00211AFC /* Cetacea-MacUITests.xctest */,
+				0DD902481EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -593,6 +655,8 @@
 				0D56699C1EB58690000C3E39 /* Cetacea_SharedFramework.framework */,
 				0D864A2A1D21451300F47613 /* WebKit.framework */,
 				6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */,
+				7CCB61FAF8D4D759E2C4C23B /* Pods_Cetacea_Mac.framework */,
+				0DD902491EB62D3A00AEDCB1 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -805,6 +869,27 @@
 			name = "Cetace File";
 			sourceTree = "<group>";
 		};
+		0DD9024B1EB62D3A00AEDCB1 /* Cetacea Mac Today Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DD9024E1EB62D3A00AEDCB1 /* TodayViewController.h */,
+				0DD9024F1EB62D3A00AEDCB1 /* TodayViewController.m */,
+				0DD902511EB62D3A00AEDCB1 /* TodayViewController.xib */,
+				0DD902541EB62D3A00AEDCB1 /* Info.plist */,
+				0DD902551EB62D3A00AEDCB1 /* InfoPlist.strings */,
+				0DD9024C1EB62D3A00AEDCB1 /* Supporting Files */,
+			);
+			path = "Cetacea Mac Today Extension";
+			sourceTree = "<group>";
+		};
+		0DD9024C1EB62D3A00AEDCB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DD9024D1EB62D3A00AEDCB1 /* Cetacea_Mac_Today_Extension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C85316108435F71892D185CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -812,6 +897,16 @@
 				F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */,
 				84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */,
 				1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */,
+				150544A7A3D5DC0A62B925AB /* Pods-Cetacea-Cetacea-Mac-metadata.plist */,
+				9B4D8190B848170EED44C0F9 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */,
+				6BDFA9AC3B1CB5C6D6071762 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */,
+				D098CA908365B168546D562A /* Pods-Cetacea-Mac.debug.xcconfig */,
+				0A812BFC2C3A02E442E89089 /* Pods-Cetacea-Mac.release.xcconfig */,
+				9D6DFD1AAAB98D429A46E136 /* Pods-Cetacea-Mac.non-appstore.xcconfig */,
+				CB4CD699B0802BA2752A0AD1 /* Pods-Cetacea-Mac.appstore.xcconfig */,
+				382EB448AC539559C7BDE080 /* Pods-Cetacea-Mac-metadata.plist */,
+				1A14FFE2C6DD1D3FD5CC6E41 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				C4FD233CF1A509B17B12FA0F /* Pods-Cetacea-Mac-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -827,15 +922,17 @@
 				0D6A5E141D2100BB00211AFC /* Sources */,
 				0D6A5E151D2100BB00211AFC /* Frameworks */,
 				0D6A5E161D2100BB00211AFC /* Resources */,
-				0D4189401D281D5300530FD7 /* ShellScript */,
-				0DF4105E1DEF24F900318EF4 /* ShellScript */,
-				0D98E2631DEC40D700F130E2 /* ShellScript */,
+				0D4189401D281D5300530FD7 /* xcode-build-bump.sh */,
+				0DF4105E1DEF24F900318EF4 /* xcode-version-bump.sh */,
+				0D98E2631DEC40D700F130E2 /* Fabric */,
 				6D0387FB3267351EE1D8DBBE /* [CP] Embed Pods Frameworks */,
 				BAF5AD6F627C1A6FFE20C9C5 /* [CP] Copy Pods Resources */,
+				0DD9025A1EB62D3A00AEDCB1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0DD902591EB62D3A00AEDCB1 /* PBXTargetDependency */,
 			);
 			name = "Cetacea-Mac";
 			productName = "Cetacea-Mac";
@@ -878,6 +975,23 @@
 			productReference = 0D6A5E391D2100BB00211AFC /* Cetacea-MacUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0DD902471EB62D3A00AEDCB1 /* Cetacea Mac Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DD9025C1EB62D3B00AEDCB1 /* Build configuration list for PBXNativeTarget "Cetacea Mac Today Extension" */;
+			buildPhases = (
+				0DD902441EB62D3A00AEDCB1 /* Sources */,
+				0DD902451EB62D3A00AEDCB1 /* Frameworks */,
+				0DD902461EB62D3A00AEDCB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cetacea Mac Today Extension";
+			productName = "Cetacea Mac Today Extension";
+			productReference = 0DD902481EB62D3A00AEDCB1 /* Cetacea Mac Today Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -919,6 +1033,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0D6A5E171D2100BB00211AFC;
 					};
+					0DD902471EB62D3A00AEDCB1 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0D6A5E131D2100BB00211AFC /* Build configuration list for PBXProject "Cetacea-Mac" */;
@@ -937,6 +1056,7 @@
 				0D6A5E171D2100BB00211AFC /* Cetacea-Mac */,
 				0D6A5E2D1D2100BB00211AFC /* Cetacea-MacTests */,
 				0D6A5E381D2100BB00211AFC /* Cetacea-MacUITests */,
+				0DD902471EB62D3A00AEDCB1 /* Cetacea Mac Today Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1034,6 +1154,11 @@
 				0D619F601E8E0A5A0081DFA4 /* arta.css in Resources */,
 				0D619F921E8E0A5B0081DFA4 /* monokai-sublime.css in Resources */,
 				0D619F8B1E8E0A5B0081DFA4 /* hybrid.css in Resources */,
+				C53D33CB4F47E7073BDAAD6A /* Pods-Cetacea-Cetacea-Mac-metadata.plist in Resources */,
+				5D757BEB4A9003A61F3EE3A0 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist in Resources */,
+				46ADEE544B213E37A7B3E16D /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist in Resources */,
+				BC74C7F4A1525AA2C9CBF069 /* Pods-Cetacea-Mac-metadata.plist in Resources */,
+				2C247E4BCE5DE611FA746969 /* Pods-Cetacea-Mac-settings-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,42 +1176,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DD902461EB62D3A00AEDCB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD902531EB62D3A00AEDCB1 /* TodayViewController.xib in Resources */,
+				0DD902571EB62D3A00AEDCB1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D4189401D281D5300530FD7 /* ShellScript */ = {
+		0D4189401D281D5300530FD7 /* xcode-build-bump.sh */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "xcode-build-bump.sh";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n# xcode-build-bump.sh\n# @desc Auto-increment the build number every time the project is run.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 6. Insure that your starting build number is set to a whole integer and not a float (e.g. 1, not 1.0)\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
-		0D98E2631DEC40D700F130E2 /* ShellScript */ = {
+		0D98E2631DEC40D700F130E2 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = Fabric;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" a16b406fd4e2436ed428a29739ef5d3c14fb0569 c8d93fa2d50501a4777180b0094f40eaa2e24282ffe23af26ca2448d10487bc5";
 		};
-		0DF4105E1DEF24F900318EF4 /* ShellScript */ = {
+		0DF4105E1DEF24F900318EF4 /* xcode-version-bump.sh */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "xcode-version-bump.sh";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -1105,7 +1242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BAF5AD6F627C1A6FFE20C9C5 /* [CP] Copy Pods Resources */ = {
@@ -1120,7 +1257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FDB8ADD1CE73BFE18CFA6B20 /* [CP] Check Pods Manifest.lock */ = {
@@ -1220,6 +1357,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0DD902441EB62D3A00AEDCB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD902501EB62D3A00AEDCB1 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1233,6 +1378,11 @@
 			target = 0D6A5E171D2100BB00211AFC /* Cetacea-Mac */;
 			targetProxy = 0D6A5E3A1D2100BB00211AFC /* PBXContainerItemProxy */;
 		};
+		0DD902591EB62D3A00AEDCB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0DD902471EB62D3A00AEDCB1 /* Cetacea Mac Today Extension */;
+			targetProxy = 0DD902581EB62D3A00AEDCB1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1245,6 +1395,22 @@
 				0D6832FA1E94E6E5001C32D1 /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DD902511EB62D3A00AEDCB1 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DD902521EB62D3A00AEDCB1 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		0DD902551EB62D3A00AEDCB1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DD902561EB62D3A00AEDCB1 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1341,7 +1507,7 @@
 		};
 		0D6A5E431D2100BB00211AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */;
+			baseConfigurationReference = D098CA908365B168546D562A /* Pods-Cetacea-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1371,7 +1537,7 @@
 		};
 		0D6A5E441D2100BB00211AFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */;
+			baseConfigurationReference = 0A812BFC2C3A02E442E89089 /* Pods-Cetacea-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1448,6 +1614,78 @@
 			};
 			name = Release;
 		};
+		0DD9025D1EB62D3B00AEDCB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea Mac Today Extension/Cetacea_Mac_Today_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = "Cetacea Mac Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac.Cetacea-Mac-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0DD9025E1EB62D3B00AEDCB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea Mac Today Extension/Cetacea_Mac_Today_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = "Cetacea Mac Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac.Cetacea-Mac-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0DD9025F1EB62D3B00AEDCB1 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea Mac Today Extension/Cetacea_Mac_Today_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = "Cetacea Mac Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac.Cetacea-Mac-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Non-AppStore";
+		};
+		0DD902601EB62D3B00AEDCB1 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Cetacea Mac Today Extension/Cetacea_Mac_Today_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				INFOPLIST_FILE = "Cetacea Mac Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-Mac.Cetacea-Mac-Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = AppStore;
+		};
 		0DF410561DEF22C700318EF4 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1491,7 +1729,7 @@
 		};
 		0DF410571DEF22C700318EF4 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */;
+			baseConfigurationReference = CB4CD699B0802BA2752A0AD1 /* Pods-Cetacea-Mac.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1587,7 +1825,7 @@
 		};
 		0DF4105B1DEF22E000318EF4 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */;
+			baseConfigurationReference = 9D6DFD1AAAB98D429A46E136 /* Pods-Cetacea-Mac.non-appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea-NonAppStore.entitlements";
@@ -1686,6 +1924,16 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Non-AppStore";
+		};
+		0DD9025C1EB62D3B00AEDCB1 /* Build configuration list for PBXNativeTarget "Cetacea Mac Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DD9025D1EB62D3B00AEDCB1 /* Debug */,
+				0DD9025E1EB62D3B00AEDCB1 /* Release */,
+				0DD9025F1EB62D3B00AEDCB1 /* Non-AppStore */,
+				0DD902601EB62D3B00AEDCB1 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

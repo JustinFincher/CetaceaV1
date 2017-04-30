@@ -1,6 +1,0 @@
-framework module Pods_Cetacea_Cetacea_Mac {
-  umbrella header "Pods-Cetacea-Cetacea-Mac-umbrella.h"
-
-  export *
-  module * { export * }
-}
