@@ -6,7 +6,6 @@
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
 #import "JZdayNightThemeManager.h"
-#import "JZHeader.h"
 #import "JZEditorHighlightThemeDataModel.h"
 
 @implementation JZEditorHighlightThemeDataModel

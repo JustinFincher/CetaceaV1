@@ -6,7 +6,6 @@
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
 
-#import "JZHeader.h"
 #import "JZHighlighThemePreviewCollectionViewItem.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
 #import "DynamicColor-Swift.h"

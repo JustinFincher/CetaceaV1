@@ -16,7 +16,6 @@
 #import "JZEditorRulerView.h"
 #import "JZEditorHighlightThemeManager.h"
 
-#import "JZHeader.h"
 
 @interface JZEditorViewController ()<NSTextViewDelegate>
 

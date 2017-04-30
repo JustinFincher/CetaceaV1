@@ -7,7 +7,6 @@
 //
 
 #import "JZiCloudFileExtensionCetaceaDocument.h"
-#import "JZHeader.h"
 #import "JZMainWindowController.h"
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
 

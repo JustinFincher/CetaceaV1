@@ -8,7 +8,6 @@
 
 #import "JZiCloudFileExtensionCetaceaThemeDataBase.h"
 #import "JZiCloudStorageManager.h"
-#import "JZHeader.h"
 
 @implementation JZiCloudFileExtensionCetaceaThemeDataBase
 + (id)sharedManager {

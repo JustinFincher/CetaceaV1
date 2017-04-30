@@ -11,7 +11,6 @@
 #import "JZEditorViewController.h"
 #import "JZEditorPreviewSplitViewForegroundBlurViewController.h"
 #import "JZdayNightThemeManager.h"
-#import "JZHeader.h"
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
 
 @interface JZEditorPreviewSplitViewController ()

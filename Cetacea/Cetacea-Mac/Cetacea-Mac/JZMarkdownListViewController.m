@@ -11,7 +11,6 @@
 #import "JZMarkdownListTableCellView.h"
 #import "DateTools.h"
 #import "JZMarkdownListSortSelectionMenu.h"
-#import "JZHeader.h"
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate,JZMarkdownListSortSelectionMenuDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;

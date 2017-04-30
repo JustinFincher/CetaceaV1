@@ -8,7 +8,6 @@
 
 #import "JZPreviewViewController.h"
 #import <MMMarkdown/MMMarkdown.h>
-#import "JZHeader.h"
 
 
 @interface JZPreviewViewController ()<WebFrameLoadDelegate>

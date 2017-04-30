@@ -9,7 +9,6 @@
 #import "JZiCloudStorageProcesser.h"
 #import "JZiCloudStorageManager.h"
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
-#import "JZHeader.h"
 
 @interface JZiCloudStorageProcesser()<JZiCloudStorageManagerDelegate>
 

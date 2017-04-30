@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Cetacea-SharedFramework/Cetacea-SharedFramework.xcodeproj">
+      location = "group:/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Cetacea-iOS/Cetacea-iOS.xcodeproj">

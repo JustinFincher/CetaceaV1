@@ -10,7 +10,6 @@
 #import "JZMarkdownListViewController.h"
 #import "JZEditorPreviewSplitViewController.h"
 #import "JZMarkdownListViewController.h"
-#import "JZHeader.h"
 
 @interface JZMainListEditorSplitViewController ()<JZMarkdownListViewDelegate,NSSplitViewDelegate>
 @property (weak) IBOutlet NSSplitViewItem *folderListViewItem;

@@ -8,7 +8,6 @@
 
 #import "JZiCloudFileExtensionCetaceaDataBase.h"
 #import "JZiCloudStorageManager.h"
-#import "JZHeader.h"
 
 @implementation JZiCloudFileExtensionCetaceaDataBase
 

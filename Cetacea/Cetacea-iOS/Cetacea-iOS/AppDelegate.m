@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+@import CetaceaSharedFramework;
 
 @interface AppDelegate ()
 

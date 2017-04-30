@@ -7,7 +7,6 @@
 //
 
 #import "JZEditorHighlightThemeColorDataModel.h"
-#import "JZHeader.h"
 
 @implementation JZEditorHighlightThemeColorDataModel
 

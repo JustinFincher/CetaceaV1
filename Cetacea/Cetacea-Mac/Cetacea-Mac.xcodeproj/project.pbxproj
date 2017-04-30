@@ -154,7 +154,7 @@
 		0DD6D15E1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6D15D1E8E594600EA28C8 /* JZEditorHighlightThemeColorDataModel.m */; };
 		0DDB6A491D37727C00540606 /* JZEditorHighlightThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */; };
 		0DEEB5351E9238150056F969 /* JZOptionalScrollableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */; };
-		8EFA0A599E75BC4B9CF4977B /* Pods_Cetacea_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CC7E4B46E11785FDC1D438 /* Pods_Cetacea_Mac.framework */; };
+		1539522E9A15861899B24633 /* Pods_Cetacea_Cetacea_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +194,7 @@
 		0D4FBA0A1D2C2933001821A2 /* JZEditorRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorRulerView.m; sourceTree = "<group>"; };
 		0D4FBA121D2C3AC7001821A2 /* JZEditorTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorTextView.h; sourceTree = "<group>"; };
 		0D4FBA131D2C3AC7001821A2 /* JZEditorTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorTextView.m; sourceTree = "<group>"; };
+		0D56699C1EB58690000C3E39 /* Cetacea_SharedFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cetacea_SharedFramework.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Cetacea-duhdjwraslghqbgwbbpqaitpmgng/Build/Products/Debug/Cetacea_SharedFramework.framework"; sourceTree = "<group>"; };
 		0D5F32481D25828A00566B82 /* JZAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutWindowController.h; sourceTree = "<group>"; };
 		0D5F32491D25828A00566B82 /* JZAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAboutWindowController.m; sourceTree = "<group>"; };
 		0D5F324B1D258B3200566B82 /* JZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAboutViewController.h; sourceTree = "<group>"; };
@@ -304,6 +305,7 @@
 		0D6AA0FC1D25BA07003DAAB3 /* JZSettingsTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsTabViewController.m; sourceTree = "<group>"; };
 		0D6BEBBE1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
 		0D6BEBBF1D2E16F200F3483F /* JZiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
+		0D6FDBF01EB59AFF001528B8 /* CSF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSF.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Cetacea-duhdjwraslghqbgwbbpqaitpmgng/Build/Products/Debug/CSF.framework"; sourceTree = "<group>"; };
 		0D7F18281DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaDocument.h; sourceTree = "<group>"; };
 		0D7F18291DF0BB88009040AD /* JZiCloudFileExtensionCetaceaDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaDocument.m; sourceTree = "<group>"; };
 		0D864A151D21207400F47613 /* Cetacea.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cetacea.entitlements; sourceTree = "<group>"; };
@@ -333,7 +335,6 @@
 		0D87A5421D2A5CFD00F9DC34 /* JZEditorLinkPopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZEditorLinkPopoverContentViewController.xib; sourceTree = "<group>"; };
 		0D87A5451D2A7BB400F9DC34 /* JZEditorLayouManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorLayouManager.h; sourceTree = "<group>"; };
 		0D87A5461D2A7BB400F9DC34 /* JZEditorLayouManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorLayouManager.m; sourceTree = "<group>"; };
-		0D98E2641DEC66D100F130E2 /* JZHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHeader.h; sourceTree = "<group>"; };
 		0D9D8FBE1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorHighlightThemeDataModel.h; sourceTree = "<group>"; };
 		0D9D8FBF1D2F771B005F91F6 /* JZEditorHighlightThemeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeDataModel.m; sourceTree = "<group>"; };
 		0D9D8FC41D2F7888005F91F6 /* JZColorDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZColorDataModel.h; sourceTree = "<group>"; };
@@ -390,13 +391,13 @@
 		0DDB6A481D37727C00540606 /* JZEditorHighlightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorHighlightThemeManager.m; sourceTree = "<group>"; };
 		0DEEB5331E9238150056F969 /* JZOptionalScrollableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZOptionalScrollableView.h; sourceTree = "<group>"; };
 		0DEEB5341E9238150056F969 /* JZOptionalScrollableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZOptionalScrollableView.m; sourceTree = "<group>"; };
-		0DEEB5361E949FCB0056F969 /* Cetacea-Mac.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cetacea-Mac.pch"; sourceTree = "<group>"; };
+		0DEEB5361E949FCB0056F969 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
-		4514B757F1A3CF42A6327A3B /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
-		5214843807333A0802EC6819 /* Pods-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
-		53CC7E4B46E11785FDC1D438 /* Pods_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF5585A08423E4593A2BDA74 /* Pods-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
-		C24721DA7922C24A023EC295 /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
+		35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,7 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D864A2B1D21451300F47613 /* WebKit.framework in Frameworks */,
-				8EFA0A599E75BC4B9CF4977B /* Pods_Cetacea_Mac.framework in Frameworks */,
+				1539522E9A15861899B24633 /* Pods_Cetacea_Cetacea_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,7 +538,7 @@
 				0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */,
 				0D6A5E191D2100BB00211AFC /* Products */,
 				0D864A161D21210E00F47613 /* Frameworks */,
-				56FBDC7B2D6B96DDEAAC405E /* Pods */,
+				C85316108435F71892D185CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -554,10 +555,9 @@
 		0D6A5E1A1D2100BB00211AFC /* Cetacea-Mac */ = {
 			isa = PBXGroup;
 			children = (
-				0DEEB5361E949FCB0056F969 /* Cetacea-Mac.pch */,
+				0DEEB5361E949FCB0056F969 /* prefix.pch */,
 				0D864A151D21207400F47613 /* Cetacea.entitlements */,
 				0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */,
-				0D98E2641DEC66D100F130E2 /* JZHeader.h */,
 				0DD6D15F1E8E5E4200EA28C8 /* JZStaticValues.h */,
 				0D6A5E1B1D2100BB00211AFC /* AppDelegate.h */,
 				0D6A5E1C1D2100BB00211AFC /* AppDelegate.m */,
@@ -586,8 +586,10 @@
 		0D864A161D21210E00F47613 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D6FDBF01EB59AFF001528B8 /* CSF.framework */,
+				0D56699C1EB58690000C3E39 /* Cetacea_SharedFramework.framework */,
 				0D864A2A1D21451300F47613 /* WebKit.framework */,
-				53CC7E4B46E11785FDC1D438 /* Pods_Cetacea_Mac.framework */,
+				6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -809,13 +811,13 @@
 			name = "Cetace File";
 			sourceTree = "<group>";
 		};
-		56FBDC7B2D6B96DDEAAC405E /* Pods */ = {
+		C85316108435F71892D185CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C24721DA7922C24A023EC295 /* Pods-Cetacea-Mac.debug.xcconfig */,
-				4514B757F1A3CF42A6327A3B /* Pods-Cetacea-Mac.release.xcconfig */,
-				5214843807333A0802EC6819 /* Pods-Cetacea-Mac.non-appstore.xcconfig */,
-				AF5585A08423E4593A2BDA74 /* Pods-Cetacea-Mac.appstore.xcconfig */,
+				35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */,
+				F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */,
+				84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */,
+				1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -827,15 +829,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D6A5E421D2100BB00211AFC /* Build configuration list for PBXNativeTarget "Cetacea-Mac" */;
 			buildPhases = (
-				B86240B581271684195EFD66 /* [CP] Check Pods Manifest.lock */,
+				FDB8ADD1CE73BFE18CFA6B20 /* [CP] Check Pods Manifest.lock */,
 				0D6A5E141D2100BB00211AFC /* Sources */,
 				0D6A5E151D2100BB00211AFC /* Frameworks */,
 				0D6A5E161D2100BB00211AFC /* Resources */,
 				0D4189401D281D5300530FD7 /* ShellScript */,
 				0DF4105E1DEF24F900318EF4 /* ShellScript */,
 				0D98E2631DEC40D700F130E2 /* ShellScript */,
-				58662EC1A6CD01D00BF28328 /* [CP] Embed Pods Frameworks */,
-				4C56AE07E8B69ADE1EFFC385 /* [CP] Copy Pods Resources */,
+				6D0387FB3267351EE1D8DBBE /* [CP] Embed Pods Frameworks */,
+				BAF5AD6F627C1A6FFE20C9C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1097,22 +1099,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# xcode-version-bump.sh\n# @desc Auto-increment the version number (only) when a project is archived for export.\n# @usage\n# 1. Select: your Target in Xcode\n# 2. Select: Build Phases Tab\n# 3. Select: Add Build Phase -> Add Run Script\n# 4. Paste code below in to new \"Run Script\" section\n# 5. Check the checkbox \"Run script only when installing\"\n# 6. Drag the \"Run Script\" below \"Link Binaries With Libraries\"\n# 7. Insure your starting version number is in SemVer format (e.g. 1.0.0)\n\n# This splits a two-decimal version string, such as \"0.45.123\", allowing us to increment the third position.\nVERSIONNUM=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nNEWSUBVERSION=`echo $VERSIONNUM | awk -F \".\" '{print $3}'`\nNEWSUBVERSION=$(($NEWSUBVERSION + 1))\nNEWVERSIONSTRING=`echo $VERSIONNUM | awk -F \".\" '{print $1 \".\" $2 \".'$NEWSUBVERSION'\" }'`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $NEWVERSIONSTRING\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
 		};
-		4C56AE07E8B69ADE1EFFC385 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		58662EC1A6CD01D00BF28328 /* [CP] Embed Pods Frameworks */ = {
+		6D0387FB3267351EE1D8DBBE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1124,10 +1111,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B86240B581271684195EFD66 /* [CP] Check Pods Manifest.lock */ = {
+		BAF5AD6F627C1A6FFE20C9C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB8ADD1CE73BFE18CFA6B20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1345,7 +1347,7 @@
 		};
 		0D6A5E431D2100BB00211AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C24721DA7922C24A023EC295 /* Pods-Cetacea-Mac.debug.xcconfig */;
+			baseConfigurationReference = 35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1353,11 +1355,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "Cetacea-Mac/prefix.pch";
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"${PROJECT_DIR}/../",
 				);
-				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea-Mac.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1371,7 +1377,7 @@
 		};
 		0D6A5E441D2100BB00211AFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4514B757F1A3CF42A6327A3B /* Pods-Cetacea-Mac.release.xcconfig */;
+			baseConfigurationReference = F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1379,11 +1385,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "Cetacea-Mac/prefix.pch";
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"${PROJECT_DIR}/../",
 				);
-				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea-Mac.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1487,7 +1497,7 @@
 		};
 		0DF410571DEF22C700318EF4 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF5585A08423E4593A2BDA74 /* Pods-Cetacea-Mac.appstore.xcconfig */;
+			baseConfigurationReference = 1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea.entitlements";
@@ -1495,11 +1505,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "Cetacea-Mac/prefix.pch";
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"${PROJECT_DIR}/../",
 				);
-				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea-Mac.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1579,7 +1593,7 @@
 		};
 		0DF4105B1DEF22E000318EF4 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5214843807333A0802EC6819 /* Pods-Cetacea-Mac.non-appstore.xcconfig */;
+			baseConfigurationReference = 84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-Mac/Cetacea-NonAppStore.entitlements";
@@ -1587,11 +1601,15 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREFIX_HEADER = "Cetacea-Mac/prefix.pch";
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-Mac",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Crashlytics\"",
+					"\"${PODS_ROOT}/Headers/Public/Fabric\"",
+					"${PROJECT_DIR}/../",
 				);
-				GCC_PREFIX_HEADER = "Cetacea-Mac/Cetacea-Mac.pch";
 				INFOPLIST_FILE = "Cetacea-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;

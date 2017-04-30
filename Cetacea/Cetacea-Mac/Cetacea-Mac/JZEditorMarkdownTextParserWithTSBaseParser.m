@@ -10,7 +10,6 @@
 #import "TSMarkdownParser.h"
 #import <AppKit/AppKit.h>
 #import "JZFontDisplayManager.h"
-#import "JZHeader.h"
 #import "JZEditorHighlightThemeManager.h"
 
 @interface JZEditorMarkdownTextParserWithTSBaseParser()

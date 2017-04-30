@@ -8,8 +8,6 @@
 
 #import "AppDelegate.h"
 #import "JZiCloudStorageManager.h"
-#import "JZHeader.h"
-
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 

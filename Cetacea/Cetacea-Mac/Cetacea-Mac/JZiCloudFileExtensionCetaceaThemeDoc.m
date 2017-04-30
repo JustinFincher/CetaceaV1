@@ -10,7 +10,6 @@
 #import "JZEditorLayouManager.h"
 #import "JZEditorTextView.h"
 #import "JZEditorMarkdownTextParserWithTSBaseParser.h"
-#import "JZHeader.h"
 #import <QuartzCore/QuartzCore.h>
 #import "JZEditorHighlightThemeManager.h"
 

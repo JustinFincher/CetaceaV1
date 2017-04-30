@@ -5,7 +5,6 @@
 //  Created by Fincher Justin on 16/7/8.
 //  Copyright © 2016年 JustZht. All rights reserved.
 //
-#import "JZHeader.h"
 #import "JZSettingsHighlightThemeEditViewController.h"
 
 #import "JZSettingsApperanceThemeTableViewLightCellView.h"

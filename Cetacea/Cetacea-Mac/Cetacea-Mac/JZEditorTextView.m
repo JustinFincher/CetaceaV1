@@ -8,7 +8,6 @@
 
 #import "JZEditorTextView.h"
 #import "JZEditorHighlightThemeManager.h"
-#import "JZHeader.h"
 
 @interface JZEditorTextView()
 
