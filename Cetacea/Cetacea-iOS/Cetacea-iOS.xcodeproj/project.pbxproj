@@ -27,6 +27,7 @@
 		0DD9026B1EB62D5900AEDCB1 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD9026A1EB62D5900AEDCB1 /* TodayViewController.m */; };
 		0DD9026E1EB62D5900AEDCB1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9026C1EB62D5900AEDCB1 /* MainInterface.storyboard */; };
 		0DD902731EB62D5900AEDCB1 /* Cetacea iOS Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DD902651EB62D5900AEDCB1 /* Cetacea iOS Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0DD902771EB63C3000AEDCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D56692E1EB514F1000C3E39 /* Assets.xcassets */; };
 		19C0654E2EC353F146412AD0 /* libPods-WatchKitApp Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA53E990352AFE8A65E40EC /* libPods-WatchKitApp Extension.a */; };
 		678ED7A4CAE45F56DD8D79B5 /* Pods_Cetacea_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D2AAE4F95A80812B435A45 /* Pods_Cetacea_iOS.framework */; };
 		692C58DC0EFA85CB04E0D5AD /* Pods-Cetacea-Cetacea-iOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7F4EB4163D731E33D84456 /* Pods-Cetacea-Cetacea-iOS-metadata.plist */; };
@@ -529,6 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD902171EB622D800AEDCB1 /* Assets.xcassets in Resources */,
+				0DD902771EB63C3000AEDCB1 /* Assets.xcassets in Resources */,
 				0DD902151EB622D800AEDCB1 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -912,7 +914,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 31C2D387A5B64F0637EA1F32 /* Pods-Cetacea-iOS.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-iOS/Cetacea-iOS.entitlements";
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -945,7 +947,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 12C539D625DF016A1B3FF659 /* Pods-Cetacea-iOS.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				CODE_SIGN_ENTITLEMENTS = "Cetacea-iOS/Cetacea-iOS.entitlements";
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				FRAMEWORK_SEARCH_PATHS = (
