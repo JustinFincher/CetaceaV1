@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0D5669E91EB58FAF000C3E39"
-               BuildableName = "CSF.framework"
-               BlueprintName = "CSF-iOS"
+               BuildableName = "CetaceaSharedFramework.framework"
+               BlueprintName = "CetaceaSharedFramework-iOS"
                ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D5669E91EB58FAF000C3E39"
-            BuildableName = "CSF.framework"
-            BlueprintName = "CSF-iOS"
+            BuildableName = "CetaceaSharedFramework.framework"
+            BlueprintName = "CetaceaSharedFramework-iOS"
             ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D5669E91EB58FAF000C3E39"
-            BuildableName = "CSF.framework"
-            BlueprintName = "CSF-iOS"
+            BuildableName = "CetaceaSharedFramework.framework"
+            BlueprintName = "CetaceaSharedFramework-iOS"
             ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

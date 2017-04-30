@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0D566A031EB58FF1000C3E39"
-               BuildableName = "CSF.framework"
-               BlueprintName = "CSF-watchOS"
+               BuildableName = "CetaceaSharedFramework.framework"
+               BlueprintName = "CetaceaSharedFramework-watchOS"
                ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D566A031EB58FF1000C3E39"
-            BuildableName = "CSF.framework"
-            BlueprintName = "CSF-watchOS"
+            BuildableName = "CetaceaSharedFramework.framework"
+            BlueprintName = "CetaceaSharedFramework-watchOS"
             ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0D566A031EB58FF1000C3E39"
-            BuildableName = "CSF.framework"
-            BlueprintName = "CSF-watchOS"
+            BuildableName = "CetaceaSharedFramework.framework"
+            BlueprintName = "CetaceaSharedFramework-watchOS"
             ReferencedContainer = "container:CetaceaSharedFramework.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

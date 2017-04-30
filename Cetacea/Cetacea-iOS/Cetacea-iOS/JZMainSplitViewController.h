@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JZMainSplitViewController.h
 //  Cetacea-iOS
 //
 //  Created by Justin Fincher on 2017/4/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JZMainSplitViewController : UISplitViewController
 
 @end
-

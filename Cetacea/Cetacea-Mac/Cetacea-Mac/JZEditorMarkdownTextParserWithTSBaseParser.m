@@ -25,7 +25,6 @@
 
 #pragma mark Singleton Methods
 
-
 - (id)init {
     if (self = [super init])
     {
