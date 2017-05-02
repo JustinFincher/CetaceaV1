@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>DefaultValue</key>
-			<string>0.0.34 (34)</string>
+			<string>0.0.44 (44)</string>
 			<key>Key</key>
 			<string>com.JustZht.GitHubContributions.Bundle.Settings.AppVersionTitle</string>
 			<key>Title</key>

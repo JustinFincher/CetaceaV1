@@ -7,23 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D566A111EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A101EB59136000C3E39 /* CetaceaSharedFramework.h */; };
-		0D566A121EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A101EB59136000C3E39 /* CetaceaSharedFramework.h */; };
-		0D566A131EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A101EB59136000C3E39 /* CetaceaSharedFramework.h */; };
-		0D566A171EB592B4000C3E39 /* JZGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A161EB592AE000C3E39 /* JZGlobalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D566A181EB592B5000C3E39 /* JZGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A161EB592AE000C3E39 /* JZGlobalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D566A191EB592B5000C3E39 /* JZGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D566A161EB592AE000C3E39 /* JZGlobalHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DD9027A1EB66BF200AEDCB1 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
+		0DD9027B1EB66BF200AEDCB1 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
+		0DD9027C1EB66BF200AEDCB1 /* CSFiCloudSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */; };
+		0DD9027D1EB66BF200AEDCB1 /* CSFiCloudSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */; };
+		0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		0DD902991EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D566A0D1EB59077000C3E39 /* CetaceaSharedFramework-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-iOS-Info.plist"; sourceTree = "<group>"; };
-		0D566A0E1EB59077000C3E39 /* CetaceaSharedFramework-OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-OSX-Info.plist"; sourceTree = "<group>"; };
-		0D566A0F1EB59077000C3E39 /* CetaceaSharedFramework-watchOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-watchOS-Info.plist"; sourceTree = "<group>"; };
-		0D566A101EB59136000C3E39 /* CetaceaSharedFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CetaceaSharedFramework.h; sourceTree = "<group>"; };
-		0D566A161EB592AE000C3E39 /* JZGlobalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZGlobalHeader.h; sourceTree = "<group>"; };
+		0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudSyncManager.h; sourceTree = "<group>"; };
+		0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudSyncManager.m; sourceTree = "<group>"; };
+		0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-iOS-Info.plist"; sourceTree = "<group>"; };
+		0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-OSX-Info.plist"; sourceTree = "<group>"; };
+		0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-watchOS-Info.plist"; sourceTree = "<group>"; };
+		0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CetaceaSharedFramework.h; sourceTree = "<group>"; };
+		0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFGlobalHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,13 @@
 		0D5669B71EB588B0000C3E39 = {
 			isa = PBXGroup;
 			children = (
+				0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */,
+				0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */,
+				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
+				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
+				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
+				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
+				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
 				0D566A0C1EB59077000C3E39 /* Sources */,
 				0D5669C41EB588DC000C3E39 /* Products */,
 			);
@@ -72,11 +94,6 @@
 		0D566A0C1EB59077000C3E39 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0D566A101EB59136000C3E39 /* CetaceaSharedFramework.h */,
-				0D566A0D1EB59077000C3E39 /* CetaceaSharedFramework-iOS-Info.plist */,
-				0D566A0E1EB59077000C3E39 /* CetaceaSharedFramework-OSX-Info.plist */,
-				0D566A0F1EB59077000C3E39 /* CetaceaSharedFramework-watchOS-Info.plist */,
-				0D566A161EB592AE000C3E39 /* JZGlobalHeader.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -88,8 +105,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D566A171EB592B4000C3E39 /* JZGlobalHeader.h in Headers */,
-				0D566A111EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */,
+				0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0DD9027A1EB66BF200AEDCB1 /* CSFiCloudSyncManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +115,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D566A181EB592B5000C3E39 /* JZGlobalHeader.h in Headers */,
-				0D566A121EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */,
+				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0DD9027B1EB66BF200AEDCB1 /* CSFiCloudSyncManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +125,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D566A191EB592B5000C3E39 /* JZGlobalHeader.h in Headers */,
-				0D566A131EB59136000C3E39 /* CetaceaSharedFramework.h in Headers */,
+				0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0DD902991EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD9027C1EB66BF200AEDCB1 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD9027D1EB66BF200AEDCB1 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

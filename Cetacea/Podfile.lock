@@ -5,7 +5,8 @@ PODS:
   - DynamicColor (3.2.1)
   - Fabric (1.6.11)
   - MMMarkdown (0.5.5)
-  - ReactiveObjC (2.1.2)
+  - ReactiveObjC (3.0.0)
+  - SDVersion (4.0.2)
   - SyntaxKit (1.0)
 
 DEPENDENCIES:
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Fabric
   - MMMarkdown
   - ReactiveObjC
+  - SDVersion
   - SyntaxKit (from `https://github.com/SecondRenaissance/SyntaxKit.git`)
 
 EXTERNAL SOURCES:
@@ -32,9 +34,10 @@ SPEC CHECKSUMS:
   DynamicColor: 4786d650c69da6c3f2cbfe068348288ec4e5521f
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
-  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDVersion: 7b472a749907c29fcba04dadb8ecb4eb9a9aeeab
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: 8bd4deec39899ad42897b95cd11457efa430126a
+PODFILE CHECKSUM: 6b3d3d71b9904eb00d39b7362a58f30bb1f0e6a2
 
 COCOAPODS: 1.2.1

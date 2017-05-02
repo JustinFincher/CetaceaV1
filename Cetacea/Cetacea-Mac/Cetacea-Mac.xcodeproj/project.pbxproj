@@ -202,6 +202,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07F84CC86B378BC2D0664A66 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		0A812BFC2C3A02E442E89089 /* Pods-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 		0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZdayNightThemeManager.h; sourceTree = "<group>"; };
 		0D41890E1D268FA500530FD7 /* JZdayNightThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZdayNightThemeManager.m; sourceTree = "<group>"; };
@@ -431,20 +432,34 @@
 		0DEEB5361E949FCB0056F969 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
 		0DF4105F1DEF3BDA00318EF4 /* Cetacea-NonAppStore.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Cetacea-NonAppStore.entitlements"; sourceTree = "<group>"; };
 		150544A7A3D5DC0A62B925AB /* Pods-Cetacea-Cetacea-Mac-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-metadata.plist"; path = "../Pods/Pods-Cetacea-Cetacea-Mac-metadata.plist"; sourceTree = "<group>"; };
+		1773C06D6FBE12FD2928ADE6 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		1A14FFE2C6DD1D3FD5CC6E41 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		1D45A3E79F214B188263B795 /* Pods-Cetacea-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
+		234B6174F011562C05DB7104 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		28C329D04B3FDFF42A09707A /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		2DD136FA467C40759147F3F2 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		2F753E95CC84FEFA4129A508 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		3361A77206F8F9413EE97F9E /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		35DDB837C4BE96A5BFD0C64E /* Pods-Cetacea-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
 		382EB448AC539559C7BDE080 /* Pods-Cetacea-Mac-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-metadata.plist"; path = "../Pods/Pods-Cetacea-Mac-metadata.plist"; sourceTree = "<group>"; };
+		564D4928CEDB57CCA464190D /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		624604E06CAD7A769BA2D6A0 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		64BCC8F31AFC7A4BFEB70E0B /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		6BDFA9AC3B1CB5C6D6071762 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		6ED5045FB6A0B4FCF9C8FD9E /* Pods_Cetacea_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		737C820DCFDF477632CE50B3 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		7CCB61FAF8D4D759E2C4C23B /* Pods_Cetacea_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cetacea_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D77C97F785BF5A5D610893C /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		84B96C301BFDF935FC0FF7D4 /* Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
 		9B4D8190B848170EED44C0F9 /* Pods-Cetacea-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Settings.bundle/Pods-Cetacea-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		9D6DFD1AAAB98D429A46E136 /* Pods-Cetacea-Mac.non-appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.non-appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.non-appstore.xcconfig"; sourceTree = "<group>"; };
+		AC9ACCDDBFDE1002431E3284 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		B3D41B7D73E9385BF8BCFB0B /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		BC6809D9E990494F0A9E1997 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		C4FD233CF1A509B17B12FA0F /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		CB4CD699B0802BA2752A0AD1 /* Pods-Cetacea-Mac.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.appstore.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.appstore.xcconfig"; sourceTree = "<group>"; };
 		D098CA908365B168546D562A /* Pods-Cetacea-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Mac.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		F3D3FAFDE365FC7D2487504C /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		F6788CA176113D1795233E12 /* Pods-Cetacea-Cetacea-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cetacea-Cetacea-Mac.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Cetacea-Cetacea-Mac/Pods-Cetacea-Cetacea-Mac.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -903,6 +918,21 @@
 				1A14FFE2C6DD1D3FD5CC6E41 /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				C4FD233CF1A509B17B12FA0F /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				28C329D04B3FDFF42A09707A /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				737C820DCFDF477632CE50B3 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				07F84CC86B378BC2D0664A66 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				564D4928CEDB57CCA464190D /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				2F753E95CC84FEFA4129A508 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				7D77C97F785BF5A5D610893C /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				1773C06D6FBE12FD2928ADE6 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				624604E06CAD7A769BA2D6A0 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				BC6809D9E990494F0A9E1997 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				3361A77206F8F9413EE97F9E /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				234B6174F011562C05DB7104 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				AC9ACCDDBFDE1002431E3284 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				64BCC8F31AFC7A4BFEB70E0B /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				2DD136FA467C40759147F3F2 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				F3D3FAFDE365FC7D2487504C /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				B3D41B7D73E9385BF8BCFB0B /* Pods-Cetacea-Mac-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -920,10 +950,10 @@
 				0D6A5E161D2100BB00211AFC /* Resources */,
 				0D4189401D281D5300530FD7 /* xcode-build-bump.sh */,
 				0DF4105E1DEF24F900318EF4 /* xcode-version-bump.sh */,
-				0D98E2631DEC40D700F130E2 /* Fabric */,
 				6D0387FB3267351EE1D8DBBE /* [CP] Embed Pods Frameworks */,
 				BAF5AD6F627C1A6FFE20C9C5 /* [CP] Copy Pods Resources */,
 				0DD9025A1EB62D3A00AEDCB1 /* Embed App Extensions */,
+				0D98E2631DEC40D700F130E2 /* Fabric */,
 			);
 			buildRules = (
 			);

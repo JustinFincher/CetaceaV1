@@ -6,8 +6,8 @@
 //
 //
 
-#ifndef JZGlobalHeader_h
-#define JZGlobalHeader_h
+#ifndef CSFGlobalHeader_h
+#define CSFGlobalHeader_h
 
 #import <Foundation/Foundation.h>
 
@@ -17,4 +17,4 @@
 #   define JZLog(...)
 #endif
 
-#endif /* JZGlobalHeader_h */
+#endif /* CSFGlobalHeader_h */

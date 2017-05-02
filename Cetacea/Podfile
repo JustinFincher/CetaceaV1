@@ -1,15 +1,61 @@
+ # workspace 'Cetacea' do
+ #  project 'Cetacea-iOS/Cetacea-iOS.xcodeproj' do
+ #    target 'Cetacea-iOS' do
+ #      platform :ios, '10.0'
+ #      use_frameworks!
+ #      pod 'DateTools'
+ #      pod 'MMMarkdown'
+ #      pod 'Fabric'
+ #      pod 'Crashlytics'
+ #      pod 'ReactiveObjC'
+ #      pod 'DynamicColor', '~> 3.2.1'
+ #      pod 'SDVersion'
+ #      pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
+ #    end
+
+ #    target 'WatchKitApp' do
+ #      platform :watchos, '3.0'
+ #      project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
+ #      workspace 'Cetacea'
+ #      pod 'SDVersion'
+ #    end
+
+ #    target 'WatchKitApp Extension' do
+ #      platform :watchos, '3.0'
+ #      project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
+ #      workspace 'Cetacea'
+ #      pod 'SDVersion'
+ #    end
+ #  end
+
+ #  project 'Cetacea-Mac/Cetacea-Mac.xcodeproj' do
+ #    target 'Cetacea-Mac' do
+ #      platform :osx, '10.12'
+ #      pod 'DateTools'
+ #      pod 'MMMarkdown'
+ #      pod 'Fabric'
+ #      pod 'Crashlytics'
+ #      pod 'ReactiveObjC'
+ #      pod 'SDVersion'
+ #      pod 'DynamicColor', '~> 3.2.1'
+ #      pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
+ #    end
+ #  end
+ # end
+plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target => false
+
   target 'Cetacea-iOS' do
     use_frameworks!
     platform :ios, '10.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
-    plugin 'cocoapods-acknowledgements', :settings_bundle => true
     pod 'DateTools'
     pod 'MMMarkdown'
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'ReactiveObjC'
     pod 'DynamicColor', '~> 3.2.1'
+    pod 'SDVersion'
     pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
   end
 
@@ -17,12 +63,14 @@
     platform :watchos, '3.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
+    pod 'SDVersion'
   end
 
   target 'WatchKitApp Extension' do
     platform :watchos, '3.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
+    pod 'SDVersion'
   end
 
   target 'Cetacea-Mac' do
@@ -35,6 +83,7 @@
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'ReactiveObjC'
+    pod 'SDVersion'
     pod 'DynamicColor', '~> 3.2.1'
     pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
   #pod 'Sparkle'
