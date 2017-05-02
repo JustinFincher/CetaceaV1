@@ -22,10 +22,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="INI-zM-n94"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V93-Az-9Bu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="244" y="836"/>
+            <point key="canvasLocation" x="941" y="861"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4VM-rB-6fd">
+            <objects>
+                <navigationController id="Vci-2h-tmo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="978-tB-HXm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hAH-VR-UUE" kind="relationship" relationship="rootViewController" id="Q6n-OL-Wr3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwR-tC-rqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="861"/>
         </scene>
         <!--Cetacea-->
         <scene sceneID="gdJ-CY-Dhu">
@@ -54,12 +71,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zh0-Ky-F3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="-100"/>
+            <point key="canvasLocation" x="1399" y="-100"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="Imb-O9-czN">
             <objects>
-                <navigationController id="DEP-38-ry9" sceneMemberID="viewController">
+                <navigationController id="DEP-38-ry9" customClass="JZMainNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLg-Ga-Kf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -78,7 +95,7 @@
                 <splitViewController storyboardIdentifier="JZMainSplitViewController" id="ruS-2c-Ykt" customClass="JZMainSplitViewController" sceneMemberID="viewController">
                     <connections>
                         <segue destination="DEP-38-ry9" kind="relationship" relationship="masterViewController" id="9BI-gk-1DW"/>
-                        <segue destination="hAH-VR-UUE" kind="relationship" relationship="detailViewController" id="FMC-hx-u1J"/>
+                        <segue destination="Vci-2h-tmo" kind="relationship" relationship="detailViewController" id="J3j-G1-4cS"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkz-93-Llb" userLabel="First Responder" sceneMemberID="firstResponder"/>

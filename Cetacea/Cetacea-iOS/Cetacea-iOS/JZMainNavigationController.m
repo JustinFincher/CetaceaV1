@@ -1,37 +1,27 @@
 //
-//  JZMainSplitViewController.m
+//  JZMainNavigationController.m
 //  Cetacea-iOS
 //
-//  Created by Justin Fincher on 2017/4/30.
+//  Created by Justin Fincher on 2017/5/2.
 //  Copyright © 2017年 Justin Fincher. All rights reserved.
 //
 
-#import "JZMainSplitViewController.h"
+#import "JZMainNavigationController.h"
 
-@interface JZMainSplitViewController ()<UISplitViewControllerDelegate>
+@interface JZMainNavigationController ()
 
 @end
 
-@implementation JZMainSplitViewController
+@implementation JZMainNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.delegate = self;
-    
-    self.navigationItem.leftBarButtonItem = self.displayModeButtonItem;
-    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - UISplitViewControllerDelegate
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
-{
-    return YES;
 }
 
 /*
