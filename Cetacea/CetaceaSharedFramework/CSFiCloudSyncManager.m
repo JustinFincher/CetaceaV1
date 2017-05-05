@@ -55,7 +55,7 @@
                                                      name:NSMetadataQueryDidUpdateNotification
                                                    object:self.iCloudCetaceaFilesMetadataQuery];
         
-        [self.iCloudMetadataQuery startQuery];
+        [self.iCloudCetaceaFilesMetadataQuery startQuery];
     }
     return self;
 }

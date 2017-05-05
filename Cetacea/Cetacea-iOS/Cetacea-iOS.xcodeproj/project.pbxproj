@@ -14,6 +14,8 @@
 		0D5669321EB514F1000C3E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5669301EB514F1000C3E39 /* LaunchScreen.storyboard */; };
 		0D6D42771EB8816000D7E1F7 /* Settings-Watch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D42761EB8816000D7E1F7 /* Settings-Watch.bundle */; };
 		0D6D427A1EB883D700D7E1F7 /* JZMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D42791EB883D700D7E1F7 /* JZMainNavigationController.m */; };
+		0D7F31CF1EBC598600D29651 /* CetaceaSharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */; };
+		0D7F31D01EBC598600D29651 /* CetaceaSharedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D9352501EB75EE40023C2F5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9023F1EB6294800AEDCB1 /* Settings.bundle */; };
 		0DD901B31EB5DB8900AEDCB1 /* JZMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD901B21EB5DB8900AEDCB1 /* JZMainSplitViewController.m */; };
 		0DD902151EB622D800AEDCB1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902131EB622D800AEDCB1 /* Interface.storyboard */; };
@@ -64,6 +66,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0D7F31D11EBC598600D29651 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0D7F31D01EBC598600D29651 /* CetaceaSharedFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0DD901E31EB6224700AEDCB1 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +144,7 @@
 		0D6D42791EB883D700D7E1F7 /* JZMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainNavigationController.m; sourceTree = "<group>"; };
 		0D6FDBEE1EB59AF8001528B8 /* CSF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSF.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Cetacea-duhdjwraslghqbgwbbpqaitpmgng/Build/Products/Debug-iphoneos/CSF.framework"; sourceTree = "<group>"; };
 		0D6FDBF51EB5A104001528B8 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CetaceaSharedFramework.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Cetacea-duhdjwraslghqbgwbbpqaitpmgng/Build/Products/Debug-iphoneos/CetaceaSharedFramework.framework"; sourceTree = "<group>"; };
 		0DD901B11EB5DB8900AEDCB1 /* JZMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainSplitViewController.h; sourceTree = "<group>"; };
 		0DD901B21EB5DB8900AEDCB1 /* JZMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainSplitViewController.m; sourceTree = "<group>"; };
 		0DD902111EB622D800AEDCB1 /* WatchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7F31CF1EBC598600D29651 /* CetaceaSharedFramework.framework in Frameworks */,
 				678ED7A4CAE45F56DD8D79B5 /* Pods_Cetacea_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +391,7 @@
 		15D21F322B812359AF718DB9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */,
 				0D6FDBEE1EB59AF8001528B8 /* CSF.framework */,
 				0D566A141EB5924B000C3E39 /* CSF.framework */,
 				0D5669E11EB58B20000C3E39 /* CetaceaSharedFramework.framework */,
@@ -491,6 +507,7 @@
 				0DD901E31EB6224700AEDCB1 /* Embed Watch Content */,
 				0DD902721EB62D5900AEDCB1 /* Embed App Extensions */,
 				0D5669431EB52094000C3E39 /* Fabric/run */,
+				0D7F31D11EBC598600D29651 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1067,6 +1084,35 @@
 				INFOPLIST_FILE = "Cetacea-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"DateTools\"",
+					"-framework",
+					"\"DynamicColor\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"MMMarkdown\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDVersion\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SyntaxKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1100,6 +1146,34 @@
 				INFOPLIST_FILE = "Cetacea-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Crashlytics\"",
+					"-framework",
+					"\"DateTools\"",
+					"-framework",
+					"\"DynamicColor\"",
+					"-framework",
+					"\"Fabric\"",
+					"-framework",
+					"\"MMMarkdown\"",
+					"-framework",
+					"\"ReactiveObjC\"",
+					"-framework",
+					"\"SDVersion\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SyntaxKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
