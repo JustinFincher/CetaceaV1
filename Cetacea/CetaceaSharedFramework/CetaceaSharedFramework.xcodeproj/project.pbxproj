@@ -74,9 +74,7 @@
 				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
 				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
 				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
-				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
-				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
-				0D566A0C1EB59077000C3E39 /* Sources */,
+				0D7F31B91EBC4ABB00D29651 /* Data */,
 				0D5669C41EB588DC000C3E39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,11 +89,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D566A0C1EB59077000C3E39 /* Sources */ = {
+		0D7F31B91EBC4ABB00D29651 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
+				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
 			);
-			path = Sources;
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

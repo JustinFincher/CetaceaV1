@@ -17,4 +17,10 @@
 #   define JZLog(...)
 #endif
 
+
+#define CSF_String_Identifer_iCloud_Container_Name @"iCloud.com.JustZht.Cetacea"
+#define CSF_String_Notification_iCloud_Not_Availiable_Name @"CSF_String_Notification_iCloud_Not_Availiable_Name"
+
+#define CSF_Block_Post_Notification_With_No_Object(x) [[NSNotificationCenter defaultCenter] postNotificationName:x object:nil];
+
 #endif /* CSFGlobalHeader_h */

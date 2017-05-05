@@ -6,9 +6,9 @@
 	<array>
 		<dict>
 			<key>DefaultValue</key>
-			<string>0.0.56 (56)</string>
+			<string>0.0.57 (57)</string>
 			<key>Key</key>
-			<string>com.JustZht.GitHubContributions.Bundle.Settings.AppVersionTitle</string>
+			<string>com.JustZht.Cetacea-iOS.Bundle.Settings.AppVersionTitle</string>
 			<key>Title</key>
 			<string>App Version</string>
 			<key>Type</key>

@@ -10,4 +10,12 @@
 
 @interface CSFiCloudSyncManager : NSObject
 
++ (id)sharedManager;
+
+- (BOOL)isIcloudAvailiable;
+
+@property (nonatomic, strong) NSURL *iCloudUbiquitousURL;
+@property (nonatomic, strong) NSMetadataQuery *iCloudCetaceaFilesMetadataQuery;
+@property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery;
+
 @end

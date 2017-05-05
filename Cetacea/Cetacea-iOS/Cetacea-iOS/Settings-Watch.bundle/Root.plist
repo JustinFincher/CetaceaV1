@@ -12,7 +12,7 @@
 			<key>DefaultValue</key>
 			<string>0.0.47 (47)</string>
 			<key>Key</key>
-			<string>com.JustZht.GitHubContributions.Bundle.Settings.AppVersionTitle</string>
+			<string>com.JustZht.Cetacea-iOS.watchkitapp.Bundle.Settings.AppVersionTitle</string>
 			<key>Title</key>
 			<string>App Version</string>
 			<key>Type</key>
