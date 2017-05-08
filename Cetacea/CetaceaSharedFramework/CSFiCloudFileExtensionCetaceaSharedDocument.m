@@ -10,7 +10,6 @@
 #import "CSFGlobalHeader.h"
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
 
-
 @implementation CSFiCloudFileExtensionCetaceaSharedDocument
 
 - (id)initWithURL:(NSURL *)url
@@ -18,6 +17,12 @@
     if ([super init])
     {
         self.url = url;
+#if TARGET_OS_IOS
+        
+#elif TARGET_OS_OSX
+        [self.document readFromFileWrapper:[self fileWrapper] ofType:@"cetacea" error:nil];
+#endif
+        
     }
     return self;
 }

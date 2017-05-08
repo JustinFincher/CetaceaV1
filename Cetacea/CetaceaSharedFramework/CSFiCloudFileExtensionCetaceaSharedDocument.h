@@ -19,7 +19,7 @@
 @class SharedDocument;
 @interface CSFiCloudFileExtensionCetaceaSharedDocument : NSObject
 
-@property (nonatomic,strong) SharedDocument *document;
+- (id)initWithURL:(NSURL *)url;
 
 #pragma mark - File Task
 + (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument;
@@ -30,7 +30,8 @@
 - (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object;
 
 #pragma mark - Property
-@property (nonatomic, strong) NSFileWrapper *fileWrapper;
+@property (nonatomic,strong) SharedDocument *document;
+@property (nonatomic,strong) NSFileWrapper *fileWrapper;
 @property (nonatomic,strong) NSURL *url;
 @property (nonatomic,strong) NSString *markdownString;
 @property (nonatomic,strong) NSString *title;

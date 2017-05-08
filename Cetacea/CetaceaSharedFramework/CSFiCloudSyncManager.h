@@ -16,7 +16,7 @@
  *
  *  @param query give you a query of searched NSMetadataItems
  */
-- (void)iCloudFileUpdated:(NSMetadataQuery *)query;
+- (void)iCloudFileUpdated:(NSMutableArray *)query;
 
 @end
 
@@ -35,4 +35,7 @@
 @property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery;
 
 @property (nonatomic, assign) id <CSFiCloudSyncDelegate> delegate;
+
+@property (nonatomic, strong) NSMutableArray *cetaceaDocumentArray;
+@property (nonatomic, strong) NSMutableArray *highlightThemesDocumentArray;
 @end
