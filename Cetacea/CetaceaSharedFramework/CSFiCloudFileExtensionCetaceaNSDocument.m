@@ -39,4 +39,8 @@
     return YES;
 }
 
++ (BOOL)autosavesInPlace
+{
+    return YES;
+}
 @end
