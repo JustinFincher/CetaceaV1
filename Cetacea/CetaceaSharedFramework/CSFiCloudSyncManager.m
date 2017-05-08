@@ -8,6 +8,7 @@
 
 #import "CSFiCloudSyncManager.h"
 #import "CSFGlobalHeader.h"
+#import "CSFiCloudFileExtensionCetaceaDataBase.h"
 
 @interface CSFiCloudSyncManager()
 @property (nonatomic, strong) NSURL *iCloudUbiquitousURL;
@@ -140,9 +141,10 @@
     {
         [query disableUpdates];
         NSLog(@"iCloudCetaceaFilesMetadataQuery resultCount = %lu", (unsigned long)query.resultCount);
-        NSArray * queryResults = [query results];
+        NSArray *queryResults = [query results];
+        
         id<CSFiCloudSyncDelegate> strongDelegate = self.delegate;
-        [strongDelegate iCloudFileUpdated:query];
+        [strongDelegate iCloudFileUpdated:[[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs]];
         
         [query enableUpdates];
     }

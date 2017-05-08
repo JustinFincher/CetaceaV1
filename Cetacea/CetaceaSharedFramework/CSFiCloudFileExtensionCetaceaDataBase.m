@@ -7,6 +7,7 @@
 //
 
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
+#import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
 #import "CSFiCloudSyncManager.h"
 #import "CSFGlobalHeader.h"
 
@@ -61,8 +62,9 @@
         {
             NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
             NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
-#warning will changed to data class later
-            [retval addObject:url];
+            
+            CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+            [retval addObject:doc];
         }
     }
     
