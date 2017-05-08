@@ -6,8 +6,8 @@
 //
 //
 
-#import "JZiCloudFileExtensionCetaceaUIDocument.h"
+#import "CSFiCloudFileExtensionCetaceaUIDocument.h"
 
-@implementation JZiCloudFileExtensionCetaceaUIDocument
+@implementation CSFiCloudFileExtensionCetaceaUIDocument
 
 @end
