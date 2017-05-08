@@ -8,29 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
-#import "JZiCloudFileExtensionCetaceaUIDocument.h"
 #define SharedDocument JZiCloudFileExtensionCetaceaUIDocument
-#else
+#elif TARGET_OS_OSX
 #import <AppKit/AppKit.h>
-#import "JZiCloudFileExtensionCetaceaNSDocument.h"
 #define SharedDocument JZiCloudFileExtensionCetaceaNSDocument
 #endif
 
-@interface JZiCloudFileExtensionCetaceaSharedDocument : NSObject
+@class SharedDocument;
+@interface CSFiCloudFileExtensionCetaceaSharedDocument : NSObject
 
 @property (nonatomic,strong) SharedDocument *document;
 
 #pragma mark - File Task
-+ (JZiCloudFileExtensionCetaceaSharedDocument *)newDocument;
++ (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument;
 - (BOOL)saveDocument;
 - (void)deleteDocument:(void (^)(BOOL isSuccessful))completed;
 
 #pragma mark - Compare
-- (BOOL)isEqual:(JZiCloudFileExtensionCetaceaSharedDocument*)object;
+- (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object;
 
 #pragma mark - Property
+@property (nonatomic, strong) NSFileWrapper *fileWrapper;
+@property (nonatomic,strong) NSURL *url;
 @property (nonatomic,strong) NSString *markdownString;
 @property (nonatomic,strong) NSString *title;
 
