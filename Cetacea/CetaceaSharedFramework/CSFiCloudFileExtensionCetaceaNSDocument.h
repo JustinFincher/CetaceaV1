@@ -14,4 +14,9 @@
 
 @property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
 
+- (id)initWithContentsOfURL:(NSURL *)url
+                     ofType:(NSString *)typeName
+                      error:(NSError * _Nullable *)outError
+         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc;
+
 @end

@@ -18,4 +18,11 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import "SDVersion.h"
 #import <CetaceaSharedFramework/CSFInitialProcessManager.h>
 #import <CetaceaSharedFramework/CSFiCloudSyncManager.h>
+#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaDataBase.h>
 #import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaSharedDocument.h>
+
+#if TARGET_OS_IOS
+#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaUIDocument.h>
+#elif TARGET_OS_OSX
+#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaNSDocument.h>
+#endif

@@ -10,6 +10,18 @@
 
 @implementation CSFiCloudFileExtensionCetaceaNSDocument
 
+- (id)initWithContentsOfURL:(NSURL *)url
+                     ofType:(NSString *)typeName
+                      error:(NSError * _Nullable *)outError
+         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc
+{
+    self = [super initWithContentsOfURL:url ofType:typeName error:outError];
+    if (self)
+    {
+        self.sharedDocument = doc;
+    }
+    return self;
+}
 #pragma mark - Save / Load from NSFileWrapper
 - (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
 {
@@ -42,5 +54,17 @@
 + (BOOL)autosavesInPlace
 {
     return YES;
+}
+
+- (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    [self.sharedDocument updateFileWrappers];
+    NSError *err;
+    BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+    if (err)
+    {
+        JZLog(@"%@",[err localizedDescription]);
+    }
+    return isSucess;
 }
 @end

@@ -9,6 +9,12 @@
 #import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
 #import "CSFGlobalHeader.h"
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
+#if TARGET_OS_IOS
+#import "CSFiCloudFileExtensionCetaceaUIDocument.h"
+#elif TARGET_OS_OSX
+#import "CSFiCloudFileExtensionCetaceaNSDocument.h"
+#endif
+
 
 @implementation CSFiCloudFileExtensionCetaceaSharedDocument
 
@@ -17,11 +23,23 @@
     if ([super init])
     {
         self.url = url;
+        NSFileWrapper *wrapper = self.fileWrapper;
+        
+        NSError *err;
 #if TARGET_OS_IOS
+        self.document = [[SharedDocument alloc] initWithFileURL:url withSharedDocument:self];
+//        self.document.sharedDocument = self;
+        [self.document loadFromContents:self.fileWrapper ofType:@"cetacea" error:&err];
         
 #elif TARGET_OS_OSX
-        [self.document readFromFileWrapper:[self fileWrapper] ofType:@"cetacea" error:nil];
+        self.document = [[SharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
+//        self.document.sharedDocument = self;
+        [self.document readFromFileWrapper:self.fileWrapper ofType:@"cetacea" error:&err];
 #endif
+        if (err)
+        {
+            JZLog(@"%@",[err localizedDescription]);
+        }
         
     }
     return self;
@@ -32,12 +50,15 @@
     if (self.url)
     {
         NSString *path = [self.url path];
+        JZLog(@"PATH = %@",path);
         BOOL isExist = NO;
+        BOOL isDirectory = NO;
 #if TARGET_OS_IOS
-        isExist = [[NSFileManager defaultManager] fileExistsAtPath:path];
+        isExist = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory];
 #elif TARGET_OS_OSX
         isExist = [[NSWorkspace sharedWorkspace] isFilePackageAtPath:path];
 #endif
+        JZLog(@"isExist = %d",isExist);
         if (! isExist)
         {
             NSError *error;
@@ -53,7 +74,8 @@
             JZLog(@"%@",[err localizedDescription]);
         }
     }
-    JZLog(@"%@",[_fileWrapper fileWrappers]);
+    JZLog(@"[self.fileWrapper fileWrappers] = %@",[_fileWrapper fileWrappers]);
+    
     return _fileWrapper;
 }
 - (void)updateFileWrappers
@@ -82,7 +104,6 @@
     BOOL isEqual = [[[object url] path] isEqualToString:[[self url] path]];
     return isEqual;
 }
-
 #pragma mark - File Task
 + (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument
 {
