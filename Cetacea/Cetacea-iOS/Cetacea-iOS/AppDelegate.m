@@ -21,8 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Fabric with:@[[Crashlytics class]]];
-    [[CSFInitialProcessManager sharedManager] report];
-    
+    [[CSFInitialProcessManager sharedManager] initialProcess];
     return YES;
 }
 

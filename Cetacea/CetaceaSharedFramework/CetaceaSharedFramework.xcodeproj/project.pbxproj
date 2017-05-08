@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
+		0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
+		0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */; };
+		0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */; };
+		0D516C701EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C6E1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h */; };
+		0D516C711EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C6E1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h */; };
+		0D516C721EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C6F1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m */; };
+		0D516C731EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C6F1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m */; };
+		0D516C761EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C741EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.h */; };
+		0D516C771EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C751EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.m */; };
+		0D516C7A1EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C781EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.h */; };
+		0D516C7B1EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C791EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.m */; };
 		0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */; };
 		0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */; };
 		0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
@@ -33,6 +45,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
+		0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
+		0D516C6E1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaSharedDocument.h; sourceTree = "<group>"; };
+		0D516C6F1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaSharedDocument.m; sourceTree = "<group>"; };
+		0D516C741EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaNSDocument.h; sourceTree = "<group>"; };
+		0D516C751EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaNSDocument.m; sourceTree = "<group>"; };
+		0D516C781EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZiCloudFileExtensionCetaceaUIDocument.h; sourceTree = "<group>"; };
+		0D516C791EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZiCloudFileExtensionCetaceaUIDocument.m; sourceTree = "<group>"; };
 		0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +92,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D516C7C1EC06490007AAB05 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0D516C741EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.h */,
+				0D516C751EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.m */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		0D516C7D1EC06497007AAB05 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0D516C781EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.h */,
+				0D516C791EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.m */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		0D5669B71EB588B0000C3E39 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +118,9 @@
 				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
 				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
 				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
-				0D7F31B91EBC4ABB00D29651 /* Data */,
+				0D516C7C1EC06490007AAB05 /* OSX */,
+				0D516C7D1EC06497007AAB05 /* iOS */,
+				0D7F31B91EBC4ABB00D29651 /* Shared */,
 				0D5669C41EB588DC000C3E39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,15 +135,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D7F31B91EBC4ABB00D29651 /* Data */ = {
+		0D7F31B91EBC4ABB00D29651 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
 				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
 				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
 				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
 				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
+				0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */,
+				0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */,
+				0D516C6E1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h */,
+				0D516C6F1EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m */,
 			);
-			name = Data;
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +160,10 @@
 				0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
 				0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0D516C701EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D516C7A1EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.h in Headers */,
+				0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +174,10 @@
 				0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
 				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0D516C761EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.h in Headers */,
+				0D516C711EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D516C721EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
+				0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0D516C7B1EC06489007AAB05 /* JZiCloudFileExtensionCetaceaUIDocument.m in Sources */,
 				0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D516C771EC0646F007AAB05 /* JZiCloudFileExtensionCetaceaNSDocument.m in Sources */,
+				0D516C731EC0618E007AAB05 /* JZiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
+				0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D7F31C31EBC578700D29651 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

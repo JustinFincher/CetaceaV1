@@ -15,5 +15,5 @@
 @interface CSFInitialProcessManager : NSObject
 
 + (id)sharedManager;
-- (void)report;
+- (void)initialProcess;
 @end

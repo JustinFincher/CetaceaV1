@@ -35,7 +35,7 @@
     
 }
 
-- (void)report
+- (void)initialProcess
 {
     
 }
