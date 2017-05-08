@@ -71,6 +71,13 @@
     [self.fileWrapper addRegularFileWithContents:data
                                preferredFilename:fileName];
 }
+#pragma mark - Compare
+- (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object
+{
+    BOOL isEqual = [[[object url] path] isEqualToString:[[self url] path]];
+    return isEqual;
+}
+
 #pragma mark - File Task
 + (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument
 {
@@ -91,5 +98,10 @@
 - (BOOL)saveDocument
 {
     return YES;
+}
+- (void)deleteDocument:(void (^)(BOOL isSuccessful))completed
+{
+    [[NSFileManager defaultManager] removeItemAtURL:self.url error:nil];
+    completed(YES);
 }
 @end
