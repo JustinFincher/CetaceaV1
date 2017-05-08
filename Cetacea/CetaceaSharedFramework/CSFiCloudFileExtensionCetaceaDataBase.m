@@ -39,37 +39,50 @@
     return documentsDirectory;
     
 }
-
-- (NSMutableArray *)loadDocs {
-    
-    // Get private docs dir
-    NSString *documentsDirectory = [self getPrivateDocsDir];
-    JZLog(@"Loading from %@", documentsDirectory);
-    
-    // Get contents of documents directory
-    NSError *error;
-    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
-    if (files == nil) {
-        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
-        return nil;
-    }
-    
-    // Create for each file
-    NSMutableArray *retval = [NSMutableArray arrayWithCapacity:files.count];
-    for (NSString *file in files)
+- (NSMutableArray *)loadDocsFromQuery:(NSArray *)query
+{
+    NSMutableArray *retval = [NSMutableArray array];
+    for (NSMetadataItem *item in query)
     {
-        if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
-        {
-            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
-            NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
-            
-            CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
-            [retval addObject:doc];
-        }
+        NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
+        CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+        doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
+        doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];
+        [retval addObject:doc];
     }
-    
     return retval;
 }
+
+//- (NSMutableArray *)loadDocs {
+//    
+//    // Get private docs dir
+//    NSString *documentsDirectory = [self getPrivateDocsDir];
+//    JZLog(@"Loading from %@", documentsDirectory);
+//    
+//    // Get contents of documents directory
+//    NSError *error;
+//    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
+//    if (files == nil) {
+//        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
+//        return nil;
+//    }
+//    
+//    // Create for each file
+//    NSMutableArray *retval = [NSMutableArray arrayWithCapacity:files.count];
+//    for (NSString *file in files)
+//    {
+//        if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
+//        {
+//            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
+//            NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
+//            
+//            CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+//            [retval addObject:doc];
+//        }
+//    }
+//    
+//    return retval;
+//}
 - (NSString *)nextDocPath {
     
     // Get private docs dir

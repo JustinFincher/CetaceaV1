@@ -12,6 +12,7 @@
 		0D56692D1EB514F1000C3E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56692B1EB514F1000C3E39 /* Main.storyboard */; };
 		0D56692F1EB514F1000C3E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D56692E1EB514F1000C3E39 /* Assets.xcassets */; };
 		0D5669321EB514F1000C3E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5669301EB514F1000C3E39 /* LaunchScreen.storyboard */; };
+		0D605CDA1EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D605CD91EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m */; };
 		0D6D42771EB8816000D7E1F7 /* Settings-Watch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D6D42761EB8816000D7E1F7 /* Settings-Watch.bundle */; };
 		0D6D427A1EB883D700D7E1F7 /* JZMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6D42791EB883D700D7E1F7 /* JZMainNavigationController.m */; };
 		0D7F31CF1EBC598600D29651 /* CetaceaSharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */; };
@@ -137,6 +138,8 @@
 		0D5669DF1EB58B00000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CetaceaSharedFramework.framework; path = ../CetaceaSharedFramework/build/Debug/CetaceaSharedFramework.framework; sourceTree = "<group>"; };
 		0D5669E11EB58B20000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CetaceaSharedFramework.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Cetacea-duhdjwraslghqbgwbbpqaitpmgng/Build/Products/Debug/CetaceaSharedFramework.framework"; sourceTree = "<group>"; };
 		0D566A141EB5924B000C3E39 /* CSF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSF.framework; path = "../CetaceaSharedFramework/build/Debug-iphoneos/CSF.framework"; sourceTree = "<group>"; };
+		0D605CD81EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainMarkdownListTableViewController.h; sourceTree = "<group>"; };
+		0D605CD91EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainMarkdownListTableViewController.m; sourceTree = "<group>"; };
 		0D6D42741EB880FC00D7E1F7 /* WatchKitApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatchKitApp.entitlements; sourceTree = "<group>"; };
 		0D6D42751EB8810100D7E1F7 /* WatchKitApp Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchKitApp Extension.entitlements"; sourceTree = "<group>"; };
 		0D6D42761EB8816000D7E1F7 /* Settings-Watch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Settings-Watch.bundle"; sourceTree = "<group>"; };
@@ -335,6 +338,8 @@
 				0DD901B21EB5DB8900AEDCB1 /* JZMainSplitViewController.m */,
 				0D6D42781EB883D700D7E1F7 /* JZMainNavigationController.h */,
 				0D6D42791EB883D700D7E1F7 /* JZMainNavigationController.m */,
+				0D605CD81EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.h */,
+				0D605CD91EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -884,6 +889,7 @@
 			files = (
 				0D6D427A1EB883D700D7E1F7 /* JZMainNavigationController.m in Sources */,
 				0D5669271EB514F1000C3E39 /* AppDelegate.m in Sources */,
+				0D605CDA1EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m in Sources */,
 				0D5669241EB514F1000C3E39 /* main.m in Sources */,
 				0DD901B31EB5DB8900AEDCB1 /* JZMainSplitViewController.m in Sources */,
 			);

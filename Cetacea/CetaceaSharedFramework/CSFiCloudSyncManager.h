@@ -11,12 +11,7 @@
 @protocol CSFiCloudSyncDelegate <NSObject>
 @optional
 
-/**
- *  iCloud Drive Query updated delegate
- *
- *  @param query give you a query of searched NSMetadataItems
- */
-- (void)iCloudFileUpdated:(NSMutableArray *)query;
+- (void)iCloudFileUpdated:(NSMutableArray *)list;
 
 @end
 

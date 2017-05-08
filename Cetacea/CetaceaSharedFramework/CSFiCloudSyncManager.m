@@ -140,13 +140,46 @@
     if (query == self.iCloudCetaceaFilesMetadataQuery)
     {
         [query disableUpdates];
+        
+        NSArray *addedItems     = notification.userInfo[NSMetadataQueryUpdateAddedItemsKey];
+        NSArray *removedItems       = notification.userInfo[NSMetadataQueryUpdateRemovedItemsKey];
+        NSArray *changedItems   = notification.userInfo[NSMetadataQueryUpdateChangedItemsKey];
+        
+        // add
+        for (NSMetadataItem *mdItem in addedItems) {
+            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+        }
+        // remove
+        for (NSMetadataItem *mdItem in removedItems) {
+            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+        }
+        // change
+        for (NSMetadataItem *mdItem in changedItems) {
+            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+            // uploading
+            BOOL uploading  = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
+            if (uploading) {
+                NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
+                // do something...
+            }
+            // downloading
+            BOOL downloading    = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsDownloadingKey] boolValue];
+            if (downloading) {
+                NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentDownloadedKey];
+                // do something...
+            }
+        }
+    
         NSLog(@"iCloudCetaceaFilesMetadataQuery resultCount = %lu", (unsigned long)query.resultCount);
-        NSArray *queryResults = [query results];
+        NSArray *results = [query results];
+        NSMutableArray *list = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromQuery:results];
+        results = nil;
         
         id<CSFiCloudSyncDelegate> strongDelegate = self.delegate;
-        [strongDelegate iCloudFileUpdated:[[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs]];
+        [strongDelegate iCloudFileUpdated:list];
         
         [query enableUpdates];
+        if ([query isStarted]){[query startQuery];}
     }
 }
 @end
