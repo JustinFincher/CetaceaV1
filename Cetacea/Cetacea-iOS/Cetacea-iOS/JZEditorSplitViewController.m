@@ -1,34 +1,32 @@
 //
-//  JZMainSplitViewController.m
+//  JZEditorSplitViewController.m
 //  Cetacea-iOS
 //
-//  Created by Justin Fincher on 2017/4/30.
+//  Created by Justin Fincher on 2017/5/10.
 //  Copyright © 2017年 Justin Fincher. All rights reserved.
 //
 
-#import "JZMainSplitViewController.h"
+#import "JZEditorSplitViewController.h"
 
-@interface JZMainSplitViewController ()<UISplitViewControllerDelegate>
+@interface JZEditorSplitViewController ()
 
 @end
 
-@implementation JZMainSplitViewController
+@implementation JZEditorSplitViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.delegate = self;
+    
+    self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
+    self.preferredPrimaryColumnWidthFraction = 0.5f;
+
+    self.navigationItem.leftBarButtonItem = self.navigationController.splitViewController.displayModeButtonItem;
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - UISplitViewControllerDelegate
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
-{
-    return YES;
 }
 
 /*

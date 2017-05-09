@@ -21,6 +21,9 @@
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     self.clearsSelectionOnViewWillAppear = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
     [self.tableView setContentOffset:CGPointMake(0, self.searchBar.frame.size.height) animated:YES];
