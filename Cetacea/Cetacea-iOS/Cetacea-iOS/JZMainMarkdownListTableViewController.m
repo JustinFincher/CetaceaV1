@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
-    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+    [self.tableView setContentOffset:CGPointMake(0, self.searchBar.frame.size.height) animated:YES];
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
     
     self.searchBar.delegate = self;
