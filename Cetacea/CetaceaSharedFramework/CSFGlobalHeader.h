@@ -11,6 +11,10 @@
 
 #import <Foundation/Foundation.h>
 
+#if TARGET_OS_IOS || TARGET_OS_OSX
+#import <DateTools/DateTools.h>
+#endif
+
 #ifdef DEBUG
 #   define JZLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else

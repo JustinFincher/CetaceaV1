@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DTTimePeriod Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DTTimePeriod" class="dashAnchor"></a>
+    <a title="DTTimePeriod Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (2% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CetaceaSharedFramework Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DTTimePeriod Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(DateTools).html">NSDate(DateTools)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFInitialProcessManager.html">CSFInitialProcessManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaDataBase.html">CSFiCloudFileExtensionCetaceaDataBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTError.html">DTError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriod.html">DTTimePeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodChain.html">DTTimePeriodChain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodCollection.html">DTTimePeriodCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodGroup.html">DTTimePeriodGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TSBaseParser.html">TSBaseParser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionNumber">CetaceaSharedFrameworkVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTBadTypeException">DTBadTypeException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DTErrorDomain">DTErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTInsertOutOfBoundsException">DTInsertOutOfBoundsException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTRemoveOutOfBoundsException">DTRemoveOutOfBoundsException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MILLISECONDS_IN_DAY">MILLISECONDS_IN_DAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_DAY">SECONDS_IN_DAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_HOUR">SECONDS_IN_HOUR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MINUTE">SECONDS_IN_MINUTE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_28">SECONDS_IN_MONTH_28</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_29">SECONDS_IN_MONTH_29</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_30">SECONDS_IN_MONTH_30</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_31">SECONDS_IN_MONTH_31</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_WEEK">SECONDS_IN_WEEK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_YEAR">SECONDS_IN_YEAR</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodAnchor.html">DTTimePeriodAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodInterval.html">DTTimePeriodInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodRelation.html">DTTimePeriodRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodSize.html">DTTimePeriodSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:TSBaseParser.h@T@TSMarkdownParserMatchBlock">TSMarkdownParserMatchBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DTTimePeriod</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(py)StartDate"></a>
+                    <a name="//apple_ref/objc/Property/StartDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(py)StartDate">StartDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The start date for a DTTimePeriod representing the starting boundary of the time period</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">StartDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(py)EndDate"></a>
+                    <a name="//apple_ref/objc/Property/EndDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(py)EndDate">EndDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The end date for a DTTimePeriod representing the ending boundary of the time period</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">EndDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">Date</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Custom%20Init%20/%20Factory%20Methods"></a>
+                <a name="//apple_ref/objc/Section/Custom Init / Factory Methods" class="dashAnchor"></a>
+                <a href="#/Custom%20Init%20/%20Factory%20Methods">
+                  <h3 class="section-name">Custom Init / Factory Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)initWithStartDate:endDate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithStartDate:endDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)initWithStartDate:endDate:">-initWithStartDate:endDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithStartDate:endDate:"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithStartDate:endDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithStartDate:endDate:">+timePeriodWithStartDate:endDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:startingAt:"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithSize:startingAt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:startingAt:">+timePeriodWithSize:startingAt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:amount:startingAt:"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithSize:amount:startingAt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:amount:startingAt:">+timePeriodWithSize:amount:startingAt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:endingAt:"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithSize:endingAt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:endingAt:">+timePeriodWithSize:endingAt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:amount:endingAt:"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithSize:amount:endingAt:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithSize:amount:endingAt:">+timePeriodWithSize:amount:endingAt:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(cm)timePeriodWithAllTime"></a>
+                    <a name="//apple_ref/objc/Method/+timePeriodWithAllTime" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(cm)timePeriodWithAllTime">+timePeriodWithAllTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20Period%20Information"></a>
+                <a name="//apple_ref/objc/Section/Time Period Information" class="dashAnchor"></a>
+                <a href="#/Time%20Period%20Information">
+                  <h3 class="section-name">Time Period Information</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)hasStartDate"></a>
+                    <a name="//apple_ref/objc/Method/-hasStartDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)hasStartDate">-hasStartDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)hasEndDate"></a>
+                    <a name="//apple_ref/objc/Method/-hasEndDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)hasEndDate">-hasEndDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)isMoment"></a>
+                    <a name="//apple_ref/objc/Method/-isMoment" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)isMoment">-isMoment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInYears"></a>
+                    <a name="//apple_ref/objc/Method/-durationInYears" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInYears">-durationInYears</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInWeeks"></a>
+                    <a name="//apple_ref/objc/Method/-durationInWeeks" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInWeeks">-durationInWeeks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInDays"></a>
+                    <a name="//apple_ref/objc/Method/-durationInDays" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInDays">-durationInDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInHours"></a>
+                    <a name="//apple_ref/objc/Method/-durationInHours" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInHours">-durationInHours</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInMinutes"></a>
+                    <a name="//apple_ref/objc/Method/-durationInMinutes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInMinutes">-durationInMinutes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)durationInSeconds"></a>
+                    <a name="//apple_ref/objc/Method/-durationInSeconds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)durationInSeconds">-durationInSeconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20Period%20Relationship"></a>
+                <a name="//apple_ref/objc/Section/Time Period Relationship" class="dashAnchor"></a>
+                <a href="#/Time%20Period%20Relationship">
+                  <h3 class="section-name">Time Period Relationship</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)isEqualToPeriod:"></a>
+                    <a name="//apple_ref/objc/Method/-isEqualToPeriod:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)isEqualToPeriod:">-isEqualToPeriod:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)isInside:"></a>
+                    <a name="//apple_ref/objc/Method/-isInside:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)isInside:">-isInside:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)contains:"></a>
+                    <a name="//apple_ref/objc/Method/-contains:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)contains:">-contains:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)overlapsWith:"></a>
+                    <a name="//apple_ref/objc/Method/-overlapsWith:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)overlapsWith:">-overlapsWith:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)intersects:"></a>
+                    <a name="//apple_ref/objc/Method/-intersects:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)intersects:">-intersects:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)relationToPeriod:"></a>
+                    <a name="//apple_ref/objc/Method/-relationToPeriod:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)relationToPeriod:">-relationToPeriod:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)gapBetween:"></a>
+                    <a name="//apple_ref/objc/Method/-gapBetween:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)gapBetween:">-gapBetween:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20Relationships"></a>
+                <a name="//apple_ref/objc/Section/Date Relationships" class="dashAnchor"></a>
+                <a href="#/Date%20Relationships">
+                  <h3 class="section-name">Date Relationships</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)containsDate:interval:"></a>
+                    <a name="//apple_ref/objc/Method/-containsDate:interval:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)containsDate:interval:">-containsDate:interval:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Shifts"></a>
+                <a name="//apple_ref/objc/Section/Shifts" class="dashAnchor"></a>
+                <a href="#/Shifts">
+                  <h3 class="section-name">Shifts</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shiftEarlierWithSize:"></a>
+                    <a name="//apple_ref/objc/Method/-shiftEarlierWithSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shiftEarlierWithSize:">-shiftEarlierWithSize:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shiftEarlierWithSize:amount:"></a>
+                    <a name="//apple_ref/objc/Method/-shiftEarlierWithSize:amount:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shiftEarlierWithSize:amount:">-shiftEarlierWithSize:amount:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shiftLaterWithSize:"></a>
+                    <a name="//apple_ref/objc/Method/-shiftLaterWithSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shiftLaterWithSize:">-shiftLaterWithSize:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shiftLaterWithSize:amount:"></a>
+                    <a name="//apple_ref/objc/Method/-shiftLaterWithSize:amount:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shiftLaterWithSize:amount:">-shiftLaterWithSize:amount:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lengthen%20/%20Shorten"></a>
+                <a name="//apple_ref/objc/Section/Lengthen / Shorten" class="dashAnchor"></a>
+                <a href="#/Lengthen%20/%20Shorten">
+                  <h3 class="section-name">Lengthen / Shorten</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)lengthenWithAnchorDate:size:"></a>
+                    <a name="//apple_ref/objc/Method/-lengthenWithAnchorDate:size:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)lengthenWithAnchorDate:size:">-lengthenWithAnchorDate:size:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)lengthenWithAnchorDate:size:amount:"></a>
+                    <a name="//apple_ref/objc/Method/-lengthenWithAnchorDate:size:amount:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)lengthenWithAnchorDate:size:amount:">-lengthenWithAnchorDate:size:amount:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shortenWithAnchorDate:size:"></a>
+                    <a name="//apple_ref/objc/Method/-shortenWithAnchorDate:size:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shortenWithAnchorDate:size:">-shortenWithAnchorDate:size:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)shortenWithAnchorDate:size:amount:"></a>
+                    <a name="//apple_ref/objc/Method/-shortenWithAnchorDate:size:amount:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)shortenWithAnchorDate:size:amount:">-shortenWithAnchorDate:size:amount:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helper%20Methods"></a>
+                <a name="//apple_ref/objc/Section/Helper Methods" class="dashAnchor"></a>
+                <a href="#/Helper%20Methods">
+                  <h3 class="section-name">Helper Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DTTimePeriod(im)copy"></a>
+                    <a name="//apple_ref/objc/Method/-copy" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DTTimePeriod(im)copy">-copy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

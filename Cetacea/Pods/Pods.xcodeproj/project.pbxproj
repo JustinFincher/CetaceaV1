@@ -193,7 +193,9 @@
 		4096838D70CF13E9C446B8379637AF94 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7F838FEA66A59596A0AC2EF10776E1 /* RACSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40ED9ED231316BE53B1CAFA0447A37BF /* NSObject+RACLifting.h in Headers */ = {isa = PBXBuildFile; fileRef = 429056E60F91CB57D37625CDE5B67C81 /* NSObject+RACLifting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		429B3AAFA649B2B092AB8CE73838B399 /* Pods-Cetacea-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CECF4000D656D7EF887710E1266F9B /* Pods-Cetacea-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4312CB57EC8B31AE92CDC3BDD82BB9E5 /* Pods-CetaceaSharedFramework-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFDCE5E9696CB925148BA1022BA6F9 /* Pods-CetaceaSharedFramework-iOS-dummy.m */; };
 		444276905FDE7F49EC55FFAC3CB992B9 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C9875975E8B1FA31E5C8B068F2B6CFB7 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		448100333DAD7BB308F0CABDAFF03584 /* Pods-CetaceaSharedFramework-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E7769B4D2673CA348297813DF5AB4F /* Pods-CetaceaSharedFramework-OSX-dummy.m */; };
 		4482BE330461E47DB37EC0FE2EA48106 /* UILabel+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E0FA67A227B083E61F65CB7B066FD1 /* UILabel+Night.m */; };
 		448F2E6E2EA170BEB348D9CB579C967E /* RACTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BF0454FEB15F9F86841AAAA33237C2 /* RACTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4640EA407CF69122A8AE9AC33DC7BAE0 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F4D6CB3AF41F533B8AC95B80C40310 /* UITableViewHeaderFooterView+RACSignalSupport.m */; };
@@ -243,7 +245,6 @@
 		52AFD0094A028914FFA0A54F91904976 /* DKAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDC36CDD4AE56CDDAC4C80924B9870F /* DKAlpha.m */; };
 		52C3129246D9C41947C27936CA2F4063 /* RACStream+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D02AE4B71C7E69A35F6F4E6FAD4FA3 /* RACStream+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		53D5072095B84C6D88BD376ADCCA76BC /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3E40A900523620B2F252FA4B98DDD /* DynamicGradient.swift */; };
-		53FAB37856DBBE2639FD1F438B66743A /* Pods-CetaceaSharedFramework-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 962976DCD323F938D5DB56D0E2A60691 /* Pods-CetaceaSharedFramework-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		545A3EFA11B8ECA2D4AF9D175A78599D /* UIToolbar+Night.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3985EF7CEFB988C36A88292947BF34 /* UIToolbar+Night.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5543055F2135FA198AE4ED729974D77A /* DKNightVersionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1277CFD30D7EE9DA134087EC1B569CEB /* DKNightVersionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		554B0CB70B82129A7EBBD8FA2B67BDE3 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB36EFF5AEF9B956E302797B5A60DC7 /* HSL.swift */; };
@@ -267,10 +268,12 @@
 		5C2EC430E0F0194F8A80FD5BE486512D /* RACSubscriptingAssignmentTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = FF02BBE703E423F4188AD5830208EC35 /* RACSubscriptingAssignmentTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CDE1B91E9910CADADCBD0372D2CCE86 /* NSArray+RACSequenceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0B32F603834FDEEC97EFE2C247522C /* NSArray+RACSequenceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D4C15F8FD7C425EC2F44CC824721120 /* UITableView+Night.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E34FDB3E2C434AB171A17C0840A8A7C /* UITableView+Night.m */; };
+		5D8E17D27FF4D4FA3C2B343645F50EEE /* Pods-CetaceaSharedFramework-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 962976DCD323F938D5DB56D0E2A60691 /* Pods-CetaceaSharedFramework-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E208D29B9D1591CA793C084EAA0E81F /* UIBarButtonItem+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 729E0D9E52E65AA69F244F228B220DBC /* UIBarButtonItem+RACCommandSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E2EEEFD559B5B0054473BFFA438E8F6 /* RACTargetQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D425D76F14ECDE5A64ADE863B6C6D0 /* RACTargetQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E481DCF34961A8F3854DD97E2F7DCBE /* RACTargetQueueScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D425D76F14ECDE5A64ADE863B6C6D0 /* RACTargetQueueScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E95C3F49C6CB830B3068AF58119900C /* NSObject+RACPropertySubscribing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E9F72BFC93526E5C4ECDFD58F186AE7 /* NSObject+RACPropertySubscribing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EE750686CA388152746B45D21C28114 /* Pods-CetaceaSharedFramework-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D51E09FC18FB0CDD685806B7DF8C0216 /* Pods-CetaceaSharedFramework-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F324543121E7FDF53FD067637050D44 /* ReactiveObjC-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1CEF52C1E6BBC39CB133E450EE74B6B /* ReactiveObjC-OSX-dummy.m */; };
 		5F59AD5BB8B07FE82BD1107EAD47B975 /* MMScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAAC9FF7DB223F4E1B04F8E375A1AF1 /* MMScanner.m */; };
 		600619D858E6D37FFE3248D9841DED19 /* RACSubscriptionScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 90BC8C432623FA9BFB6C879BCD1EBC0A /* RACSubscriptionScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -295,6 +298,7 @@
 		64AC676E3A5392BB36B92CE12D17BFE8 /* RACSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7F838FEA66A59596A0AC2EF10776E1 /* RACSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64F28764985E0DCDC1FCFD7C38E18CEA /* NSIndexSet+RACSequenceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AE3835F73868811EECAF4C9A75AF0 /* NSIndexSet+RACSequenceAdditions.m */; };
 		657E57A7DF7FA777BA2BB8170C4C8B6C /* RACDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1512EB7711460FDCC749B7F52480A /* RACDelegateProxy.m */; };
+		65CB72F5D6F7E89ACA3B56491568D4A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25AF9151FBE4A424BBE13276015884 /* Foundation.framework */; };
 		66092ED3B6617603CC3F0DAC892E5C60 /* ScopedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A2EF1FB1DD24FF413CD1A8F79F9D3D /* ScopedString.swift */; };
 		6645093B9C13C9640A3DD6EA1834F8D0 /* RACUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C5F345CF7608848DB426E7AD20912CA /* RACUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664C909C31B4EF290B57E53905F3DE59 /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 696380037EF9E3F9076D4EA89113EEDB /* RACScheduler+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -350,7 +354,6 @@
 		74C418797EB9489A4A5608EF1A4411C3 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = B920C776A8777E13D17C44B115C8F184 /* NSObject+RACDeallocating.m */; };
 		7545934687ADC40AB2B22F8BEBDE19BD /* RACSequence.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C445848E05B01A7C7F9D74E7666A0DC /* RACSequence.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75A34C5EBE8DFFAA17AF8FA33388685B /* NSData+RACSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 8090DCB53CFECE7643C9F6789A305DA7 /* NSData+RACSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76747E8C45621B2FEC664F4343D2FE2C /* Pods-CetaceaSharedFramework-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CFDCE5E9696CB925148BA1022BA6F9 /* Pods-CetaceaSharedFramework-iOS-dummy.m */; };
 		7699D0A0EC48D78B9D4E5CD5AA86D026 /* RACMulticastConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 24726BF856795577B93A39C8149F1E98 /* RACMulticastConnection.m */; };
 		7728005C38E04BB9BDC27BD3FC2CFFD4 /* RACSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2551660121E081F3BF69BF6BD11D623C /* RACSignal.m */; };
 		773F90286D88DDD842E1F3706E4CCB12 /* Pods-Cetacea-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F10A10A69F1704E3B7D18D88A6ADB2B5 /* Pods-Cetacea-iOS-dummy.m */; };
@@ -365,7 +368,6 @@
 		7A560482A142E69E8A2E127F52030992 /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0BEF5B35A3DB3302D9568FA71B7285 /* RACSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AB3066C0BF62E431CAE90835053335B /* RACSignalSequence.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D804523DBD9767255F1F9DF4CE4526C /* RACSignalSequence.m */; };
 		7AB7D1B4C09A9503B2E5DB33E8F40F02 /* RACScheduler+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 696380037EF9E3F9076D4EA89113EEDB /* RACScheduler+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		7B6AB14AD750CCE6988CA585A6DD4927 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA274EA505EBC5A3E8A2E34755517ACC /* Cocoa.framework */; };
 		7C1A467EA8EC5325198EB668AE6668F7 /* NSObject+RACDeallocating.m in Sources */ = {isa = PBXBuildFile; fileRef = B920C776A8777E13D17C44B115C8F184 /* NSObject+RACDeallocating.m */; };
 		7C1E3AC9A5372FE40F09C24AAD2B7558 /* RACSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = DD0BEF5B35A3DB3302D9568FA71B7285 /* RACSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C32A35535CA98D0124ACA8B39D49C02 /* RACSubscriber+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E6465765DC155E637065F570B181B736 /* RACSubscriber+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -383,7 +385,6 @@
 		7E143A115A7975E75B507DDFBE839CD5 /* SDVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 013A2FA17E90FCB88FC7624B3CD66549 /* SDVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E7E1452C832AC05BBB773208FA73D6B /* RACGroupedSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCAB2896C013BF19969385641A6E57C /* RACGroupedSignal.m */; };
 		7EC85EDC15837403B61A22D288718D83 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = F4362D55624618ADB86F3F674AF8DAF9 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FE84F52935E9BC18824B614C3DC03D8 /* Pods-CetaceaSharedFramework-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E7769B4D2673CA348297813DF5AB4F /* Pods-CetaceaSharedFramework-OSX-dummy.m */; };
 		800A823BD35B54F6326859C68716FB9A /* RACAnnotations.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F161EDE792C5926E42833D5DCAF754 /* RACAnnotations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8011A0F3395824FA2CDE227E5BD95824 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAA9AA1183088280E267234FDDEEB77 /* DTTimePeriodCollection.m */; };
 		8033E7D9FC36B2A5305C3D45EC8D2545 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8538BA36A1713FBFE6C29EE8AF11027E /* Language.swift */; };
@@ -557,7 +558,6 @@
 		B6372824ED4833E09489E727C2B4C7A4 /* RACGroupedSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E8ED674E92821BFA475437E0ABE4D4 /* RACGroupedSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7A4C50951CD66FF1453D0AD82950BF3 /* RACEXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 706A3B2226EB12234172E52A7ABF6C8B /* RACEXTKeyPathCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7B1C65CCC3F9C7E0CBAAD9CF854A4C3 /* RACErrorSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 81958273E89F3A3825CD952C5F6EA844 /* RACErrorSignal.m */; };
-		B8443AD99A74C7F5EB4004EF7B88B668 /* Pods-CetaceaSharedFramework-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D51E09FC18FB0CDD685806B7DF8C0216 /* Pods-CetaceaSharedFramework-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8B9B29A2ECD7B79B06ED059F45B23E4 /* RACTestScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E26E6362C02330B68E82B454507F5EF /* RACTestScheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8BE1BEA0DCDD07481022D9605799BAC /* RACQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5BF9863B5D8EF278782FBA38478F95 /* RACQueueScheduler.m */; };
 		B9885DAC53B0EE161A3957472AAE1853 /* NSString+RACKeyPathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 757E76AAF64978FDAA9D3D0EB79D8C8F /* NSString+RACKeyPathUtilities.m */; };
@@ -567,7 +567,6 @@
 		BA938FA5FD606E559CE656B4FAF4FEDB /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680D07A7CDC806713B5052CAF4BED8A /* DynamicColor+RGBA.swift */; };
 		BAF92ABD6792F8A1D8CB296F2E9CB7F7 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19326884B7E410859E487F48D5B8AB07 /* DynamicColor+XYZ.swift */; };
 		BB0FBF9A48A4E912545CE15B4426FB06 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D7041B432AF6A2BA6D1552FBC27A8 /* DTTimePeriodChain.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		BBAE9797C17D76ABF281DF854740713F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25AF9151FBE4A424BBE13276015884 /* Foundation.framework */; };
 		BBDFDD738B52DA36C7108CF9C3CC8E4C /* RACSubscriptingAssignmentTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = FF02BBE703E423F4188AD5830208EC35 /* RACSubscriptingAssignmentTrampoline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCA5F0C10A1C954CC2B88DD85780195C /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = B64DC16D03A94022F52F05CB0ED8BE08 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD702EDEB8A4D4893CC6DCBF5FB7B346 /* UITableView+Night.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F45BF06D8CF938E95AA4D5BC2C8CAF /* UITableView+Night.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -679,6 +678,7 @@
 		E43295CF9AB5480ECB62E4F4ABC1E5B9 /* DateTools-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39811159B93F0F08B004830F14033AD2 /* DateTools-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E44FBD5BB8FF0B27B167268465905D95 /* RACEXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = B54BEC68E5943CE0D6C6A906911F83A6 /* RACEXTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4B67A4A3359FE5AB34AAACE6E7D327A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B25AF9151FBE4A424BBE13276015884 /* Foundation.framework */; };
+		E4D9EEEC4BCEEA7AC5122676FB5548B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA274EA505EBC5A3E8A2E34755517ACC /* Cocoa.framework */; };
 		E53249860725A737162B5A946671B288 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA274EA505EBC5A3E8A2E34755517ACC /* Cocoa.framework */; };
 		E5478F9640391B9687804442056EE55C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE6FB9E64E78532D51D4232911130B9 /* Result.swift */; };
 		E54CA459C40545C35B9909FEB57ED3C3 /* NSFileHandle+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B22838CF3A037CC192DFD41A7295706C /* NSFileHandle+RACSupport.m */; };
@@ -774,6 +774,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0D53B155B0E0E3C4C5DBF004959AB183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476B89EC1B947E5F49A8F155411C2B06;
+			remoteInfo = "DateTools-OSX";
+		};
+		115EE6B726A14D24387A9E17A0F032F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FBA762740027BD47057EE9E10517B98;
+			remoteInfo = "ReactiveObjC-iOS";
+		};
 		2218C28E1CABFDEAFCEA024ED6E2B14F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -837,6 +851,20 @@
 			remoteGlobalIDString = 9B4E1E5E2825402F7A91FA63D41E413C;
 			remoteInfo = "SyntaxKit-iOS";
 		};
+		A0296347F5B9106BF8F81751F42C705A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 800A356A1DBC7F72DBF43AECAD101B70;
+			remoteInfo = "ReactiveObjC-OSX";
+		};
+		A4487A5BAB8C006E590B694DC5DBCDB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1966773D49FA8576215BF8103E64AC51;
+			remoteInfo = "DateTools-iOS";
+		};
 		AD45BC34747C19F308750B4B16A19EAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -850,13 +878,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 52B62F92B4058E956214F9174F091AF4;
 			remoteInfo = "DynamicColor-OSX";
-		};
-		B43F3369215391E72634232633589C7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0FBA762740027BD47057EE9E10517B98;
-			remoteInfo = "ReactiveObjC-iOS";
 		};
 		DFB8EB38585E76CDA30266C0411F17EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -878,13 +899,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 867A0C3B6F24F18826807653D6B8BCE4;
 			remoteInfo = "SDVersion-library";
-		};
-		F9662F908F74ADAEC436D5168E223617 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 800A356A1DBC7F72DBF43AECAD101B70;
-			remoteInfo = "ReactiveObjC-OSX";
 		};
 		FA0E4DA692A51BD8166A8A7219CE9036 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1469,20 +1483,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15292CE97EFF544ED767FF04754318D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D9EEEC4BCEEA7AC5122676FB5548B1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		204B54EC2C712DA280C68BE415764B73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CAA868B4A36799208889922EDE84397D /* AppKit.framework in Frameworks */,
 				6A7B9D1D08116C575ECBEB78F17B4E72 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E0D65FC9295F6A05379526CEDD689F4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B6AB14AD750CCE6988CA585A6DD4927 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1594,11 +1608,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5934D3F760EE94B3C4CC59D5D9B6F1E /* Frameworks */ = {
+		D8BA112D728E5786607C21B2E805ED47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBAE9797C17D76ABF281DF854740713F /* Foundation.framework in Frameworks */,
+				65CB72F5D6F7E89ACA3B56491568D4A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2727,14 +2741,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1821AF2126430DA68382F59C4CB0EB52 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8443AD99A74C7F5EB4004EF7B88B668 /* Pods-CetaceaSharedFramework-iOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1942252832AF06114A82AAF69CC6EA59 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2930,14 +2936,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65617831F52B651BAAB0B9CDEF1F62FB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53FAB37856DBBE2639FD1F438B66743A /* Pods-CetaceaSharedFramework-OSX-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8910CC9BF579A198D1B19B78C33E9354 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2999,6 +2997,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCA16F2D0342F05F83538608019E9B19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8E17D27FF4D4FA3C2B343645F50EEE /* Pods-CetaceaSharedFramework-OSX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7CECE698B2148469D3CEF3F8A3336EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3025,27 +3031,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1F6DB265E3288358C1788221727EFDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE750686CA388152746B45D21C28114 /* Pods-CetaceaSharedFramework-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		09FE37BB1F5DD0475043634E73190783 /* Pods-CetaceaSharedFramework-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 34ED9D90B962BEF36BD5B067F71B59B1 /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-iOS" */;
-			buildPhases = (
-				1F6F48ACCDC179E429E751542DD56B33 /* Sources */,
-				C5934D3F760EE94B3C4CC59D5D9B6F1E /* Frameworks */,
-				1821AF2126430DA68382F59C4CB0EB52 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7C0A3AC0D33C6272E9B311D3727D5AF3 /* PBXTargetDependency */,
-			);
-			name = "Pods-CetaceaSharedFramework-iOS";
-			productName = "Pods-CetaceaSharedFramework-iOS";
-			productReference = 4600F326E1CF298C152B0CBA2F2E1A4A /* Pods_CetaceaSharedFramework_iOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		0FBA762740027BD47057EE9E10517B98 /* ReactiveObjC-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A81372AA8CBB725125FD900B57A924C0 /* Build configuration list for PBXNativeTarget "ReactiveObjC-iOS" */;
@@ -3201,24 +3197,6 @@
 			productReference = DEFFCFE8A4FA7B61B42A9408CE6B6181 /* DynamicColor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5E379F7D38CC55DD3E7229981151866A /* Pods-CetaceaSharedFramework-OSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 574347C4DFB54EC5DFAC354BABD8FDDF /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-OSX" */;
-			buildPhases = (
-				9D1A300D3F09CC610E6785C354981097 /* Sources */,
-				3E0D65FC9295F6A05379526CEDD689F4 /* Frameworks */,
-				65617831F52B651BAAB0B9CDEF1F62FB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6F6440531C6ABD4819A8D01CD1C41BE0 /* PBXTargetDependency */,
-			);
-			name = "Pods-CetaceaSharedFramework-OSX";
-			productName = "Pods-CetaceaSharedFramework-OSX";
-			productReference = 86EC780D99288D481D27E05D292D2F2F /* Pods_CetaceaSharedFramework_OSX.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		5E87ED649E0EB0CBEA3EF88B9F92EF34 /* Pods-WatchKitApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AA768E38F2EDF33B7D01BC9869F389D /* Build configuration list for PBXNativeTarget "Pods-WatchKitApp" */;
@@ -3362,6 +3340,25 @@
 			productReference = EFA259C3A962758D6FE88A011735BDA2 /* SyntaxKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A8815C3BC357C09D961AEDE510632736 /* Pods-CetaceaSharedFramework-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCBDDAF20F21BAF76A17B862C6A627E /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-iOS" */;
+			buildPhases = (
+				FA89E5643B29C0711470132A8147AC03 /* Sources */,
+				D8BA112D728E5786607C21B2E805ED47 /* Frameworks */,
+				F1F6DB265E3288358C1788221727EFDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66BE6AC17588C5C4C86BED2C49DD9F0B /* PBXTargetDependency */,
+				EF8DC5E48FAD634929241D636F57AB0F /* PBXTargetDependency */,
+			);
+			name = "Pods-CetaceaSharedFramework-iOS";
+			productName = "Pods-CetaceaSharedFramework-iOS";
+			productReference = 4600F326E1CF298C152B0CBA2F2E1A4A /* Pods_CetaceaSharedFramework_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		AA05FFB420969B6D974C1D12139D94F5 /* Pods-CetaceaSharedFramework-watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D5B7E48AB93E71EB3ACA48703A1EB47 /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-watchOS" */;
@@ -3378,6 +3375,25 @@
 			name = "Pods-CetaceaSharedFramework-watchOS";
 			productName = "Pods-CetaceaSharedFramework-watchOS";
 			productReference = CE44BCD056BFA216CACF9B2C0DE098EF /* Pods_CetaceaSharedFramework_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D58E3178062C489D7FA5ABD6A610F9AA /* Pods-CetaceaSharedFramework-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFF1E2067053A91E6AD3CBA6E9F5041 /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-OSX" */;
+			buildPhases = (
+				754621EB5D42C16267510E305132AEF8 /* Sources */,
+				15292CE97EFF544ED767FF04754318D8 /* Frameworks */,
+				CCA16F2D0342F05F83538608019E9B19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1537E9106D691126FC41401147617F1 /* PBXTargetDependency */,
+				4464C83E42D143F0657E32A8C9D9F9DC /* PBXTargetDependency */,
+			);
+			name = "Pods-CetaceaSharedFramework-OSX";
+			productName = "Pods-CetaceaSharedFramework-OSX";
+			productReference = 86EC780D99288D481D27E05D292D2F2F /* Pods_CetaceaSharedFramework_OSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DDB74F6A29C64217C73FD4A07B6715F2 /* DKNightVersion */ = {
@@ -3451,8 +3467,8 @@
 				287C31B0910D18640CC1CF968DEA886E /* MMMarkdown-OSX */,
 				6BBDB20256CF7B0A85CDD3BC1814321A /* Pods-Cetacea-iOS */,
 				EF76535148663EBD5BFA62AB99AD544D /* Pods-Cetacea-Mac */,
-				09FE37BB1F5DD0475043634E73190783 /* Pods-CetaceaSharedFramework-iOS */,
-				5E379F7D38CC55DD3E7229981151866A /* Pods-CetaceaSharedFramework-OSX */,
+				A8815C3BC357C09D961AEDE510632736 /* Pods-CetaceaSharedFramework-iOS */,
+				D58E3178062C489D7FA5ABD6A610F9AA /* Pods-CetaceaSharedFramework-OSX */,
 				AA05FFB420969B6D974C1D12139D94F5 /* Pods-CetaceaSharedFramework-watchOS */,
 				5E87ED649E0EB0CBEA3EF88B9F92EF34 /* Pods-WatchKitApp */,
 				940C98684ADFA5979DB7F84C729605D0 /* Pods-WatchKitApp Extension */,
@@ -3578,14 +3594,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F6F48ACCDC179E429E751542DD56B33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76747E8C45621B2FEC664F4343D2FE2C /* Pods-CetaceaSharedFramework-iOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		258C2E0554967CC62760A5D2CDA05929 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3661,6 +3669,14 @@
 				53D5072095B84C6D88BD376ADCCA76BC /* DynamicGradient.swift in Sources */,
 				554B0CB70B82129A7EBBD8FA2B67BDE3 /* HSL.swift in Sources */,
 				51F46C54601BB41067D46263BF1FD957 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754621EB5D42C16267510E305132AEF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448100333DAD7BB308F0CABDAFF03584 /* Pods-CetaceaSharedFramework-OSX-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3774,14 +3790,6 @@
 				4640EA407CF69122A8AE9AC33DC7BAE0 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				78D837A6C3DF82DA3695A2247EBACEA7 /* UITextField+RACSignalSupport.m in Sources */,
 				67EC461038DB1BABAF3D527A4B141CEB /* UITextView+RACSignalSupport.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D1A300D3F09CC610E6785C354981097 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FE84F52935E9BC18824B614C3DC03D8 /* Pods-CetaceaSharedFramework-OSX-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4027,6 +4035,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FA89E5643B29C0711470132A8147AC03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4312CB57EC8B31AE92CDC3BDD82BB9E5 /* Pods-CetaceaSharedFramework-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4060,17 +4076,23 @@
 			target = 52B62F92B4058E956214F9174F091AF4 /* DynamicColor-OSX */;
 			targetProxy = B2684CE1984569185184E6764C07AF10 /* PBXContainerItemProxy */;
 		};
+		4464C83E42D143F0657E32A8C9D9F9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveObjC-OSX";
+			target = 800A356A1DBC7F72DBF43AECAD101B70 /* ReactiveObjC-OSX */;
+			targetProxy = A0296347F5B9106BF8F81751F42C705A /* PBXContainerItemProxy */;
+		};
 		5499F796004536E27982FA52112AE9E9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SDVersion-library";
 			target = 867A0C3B6F24F18826807653D6B8BCE4 /* SDVersion-library */;
 			targetProxy = E66344FA051F2C2E0923DA03C8815381 /* PBXContainerItemProxy */;
 		};
-		6F6440531C6ABD4819A8D01CD1C41BE0 /* PBXTargetDependency */ = {
+		66BE6AC17588C5C4C86BED2C49DD9F0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ReactiveObjC-OSX";
-			target = 800A356A1DBC7F72DBF43AECAD101B70 /* ReactiveObjC-OSX */;
-			targetProxy = F9662F908F74ADAEC436D5168E223617 /* PBXContainerItemProxy */;
+			name = "DateTools-iOS";
+			target = 1966773D49FA8576215BF8103E64AC51 /* DateTools-iOS */;
+			targetProxy = A4487A5BAB8C006E590B694DC5DBCDB7 /* PBXContainerItemProxy */;
 		};
 		768813B834F624014DCE12E78D482696 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4083,12 +4105,6 @@
 			name = "DynamicColor-iOS";
 			target = 352CA937D4C52CF2BC321392D29F44A4 /* DynamicColor-iOS */;
 			targetProxy = 332FBEE9F1C082467A6D517FFC198392 /* PBXContainerItemProxy */;
-		};
-		7C0A3AC0D33C6272E9B311D3727D5AF3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ReactiveObjC-iOS";
-			target = 0FBA762740027BD47057EE9E10517B98 /* ReactiveObjC-iOS */;
-			targetProxy = B43F3369215391E72634232633589C7C /* PBXContainerItemProxy */;
 		};
 		8E178E2F79CB8EDF370406EEAAEEF005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4132,11 +4148,23 @@
 			target = 19892355B918EC00A4F56A16875F2C95 /* MMMarkdown-iOS */;
 			targetProxy = 49F60D9FAF763DD22AD0218C778FF360 /* PBXContainerItemProxy */;
 		};
+		E1537E9106D691126FC41401147617F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DateTools-OSX";
+			target = 476B89EC1B947E5F49A8F155411C2B06 /* DateTools-OSX */;
+			targetProxy = 0D53B155B0E0E3C4C5DBF004959AB183 /* PBXContainerItemProxy */;
+		};
 		ED4AB08602CE6F940924395D81219860 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "SDVersion-framework-iOS";
 			target = 4446B6C6F276F6D89986FF7FF59DD36D /* SDVersion-framework-iOS */;
 			targetProxy = 2218C28E1CABFDEAFCEA024ED6E2B14F /* PBXContainerItemProxy */;
+		};
+		EF8DC5E48FAD634929241D636F57AB0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveObjC-iOS";
+			target = 0FBA762740027BD47057EE9E10517B98 /* ReactiveObjC-iOS */;
+			targetProxy = 115EE6B726A14D24387A9E17A0F032F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4236,6 +4264,39 @@
 			};
 			name = "Non-AppStore";
 		};
+		10C1808A7FC3E4788FD10BC5D67010C6 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
 		122DF2D94909E5A4EEFF5A460DA349AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88BFB0AF375A29D13742A7B566491020 /* SyntaxKit-iOS.xcconfig */;
@@ -4269,82 +4330,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		14317670A064312C765F458004FF1473 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B828FC5D47EDF44B106BA79565B5003 /* Pods-CetaceaSharedFramework-iOS.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		167B25671F951806C3C1C91257178E0B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 330E2AFCA0A2D8CA0A5A858B9C35BFA5 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		1DB785664C6E30C0ED412983AAF7A356 /* AppStore */ = {
 			isa = XCBuildConfiguration;
@@ -4473,9 +4458,45 @@
 			};
 			name = "Non-AppStore";
 		};
-		215C11624F314BA6EDEB6FF17F3236CA /* AppStore */ = {
+		23E7D6ABAE90726FAAB4A70BCF45F024 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27CF01A1B9D955EAF3CF22FB595556ED /* Pods-CetaceaSharedFramework-OSX.appstore.xcconfig */;
+			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AC33C6FC74BF71189519CB60A6CF47C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D153163DACFB4593CF666F9F6F95B76 /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
@@ -4510,41 +4531,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = AppStore;
-		};
-		2C90B1520B72E12404CABF869086AC2A /* Non-AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Non-AppStore";
+			name = Release;
 		};
 		2DC49DD826C436AF902019AA27395DC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4945,6 +4932,42 @@
 			};
 			name = AppStore;
 		};
+		3FBA143B2D2EEBC816474A2FE331AFFD /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
 		40C85E648E55AF2AA07706093E345C70 /* AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 34863723668ED5122033D6E7F90DEC97 /* ReactiveObjC-iOS.xcconfig */;
@@ -5006,6 +5029,43 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Non-AppStore";
+		};
+		45B122AF6F1B863586456C74F73FEFC1 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F12F1F872FA0808DC3C7A219138793F /* Pods-CetaceaSharedFramework-iOS.non-appstore.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -5248,6 +5308,43 @@
 			};
 			name = AppStore;
 		};
+		5B6D520B895710F42342D410589CDDBE /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5318D89A0C75154DCB9ED77C04E365 /* Pods-CetaceaSharedFramework-iOS.appstore.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = AppStore;
+		};
 		5FF07667B9279E03E42F682904DC6000 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 520F6D3DF582FAE713196F399477FCE4 /* DynamicColor-iOS.xcconfig */;
@@ -5282,45 +5379,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		607344646C9B33845ED6665EA283E4C6 /* Non-AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ABE911CD257ED7A096C763519BCF76F /* Pods-CetaceaSharedFramework-OSX.non-appstore.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Non-AppStore";
 		};
 		626483A316177C37CE25F4EE23809AF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -5443,17 +5501,19 @@
 			};
 			name = "Non-AppStore";
 		};
-		65CBCA9FB2EFF627F2F0D3D3D60A91FA /* Debug */ = {
+		636B59D93B4BCE3B0DB27D3B347E5FAC /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -5467,7 +5527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = DateTools;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -5475,7 +5535,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = "Non-AppStore";
 		};
 		67A741321FCD359249CA9DEAFF024CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -5509,6 +5569,39 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		683868F821636A36187D4CEAEFE738D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -5565,40 +5658,6 @@
 				MODULEMAP_FILE = "Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = MMMarkdown;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AC48CF14E1663C9F36870A4276A7062 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -5718,6 +5777,39 @@
 			};
 			name = Debug;
 		};
+		80E3C327DA589F4B2CD1DC2919D667A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8433A0DC69287DC162AF1FC2EB0D172A /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 592B355E104B049FEA552A077758F9D3 /* MMMarkdown-OSX.xcconfig */;
@@ -5783,43 +5875,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		8D761EB18290FA056787B84CE1E37663 /* Non-AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F12F1F872FA0808DC3C7A219138793F /* Pods-CetaceaSharedFramework-iOS.non-appstore.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = "Non-AppStore";
 		};
 		8E7D91964940EEE3B62C337DB4B874EA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -6108,14 +6163,17 @@
 			};
 			name = Debug;
 		};
-		A9C0C4E51C91D1CF82CE3794991EB561 /* Non-AppStore */ = {
+		A8EE55D04278E2FBE495FCD337D2E619 /* AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
+			baseConfigurationReference = 27CF01A1B9D955EAF3CF22FB595556ED /* Pods-CetaceaSharedFramework-OSX.appstore.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -6123,22 +6181,26 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = iphoneos;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = "Non-AppStore";
+			name = AppStore;
 		};
 		ACBCC07170E04A1425E333B60FC9AC0F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -6242,6 +6304,45 @@
 			};
 			name = Release;
 		};
+		B0C4793D070B98AA183173767A733406 /* Non-AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABE911CD257ED7A096C763519BCF76F /* Pods-CetaceaSharedFramework-OSX.non-appstore.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Non-AppStore";
+		};
 		B1FBD23D8E4F1FA8D2E21411F79C3CF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E14AFD91F23AF1CC871848B0FA8ADF5 /* Pods-Cetacea-Mac.release.xcconfig */;
@@ -6313,38 +6414,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = "Non-AppStore";
-		};
-		B39EE8E34858D9C954AA43807AEF2995 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		B6CF8A5FE76C9BCDE06E4A3AEF49B675 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6522,43 +6591,6 @@
 			};
 			name = AppStore;
 		};
-		CB4591C40C41D4D781C260992382449C /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE5318D89A0C75154DCB9ED77C04E365 /* Pods-CetaceaSharedFramework-iOS.appstore.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = AppStore;
-		};
 		CC459A4977134E366122C84534A00E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF964E51B1A07CA1B1E6C27EB72B6E78 /* ReactiveObjC-OSX.xcconfig */;
@@ -6699,9 +6731,45 @@
 			};
 			name = AppStore;
 		};
-		D0F2E96F140ABFF73F33C5242F9B8169 /* Release */ = {
+		CF13F38B992109B9F9168827AD50A2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B892598371982E7DF376A80AFE53EE5B /* Pods-CetaceaSharedFramework-iOS.release.xcconfig */;
+			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3EB5D707E6AEBE7030618AA780D0588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B828FC5D47EDF44B106BA79565B5003 /* Pods-CetaceaSharedFramework-iOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -6709,7 +6777,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -6722,7 +6790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -6734,39 +6802,7 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		D4863125D013C51F9A8E767B09ADCF3A /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = AppStore;
+			name = Debug;
 		};
 		D7F8A6EE9F30F71C6E2B3DFA1A9FA662 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6804,14 +6840,17 @@
 			};
 			name = Debug;
 		};
-		DBB690122E2DDE9F9974D8B904B7664C /* Debug */ = {
+		D94348B06BD1399CAFFA4BFA7A210D79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
+			baseConfigurationReference = 330E2AFCA0A2D8CA0A5A858B9C35BFA5 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -6819,18 +6858,22 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = iphoneos;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -6990,6 +7033,43 @@
 			};
 			name = AppStore;
 		};
+		E19181749796EDAF74C6169B84169C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B892598371982E7DF376A80AFE53EE5B /* Pods-CetaceaSharedFramework-iOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CetaceaSharedFramework_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E2684D1F0757B4E3DA5ADFB12E171837 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7034,40 +7114,6 @@
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = "Non-AppStore";
-		};
-		E3FA3FC55E787B0CB313EEE053FDED00 /* AppStore */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3DF5F05818B359ECF367B94655E6EA /* DateTools-OSX.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DateTools-OSX/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				MODULEMAP_FILE = "Target Support Files/DateTools-OSX/DateTools-OSX.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DateTools;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = AppStore;
 		};
 		E6FE90E951F4E77BB86B2072A8679725 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -7125,17 +7171,15 @@
 			};
 			name = Release;
 		};
-		F3FCB859827F47D39DA15841AE39172F /* Release */ = {
+		F0B7E2756E4EC1A541CD628701DC1303 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D153163DACFB4593CF666F9F6F95B76 /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */;
+			baseConfigurationReference = B2B90C80A7B16250FE071340FBF58D92 /* DateTools-iOS.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -7143,26 +7187,22 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DateTools-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MODULEMAP_FILE = "Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DateTools-iOS/DateTools-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CetaceaSharedFramework_OSX;
-				SDKROOT = macosx;
+				PRODUCT_NAME = DateTools;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = "Non-AppStore";
 		};
 		FDEB2FFD9760192ED6F606FB4D479BF8 /* Non-AppStore */ = {
 			isa = XCBuildConfiguration;
@@ -7304,17 +7344,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34ED9D90B962BEF36BD5B067F71B59B1 /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB4591C40C41D4D781C260992382449C /* AppStore */,
-				14317670A064312C765F458004FF1473 /* Debug */,
-				8D761EB18290FA056787B84CE1E37663 /* Non-AppStore */,
-				D0F2E96F140ABFF73F33C5242F9B8169 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		38AF78D97032B6A83EE76ECD7E78F402 /* Build configuration list for PBXNativeTarget "MMMarkdown-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7348,13 +7377,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		574347C4DFB54EC5DFAC354BABD8FDDF /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-OSX" */ = {
+		4DFF1E2067053A91E6AD3CBA6E9F5041 /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				215C11624F314BA6EDEB6FF17F3236CA /* AppStore */,
-				167B25671F951806C3C1C91257178E0B /* Debug */,
-				607344646C9B33845ED6665EA283E4C6 /* Non-AppStore */,
-				F3FCB859827F47D39DA15841AE39172F /* Release */,
+				A8EE55D04278E2FBE495FCD337D2E619 /* AppStore */,
+				D94348B06BD1399CAFFA4BFA7A210D79 /* Debug */,
+				B0C4793D070B98AA183173767A733406 /* Non-AppStore */,
+				2AC33C6FC74BF71189519CB60A6CF47C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7384,10 +7413,10 @@
 		682B3FAAA6E1B73F67131648D6B86580 /* Build configuration list for PBXNativeTarget "DateTools-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3FA3FC55E787B0CB313EEE053FDED00 /* AppStore */,
-				65CBCA9FB2EFF627F2F0D3D3D60A91FA /* Debug */,
-				2C90B1520B72E12404CABF869086AC2A /* Non-AppStore */,
-				7AC48CF14E1663C9F36870A4276A7062 /* Release */,
+				3FBA143B2D2EEBC816474A2FE331AFFD /* AppStore */,
+				CF13F38B992109B9F9168827AD50A2DF /* Debug */,
+				636B59D93B4BCE3B0DB27D3B347E5FAC /* Non-AppStore */,
+				23E7D6ABAE90726FAAB4A70BCF45F024 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7421,6 +7450,17 @@
 				A61D9BA8387B164710DFFE7F590ED127 /* Debug */,
 				0BE92AF6BD836710080BEFF551D11584 /* Non-AppStore */,
 				CDBF852FA980B158EA128C72C030D0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCBDDAF20F21BAF76A17B862C6A627E /* Build configuration list for PBXNativeTarget "Pods-CetaceaSharedFramework-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B6D520B895710F42342D410589CDDBE /* AppStore */,
+				D3EB5D707E6AEBE7030618AA780D0588 /* Debug */,
+				45B122AF6F1B863586456C74F73FEFC1 /* Non-AppStore */,
+				E19181749796EDAF74C6169B84169C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7461,10 +7501,10 @@
 		CCBA47EA74A72832DE832491F48A724A /* Build configuration list for PBXNativeTarget "DateTools-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4863125D013C51F9A8E767B09ADCF3A /* AppStore */,
-				DBB690122E2DDE9F9974D8B904B7664C /* Debug */,
-				A9C0C4E51C91D1CF82CE3794991EB561 /* Non-AppStore */,
-				B39EE8E34858D9C954AA43807AEF2995 /* Release */,
+				10C1808A7FC3E4788FD10BC5D67010C6 /* AppStore */,
+				80E3C327DA589F4B2CD1DC2919D667A2 /* Debug */,
+				F0B7E2756E4EC1A541CD628701DC1303 /* Non-AppStore */,
+				683868F821636A36187D4CEAEFE738D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

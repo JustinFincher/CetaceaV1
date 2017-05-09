@@ -6,6 +6,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
     workspace 'Cetacea'
     pod 'ReactiveObjC'
+    pod 'DateTools'
   end
 
   target 'CetaceaSharedFramework-OSX' do
@@ -14,6 +15,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
     workspace 'Cetacea'
     pod 'ReactiveObjC'
+    pod 'DateTools'
   end
 
   target 'CetaceaSharedFramework-watchOS' do

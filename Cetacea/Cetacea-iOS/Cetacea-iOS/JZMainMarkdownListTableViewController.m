@@ -8,6 +8,7 @@
 
 #import "JZMainMarkdownListTableViewController.h"
 #import "JZMainMarkdownListTableViewCell.h"
+#import <CetaceaSharedFramework/CSFGlobalHeader.h>
 
 @interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate>
 
