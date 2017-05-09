@@ -23,17 +23,39 @@
     if ([super init])
     {
         self.url = url;
-        NSFileWrapper *wrapper = self.fileWrapper;
+        if (self.url)
+        {
+            NSString *path = [self.url path];
+            BOOL isExist = NO;
+            BOOL isDirectory = NO;
+#if TARGET_OS_IOS
+            isExist = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory];
+#elif TARGET_OS_OSX
+            isExist = [[NSWorkspace sharedWorkspace] isFilePackageAtPath:path];
+#endif
+            if (! isExist)
+            {
+                NSError *error;
+                [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+            }
+        }
+        if (!self.fileWrapper)
+        {
+            NSError *err;
+            self.fileWrapper = [[NSFileWrapper alloc] initWithURL:self.url options:0 error:&err];
+            if (err)
+            {
+                JZLog(@"%@",[err localizedDescription]);
+            }
+        }
         
         NSError *err;
 #if TARGET_OS_IOS
         self.document = [[SharedDocument alloc] initWithFileURL:url withSharedDocument:self];
-//        self.document.sharedDocument = self;
         [self.document loadFromContents:self.fileWrapper ofType:@"cetacea" error:&err];
         
 #elif TARGET_OS_OSX
         self.document = [[SharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
-//        self.document.sharedDocument = self;
         [self.document readFromFileWrapper:self.fileWrapper ofType:@"cetacea" error:&err];
 #endif
         if (err)
@@ -45,39 +67,6 @@
     return self;
 }
 
-- (NSFileWrapper *)fileWrapper
-{
-    if (self.url)
-    {
-        NSString *path = [self.url path];
-        JZLog(@"PATH = %@",path);
-        BOOL isExist = NO;
-        BOOL isDirectory = NO;
-#if TARGET_OS_IOS
-        isExist = [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory];
-#elif TARGET_OS_OSX
-        isExist = [[NSWorkspace sharedWorkspace] isFilePackageAtPath:path];
-#endif
-        JZLog(@"isExist = %d",isExist);
-        if (! isExist)
-        {
-            NSError *error;
-            [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
-        }
-    }
-    if (!_fileWrapper)
-    {
-        NSError *err;
-        _fileWrapper = [[NSFileWrapper alloc] initWithURL:self.url options:0 error:&err];
-        if (err)
-        {
-            JZLog(@"%@",[err localizedDescription]);
-        }
-    }
-    JZLog(@"[self.fileWrapper fileWrappers] = %@",[_fileWrapper fileWrappers]);
-    
-    return _fileWrapper;
-}
 - (void)updateFileWrappers
 {
     [self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];

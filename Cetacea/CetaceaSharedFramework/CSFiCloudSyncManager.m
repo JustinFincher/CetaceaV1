@@ -144,9 +144,11 @@
         NSArray *addedItems     = notification.userInfo[NSMetadataQueryUpdateAddedItemsKey];
         NSArray *removedItems       = notification.userInfo[NSMetadataQueryUpdateRemovedItemsKey];
         NSArray *changedItems   = notification.userInfo[NSMetadataQueryUpdateChangedItemsKey];
+        JZLog(@"Added Count %lu Removed Count %lu Changed Count %lu",(unsigned long)[addedItems count],(unsigned long)[removedItems count],(unsigned long)[changedItems count]);
         
         // add
-        for (NSMetadataItem *mdItem in addedItems) {
+        for (NSMetadataItem *mdItem in addedItems)
+        {
             NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
         }
         // remove
@@ -158,7 +160,8 @@
             NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
             // uploading
             BOOL uploading  = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
-            if (uploading) {
+            if (uploading)
+            {
                 NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
                 // do something...
             }

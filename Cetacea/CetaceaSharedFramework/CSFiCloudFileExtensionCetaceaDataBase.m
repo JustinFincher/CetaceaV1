@@ -46,8 +46,13 @@
     {
         NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
         CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+        doc.metaDataItem = item;
         doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
         doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];
+        
+//        NSString *downloadStatus = [item valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
+//        JZLog(@"downloadStatus = %@",downloadStatus);
+        
         [retval addObject:doc];
     }
     return retval;

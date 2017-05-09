@@ -41,4 +41,7 @@
 @property (nonatomic,strong) NSDate *creationDate;
 @property (nonatomic,strong) NSDate *lastChangeDate;
 
+
+@property (nonatomic,weak) NSMetadataItem *metaDataItem;
+
 @end

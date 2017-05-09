@@ -7,31 +7,60 @@
 //
 
 #import "JZMainMarkdownListTableViewController.h"
+#import "JZMainMarkdownListTableViewCell.h"
 
 @interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate>
 
 @property (nonatomic,strong) NSMutableArray *markdownArray;
 
+
 @end
 
 @implementation JZMainMarkdownListTableViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Uncomment the following line to preserve selection between presentations.
-     self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.clearsSelectionOnViewWillAppear = NO;
+    [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
+    CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
     
     [[CSFiCloudSyncManager sharedManager] setDelegate:self];
+}
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+#pragma mark - UIContentSize
+- (CGFloat)rowHeightForUIContentSizeCategory:(NSString *)category
+{
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
+                          @90.0,UIContentSizeCategoryExtraSmall,
+                          @95.0,UIContentSizeCategorySmall,
+                          @100.0,UIContentSizeCategoryMedium,
+                          @110.0f,UIContentSizeCategoryLarge,
+                          @115.0f,UIContentSizeCategoryExtraLarge,
+                          @125.0f,UIContentSizeCategoryExtraExtraLarge,
+                          @140.0f,UIContentSizeCategoryExtraExtraExtraLarge,
+                          @140.0f,UIContentSizeCategoryAccessibilityMedium,
+                          @150.0f,UIContentSizeCategoryAccessibilityLarge,
+                          @160.0f,UIContentSizeCategoryAccessibilityExtraLarge,
+                          @165.0f,UIContentSizeCategoryAccessibilityExtraExtraLarge,
+                          @170.0f,UIContentSizeCategoryAccessibilityExtraExtraExtraLarge,
+                          nil];
+    return [dict[category] floatValue];
+}
+#pragma mark - Notificatons
+- (void)contentSizeCategoryDidChange:(NSNotification *)notif
+{
+    self.tableView.estimatedRowHeight = [self rowHeightForUIContentSizeCategory:[[UIApplication sharedApplication] preferredContentSizeCategory]];
+    [self.tableView reloadData];
+}
 #pragma mark - CSFiCloudSyncDelegate
 - (void)iCloudFileUpdated:(NSMutableArray *)list
 {
@@ -46,27 +75,22 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-   if (self.markdownArray)
-   {
-       return [self.markdownArray count];
-   }
+    if (self.markdownArray)
+    {
+        return [self.markdownArray count];
+    }
     return 0;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"cetaceaCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = doc.title;
+    JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JZMainMarkdownListTableViewCell"];
     
+    cell.titleLabel.text = doc.title;
+    cell.contentTextView.text = doc.markdownString;
+    cell.lastChangeTimeLabel.text = doc.lastChangeDate.timeAgoSinceNow;
     return cell;
 }
 
@@ -77,39 +101,29 @@
 }
 
 
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self rowHeightForUIContentSizeCategory:[[UIApplication sharedApplication] preferredContentSizeCategory]];
+}
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
