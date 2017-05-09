@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CetaceaSharedFramework/PublicHeader.h>
 #import <CetaceaSharedFramework/CSFGlobalHeader.h>
 #import "SDVersion.h"
+#import "DateTools.h"
 #import <CetaceaSharedFramework/CSFInitialProcessManager.h>
 #import <CetaceaSharedFramework/CSFiCloudSyncManager.h>
 #import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaDataBase.h>

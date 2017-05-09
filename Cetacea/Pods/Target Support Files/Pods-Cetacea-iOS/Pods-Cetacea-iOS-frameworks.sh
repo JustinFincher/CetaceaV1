@@ -89,6 +89,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-iOS/MMMarkdown.framework"
@@ -97,6 +98,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-iOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-iOS/MMMarkdown.framework"

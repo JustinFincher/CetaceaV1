@@ -12,6 +12,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     pod 'ReactiveObjC'
     pod 'DynamicColor', '~> 3.2.1'
     pod 'SDVersion'
+    pod 'DKNightVersion'
     pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
   end
 
