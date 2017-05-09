@@ -45,49 +45,46 @@
     for (NSMetadataItem *item in query)
     {
         NSURL *url = [item valueForAttribute:NSMetadataItemURLKey];
+        NSNumber *fileSize = [item valueForAttribute:NSMetadataItemFSSizeKey];
+        NSString *path = [item valueForAttribute:NSMetadataItemPathKey];
+        NSString *fileName = [item valueForAttribute:NSMetadataItemFSNameKey];
+        NSString *displayName = [item valueForAttribute:NSMetadataItemDisplayNameKey];
+        BOOL isSizeValid = ([fileSize longValue] > 0);
+        
+        NSNumber * isHiddenValue = nil;
+        NSError *err;
+        [url getResourceValue:&isHiddenValue forKey:NSURLIsHiddenKey error:&err];
+        BOOL isNotHidden = (isHiddenValue && ![isHiddenValue boolValue]);
+        
+        BOOL isUbiquitous = [[item valueForAttribute:NSMetadataItemIsUbiquitousKey] boolValue];
+        BOOL hasUnresolvedConflicts = [[item valueForAttribute:NSMetadataUbiquitousItemHasUnresolvedConflictsKey] boolValue];
+        NSString *downloadStatus = [item valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
+        BOOL isNotDownloaded = [downloadStatus isEqualToString:NSMetadataUbiquitousItemDownloadingStatusNotDownloaded];
+        
         CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
         doc.metaDataItem = item;
         doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
         doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];
         
-//        NSString *downloadStatus = [item valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
-//        JZLog(@"downloadStatus = %@",downloadStatus);
+        if (isNotHidden)
+        {
+            if (isNotDownloaded)
+            {
+                [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:nil];
+            }else
+            {
+                if (isSizeValid)
+                {
+                    [retval addObject:doc];
+                }
+                
+            }
+        }
         
-        [retval addObject:doc];
     }
     return retval;
 }
 
-//- (NSMutableArray *)loadDocs {
-//    
-//    // Get private docs dir
-//    NSString *documentsDirectory = [self getPrivateDocsDir];
-//    JZLog(@"Loading from %@", documentsDirectory);
-//    
-//    // Get contents of documents directory
-//    NSError *error;
-//    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
-//    if (files == nil) {
-//        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
-//        return nil;
-//    }
-//    
-//    // Create for each file
-//    NSMutableArray *retval = [NSMutableArray arrayWithCapacity:files.count];
-//    for (NSString *file in files)
-//    {
-//        if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
-//        {
-//            NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
-//            NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
-//            
-//            CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
-//            [retval addObject:doc];
-//        }
-//    }
-//    
-//    return retval;
-//}
 - (NSString *)nextDocPath {
     
     // Get private docs dir

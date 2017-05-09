@@ -50,8 +50,11 @@
                      
                      self.iCloudCetaceaFilesMetadataQuery = [[NSMetadataQuery alloc] init];
                      self.iCloudCetaceaFilesMetadataQuery.notificationBatchingInterval = 1.0;
-                     [self.iCloudCetaceaFilesMetadataQuery setSearchScopes:[NSArray arrayWithObjects: [self ubiquitousDocumentsCetaceaURL], NSMetadataQueryUbiquitousDocumentsScope, nil]];
-                     [self.iCloudCetaceaFilesMetadataQuery setPredicate:[NSPredicate predicateWithFormat:@"%K like '*.cetacea'", NSMetadataItemFSNameKey]];
+                     [self.iCloudCetaceaFilesMetadataQuery setSearchScopes:[NSArray arrayWithObjects: NSMetadataQueryUbiquitousDocumentsScope, nil]];
+                     
+                     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"%K like '*.cetacea'", NSMetadataItemFSNameKey];
+                     
+                     [self.iCloudCetaceaFilesMetadataQuery setPredicate:predicate];
                      
                      CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(didStartGatheriCloudFiles:,NSMetadataQueryDidStartGatheringNotification,self.iCloudCetaceaFilesMetadataQuery)
                      CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(didGatheringiCloudFiles:,NSMetadataQueryGatheringProgressNotification,self.iCloudCetaceaFilesMetadataQuery)
