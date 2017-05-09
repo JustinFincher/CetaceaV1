@@ -70,14 +70,6 @@
         {
             JZLog(@"%@",[err localizedDescription]);
         }
-        
-//        [RACObserve(self, itemPercentDownloaded) subscribeNext:^(NSString *newItemPercentDownloaded) {
-//            NSLog(@"newItemPercentDownloaded = %f", [newItemPercentDownloaded doubleValue]);
-//        }];
-//        
-//        [RACObserve(self, itemPercentUploaded) subscribeNext:^(NSString *newItemPercentUploaded) {
-//            NSLog(@"newItemPercentUploaded = %f", [newItemPercentUploaded doubleValue]);
-//        }];
 
     }
     return self;

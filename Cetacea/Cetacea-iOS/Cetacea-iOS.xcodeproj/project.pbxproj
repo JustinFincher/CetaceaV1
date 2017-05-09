@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1B5F281EC231E1007EBE5D /* JZEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */; };
 		0D5669241EB514F1000C3E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5669231EB514F1000C3E39 /* main.m */; };
 		0D5669271EB514F1000C3E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5669261EB514F1000C3E39 /* AppDelegate.m */; };
 		0D56692D1EB514F1000C3E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56692B1EB514F1000C3E39 /* Main.storyboard */; };
@@ -122,6 +123,8 @@
 		02AE5C674715F36984BCE1F3 /* Pods-WatchKitApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKitApp Extension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.release.xcconfig"; sourceTree = "<group>"; };
 		0A46CE3A7F52C783C84CDBB2 /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
 		0B5AC8B8BA458366526EE75A /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		0D1B5F261EC231E1007EBE5D /* JZEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorSplitViewController.h; sourceTree = "<group>"; };
+		0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorSplitViewController.m; sourceTree = "<group>"; };
 		0D384B466487934BE695181B /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		0D56691F1EB514F1000C3E39 /* Cetacea-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669231EB514F1000C3E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -392,6 +395,8 @@
 				0D6D42791EB883D700D7E1F7 /* JZMainNavigationController.m */,
 				0D605CD81EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.h */,
 				0D605CD91EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m */,
+				0D1B5F261EC231E1007EBE5D /* JZEditorSplitViewController.h */,
+				0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -961,6 +966,7 @@
 				0D5669241EB514F1000C3E39 /* main.m in Sources */,
 				0DD901B31EB5DB8900AEDCB1 /* JZMainSplitViewController.m in Sources */,
 				0D605CDE1EC1640A00FA6354 /* JZMainMarkdownListTableViewCell.m in Sources */,
+				0D1B5F281EC231E1007EBE5D /* JZEditorSplitViewController.m in Sources */,
 				0D8FE5C21EC18BF900E9D5BF /* UIFontDescriptor+Avenir.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
