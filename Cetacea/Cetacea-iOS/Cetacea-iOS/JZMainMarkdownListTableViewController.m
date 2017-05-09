@@ -9,10 +9,10 @@
 #import "JZMainMarkdownListTableViewController.h"
 #import "JZMainMarkdownListTableViewCell.h"
 
-@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate>
+@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate>
 
 @property (nonatomic,strong) NSMutableArray *markdownArray;
-
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
 
@@ -23,8 +23,10 @@
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
     
+    self.searchBar.delegate = self;
     [[CSFiCloudSyncManager sharedManager] setDelegate:self];
 }
 - (void)dealloc
@@ -60,6 +62,14 @@
 {
     self.tableView.estimatedRowHeight = [self rowHeightForUIContentSizeCategory:[[UIApplication sharedApplication] preferredContentSizeCategory]];
     [self.tableView reloadData];
+}
+#pragma mark - UISearchBarDelegate
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+    
+}
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
 }
 #pragma mark - CSFiCloudSyncDelegate
 - (void)iCloudFileUpdated:(NSMutableArray *)list
