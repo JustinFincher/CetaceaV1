@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
+		0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
+		0D1B5F191EC1CB64007EBE5D /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */; };
+		0D1B5F1A1EC1CB64007EBE5D /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */; };
+		0D1B5F1B1EC1CB64007EBE5D /* TSMarkdownParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F151EC1CB64007EBE5D /* TSMarkdownParser.h */; };
+		0D1B5F1C1EC1CB64007EBE5D /* TSMarkdownParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F151EC1CB64007EBE5D /* TSMarkdownParser.h */; };
+		0D1B5F1D1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F161EC1CB64007EBE5D /* TSMarkdownParser.m */; };
+		0D1B5F1E1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F161EC1CB64007EBE5D /* TSMarkdownParser.m */; };
+		0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */; };
+		0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */; };
+		0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */; };
+		0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */; };
 		0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
 		0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
 		0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */; };
@@ -52,6 +64,12 @@
 
 /* Begin PBXFileReference section */
 		008614DD1D1BD547584C14E9 /* Pods_CetaceaSharedFramework_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetaceaSharedFramework_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseParser.h; sourceTree = "<group>"; };
+		0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseParser.m; sourceTree = "<group>"; };
+		0D1B5F151EC1CB64007EBE5D /* TSMarkdownParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMarkdownParser.h; sourceTree = "<group>"; };
+		0D1B5F161EC1CB64007EBE5D /* TSMarkdownParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMarkdownParser.m; sourceTree = "<group>"; };
+		0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFCetaceaSharedDocumentEditManager.h; sourceTree = "<group>"; };
+		0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFCetaceaSharedDocumentEditManager.m; sourceTree = "<group>"; };
 		0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
 		0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
 		0D516C6E1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaSharedDocument.h; sourceTree = "<group>"; };
@@ -122,6 +140,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1B5F1F1EC1CB7D007EBE5D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */,
+				0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */,
+				0D1B5F151EC1CB64007EBE5D /* TSMarkdownParser.h */,
+				0D1B5F161EC1CB64007EBE5D /* TSMarkdownParser.m */,
+				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
+				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
+				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
+				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
+				0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */,
+				0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */,
+				0D516C6E1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h */,
+				0D516C6F1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m */,
+				0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */,
+				0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		0D516C7C1EC06490007AAB05 /* OSX */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,14 +209,7 @@
 		0D7F31B91EBC4ABB00D29651 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
-				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
-				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
-				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
-				0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */,
-				0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */,
-				0D516C6E1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h */,
-				0D516C6F1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m */,
+				0D1B5F1F1EC1CB7D007EBE5D /* Data */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -226,10 +258,13 @@
 			files = (
 				0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
 				0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C701EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
 				0D516C7A1EC06489007AAB05 /* CSFiCloudFileExtensionCetaceaUIDocument.h in Headers */,
+				0D1B5F1B1EC1CB64007EBE5D /* TSMarkdownParser.h in Headers */,
 				0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,10 +275,13 @@
 			files = (
 				0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
 				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C761EC0646F007AAB05 /* CSFiCloudFileExtensionCetaceaNSDocument.h in Headers */,
 				0D516C711EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D1B5F1C1EC1CB64007EBE5D /* TSMarkdownParser.h in Headers */,
 				0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,9 +537,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D516C721EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
+				0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
 				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
 				0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D516C7B1EC06489007AAB05 /* CSFiCloudFileExtensionCetaceaUIDocument.m in Sources */,
+				0D1B5F1D1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */,
+				0D1B5F191EC1CB64007EBE5D /* TSBaseParser.m in Sources */,
 				0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,9 +552,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D516C771EC0646F007AAB05 /* CSFiCloudFileExtensionCetaceaNSDocument.m in Sources */,
+				0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
 				0D516C731EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
 				0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0D1B5F1E1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */,
+				0D1B5F1A1EC1CB64007EBE5D /* TSBaseParser.m in Sources */,
 				0D7F31C31EBC578700D29651 /* CSFiCloudSyncManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

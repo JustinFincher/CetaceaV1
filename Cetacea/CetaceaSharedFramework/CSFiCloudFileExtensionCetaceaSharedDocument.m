@@ -15,6 +15,14 @@
 #import "CSFiCloudFileExtensionCetaceaNSDocument.h"
 #endif
 
+#import <ReactiveObjC/ReactiveObjC.h>
+
+@interface CSFiCloudFileExtensionCetaceaSharedDocument ()
+
+@property (nonatomic,strong) NSNumber *itemPercentDownloaded;
+@property (nonatomic,strong) NSNumber *itemPercentUploaded;
+
+@end
 
 @implementation CSFiCloudFileExtensionCetaceaSharedDocument
 
@@ -63,6 +71,14 @@
             JZLog(@"%@",[err localizedDescription]);
         }
         
+//        [RACObserve(self, itemPercentDownloaded) subscribeNext:^(NSString *newItemPercentDownloaded) {
+//            NSLog(@"newItemPercentDownloaded = %f", [newItemPercentDownloaded doubleValue]);
+//        }];
+//        
+//        [RACObserve(self, itemPercentUploaded) subscribeNext:^(NSString *newItemPercentUploaded) {
+//            NSLog(@"newItemPercentUploaded = %f", [newItemPercentUploaded doubleValue]);
+//        }];
+
     }
     return self;
 }
@@ -86,6 +102,15 @@
     }
     [self.fileWrapper addRegularFileWithContents:data
                                preferredFilename:fileName];
+}
+#pragma mark - Getter
+- (NSNumber *)itemPercentUploaded
+{
+    return [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemPercentUploadedKey];
+}
+- (NSNumber *)itemPercentDownloaded
+{
+    return [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemPercentDownloadedKey];
 }
 #pragma mark - Compare
 - (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object
