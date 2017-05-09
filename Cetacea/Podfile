@@ -1,5 +1,29 @@
 plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target => false
 
+  target 'CetaceaSharedFramework-iOS' do
+    use_frameworks!
+    platform :ios, '10.0'
+    project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
+    workspace 'Cetacea'
+    pod 'ReactiveObjC'
+  end
+
+  target 'CetaceaSharedFramework-OSX' do
+    use_frameworks!
+    platform :osx, '10.12'
+    project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
+    workspace 'Cetacea'
+    pod 'ReactiveObjC'
+  end
+
+  target 'CetaceaSharedFramework-watchOS' do
+    use_frameworks!
+    platform :watchos, '3.0'
+    project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
+    workspace 'Cetacea'
+    pod 'ReactiveObjC'
+  end
+
   target 'Cetacea-iOS' do
     use_frameworks!
     platform :ios, '10.0'

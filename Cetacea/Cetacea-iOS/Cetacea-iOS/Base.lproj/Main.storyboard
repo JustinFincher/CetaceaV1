@@ -78,7 +78,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Cetacea" id="BeQ-vI-ZLn"/>
                     <connections>
-                        <outlet property="searchBar" destination="qFD-Mk-xCV" id="le3-9X-Eb7"/>
+                        <outlet property="searchBar" destination="qFD-Mk-xCV" id="GY0-UG-VIl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zh0-Ky-F3W" userLabel="First Responder" sceneMemberID="firstResponder"/>

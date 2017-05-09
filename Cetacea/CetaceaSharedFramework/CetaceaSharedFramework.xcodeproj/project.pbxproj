@@ -42,9 +42,16 @@
 		0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
 		0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
 		0DD902991EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */; };
+		30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */; };
+		8BEF9C2BF5E5EC0E43D73ACA /* Pods_CetaceaSharedFramework_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7E312D12A3CC06786B8A99 /* Pods_CetaceaSharedFramework_watchOS.framework */; };
+		92E9EE7CBD452B7403CFF23D /* Pods_CetaceaSharedFramework_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008614DD1D1BD547584C14E9 /* Pods_CetaceaSharedFramework_OSX.framework */; };
+		C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */; };
+		C7F61853E794A7B77A912B3B /* Pods_CetaceaSharedFramework_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F10ECB80AD9824B90A3212 /* Pods_CetaceaSharedFramework_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008614DD1D1BD547584C14E9 /* Pods_CetaceaSharedFramework_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetaceaSharedFramework_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
 		0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
 		0D516C6E1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaSharedDocument.h; sourceTree = "<group>"; };
@@ -65,6 +72,26 @@
 		0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-watchOS-Info.plist"; sourceTree = "<group>"; };
 		0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CetaceaSharedFramework.h; sourceTree = "<group>"; };
 		0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFGlobalHeader.h; sourceTree = "<group>"; };
+		1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-OSX-metadata.plist"; sourceTree = "<group>"; };
+		53CAB37A8A6DE458C72B4C82 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		58F10ECB80AD9824B90A3212 /* Pods_CetaceaSharedFramework_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetaceaSharedFramework_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-iOS-metadata.plist"; sourceTree = "<group>"; };
+		6A6761508A6CDDFFF0470860 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		72876063D9D0EC18603DDC2E /* Pods-CetaceaSharedFramework-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-watchOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7D7E312D12A3CC06786B8A99 /* Pods_CetaceaSharedFramework_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetaceaSharedFramework_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90933F82610FFDD3873EB34F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		AC018D3847526289712451D1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		ACBD03BBF7357388CBB005DD /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-OSX.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		AD086CC141A0C8387710073E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-watchOS-metadata.plist"; sourceTree = "<group>"; };
+		B28FFCC6797A9870CAEC81EA /* Pods-CetaceaSharedFramework-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-iOS.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B81715173761DB8F157FF434 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		BC1B830B63FA71C660DBF2A0 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-OSX.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		D27719A592644B31BBFFB073 /* Pods-CetaceaSharedFramework-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		EE434B42C03DB41E46937917 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		F989CAFE26B5A387359E7919 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		FCF121D6FAEC47B7C78E82A6 /* Pods-CetaceaSharedFramework-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-iOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F61853E794A7B77A912B3B /* Pods_CetaceaSharedFramework_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E9EE7CBD452B7403CFF23D /* Pods_CetaceaSharedFramework_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BEF9C2BF5E5EC0E43D73ACA /* Pods_CetaceaSharedFramework_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +152,8 @@
 				0D516C7D1EC06497007AAB05 /* iOS */,
 				0D7F31B91EBC4ABB00D29651 /* Shared */,
 				0D5669C41EB588DC000C3E39 /* Products */,
+				23AE71A41E33FA38B6B830D9 /* Pods */,
+				57AF569E5143857516731C46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +180,41 @@
 				0D516C6F1EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		23AE71A41E33FA38B6B830D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28FFCC6797A9870CAEC81EA /* Pods-CetaceaSharedFramework-iOS.debug.xcconfig */,
+				FCF121D6FAEC47B7C78E82A6 /* Pods-CetaceaSharedFramework-iOS.release.xcconfig */,
+				64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */,
+				F989CAFE26B5A387359E7919 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				BC1B830B63FA71C660DBF2A0 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */,
+				ACBD03BBF7357388CBB005DD /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */,
+				53CAB37A8A6DE458C72B4C82 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */,
+				6A6761508A6CDDFFF0470860 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				72876063D9D0EC18603DDC2E /* Pods-CetaceaSharedFramework-watchOS.debug.xcconfig */,
+				D27719A592644B31BBFFB073 /* Pods-CetaceaSharedFramework-watchOS.release.xcconfig */,
+				AD086CC141A0C8387710073E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				AC018D3847526289712451D1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */,
+				B81715173761DB8F157FF434 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				EE434B42C03DB41E46937917 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				90933F82610FFDD3873EB34F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		57AF569E5143857516731C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58F10ECB80AD9824B90A3212 /* Pods_CetaceaSharedFramework_iOS.framework */,
+				008614DD1D1BD547584C14E9 /* Pods_CetaceaSharedFramework_OSX.framework */,
+				7D7E312D12A3CC06786B8A99 /* Pods_CetaceaSharedFramework_watchOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5669EF1EB58FAF000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-iOS" */;
 			buildPhases = (
+				EDBAE7A1EBF8B9835D6A8FE4 /* [CP] Check Pods Manifest.lock */,
 				0D5669E51EB58FAF000C3E39 /* Sources */,
 				0D5669E61EB58FAF000C3E39 /* Frameworks */,
 				0D5669E71EB58FAF000C3E39 /* Headers */,
 				0D5669E81EB58FAF000C3E39 /* Resources */,
+				74B2A4A85ED7744F55185485 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,10 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5669FC1EB58FBE000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-OSX" */;
 			buildPhases = (
+				6DAD2B7464FEB539F64794E7 /* [CP] Check Pods Manifest.lock */,
 				0D5669F21EB58FBE000C3E39 /* Sources */,
 				0D5669F31EB58FBE000C3E39 /* Frameworks */,
 				0D5669F41EB58FBE000C3E39 /* Headers */,
 				0D5669F51EB58FBE000C3E39 /* Resources */,
+				5D2E065A830435B4F84F477B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,10 +304,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D566A091EB58FF1000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-watchOS" */;
 			buildPhases = (
+				D3D7CB250A1449C2388D91D1 /* [CP] Check Pods Manifest.lock */,
 				0D5669FF1EB58FF1000C3E39 /* Sources */,
 				0D566A001EB58FF1000C3E39 /* Frameworks */,
 				0D566A011EB58FF1000C3E39 /* Headers */,
 				0D566A021EB58FF1000C3E39 /* Resources */,
+				53CF2A75976B84DB750E14A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +372,7 @@
 				0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +383,7 @@
 				0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +394,104 @@
 				0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53CF2A75976B84DB750E14A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2E065A830435B4F84F477B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAD2B7464FEB539F64794E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74B2A4A85ED7744F55185485 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3D7CB250A1449C2388D91D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBAE7A1EBF8B9835D6A8FE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D5669E51EB58FAF000C3E39 /* Sources */ = {
@@ -375,6 +544,7 @@
 		};
 		0D5669F01EB58FAF000C3E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28FFCC6797A9870CAEC81EA /* Pods-CetaceaSharedFramework-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -441,6 +611,7 @@
 		};
 		0D5669F11EB58FAF000C3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF121D6FAEC47B7C78E82A6 /* Pods-CetaceaSharedFramework-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -501,6 +672,7 @@
 		};
 		0D5669FD1EB58FBE000C3E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC1B830B63FA71C660DBF2A0 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -567,6 +739,7 @@
 		};
 		0D5669FE1EB58FBE000C3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBD03BBF7357388CBB005DD /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -626,6 +799,7 @@
 		};
 		0D566A0A1EB58FF1000C3E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72876063D9D0EC18603DDC2E /* Pods-CetaceaSharedFramework-watchOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -691,6 +865,7 @@
 		};
 		0D566A0B1EB58FF1000C3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27719A592644B31BBFFB073 /* Pods-CetaceaSharedFramework-watchOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
