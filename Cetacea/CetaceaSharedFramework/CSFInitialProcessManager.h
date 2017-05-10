@@ -15,5 +15,9 @@
 @interface CSFInitialProcessManager : NSObject
 
 + (id)sharedManager;
+
+/**
+ Intial Process with all needed init calls called. Add this in [Application finishedlaunching];
+ */
 - (void)initialProcess;
 @end

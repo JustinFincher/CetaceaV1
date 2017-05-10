@@ -7,8 +7,9 @@
 //
 
 #import "JZEditorSplitViewController.h"
+#import "JZNoticeEnableCloudServiceViewController.h"
 
-@interface JZEditorSplitViewController ()
+@interface JZEditorSplitViewController ()<UISplitViewControllerDelegate>
 
 @end
 
@@ -16,17 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.delegate = self;
     self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
     self.preferredPrimaryColumnWidthFraction = 0.5f;
+    self.minimumPrimaryColumnWidth = 0.0f;
+    self.maximumPrimaryColumnWidth = CGFLOAT_MAX;
 
     self.navigationItem.leftBarButtonItem = self.navigationController.splitViewController.displayModeButtonItem;
     self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (![[CSFiCloudSyncManager sharedManager] isIcloudAvailiable])
+    {
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:CSF_Block_Main_Storyboard_VC_From_Identifier(@"JZNoticeEnableCloudServiceViewController")];
+        navController.modalPresentationStyle = UIModalPresentationFormSheet;
+        [self presentViewController:navController animated:YES completion:nil];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UISplitViewControllerDelegate
+- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
+{
+    return YES;
 }
 
 /*

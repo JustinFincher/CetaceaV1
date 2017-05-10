@@ -11,6 +11,8 @@
 #import <Crashlytics/Crashlytics.h>
 #import <CetaceaSharedFramework/CetaceaSharedFramework.h>
 
+#import "JZNoticeEnableCloudServiceViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,6 +24,10 @@
     // Override point for customization after application launch.
     [Fabric with:@[[Crashlytics class]]];
     [[CSFInitialProcessManager sharedManager] initialProcess];
+
+    CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSF_String_Notification_iCloud_Not_Availiable_Name,nil,^(NSNotification *notification)
+                                                               {
+                                                               });
     return YES;
 }
 
