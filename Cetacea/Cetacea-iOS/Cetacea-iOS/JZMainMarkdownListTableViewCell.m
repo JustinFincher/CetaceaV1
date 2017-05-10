@@ -47,7 +47,7 @@
     {
         [self.animator stopAnimation:YES];
     }
-    self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.1 curve:UIViewAnimationCurveEaseIn animations:^(void)
+    self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.15f curve:UIViewAnimationCurveEaseIn animations:^(void)
                      {
                          if (selected)
                          {
@@ -73,7 +73,7 @@
     {
         [self.animator stopAnimation:YES];
     }
-    self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.1 curve:UIViewAnimationCurveEaseIn animations:^(void)
+    self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.15f curve:UIViewAnimationCurveEaseIn animations:^(void)
                      {
                          if (highlighted)
                          {
