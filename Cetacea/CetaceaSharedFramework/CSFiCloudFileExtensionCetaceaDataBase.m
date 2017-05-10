@@ -76,8 +76,10 @@
                 if (isSizeValid)
                 {
                     [retval addObject:doc];
+                }else
+                {
+                    [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
                 }
-                
             }
         }
         

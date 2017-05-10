@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D1B5F281EC231E1007EBE5D /* JZEditorSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */; };
+		0D339FBD1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D339FBC1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m */; };
+		0D339FC31EC2F89000414267 /* JZSettingsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D339FC21EC2F89000414267 /* JZSettingsNavigationController.m */; };
 		0D5669241EB514F1000C3E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5669231EB514F1000C3E39 /* main.m */; };
 		0D5669271EB514F1000C3E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5669261EB514F1000C3E39 /* AppDelegate.m */; };
 		0D56692D1EB514F1000C3E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D56692B1EB514F1000C3E39 /* Main.storyboard */; };
@@ -125,6 +127,10 @@
 		0B5AC8B8BA458366526EE75A /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		0D1B5F261EC231E1007EBE5D /* JZEditorSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZEditorSplitViewController.h; sourceTree = "<group>"; };
 		0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZEditorSplitViewController.m; sourceTree = "<group>"; };
+		0D339FBB1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZNoticeEnableCloudServiceViewController.h; sourceTree = "<group>"; };
+		0D339FBC1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZNoticeEnableCloudServiceViewController.m; sourceTree = "<group>"; };
+		0D339FC11EC2F89000414267 /* JZSettingsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZSettingsNavigationController.h; sourceTree = "<group>"; };
+		0D339FC21EC2F89000414267 /* JZSettingsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsNavigationController.m; sourceTree = "<group>"; };
 		0D384B466487934BE695181B /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		0D56691F1EB514F1000C3E39 /* Cetacea-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669231EB514F1000C3E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -400,6 +406,10 @@
 				0D605CD91EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m */,
 				0D1B5F261EC231E1007EBE5D /* JZEditorSplitViewController.h */,
 				0D1B5F271EC231E1007EBE5D /* JZEditorSplitViewController.m */,
+				0D339FBB1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.h */,
+				0D339FBC1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m */,
+				0D339FC11EC2F89000414267 /* JZSettingsNavigationController.h */,
+				0D339FC21EC2F89000414267 /* JZSettingsNavigationController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -967,12 +977,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6D427A1EB883D700D7E1F7 /* JZMainNavigationController.m in Sources */,
+				0D339FBD1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m in Sources */,
 				0D5669271EB514F1000C3E39 /* AppDelegate.m in Sources */,
 				0D605CDA1EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m in Sources */,
 				0D5669241EB514F1000C3E39 /* main.m in Sources */,
 				0DD901B31EB5DB8900AEDCB1 /* JZMainSplitViewController.m in Sources */,
 				0D605CDE1EC1640A00FA6354 /* JZMainMarkdownListTableViewCell.m in Sources */,
 				0D1B5F281EC231E1007EBE5D /* JZEditorSplitViewController.m in Sources */,
+				0D339FC31EC2F89000414267 /* JZSettingsNavigationController.m in Sources */,
 				0D8FE5C21EC18BF900E9D5BF /* UIFontDescriptor+Avenir.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

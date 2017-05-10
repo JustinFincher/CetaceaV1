@@ -12,6 +12,9 @@
 
 @interface CSFCetaceaSharedDocumentEditManager : NSObject
 
-- (CSFiCloudFileExtensionCetaceaSharedDocument *)currentEditingDocument;
++ (id)sharedManager;
+
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument *currentEditingDocument;
+- (void)setCurrentEditingDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
 
 @end

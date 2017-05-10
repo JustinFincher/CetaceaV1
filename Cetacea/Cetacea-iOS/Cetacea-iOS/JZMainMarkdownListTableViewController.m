@@ -9,11 +9,13 @@
 #import "JZMainMarkdownListTableViewController.h"
 #import "JZMainMarkdownListTableViewCell.h"
 #import <CetaceaSharedFramework/CSFGlobalHeader.h>
+#import "JZSettingsNavigationController.h"
 
-@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate>
+@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate,UIPopoverPresentationControllerDelegate>
 
 @property (nonatomic,strong) NSMutableArray *markdownArray;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *applicationSettingsButton;
 
 @end
 
@@ -23,9 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
     self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.allowsSelection = YES;
     [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
     [self.tableView setContentOffset:CGPointMake(0, self.searchBar.frame.size.height) animated:YES];
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
@@ -84,8 +87,29 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    NSInteger numOfSections = 0;
+    if ([self.markdownArray count]>0)
+    {
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        numOfSections                = 1;
+        self.tableView.backgroundView = nil;
+        self.searchBar.hidden = NO;
+    }
+    else
+    {
+        UILabel *noDataLabel         = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, self.tableView.bounds.size.height)];
+        noDataLabel.numberOfLines = 0;
+        noDataLabel.text             = @"No markdown files.\n Press add to write.";
+        noDataLabel.textColor        = [UIColor grayColor];
+        noDataLabel.textAlignment    = NSTextAlignmentCenter;
+        noDataLabel.font = [UIFont fontWithDescriptor:[UIFontDescriptor preferredAvenirBoldFontDescriptorWithTextStyle:UIFontTextStyleHeadline] size: 0];
+        self.tableView.backgroundView = noDataLabel;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.searchBar.hidden = YES;
+    }
+    return numOfSections;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -118,9 +142,10 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete)
     {
-        // Delete the row from the data source
+        [self.markdownArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    } else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
 }
@@ -129,7 +154,47 @@
 {
     return [self rowHeightForUIContentSizeCategory:[[UIApplication sharedApplication] preferredContentSizeCategory]];
 }
-
+- (BOOL)tableView:(UITableView *)tableView shouldHighlightRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
+    if (doc)
+    {
+        [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:doc];
+    }
+}
+- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+#pragma Button Events
+- (IBAction)applicationSettingsButtonPressed:(UIBarButtonItem *)sender
+{
+    JZSettingsNavigationController *naviVC = CSF_Block_Main_Storyboard_VC_From_Identifier(NSStringFromClass([JZSettingsNavigationController class]));
+    naviVC.navigationBarHidden = NO;
+    naviVC.modalPresentationStyle = UIModalPresentationPopover;
+    naviVC.popoverPresentationController.delegate = self;
+    naviVC.popoverPresentationController.barButtonItem = sender;
+    naviVC.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
+    naviVC.preferredContentSize = self.view.frame.size;
+    [self presentViewController:naviVC animated:YES completion:nil];
+}
+#pragma mark - UIAdaptivePresentationControllerDelegate
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
+{
+    return UIModalPresentationNone;
+}
 /*
  #pragma mark - Navigation
  

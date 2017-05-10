@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.delegate = self;
+    self.presentsWithGesture = NO;
+    self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
 }
 
 - (void)didReceiveMemoryWarning {
