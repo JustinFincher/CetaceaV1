@@ -25,12 +25,6 @@
     
     self.minimumPrimaryColumnWidth = 0.0f;
     self.maximumPrimaryColumnWidth = CGFLOAT_MAX;
-    
-    __weak typeof(self) weakSelf = self;
-    CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSF_String_Notification_Current_Document_Changed_Name, nil, ^(NSNotification *notif)
-                                                               {
-                                                                   
-                                                               });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,20 +34,10 @@
 #pragma mark - Size Class Override
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-//    for (UIViewController *vc in self.childViewControllers) {
-//        [self setOverrideTraitCollection:[self traitCollection] forChildViewController:vc];
-//    }
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     
 }
-//- (UITraitCollection *)traitCollection
-//{
-//    if ([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPhone && UIDeviceOrientationIsLandscape([[UIDevice currentDevice] orientation]))
-//    {
-//        return [UITraitCollection traitCollectionWithTraitsFromCollections:[NSArray arrayWithObjects:[UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular],[UITraitCollection traitCollectionWithVerticalSizeClass:UIUserInterfaceSizeClassCompact], nil]];
-//    }
-//    return [super traitCollection];
-//}
+
 #pragma mark - UISplitViewControllerDelegate
 - (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
 {
