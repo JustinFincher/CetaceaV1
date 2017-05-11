@@ -14,7 +14,8 @@
 
 + (id)sharedManager;
 
-@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument *currentEditingDocument;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument * currentEditingDocument;
 - (void)setCurrentEditingDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
+- (BOOL)hasCurrentEditingDocument;
 
 @end

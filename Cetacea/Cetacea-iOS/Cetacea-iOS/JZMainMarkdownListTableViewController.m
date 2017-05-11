@@ -29,12 +29,31 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.allowsSelection = YES;
-    [self.tableView registerNib:[UINib nibWithNibName:@"JZMainMarkdownListTableViewCell" bundle:nil] forCellReuseIdentifier:@"JZMainMarkdownListTableViewCell"];
-    [self.tableView setContentOffset:CGPointMake(0, self.searchBar.frame.size.height) animated:YES];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JZMainMarkdownListTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
     
     self.searchBar.delegate = self;
     [[CSFiCloudSyncManager sharedManager] setDelegate:self];
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSArray *viewControllers = self.navigationController.viewControllers;
+    if (viewControllers.count > 1 && [viewControllers objectAtIndex:viewControllers.count-2] == self) {
+        // View is disappearing because a new view controller was pushed onto the stack
+        NSLog(@"New view controller was pushed");
+        
+        [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
+        [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:nil];
+        
+    } else if ([viewControllers indexOfObject:self] == NSNotFound) {
+        // View is disappearing because it was popped from the stack
+        NSLog(@"View controller was popped");
+    }
+}
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
 }
 - (void)dealloc
 {
@@ -124,7 +143,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
-    JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"JZMainMarkdownListTableViewCell"];
+    JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
     
     cell.titleLabel.text = doc.title;
     cell.contentTextView.text = doc.markdownString;
@@ -139,7 +158,7 @@
 }
 - (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:[NSNull null]];
+    [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:nil];
 }
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete)
@@ -170,7 +189,7 @@
 }
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:nil];
 }
 - (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath
 {

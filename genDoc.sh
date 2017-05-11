@@ -10,4 +10,4 @@ jazzy \
    --umbrella-header Cetacea/CetaceaSharedFramework/CetaceaSharedFramework.h \
    --framework-root Cetacea \
   --author_url https://fincher.im \
-  --output Doc/CetaceaSharedFramework 
+  --output docs/CetaceaSharedFramework 

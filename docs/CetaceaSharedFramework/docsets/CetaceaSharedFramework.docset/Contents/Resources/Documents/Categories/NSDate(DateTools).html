@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NSDate(DateTools) Category Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Extension/NSDate(DateTools)" class="dashAnchor"></a>
+    <a title="NSDate(DateTools) Category Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (1% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CetaceaSharedFramework Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        NSDate(DateTools) Category Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(DateTools).html">NSDate(DateTools)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFDeviceCapabilityManager.html">CSFDeviceCapabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFInitialProcessManager.html">CSFInitialProcessManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaDataBase.html">CSFiCloudFileExtensionCetaceaDataBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTError.html">DTError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriod.html">DTTimePeriod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodChain.html">DTTimePeriodChain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodCollection.html">DTTimePeriodCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DTTimePeriodGroup.html">DTTimePeriodGroup</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionNumber">CetaceaSharedFrameworkVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTBadTypeException">DTBadTypeException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@DTErrorDomain">DTErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTInsertOutOfBoundsException">DTInsertOutOfBoundsException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:DTError.h@DTRemoveOutOfBoundsException">DTRemoveOutOfBoundsException</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MILLISECONDS_IN_DAY">MILLISECONDS_IN_DAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_DAY">SECONDS_IN_DAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_HOUR">SECONDS_IN_HOUR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MINUTE">SECONDS_IN_MINUTE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_28">SECONDS_IN_MONTH_28</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_29">SECONDS_IN_MONTH_29</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_30">SECONDS_IN_MONTH_30</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_31">SECONDS_IN_MONTH_31</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_WEEK">SECONDS_IN_WEEK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SECONDS_IN_YEAR">SECONDS_IN_YEAR</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodAnchor.html">DTTimePeriodAnchor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodInterval.html">DTTimePeriodInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodRelation.html">DTTimePeriodRelation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DTTimePeriodSize.html">DTTimePeriodSize</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NSDate(DateTools)</h1>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20Ago"></a>
+                <a name="//apple_ref/objc/Section/Time Ago" class="dashAnchor"></a>
+                <a href="#/Time%20Ago">
+                  <h3 class="section-name">Time Ago</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)timeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/+timeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)timeAgoSinceDate:">+timeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)shortTimeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/+shortTimeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)shortTimeAgoSinceDate:">+shortTimeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)weekTimeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/+weekTimeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)weekTimeAgoSinceDate:">+weekTimeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)timeAgoSinceNow"></a>
+                    <a name="//apple_ref/objc/Method/-timeAgoSinceNow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)timeAgoSinceNow">-timeAgoSinceNow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)shortTimeAgoSinceNow"></a>
+                    <a name="//apple_ref/objc/Method/-shortTimeAgoSinceNow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)shortTimeAgoSinceNow">-shortTimeAgoSinceNow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekTimeAgoSinceNow"></a>
+                    <a name="//apple_ref/objc/Method/-weekTimeAgoSinceNow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekTimeAgoSinceNow">-weekTimeAgoSinceNow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)timeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/-timeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)timeAgoSinceDate:">-timeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)timeAgoSinceDate:numericDates:"></a>
+                    <a name="//apple_ref/objc/Method/-timeAgoSinceDate:numericDates:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)timeAgoSinceDate:numericDates:">-timeAgoSinceDate:numericDates:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)timeAgoSinceDate:numericDates:numericTimes:"></a>
+                    <a name="//apple_ref/objc/Method/-timeAgoSinceDate:numericDates:numericTimes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)timeAgoSinceDate:numericDates:numericTimes:">-timeAgoSinceDate:numericDates:numericTimes:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)shortTimeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/-shortTimeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)shortTimeAgoSinceDate:">-shortTimeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekTimeAgoSinceDate:"></a>
+                    <a name="//apple_ref/objc/Method/-weekTimeAgoSinceDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekTimeAgoSinceDate:">-weekTimeAgoSinceDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20Components%20Without%20Calendar"></a>
+                <a name="//apple_ref/objc/Section/Date Components Without Calendar" class="dashAnchor"></a>
+                <a href="#/Date%20Components%20Without%20Calendar">
+                  <h3 class="section-name">Date Components Without Calendar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)era"></a>
+                    <a name="//apple_ref/objc/Method/-era" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)era">-era</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)year"></a>
+                    <a name="//apple_ref/objc/Method/-year" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)year">-year</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)month"></a>
+                    <a name="//apple_ref/objc/Method/-month" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)month">-month</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)day"></a>
+                    <a name="//apple_ref/objc/Method/-day" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)day">-day</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hour"></a>
+                    <a name="//apple_ref/objc/Method/-hour" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hour">-hour</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minute"></a>
+                    <a name="//apple_ref/objc/Method/-minute" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minute">-minute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)second"></a>
+                    <a name="//apple_ref/objc/Method/-second" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)second">-second</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekday"></a>
+                    <a name="//apple_ref/objc/Method/-weekday" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekday">-weekday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekdayOrdinal"></a>
+                    <a name="//apple_ref/objc/Method/-weekdayOrdinal" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekdayOrdinal">-weekdayOrdinal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)quarter"></a>
+                    <a name="//apple_ref/objc/Method/-quarter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)quarter">-quarter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekOfMonth"></a>
+                    <a name="//apple_ref/objc/Method/-weekOfMonth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekOfMonth">-weekOfMonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekOfYear"></a>
+                    <a name="//apple_ref/objc/Method/-weekOfYear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekOfYear">-weekOfYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearForWeekOfYear"></a>
+                    <a name="//apple_ref/objc/Method/-yearForWeekOfYear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearForWeekOfYear">-yearForWeekOfYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysInMonth"></a>
+                    <a name="//apple_ref/objc/Method/-daysInMonth" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysInMonth">-daysInMonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dayOfYear"></a>
+                    <a name="//apple_ref/objc/Method/-dayOfYear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dayOfYear">-dayOfYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysInYear"></a>
+                    <a name="//apple_ref/objc/Method/-daysInYear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysInYear">-daysInYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isInLeapYear"></a>
+                    <a name="//apple_ref/objc/Method/-isInLeapYear" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isInLeapYear">-isInLeapYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isToday"></a>
+                    <a name="//apple_ref/objc/Method/-isToday" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isToday">-isToday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isTomorrow"></a>
+                    <a name="//apple_ref/objc/Method/-isTomorrow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isTomorrow">-isTomorrow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isYesterday"></a>
+                    <a name="//apple_ref/objc/Method/-isYesterday" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isYesterday">-isYesterday</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isWeekend"></a>
+                    <a name="//apple_ref/objc/Method/-isWeekend" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isWeekend">-isWeekend</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isSameDay:"></a>
+                    <a name="//apple_ref/objc/Method/-isSameDay:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isSameDay:">-isSameDay:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)isSameDay:asDate:"></a>
+                    <a name="//apple_ref/objc/Method/+isSameDay:asDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)isSameDay:asDate:">+isSameDay:asDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20Components%20With%20Calendar"></a>
+                <a name="//apple_ref/objc/Section/Date Components With Calendar" class="dashAnchor"></a>
+                <a href="#/Date%20Components%20With%20Calendar">
+                  <h3 class="section-name">Date Components With Calendar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)eraWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-eraWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)eraWithCalendar:">-eraWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-yearWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearWithCalendar:">-yearWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-monthWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthWithCalendar:">-monthWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dayWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-dayWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dayWithCalendar:">-dayWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hourWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-hourWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hourWithCalendar:">-hourWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minuteWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-minuteWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minuteWithCalendar:">-minuteWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-secondWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondWithCalendar:">-secondWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekdayWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-weekdayWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekdayWithCalendar:">-weekdayWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekdayOrdinalWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-weekdayOrdinalWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekdayOrdinalWithCalendar:">-weekdayOrdinalWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)quarterWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-quarterWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)quarterWithCalendar:">-quarterWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekOfMonthWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-weekOfMonthWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekOfMonthWithCalendar:">-weekOfMonthWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weekOfYearWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-weekOfYearWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weekOfYearWithCalendar:">-weekOfYearWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearForWeekOfYearWithCalendar:"></a>
+                    <a name="//apple_ref/objc/Method/-yearForWeekOfYearWithCalendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearForWeekOfYearWithCalendar:">-yearForWeekOfYearWithCalendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20Creating"></a>
+                <a name="//apple_ref/objc/Section/Date Creating" class="dashAnchor"></a>
+                <a href="#/Date%20Creating">
+                  <h3 class="section-name">Date Creating</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)dateWithYear:month:day:"></a>
+                    <a name="//apple_ref/objc/Method/+dateWithYear:month:day:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)dateWithYear:month:day:">+dateWithYear:month:day:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)dateWithYear:month:day:hour:minute:second:"></a>
+                    <a name="//apple_ref/objc/Method/+dateWithYear:month:day:hour:minute:second:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)dateWithYear:month:day:hour:minute:second:">+dateWithYear:month:day:hour:minute:second:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)dateWithString:formatString:"></a>
+                    <a name="//apple_ref/objc/Method/+dateWithString:formatString:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)dateWithString:formatString:">+dateWithString:formatString:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)dateWithString:formatString:timeZone:"></a>
+                    <a name="//apple_ref/objc/Method/+dateWithString:formatString:timeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)dateWithString:formatString:timeZone:">+dateWithString:formatString:timeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20By%20Adding"></a>
+                <a name="//apple_ref/objc/Section/Date By Adding" class="dashAnchor"></a>
+                <a href="#/Date%20By%20Adding">
+                  <h3 class="section-name">Date By Adding</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingYears:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingYears:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingYears:">-dateByAddingYears:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingMonths:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingMonths:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingMonths:">-dateByAddingMonths:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingWeeks:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingWeeks:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingWeeks:">-dateByAddingWeeks:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingDays:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingDays:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingDays:">-dateByAddingDays:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingHours:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingHours:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingHours:">-dateByAddingHours:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingMinutes:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingMinutes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingMinutes:">-dateByAddingMinutes:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateByAddingSeconds:"></a>
+                    <a name="//apple_ref/objc/Method/-dateByAddingSeconds:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateByAddingSeconds:">-dateByAddingSeconds:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Date%20By%20Subtracting"></a>
+                <a name="//apple_ref/objc/Section/Date By Subtracting" class="dashAnchor"></a>
+                <a href="#/Date%20By%20Subtracting">
+                  <h3 class="section-name">Date By Subtracting</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingYears:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingYears:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingYears:">-dateBySubtractingYears:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingMonths:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingMonths:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingMonths:">-dateBySubtractingMonths:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingWeeks:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingWeeks:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingWeeks:">-dateBySubtractingWeeks:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingDays:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingDays:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingDays:">-dateBySubtractingDays:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingHours:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingHours:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingHours:">-dateBySubtractingHours:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingMinutes:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingMinutes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingMinutes:">-dateBySubtractingMinutes:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)dateBySubtractingSeconds:"></a>
+                    <a name="//apple_ref/objc/Method/-dateBySubtractingSeconds:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)dateBySubtractingSeconds:">-dateBySubtractingSeconds:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20From"></a>
+                <a name="//apple_ref/objc/Section/Time From" class="dashAnchor"></a>
+                <a href="#/Time%20From">
+                  <h3 class="section-name">Time From</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-yearsFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsFrom:">-yearsFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-monthsFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsFrom:">-monthsFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-weeksFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksFrom:">-weeksFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-daysFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysFrom:">-daysFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hoursFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-hoursFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hoursFrom:">-hoursFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minutesFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-minutesFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minutesFrom:">-minutesFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondsFrom:"></a>
+                    <a name="//apple_ref/objc/Method/-secondsFrom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondsFrom:">-secondsFrom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20From%20With%20Calendar"></a>
+                <a name="//apple_ref/objc/Section/Time From With Calendar" class="dashAnchor"></a>
+                <a href="#/Time%20From%20With%20Calendar">
+                  <h3 class="section-name">Time From With Calendar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsFrom:calendar:"></a>
+                    <a name="//apple_ref/objc/Method/-yearsFrom:calendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsFrom:calendar:">-yearsFrom:calendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsFrom:calendar:"></a>
+                    <a name="//apple_ref/objc/Method/-monthsFrom:calendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsFrom:calendar:">-monthsFrom:calendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksFrom:calendar:"></a>
+                    <a name="//apple_ref/objc/Method/-weeksFrom:calendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksFrom:calendar:">-weeksFrom:calendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysFrom:calendar:"></a>
+                    <a name="//apple_ref/objc/Method/-daysFrom:calendar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysFrom:calendar:">-daysFrom:calendar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20Until"></a>
+                <a name="//apple_ref/objc/Section/Time Until" class="dashAnchor"></a>
+                <a href="#/Time%20Until">
+                  <h3 class="section-name">Time Until</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsUntil"></a>
+                    <a name="//apple_ref/objc/Method/-yearsUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsUntil">-yearsUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsUntil"></a>
+                    <a name="//apple_ref/objc/Method/-monthsUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsUntil">-monthsUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksUntil"></a>
+                    <a name="//apple_ref/objc/Method/-weeksUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksUntil">-weeksUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysUntil"></a>
+                    <a name="//apple_ref/objc/Method/-daysUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysUntil">-daysUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hoursUntil"></a>
+                    <a name="//apple_ref/objc/Method/-hoursUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hoursUntil">-hoursUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minutesUntil"></a>
+                    <a name="//apple_ref/objc/Method/-minutesUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minutesUntil">-minutesUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondsUntil"></a>
+                    <a name="//apple_ref/objc/Method/-secondsUntil" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondsUntil">-secondsUntil</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Time%20Ago2"></a>
+                <a name="//apple_ref/objc/Section/Time Ago" class="dashAnchor"></a>
+                <a href="#/Time%20Ago2">
+                  <h3 class="section-name">Time Ago</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsAgo"></a>
+                    <a name="//apple_ref/objc/Method/-yearsAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsAgo">-yearsAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsAgo"></a>
+                    <a name="//apple_ref/objc/Method/-monthsAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsAgo">-monthsAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksAgo"></a>
+                    <a name="//apple_ref/objc/Method/-weeksAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksAgo">-weeksAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysAgo"></a>
+                    <a name="//apple_ref/objc/Method/-daysAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysAgo">-daysAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hoursAgo"></a>
+                    <a name="//apple_ref/objc/Method/-hoursAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hoursAgo">-hoursAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minutesAgo"></a>
+                    <a name="//apple_ref/objc/Method/-minutesAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minutesAgo">-minutesAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondsAgo"></a>
+                    <a name="//apple_ref/objc/Method/-secondsAgo" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondsAgo">-secondsAgo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Earlier%20Than"></a>
+                <a name="//apple_ref/objc/Section/Earlier Than" class="dashAnchor"></a>
+                <a href="#/Earlier%20Than">
+                  <h3 class="section-name">Earlier Than</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-yearsEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsEarlierThan:">-yearsEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-monthsEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsEarlierThan:">-monthsEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-weeksEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksEarlierThan:">-weeksEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-daysEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysEarlierThan:">-daysEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hoursEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-hoursEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hoursEarlierThan:">-hoursEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minutesEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-minutesEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minutesEarlierThan:">-minutesEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondsEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-secondsEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondsEarlierThan:">-secondsEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Later%20Than"></a>
+                <a name="//apple_ref/objc/Section/Later Than" class="dashAnchor"></a>
+                <a href="#/Later%20Than">
+                  <h3 class="section-name">Later Than</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)yearsLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-yearsLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)yearsLaterThan:">-yearsLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)monthsLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-monthsLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)monthsLaterThan:">-monthsLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)weeksLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-weeksLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)weeksLaterThan:">-weeksLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)daysLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-daysLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)daysLaterThan:">-daysLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)hoursLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-hoursLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)hoursLaterThan:">-hoursLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)minutesLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-minutesLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)minutesLaterThan:">-minutesLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)secondsLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-secondsLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)secondsLaterThan:">-secondsLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Comparators"></a>
+                <a name="//apple_ref/objc/Section/Comparators" class="dashAnchor"></a>
+                <a href="#/Comparators">
+                  <h3 class="section-name">Comparators</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isEarlierThan:"></a>
+                    <a name="//apple_ref/objc/Method/-isEarlierThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isEarlierThan:">-isEarlierThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isLaterThan:"></a>
+                    <a name="//apple_ref/objc/Method/-isLaterThan:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isLaterThan:">-isLaterThan:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isEarlierThanOrEqualTo:"></a>
+                    <a name="//apple_ref/objc/Method/-isEarlierThanOrEqualTo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isEarlierThanOrEqualTo:">-isEarlierThanOrEqualTo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)isLaterThanOrEqualTo:"></a>
+                    <a name="//apple_ref/objc/Method/-isLaterThanOrEqualTo:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)isLaterThanOrEqualTo:">-isLaterThanOrEqualTo:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Formatted%20With%20Style"></a>
+                <a name="//apple_ref/objc/Section/Formatted With Style" class="dashAnchor"></a>
+                <a href="#/Formatted%20With%20Style">
+                  <h3 class="section-name">Formatted With Style</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithStyle:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithStyle:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithStyle:">-formattedDateWithStyle:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithStyle:timeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithStyle:timeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithStyle:timeZone:">-formattedDateWithStyle:timeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithStyle:locale:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithStyle:locale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithStyle:locale:">-formattedDateWithStyle:locale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithStyle:timeZone:locale:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithStyle:timeZone:locale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithStyle:timeZone:locale:">-formattedDateWithStyle:timeZone:locale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Formatted%20With%20Format"></a>
+                <a name="//apple_ref/objc/Section/Formatted With Format" class="dashAnchor"></a>
+                <a href="#/Formatted%20With%20Format">
+                  <h3 class="section-name">Formatted With Format</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithFormat:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithFormat:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithFormat:">-formattedDateWithFormat:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithFormat:timeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithFormat:timeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithFormat:timeZone:">-formattedDateWithFormat:timeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithFormat:locale:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithFormat:locale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithFormat:locale:">-formattedDateWithFormat:locale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(im)formattedDateWithFormat:timeZone:locale:"></a>
+                    <a name="//apple_ref/objc/Method/-formattedDateWithFormat:timeZone:locale:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(im)formattedDateWithFormat:timeZone:locale:">-formattedDateWithFormat:timeZone:locale:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Helpers"></a>
+                <a name="//apple_ref/objc/Section/Helpers" class="dashAnchor"></a>
+                <a href="#/Helpers">
+                  <h3 class="section-name">Helpers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)defaultCalendarIdentifier"></a>
+                    <a name="//apple_ref/objc/Method/+defaultCalendarIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)defaultCalendarIdentifier">+defaultCalendarIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)NSDate(cm)setDefaultCalendarIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/+setDefaultCalendarIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)NSDate(cm)setDefaultCalendarIdentifier:">+setDefaultCalendarIdentifier:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

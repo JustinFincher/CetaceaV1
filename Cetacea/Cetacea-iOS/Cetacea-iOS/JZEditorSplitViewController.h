@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JZEditorContainerViewController.h"
 
 @interface JZEditorSplitViewController : UISplitViewController
 

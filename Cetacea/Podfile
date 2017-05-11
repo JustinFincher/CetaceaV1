@@ -23,7 +23,6 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :watchos, '3.0'
     project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
     workspace 'Cetacea'
-    pod 'ReactiveObjC'
   end
 
   target 'Cetacea-iOS' do
@@ -31,6 +30,8 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :ios, '10.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
+    pod 'PanelKit', '~> 1.0'
+    pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
     pod 'MMMarkdown'
     pod 'Fabric'
@@ -61,6 +62,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :osx, '10.12'
     project 'Cetacea-Mac/Cetacea-Mac.xcodeproj'
     workspace 'Cetacea'
+    pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
     pod 'MMMarkdown'
     pod 'Fabric'
