@@ -8,12 +8,16 @@
 
 #import "JZEditorSplitViewController.h"
 #import "JZNoticeEnableCloudServiceViewController.h"
+#import "JZMainSplitViewController.h"
 
 @interface JZEditorSplitViewController ()<UISplitViewControllerDelegate>
 
 @property (nonatomic, strong) UIKeyCommand *switchEditorPanelPresentationKeyCommand;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *editorLayoutSegmentControl;
 @property (strong, nonatomic) UIViewPropertyAnimator *editorLayoutAnimator;
+
+
+@property (nonatomic,strong) UIBarButtonItem *resizePanelButtonItem;
 @end
 
 @implementation JZEditorSplitViewController
@@ -25,11 +29,13 @@
     self.preferredPrimaryColumnWidthFraction = 0.5f;
     self.minimumPrimaryColumnWidth = 0.0f;
     self.maximumPrimaryColumnWidth = CGFLOAT_MAX;
-
-    self.navigationItem.leftBarButtonItem = self.navigationController.splitViewController.displayModeButtonItem;
+    
+    self.resizePanelButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:self action:@selector(navigationItemResizeButtonPressed)];
+    self.toolbarItems = [NSMutableArray arrayWithObject:self.resizePanelButtonItem];
     self.navigationItem.leftItemsSupplementBackButton = YES;
     
     [self configureKeyCommands];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -40,6 +46,8 @@
         navController.modalPresentationStyle = UIModalPresentationFormSheet;
         [self presentViewController:navController animated:YES completion:nil];
     }
+    BOOL isPrimaryPanelHidden = [(JZMainSplitViewController*)[[CSFSingletonRegister sharedManager] getRegisteredSingletonForClassName:NSStringFromClass([JZMainSplitViewController class])] isPrimayPanelHidden];
+    [self.resizePanelButtonItem setImage:[UIImage imageNamed: (isPrimaryPanelHidden ? @"icon_ios_right" : @"icon_ios_left")]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +58,12 @@
 - (IBAction)editorLayoutSegmentControlValueChanged:(UISegmentedControl *)sender
 {
     [self editorLayoutSegmentControlValueChangedCallback:[sender selectedSegmentIndex]];
+}
+- (void)navigationItemResizeButtonPressed
+{
+    BOOL isPrimaryPanelHidden = [(JZMainSplitViewController*)[[CSFSingletonRegister sharedManager] getRegisteredSingletonForClassName:NSStringFromClass([JZMainSplitViewController class])] isPrimayPanelHidden];
+    [self.resizePanelButtonItem setImage:[UIImage imageNamed: (!isPrimaryPanelHidden ? @"icon_ios_right" : @"icon_ios_left")]];
+    CSF_Block_Post_Notification_With_Name_No_Object(CSF_String_Notification_Navigation_Resize_Item_Pressed_Name);
 }
 - (void)editorLayoutSegmentControlValueChangedCallback:(NSInteger)value
 {

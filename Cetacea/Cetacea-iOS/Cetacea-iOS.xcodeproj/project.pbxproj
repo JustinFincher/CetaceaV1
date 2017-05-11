@@ -30,6 +30,7 @@
 		0D7F31D01EBC598600D29651 /* CetaceaSharedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7F31C81EBC582E00D29651 /* CetaceaSharedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0D8FE5C21EC18BF900E9D5BF /* UIFontDescriptor+Avenir.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8FE5C11EC18BF900E9D5BF /* UIFontDescriptor+Avenir.m */; };
 		0D9352501EB75EE40023C2F5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9023F1EB6294800AEDCB1 /* Settings.bundle */; };
+		0DA94CB11EC4BBCC00D597E1 /* JZTraitCollectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CB01EC4BBCC00D597E1 /* JZTraitCollectionManager.m */; };
 		0DD901B31EB5DB8900AEDCB1 /* JZMainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD901B21EB5DB8900AEDCB1 /* JZMainSplitViewController.m */; };
 		0DD902151EB622D800AEDCB1 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902131EB622D800AEDCB1 /* Interface.storyboard */; };
 		0DD902171EB622D800AEDCB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902161EB622D800AEDCB1 /* Assets.xcassets */; };
@@ -191,6 +192,8 @@
 		0D8FE5BF1EC186EF00E9D5BF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/MainInterface.strings"; sourceTree = "<group>"; };
 		0D8FE5C01EC18BF900E9D5BF /* UIFontDescriptor+Avenir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFontDescriptor+Avenir.h"; sourceTree = "<group>"; };
 		0D8FE5C11EC18BF900E9D5BF /* UIFontDescriptor+Avenir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFontDescriptor+Avenir.m"; sourceTree = "<group>"; };
+		0DA94CAF1EC4BBCC00D597E1 /* JZTraitCollectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTraitCollectionManager.h; sourceTree = "<group>"; };
+		0DA94CB01EC4BBCC00D597E1 /* JZTraitCollectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTraitCollectionManager.m; sourceTree = "<group>"; };
 		0DD901B11EB5DB8900AEDCB1 /* JZMainSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMainSplitViewController.h; sourceTree = "<group>"; };
 		0DD901B21EB5DB8900AEDCB1 /* JZMainSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMainSplitViewController.m; sourceTree = "<group>"; };
 		0DD902111EB622D800AEDCB1 /* WatchKitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -358,6 +361,8 @@
 			children = (
 				0D339FD71EC4360800414267 /* JZSearchSpotlightIndexer.h */,
 				0D339FD81EC4360800414267 /* JZSearchSpotlightIndexer.m */,
+				0DA94CAF1EC4BBCC00D597E1 /* JZTraitCollectionManager.h */,
+				0DA94CB01EC4BBCC00D597E1 /* JZTraitCollectionManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -1049,6 +1054,7 @@
 				0D339FBD1EC2CA9A00414267 /* JZNoticeEnableCloudServiceViewController.m in Sources */,
 				0D5669271EB514F1000C3E39 /* AppDelegate.m in Sources */,
 				0D339FCE1EC329ED00414267 /* JZBaseContainerViewController.m in Sources */,
+				0DA94CB11EC4BBCC00D597E1 /* JZTraitCollectionManager.m in Sources */,
 				0D339FD41EC40E5C00414267 /* UIResponder+FirstResponder.m in Sources */,
 				0D339FD11EC35FB000414267 /* JZEditorContainerViewController.m in Sources */,
 				0D605CDA1EC0B4E700FA6354 /* JZMainMarkdownListTableViewController.m in Sources */,
