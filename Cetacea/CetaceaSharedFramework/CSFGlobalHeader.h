@@ -39,6 +39,7 @@ alpha:1.0]
 
 #define CSF_String_Identifer_Developer_Team_ID @"UYK8GY9WS7"
 #define CSF_String_Identifer_iCloud_Container_Name @"UYK8GY9WS7.iCloud.com.JustZht.Cetacea"
+#define CSF_String_Identifer_App_Group_Name @"group.com.JustZht.Cetacea"
 
 #define CSF_String_Notification_iCloud_Not_Availiable_Name @"CSF_String_Notification_iCloud_Not_Availiable_Name"
 #define CSF_String_Notification_Current_Document_Changed_Name @"CSF_String_Notification_Current_Document_Changed_Name"

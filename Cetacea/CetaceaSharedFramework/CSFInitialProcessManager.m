@@ -25,7 +25,7 @@
 - (id)init {
     if (self = [super init])
     {
-        [CSFiCloudSyncManager sharedManager];
+        [self initialProcess];
     }
     return self;
 }
@@ -37,6 +37,6 @@
 
 - (void)initialProcess
 {
-    
+    [CSFiCloudSyncManager sharedManager];
 }
 @end

@@ -10,14 +10,15 @@
 #import <NotificationCenter/NotificationCenter.h>
 
 @interface TodayViewController () <NCWidgetProviding>
-
+@property (weak, nonatomic) IBOutlet UIButton *goHostApplicationButton;
+@property (weak, nonatomic) IBOutlet UIView *embedView;
 @end
 
 @implementation TodayViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,7 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
+- (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler
+{
     // Perform any setup necessary in order to update the view.
     
     // If an error is encountered, use NCUpdateResultFailed
@@ -34,5 +36,25 @@
 
     completionHandler(NCUpdateResultNewData);
 }
+#pragma mark - NCWidgetProviding
+- (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode
+                         withMaximumSize:(CGSize)maxSize
+{
+    if (activeDisplayMode == NCWidgetDisplayModeCompact)
+    {
+        self.preferredContentSize = maxSize;
+    }
+    else {
+        self.preferredContentSize = CGSizeMake(0, 600.0);
+    }
+}
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets
+{
+    return UIEdgeInsetsZero;
+}
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
 @end

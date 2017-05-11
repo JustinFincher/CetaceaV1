@@ -93,6 +93,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PeerTalk-OSX/PeerTalk.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDVersion-framework-OSX/SDVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
@@ -101,6 +102,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PeerTalk-OSX/PeerTalk.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDVersion-framework-OSX/SDVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
@@ -109,6 +111,7 @@ if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PeerTalk-OSX/PeerTalk.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDVersion-framework-OSX/SDVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
@@ -117,6 +120,7 @@ if [[ "$CONFIGURATION" == "AppStore" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-OSX/DynamicColor.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMMarkdown-OSX/MMMarkdown.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PeerTalk-OSX/PeerTalk.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDVersion-framework-OSX/SDVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi

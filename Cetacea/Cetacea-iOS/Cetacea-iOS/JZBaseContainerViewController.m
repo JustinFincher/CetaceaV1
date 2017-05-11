@@ -31,10 +31,12 @@
 - (void)performTraitCollectionOverrideForSize:(CGSize)size
 {
     _overrideTraitCollection = nil;
-    
-    if (size.width > 500.0)
+    if (size.width > 0.0)
     {
         _overrideTraitCollection = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular];
+    }else
+    {
+        _overrideTraitCollection = [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact];
     }
     
     [self setOverrideTraitCollection:_overrideTraitCollection forChildViewController:self];

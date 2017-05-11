@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
+      location = "group:CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Cetacea-iOS/Cetacea-iOS.xcodeproj">
@@ -12,8 +12,5 @@
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
    </FileRef>
 </Workspace>

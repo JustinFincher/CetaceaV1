@@ -10,4 +10,7 @@
 
 @interface JZEditorContainerViewController : UIViewController
 
+- (BOOL)isEditorViewFaded;
+@property (nonatomic,strong) UINavigationController *editorNavigationController;
+
 @end

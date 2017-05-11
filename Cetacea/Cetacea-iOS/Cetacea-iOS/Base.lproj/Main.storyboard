@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YQp-Bw-POV" id="gdz-pg-gaK">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -95,20 +95,24 @@
         <!--Editor Split View Controller-->
         <scene sceneID="Czs-CY-7aL">
             <objects>
-                <splitViewController id="SIi-qj-RBq" customClass="JZEditorSplitViewController" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="JZEditorSplitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SIi-qj-RBq" customClass="JZEditorSplitViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="WWW-i6-NGn">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="0" id="Gyb-kp-7a4">
-                            <rect key="frame" x="66" y="7" width="188" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" selectedSegmentIndex="1" id="Gyb-kp-7a4">
+                            <rect key="frame" x="93.5" y="7" width="188" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Editor"/>
                                 <segment title="Both"/>
                                 <segment title="Preview"/>
                             </segments>
+                            <connections>
+                                <action selector="editorLayoutSegmentControlValueChanged:" destination="SIi-qj-RBq" eventType="valueChanged" id="fdn-95-mhb"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
+                        <outlet property="editorLayoutSegmentControl" destination="Gyb-kp-7a4" id="ffN-Ut-gqe"/>
                         <segue destination="mB2-CG-Eby" kind="relationship" relationship="detailViewController" id="82C-D8-gHE"/>
                         <segue destination="hUy-ur-FU8" kind="relationship" relationship="masterViewController" id="kC7-Q0-xex"/>
                     </connections>
@@ -120,7 +124,7 @@
         <!--Editor Container View Controller-->
         <scene sceneID="kk5-BR-x9b">
             <objects>
-                <viewController id="iKp-kd-aXm" customClass="JZEditorContainerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JZEditorContainerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iKp-kd-aXm" customClass="JZEditorContainerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9UB-21-2Us"/>
                         <viewControllerLayoutGuide type="bottom" id="1fb-Lr-kIs"/>
@@ -140,7 +144,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
-                                    <segue destination="Vci-2h-tmo" kind="embed" id="PT1-yw-Oe0"/>
+                                    <segue destination="Vci-2h-tmo" kind="embed" identifier="EditorContainerViewEmbedIdentifier" id="PT1-yw-Oe0"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -157,8 +161,7 @@
         <!--Editor Navigation Controller-->
         <scene sceneID="4VM-rB-6fd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EwR-tC-rqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController toolbarHidden="NO" id="Vci-2h-tmo" customClass="JZEditorNavigationController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="JZEditorNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" toolbarHidden="NO" id="Vci-2h-tmo" customClass="JZEditorNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="978-tB-HXm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -171,6 +174,7 @@
                         <segue destination="SIi-qj-RBq" kind="relationship" relationship="rootViewController" id="Oxe-pe-hEi"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwR-tC-rqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1" y="861"/>
         </scene>
@@ -257,7 +261,6 @@
         <!--Cetacea-->
         <scene sceneID="gdJ-CY-Dhu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zh0-Ky-F3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="cjR-qk-TLv" customClass="JZMainMarkdownListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="fvh-ml-XNq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -274,7 +277,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZMp-Id-hHZ" id="1hW-b6-KUF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -297,13 +300,13 @@
                         <outlet property="searchBar" destination="qFD-Mk-xCV" id="GY0-UG-VIl"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh0-Ky-F3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1399" y="-100"/>
         </scene>
         <!--Main Navigation Controller-->
         <scene sceneID="Imb-O9-czN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4bK-XJ-JrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController toolbarHidden="NO" id="DEP-38-ry9" customClass="JZMainNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLg-Ga-Kf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -317,20 +320,21 @@
                         <segue destination="cjR-qk-TLv" kind="relationship" relationship="rootViewController" id="V5I-2h-oHA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bK-XJ-JrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="-100"/>
         </scene>
         <!--Main Split View Controller-->
         <scene sceneID="nSk-2W-zTd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkz-93-Llb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <splitViewController storyboardIdentifier="JZMainSplitViewController" id="ruS-2c-Ykt" customClass="JZMainSplitViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vIH-Of-jzg"/>
                     <connections>
-                        <segue destination="DEP-38-ry9" kind="relationship" relationship="masterViewController" id="9BI-gk-1DW"/>
-                        <segue destination="iKp-kd-aXm" kind="relationship" relationship="detailViewController" id="3eG-RR-0Qn"/>
+                        <segue destination="DEP-38-ry9" kind="relationship" relationship="masterViewController" id="d0t-rc-kqz"/>
+                        <segue destination="iKp-kd-aXm" kind="relationship" relationship="detailViewController" id="yhS-CZ-NOa"/>
                     </connections>
                 </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkz-93-Llb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1215" y="111"/>
         </scene>
