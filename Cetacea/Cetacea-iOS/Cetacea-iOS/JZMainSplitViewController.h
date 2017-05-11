@@ -10,4 +10,6 @@
 
 @interface JZMainSplitViewController : UISplitViewController
 
+- (BOOL)isPrimayPanelHidden;
+
 @end

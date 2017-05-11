@@ -10,6 +10,4 @@
 
 @interface JZEditorNavigationController : UINavigationController
 
-//- (void)dismissSelf;
-
 @end

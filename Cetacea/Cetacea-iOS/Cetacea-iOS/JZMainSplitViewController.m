@@ -10,15 +10,21 @@
 #import "JZEditorContainerViewController.h"
 #import "JZEditorSplitViewController.h"
 #import "JZMainNavigationController.h"
+#import "JZTraitCollectionManager.h"
 
 @interface JZMainSplitViewController ()<UISplitViewControllerDelegate>
 
 @end
 
 @implementation JZMainSplitViewController
-
+- (void)dealloc
+{
+    [[CSFSingletonRegister sharedManager] unRegisterSingleton:self];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[CSFSingletonRegister sharedManager] registerSingleton:self];
     
     self.delegate = self;
     self.presentsWithGesture = NO;
@@ -28,39 +34,57 @@
     self.minimumPrimaryColumnWidth = 0.0f;
     self.maximumPrimaryColumnWidth = CGFLOAT_MAX;
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(currentDocumentChanged:, CSF_String_Notification_Current_Document_Changed_Name, nil);
+    CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(navigationItemResizeButtonPressed:, CSF_String_Notification_Navigation_Resize_Item_Pressed_Name, nil);
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self checkCurrentDocumentCallBackWithNextSizeCheck:NO NextSize:CGSizeZero];
 }
+- (BOOL)isPrimayPanelHidden
+{
+    return self.preferredPrimaryColumnWidthFraction == 0.0f;
+}
 #pragma mark - Notification
 - (void)currentDocumentChanged:(NSNotification *)notif
 {
     [self checkCurrentDocumentCallBackWithNextSizeCheck:NO NextSize:CGSizeZero];
 }
-
+- (void)navigationItemResizeButtonPressed:(NSNotification *)notif
+{
+    BOOL isHorizonalCompact = [JZTraitCollectionManager isHorizonalCompact];
+    [UIView animateWithDuration:0.2 animations:^(void)
+     {
+         if (isHorizonalCompact)
+         {
+             self.preferredPrimaryColumnWidthFraction =  (self.preferredPrimaryColumnWidthFraction == 1.0f) ? 0.0f : 1.0f;
+         }else
+         {
+             self.preferredPrimaryColumnWidthFraction =  (self.preferredPrimaryColumnWidthFraction == 0.3f) ? 0.0f : 0.3f;
+         }
+     }];
+    
+}
 - (void)checkCurrentDocumentCallBackWithNextSizeCheck:(BOOL)check
                                              NextSize:(CGSize)size
 {
     if (!check)
     {
-//        size = [[[UIApplication sharedApplication] keyWindow] frame].size;
-        size = [self.view bounds].size;
+        size = [[[[UIApplication sharedApplication] windows] firstObject] bounds].size;
     }
     BOOL hasSelection = [[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
-    BOOL isHorizonalCompact = size.width <= 568.0f;
+    BOOL isHorizonalCompact = [JZTraitCollectionManager horizonalTraitCollectionWithValue:size.width] == JZTraitCollectionLayoutStyleCompact;
     [UIView animateWithDuration:0.2 animations:^(void)
-    {
-        if (isHorizonalCompact)
-        {
-            self.preferredPrimaryColumnWidthFraction = hasSelection ? 0.0f : 1.0f;
-        }else
-        {
-            self.preferredPrimaryColumnWidthFraction  = 0.3f;
-        }
-        
-    }];
+     {
+         if (isHorizonalCompact)
+         {
+             self.preferredPrimaryColumnWidthFraction = hasSelection ? 0.0f : 1.0f;
+         }else
+         {
+             self.preferredPrimaryColumnWidthFraction  = 0.3f;
+         }
+         
+     }];
 }
 
 - (void)didReceiveMemoryWarning {

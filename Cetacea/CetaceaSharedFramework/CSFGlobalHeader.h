@@ -25,6 +25,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 \
 alpha:1.0]
 
 #define CSF_Device_Capability_Force_Touch_Enabled [[CSFDeviceCapabilityManager sharedManager] isForceTouchAvailable]
+#define CSF_String_Notification_Navigation_Resize_Item_Pressed_Name @"CSF_String_Notification_Navigation_Resize_Item_Pressed_Name"
 
 #elif TARGET_OS_OSX
 #import <AppKit/AppKit.h>

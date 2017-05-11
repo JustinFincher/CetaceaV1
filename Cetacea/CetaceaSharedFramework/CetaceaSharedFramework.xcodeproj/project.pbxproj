@@ -42,6 +42,10 @@
 		0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */; };
 		0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
 		0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */; };
+		0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */; };
+		0DA94CB81EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */; };
+		0DA94CB91EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */; };
+		0DA94CBA1EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */; };
 		0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
@@ -88,6 +92,8 @@
 		0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFInitialProcessManager.h; sourceTree = "<group>"; };
 		0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFInitialProcessManager.m; sourceTree = "<group>"; };
+		0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFSingletonRegister.h; sourceTree = "<group>"; };
+		0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFSingletonRegister.m; sourceTree = "<group>"; };
 		0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudSyncManager.h; sourceTree = "<group>"; };
 		0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudSyncManager.m; sourceTree = "<group>"; };
 		0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-iOS-Info.plist"; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 				0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */,
 				0D339FC41EC3135100414267 /* CSFDeviceCapabilityManager.h */,
 				0D339FC51EC3135100414267 /* CSFDeviceCapabilityManager.m */,
+				0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */,
+				0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 				0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
 				0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C701EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
+				0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
 				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
 				0D516C7A1EC06489007AAB05 /* CSFiCloudFileExtensionCetaceaUIDocument.h in Headers */,
 				0D1B5F1B1EC1CB64007EBE5D /* TSMarkdownParser.h in Headers */,
@@ -308,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */,
+				0DA94CB81EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
 				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
 				0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
 				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
@@ -574,6 +584,7 @@
 				0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
 				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
 				0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0DA94CB91EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
 				0D516C7B1EC06489007AAB05 /* CSFiCloudFileExtensionCetaceaUIDocument.m in Sources */,
 				0D1B5F1D1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */,
 				0D339FC71EC3135100414267 /* CSFDeviceCapabilityManager.m in Sources */,
@@ -590,6 +601,7 @@
 				0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
 				0D516C731EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
+				0DA94CBA1EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
 				0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0D1B5F1E1EC1CB64007EBE5D /* TSMarkdownParser.m in Sources */,
 				0D339FC81EC3135900414267 /* CSFDeviceCapabilityManager.m in Sources */,
