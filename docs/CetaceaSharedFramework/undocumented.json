@@ -43,6 +43,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFEditorTextView.h",
+      "line": 19,
+      "symbol": "CSFEditorTextView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFInitialProcessManager.h",
       "line": 17,
       "symbol": "CSFInitialProcessManager.+sharedManager",

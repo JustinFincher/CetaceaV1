@@ -39,7 +39,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self checkCurrentDocumentCallBackWithNextSizeCheck:NO NextSize:CGSizeZero];
+    [self setCurrentDocumentWithSplitViewNextSizeCheck:NO NextSize:CGSizeZero];
 }
 - (BOOL)isPrimayPanelHidden
 {
@@ -48,11 +48,19 @@
 #pragma mark - Notification
 - (void)currentDocumentChanged:(NSNotification *)notif
 {
-    [self checkCurrentDocumentCallBackWithNextSizeCheck:NO NextSize:CGSizeZero];
+    BOOL isSelectionNull = ![[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
+    if (!isSelectionNull)
+    {
+        [self setCurrentDocumentWithSplitViewNextSizeCheck:NO NextSize:CGSizeZero];
+    }
 }
 - (void)navigationItemResizeButtonPressed:(NSNotification *)notif
 {
     BOOL isHorizonalCompact = [JZTraitCollectionManager isHorizonalCompact];
+    if (self.preferredPrimaryColumnWidthFraction == 0.0f && isHorizonalCompact)
+    {
+        CSF_Block_Post_Notification_With_Name_Object(CSF_String_Notification_Set_Current_Editing_Document_Null_Name, nil);
+    }
     [UIView animateWithDuration:0.2 animations:^(void)
      {
          if (isHorizonalCompact)
@@ -62,10 +70,13 @@
          {
              self.preferredPrimaryColumnWidthFraction =  (self.preferredPrimaryColumnWidthFraction == 0.3f) ? 0.0f : 0.3f;
          }
+     } completion:^(BOOL finished)
+     {
+         
      }];
     
 }
-- (void)checkCurrentDocumentCallBackWithNextSizeCheck:(BOOL)check
+- (void)setCurrentDocumentWithSplitViewNextSizeCheck:(BOOL)check
                                              NextSize:(CGSize)size
 {
     if (!check)
@@ -95,13 +106,12 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    [self checkCurrentDocumentCallBackWithNextSizeCheck:YES NextSize:size];
+    [self setCurrentDocumentWithSplitViewNextSizeCheck:YES NextSize:size];
 }
 
 #pragma mark - UISplitViewControllerDelegate
 - (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
 {
-    BOOL isSelectionNull = ![[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
     return YES;
 }
 - (UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewController

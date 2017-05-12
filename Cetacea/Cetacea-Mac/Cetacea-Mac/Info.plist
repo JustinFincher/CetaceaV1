@@ -45,7 +45,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2930</string>
+	<string>2931</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -118,6 +118,8 @@
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Cetacea Document</string>
+			<key>UTTypeIconFile</key>
+			<string></string>
 			<key>UTTypeIdentifier</key>
 			<string>com.JustZht.Cetacea.document</string>
 			<key>UTTypeTagSpecification</key>
