@@ -10,10 +10,12 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <CetaceaSharedFramework/CetaceaSharedFramework.h>
-
 #import "JZNoticeEnableCloudServiceViewController.h"
+#import <GDPerformanceView/GDPerformanceMonitor.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) GDPerformanceMonitor *performanceMonitor;
 
 @end
 
@@ -24,10 +26,19 @@
     // Override point for customization after application launch.
     [Fabric with:@[[Crashlytics class]]];
     [[CSFInitialProcessManager sharedManager] initialProcess];
+    
+#if DEBUG
+    self.performanceMonitor = [[GDPerformanceMonitor alloc] init];
+    [self.performanceMonitor setAppVersionHidden:YES];
+    [self.performanceMonitor setDeviceVersionHidden:YES];
+    [self.performanceMonitor startMonitoringWithConfiguration:^(UILabel *textLabel) {    }];
+#endif
 
     CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSF_String_Notification_iCloud_Not_Availiable_Name,nil,^(NSNotification *notification)
                                                                {
                                                                });
+    
+    
     return YES;
 }
 

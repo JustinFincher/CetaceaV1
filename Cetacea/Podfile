@@ -31,6 +31,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
     pod 'PanelKit', '~> 1.0'
+    pod 'GDPerformanceView', '~> 1.3.1'
     pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
     pod 'MMMarkdown'
