@@ -31,29 +31,10 @@
     self.tableView.allowsSelection = YES;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JZMainMarkdownListTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
     CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(contentSizeCategoryDidChange:, UIContentSizeCategoryDidChangeNotification, nil);
+    CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(setCurrentEditingDocumentNull:, CSF_String_Notification_Set_Current_Editing_Document_Null_Name, nil);
     
     self.searchBar.delegate = self;
     [[CSFiCloudSyncManager sharedManager] setDelegate:self];
-}
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    NSArray *viewControllers = self.navigationController.viewControllers;
-    if (viewControllers.count > 1 && [viewControllers objectAtIndex:viewControllers.count-2] == self) {
-        // View is disappearing because a new view controller was pushed onto the stack
-        NSLog(@"New view controller was pushed");
-        
-        [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
-        [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:nil];
-        
-    } else if ([viewControllers indexOfObject:self] == NSNotFound) {
-        // View is disappearing because it was popped from the stack
-        NSLog(@"View controller was popped");
-    }
-}
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
 }
 - (void)dealloc
 {
@@ -84,6 +65,11 @@
     return [dict[category] floatValue];
 }
 #pragma mark - Notificatons
+- (void)setCurrentEditingDocumentNull:(NSNotification *)notif
+{
+    [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];
+    [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:nil];
+}
 - (void)contentSizeCategoryDidChange:(NSNotification *)notif
 {
     self.tableView.estimatedRowHeight = [self rowHeightForUIContentSizeCategory:[[UIApplication sharedApplication] preferredContentSizeCategory]];

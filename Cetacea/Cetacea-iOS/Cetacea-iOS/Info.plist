@@ -6,6 +6,24 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>Cetacea</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>cetacea</string>
+				<string>Cetacea</string>
+			</array>
+			<key>CFBundleTypeIconFiles</key>
+			<array/>
+			<key>CFBundleTypeName</key>
+			<string>Cetacea Document</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.JustZht.Cetacea.document</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,9 +35,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.631</string>
+	<string>0.0.663</string>
 	<key>CFBundleVersion</key>
-	<string>631</string>
+	<string>663</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -62,6 +80,42 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Cetacea Document</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.JustZht.Cetacea.document</string>
+		</dict>
+	</array>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Cetacea Document</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.JustZht.Cetacea.document</string>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.JustZht.Cetacea.document</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Cetacea Document</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.JustZht.Cetacea.document</string>
+		</dict>
 	</array>
 </dict>
 </plist>

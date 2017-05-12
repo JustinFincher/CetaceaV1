@@ -61,29 +61,31 @@
         NSString *downloadStatus = [item valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
         BOOL isNotDownloaded = [downloadStatus isEqualToString:NSMetadataUbiquitousItemDownloadingStatusNotDownloaded];
         
-        CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
-        doc.metaDataItem = item;
-        doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
-        doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];
+        JZLog(@"\n path = %@\n isSizeValid = %i\n isNotHidden = %i\n isUbiquitous = %i\n hasUnresolvedConflicts = %i\n isNotDownloaded = %i",path,isSizeValid,isNotHidden,isUbiquitous,hasUnresolvedConflicts,isNotDownloaded);
         
-        if (isNotHidden)
+        if (isNotDownloaded)
         {
-            if (isNotDownloaded)
+            [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:nil];
+        }else
+        {
+            if (isSizeValid)
             {
-                [[NSFileManager defaultManager] startDownloadingUbiquitousItemAtURL:url error:nil];
+                if (isNotHidden)
+                {
+                    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+                    doc.metaDataItem = item;
+                    doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
+                    doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];
+                    [retval addObject:doc];
+                }
             }else
             {
-                if (isSizeValid)
-                {
-                    [retval addObject:doc];
-                }else
-                {
-                    [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
-                }
+                [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
             }
         }
         
     }
+    
     return retval;
 }
 

@@ -70,13 +70,13 @@
     CGFloat nextPreferredPrimaryColumnWidthFraction = 0.0f;
     switch (value) {
         case 0:
-            nextPreferredPrimaryColumnWidthFraction = 0.0f;
+            nextPreferredPrimaryColumnWidthFraction = 1.0f;
             break;
         case 1:
             nextPreferredPrimaryColumnWidthFraction = 0.5f;
             break;
         case 2:
-            nextPreferredPrimaryColumnWidthFraction = 1.0f;
+            nextPreferredPrimaryColumnWidthFraction = 0.0f;
             break;
     }
     if (self.editorLayoutAnimator == nil)
