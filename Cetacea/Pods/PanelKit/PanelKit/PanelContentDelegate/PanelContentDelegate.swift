@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol PanelContentDelegate: class {
+@objc public protocol PanelContentDelegate: class {
 
 	var closeButtonTitle: String { get }
 	var popButtonTitle: String { get }

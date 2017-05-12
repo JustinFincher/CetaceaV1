@@ -6,35 +6,40 @@
 //  Copyright © 2017年 Justin Fincher. All rights reserved.
 //
 
-#import "JZEditorSplitViewController.h"
+#import "JZDocumentationWorkspaceViewController.h"
 #import "JZNoticeEnableCloudServiceViewController.h"
 #import "JZMainSplitViewController.h"
+#import <PanelKit/PanelKit-Swift.h>
+#import "JZDocumentationWorkspaceBasePanelController.h"
 
-@interface JZEditorSplitViewController ()<UISplitViewControllerDelegate>
+@protocol PanelManager;
+@protocol PanelContentDelegate;
+
+@interface JZDocumentationWorkspaceViewController ()<PanelManager>
 
 @property (nonatomic, strong) UIKeyCommand *switchEditorPanelPresentationKeyCommand;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *editorLayoutSegmentControl;
-@property (strong, nonatomic) UIViewPropertyAnimator *editorLayoutAnimator;
-
-
+@property (weak, nonatomic) IBOutlet UIView *panelWrapperView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic,strong) UIBarButtonItem *resizePanelButtonItem;
+
+
+@property (strong, nonatomic)JZDocumentationWorkspaceBasePanelController *panelContentVC;
+@property (strong, nonatomic)PanelViewController *panelVC;
 @end
 
-@implementation JZEditorSplitViewController
+@implementation JZDocumentationWorkspaceViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.delegate = self;
-    self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
-    self.preferredPrimaryColumnWidthFraction = 0.5f;
-    self.minimumPrimaryColumnWidth = 0.0f;
-    self.maximumPrimaryColumnWidth = CGFLOAT_MAX;
+//    self.delegate = self;
     
     self.resizePanelButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:self action:@selector(navigationItemResizeButtonPressed)];
     self.toolbarItems = [NSMutableArray arrayWithObject:self.resizePanelButtonItem];
     self.navigationItem.leftItemsSupplementBackButton = YES;
     
     [self configureKeyCommands];
+    
+    self.panelVC = [[PanelViewController alloc] init]
     
 }
 
@@ -55,51 +60,12 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - Navigation
-- (IBAction)editorLayoutSegmentControlValueChanged:(UISegmentedControl *)sender
-{
-    [self editorLayoutSegmentControlValueChangedCallback:[sender selectedSegmentIndex]];
-}
 - (void)navigationItemResizeButtonPressed
 {
     BOOL isPrimaryPanelHidden = [(JZMainSplitViewController*)[[CSFSingletonRegister sharedManager] getRegisteredSingletonForClassName:NSStringFromClass([JZMainSplitViewController class])] isPrimayPanelHidden];
     [self.resizePanelButtonItem setImage:[UIImage imageNamed: (!isPrimaryPanelHidden ? @"icon_ios_right" : @"icon_ios_left")]];
     CSF_Block_Post_Notification_With_Name_No_Object(CSF_String_Notification_Navigation_Resize_Item_Pressed_Name);
 }
-- (void)editorLayoutSegmentControlValueChangedCallback:(NSInteger)value
-{
-    CGFloat nextPreferredPrimaryColumnWidthFraction = 0.0f;
-    switch (value) {
-        case 0:
-            nextPreferredPrimaryColumnWidthFraction = 0.0f;
-            break;
-        case 1:
-            nextPreferredPrimaryColumnWidthFraction = 0.5f;
-            break;
-        case 2:
-            nextPreferredPrimaryColumnWidthFraction = 1.0f;
-            break;
-    }
-    if (self.editorLayoutAnimator == nil)
-    {
-        self.editorLayoutAnimator = [[UIViewPropertyAnimator alloc] initWithDuration:0.3 curve:UIViewAnimationCurveEaseIn animations:^(void){}];
-    }
-    if (self.editorLayoutAnimator.isRunning)
-    {
-        [self.editorLayoutAnimator stopAnimation:YES];
-    }
-    self.editorLayoutAnimator = [[UIViewPropertyAnimator alloc] initWithDuration:0.3 curve:UIViewAnimationCurveEaseIn animations:^(void)
-    {
-        self.preferredPrimaryColumnWidthFraction = nextPreferredPrimaryColumnWidthFraction;
-    }];
-    [self.editorLayoutAnimator startAnimation];
-}
-
-#pragma mark - UISplitViewControllerDelegate
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
-{
-    return YES;
-}
-
 #pragma mark - Key Command
 - (void)configureKeyCommands
 {
@@ -115,8 +81,19 @@
 }
 - (void)switchEditorPresentationPanel
 {
-    [self.editorLayoutSegmentControl setSelectedSegmentIndex:(self.editorLayoutSegmentControl.selectedSegmentIndex >= 2 ? 0 : self.editorLayoutSegmentControl.selectedSegmentIndex + 1)];
-    [self editorLayoutSegmentControlValueChangedCallback:self.editorLayoutSegmentControl.selectedSegmentIndex];
+}
+#pragma mark - PanelContentDelegate
+- (UIView *)panelWrapperView
+{
+    return self.panelWrapperView;
+}
+- (UIView *)panelContentView
+{
+    return self.textView;
+}
+- (NSArray<PanelViewController *> *)panels
+{
+    return [NSArray arrayWithObjects: self.panelVC, nil];
 }
 
 /*

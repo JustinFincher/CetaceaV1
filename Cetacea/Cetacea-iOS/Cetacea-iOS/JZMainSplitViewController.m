@@ -8,7 +8,7 @@
 
 #import "JZMainSplitViewController.h"
 #import "JZEditorContainerViewController.h"
-#import "JZEditorSplitViewController.h"
+#import "JZDocumentationWorkspaceViewController.h"
 #import "JZMainNavigationController.h"
 #import "JZTraitCollectionManager.h"
 
@@ -101,7 +101,7 @@
 #pragma mark - UISplitViewControllerDelegate
 - (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController
 {
-    BOOL isSelectionNull = ![[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
+//    BOOL isSelectionNull = ![[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
     return YES;
 }
 - (UIViewController *)splitViewController:(UISplitViewController *)splitViewController separateSecondaryViewControllerFromPrimaryViewController:(UIViewController *)primaryViewController
