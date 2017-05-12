@@ -94,6 +94,7 @@
 		0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D73691776817BF8503BBDCD /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFInitialProcessManager.h; sourceTree = "<group>"; };
 		0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFInitialProcessManager.m; sourceTree = "<group>"; };
 		0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFSingletonRegister.h; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		14BAB39002DD1B645EF06FA4 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		1D648D1E015F66B8C3CC0D95 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		2AEECE9E85BA7E3B3C9EDDBF /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		39A3E33401F60A5414F1B19C /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		3AE7747E7BDCBD1C105C5C96 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-OSX-metadata.plist"; sourceTree = "<group>"; };
@@ -296,6 +298,8 @@
 				AF6C775DC65EB9EF4A6C06A6 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 				0FE162179523DC659AD864E6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
 				7D3B542245CB337A2D1D9BA0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				0D73691776817BF8503BBDCD /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				2AEECE9E85BA7E3B3C9EDDBF /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
