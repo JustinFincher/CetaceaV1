@@ -22,6 +22,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h",
+      "line": 19,
+      "symbol": "CSFCetaceaSharedDocumentEditManager.-hasCurrentEditingDocument",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFDeviceCapabilityManager.h",
       "line": 11,
       "symbol": "CSFDeviceCapabilityManager",
@@ -40,6 +47,34 @@
       "line": 17,
       "symbol": "CSFInitialProcessManager.+sharedManager",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFSingletonRegister.h",
+      "line": 16,
+      "symbol": "CSFSingletonRegister.+sharedManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFSingletonRegister.h",
+      "line": 18,
+      "symbol": "CSFSingletonRegister.-registerSingleton:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFSingletonRegister.h",
+      "line": 19,
+      "symbol": "CSFSingletonRegister.-unRegisterSingleton:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFSingletonRegister.h",
+      "line": 20,
+      "symbol": "CSFSingletonRegister.-getRegisteredSingletonForClassName:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
