@@ -8,6 +8,12 @@
 
 #import "CSFCetaceaSharedDocumentEditManager.h"
 #import "CSFGlobalHeader.h"
+@interface CSFCetaceaSharedDocumentEditManager()
+
+@property (nonatomic,strong) NSUserActivity *currentUserActivity;
+
+@end
+
 
 @implementation CSFCetaceaSharedDocumentEditManager
 
@@ -40,14 +46,26 @@
     {
         CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSF_String_Notification_Current_Document_Changed_Name, self, (@{ @"doc" : doc,
                                                                                                                                @"hasDoc" : @YES }));
-        NSUserActivity *userActivity = [[NSUserActivity alloc] initWithActivityType:CSF_String_Identifer_ActivityType_Editing_Document];
-        userActivity.title = @"Edit Document";
-        [userActivity addUserInfoEntriesFromDictionary:[NSDictionary dictionaryWithObject:doc forKey:@"doc"]];
-        [userActivity becomeCurrent];
+        if (self.currentUserActivity)
+        {
+            [self.currentUserActivity resignCurrent];
+        }
+        self.currentUserActivity = [[NSUserActivity alloc] initWithActivityType:CSF_String_Identifer_ActivityType_Editing_Document];
+        self.currentUserActivity.title = @"Edit Document";
+        self.currentUserActivity.expirationDate = [[NSDate date] dateByAddingDays:1];
+        self.currentUserActivity.needsSave = YES;
+        self.currentUserActivity.eligibleForSearch = YES;
+        self.currentUserActivity.eligibleForHandoff = YES;
+        [self.currentUserActivity addUserInfoEntriesFromDictionary:[NSDictionary dictionaryWithObject:doc.url forKey:@"doc.url"]];
+        [self.currentUserActivity becomeCurrent];
     }else
     {
         CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSF_String_Notification_Current_Document_Changed_Name, self, (@{
                                                                                                                                @"hasDoc" : @NO }));
+        if (self.currentUserActivity)
+        {
+            [self.currentUserActivity resignCurrent];
+        }
     }
 }
 - (BOOL)hasCurrentEditingDocument

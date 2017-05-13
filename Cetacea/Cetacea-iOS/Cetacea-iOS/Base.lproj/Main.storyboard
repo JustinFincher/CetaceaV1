@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Document Workspace Split Editor View Controller-->
         <scene sceneID="gtI-xq-Qrt">
             <objects>
-                <viewController id="hUy-ur-FU8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JZDocumentWorkspaceSplitEditorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hUy-ur-FU8" customClass="JZDocumentWorkspaceSplitEditorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j9e-Lu-BW4"/>
                         <viewControllerLayoutGuide type="bottom" id="1gB-Vs-ebF"/>
@@ -34,6 +34,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="Il9-dP-Vp7" id="nWe-HM-ujp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Sb-LZ-Vpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="3057" y="1914"/>
         </scene>
-        <!--View Controller-->
+        <!--Document Workspace Split Preview View Controller-->
         <scene sceneID="4gD-tr-fW7">
             <objects>
-                <viewController id="mB2-CG-Eby" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JZDocumentWorkspaceSplitPreviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mB2-CG-Eby" customClass="JZDocumentWorkspaceSplitPreviewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LRf-l4-9gN"/>
                         <viewControllerLayoutGuide type="bottom" id="aOo-mF-EUe"/>
@@ -222,6 +225,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yck-Th-c93" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2800" y="-32"/>
+        </scene>
+        <!--Document Import View Controller-->
+        <scene sceneID="AMf-I5-zti">
+            <objects>
+                <viewController storyboardIdentifier="JZDocumentImportViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ily-Fd-sbK" customClass="JZDocumentImportViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PsW-9C-gul"/>
+                        <viewControllerLayoutGuide type="bottom" id="EMx-gC-tem"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uaR-Vy-rz4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KDL-BI-zt9" customClass="CSFEditorTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Cancel" id="DIR-bX-A92">
+                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="Ily-Fd-sbK" id="yTk-Dd-RRg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="tP9-7b-luC"/>
+                        <barButtonItem title="Save" id="3vP-3T-m2v">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="Ily-Fd-sbK" id="Sje-az-4M6"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="KDL-BI-zt9" id="PFq-Oz-qzO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgs-zg-jdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2087.1999999999998" y="1712.2938530734634"/>
         </scene>
         <!--Notice Enable Cloud Service View Controller-->
         <scene sceneID="6eQ-2Y-dei">

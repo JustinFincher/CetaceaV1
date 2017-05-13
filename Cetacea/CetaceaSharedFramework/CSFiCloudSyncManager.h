@@ -22,6 +22,7 @@
 - (BOOL)isIcloudAvailiable;
 
 - (NSURL *)ubiquitousURL;
+- (NSURL *)ubiquitousDocumentsReadMeURL;
 - (NSURL *)ubiquitousDocumentsURL;
 - (NSURL *)ubiquitousDocumentsCetaceaURL;
 - (NSURL *)ubiquitousDocumentsHighlightThemesURL;

@@ -15,9 +15,14 @@
 				<string>Cetacea</string>
 			</array>
 			<key>CFBundleTypeIconFiles</key>
-			<array/>
+			<array>
+				<string>icon-cetacea-64</string>
+				<string>icon-cetacea-1024</string>
+			</array>
 			<key>CFBundleTypeName</key>
 			<string>Cetacea Document</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>com.JustZht.Cetacea.document</string>
@@ -35,9 +40,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.667</string>
+	<string>0.0.717</string>
 	<key>CFBundleVersion</key>
-	<string>667</string>
+	<string>717</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -54,6 +59,22 @@
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.com.JustZht.Cetacea</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>Cetacea</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>Any</string>
+		</dict>
+	</dict>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.JustZht.Cetacea.ActivityType.EditingDocument</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
@@ -87,11 +108,21 @@
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>com.apple.package</string>
+				<string>com.JustZht.Cetacea.document</string>
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Cetacea Document</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.JustZht.Cetacea.document</string>
+			<key>UTTypeSize320IconFile</key>
+			<string>icon-cetacea-1024</string>
+			<key>UTTypeSize64IconFile</key>
+			<string>icon-cetacea-320</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<string>cetacea</string>
+			</dict>
 		</dict>
 	</array>
 	<key>UTImportedTypeDeclarations</key>
@@ -105,6 +136,10 @@
 			<string>Cetacea Document</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.JustZht.Cetacea.document</string>
+			<key>UTTypeSize320IconFile</key>
+			<string>icon-cetacea-1024</string>
+			<key>UTTypeSize64IconFile</key>
+			<string>icon-cetacea-320</string>
 		</dict>
 		<dict>
 			<key>UTTypeConformsTo</key>
@@ -115,6 +150,10 @@
 			<string>Cetacea Document</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.JustZht.Cetacea.document</string>
+			<key>UTTypeSize320IconFile</key>
+			<string>icon-cetacea-1024</string>
+			<key>UTTypeSize64IconFile</key>
+			<string>icon-cetacea-320</string>
 		</dict>
 	</array>
 </dict>

@@ -44,4 +44,6 @@
 
 @property (nonatomic,weak) NSMetadataItem *metaDataItem;
 
+@property (nonatomic) BOOL isUploading;
+
 @end

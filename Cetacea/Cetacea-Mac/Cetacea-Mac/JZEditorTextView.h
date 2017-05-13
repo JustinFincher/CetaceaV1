@@ -14,7 +14,7 @@
 @interface JZEditorTextView : NSTextView
 
 @property (atomic)BOOL hasSetup;
-- (void)setupTextView;
+;
 @property (nonatomic,strong) JZEditorMarkdownTextParserWithTSBaseParser *parser;
 
 - (void)refreshHightLight;

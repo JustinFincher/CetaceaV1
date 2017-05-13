@@ -13,6 +13,8 @@
 #import "JZNoticeEnableCloudServiceViewController.h"
 #import <GDPerformanceView/GDPerformanceMonitor.h>
 
+#import "JZDocumentImportViewController.h"
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) GDPerformanceMonitor *performanceMonitor;
@@ -67,6 +69,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if (url)
+    {
+        NSLog(@"PATH = %@",[url path]);
+        JZDocumentImportViewController *vc = CSF_Block_Main_Storyboard_VC_From_Identifier(NSStringFromClass([JZDocumentImportViewController class]));
+        vc.importURL = url;
+        UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:vc];
+        
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:naviVC animated:YES completion:nil];
+    }
+    return YES;
 }
 
 - (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType

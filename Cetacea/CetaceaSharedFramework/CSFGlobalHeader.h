@@ -47,7 +47,7 @@ alpha:1.0]
 #define CSF_String_Identifer_iCloud_Container_Name @"UYK8GY9WS7.iCloud.com.JustZht.Cetacea"
 #define CSF_String_Identifer_App_Group_Name @"group.com.JustZht.Cetacea"
 
-#define CSF_String_Identifer_ActivityType_Editing_Document @"CSF_String_Identifer_ActivityType_Editing_Document"
+#define CSF_String_Identifer_ActivityType_Editing_Document @"com.JustZht.Cetacea.ActivityType.EditingDocument"
 
 #define CSF_String_Notification_iCloud_Not_Availiable_Name @"CSF_String_Notification_iCloud_Not_Availiable_Name"
 #define CSF_String_Notification_Current_Document_Changed_Name @"CSF_String_Notification_Current_Document_Changed_Name"
@@ -58,6 +58,7 @@ alpha:1.0]
 #define CSF_Block_Add_Notification_Observer_With_Name_Object_Block(n,o,b) [[NSNotificationCenter defaultCenter] addObserverForName:n object:o queue:[NSOperationQueue mainQueue] usingBlock:b];
 
 #define CSF_Block_Main_Storyboard_VC_From_Identifier(x) [[UIStoryboard storyboardWithName:@"Main" bundle: nil] instantiateViewControllerWithIdentifier:x]
+#define CSF_Block_Main_Storyboard_VC_From_Class(x) [[UIStoryboard storyboardWithName:@"Main" bundle: nil] instantiateViewControllerWithIdentifier:NSStringFromClass(x)]
 
 
 #endif /* CSFGlobalHeader_h */
