@@ -23,16 +23,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Il9-dP-Vp7" customClass="CSFEditorTextView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Il9-dP-Vp7" customClass="CSFEditorTextView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Il9-dP-Vp7" firstAttribute="leading" secondItem="tQM-ae-1Bt" secondAttribute="leading" id="EAi-pM-Vox"/>
+                            <constraint firstItem="1gB-Vs-ebF" firstAttribute="top" secondItem="Il9-dP-Vp7" secondAttribute="bottom" id="GGC-Dq-Met"/>
+                            <constraint firstAttribute="trailing" secondItem="Il9-dP-Vp7" secondAttribute="trailing" id="coB-YJ-WJn"/>
+                            <constraint firstItem="Il9-dP-Vp7" firstAttribute="top" secondItem="j9e-Lu-BW4" secondAttribute="bottom" id="tjC-py-dWE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="Il9-dP-Vp7" id="nWe-HM-ujp"/>
@@ -180,19 +185,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="K2h-nW-YUG" appends="YES" id="UgW-74-bqL"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="editorContainerView" destination="PEe-ky-sbB" id="4Uk-4O-GPc"/>
-                        <outlet property="leftEdgePanGesture" destination="K2h-nW-YUG" id="FjU-mZ-J01"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIz-fN-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="K2h-nW-YUG">
-                    <rectEdge key="edges" left="YES"/>
-                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-789.375" y="860"/>
         </scene>
@@ -237,9 +235,14 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="QkD-fC-NyH" appends="YES" id="XsH-PT-6Hm"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yck-Th-c93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="QkD-fC-NyH"/>
             </objects>
             <point key="canvasLocation" x="-2800" y="-32"/>
         </scene>
@@ -377,8 +380,12 @@
                                 <action selector="applicationSettingsButtonPressed:" destination="cjR-qk-TLv" id="iyV-6X-n1w"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="gIW-oj-aOe"/>
+                        <barButtonItem image="icon_ios_list" id="4Jp-0L-m10"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Cetacea" id="BeQ-vI-ZLn"/>
+                    <navigationItem key="navigationItem" title="Cetacea" id="BeQ-vI-ZLn">
+                        <barButtonItem key="rightBarButtonItem" image="icon_ios_add" id="ZVC-eG-uCo"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="applicationSettingsButton" destination="UOT-ba-ajM" id="8JQ-n7-TfJ"/>
                         <outlet property="searchBar" destination="qFD-Mk-xCV" id="GY0-UG-VIl"/>
@@ -424,7 +431,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_ios_add" width="36" height="36"/>
         <image name="icon_ios_cetacea" width="1024" height="1024"/>
-        <image name="icon_ios_setting" width="26" height="26"/>
+        <image name="icon_ios_list" width="36" height="36"/>
+        <image name="icon_ios_setting" width="36" height="36"/>
     </resources>
 </document>
