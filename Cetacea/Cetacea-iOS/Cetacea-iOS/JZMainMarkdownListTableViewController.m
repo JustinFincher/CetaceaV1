@@ -12,13 +12,15 @@
 #import "JZSettingsNavigationController.h"
 #import "JZEditorContainerViewController.h"
 
-@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate,UIPopoverPresentationControllerDelegate,UIViewControllerPreviewingDelegate>
+@interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate,UIPopoverPresentationControllerDelegate,UIViewControllerPreviewingDelegate,UISearchBarDelegate>
 
 @property (nonatomic,strong) NSMutableArray *markdownArray;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *applicationSettingsButton;
 
 @property (nonatomic,strong) id<UIViewControllerPreviewing> previewingContext;
+
+@property (nonatomic,strong) UISelectionFeedbackGenerator* feedbackGenerator;
 @end
 
 @implementation JZMainMarkdownListTableViewController
@@ -42,6 +44,10 @@
     {
         self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.tableView];
     }
+    self.feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+    [self.feedbackGenerator prepare];
+
+    self.searchBar.delegate = self;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -141,7 +147,6 @@
 {
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
-    
     cell.titleLabel.text = doc.title;
     cell.contentTextView.text = doc.markdownString;
     cell.lastChangeTimeLabel.text = doc.lastChangeDate.timeAgoSinceNow;
@@ -181,6 +186,8 @@
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     if (doc)
     {
+
+        [self.feedbackGenerator selectionChanged];
         [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:doc];
     }
 }
@@ -198,13 +205,14 @@
 #pragma Button Events
 - (IBAction)applicationSettingsButtonPressed:(UIBarButtonItem *)sender
 {
+    CGSize windowSize = [[[UIApplication sharedApplication] keyWindow] frame].size;
     JZSettingsNavigationController *naviVC = CSF_Block_Main_Storyboard_VC_From_Identifier(NSStringFromClass([JZSettingsNavigationController class]));
     naviVC.navigationBarHidden = NO;
     naviVC.modalPresentationStyle = UIModalPresentationPopover;
     naviVC.popoverPresentationController.delegate = self;
     naviVC.popoverPresentationController.barButtonItem = sender;
     naviVC.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
-    naviVC.preferredContentSize = self.view.frame.size;
+    naviVC.preferredContentSize = CGSizeMake(windowSize.width > 360 ? 360 : windowSize.width, windowSize.height);
     [self presentViewController:naviVC animated:YES completion:nil];
 }
 #pragma mark - UIAdaptivePresentationControllerDelegate
@@ -252,5 +260,11 @@
             self.previewingContext = nil;
         }
     }
+}
+#pragma mark - UISearchBarDelegate
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    [self.feedbackGenerator selectionChanged];
+    return YES;
 }
 @end

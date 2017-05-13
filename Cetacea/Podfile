@@ -41,6 +41,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     pod 'DynamicColor'
     pod 'SDVersion'
     pod 'DKNightVersion'
+    pod 'Bohr'
     pod 'SyntaxKit', :git => 'https://github.com/SecondRenaissance/SyntaxKit.git'
   end
 
