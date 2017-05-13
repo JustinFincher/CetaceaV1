@@ -10,6 +10,7 @@
 #import "JZMainMarkdownListTableViewCell.h"
 #import <CetaceaSharedFramework/CSFGlobalHeader.h>
 #import "JZSettingsNavigationController.h"
+#import "JZEditorContainerViewController.h"
 
 @interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate,UIPopoverPresentationControllerDelegate,UIViewControllerPreviewingDelegate>
 
@@ -36,13 +37,15 @@
     
     self.searchBar.delegate = self;
     [[CSFiCloudSyncManager sharedManager] setDelegate:self];
+    
+    if ([[CSFDeviceCapabilityManager sharedManager] isForceTouchAvailable])
+    {
+        self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.tableView];
+    }
 }
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    if ([self isForceTouchAvailable]) {
-        self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.view];
-    }
 }
 - (void)dealloc
 {
@@ -212,42 +215,35 @@
 #pragma mark - UIViewControllerPreviewingDelegate
 - (UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 {
-    CGPoint cellPosition = [self.tableView convertPoint:location fromView:self.view];
     NSIndexPath *indexPath = [self.tableView
-                              indexPathForRowAtPoint:cellPosition];
+                              indexPathForRowAtPoint:location];
     JZMainMarkdownListTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     if (cell)
     {
-        previewingContext.sourceRect = cell.frame;
-        return CSF_Block_Main_Storyboard_VC_From_Identifier(@"JZEditorContainerViewController");
+        JZLog(@"cell = %@",cell);
+        previewingContext.sourceRect = [self.tableView rectForRowAtIndexPath:indexPath];
+        JZEditorContainerViewController *popVC =  CSF_Block_Main_Storyboard_VC_From_Class([JZEditorContainerViewController class]);
+        popVC.preferredContentSize = CGSizeMake(320, 300);
+        return popVC;
     }
     else
     {
-        return nil;
+            JZLog(@"cell = nil");
     }
+    return nil;
 }
 - (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
-    
+    JZLog(@"commitViewController");
 }
-
-- (BOOL)isForceTouchAvailable {
-    BOOL isForceTouchAvailable = NO;
-    if ([self.traitCollection respondsToSelector:@selector(forceTouchCapability)])
-    {
-        isForceTouchAvailable = self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable;
-    }
-    return isForceTouchAvailable;
-}
-
 #pragma mark - Force Touch
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection
 {
     [super traitCollectionDidChange:previousTraitCollection];
-    if ([self isForceTouchAvailable])
+    if ([[CSFDeviceCapabilityManager sharedManager] isForceTouchAvailable])
     {
         if (!self.previewingContext) {
-            self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.view];
+            self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.tableView];
         }
     } else
     {

@@ -56,7 +56,7 @@
         <!--Navigation Controller-->
         <scene sceneID="k8T-na-Xpn">
             <objects>
-                <navigationController navigationBarHidden="YES" toolbarHidden="NO" id="AK0-cN-8bm" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="AK0-cN-8bm" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ELD-Tt-Yj0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -102,11 +102,7 @@
                             <outlet property="delegate" destination="pOh-ul-BHV" id="9DX-j3-TeS"/>
                         </connections>
                     </collectionView>
-                    <toolbarItems>
-                        <barButtonItem image="icon_ios_search" id="EHB-p6-GNJ"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="XoI-AL-y5h"/>
-                        <barButtonItem image="icon_ios_setting" id="5D3-de-0Gh"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="wun-yG-JWb"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-yq-7AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,8 +110,4 @@
             <point key="canvasLocation" x="1549" y="-19"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="icon_ios_search" width="19" height="19"/>
-        <image name="icon_ios_setting" width="26" height="26"/>
-    </resources>
 </document>
