@@ -35,9 +35,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.0.663</string>
+	<string>0.0.667</string>
 	<key>CFBundleVersion</key>
-	<string>663</string>
+	<string>667</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>

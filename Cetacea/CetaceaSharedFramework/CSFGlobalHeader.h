@@ -17,6 +17,8 @@
 
 #if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
+#define CSFColor UIColor
+#define CSFRect CGRect
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -30,6 +32,8 @@ alpha:1.0]
 
 #elif TARGET_OS_OSX
 #import <AppKit/AppKit.h>
+#define CSFColor NSColor
+#define CSFRect NSRect
 
 #endif
 
@@ -42,6 +46,8 @@ alpha:1.0]
 #define CSF_String_Identifer_Developer_Team_ID @"UYK8GY9WS7"
 #define CSF_String_Identifer_iCloud_Container_Name @"UYK8GY9WS7.iCloud.com.JustZht.Cetacea"
 #define CSF_String_Identifer_App_Group_Name @"group.com.JustZht.Cetacea"
+
+#define CSF_String_Identifer_ActivityType_Editing_Document @"CSF_String_Identifer_ActivityType_Editing_Document"
 
 #define CSF_String_Notification_iCloud_Not_Availiable_Name @"CSF_String_Notification_iCloud_Not_Availiable_Name"
 #define CSF_String_Notification_Current_Document_Changed_Name @"CSF_String_Notification_Current_Document_Changed_Name"
