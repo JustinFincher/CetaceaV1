@@ -38,6 +38,7 @@
         if ([self isIcloudAvailiable])
         {
             JZLog(@"isIcloudAvailiable = YES");
+            
             [[NSUbiquitousKeyValueStore defaultStore] synchronize];
             
             NSOperationQueue *quene = [[NSOperationQueue alloc] init];
@@ -47,6 +48,8 @@
                  {
                      JZLog(@"ubiquitousURL = %@",[self ubiquitousURL]);
                      JZLog(@"ubiquitousDocumentsCetaceaURL = %@",[self ubiquitousDocumentsCetaceaURL]);
+                     JZLog(@"ubiquitousDocumentsReadMeURL = %@",[self ubiquitousDocumentsReadMeURL]);
+                     
                      
                      self.iCloudCetaceaFilesMetadataQuery = [[NSMetadataQuery alloc] init];
                      self.iCloudCetaceaFilesMetadataQuery.notificationBatchingInterval = 1.0;
@@ -86,6 +89,18 @@
 - (NSURL *)ubiquitousURL
 {
     return self.iCloudUbiquitousURL;
+}
+- (NSURL *)ubiquitousDocumentsReadMeURL
+{
+    NSURL *url = [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"README.txt" isDirectory:NO];
+    NSError *error;
+    BOOL succeed = [[NSString stringWithFormat:@"README\nYour cetacea documents and highlight theme file will appear here."] writeToFile:[url path]
+                              atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (!succeed)
+    {
+        
+    }
+    return url;
 }
 - (NSURL *)ubiquitousDocumentsURL
 {

@@ -22,4 +22,7 @@
 
 @property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument *currentEditingDocument;
 
+- (void)setupTextView;
+- (void)refreshHightLight;
+
 @end

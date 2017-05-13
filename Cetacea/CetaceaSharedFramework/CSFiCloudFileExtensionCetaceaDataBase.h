@@ -15,6 +15,7 @@
 //- (NSMutableArray *)loadDocs;
 - (NSMutableArray *)loadDocsFromQuery:(NSArray *)query;
 - (NSString *)nextDocPath;
+- (NSURL *)nextDocURL;
 
 
 @end
