@@ -16,6 +16,10 @@
 #define EditorTextViewClass NSTextView
 #endif
 
+#import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
+
 @interface CSFEditorTextView : EditorTextViewClass
+
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument *currentEditingDocument;
 
 @end

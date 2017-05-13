@@ -54,6 +54,14 @@
     return YES;
 }
 
+- (BOOL)application:(NSApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType
+{
+    return YES;
+}
+- (BOOL)application:(NSApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nonnull))restorationHandler
+{
+    return YES;
+}
 #pragma mark - NSDocumentController
 - (IBAction)newDocument:(id)sender
 {
