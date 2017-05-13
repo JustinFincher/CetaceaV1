@@ -48,7 +48,7 @@
                                                                                                                                @"hasDoc" : @YES }));
         if (self.currentUserActivity)
         {
-            [self.currentUserActivity resignCurrent];
+            [self.currentUserActivity invalidate];
         }
         self.currentUserActivity = [[NSUserActivity alloc] initWithActivityType:CSF_String_Identifer_ActivityType_Editing_Document];
         self.currentUserActivity.title = @"Edit Document";

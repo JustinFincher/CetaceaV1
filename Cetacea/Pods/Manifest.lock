@@ -1,4 +1,5 @@
 PODS:
+  - Bohr (3.0.0)
   - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - DateTools (2.0.0)
@@ -26,6 +27,7 @@ PODS:
   - SyntaxKit (1.0)
 
 DEPENDENCIES:
+  - Bohr
   - Crashlytics
   - DateTools
   - DKNightVersion
@@ -54,6 +56,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SecondRenaissance/SyntaxKit.git
 
 SPEC CHECKSUMS:
+  Bohr: 17b150766e54e1fb8ff417d85b830c7caafa8b4a
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
@@ -67,6 +70,6 @@ SPEC CHECKSUMS:
   SDVersion: 7b472a749907c29fcba04dadb8ecb4eb9a9aeeab
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: abc55cfda75d54f2d361c79ad10dc5c525ed2fcd
+PODFILE CHECKSUM: 93ac2be05cf927ad3583db234dc37b272439d24e
 
 COCOAPODS: 1.2.1
