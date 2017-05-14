@@ -136,4 +136,23 @@
     [[NSFileManager defaultManager] removeItemAtURL:self.url error:nil];
     completed(YES);
 }
+
+#pragma mark - Properties
+- (BOOL)isUploading
+{
+    if (self.metaDataItem)
+    {NSNumber *uploadingStatus = [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemIsUploadingKey];
+        return [uploadingStatus boolValue];
+    }
+    return NO;
+}
+- (BOOL)isDownloading
+{
+    if (self.metaDataItem)
+    {
+        NSString *downloadStatus = [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
+        return ([downloadStatus isEqualToString:NSMetadataUbiquitousItemDownloadingStatusNotDownloaded] || [downloadStatus isEqualToString:NSMetadataUbiquitousItemDownloadingStatusDownloaded]);
+    }
+    return NO;
+}
 @end
