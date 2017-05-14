@@ -37,16 +37,61 @@
     return self;
 }
 
-- (CGFloat)getFontSize
+#pragma mark Font Helpers
+- (NSArray *)getAllFontInApp
+{
+    NSMutableArray *fonts = [NSMutableArray array];
+    for (NSString* family in [[UIFont familyNames] sortedArrayUsingSelector:@selector(compare:)])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [[UIFont fontNamesForFamilyName:family] sortedArrayUsingSelector:@selector(compare:)])
+        {
+            NSLog(@"  %@", name);
+            [fonts addObject:name];
+        }
+    }
+    return fonts;
+}
+
+#pragma mark - Editor Base Font
+- (NSString *)getEditorBaseFontFamilyName
+{
+    NSString *editorBasefontName = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Name];
+    if (editorBasefontName == nil)
+    {
+        editorBasefontName = [[CSFFont systemFontOfSize:12] fontName];
+    }
+    return editorBasefontName;
+}
+- (void)setEditorBaseFont:(CSFFont *)font
+{
+    [CSF_Block_UserDefault_With_SuiteName setObject:[font fontName] forKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Name];
+    [CSF_Block_UserDefault_With_SuiteName setObject:[NSNumber numberWithFloat:[font pointSize]] forKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Size];
+}
+- (CGFloat)getEditorBaseFontSize
 {
     NSNumber *editorBasefontSizeNum = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Size];
     if (editorBasefontSizeNum == nil)
     {
-        self.editorBaseFontSize = [NSNumber numberWithFloat:12.0f];
-    }else
-    {
-        self.editorBaseFontSize = editorBasefontSizeNum;
+        editorBasefontSizeNum = [NSNumber numberWithFloat:12.0f];
     }
     return [editorBasefontSizeNum floatValue];
+}
+
+- (CSFFont *)getEditorBaseFont
+{
+    CSFFont *font = [CSFFont fontWithName:[self getEditorBaseFontFamilyName] size:[self getEditorBaseFontSize]];
+    if (font)
+    {
+        return font;
+    }else
+    {
+        return [CSFFont systemFontOfSize:12.0f];
+    }
+}
+- (CSFFont *)getEditorMonospacedFont
+{
+    return [CSFFont fontWithName:@"Fira Code" size:[self getEditorBaseFontSize]];
 }
 @end

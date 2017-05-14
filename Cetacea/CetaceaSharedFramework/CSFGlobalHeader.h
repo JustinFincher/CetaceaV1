@@ -12,7 +12,8 @@
 #import <Foundation/Foundation.h>
 
 #if TARGET_OS_IOS || TARGET_OS_OSX
-#import <DateTools/DateTools.h>
+@import DateTools;
+//#import <DateTools/DateTools.h>
 #endif
 
 #if TARGET_OS_IOS
@@ -49,6 +50,7 @@ alpha:1.0]
 #define CSF_String_Identifer_Application_Bundle_ID @"com.JustZht.Cetacea"
 #define CSF_String_Identifer_App_Group_Name @"group.com.JustZht.Cetacea"
 
+#define CSF_String_Identifer_UserDefault_Editor_BaseFont_Name @"com.JustZht.Cetacea.UserDefault.Editor.BaseFont.Name"
 #define CSF_String_Identifer_UserDefault_Editor_BaseFont_Size @"com.JustZht.Cetacea.UserDefault.Editor.BaseFont.Size"
 #define CSF_String_Identifer_ActivityType_Editing_Document @"com.JustZht.Cetacea.ActivityType.EditingDocument"
 
