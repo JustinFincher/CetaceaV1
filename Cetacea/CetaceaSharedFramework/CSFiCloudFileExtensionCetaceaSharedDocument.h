@@ -17,6 +17,14 @@
 #endif
 
 @class SharedDocument;
+
+@protocol CSFiCloudFileExtensionCetaceaSharedDocumentDelegate <NSObject>
+
+@optional
+
+@end
+
+
 @interface CSFiCloudFileExtensionCetaceaSharedDocument : NSObject
 
 - (id)initWithURL:(NSURL *)url;
@@ -45,5 +53,6 @@
 @property (nonatomic,weak) NSMetadataItem *metaDataItem;
 
 @property (nonatomic) BOOL isUploading;
+@property (nonatomic) BOOL isDownloading;
 
 @end

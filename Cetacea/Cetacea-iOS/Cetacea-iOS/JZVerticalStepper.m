@@ -305,6 +305,8 @@
     self.layer.borderColor = _borderColor.CGColor;
     self.font = [UIFont systemFontOfSize:22.0f];
     
+    self.impactGenerator = [[UIImpactFeedbackGenerator alloc] init];
+    [self.impactGenerator prepare];
     // Update the display
     [self updateDisplay];
 }
@@ -359,6 +361,7 @@
     // Send the UIControl event
     // ... This lets us play nice with IB
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
+    [self.impactGenerator impactOccurred];
     
     // Update counters
     ++_iUpdateCount;
@@ -424,6 +427,7 @@
     // Publish start editing event
     [self sendActionsForControlEvents:UIControlEventEditingDidBegin];
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
+    [self.impactGenerator impactOccurred];
 }
 
 
@@ -462,6 +466,7 @@
     // Publish start editing event
     [self sendActionsForControlEvents:UIControlEventEditingDidBegin];
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
+    [self.impactGenerator impactOccurred];
 }
 
 
@@ -479,6 +484,7 @@
     // Send action events
     [self sendActionsForControlEvents:UIControlEventEditingDidEnd];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
+    [self.impactGenerator impactOccurred];
 }
 
 
@@ -496,11 +502,11 @@
     {
         valueString = [valueString stringByAppendingString:[array objectAtIndex:i]];
     }
-    UIFont *sizeFont = [UIFont monospacedDigitSystemFontOfSize:36.0f weight:0.5f];
+    UIFont *sizeFont = [UIFont fontWithName:@"FiraCode-Bold" size:42.0f];
     NSDictionary *sizeFontDict = [NSDictionary dictionaryWithObject: sizeFont forKey:NSFontAttributeName];
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:valueString attributes: sizeFontDict];
     
-    UIFont *formatFont = [UIFont monospacedDigitSystemFontOfSize:12.0f weight:1.0f];
+    UIFont *formatFont = [UIFont fontWithName:@"FiraCode-Bold" size:13.0f];
     NSDictionary *formatFontDict = [NSDictionary dictionaryWithObject:formatFont forKey:NSFontAttributeName];
     NSMutableAttributedString *vAttrString = [[NSMutableAttributedString alloc]initWithString:formatString attributes:formatFontDict];
     [attributedString appendAttributedString:vAttrString];
@@ -511,8 +517,6 @@
     _btnUp.enabled = (_wraps || (_value < _maxValue));
     _btnDown.enabled = (_wraps || (_value > _minValue));
 }
-
-
 
 
 @end

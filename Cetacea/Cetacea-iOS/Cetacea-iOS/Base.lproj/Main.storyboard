@@ -145,6 +145,7 @@
                                 <action selector="editorLayoutSegmentControlValueChanged:" destination="SIi-qj-RBq" eventType="valueChanged" id="fdn-95-mhb"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" image="icon_ios_more_filled" id="XGY-5h-zMT"/>
                     </navigationItem>
                     <connections>
                         <outlet property="editorLayoutSegmentControl" destination="Gyb-kp-7a4" id="ffN-Ut-gqe"/>
@@ -434,6 +435,7 @@
         <image name="icon_ios_add" width="36" height="36"/>
         <image name="icon_ios_cetacea" width="1024" height="1024"/>
         <image name="icon_ios_list" width="36" height="36"/>
+        <image name="icon_ios_more_filled" width="36" height="36"/>
         <image name="icon_ios_setting" width="36" height="36"/>
     </resources>
 </document>
