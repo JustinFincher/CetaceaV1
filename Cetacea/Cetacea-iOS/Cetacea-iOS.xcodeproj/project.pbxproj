@@ -205,6 +205,11 @@
 		0D4135D81EC7683E00BF9E5B /* JZSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZSettingsTableViewController.m; sourceTree = "<group>"; };
 		0D4135DA1EC76B9600BF9E5B /* BOTableViewSection+Footer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BOTableViewSection+Footer.h"; sourceTree = "<group>"; };
 		0D4135DB1EC76B9600BF9E5B /* BOTableViewSection+Footer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BOTableViewSection+Footer.m"; sourceTree = "<group>"; };
+		0D4135E61EC8083F00BF9E5B /* FiraCode-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Bold.ttf"; sourceTree = "<group>"; };
+		0D4135E71EC8083F00BF9E5B /* FiraCode-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Light.ttf"; sourceTree = "<group>"; };
+		0D4135E81EC8083F00BF9E5B /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Medium.ttf"; sourceTree = "<group>"; };
+		0D4135E91EC8083F00BF9E5B /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Regular.ttf"; sourceTree = "<group>"; };
+		0D4135EA1EC8083F00BF9E5B /* FiraCode-Retina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Retina.ttf"; sourceTree = "<group>"; };
 		0D56691F1EB514F1000C3E39 /* Cetacea-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669231EB514F1000C3E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D5669251EB514F1000C3E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -476,9 +481,8 @@
 		0D0523ED1EC7270D00E1931A /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				0D0523EE1EC7282300E1931A /* icon-cetacea-64.png */,
-				0D0523EF1EC7282300E1931A /* icon-cetacea-320.png */,
-				0D0523EB1EC7270800E1931A /* icon-cetacea-1024.png */,
+				0D4135E51EC8082900BF9E5B /* Font */,
+				0D4135E41EC8082200BF9E5B /* Image */,
 			);
 			name = Asset;
 			sourceTree = "<group>";
@@ -492,6 +496,28 @@
 				0DA94CB01EC4BBCC00D597E1 /* JZTraitCollectionManager.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		0D4135E41EC8082200BF9E5B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				0D0523EE1EC7282300E1931A /* icon-cetacea-64.png */,
+				0D0523EF1EC7282300E1931A /* icon-cetacea-320.png */,
+				0D0523EB1EC7270800E1931A /* icon-cetacea-1024.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		0D4135E51EC8082900BF9E5B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0D4135E61EC8083F00BF9E5B /* FiraCode-Bold.ttf */,
+				0D4135E71EC8083F00BF9E5B /* FiraCode-Light.ttf */,
+				0D4135E81EC8083F00BF9E5B /* FiraCode-Medium.ttf */,
+				0D4135E91EC8083F00BF9E5B /* FiraCode-Regular.ttf */,
+				0D4135EA1EC8083F00BF9E5B /* FiraCode-Retina.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		0D5669161EB514F1000C3E39 = {
