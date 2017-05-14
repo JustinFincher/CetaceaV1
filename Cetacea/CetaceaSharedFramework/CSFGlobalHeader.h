@@ -43,10 +43,13 @@ alpha:1.0]
 #   define JZLog(...)
 #endif
 
+
 #define CSF_String_Identifer_Developer_Team_ID @"UYK8GY9WS7"
 #define CSF_String_Identifer_iCloud_Container_Name @"UYK8GY9WS7.iCloud.com.JustZht.Cetacea"
+#define CSF_String_Identifer_Application_Bundle_ID @"com.JustZht.Cetacea"
 #define CSF_String_Identifer_App_Group_Name @"group.com.JustZht.Cetacea"
 
+#define CSF_String_Identifer_UserDefault_Editor_BaseFont_Size @"com.JustZht.Cetacea.UserDefault.Editor.BaseFont.Size"
 #define CSF_String_Identifer_ActivityType_Editing_Document @"com.JustZht.Cetacea.ActivityType.EditingDocument"
 
 #define CSF_String_Notification_iCloud_Not_Availiable_Name @"CSF_String_Notification_iCloud_Not_Availiable_Name"
@@ -56,6 +59,7 @@ alpha:1.0]
 #define CSF_Block_Post_Notification_With_Name_Object(n,o) [[NSNotificationCenter defaultCenter] postNotificationName:n object:o];
 #define CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(s,n,o) [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(s) name:n object:o];
 #define CSF_Block_Add_Notification_Observer_With_Name_Object_Block(n,o,b) [[NSNotificationCenter defaultCenter] addObserverForName:n object:o queue:[NSOperationQueue mainQueue] usingBlock:b];
+#define CSF_Block_UserDefault_With_SuiteName [[NSUserDefaults alloc] initWithSuiteName:CSF_String_Identifer_Application_Bundle_ID]
 
 #define CSF_Block_Main_Storyboard_VC_From_Identifier(x) [[UIStoryboard storyboardWithName:@"Main" bundle: nil] instantiateViewControllerWithIdentifier:x]
 #define CSF_Block_Main_Storyboard_VC_From_Class(x) [[UIStoryboard storyboardWithName:@"Main" bundle: nil] instantiateViewControllerWithIdentifier:NSStringFromClass(x)]

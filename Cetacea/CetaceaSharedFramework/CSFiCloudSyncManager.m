@@ -92,9 +92,9 @@
 }
 - (NSURL *)ubiquitousDocumentsReadMeURL
 {
-    NSURL *url = [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"README.txt" isDirectory:NO];
+    NSURL *url = [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"README.md" isDirectory:NO];
     NSError *error;
-    BOOL succeed = [[NSString stringWithFormat:@"README\nYour cetacea documents and highlight theme file will appear here."] writeToFile:[url path]
+    BOOL succeed = [[NSString stringWithFormat:@"# README\nYour cetacea documents and highlight theme file will appear here."] writeToFile:[url path]
                               atomically:YES encoding:NSUTF8StringEncoding error:&error];
     if (!succeed)
     {
