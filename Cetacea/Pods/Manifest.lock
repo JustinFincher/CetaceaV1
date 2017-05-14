@@ -27,7 +27,7 @@ PODS:
   - SyntaxKit (1.0)
 
 DEPENDENCIES:
-  - Bohr
+  - Bohr (from `https://github.com/SecondRenaissance/Bohr.git`)
   - Crashlytics
   - DateTools
   - DKNightVersion
@@ -42,12 +42,17 @@ DEPENDENCIES:
   - SyntaxKit (from `https://github.com/SecondRenaissance/SyntaxKit.git`)
 
 EXTERNAL SOURCES:
+  Bohr:
+    :git: https://github.com/SecondRenaissance/Bohr.git
   PeerTalk:
     :git: https://github.com/rsms/peertalk.git
   SyntaxKit:
     :git: https://github.com/SecondRenaissance/SyntaxKit.git
 
 CHECKOUT OPTIONS:
+  Bohr:
+    :commit: 8d7dbc7f88a340900d6794afddd0a26f108214cc
+    :git: https://github.com/SecondRenaissance/Bohr.git
   PeerTalk:
     :commit: 5de384b349a1d51fc148c45f8ce0ac46b9bce39e
     :git: https://github.com/rsms/peertalk.git
@@ -70,6 +75,6 @@ SPEC CHECKSUMS:
   SDVersion: 7b472a749907c29fcba04dadb8ecb4eb9a9aeeab
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: 93ac2be05cf927ad3583db234dc37b272439d24e
+PODFILE CHECKSUM: 7d42cda2316e9e3ca1f370eb3e131081993c8223
 
 COCOAPODS: 1.2.1
