@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface JZMainMarkdownListTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *syncIndicatorImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *lastChangeTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
+
+@property (weak, nonatomic) CSFiCloudFileExtensionCetaceaSharedDocument *doc;
+
 @end

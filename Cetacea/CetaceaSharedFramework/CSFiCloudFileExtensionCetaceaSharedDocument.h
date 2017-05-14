@@ -22,6 +22,9 @@
 
 @optional
 
+- (void)uploadingStatusChanged;
+- (void)downloadingStatusChanged;
+
 @end
 
 
@@ -53,6 +56,8 @@
 @property (nonatomic,weak) NSMetadataItem *metaDataItem;
 
 @property (nonatomic) BOOL isUploading;
+@property (nonatomic) BOOL isUploaded;
 @property (nonatomic) BOOL isDownloading;
+@property (nonatomic) BOOL isDownloaded;
 
 @end

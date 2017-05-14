@@ -305,8 +305,6 @@
     self.layer.borderColor = _borderColor.CGColor;
     self.font = [UIFont systemFontOfSize:22.0f];
     
-    self.impactGenerator = [[UIImpactFeedbackGenerator alloc] init];
-    [self.impactGenerator prepare];
     // Update the display
     [self updateDisplay];
 }
@@ -361,7 +359,7 @@
     // Send the UIControl event
     // ... This lets us play nice with IB
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
-    [self.impactGenerator impactOccurred];
+    [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
     
     // Update counters
     ++_iUpdateCount;
@@ -427,7 +425,7 @@
     // Publish start editing event
     [self sendActionsForControlEvents:UIControlEventEditingDidBegin];
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
-    [self.impactGenerator impactOccurred];
+    [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
 }
 
 
@@ -466,7 +464,7 @@
     // Publish start editing event
     [self sendActionsForControlEvents:UIControlEventEditingDidBegin];
     [self sendActionsForControlEvents:UIControlEventEditingChanged];
-    [self.impactGenerator impactOccurred];
+    [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
 }
 
 
@@ -484,7 +482,7 @@
     // Send action events
     [self sendActionsForControlEvents:UIControlEventEditingDidEnd];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
-    [self.impactGenerator impactOccurred];
+    [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
 }
 
 

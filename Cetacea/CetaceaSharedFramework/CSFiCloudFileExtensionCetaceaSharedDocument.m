@@ -155,4 +155,21 @@
     }
     return NO;
 }
+- (BOOL)isUploaded
+{
+    if (self.metaDataItem)
+    {NSNumber *uploadedStatus = [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemIsUploadedKey];
+        return [uploadedStatus boolValue];
+    }
+    return NO;
+}
+- (BOOL)isDownloaded
+{
+    if (self.metaDataItem)
+    {
+        NSString *downloadStatus = [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemDownloadingStatusKey];
+        return ([downloadStatus isEqualToString:NSMetadataUbiquitousItemDownloadingStatusCurrent]);
+    }
+    return NO;
+}
 @end
