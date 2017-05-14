@@ -18,6 +18,7 @@
 #import "BOOptionTableViewCell.h"
 #import "BOSetting+Private.h"
 #import "BOSetting.h"
+#import "BOStepperTableViewCell.h"
 #import "BOSwitchTableViewCell.h"
 #import "BOTableViewCell+Private.h"
 #import "BOTableViewCell+Subclass.h"
