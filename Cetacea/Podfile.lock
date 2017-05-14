@@ -51,7 +51,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Bohr:
-    :commit: 8d7dbc7f88a340900d6794afddd0a26f108214cc
+    :commit: 131316fc8b06f8e7e1674496ed2112752f46547a
     :git: https://github.com/SecondRenaissance/Bohr.git
   PeerTalk:
     :commit: 5de384b349a1d51fc148c45f8ce0ac46b9bce39e

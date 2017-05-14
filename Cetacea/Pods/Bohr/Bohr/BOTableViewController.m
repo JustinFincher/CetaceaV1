@@ -113,7 +113,8 @@
 
 - (CGFloat)heightForCell:(BOTableViewCell *)cell {
 	
-	if ([cell expansionHeight] > 0) {
+	if ([cell expansionHeight] > 0)
+    {
 		UITableViewCell *cleanCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
 		cleanCell.frame = CGRectMake(0, 0, cell.frame.size.width, 0);
 		cleanCell.textLabel.numberOfLines = 0;
@@ -123,6 +124,10 @@
 		return [cleanCell systemLayoutSizeFittingSize:cleanCell.frame.size].height;
 	}
 	
+    if ([cell overrideHeight] > 0)
+    {
+        return [cell overrideHeight];
+    }
 	return [cell systemLayoutSizeFittingSize:cell.frame.size].height;
 }
 

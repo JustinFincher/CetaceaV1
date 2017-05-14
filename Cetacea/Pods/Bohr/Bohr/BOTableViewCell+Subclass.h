@@ -40,4 +40,7 @@
 /// This method gets called when the cell setting value gets changed externally, so that such change can be represented on the cell.
 - (void)settingValueDidChange;
 
+// height for override
+- (CGFloat)overrideHeight;
+
 @end

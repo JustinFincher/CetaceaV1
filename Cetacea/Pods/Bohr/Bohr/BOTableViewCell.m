@@ -104,6 +104,7 @@
 - (void)setupConstraints {}
 - (void)updateAppearance {}
 - (CGFloat)expansionHeight {return self.expansionView.intrinsicContentSize.height;}
+- (CGFloat)overrideHeight {return  -1.0f;}
 - (NSString *)footerTitle {return nil;}
 - (void)wasSelectedFromViewController:(BOTableViewController *)viewController {}
 - (void)settingValueDidChange {}
