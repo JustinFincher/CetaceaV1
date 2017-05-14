@@ -2,7 +2,7 @@
 
 // Cocoa
 #import <UIKit/UIKit.h>
-
+#import <CetaceaSharedFramework/CetaceaSharedFramework.h>
 
 
 //-----------------------------------------------------------------------
@@ -26,8 +26,6 @@
 @property (readwrite, nonatomic) UIColor    *textColor;         // Color of text
 @property (readwrite, nonatomic) UIColor    *borderColor;       // Color of border
 @property (readwrite, nonatomic) UIColor    *backgroundColor;   // Color of background
-
-@property (nonatomic,strong) UIImpactFeedbackGenerator* impactGenerator;
 
 // Supported initializers
 - (id)initWithFrame:(CGRect)a_frame;

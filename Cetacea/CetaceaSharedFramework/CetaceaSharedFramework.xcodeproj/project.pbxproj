@@ -34,18 +34,14 @@
 		0D4135EE1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */; };
 		0D4135EF1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */; };
 		0D4135F01EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */; };
-		0D4135F31EC81CD700BF9E5B /* CSFMarkdownLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135F11EC81CD700BF9E5B /* CSFMarkdownLineParser.h */; };
-		0D4135F41EC81CD700BF9E5B /* CSFMarkdownLineParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135F11EC81CD700BF9E5B /* CSFMarkdownLineParser.h */; };
-		0D4135F51EC81CD700BF9E5B /* CSFMarkdownLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135F21EC81CD700BF9E5B /* CSFMarkdownLineParser.m */; };
-		0D4135F61EC81CD700BF9E5B /* CSFMarkdownLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135F21EC81CD700BF9E5B /* CSFMarkdownLineParser.m */; };
-		0D4135F91EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135F71EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h */; };
-		0D4135FA1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135F71EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h */; };
-		0D4135FB1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135F81EC81CF300BF9E5B /* CSFMarkdownParagraphParser.m */; };
-		0D4135FC1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135F81EC81CF300BF9E5B /* CSFMarkdownParagraphParser.m */; };
-		0D4135FF1EC81D1500BF9E5B /* CSFMarkdownFullParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135FD1EC81D1500BF9E5B /* CSFMarkdownFullParser.h */; };
-		0D4136001EC81D1500BF9E5B /* CSFMarkdownFullParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135FD1EC81D1500BF9E5B /* CSFMarkdownFullParser.h */; };
-		0D4136011EC81D1500BF9E5B /* CSFMarkdownFullParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135FE1EC81D1500BF9E5B /* CSFMarkdownFullParser.m */; };
-		0D4136021EC81D1500BF9E5B /* CSFMarkdownFullParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135FE1EC81D1500BF9E5B /* CSFMarkdownFullParser.m */; };
+		0D4136181EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */; };
+		0D4136191EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */; };
+		0D41361A1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */; };
+		0D41361B1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */; };
+		0D41361E1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */; };
+		0D41361F1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */; };
+		0D4136201EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */; };
+		0D4136211EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */; };
 		0D482AF01EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */; };
 		0D482AF11EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */; };
 		0D482AF21EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */; };
@@ -121,12 +117,10 @@
 		0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextFontManager.m; sourceTree = "<group>"; };
 		0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextAttributeManager.h; sourceTree = "<group>"; };
 		0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextAttributeManager.m; sourceTree = "<group>"; };
-		0D4135F11EC81CD700BF9E5B /* CSFMarkdownLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFMarkdownLineParser.h; sourceTree = "<group>"; };
-		0D4135F21EC81CD700BF9E5B /* CSFMarkdownLineParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFMarkdownLineParser.m; sourceTree = "<group>"; };
-		0D4135F71EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFMarkdownParagraphParser.h; sourceTree = "<group>"; };
-		0D4135F81EC81CF300BF9E5B /* CSFMarkdownParagraphParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFMarkdownParagraphParser.m; sourceTree = "<group>"; };
-		0D4135FD1EC81D1500BF9E5B /* CSFMarkdownFullParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFMarkdownFullParser.h; sourceTree = "<group>"; };
-		0D4135FE1EC81D1500BF9E5B /* CSFMarkdownFullParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFMarkdownFullParser.m; sourceTree = "<group>"; };
+		0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFFeedbackGeneratorManager.h; sourceTree = "<group>"; };
+		0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFFeedbackGeneratorManager.m; sourceTree = "<group>"; };
+		0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFMarkdownParserManager.h; sourceTree = "<group>"; };
+		0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFMarkdownParserManager.m; sourceTree = "<group>"; };
 		0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextLayoutManager.h; sourceTree = "<group>"; };
 		0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextLayoutManager.m; sourceTree = "<group>"; };
 		0D482AF41EC6BC1A0035B7D3 /* CSFEditorTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextContainer.h; sourceTree = "<group>"; };
@@ -255,12 +249,8 @@
 			children = (
 				0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */,
 				0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */,
-				0D4135F11EC81CD700BF9E5B /* CSFMarkdownLineParser.h */,
-				0D4135F21EC81CD700BF9E5B /* CSFMarkdownLineParser.m */,
-				0D4135F71EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h */,
-				0D4135F81EC81CF300BF9E5B /* CSFMarkdownParagraphParser.m */,
-				0D4135FD1EC81D1500BF9E5B /* CSFMarkdownFullParser.h */,
-				0D4135FE1EC81D1500BF9E5B /* CSFMarkdownFullParser.m */,
+				0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */,
+				0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */,
 				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
 				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
 				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
@@ -279,6 +269,8 @@
 				0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */,
 				0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */,
 				0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */,
+				0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */,
+				0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -449,7 +441,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4135F91EC81CF300BF9E5B /* CSFMarkdownParagraphParser.h in Headers */,
 				0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DA94CBD1EC563A100D597E1 /* CSFEditorTextView.h in Headers */,
 				0D4135DF1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */,
@@ -457,18 +448,18 @@
 				0D482AF01EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */,
 				0D339FC61EC3135100414267 /* CSFDeviceCapabilityManager.h in Headers */,
 				0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0D41361E1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */,
 				0D4135ED1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */,
 				0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
-				0D4135F31EC81CD700BF9E5B /* CSFMarkdownLineParser.h in Headers */,
 				0D0523DE1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
 				0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C701EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
 				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D4136181EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */,
 				0D0523D81EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */,
 				0D482AF61EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */,
 				0D516C7A1EC06489007AAB05 /* CSFiCloudFileExtensionCetaceaUIDocument.h in Headers */,
-				0D4135FF1EC81D1500BF9E5B /* CSFMarkdownFullParser.h in Headers */,
 				0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,21 +473,20 @@
 				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
 				0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
 				0DA94CBE1EC563A100D597E1 /* CSFEditorTextView.h in Headers */,
-				0D4135F41EC81CD700BF9E5B /* CSFMarkdownLineParser.h in Headers */,
 				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
 				0D4135E01EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */,
 				0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C761EC0646F007AAB05 /* CSFiCloudFileExtensionCetaceaNSDocument.h in Headers */,
 				0D516C711EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
+				0D41361F1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */,
 				0D0523DF1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
-				0D4136001EC81D1500BF9E5B /* CSFMarkdownFullParser.h in Headers */,
 				0D482AF71EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */,
 				0D4135EE1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */,
-				0D4135FA1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.h in Headers */,
 				0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */,
 				0D0523D91EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */,
 				0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
 				0D482AF11EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */,
+				0D4136191EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,9 +743,8 @@
 				0D482AF21EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */,
 				0D516C721EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
-				0D4135F51EC81CD700BF9E5B /* CSFMarkdownLineParser.m in Sources */,
+				0D4136201EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
 				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
-				0D4136011EC81D1500BF9E5B /* CSFMarkdownFullParser.m in Sources */,
 				0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0DA94CB91EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
 				0D0523DA1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */,
@@ -768,7 +757,7 @@
 				0D482AF81EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */,
 				0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */,
 				0D4135E11EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */,
-				0D4135FB1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.m in Sources */,
+				0D41361A1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,9 +768,8 @@
 				0D482AF31EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */,
 				0D516C771EC0646F007AAB05 /* CSFiCloudFileExtensionCetaceaNSDocument.m in Sources */,
 				0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
-				0D4135F61EC81CD700BF9E5B /* CSFMarkdownLineParser.m in Sources */,
+				0D4136211EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
 				0D516C731EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
-				0D4136021EC81D1500BF9E5B /* CSFMarkdownFullParser.m in Sources */,
 				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
 				0DA94CBA1EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
 				0D0523DB1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */,
@@ -794,7 +782,7 @@
 				0D482AF91EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */,
 				0D7F31C31EBC578700D29651 /* CSFiCloudSyncManager.m in Sources */,
 				0D4135E21EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */,
-				0D4135FC1EC81CF400BF9E5B /* CSFMarkdownParagraphParser.m in Sources */,
+				0D41361B1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

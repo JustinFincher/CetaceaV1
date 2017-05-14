@@ -20,7 +20,6 @@
 
 @property (nonatomic,strong) id<UIViewControllerPreviewing> previewingContext;
 
-@property (nonatomic,strong) UISelectionFeedbackGenerator* feedbackGenerator;
 @end
 
 @implementation JZMainMarkdownListTableViewController
@@ -44,8 +43,8 @@
     {
         self.previewingContext = [self registerForPreviewingWithDelegate:self sourceView:self.tableView];
     }
-    self.feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
-    [self.feedbackGenerator prepare];
+//    self.feedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
+//    [self.feedbackGenerator prepare];
 
     self.searchBar.delegate = self;
 }
@@ -147,9 +146,8 @@
 {
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
-    cell.titleLabel.text = doc.title;
-    cell.contentTextView.text = doc.markdownString;
-    cell.lastChangeTimeLabel.text = doc.lastChangeDate.timeAgoSinceNow;
+    cell.doc = doc;
+    
     return cell;
 }
 
@@ -187,7 +185,7 @@
     if (doc)
     {
 
-        [self.feedbackGenerator selectionChanged];
+        [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
         [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:doc];
     }
 }
@@ -214,6 +212,8 @@
     naviVC.popoverPresentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
     naviVC.preferredContentSize = CGSizeMake(windowSize.width > 360 ? 360 : windowSize.width, windowSize.height);
     [self presentViewController:naviVC animated:YES completion:nil];
+    [[[CSFFeedbackGeneratorManager sharedManager] impactFeedbackGenerator] impactOccurred];
+    
 }
 #pragma mark - UIAdaptivePresentationControllerDelegate
 - (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller
@@ -264,7 +264,7 @@
 #pragma mark - UISearchBarDelegate
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
-    [self.feedbackGenerator selectionChanged];
+    [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
     return YES;
 }
 @end

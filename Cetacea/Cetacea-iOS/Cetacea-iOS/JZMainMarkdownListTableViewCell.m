@@ -8,9 +8,11 @@
 
 #import "JZMainMarkdownListTableViewCell.h"
 #import "UIFontDescriptor+Avenir.h"
+
 @interface JZMainMarkdownListTableViewCell()
 @property (nonatomic,strong) UIViewPropertyAnimator *animator;
 @end
+
 @implementation JZMainMarkdownListTableViewCell
 
 - (void)awakeFromNib {
@@ -23,7 +25,33 @@
     self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.1 curve:UIViewAnimationCurveEaseIn animations:^(void)
                      {}];
 }
-
+- (void)setDoc:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc
+{
+    _doc = doc;
+    if (doc)
+    {
+        self.titleLabel.text = doc.title;
+        self.contentTextView.text = doc.markdownString;
+        self.lastChangeTimeLabel.text = doc.lastChangeDate.timeAgoSinceNow;
+        
+        if (doc.isDownloading)
+        {
+            self.syncIndicatorImageView.image = [UIImage imageNamed:@"icon_ios_download"];
+        }else if (doc.isDownloading)
+        {
+            self.syncIndicatorImageView.image = [UIImage imageNamed:@"icon_ios_upload"];
+        }else
+        {
+            self.syncIndicatorImageView.image = nil;
+        }
+    }else
+    {
+        self.titleLabel.text = @"Loading";
+        self.contentTextView.text = @"Loading";
+        self.lastChangeTimeLabel.text = @"";
+    }
+    
+}
 - (void)contentSizeCategoryDidChange:(NSNotification *)notif
 {
     [self applyStyles];
@@ -55,12 +83,14 @@
                              self.titleLabel.textColor = [UIColor whiteColor];
                              self.lastChangeTimeLabel.textColor = [UIColor whiteColor];
                              self.contentTextView.textColor = [UIColor whiteColor];
+                             self.syncIndicatorImageView.tintColor = [UIColor whiteColor];
                          }else
                          {
                              self.contentView.backgroundColor = [UIColor clearColor];
                              self.titleLabel.textColor = [UIColor blackColor];
                              self.lastChangeTimeLabel.textColor = [UIColor lightGrayColor];
                              self.contentTextView.textColor = [UIColor darkGrayColor];
+                             self.syncIndicatorImageView.tintColor = UIColorFromRGB(0x007AFF);
                          }
                      }];
     [self.animator startAnimation];
@@ -81,12 +111,14 @@
                              self.titleLabel.textColor = [UIColor blackColor];
                              self.lastChangeTimeLabel.textColor = [UIColor lightGrayColor];
                              self.contentTextView.textColor = [UIColor darkGrayColor];
+                             self.syncIndicatorImageView.tintColor = [UIColor whiteColor];
                          }else
                          {
                              self.contentView.backgroundColor = [UIColor clearColor];
                              self.titleLabel.textColor = [UIColor blackColor];
                              self.lastChangeTimeLabel.textColor = [UIColor lightGrayColor];
                              self.contentTextView.textColor = [UIColor darkGrayColor];
+                             self.syncIndicatorImageView.tintColor = UIColorFromRGB(0x007AFF);
                          }
                      }];
     [self.animator startAnimation];
