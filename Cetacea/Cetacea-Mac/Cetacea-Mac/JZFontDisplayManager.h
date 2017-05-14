@@ -37,7 +37,6 @@
 #pragma mark - Font
 
 - (NSFont *)getHeaderFont;
-
 - (NSFont *)getBoldFont;
 - (NSFont *)getItalicFont;
 - (NSFont *)getMonospacedFont;

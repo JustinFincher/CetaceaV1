@@ -42,7 +42,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1.1</string>
 	<key>CFBundleVersion</key>
-	<string>824</string>
+	<string>849</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -74,6 +74,14 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.JustZht.Cetacea.ActivityType.EditingDocument</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FiraCode-Bold.ttf</string>
+		<string>FiraCode-Light.ttf</string>
+		<string>FiraCode-Medium.ttf</string>
+		<string>FiraCode-Regular.ttf</string>
+		<string>FiraCode-Retina.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

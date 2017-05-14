@@ -25,20 +25,15 @@
  */
 + (id)sharedManager;
 
-/**
- *  get user set base-font
- *
- *  @return NSFont user set base font
- */
-- (CSFFont *)getFont;
-- (NSString *)getFontFamilyName;
-- (CGFloat)getFontSize;
+#pragma mark Font Helpers
+- (NSArray *)getAllFontInApp;
 
-/**
- *  set the base font
- *
- *  @param font CSFFont to set as base font
- */
-- (void)setFont:(CSFFont *)font;
+#pragma mark - Editor Base Font
+- (NSString *)getEditorBaseFontFamilyName;
+- (CGFloat)getEditorBaseFontSize;
+- (void)setEditorBaseFont:(CSFFont *)font;
+
+- (CSFFont *)getEditorBaseFont;
+- (CSFFont *)getEditorMonospacedFont;
 
 @end

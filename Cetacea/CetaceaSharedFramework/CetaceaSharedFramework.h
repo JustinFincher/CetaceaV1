@@ -26,6 +26,7 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import <CetaceaSharedFramework/CSFEditorTextView.h>
 #import <CetaceaSharedFramework/CSFEditorTextLayoutManager.h>
 #import <CetaceaSharedFramework/CSFEditorTextRulerView.h>
+#import <CetaceaSharedFramework/CSFEditorTextFontManager.h>
 
 #if TARGET_OS_IOS
 #import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaUIDocument.h>

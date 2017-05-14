@@ -171,6 +171,7 @@
 		026AC4C4E930A737A77BD669 /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		02AE5C674715F36984BCE1F3 /* Pods-WatchKitApp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchKitApp Extension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.release.xcconfig"; sourceTree = "<group>"; };
 		0446A18DAC2D45096982F8E1 /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
+		059B307780C6FBEB8F3C8978 /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		07C24322C1A37EF0D138EA05 /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		0A46CE3A7F52C783C84CDBB2 /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
 		0B5AC8B8BA458366526EE75A /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -210,6 +211,10 @@
 		0D4135E81EC8083F00BF9E5B /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Medium.ttf"; sourceTree = "<group>"; };
 		0D4135E91EC8083F00BF9E5B /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Regular.ttf"; sourceTree = "<group>"; };
 		0D4135EA1EC8083F00BF9E5B /* FiraCode-Retina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraCode-Retina.ttf"; sourceTree = "<group>"; };
+		0D4136031EC8682A00BF9E5B /* Monoid-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monoid-Bold.ttf"; sourceTree = "<group>"; };
+		0D4136041EC8682A00BF9E5B /* Monoid-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monoid-Italic.ttf"; sourceTree = "<group>"; };
+		0D4136051EC8682A00BF9E5B /* Monoid-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monoid-Regular.ttf"; sourceTree = "<group>"; };
+		0D4136061EC8682A00BF9E5B /* Monoid-Retina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Monoid-Retina.ttf"; sourceTree = "<group>"; };
 		0D56691F1EB514F1000C3E39 /* Cetacea-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cetacea-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5669231EB514F1000C3E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D5669251EB514F1000C3E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -386,6 +391,7 @@
 		C63323AEC6AAE6930D4624E1 /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
 		C69FD4774122B632EEF45E6C /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		CA9D825BC02EABC723E18F3E /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		CAD2768A88C7BC8CBD71B66A /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
 		CAF1AACFEFF9E63AD6AB21F8 /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
 		CE1BCA656AF2402A8D3C6C9B /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		CFA53E990352AFE8A65E40EC /* libPods-WatchKitApp Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatchKitApp Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +402,7 @@
 		D7890126688BA33AA992DE4B /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		D837A039D40B5B234DEA27FB /* Pods-Cetacea-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		D8CAE05CE10B60840C6465FB /* Pods-WatchKitApp Extension-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp Extension-settings-metadata.plist"; sourceTree = "<group>"; };
+		DBA44D193B3B9649470C2C28 /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		DE4C3BB144B2C376BC2C7190 /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		DF94222E7C4408DFCDEC37C4 /* Pods-WatchKitApp-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-WatchKitApp-settings-metadata.plist"; sourceTree = "<group>"; };
 		E53C9D2C9ADA5FA846DFD6AE /* Pods-WatchKitApp Extension-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-WatchKitApp Extension-metadata.plist"; path = "../Pods/Pods-WatchKitApp Extension-metadata.plist"; sourceTree = "<group>"; };
@@ -516,6 +523,10 @@
 				0D4135E81EC8083F00BF9E5B /* FiraCode-Medium.ttf */,
 				0D4135E91EC8083F00BF9E5B /* FiraCode-Regular.ttf */,
 				0D4135EA1EC8083F00BF9E5B /* FiraCode-Retina.ttf */,
+				0D4136031EC8682A00BF9E5B /* Monoid-Bold.ttf */,
+				0D4136041EC8682A00BF9E5B /* Monoid-Italic.ttf */,
+				0D4136051EC8682A00BF9E5B /* Monoid-Regular.ttf */,
+				0D4136061EC8682A00BF9E5B /* Monoid-Retina.ttf */,
 			);
 			name = Font;
 			sourceTree = "<group>";
@@ -890,6 +901,9 @@
 				07C24322C1A37EF0D138EA05 /* Pods-Cetacea-iOS-settings-metadata.plist */,
 				AE9F8D94E395F1A484ED8762 /* Pods-WatchKitApp-settings-metadata.plist */,
 				FCE72E8136D2803D41032783 /* Pods-WatchKitApp Extension-settings-metadata.plist */,
+				059B307780C6FBEB8F3C8978 /* Pods-Cetacea-iOS-settings-metadata.plist */,
+				DBA44D193B3B9649470C2C28 /* Pods-WatchKitApp-settings-metadata.plist */,
+				CAD2768A88C7BC8CBD71B66A /* Pods-WatchKitApp Extension-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
