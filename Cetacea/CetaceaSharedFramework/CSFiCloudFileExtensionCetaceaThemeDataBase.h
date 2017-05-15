@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface CSFiCloudFileExtensionCetaceaThemeDataBase : NSObject
+#import "CSFiCloudFileDataBase.h"
+@interface CSFiCloudFileExtensionCetaceaThemeDataBase : CSFiCloudFileDataBase
 
 @end

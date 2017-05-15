@@ -30,8 +30,6 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import <CetaceaSharedFramework/CSFFeedbackGeneratorManager.h>
 
 #if TARGET_OS_IOS
-#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaUIDocument.h>
 #import <CetaceaSharedFramework/TSBaseParser.h>
 #elif TARGET_OS_OSX
-#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaNSDocument.h>
 #endif

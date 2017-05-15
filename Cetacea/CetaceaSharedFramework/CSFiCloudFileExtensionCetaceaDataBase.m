@@ -12,30 +12,15 @@
 #import "CSFGlobalHeader.h"
 
 @implementation CSFiCloudFileExtensionCetaceaDataBase
-
-+ (id)sharedManager {
-    static CSFiCloudFileExtensionCetaceaDataBase *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [[self alloc] init];
-    });
-    return sharedMyManager;
-}
-
-- (id)init {
-    if (self = [super init])
-    {
-    }
-    return self;
-}
-
-- (NSString *)getPrivateDocsDir
+- (NSString *)fileExtensionName
 {
-    NSString *documentsDirectory = [[[CSFiCloudSyncManager sharedManager] ubiquitousDocumentsCetaceaURL] path];
-    return documentsDirectory;
-    
+    return @"cetacea";
 }
-- (NSMutableArray *)loadDocsFromArray:(NSArray *)query
+- (NSString *)fileContainerFolderName
+{
+    return @"Cetacea";
+}
+- (NSMutableArray *)filesFromArray:(NSArray *)query
 {
     NSMutableArray *retval = [NSMutableArray array];
     for (NSMetadataItem *item in query)
@@ -89,104 +74,6 @@
     
     return retval;
 }
-
-- (NSDictionary *)loadDocsFromQuery:(NSMetadataQuery *)query
-                              added:(NSArray *)added
-                            changed:(NSArray *)changed
-                            removed:(NSArray *)removed
-{
-    NSDictionary *dict = [NSDictionary dictionary];
-    NSMutableArray *addedDoc = [NSMutableArray array];
-    NSMutableArray *changedDoc = [NSMutableArray array];
-    NSMutableArray *removedDoc = [NSMutableArray array];
-    
-    JZLog(@"Added Count %lu Removed Count %lu Changed Count %lu",(unsigned long)[added count],(unsigned long)[removed count],(unsigned long)[changed count]);
-    
-    // add
-    for (NSMetadataItem *mdItem in added)
-    {
-        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-    }
-    // remove
-    for (NSMetadataItem *mdItem in removed) {
-        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-    }
-    // change
-    for (NSMetadataItem *mdItem in changed) {
-        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-        // uploading
-        BOOL uploading  = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
-        if (uploading)
-        {
-            NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
-        }
-        // downloading
-        BOOL downloading    = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsDownloadingKey] boolValue];
-        if (downloading) {
-            NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentDownloadedKey];
-        }
-    }
-    return dict;
-}
-- (NSURL *)nextDocURL
-{
-    // Get private docs dir
-    NSString *documentsDirectory = [self getPrivateDocsDir];
-    
-    // Get contents of documents directory
-    NSError *error;
-    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
-    if (files == nil) {
-        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
-        return nil;
-    }
-    
-    // Search for an available name
-    int maxNumber = 0;
-    for (NSString *file in files) {
-        if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
-        {
-            NSString *fileName = [file stringByDeletingPathExtension];
-            maxNumber = MAX(maxNumber, fileName.intValue);
-        }
-    }
-    
-    // Get available name
-    NSString *availableName = [NSString stringWithFormat:@"%d.cetacea", maxNumber+1];
-    
-    NSURL *documentCetaceaURL = [[CSFiCloudSyncManager sharedManager] ubiquitousDocumentsCetaceaURL];
-    return [documentCetaceaURL URLByAppendingPathComponent:availableName];
-}
-
-- (NSString *)nextDocPath {
-    
-    // Get private docs dir
-    NSString *documentsDirectory = [self getPrivateDocsDir];
-    
-    // Get contents of documents directory
-    NSError *error;
-    NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsDirectory error:&error];
-    if (files == nil) {
-        JZLog(@"Error reading contents of documents directory: %@", [error localizedDescription]);
-        return nil;
-    }
-    
-    // Search for an available name
-    int maxNumber = 0;
-    for (NSString *file in files) {
-        if ([file.pathExtension compare:@"cetacea" options:NSCaseInsensitiveSearch] == NSOrderedSame)
-        {
-            NSString *fileName = [file stringByDeletingPathExtension];
-            maxNumber = MAX(maxNumber, fileName.intValue);
-        }
-    }
-    
-    // Get available name
-    NSString *availableName = [NSString stringWithFormat:@"%d.cetacea", maxNumber+1];
-    return [documentsDirectory stringByAppendingPathComponent:availableName];
-    
-}
-
 
 
 @end

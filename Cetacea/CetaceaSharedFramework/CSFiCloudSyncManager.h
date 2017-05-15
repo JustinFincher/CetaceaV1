@@ -12,10 +12,6 @@
 @optional
 
 - (void)iCloudFileUpdated:(NSMutableArray *)list;
-- (void)iCloudFileUpdatedWithQuery:(NSMetadataQuery *)query
-                             Added:(NSArray *)addedItems
-                           Changed:(NSArray *)changedItems
-                           Removed:(NSArray *)removedItems;
 
 @end
 
@@ -30,6 +26,7 @@
 - (NSURL *)ubiquitousDocumentsURL;
 - (NSURL *)ubiquitousDocumentsCetaceaURL;
 - (NSURL *)ubiquitousDocumentsHighlightThemesURL;
+- (void)directoryExistCheck:(NSURL *)url;
 @property (nonatomic, strong) NSMetadataQuery *iCloudFilesMetadataQuery;
 @property (nonatomic, strong) NSMetadataQuery *iCloudCetaceaFilesMetadataQuery;
 @property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery;

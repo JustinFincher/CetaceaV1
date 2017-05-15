@@ -29,7 +29,7 @@
 }
 - (IBAction)saveButtonPressed:(id)sender
 {
-    NSURL *targetURL = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] nextDocURL];
+    NSURL *targetURL = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] nextFileURL];
     NSError *error;
     JZLog(@"importURL %@", [self.importURL path]);
     JZLog(@"targetURL %@", [targetURL path]);
