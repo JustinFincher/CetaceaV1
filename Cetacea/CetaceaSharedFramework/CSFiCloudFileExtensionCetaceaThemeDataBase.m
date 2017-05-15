@@ -10,4 +10,13 @@
 
 @implementation CSFiCloudFileExtensionCetaceaThemeDataBase
 
+- (NSString *)fileExtensionName
+{
+    return @"cetaceatheme";
+}
+- (NSString *)fileContainerFolderName
+{
+    return @"Theme";
+}
+
 @end

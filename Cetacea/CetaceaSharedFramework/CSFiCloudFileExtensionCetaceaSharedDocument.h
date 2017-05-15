@@ -10,13 +10,15 @@
 
 #if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
-#define SharedDocument CSFiCloudFileExtensionCetaceaUIDocument
+#define CSFDocument UIDocument
+#define CSFSharedDocument CSFiCloudFileExtensionCetaceaUIDocument
 #elif TARGET_OS_OSX
 #import <AppKit/AppKit.h>
-#define SharedDocument CSFiCloudFileExtensionCetaceaNSDocument
+#define CSFDocument NSDocument
+#define CSFSharedDocument CSFiCloudFileExtensionCetaceaNSDocument
 #endif
 
-@class SharedDocument;
+@class CSFSharedDocument;
 
 @protocol CSFiCloudFileExtensionCetaceaSharedDocumentDelegate <NSObject>
 
@@ -45,7 +47,7 @@
 - (void)updateFileWrappers;
 
 #pragma mark - Property
-@property (nonatomic,strong) SharedDocument *document;
+@property (nonatomic,strong) CSFSharedDocument *document;
 @property (nonatomic,strong) NSFileWrapper *fileWrapper;
 @property (nonatomic,strong) NSURL *url;
 @property (nonatomic,strong) NSString *markdownString;
@@ -64,3 +66,17 @@
 @property (nonatomic) BOOL isDownloaded;
 
 @end
+
+@interface CSFSharedDocument : CSFDocument
+@property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
+#if TARGET_OS_IOS
+- (id)initWithFileURL:(NSURL *)url
+   withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
+#elif TARGET_OS_OSX
+- (id)initWithContentsOfURL:(NSURL *)url
+                     ofType:(NSString *)typeName
+                      error:(NSError * _Nullable *)outError
+         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc;
+#endif
+@end
+

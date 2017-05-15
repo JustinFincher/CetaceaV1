@@ -165,12 +165,10 @@
     
         NSLog(@"iCloudCetaceaFilesMetadataQuery resultCount = %lu", (unsigned long)query.resultCount);
         NSArray *results = [query results];
-        NSMutableArray *freshList = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromArray:results];
-        NSDictionary *keepReferencelistDict = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromQuery:query added:addedItems changed:changedItems removed:removedItems];
+        NSMutableArray *freshList = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] filesFromArray:results];
         
         id<CSFiCloudSyncDelegate> strongDelegate = self.delegate;
         [strongDelegate iCloudFileUpdated:freshList];
-//        [strongDelegate iCloudFileUpdatedWithQuery:query Added:addedItems Changed:changedItems Removed:removedItems];
         
         results = nil;
         

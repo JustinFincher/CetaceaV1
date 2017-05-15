@@ -9,12 +9,6 @@
 #import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
 #import "CSFGlobalHeader.h"
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
-#if TARGET_OS_IOS
-#import "CSFiCloudFileExtensionCetaceaUIDocument.h"
-#elif TARGET_OS_OSX
-#import "CSFiCloudFileExtensionCetaceaNSDocument.h"
-#endif
-
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @interface CSFiCloudFileExtensionCetaceaSharedDocument ()
@@ -59,11 +53,11 @@
         
         NSError *err;
 #if TARGET_OS_IOS
-        self.document = [[SharedDocument alloc] initWithFileURL:url withSharedDocument:self];
+        self.document = [[CSFSharedDocument alloc] initWithFileURL:url withSharedDocument:self];
         [self.document loadFromContents:self.fileWrapper ofType:@"cetacea" error:&err];
         
 #elif TARGET_OS_OSX
-        self.document = [[SharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
+        self.document = [[CSFSharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
         [self.document readFromFileWrapper:self.fileWrapper ofType:@"cetacea" error:&err];
 #endif
         if (err)
@@ -119,7 +113,7 @@
 #pragma mark - File Task
 + (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument
 {
-    NSString *docPath = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] nextDocPath];
+    NSString *docPath = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] nextFilePath];
     NSURL *url = [[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES];
     CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
     
@@ -178,4 +172,132 @@
     }
     return NO;
 }
+@end
+
+
+
+@implementation CSFSharedDocument
+
+#if TARGET_OS_IOS
+- (id)initWithFileURL:(NSURL *)url withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc
+{
+    self = [super initWithFileURL:url];
+    if (self)
+    {
+        self.sharedDocument = doc;
+    }
+    return self;
+}
+#elif TARGET_OS_OSX
+- (id)initWithContentsOfURL:(NSURL *)url
+                     ofType:(NSString *)typeName
+                      error:(NSError * _Nullable *)outError
+         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc
+{
+    self = [super initWithContentsOfURL:url ofType:typeName error:outError];
+    if (self)
+    {
+        self.sharedDocument = doc;
+    }
+    return self;
+}
+#endif
+#pragma mark - NSFileWrapper
+#if TARGET_OS_IOS
+- (id)contentsForType:(NSString *)typeName
+                error:(NSError * _Nullable *)outError
+{
+    return self.sharedDocument.fileWrapper;
+}
+#elif TARGET_OS_OSX
+- (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName
+                               error:(NSError * _Nullable __autoreleasing *)outError
+{
+    return self.sharedDocument.fileWrapper;
+}
+#endif
+#pragma mark - Read
+#if TARGET_OS_IOS
+- (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError * _Nullable *)outError
+{
+    self.sharedDocument.fileWrapper = contents;
+    
+    NSFileWrapper *subFileWrapper;
+    NSData *data;
+    
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+    data = [subFileWrapper regularFileContents];
+    NSString *title = [[NSString alloc] initWithData:data
+                                            encoding:NSUTF8StringEncoding];
+    self.sharedDocument.title = title;
+    
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+    data = [subFileWrapper regularFileContents];
+    NSString *markdownString = [[NSString alloc] initWithData:data
+                                                     encoding:NSUTF8StringEncoding];
+    self.sharedDocument.markdownString = markdownString;
+    
+    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+    
+    return YES;
+}
+#elif TARGET_OS_OSX
+- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    self.sharedDocument.fileWrapper = fileWrapper;
+    
+    NSFileWrapper *subFileWrapper;
+    NSData *data;
+    
+    subFileWrapper = [fileWrapper.fileWrappers objectForKey:@"title"];
+    data = [subFileWrapper regularFileContents];
+    self.sharedDocument.title = [[NSString alloc] initWithData:data
+                                                      encoding:NSUTF8StringEncoding];
+    
+    subFileWrapper = [fileWrapper.fileWrappers objectForKey:@"markdownString"];
+    data = [subFileWrapper regularFileContents];
+    self.sharedDocument.markdownString = [[NSString alloc] initWithData:data
+                                                               encoding:NSUTF8StringEncoding];
+    
+    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+    
+    return YES;
+}
+#endif
+#pragma mark - Write
+#if TARGET_OS_IOS
+- (BOOL)writeContents:(id)contents toURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation originalContentsURL:(NSURL *)originalContentsURL error:(NSError * _Nullable *)outError
+{
+    [self.sharedDocument updateFileWrappers];
+    NSError *err;
+    BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:nil error:&err];
+    if (err)
+    {
+        JZLog(@"%@",[err localizedDescription]);
+    }
+    return isSucess;
+}
+#elif TARGET_OS_OSX
+- (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    [self.sharedDocument updateFileWrappers];
+    NSError *err;
+    BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+    if (err)
+    {
+        JZLog(@"%@",[err localizedDescription]);
+    }
+    return isSucess;
+}
+#endif
+#pragma mark - Others
+#if TARGET_OS_IOS
+#elif TARGET_OS_OSX
++ (BOOL)autosavesInPlace
+{
+    return YES;
+}
+#endif
 @end
