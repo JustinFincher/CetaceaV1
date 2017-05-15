@@ -11,6 +11,8 @@
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
+@class CSFCetaceaSharedDocument;
+
 @interface CSFiCloudFileExtensionCetaceaSharedDocument ()
 
 @property (nonatomic,strong) NSNumber *itemPercentDownloaded;
@@ -53,11 +55,11 @@
         
         NSError *err;
 #if TARGET_OS_IOS
-        self.document = [[CSFSharedDocument alloc] initWithFileURL:url withSharedDocument:self];
+        self.document = [[CSFCetaceaSharedDocument alloc] initWithFileURL:url withSharedDocument:self];
         [self.document loadFromContents:self.fileWrapper ofType:@"cetacea" error:&err];
         
 #elif TARGET_OS_OSX
-        self.document = [[CSFSharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
+        self.document = [[CSFCetaceaSharedDocument alloc] initWithContentsOfURL:url ofType:@"cetacea" error:nil withSharedDocument:self];
         [self.document readFromFileWrapper:self.fileWrapper ofType:@"cetacea" error:&err];
 #endif
         if (err)
@@ -176,7 +178,7 @@
 
 
 
-@implementation CSFSharedDocument
+@implementation CSFCetaceaSharedDocument
 
 #if TARGET_OS_IOS
 - (id)initWithFileURL:(NSURL *)url withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc

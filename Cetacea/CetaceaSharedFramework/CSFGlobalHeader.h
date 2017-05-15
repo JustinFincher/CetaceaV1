@@ -20,6 +20,7 @@
 #import <UIKit/UIKit.h>
 #define CSFColor UIColor
 #define CSFRect CGRect
+#define CSFDocument UIDocument
 
 #define UIColorFromRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
@@ -35,6 +36,7 @@ alpha:1.0]
 #import <AppKit/AppKit.h>
 #define CSFColor NSColor
 #define CSFRect NSRect
+#define CSFDocument NSDocument
 
 #endif
 
