@@ -12,7 +12,7 @@
 
 - (void)setup {
 
-    self.stepperContainerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, (self.frame.size.width / 3 < 160.0 ? 160.0 : self.frame.size.width / 3), 100.0f)];
+    self.stepperContainerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, (self.frame.size.width / 3 < 165.0f ? 165.0f : self.frame.size.width / 3), 100.0f)];
     
     self.stepper = [[JZVerticalStepper alloc] initWithFrame:CGRectMake(8,8,self.stepperContainerView.bounds.size.width - 8,self.stepperContainerView.bounds.size.height - 16)];
     self.stepper.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
@@ -27,7 +27,7 @@
     self.stepper.textColor = [UIColor darkGrayColor];
     self.stepper.backgroundColor = [UIColor whiteColor];
     self.stepper.borderColor = [UIColor darkGrayColor];
-    self.stepper.formatString = @"%0.1f pts";
+    self.stepper.formatString = @"%0.1f pt";
     [self.stepper addTarget:self action:@selector(didChangeFontSize:) forControlEvents:UIControlEventValueChanged];
     
 }

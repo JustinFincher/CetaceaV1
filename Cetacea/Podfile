@@ -5,6 +5,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :ios, '10.0'
     project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
     workspace 'Cetacea'
+    pod 'Realm'
     pod 'ReactiveObjC'
     pod 'DateTools'
   end
@@ -14,6 +15,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :osx, '10.12'
     project 'CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj'
     workspace 'Cetacea'
+    pod 'Realm'
     pod 'ReactiveObjC'
     pod 'DateTools'
   end
@@ -30,6 +32,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :ios, '10.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
+    pod 'Realm'
     pod 'IQKeyboardManager'
     pod 'GDPerformanceView', '~> 1.3.1'
     pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
@@ -64,6 +67,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :osx, '10.12'
     project 'Cetacea-Mac/Cetacea-Mac.xcodeproj'
     workspace 'Cetacea'
+    pod 'Realm'
     pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
     pod 'MMMarkdown'

@@ -1,8 +1,8 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools-iOS" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-iOS"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools-iOS" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-iOS" "$PODS_CONFIGURATION_BUILD_DIR/Realm-iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools-iOS/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-iOS/ReactiveObjC.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "DateTools" -framework "ReactiveObjC"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools-iOS/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-iOS/ReactiveObjC.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Realm-iOS/Realm.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "DateTools" -framework "ReactiveObjC" -framework "Realm"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/..

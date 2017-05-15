@@ -241,6 +241,32 @@
     
     // Stroke the path out
     CGContextStrokePath(ctx);
+    
+    // triagnels
+    int sides = 3;
+    CGContextSetFillColorWithColor(ctx, self.borderColor.CGColor);
+    double size = rect.size.height / 6.0;
+    CGPoint center = CGPointMake(rect.size.width - size * 1.5f , rect.size.height / 4.0);
+    double radius = size / 2.0;
+    double theta = 2.0 * M_PI / sides;
+    CGContextMoveToPoint(ctx, center.x, center.y-radius);
+    for (NSUInteger k=1; k<sides; k++) {
+        float x = radius * sin(k * theta);
+        float y = radius * cos(k * theta);
+        CGContextAddLineToPoint(ctx, center.x+x, center.y-y);
+    }
+    CGContextClosePath(ctx);
+    CGContextFillPath(ctx);
+    center = CGPointMake(rect.size.width - size * 1.5f , rect.size.height / 4.0 * 3.0);
+    CGContextMoveToPoint(ctx, center.x, center.y+radius);
+    for (NSUInteger k=1; k<sides; k++)
+    {
+        float x = radius * sin(k * theta + M_PI);
+        float y = radius * cos(k * theta + M_PI);
+        CGContextAddLineToPoint(ctx, center.x+x, center.y-y);
+    }
+    CGContextClosePath(ctx);
+    CGContextFillPath(ctx);
 }
 
 

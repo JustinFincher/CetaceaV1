@@ -35,7 +35,7 @@
     return documentsDirectory;
     
 }
-- (NSMutableArray *)loadDocsFromQuery:(NSArray *)query
+- (NSMutableArray *)loadDocsFromArray:(NSArray *)query
 {
     NSMutableArray *retval = [NSMutableArray array];
     for (NSMetadataItem *item in query)
@@ -88,6 +88,45 @@
     }
     
     return retval;
+}
+
+- (NSDictionary *)loadDocsFromQuery:(NSMetadataQuery *)query
+                              added:(NSArray *)added
+                            changed:(NSArray *)changed
+                            removed:(NSArray *)removed
+{
+    NSDictionary *dict = [NSDictionary dictionary];
+    NSMutableArray *addedDoc = [NSMutableArray array];
+    NSMutableArray *changedDoc = [NSMutableArray array];
+    NSMutableArray *removedDoc = [NSMutableArray array];
+    
+    JZLog(@"Added Count %lu Removed Count %lu Changed Count %lu",(unsigned long)[added count],(unsigned long)[removed count],(unsigned long)[changed count]);
+    
+    // add
+    for (NSMetadataItem *mdItem in added)
+    {
+        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+    }
+    // remove
+    for (NSMetadataItem *mdItem in removed) {
+        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+    }
+    // change
+    for (NSMetadataItem *mdItem in changed) {
+        NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
+        // uploading
+        BOOL uploading  = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
+        if (uploading)
+        {
+            NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
+        }
+        // downloading
+        BOOL downloading    = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsDownloadingKey] boolValue];
+        if (downloading) {
+            NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentDownloadedKey];
+        }
+    }
+    return dict;
 }
 - (NSURL *)nextDocURL
 {

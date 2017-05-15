@@ -38,7 +38,8 @@
 - (void)deleteDocument:(void (^)(BOOL isSuccessful))completed;
 
 #pragma mark - Compare
-- (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object;
+- (BOOL)isEqual:(id)object;
+- (BOOL)scriptingIsEqualTo:(id)object;
 
 #pragma mark - IO
 - (void)updateFileWrappers;
@@ -51,6 +52,8 @@
 @property (nonatomic,strong) NSString *title;
 @property (nonatomic,strong) NSDate *creationDate;
 @property (nonatomic,strong) NSDate *lastChangeDate;
+
+@property (nonatomic,strong) NSArray *tags;
 
 
 @property (nonatomic,weak) NSMetadataItem *metaDataItem;

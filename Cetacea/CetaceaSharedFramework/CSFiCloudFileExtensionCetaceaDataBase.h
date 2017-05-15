@@ -12,8 +12,11 @@
 
 + (id)sharedManager;
 
-//- (NSMutableArray *)loadDocs;
-- (NSMutableArray *)loadDocsFromQuery:(NSArray *)query;
+- (NSMutableArray *)loadDocsFromArray:(NSArray *)query;
+- (NSDictionary *)loadDocsFromQuery:(NSMetadataQuery *)query
+                              added:(NSArray *)added
+                            changed:(NSArray *)changed
+                            removed:(NSArray *)removed;
 - (NSString *)nextDocPath;
 - (NSURL *)nextDocURL;
 
