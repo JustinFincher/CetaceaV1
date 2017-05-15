@@ -7,18 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CSFGlobalHeader.h"
 
 #if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
-#define CSFDocument UIDocument
-#define CSFSharedDocument CSFiCloudFileExtensionCetaceaUIDocument
+#define CSFCetaceaSharedDocument CSFiCloudFileExtensionCetaceaUIDocument
 #elif TARGET_OS_OSX
 #import <AppKit/AppKit.h>
-#define CSFDocument NSDocument
-#define CSFSharedDocument CSFiCloudFileExtensionCetaceaNSDocument
+#define CSFCetaceaSharedDocument CSFiCloudFileExtensionCetaceaNSDocument
 #endif
 
-@class CSFSharedDocument;
+@class CSFiCloudFileExtensionCetaceaSharedDocument;
+
+@interface CSFCetaceaSharedDocument : CSFDocument
+@property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
+#if TARGET_OS_IOS
+- (id)initWithFileURL:(NSURL *)url
+   withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
+#elif TARGET_OS_OSX
+- (id)initWithContentsOfURL:(NSURL *)url
+                     ofType:(NSString *)typeName
+                      error:(NSError * _Nullable *)outError
+         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc;
+#endif
+@end
 
 @protocol CSFiCloudFileExtensionCetaceaSharedDocumentDelegate <NSObject>
 
@@ -47,7 +59,7 @@
 - (void)updateFileWrappers;
 
 #pragma mark - Property
-@property (nonatomic,strong) CSFSharedDocument *document;
+@property (nonatomic,strong) CSFCetaceaSharedDocument *document;
 @property (nonatomic,strong) NSFileWrapper *fileWrapper;
 @property (nonatomic,strong) NSURL *url;
 @property (nonatomic,strong) NSString *markdownString;
@@ -67,16 +79,4 @@
 
 @end
 
-@interface CSFSharedDocument : CSFDocument
-@property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
-#if TARGET_OS_IOS
-- (id)initWithFileURL:(NSURL *)url
-   withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
-#elif TARGET_OS_OSX
-- (id)initWithContentsOfURL:(NSURL *)url
-                     ofType:(NSString *)typeName
-                      error:(NSError * _Nullable *)outError
-         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc;
-#endif
-@end
 
