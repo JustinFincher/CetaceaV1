@@ -12,6 +12,10 @@
 @optional
 
 - (void)iCloudFileUpdated:(NSMutableArray *)list;
+- (void)iCloudFileUpdatedWithQuery:(NSMetadataQuery *)query
+                             Added:(NSArray *)addedItems
+                           Changed:(NSArray *)changedItems
+                           Removed:(NSArray *)removedItems;
 
 @end
 

@@ -14,6 +14,7 @@
 
 @interface JZMainMarkdownListTableViewController ()<CSFiCloudSyncDelegate,UISearchBarDelegate,UIPopoverPresentationControllerDelegate,UIViewControllerPreviewingDelegate,UISearchBarDelegate>
 
+@property (nonatomic,strong) NSMutableArray *rawMarkdownArray;
 @property (nonatomic,strong) NSMutableArray *markdownArray;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *applicationSettingsButton;
@@ -102,6 +103,49 @@
 #pragma mark - CSFiCloudSyncDelegate
 - (void)iCloudFileUpdated:(NSMutableArray *)list
 {
+    //first sort array
+    
+    
+    //end sort
+    
+//    self.rawMarkdownArray = list;
+//    
+//    NSMutableArray *markdownArrayToBeAdded = [NSMutableArray arrayWithArray:self.rawMarkdownArray];
+//    [markdownArrayToBeAdded removeObjectsInArray:self.markdownArray];
+//    NSMutableArray *markdownArrayToBeRemoved = [NSMutableArray arrayWithArray:self.markdownArray];
+//    [markdownArrayToBeRemoved removeObjectsInArray:self.rawMarkdownArray];
+//    NSMutableArray *markdownArrayAfterRemoved = [NSMutableArray arrayWithArray:self.markdownArray];
+//    [markdownArrayAfterRemoved removeObjectsInArray:markdownArrayToBeRemoved];
+//    
+//    [self.tableView beginUpdates];
+//    NSMutableArray *removedIndexPaths = [NSMutableArray array];
+//    self.markdownArray = markdownArrayAfterRemoved;
+//    for (CSFiCloudFileExtensionCetaceaSharedDocument *doc in markdownArrayToBeRemoved)
+//    {
+//        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.markdownArray indexOfObject:doc] inSection:0];
+//        [removedIndexPaths addObject:path];
+//    }
+//    [self.tableView deleteRowsAtIndexPaths:removedIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+//
+//    NSMutableArray *addedIndexPaths = [NSMutableArray array];
+//    self.markdownArray = list;
+//    for (CSFiCloudFileExtensionCetaceaSharedDocument *doc in self.rawMarkdownArray)
+//    {
+//        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.rawMarkdownArray indexOfObject:doc] inSection:0];
+//        [addedIndexPaths addObject:path];
+//    }
+//    
+//    if (self.markdownArray.count == 0)
+//    {
+//        [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    }else
+//    {
+//        [self.tableView insertSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationAutomatic];
+//    }
+//    
+//    [self.tableView insertRowsAtIndexPaths:addedIndexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+//    [self.tableView endUpdates];
+    
     self.markdownArray = list;
     [self.tableView reloadData];
 }

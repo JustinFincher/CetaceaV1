@@ -116,7 +116,7 @@
 }
 - (NSURL *)ubiquitousDocumentsHighlightThemesURL
 {
-    NSURL *url = [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"HighLightThemes" isDirectory:YES];
+    NSURL *url = [[self ubiquitousDocumentsURL] URLByAppendingPathComponent:@"Theme" isDirectory:YES];
     [self directoryExistCheck:url];
     return url;
 }
@@ -162,45 +162,20 @@
         NSArray *addedItems     = notification.userInfo[NSMetadataQueryUpdateAddedItemsKey];
         NSArray *removedItems       = notification.userInfo[NSMetadataQueryUpdateRemovedItemsKey];
         NSArray *changedItems   = notification.userInfo[NSMetadataQueryUpdateChangedItemsKey];
-        JZLog(@"Added Count %lu Removed Count %lu Changed Count %lu",(unsigned long)[addedItems count],(unsigned long)[removedItems count],(unsigned long)[changedItems count]);
-        
-        // add
-        for (NSMetadataItem *mdItem in addedItems)
-        {
-            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-        }
-        // remove
-        for (NSMetadataItem *mdItem in removedItems) {
-            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-        }
-        // change
-        for (NSMetadataItem *mdItem in changedItems) {
-            NSURL *url          = [mdItem valueForKey:NSMetadataUbiquitousItemURLInLocalContainerKey];
-            // uploading
-            BOOL uploading  = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsUploadingKey] boolValue];
-            if (uploading)
-            {
-                NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentUploadedKey];
-                // do something...
-            }
-            // downloading
-            BOOL downloading    = [(NSNumber *)[mdItem valueForKey:NSMetadataUbiquitousItemIsDownloadingKey] boolValue];
-            if (downloading) {
-                NSNumber *percent   = [mdItem valueForKey:NSMetadataUbiquitousItemPercentDownloadedKey];
-                // do something...
-            }
-        }
     
         NSLog(@"iCloudCetaceaFilesMetadataQuery resultCount = %lu", (unsigned long)query.resultCount);
         NSArray *results = [query results];
-        NSMutableArray *list = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromQuery:results];
-        results = nil;
+        NSMutableArray *freshList = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromArray:results];
+        NSDictionary *keepReferencelistDict = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] loadDocsFromQuery:query added:addedItems changed:changedItems removed:removedItems];
         
         id<CSFiCloudSyncDelegate> strongDelegate = self.delegate;
-        [strongDelegate iCloudFileUpdated:list];
+        [strongDelegate iCloudFileUpdated:freshList];
+//        [strongDelegate iCloudFileUpdatedWithQuery:query Added:addedItems Changed:changedItems Removed:removedItems];
+        
+        results = nil;
         
         [query enableUpdates];
-        if ([query isStarted]){[query startQuery];}
+        if (![query isStarted]){[query startQuery];}
     }
 }
 @end

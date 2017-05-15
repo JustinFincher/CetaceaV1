@@ -23,6 +23,9 @@ PODS:
   - MMMarkdown (0.5.5)
   - PeerTalk (0.0.2)
   - ReactiveObjC (3.0.0)
+  - Realm (2.7.0):
+    - Realm/Headers (= 2.7.0)
+  - Realm/Headers (2.7.0)
   - SDVersion (4.0.2)
   - SyntaxKit (1.0)
 
@@ -38,6 +41,7 @@ DEPENDENCIES:
   - MMMarkdown
   - PeerTalk (from `https://github.com/rsms/peertalk.git`)
   - ReactiveObjC
+  - Realm
   - SDVersion
   - SyntaxKit (from `https://github.com/SecondRenaissance/SyntaxKit.git`)
 
@@ -72,9 +76,10 @@ SPEC CHECKSUMS:
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   PeerTalk: f5389c286e4d477e59b73dfbf25c5c70a2464761
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
   SDVersion: 7b472a749907c29fcba04dadb8ecb4eb9a9aeeab
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: 7d42cda2316e9e3ca1f370eb3e131081993c8223
+PODFILE CHECKSUM: 750a20ad7b91b028c28fe3c6d305fb6a4e377e1a
 
 COCOAPODS: 1.2.1

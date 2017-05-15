@@ -11,4 +11,8 @@
 
 @interface CSFMarkdownParserManager : NSObject
 
+@property (nonatomic,strong) TSBaseParser *lineParser;
+@property (nonatomic,strong) TSBaseParser *paragraphParser;
+@property (nonatomic,strong) TSBaseParser *fullParser;
+
 @end

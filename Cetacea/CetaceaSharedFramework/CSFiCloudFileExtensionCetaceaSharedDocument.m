@@ -79,6 +79,7 @@
 {
     [self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];
     [self updateFileWrappersByPreferredFileName:@"markdownString" Contents:[self.markdownString dataUsingEncoding:NSUTF8StringEncoding]];
+    [self updateFileWrappersByPreferredFileName:@"tags" Contents:[NSJSONSerialization dataWithJSONObject:self.tags options:NSJSONWritingPrettyPrinted error:nil]];
 }
 - (void)updateFileWrappersByPreferredFileName:(NSString *)fileName
                                      Contents:(NSData *)data
@@ -105,9 +106,14 @@
     return [self.metaDataItem valueForAttribute:NSMetadataUbiquitousItemPercentDownloadedKey];
 }
 #pragma mark - Compare
-- (BOOL)isEqual:(CSFiCloudFileExtensionCetaceaSharedDocument*)object
+- (BOOL)isEqual:(id)object
 {
-    BOOL isEqual = [[[object url] path] isEqualToString:[[self url] path]];
+    BOOL isEqual = [[[(CSFiCloudFileExtensionCetaceaSharedDocument *)object url] path] isEqualToString:[[self url] path]];
+    return isEqual;
+}
+- (BOOL)scriptingIsEqualTo:(id)object
+{
+    BOOL isEqual = [[[(CSFiCloudFileExtensionCetaceaSharedDocument *)object url] path] isEqualToString:[[self url] path]];
     return isEqual;
 }
 #pragma mark - File Task
