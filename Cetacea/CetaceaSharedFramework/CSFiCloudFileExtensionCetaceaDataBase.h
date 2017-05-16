@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "CSFiCloudFileDataBase.h"
+
+
+/**
+ DataBase For iCloudFileExtensionCetacea (.cetacea) file.
+ */
 @interface CSFiCloudFileExtensionCetaceaDataBase : CSFiCloudFileDataBase
 
 @end

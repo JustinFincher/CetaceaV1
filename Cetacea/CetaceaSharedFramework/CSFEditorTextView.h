@@ -18,6 +18,10 @@
 
 #import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
 
+
+/**
+ CSF EdiorTextView (UITextView / NSTextView)
+ */
 @interface CSFEditorTextView : EditorTextViewClass
 
 @property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument *currentEditingDocument;

@@ -66,7 +66,7 @@
         {
             JZLog(@"%@",[err localizedDescription]);
         }
-
+        
     }
     return self;
 }
@@ -208,98 +208,66 @@
 #if TARGET_OS_IOS
 - (id)contentsForType:(NSString *)typeName
                 error:(NSError * _Nullable *)outError
-{
-    return self.sharedDocument.fileWrapper;
-}
 #elif TARGET_OS_OSX
 - (NSFileWrapper *)fileWrapperOfType:(NSString *)typeName
                                error:(NSError * _Nullable __autoreleasing *)outError
+#endif
 {
     return self.sharedDocument.fileWrapper;
 }
-#endif
 #pragma mark - Read
 #if TARGET_OS_IOS
 - (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError * _Nullable *)outError
 {
     self.sharedDocument.fileWrapper = contents;
-    
-    NSFileWrapper *subFileWrapper;
-    NSData *data;
-    
-    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
-    data = [subFileWrapper regularFileContents];
-    NSString *title = [[NSString alloc] initWithData:data
-                                            encoding:NSUTF8StringEncoding];
-    self.sharedDocument.title = title;
-    
-    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
-    data = [subFileWrapper regularFileContents];
-    NSString *markdownString = [[NSString alloc] initWithData:data
-                                                     encoding:NSUTF8StringEncoding];
-    self.sharedDocument.markdownString = markdownString;
-    
-    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
-    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
-    
-    return YES;
-}
 #elif TARGET_OS_OSX
-- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
-{
-    self.sharedDocument.fileWrapper = fileWrapper;
-    
-    NSFileWrapper *subFileWrapper;
-    NSData *data;
-    
-    subFileWrapper = [fileWrapper.fileWrappers objectForKey:@"title"];
-    data = [subFileWrapper regularFileContents];
-    self.sharedDocument.title = [[NSString alloc] initWithData:data
-                                                      encoding:NSUTF8StringEncoding];
-    
-    subFileWrapper = [fileWrapper.fileWrappers objectForKey:@"markdownString"];
-    data = [subFileWrapper regularFileContents];
-    self.sharedDocument.markdownString = [[NSString alloc] initWithData:data
-                                                               encoding:NSUTF8StringEncoding];
-    
-    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
-    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
-    
-    return YES;
-}
+    - (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+    {
+        self.sharedDocument.fileWrapper = fileWrapper;
 #endif
+        NSFileWrapper *subFileWrapper;
+        NSData *data;
+        
+        subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+        data = [subFileWrapper regularFileContents];
+        NSString *title = [[NSString alloc] initWithData:data
+                                                encoding:NSUTF8StringEncoding];
+        self.sharedDocument.title = title;
+        
+        subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+        data = [subFileWrapper regularFileContents];
+        NSString *markdownString = [[NSString alloc] initWithData:data
+                                                         encoding:NSUTF8StringEncoding];
+        self.sharedDocument.markdownString = markdownString;
+        
+        self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+        self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+        
+        return YES;
+    }
 #pragma mark - Write
 #if TARGET_OS_IOS
-- (BOOL)writeContents:(id)contents toURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation originalContentsURL:(NSURL *)originalContentsURL error:(NSError * _Nullable *)outError
-{
-    [self.sharedDocument updateFileWrappers];
-    NSError *err;
-    BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:nil error:&err];
-    if (err)
-    {
-        JZLog(@"%@",[err localizedDescription]);
-    }
-    return isSucess;
-}
+    - (BOOL)writeContents:(id)contents toURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation originalContentsURL:(NSURL *)originalContentsURL error:(NSError * _Nullable *)outError
 #elif TARGET_OS_OSX
-- (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
-{
-    [self.sharedDocument updateFileWrappers];
-    NSError *err;
-    BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
-    if (err)
-    {
-        JZLog(@"%@",[err localizedDescription]);
-    }
-    return isSucess;
-}
+    - (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
 #endif
+    {
+        [self.sharedDocument updateFileWrappers];
+        NSError *err;
+        BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:nil error:&err];
+        if (err)
+        {
+            JZLog(@"%@",[err localizedDescription]);
+        }
+        return isSucess;
+    }
+    
 #pragma mark - Others
 #if TARGET_OS_IOS
 #elif TARGET_OS_OSX
-+ (BOOL)autosavesInPlace
-{
-    return YES;
-}
+    + (BOOL)autosavesInPlace
+    {
+        return YES;
+    }
 #endif
-@end
+    @end

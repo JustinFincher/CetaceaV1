@@ -18,5 +18,6 @@
 @property (nonatomic,strong) JZEditorMarkdownTextParserWithTSBaseParser *parser;
 
 - (void)refreshHightLight;
+- (void)setupTextView;
 
 @end

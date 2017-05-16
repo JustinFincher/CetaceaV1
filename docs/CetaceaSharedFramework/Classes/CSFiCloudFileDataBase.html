@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSFiCloudFileDataBase Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/CSFiCloudFileDataBase" class="dashAnchor"></a>
+    <a title="CSFiCloudFileDataBase Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (19% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CetaceaSharedFramework Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CSFiCloudFileDataBase Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFColorStorage.html">CSFColorStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFConstants">CSFConstants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFDeviceCapabilityManager.html">CSFDeviceCapabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFEditorTextFontManager.html">CSFEditorTextFontManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFEditorTextLayoutManager">CSFEditorTextLayoutManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFEditorTextRulerView">CSFEditorTextRulerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFEditorTextView.html">CSFEditorTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFFeedbackGeneratorManager.html">CSFFeedbackGeneratorManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFInitialProcessManager.html">CSFInitialProcessManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFSingletonRegister.html">CSFSingletonRegister</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileDataBase.html">CSFiCloudFileDataBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionNumber">CetaceaSharedFrameworkVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CSFiCloudFileExtensionCetaceaSharedDocumentDelegate.html">CSFiCloudFileExtensionCetaceaSharedDocumentDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CSFiCloudFileDataBase</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileDataBase</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>DataBase Base Class for All iCloud Based Files.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Singleton"></a>
+                <a name="//apple_ref/objc/Section/Singleton" class="dashAnchor"></a>
+                <a href="#/Singleton">
+                  <h3 class="section-name">Singleton</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(cm)sharedManager"></a>
+                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(cm)sharedManager">+sharedManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedManager</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>database instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/File%20Path"></a>
+                <a name="//apple_ref/objc/Section/File Path" class="dashAnchor"></a>
+                <a href="#/File%20Path">
+                  <h3 class="section-name">File Path</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(im)nextFilePath"></a>
+                    <a name="//apple_ref/objc/Method/-nextFilePath" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(im)nextFilePath">-nextFilePath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>returen [nextFileURL path];</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">nextFilePath</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">nextFilePath</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>next file path</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(im)nextFileURL"></a>
+                    <a name="//apple_ref/objc/Method/-nextFileURL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(im)nextFileURL">-nextFileURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Return next file url for new document</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">nextFileURL</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">nextFileURL</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>url for the next doc location</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/For%20Subclass"></a>
+                <a name="//apple_ref/objc/Section/For Subclass" class="dashAnchor"></a>
+                <a href="#/For%20Subclass">
+                  <h3 class="section-name">For Subclass</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(im)fileExtensionName"></a>
+                    <a name="//apple_ref/objc/Method/-fileExtensionName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(im)fileExtensionName">-fileExtensionName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For Override</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <code>fileExtensionName</code> must be overrided.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fileExtensionName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fileExtensionName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>file extension eg: cetacea for &lsquo;a.cetacea&rsquo; file</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(im)fileContainerFolderName"></a>
+                    <a name="//apple_ref/objc/Method/-fileContainerFolderName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(im)fileContainerFolderName">-fileContainerFolderName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For Override</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <code>fileContainerFolderName</code> must be overrided.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fileContainerFolderName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">fileContainerFolderName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>folder name which the files will be saved</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFiCloudFileDataBase(im)filesFromArray:"></a>
+                    <a name="//apple_ref/objc/Method/-filesFromArray:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFiCloudFileDataBase(im)filesFromArray:">-filesFromArray:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For Override</p>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    <code>filesFromArray</code> must be overrided.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nf">filesFromArray</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">query</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">files</span><span class="p">(</span><span class="n">from</span> <span class="nv">query</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSMutableArray</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
