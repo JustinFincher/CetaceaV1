@@ -14,6 +14,7 @@ FOUNDATION_EXPORT double CetaceaSharedFrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CetaceaSharedFramework/PublicHeader.h>
+#import <CetaceaSharedFramework/CSFConstants.h>
 #import <CetaceaSharedFramework/CSFGlobalHeader.h>
 #import <CetaceaSharedFramework/CSFInitialProcessManager.h>
 #import <CetaceaSharedFramework/CSFiCloudSyncManager.h>
@@ -28,6 +29,7 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import <CetaceaSharedFramework/CSFEditorTextRulerView.h>
 #import <CetaceaSharedFramework/CSFEditorTextFontManager.h>
 #import <CetaceaSharedFramework/CSFFeedbackGeneratorManager.h>
+#import <CetaceaSharedFramework/CSFColorStorage.h>
 
 #if TARGET_OS_IOS
 #import <CetaceaSharedFramework/TSBaseParser.h>

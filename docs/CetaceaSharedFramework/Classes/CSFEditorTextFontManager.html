@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DTTimePeriodSize Enum Reference</title>
+    <title>CSFEditorTextFontManager Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,31 +10,23 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/DTTimePeriodSize" class="dashAnchor"></a>
-    <a title="DTTimePeriodSize Enum Reference"></a>
+    <a name="//apple_ref/objc/Class/CSFEditorTextFontManager" class="dashAnchor"></a>
+    <a title="CSFEditorTextFontManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (1% documented)</p>
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (19% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">CetaceaSharedFramework Reference</a>
         <img id="carat" src="../img/carat.png" />
-        DTTimePeriodSize Enum Reference
+        CSFEditorTextFontManager Class Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
-          <li class="nav-group-name">
-            <a href="../Categories.html">Categories</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Categories/NSDate(DateTools).html">NSDate(DateTools)</a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
@@ -42,7 +34,16 @@
                 <a href="../Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/CSFColorStorage.html">CSFColorStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFConstants">CSFConstants</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CSFDeviceCapabilityManager.html">CSFDeviceCapabilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CSFEditorTextFontManager.html">CSFEditorTextFontManager</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes.html#/c:objc(cs)CSFEditorTextLayoutManager">CSFEditorTextLayoutManager</a>
@@ -54,13 +55,19 @@
                 <a href="../Classes/CSFEditorTextView.html">CSFEditorTextView</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/CSFFeedbackGeneratorManager.html">CSFFeedbackGeneratorManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CSFInitialProcessManager.html">CSFInitialProcessManager</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFSingletonRegister.html">CSFSingletonRegister</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CSFiCloudFileExtensionCetaceaDataBase.html">CSFiCloudFileExtensionCetaceaDataBase</a>
+                <a href="../Classes/CSFiCloudFileDataBase.html">CSFiCloudFileDataBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
@@ -70,21 +77,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/DTError.html">DTError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/DTTimePeriod.html">DTTimePeriod</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/DTTimePeriodChain.html">DTTimePeriodChain</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/DTTimePeriodCollection.html">DTTimePeriodCollection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/DTTimePeriodGroup.html">DTTimePeriodGroup</a>
               </li>
             </ul>
           </li>
@@ -97,70 +89,14 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
               </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:DTError.h@DTBadTypeException">DTBadTypeException</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@DTErrorDomain">DTErrorDomain</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:DTError.h@DTInsertOutOfBoundsException">DTInsertOutOfBoundsException</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:DTError.h@DTRemoveOutOfBoundsException">DTRemoveOutOfBoundsException</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@MILLISECONDS_IN_DAY">MILLISECONDS_IN_DAY</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_DAY">SECONDS_IN_DAY</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_HOUR">SECONDS_IN_HOUR</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_MINUTE">SECONDS_IN_MINUTE</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_28">SECONDS_IN_MONTH_28</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_29">SECONDS_IN_MONTH_29</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_30">SECONDS_IN_MONTH_30</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_MONTH_31">SECONDS_IN_MONTH_31</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_WEEK">SECONDS_IN_WEEK</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:@SECONDS_IN_YEAR">SECONDS_IN_YEAR</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Enums.html">Enums</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Enums/DTTimePeriodAnchor.html">DTTimePeriodAnchor</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/DTTimePeriodInterval.html">DTTimePeriodInterval</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/DTTimePeriodRelation.html">DTTimePeriodRelation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/DTTimePeriodSize.html">DTTimePeriodSize</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CSFiCloudFileExtensionCetaceaSharedDocumentDelegate.html">CSFiCloudFileExtensionCetaceaSharedDocumentDelegate</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
               </li>
@@ -171,7 +107,7 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>DTTimePeriodSize</h1>
+            <h1>CSFEditorTextFontManager</h1>
             <p>Undocumented</p>
 
           </section>
@@ -181,9 +117,86 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeSecond"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeSecond" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeSecond">DTTimePeriodSizeSecond</a>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(cm)sharedManager"></a>
+                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(cm)sharedManager">+sharedManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>get single instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedManager</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>CSFEditorTextFontManager instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Font%20Helpers"></a>
+                <a name="//apple_ref/objc/Section/Font Helpers" class="dashAnchor"></a>
+                <a href="#/Font%20Helpers">
+                  <h3 class="section-name">Font Helpers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)getAllFontInApp"></a>
+                    <a name="//apple_ref/objc/Method/-getAllFontInApp" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)getAllFontInApp">-getAllFontInApp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Editor%20Base%20Font"></a>
+                <a name="//apple_ref/objc/Section/Editor Base Font" class="dashAnchor"></a>
+                <a href="#/Editor%20Base%20Font">
+                  <h3 class="section-name">Editor Base Font</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFontFamilyName"></a>
+                    <a name="//apple_ref/objc/Method/-getEditorBaseFontFamilyName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFontFamilyName">-getEditorBaseFontFamilyName</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -200,9 +213,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeMinute"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeMinute" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeMinute">DTTimePeriodSizeMinute</a>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFontSize"></a>
+                    <a name="//apple_ref/objc/Method/-getEditorBaseFontSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFontSize">-getEditorBaseFontSize</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -219,9 +232,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeHour"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeHour" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeHour">DTTimePeriodSizeHour</a>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)setEditorBaseFont:"></a>
+                    <a name="//apple_ref/objc/Method/-setEditorBaseFont:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)setEditorBaseFont:">-setEditorBaseFont:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -238,9 +251,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeDay"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeDay" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeDay">DTTimePeriodSizeDay</a>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFont"></a>
+                    <a name="//apple_ref/objc/Method/-getEditorBaseFont" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)getEditorBaseFont">-getEditorBaseFont</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -257,47 +270,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeWeek"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeWeek" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeWeek">DTTimePeriodSizeWeek</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeMonth"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeMonth" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeMonth">DTTimePeriodSizeMonth</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@DTTimePeriodSize@DTTimePeriodSizeYear"></a>
-                    <a name="//apple_ref/objc/Case/DTTimePeriodSizeYear" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@DTTimePeriodSize@DTTimePeriodSizeYear">DTTimePeriodSizeYear</a>
+                    <a name="/c:objc(cs)CSFEditorTextFontManager(im)getEditorMonospacedFont"></a>
+                    <a name="//apple_ref/objc/Method/-getEditorMonospacedFont" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFEditorTextFontManager(im)getEditorMonospacedFont">-getEditorMonospacedFont</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -316,7 +291,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-13)</p>
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-16)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

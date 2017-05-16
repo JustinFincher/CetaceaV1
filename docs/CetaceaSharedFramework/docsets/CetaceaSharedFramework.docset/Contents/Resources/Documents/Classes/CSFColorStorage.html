@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSFSingletonRegister Class Reference</title>
+    <title>CSFColorStorage Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/CSFSingletonRegister" class="dashAnchor"></a>
-    <a title="CSFSingletonRegister Class Reference"></a>
+    <a name="//apple_ref/objc/Class/CSFColorStorage" class="dashAnchor"></a>
+    <a title="CSFColorStorage Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">CetaceaSharedFramework Docs</a> (19% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">CetaceaSharedFramework Reference</a>
         <img id="carat" src="../img/carat.png" />
-        CSFSingletonRegister Class Reference
+        CSFColorStorage Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -107,14 +107,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>CSFSingletonRegister</h1>
+            <h1>CSFColorStorage</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFColorStorage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
-            <p>Instance For Storing all single stuff (ui, data manager, etc)</p>
+            <p>A RGBA Properties based presentation of CSFColor (UIColor/NSColor)</p>
 
           </section>
           <section class="section task-group-section">
@@ -123,9 +123,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFSingletonRegister(cm)sharedManager"></a>
-                    <a name="//apple_ref/objc/Method/+sharedManager" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFSingletonRegister(cm)sharedManager">+sharedManager</a>
+                    <a name="/c:objc(cs)CSFColorStorage(im)setColor:"></a>
+                    <a name="//apple_ref/objc/Method/-setColor:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFColorStorage(im)setColor:">-setColor:</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -140,7 +140,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFColorStorage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -150,9 +150,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFSingletonRegister(im)registerSingleton:"></a>
-                    <a name="//apple_ref/objc/Method/-registerSingleton:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFSingletonRegister(im)registerSingleton:">-registerSingleton:</a>
+                    <a name="/c:objc(cs)CSFColorStorage(py)r"></a>
+                    <a name="//apple_ref/objc/Property/r" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFColorStorage(py)r">r</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -160,14 +160,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Red</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">r</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">r</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -177,9 +182,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFSingletonRegister(im)unRegisterSingleton:"></a>
-                    <a name="//apple_ref/objc/Method/-unRegisterSingleton:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFSingletonRegister(im)unRegisterSingleton:">-unRegisterSingleton:</a>
+                    <a name="/c:objc(cs)CSFColorStorage(py)g"></a>
+                    <a name="//apple_ref/objc/Property/g" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFColorStorage(py)g">g</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -187,14 +192,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Green</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">g</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">g</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -204,9 +214,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFSingletonRegister(im)getRegisteredSingletonForClassName:"></a>
-                    <a name="//apple_ref/objc/Method/-getRegisteredSingletonForClassName:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFSingletonRegister(im)getRegisteredSingletonForClassName:">-getRegisteredSingletonForClassName:</a>
+                    <a name="/c:objc(cs)CSFColorStorage(py)b"></a>
+                    <a name="//apple_ref/objc/Property/b" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFColorStorage(py)b">b</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -214,14 +224,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Blue</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">b</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFColorStorage(py)a"></a>
+                    <a name="//apple_ref/objc/Property/a" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFColorStorage(py)a">a</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Alpha</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="n">a</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">a</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

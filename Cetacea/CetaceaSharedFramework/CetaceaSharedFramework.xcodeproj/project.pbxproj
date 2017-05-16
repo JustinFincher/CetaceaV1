@@ -15,6 +15,14 @@
 		0D0523DF1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */; };
 		0D0523E01EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */; };
 		0D0523E11EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */; };
+		0D1AB4FF1ECAA25700C8A953 /* CSFColorStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */; };
+		0D1AB5001ECAA25700C8A953 /* CSFColorStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */; };
+		0D1AB5011ECAA25700C8A953 /* CSFColorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */; };
+		0D1AB5021ECAA25700C8A953 /* CSFColorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */; };
+		0D1AB5051ECAA94E00C8A953 /* CSFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */; };
+		0D1AB5061ECAA94E00C8A953 /* CSFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */; };
+		0D1AB5071ECAA94E00C8A953 /* CSFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */; };
+		0D1AB5081ECAA94E00C8A953 /* CSFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */; };
 		0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
 		0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
 		0D1B5F191EC1CB64007EBE5D /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */; };
@@ -119,6 +127,10 @@
 		0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextRulerView.m; sourceTree = "<group>"; };
 		0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextStorage.h; sourceTree = "<group>"; };
 		0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextStorage.m; sourceTree = "<group>"; };
+		0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFColorStorage.h; sourceTree = "<group>"; };
+		0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFColorStorage.m; sourceTree = "<group>"; };
+		0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFConstants.h; sourceTree = "<group>"; };
+		0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFConstants.m; sourceTree = "<group>"; };
 		0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseParser.h; sourceTree = "<group>"; };
 		0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseParser.m; sourceTree = "<group>"; };
 		0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFCetaceaSharedDocumentEditManager.h; sourceTree = "<group>"; };
@@ -324,6 +336,8 @@
 				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
 				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
 				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
+				0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */,
+				0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */,
 				0D516C7C1EC06490007AAB05 /* OSX */,
 				0D516C7D1EC06497007AAB05 /* iOS */,
 				0D7F31B91EBC4ABB00D29651 /* Shared */,
@@ -398,6 +412,8 @@
 				0DC830DE1EC9515C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSharedDocument.m */,
 				0DC830E31EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h */,
 				0DC830E41EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m */,
+				0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */,
+				0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */,
 			);
 			name = CetaceaTheme;
 			sourceTree = "<group>";
@@ -495,6 +511,7 @@
 			files = (
 				0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */,
 				0DC830E51EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h in Headers */,
+				0D1AB5051ECAA94E00C8A953 /* CSFConstants.h in Headers */,
 				0DA94CBD1EC563A100D597E1 /* CSFEditorTextView.h in Headers */,
 				0D4135DF1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */,
 				0DC830DF1EC9515C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSharedDocument.h in Headers */,
@@ -508,6 +525,7 @@
 				0DC830EB1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */,
 				0D0523DE1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
 				0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
+				0D1AB4FF1ECAA25700C8A953 /* CSFColorStorage.h in Headers */,
 				0D516C701EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
 				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
@@ -536,6 +554,8 @@
 				0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
 				0D516C711EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.h in Headers */,
 				0D41361F1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */,
+				0D1AB5061ECAA94E00C8A953 /* CSFConstants.h in Headers */,
+				0D1AB5001ECAA25700C8A953 /* CSFColorStorage.h in Headers */,
 				0D0523DF1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
 				0DC830E01EC9515C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSharedDocument.h in Headers */,
 				0D482AF71EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */,
@@ -804,6 +824,7 @@
 				0D516C721EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0DC830E71EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */,
 				0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
+				0D1AB5071ECAA94E00C8A953 /* CSFConstants.m in Sources */,
 				0D4136201EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
 				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
 				0DC830E11EC9515C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSharedDocument.m in Sources */,
@@ -812,6 +833,7 @@
 				0D0523DA1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */,
 				0DA94CBF1EC563A100D597E1 /* CSFEditorTextView.m in Sources */,
 				0DC830ED1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
+				0D1AB5011ECAA25700C8A953 /* CSFColorStorage.m in Sources */,
 				0D339FC71EC3135100414267 /* CSFDeviceCapabilityManager.m in Sources */,
 				0D0523E01EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */,
 				0D4135EF1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */,
@@ -832,6 +854,7 @@
 				0DC830E81EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */,
 				0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
 				0D4136211EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
+				0D1AB5081ECAA94E00C8A953 /* CSFConstants.m in Sources */,
 				0D516C731EC0618E007AAB05 /* CSFiCloudFileExtensionCetaceaSharedDocument.m in Sources */,
 				0DC830E21EC9515C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSharedDocument.m in Sources */,
 				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
@@ -840,6 +863,7 @@
 				0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
 				0DA94CC01EC563A100D597E1 /* CSFEditorTextView.m in Sources */,
 				0DC830EE1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
+				0D1AB5021ECAA25700C8A953 /* CSFColorStorage.m in Sources */,
 				0D339FC81EC3135900414267 /* CSFDeviceCapabilityManager.m in Sources */,
 				0D0523E11EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */,
 				0D4135F01EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */,
