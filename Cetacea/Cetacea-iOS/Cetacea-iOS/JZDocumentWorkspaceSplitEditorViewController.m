@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.automaticallyAdjustsScrollViewInsets = YES;
-    CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(currentDocumentChanged:, CSF_String_Notification_Current_Document_Changed_Name, nil);
+    CSF_Block_Add_Notification_Observer_With_Selector_Name_Object(currentDocumentChanged:, CSFStringNotificationCurrentDocumentChangedName, nil);
 }
 - (void)currentDocumentChanged:(NSNotification *)notif
 {

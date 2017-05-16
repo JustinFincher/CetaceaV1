@@ -43,6 +43,14 @@
  */
 @property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
 #if TARGET_OS_IOS
+
+/**
+ Init Method On iOS
+
+ @param url File URL
+ @param doc Shared Document
+ @return A platform depentdent CSFDocument instance (UIDocument)
+ */
 - (id)initWithFileURL:(NSURL *)url
    withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
 #elif TARGET_OS_OSX
@@ -63,6 +71,9 @@
 @end
 
 
+/**
+ Platform Indepentdent Shared Document Data Model;
+ */
 @interface CSFiCloudFileExtensionCetaceaSharedDocument : NSObject
 
 - (id)initWithURL:(NSURL *)url;

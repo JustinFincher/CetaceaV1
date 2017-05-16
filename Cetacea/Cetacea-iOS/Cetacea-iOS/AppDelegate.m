@@ -36,7 +36,7 @@
     [self.performanceMonitor startMonitoringWithConfiguration:^(UILabel *textLabel) {    }];
 #endif
 
-    CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSF_String_Notification_iCloud_Not_Availiable_Name,nil,^(NSNotification *notification)
+    CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSFStringNotificationiCloudNotAvailiableName,nil,^(NSNotification *notification)
                                                                {
                                                                });
     
