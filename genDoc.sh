@@ -11,3 +11,4 @@ jazzy \
    --framework-root Cetacea \
   --author_url https://fincher.im \
   --output docs/CetaceaSharedFramework 
+    # --theme fullwidth 

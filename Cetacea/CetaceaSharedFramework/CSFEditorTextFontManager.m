@@ -57,7 +57,7 @@
 #pragma mark - Editor Base Font
 - (NSString *)getEditorBaseFontFamilyName
 {
-    NSString *editorBasefontName = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Name];
+    NSString *editorBasefontName = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSFStringIdentiferUserDefaultEditorBaseFontName];
     if (editorBasefontName == nil)
     {
         editorBasefontName = [[CSFFont systemFontOfSize:12] fontName];
@@ -66,12 +66,12 @@
 }
 - (void)setEditorBaseFont:(CSFFont *)font
 {
-    [CSF_Block_UserDefault_With_SuiteName setObject:[font fontName] forKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Name];
-    [CSF_Block_UserDefault_With_SuiteName setObject:[NSNumber numberWithFloat:[font pointSize]] forKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Size];
+    [CSF_Block_UserDefault_With_SuiteName setObject:[font fontName] forKey:CSFStringIdentiferUserDefaultEditorBaseFontName];
+    [CSF_Block_UserDefault_With_SuiteName setObject:[NSNumber numberWithFloat:[font pointSize]] forKey:CSFStringIdentiferUserDefaultEditorBaseFontSize];
 }
 - (CGFloat)getEditorBaseFontSize
 {
-    NSNumber *editorBasefontSizeNum = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSF_String_Identifer_UserDefault_Editor_BaseFont_Size];
+    NSNumber *editorBasefontSizeNum = [CSF_Block_UserDefault_With_SuiteName objectForKey:CSFStringIdentiferUserDefaultEditorBaseFontSize];
     if (editorBasefontSizeNum == nil)
     {
         editorBasefontSizeNum = [NSNumber numberWithFloat:12.0f];

@@ -14,7 +14,7 @@
     <a title="CSFiCloudFileDataBase Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (19% documented)</p>
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (24% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -30,6 +30,9 @@
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
               </li>
@@ -70,9 +73,6 @@
                 <a href="../Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
               </li>
               <li class="nav-group-task">
@@ -84,10 +84,31 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionNumber">CetaceaSharedFrameworkVersionNumber</a>
+                <a href="../Constants.html#/c:@CSFStringIdentiferActivityTypeEditingDocument">CSFStringIdentiferActivityTypeEditingDocument</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
+                <a href="../Constants.html#/c:@CSFStringIdentiferAppGroupName">CSFStringIdentiferAppGroupName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringIdentiferApplicationBundleID">CSFStringIdentiferApplicationBundleID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringIdentiferDeveloperTeamID">CSFStringIdentiferDeveloperTeamID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringIdentiferUserDefaultEditorBaseFontName">CSFStringIdentiferUserDefaultEditorBaseFontName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringIdentiferUserDefaultEditorBaseFontSize">CSFStringIdentiferUserDefaultEditorBaseFontSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringIdentiferiCloudContainerName">CSFStringIdentiferiCloudContainerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringNotificationCurrentDocumentChangedName">CSFStringNotificationCurrentDocumentChangedName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@CSFStringNotificationiCloudNotAvailiableName">CSFStringNotificationiCloudNotAvailiableName</a>
               </li>
             </ul>
           </li>
@@ -110,7 +131,7 @@
             <h1>CSFiCloudFileDataBase</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileDataBase</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileDataBase</span></code></pre>
 
                 </div>
               </div>
@@ -194,7 +215,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">nextFilePath</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">nextFilePath</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -230,7 +251,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">nextFileURL</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">nextFileURL</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -282,7 +303,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fileExtensionName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">fileExtensionName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -323,7 +344,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">fileContainerFolderName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">fileContainerFolderName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -364,7 +385,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSMutableArray</span> <span class="o">*</span><span class="p">)</span><span class="nf">filesFromArray</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">query</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">filesFromArray</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">query</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -381,8 +402,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-16)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

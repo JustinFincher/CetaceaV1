@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CetaceaSharedFramework Docs</a> (19% documented)</p>
+        <p><a href="index.html">CetaceaSharedFramework Docs</a> (24% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -29,6 +29,9 @@
           <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
               </li>
@@ -69,9 +72,6 @@
                 <a href="Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/CSFiCloudFileExtensionCetaceaNSDocument.html">CSFiCloudFileExtensionCetaceaNSDocument</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
               </li>
               <li class="nav-group-task">
@@ -83,10 +83,31 @@
             <a href="Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@CetaceaSharedFrameworkVersionNumber">CetaceaSharedFrameworkVersionNumber</a>
+                <a href="Constants.html#/c:@CSFStringIdentiferActivityTypeEditingDocument">CSFStringIdentiferActivityTypeEditingDocument</a>
               </li>
               <li class="nav-group-task">
-                <a href="Constants.html#/c:@CetaceaSharedFrameworkVersionString">CetaceaSharedFrameworkVersionString</a>
+                <a href="Constants.html#/c:@CSFStringIdentiferAppGroupName">CSFStringIdentiferAppGroupName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringIdentiferApplicationBundleID">CSFStringIdentiferApplicationBundleID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringIdentiferDeveloperTeamID">CSFStringIdentiferDeveloperTeamID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringIdentiferUserDefaultEditorBaseFontName">CSFStringIdentiferUserDefaultEditorBaseFontName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringIdentiferUserDefaultEditorBaseFontSize">CSFStringIdentiferUserDefaultEditorBaseFontSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringIdentiferiCloudContainerName">CSFStringIdentiferiCloudContainerName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringNotificationCurrentDocumentChangedName">CSFStringNotificationCurrentDocumentChangedName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@CSFStringNotificationiCloudNotAvailiableName">CSFStringNotificationiCloudNotAvailiableName</a>
               </li>
             </ul>
           </li>
@@ -158,7 +179,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFColorStorage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSCoding</span><span class="o">&gt;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFColorStorage</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -210,9 +231,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Manager for providing infomations for device capablitiy</p>
 
                         <a href="Classes/CSFDeviceCapabilityManager.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFDeviceCapabilityManager</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFDeviceCapabilityManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -312,7 +346,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFEditorTextView</span> <span class="p">:</span> <span class="nc">NSTextView</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFEditorTextView</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -373,7 +407,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFInitialProcessManager</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFInitialProcessManager</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -410,7 +444,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFSingletonRegister</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -447,7 +481,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileDataBase</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileDataBase</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -502,9 +536,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFiCloudFileExtensionCetaceaNSDocument"></a>
-                    <a name="//apple_ref/objc/Class/CSFiCloudFileExtensionCetaceaNSDocument" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFiCloudFileExtensionCetaceaNSDocument">CSFiCloudFileExtensionCetaceaNSDocument</a>
+                    <a name="/c:objc(cs)CSFCetaceaSharedDocument"></a>
+                    <a name="//apple_ref/objc/Class/CSFCetaceaSharedDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFCetaceaSharedDocument">CSFCetaceaSharedDocument</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -512,9 +546,25 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>a CSFDocument subclass. Presentation for platform runtime document</p>
+<h2 id='on-ios' class='heading'>On iOS:</h2>
+<pre class="highlight plaintext"><code>CSFDocument = UIDocument
+CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
+</code></pre>
+<h2 id='on-osx' class='heading'>On OSX:</h2>
+<pre class="highlight plaintext"><code>CSFDocument = NSDocument
+CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
+</code></pre>
 
-                        <a href="Classes/CSFiCloudFileExtensionCetaceaNSDocument.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/CSFCetaceaSharedDocument.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocument</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -568,8 +618,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-16)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
