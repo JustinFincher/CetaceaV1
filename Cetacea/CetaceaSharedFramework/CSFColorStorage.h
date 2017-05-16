@@ -15,26 +15,35 @@
  */
 @interface CSFColorStorage : NSObject<NSCoding>
 
-- (void)setColor:(CSFColor *)color;
 
+/**
+ Set Color Storage with a plaform specific Color Class (UIColor/NScolor) instance
+ @param color Color To Set
+ */
+- (void)setColor:(CSFColor *)color;
+- (CSFColor *)getColor;
 
 /**
  Red
+ @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
 @property (nonatomic) NSNumber *r;
 
 /**
  Green
+ @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
 @property (nonatomic) NSNumber *g;
 
 /**
  Blue
+ @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
 @property (nonatomic) NSNumber *b;
 
 /**
  Alpha
+ @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
 @property (nonatomic) NSNumber *a;
 

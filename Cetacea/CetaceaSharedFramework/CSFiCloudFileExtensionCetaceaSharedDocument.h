@@ -19,7 +19,28 @@
 
 @class CSFiCloudFileExtensionCetaceaSharedDocument;
 
+
+/**
+ a CSFDocument subclass. Presentation for platform runtime document
+ 
+ ## On iOS:
+ ````
+ CSFDocument = UIDocument
+ CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
+ ````
+ 
+ ## On OSX:
+ ````
+ CSFDocument = NSDocument
+ CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
+ ````
+ */
 @interface CSFCetaceaSharedDocument : CSFDocument
+
+
+/**
+ SharedDocument Instance, owner of this class instance
+ */
 @property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
 #if TARGET_OS_IOS
 - (id)initWithFileURL:(NSURL *)url

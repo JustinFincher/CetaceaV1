@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ Manager for providing infomations for device capablitiy
+ */
 @interface CSFDeviceCapabilityManager : NSObject
 
 + (id)sharedManager;

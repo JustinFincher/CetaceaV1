@@ -44,13 +44,13 @@
     _currentEditingDocument = doc;
     if (_currentEditingDocument)
     {
-        CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSF_String_Notification_Current_Document_Changed_Name, self, (@{ @"doc" : doc,
+        CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSFStringNotificationCurrentDocumentChangedName, self, (@{ @"doc" : doc,
                                                                                                                                @"hasDoc" : @YES }));
         if (self.currentUserActivity)
         {
             [self.currentUserActivity invalidate];
         }
-        self.currentUserActivity = [[NSUserActivity alloc] initWithActivityType:CSF_String_Identifer_ActivityType_Editing_Document];
+        self.currentUserActivity = [[NSUserActivity alloc] initWithActivityType:CSFStringIdentiferActivityTypeEditingDocument];
         self.currentUserActivity.title = @"Edit Document";
         self.currentUserActivity.expirationDate = [[NSDate date] dateByAddingDays:1];
         self.currentUserActivity.needsSave = YES;
@@ -60,7 +60,7 @@
         [self.currentUserActivity becomeCurrent];
     }else
     {
-        CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSF_String_Notification_Current_Document_Changed_Name, self, (@{
+        CSF_Block_Post_Notification_With_Name_Object_UserInfo(CSFStringNotificationCurrentDocumentChangedName, self, (@{
                                                                                                                                @"hasDoc" : @NO }));
         if (self.currentUserActivity)
         {

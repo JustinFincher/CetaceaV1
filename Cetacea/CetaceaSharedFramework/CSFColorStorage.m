@@ -40,6 +40,16 @@
 - (void)setColor:(CSFColor *)color
 {
     _platformDependentColorInstance = color;
+    CGFloat r,g,b,a = 0;
+    [self.platformDependentColorInstance getRed:&r green:&g blue:&b alpha:&a];
+    self.r = [NSNumber numberWithFloat:r];
+    self.g = [NSNumber numberWithFloat:g];
+    self.b = [NSNumber numberWithFloat:b];
+    self.a = [NSNumber numberWithFloat:a];
+}
+- (CSFColor *)getColor
+{
+    return [CSFColor colorWithRed:[self.r floatValue] green:[self.g floatValue] blue:[self.b floatValue] alpha:[self.a floatValue]];
 }
 
 - (NSNumber *)r

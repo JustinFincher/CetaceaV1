@@ -73,7 +73,7 @@
         }else
         {
             JZLog(@"isIcloudAvailiable = NO");
-            CSF_Block_Post_Notification_With_Name_No_Object(CSF_String_Notification_iCloud_Not_Availiable_Name)
+            CSF_Block_Post_Notification_With_Name_No_Object(CSFStringNotificationiCloudNotAvailiableName)
         }
     }
     return self;

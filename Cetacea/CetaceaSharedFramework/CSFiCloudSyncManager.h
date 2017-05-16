@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ Delegates for iCloud updates
+ */
 @protocol CSFiCloudSyncDelegate <NSObject>
 @optional
 
