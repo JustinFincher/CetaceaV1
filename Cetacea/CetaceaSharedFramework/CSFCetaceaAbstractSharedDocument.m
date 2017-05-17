@@ -6,21 +6,21 @@
 //
 //
 
-#import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
+#import "CSFCetaceaAbstractSharedDocument.h"
 #import "CSFGlobalHeader.h"
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
 @class CSFCetaceaSharedDocument;
 
-@interface CSFiCloudFileExtensionCetaceaSharedDocument ()
+@interface CSFCetaceaAbstractSharedDocument ()
 
 @property (nonatomic,strong) NSNumber *itemPercentDownloaded;
 @property (nonatomic,strong) NSNumber *itemPercentUploaded;
 
 @end
 
-@implementation CSFiCloudFileExtensionCetaceaSharedDocument
+@implementation CSFCetaceaAbstractSharedDocument
 
 - (id)initWithURL:(NSURL *)url
 {
@@ -104,20 +104,20 @@
 #pragma mark - Compare
 - (BOOL)isEqual:(id)object
 {
-    BOOL isEqual = [[[(CSFiCloudFileExtensionCetaceaSharedDocument *)object url] path] isEqualToString:[[self url] path]];
+    BOOL isEqual = [[[(CSFCetaceaAbstractSharedDocument *)object url] path] isEqualToString:[[self url] path]];
     return isEqual;
 }
 - (BOOL)scriptingIsEqualTo:(id)object
 {
-    BOOL isEqual = [[[(CSFiCloudFileExtensionCetaceaSharedDocument *)object url] path] isEqualToString:[[self url] path]];
+    BOOL isEqual = [[[(CSFCetaceaAbstractSharedDocument *)object url] path] isEqualToString:[[self url] path]];
     return isEqual;
 }
 #pragma mark - File Task
-+ (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument
++ (CSFCetaceaAbstractSharedDocument *)newDocument
 {
     NSString *docPath = [[CSFiCloudFileExtensionCetaceaDataBase sharedManager] nextFilePath];
     NSURL *url = [[NSURL alloc] initFileURLWithPath:docPath isDirectory:YES];
-    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+    CSFCetaceaAbstractSharedDocument *doc = [[CSFCetaceaAbstractSharedDocument alloc] initWithURL:url];
     
     BOOL isSuccess = [doc saveDocument];
     if(!isSuccess)
@@ -181,7 +181,7 @@
 @implementation CSFCetaceaSharedDocument
 
 #if TARGET_OS_IOS
-- (id)initWithFileURL:(NSURL *)url withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc
+- (id)initWithFileURL:(NSURL *)url withSharedDocument:(CSFCetaceaAbstractSharedDocument *)doc
 {
     self = [super initWithFileURL:url];
     if (self)
@@ -194,7 +194,7 @@
 - (id)initWithContentsOfURL:(NSURL *)url
                      ofType:(NSString *)typeName
                       error:(NSError * _Nullable *)outError
-         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc
+         withSharedDocument:(CSFCetaceaAbstractSharedDocument *_Nonnull)doc
 {
     self = [super initWithContentsOfURL:url ofType:typeName error:outError];
     if (self)
