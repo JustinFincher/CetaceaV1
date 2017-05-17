@@ -14,7 +14,7 @@
     <a title="CSFCetaceaSharedDocumentEditManager Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (25% documented)</p>
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (28% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -30,6 +30,9 @@
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
               </li>
@@ -73,9 +76,6 @@
                 <a href="../Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
               </li>
             </ul>
@@ -116,7 +116,7 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/CSFiCloudFileExtensionCetaceaSharedDocumentDelegate.html">CSFiCloudFileExtensionCetaceaSharedDocumentDelegate</a>
+                <a href="../Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html">CSFCetaceaAbstractSharedDocumentDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
@@ -129,11 +129,24 @@
         <section>
           <section class="section">
             <h1>CSFCetaceaSharedDocumentEditManager</h1>
-            <p>Undocumented</p>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocumentEditManager</span></code></pre>
+
+                </div>
+              </div>
+            <p>An Edit Manager For Cetacea Files</p>
 
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Singleton%20Method"></a>
+                <a name="//apple_ref/objc/Section/Singleton Method" class="dashAnchor"></a>
+                <a href="#/Singleton%20Method">
+                  <h3 class="section-name">Singleton Method</h3>
+                </a>
+              </div>
               <ul>
                 <li class="item">
                   <div>
@@ -148,8 +161,25 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Singleton for this class</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">sharedManager</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sharedManager</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>instance</p>
                       </div>
                     </section>
                   </div>
@@ -167,8 +197,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Current editing cetacea file <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a> instance</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></span> <span class="o">*</span><span class="n">currentEditingDocument</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">currentEditingDocument</span><span class="p">:</span> <span class="kt"><a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -188,6 +232,14 @@
                       <div class="abstract">
                         <p>Undocumented</p>
 
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocumentEditManager</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

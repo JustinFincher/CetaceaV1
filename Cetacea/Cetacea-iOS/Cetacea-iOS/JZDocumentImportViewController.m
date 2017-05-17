@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Import Cetacea Document";
     self.navigationController.toolbarHidden = NO;
-    CSFiCloudFileExtensionCetaceaSharedDocument *document = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:self.importURL];
+    CSFCetaceaAbstractSharedDocument *document = [[CSFCetaceaAbstractSharedDocument alloc] initWithURL:self.importURL];
     self.textView.currentEditingDocument = document;
 }
 

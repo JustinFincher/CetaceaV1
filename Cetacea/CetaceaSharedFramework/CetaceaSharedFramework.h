@@ -19,7 +19,7 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import <CetaceaSharedFramework/CSFInitialProcessManager.h>
 #import <CetaceaSharedFramework/CSFiCloudSyncManager.h>
 #import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaDataBase.h>
-#import <CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaSharedDocument.h>
+#import <CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h>
 #import <CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h>
 #import <CetaceaSharedFramework/CSFDeviceCapabilityManager.h>
 #import <CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h>

@@ -14,7 +14,7 @@
     <a title="CSFCetaceaSharedDocument Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (25% documented)</p>
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (28% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -30,6 +30,9 @@
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
               </li>
@@ -73,9 +76,6 @@
                 <a href="../Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
               </li>
             </ul>
@@ -116,7 +116,7 @@
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/CSFiCloudFileExtensionCetaceaSharedDocumentDelegate.html">CSFiCloudFileExtensionCetaceaSharedDocumentDelegate</a>
+                <a href="../Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html">CSFCetaceaAbstractSharedDocumentDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
@@ -135,7 +135,7 @@
 
                 </div>
               </div>
-            <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a></p>
+            <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></p>
 <h2 id='on-ios' class='heading'>On iOS:</h2>
 <pre class="highlight plaintext"><code>CSFDocument = UIDocument
 CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
@@ -169,8 +169,7 @@ CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span>
-    <span class="n"><a href="../Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a></span> <span class="o">*</span><span class="n">sharedDocument</span><span class="p">;</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n"><a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></span> <span class="o">*</span><span class="n">sharedDocument</span><span class="p">;</span></code></pre>
 
                         </div>
                       </div>
