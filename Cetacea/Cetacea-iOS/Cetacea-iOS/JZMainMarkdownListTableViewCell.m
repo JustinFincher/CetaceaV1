@@ -25,7 +25,7 @@
     self.animator = [[UIViewPropertyAnimator alloc] initWithDuration:0.1 curve:UIViewAnimationCurveEaseIn animations:^(void)
                      {}];
 }
-- (void)setDoc:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc
+- (void)setDoc:(CSFCetaceaAbstractSharedDocument *)doc
 {
     _doc = doc;
     if (doc)

@@ -27,7 +27,7 @@
     BOOL isSelectionNull = ![[CSFCetaceaSharedDocumentEditManager sharedManager] hasCurrentEditingDocument];
     if (!isSelectionNull)
     {
-        CSFiCloudFileExtensionCetaceaSharedDocument *sharedDoc = [[notif userInfo] objectForKey:@"doc"];
+        CSFCetaceaAbstractSharedDocument *sharedDoc = [[notif userInfo] objectForKey:@"doc"];
         [self.textView setCurrentEditingDocument:sharedDoc];
     }
 

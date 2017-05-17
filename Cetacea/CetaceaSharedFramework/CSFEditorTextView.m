@@ -78,7 +78,7 @@
 }
 #endif
 
-- (void)setCurrentEditingDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)currentEditingDocument
+- (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument
 {
     _currentEditingDocument = currentEditingDocument;
 #if TARGET_OS_IOS

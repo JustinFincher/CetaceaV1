@@ -7,7 +7,7 @@
 //
 
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
-#import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
+#import "CSFCetaceaAbstractSharedDocument.h"
 #import "CSFiCloudSyncManager.h"
 #import "CSFGlobalHeader.h"
 
@@ -58,7 +58,7 @@
             {
                 if (isNotHidden)
                 {
-                    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [[CSFiCloudFileExtensionCetaceaSharedDocument alloc] initWithURL:url];
+                    CSFCetaceaAbstractSharedDocument *doc = [[CSFCetaceaAbstractSharedDocument alloc] initWithURL:url];
                     doc.metaDataItem = item;
                     doc.creationDate = [item valueForAttribute:NSMetadataItemFSCreationDateKey];
                     doc.lastChangeDate = [item valueForAttribute:NSMetadataItemFSContentChangeDateKey];

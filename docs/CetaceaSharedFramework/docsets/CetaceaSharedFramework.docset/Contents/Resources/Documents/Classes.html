@@ -13,7 +13,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">CetaceaSharedFramework Docs</a> (25% documented)</p>
+        <p><a href="index.html">CetaceaSharedFramework Docs</a> (28% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -29,6 +29,9 @@
           <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
               </li>
@@ -72,9 +75,6 @@
                 <a href="Classes.html#/c:objc(cs)CSFiCloudFileExtensionCetaceaDataBase">CSFiCloudFileExtensionCetaceaDataBase</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Classes/CSFiCloudSyncManager.html">CSFiCloudSyncManager</a>
               </li>
             </ul>
@@ -115,7 +115,7 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Protocols/CSFiCloudFileExtensionCetaceaSharedDocumentDelegate.html">CSFiCloudFileExtensionCetaceaSharedDocumentDelegate</a>
+                <a href="Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html">CSFCetaceaAbstractSharedDocumentDelegate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/CSFiCloudSyncDelegate.html">CSFiCloudSyncDelegate</a>
@@ -137,6 +137,79 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)CSFCetaceaSharedDocument"></a>
+                    <a name="//apple_ref/objc/Class/CSFCetaceaSharedDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFCetaceaSharedDocument">CSFCetaceaSharedDocument</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></p>
+<h2 id='on-ios' class='heading'>On iOS:</h2>
+<pre class="highlight plaintext"><code>CSFDocument = UIDocument
+CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
+</code></pre>
+<h2 id='on-osx' class='heading'>On OSX:</h2>
+<pre class="highlight plaintext"><code>CSFDocument = NSDocument
+CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
+</code></pre>
+
+                        <a href="Classes/CSFCetaceaSharedDocument.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocument</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFCetaceaAbstractSharedDocument"></a>
+                    <a name="//apple_ref/objc/Class/CSFCetaceaAbstractSharedDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFCetaceaAbstractSharedDocument">CSFCetaceaAbstractSharedDocument</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Platform Indepentdent Shared Document Data Model;</p>
+
+                        <a href="Classes/CSFCetaceaAbstractSharedDocument.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaAbstractSharedDocument</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFCetaceaAbstractSharedDocument</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)CSFCetaceaSharedDocumentEditManager"></a>
                     <a name="//apple_ref/objc/Class/CSFCetaceaSharedDocumentEditManager" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)CSFCetaceaSharedDocumentEditManager">CSFCetaceaSharedDocumentEditManager</a>
@@ -147,9 +220,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>An Edit Manager For Cetacea Files</p>
 
                         <a href="Classes/CSFCetaceaSharedDocumentEditManager.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocumentEditManager</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFCetaceaSharedDocumentEditManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -523,79 +609,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFiCloudFileExtensionCetaceaDataBase</span> <span class="p">:</span> <span class="kt"><a href="Classes/CSFiCloudFileDataBase.html">CSFiCloudFileDataBase</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)CSFCetaceaSharedDocument"></a>
-                    <a name="//apple_ref/objc/Class/CSFCetaceaSharedDocument" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFCetaceaSharedDocument">CSFCetaceaSharedDocument</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFiCloudFileExtensionCetaceaSharedDocument.html">CSFiCloudFileExtensionCetaceaSharedDocument</a></p>
-<h2 id='on-ios' class='heading'>On iOS:</h2>
-<pre class="highlight plaintext"><code>CSFDocument = UIDocument
-CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
-</code></pre>
-<h2 id='on-osx' class='heading'>On OSX:</h2>
-<pre class="highlight plaintext"><code>CSFDocument = NSDocument
-CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
-</code></pre>
-
-                        <a href="Classes/CSFCetaceaSharedDocument.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocument</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(cs)CSFiCloudFileExtensionCetaceaSharedDocument"></a>
-                    <a name="//apple_ref/objc/Class/CSFiCloudFileExtensionCetaceaSharedDocument" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFiCloudFileExtensionCetaceaSharedDocument">CSFiCloudFileExtensionCetaceaSharedDocument</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Platform Indepentdent Shared Document Data Model;</p>
-
-                        <a href="Classes/CSFiCloudFileExtensionCetaceaSharedDocument.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFiCloudFileExtensionCetaceaSharedDocument</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFiCloudFileExtensionCetaceaSharedDocument</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>

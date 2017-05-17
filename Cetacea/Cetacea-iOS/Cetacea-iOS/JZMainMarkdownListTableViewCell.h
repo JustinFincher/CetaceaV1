@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *lastChangeTimeLabel;
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView;
 
-@property (weak, nonatomic) CSFiCloudFileExtensionCetaceaSharedDocument *doc;
+@property (weak, nonatomic) CSFCetaceaAbstractSharedDocument *doc;
 
 @end

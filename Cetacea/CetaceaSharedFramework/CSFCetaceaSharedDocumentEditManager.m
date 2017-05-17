@@ -39,7 +39,7 @@
 {
     
 }
-- (void)setCurrentEditingDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc
+- (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)doc
 {
     _currentEditingDocument = doc;
     if (_currentEditingDocument)

@@ -120,7 +120,7 @@
 //    [self.tableView beginUpdates];
 //    NSMutableArray *removedIndexPaths = [NSMutableArray array];
 //    self.markdownArray = markdownArrayAfterRemoved;
-//    for (CSFiCloudFileExtensionCetaceaSharedDocument *doc in markdownArrayToBeRemoved)
+//    for (CSFCetaceaAbstractSharedDocument *doc in markdownArrayToBeRemoved)
 //    {
 //        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.markdownArray indexOfObject:doc] inSection:0];
 //        [removedIndexPaths addObject:path];
@@ -129,7 +129,7 @@
 //
 //    NSMutableArray *addedIndexPaths = [NSMutableArray array];
 //    self.markdownArray = list;
-//    for (CSFiCloudFileExtensionCetaceaSharedDocument *doc in self.rawMarkdownArray)
+//    for (CSFCetaceaAbstractSharedDocument *doc in self.rawMarkdownArray)
 //    {
 //        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.rawMarkdownArray indexOfObject:doc] inSection:0];
 //        [addedIndexPaths addObject:path];
@@ -188,7 +188,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
+    CSFCetaceaAbstractSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     JZMainMarkdownListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([JZMainMarkdownListTableViewCell class])];
     cell.doc = doc;
     
@@ -225,7 +225,7 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CSFiCloudFileExtensionCetaceaSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
+    CSFCetaceaAbstractSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     if (doc)
     {
 

@@ -8,14 +8,28 @@
 
 #import <Foundation/Foundation.h>
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
-#import "CSFiCloudFileExtensionCetaceaSharedDocument.h"
+#import "CSFCetaceaAbstractSharedDocument.h"
 
+
+/**
+ An Edit Manager For Cetacea Files
+ */
 @interface CSFCetaceaSharedDocumentEditManager : NSObject
 
+#pragma mark - Singleton Method
+/**
+ Singleton for this class
+
+ @return instance
+ */
 + (id)sharedManager;
 
-@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaSharedDocument * currentEditingDocument;
-- (void)setCurrentEditingDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
+
+/**
+ Current editing cetacea file [CSFCetaceaAbstractSharedDocument](CSFCetaceaAbstractSharedDocument.html) instance
+ */
+@property (nonatomic,strong) CSFCetaceaAbstractSharedDocument * currentEditingDocument;
+- (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)doc;
 - (BOOL)hasCurrentEditingDocument;
 
 @end
