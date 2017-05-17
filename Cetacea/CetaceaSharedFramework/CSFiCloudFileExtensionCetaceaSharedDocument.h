@@ -21,7 +21,7 @@
 
 
 /**
- a CSFDocument subclass. Presentation for platform runtime document
+ a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see [CSFiCloudFileExtensionCetaceaSharedDocument](CSFiCloudFileExtensionCetaceaSharedDocument.html)
  
  ## On iOS:
  ````
