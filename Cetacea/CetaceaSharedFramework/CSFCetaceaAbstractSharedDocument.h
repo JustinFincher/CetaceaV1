@@ -17,11 +17,11 @@
 #define CSFCetaceaSharedDocument CSFiCloudFileExtensionCetaceaNSDocument
 #endif
 
-@class CSFiCloudFileExtensionCetaceaSharedDocument;
+@class CSFCetaceaAbstractSharedDocument;
 
 
 /**
- a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see [CSFiCloudFileExtensionCetaceaSharedDocument](CSFiCloudFileExtensionCetaceaSharedDocument.html)
+ a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see [CSFCetaceaAbstractSharedDocument](CSFCetaceaAbstractSharedDocument.html)
  
  ## On iOS:
  ````
@@ -41,7 +41,7 @@
 /**
  SharedDocument Instance, owner of this class instance
  */
-@property (weak) CSFiCloudFileExtensionCetaceaSharedDocument *sharedDocument;
+@property (weak) CSFCetaceaAbstractSharedDocument *sharedDocument;
 #if TARGET_OS_IOS
 
 /**
@@ -52,16 +52,16 @@
  @return A platform depentdent CSFDocument instance (UIDocument)
  */
 - (id)initWithFileURL:(NSURL *)url
-   withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *)doc;
+   withSharedDocument:(CSFCetaceaAbstractSharedDocument *)doc;
 #elif TARGET_OS_OSX
 - (id)initWithContentsOfURL:(NSURL *)url
                      ofType:(NSString *)typeName
                       error:(NSError * _Nullable *)outError
-         withSharedDocument:(CSFiCloudFileExtensionCetaceaSharedDocument *_Nonnull)doc;
+         withSharedDocument:(CSFCetaceaAbstractSharedDocument *_Nonnull)doc;
 #endif
 @end
 
-@protocol CSFiCloudFileExtensionCetaceaSharedDocumentDelegate <NSObject>
+@protocol CSFCetaceaAbstractSharedDocumentDelegate <NSObject>
 
 @optional
 
@@ -74,12 +74,12 @@
 /**
  Platform Indepentdent Shared Document Data Model;
  */
-@interface CSFiCloudFileExtensionCetaceaSharedDocument : NSObject
+@interface CSFCetaceaAbstractSharedDocument : NSObject
 
 - (id)initWithURL:(NSURL *)url;
 
 #pragma mark - File Task
-+ (CSFiCloudFileExtensionCetaceaSharedDocument *)newDocument;
++ (CSFCetaceaAbstractSharedDocument *)newDocument;
 - (BOOL)saveDocument;
 - (void)deleteDocument:(void (^)(BOOL isSuccessful))completed;
 
