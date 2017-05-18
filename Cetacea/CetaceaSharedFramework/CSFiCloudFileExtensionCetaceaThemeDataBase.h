@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CSFiCloudFileDataBase.h"
+
 @interface CSFiCloudFileExtensionCetaceaThemeDataBase : CSFiCloudFileDataBase
 
 @end

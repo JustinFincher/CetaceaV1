@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CSFColorStorage.h"
 #import "CSFGlobalHeader.h"
 #if TARGET_OS_IOS
 #import <UIKit/UIKit.h>
@@ -14,18 +15,41 @@
 #import <AppKit/AppKit.h>
 #endif
 
-@interface CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel : NSObject
 
-@property (nonatomic,strong) CSFColor *textFrontColor;
-@property (nonatomic,strong) CSFColor *textBackgroundColor;
-@property (nonatomic,strong) CSFColor *markupFrontColor;
-@property (nonatomic,strong) CSFColor *markupBackgroundColor;
+/**
+ Cetacea Theme, Single Syntax Markup Color Model
+ */
+@interface CSFCetaceaThemeSyntaxMarkupModel : NSObject
+
+/**
+ Text Front Color
+ */
+@property (nonatomic,strong) CSFColorStorage *textFrontColor;
+
+/**
+ Text Background Color
+ */
+@property (nonatomic,strong) CSFColorStorage *textBackgroundColor;
+
+/**
+ Markup Front Color
+ */
+@property (nonatomic,strong) CSFColorStorage *markupFrontColor;
+
+/**
+ Markup Background Color
+ */
+@property (nonatomic,strong) CSFColorStorage *markupBackgroundColor;
 
 @end
 
-@interface CSFiCloudFileExtensionCetaceaThemeSyntaxPresentationModel : NSObject
 
-@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *dayMarkup;
-@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *nightMarkup;
+/**
+ Cetacea Theme, Single Syntax Markup Color Model For Both Day/Night Presentation
+ */
+@interface CSFCetaceaThemeSyntaxPresentationModel : NSObject
+
+@property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup;
+@property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup;
 
 @end

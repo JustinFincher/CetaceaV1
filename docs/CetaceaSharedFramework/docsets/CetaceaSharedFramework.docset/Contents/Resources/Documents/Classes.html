@@ -30,6 +30,9 @@
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Classes/CSFAbstractSharedDocument.html">CSFAbstractSharedDocument</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a>
               </li>
               <li class="nav-group-task">
@@ -64,6 +67,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/CSFInitialProcessManager.html">CSFInitialProcessManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CSFNativeSharedDocument.html">CSFNativeSharedDocument</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/CSFSingletonRegister.html">CSFSingletonRegister</a>
@@ -115,6 +121,9 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)CSFAbstractSharedDocumentDelegate">CSFAbstractSharedDocumentDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html">CSFCetaceaAbstractSharedDocumentDelegate</a>
               </li>
               <li class="nav-group-task">
@@ -148,13 +157,13 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></p>
-
-<p>┌──────────────────────────────────┐
+<pre class="highlight plaintext"><code>┌──────────────────────────────────┐
 │      AbstractSharedDocument      │◀─┐
 └──────────────────────────────────┘  │
 ┌──────────────────────────────────┐  │
 │       NativeSharedDocument       │◀─┘
-└──────────────────────────────────┘</p>
+└──────────────────────────────────┘
+</code></pre>
 <h2 id='on-ios' class='heading'>On iOS:</h2>
 <pre class="highlight plaintext"><code>CSFDocument = UIDocument
 CSFCetaceaNativeSharedDocument = CSFCetaceaUIDocument
@@ -478,9 +487,22 @@ When used, contains a <a href="CSFCetaceaNativeSharedDocument.html">CSFCetaceaNa
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Manager For Feedback Generator</p>
 
                         <a href="Classes/CSFFeedbackGeneratorManager.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFFeedbackGeneratorManager</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFFeedbackGeneratorManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -516,6 +538,63 @@ When used, contains a <a href="CSFCetaceaNativeSharedDocument.html">CSFCetaceaNa
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFInitialProcessManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFNativeSharedDocument"></a>
+                    <a name="//apple_ref/objc/Class/CSFNativeSharedDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFNativeSharedDocument">CSFNativeSharedDocument</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/CSFNativeSharedDocument.html" class="slightly-smaller">See more</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CSFAbstractSharedDocument"></a>
+                    <a name="//apple_ref/objc/Class/CSFAbstractSharedDocument" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CSFAbstractSharedDocument">CSFAbstractSharedDocument</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Example of how Abstract-Native Shared Document work</p>
+
+                        <a href="Classes/CSFAbstractSharedDocument.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFAbstractSharedDocument</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CSFAbstractSharedDocument</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -614,6 +693,20 @@ When used, contains a <a href="CSFCetaceaNativeSharedDocument.html">CSFCetaceaNa
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>DataBase For iCloudFileExtensionCetacea (.cetacea) file.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <a href="CSFiCloudFileDataBase.html">CSFiCloudFileDataBase</a>
+
+</div>
+<pre class="highlight plaintext"><code>- (NSString *)fileExtensionName
+{
+return @"cetacea";
+}
+- (NSString *)fileContainerFolderName
+{
+return @"Cetacea";
+}
+</code></pre>
 
                       </div>
                       <div class="declaration">

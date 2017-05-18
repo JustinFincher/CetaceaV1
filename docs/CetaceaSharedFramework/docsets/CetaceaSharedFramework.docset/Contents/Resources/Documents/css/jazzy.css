@@ -47,7 +47,7 @@ h6 {
   margin-bottom: 15px; }
 
 pre, code {
-  font: 0.95em Menlo, monospace;
+  font: 0.95em Fira Code, Fira Mono, Menlo, monospace;
   color: #777;
   word-wrap: normal; }
 
@@ -76,7 +76,7 @@ blockquote {
 
 .content-wrapper {
   margin: 0 auto;
-  width: 980px; }
+  width: 1280px; }
 
 header {
   font-size: 0.85em;
@@ -118,7 +118,7 @@ header {
   position: fixed;
   top: 70px;
   bottom: 0;
-  width: 230px;
+  width: 460px;
   word-wrap: normal; }
 
 .nav-groups {
@@ -147,12 +147,12 @@ header {
 .main-content {
   background-color: #fff;
   border: 1px solid #e2e2e2;
-  margin-left: 246px;
+  margin-left: 476px;
   position: absolute;
   overflow: hidden;
   padding-bottom: 60px;
   top: 70px;
-  width: 734px; }
+  width: 804px; }
   .main-content p, .main-content a, .main-content code, .main-content em, .main-content ul, .main-content table, .main-content blockquote {
     margin-bottom: 1em; }
   .main-content p {
@@ -321,7 +321,7 @@ header {
 html.dash header, html.dash #breadcrumbs, html.dash .sidebar {
   display: none; }
 html.dash .main-content {
-  width: 980px;
+  width: 1280px;
   margin-left: 0;
   border: none;
   width: 100%;

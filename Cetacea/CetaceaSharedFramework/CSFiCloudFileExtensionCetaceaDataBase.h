@@ -12,6 +12,19 @@
 
 /**
  DataBase For iCloudFileExtensionCetacea (.cetacea) file.
+ 
+ @see [CSFiCloudFileDataBase](CSFiCloudFileDataBase.html)
+
+ ```
+ - (NSString *)fileExtensionName
+ {
+ return @"cetacea";
+ }
+ - (NSString *)fileContainerFolderName
+ {
+ return @"Cetacea";
+ }
+ ```
  */
 @interface CSFiCloudFileExtensionCetaceaDataBase : CSFiCloudFileDataBase
 

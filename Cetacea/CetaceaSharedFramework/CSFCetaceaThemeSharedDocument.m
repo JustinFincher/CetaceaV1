@@ -6,8 +6,5 @@
 //
 //
 
-#import "CSFiCloudFileExtensionCetaceaThemeSharedDocument.h"
+#import "CSFCetaceaThemeSharedDocument.h"
 
-@implementation CSFiCloudFileExtensionCetaceaThemeSharedDocument
-
-@end

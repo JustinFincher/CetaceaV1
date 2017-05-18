@@ -9,50 +9,122 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1bc45cb70dd05205c64e70fc3f533b862f2d4335" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_3cf29b15caf4d35053bb2a2a50e9447b0e95a654" />
   <component name="FavoritesManager">
     <favorites_list name="Cetacea" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CSFDeviceCapabilityManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#306#336#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSFEditorTextAttributeManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextAttributeManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSFEditorTextFontManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextFontManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CSFCetaceaSharedDocumentEditManager.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.m">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFCetaceaSharedDocumentEditManager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+              <folding>
+                <element signature="e#125#158#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFCetaceaSharedDocument.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocument.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-512">
+              <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+              <folding>
+                <element signature="e#317#402#0" expanded="true" />
+                <element signature="e#1802#2028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFCetaceaThemeSharedDocument.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaThemeSharedDocument.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+              <folding>
+                <element signature="e#139#172#0" expanded="true" />
+                <element signature="e#363#453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#142#175#0" expanded="true" />
+                <element signature="e#294#319#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFSharedDocumentBase.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-528">
+              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <marker date="1495093285000" expanded="true" signature="532:749" ph="..." />
+                <marker date="1495093285000" expanded="true" signature="2848:2898" ph="/**...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFCetaceaSharedDocument.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocument.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="120" column="1" lean-forward="true" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+              <folding>
+                <element signature="e#865#932#0" expanded="true" />
+                <element signature="e#5702#6086#0" expanded="true" />
+                <element signature="e#6258#6400#0" expanded="true" />
+                <element signature="e#6663#6862#0" expanded="true" />
+                <element signature="e#8040#8153#0" expanded="true" />
+                <element signature="e#8537#8593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSFSharedDocumentBase.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1495092761000" expanded="true" signature="2874:2918" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="2945:2987" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="3019:4341" ph="{...}" />
+                <marker date="1495092761000" expanded="false" signature="3301:3368" ph="..." />
+                <marker date="1495092761000" expanded="false" signature="4018:4249" ph="..." />
+                <marker date="1495092761000" expanded="true" signature="4444:4900" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="4938:5003" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="5047:5377" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="5399:5439" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="5502:5505" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="5533:5751" ph="{...}" />
+                <marker date="1495092761000" expanded="true" signature="5790:6008" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,44 +139,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSFCetaceaAbstractSharedDocument.m" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4480">
-              <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
-              <folding>
-                <element signature="e#132#176#0" expanded="true" />
-                <element signature="e#873#940#0" expanded="true" />
-                <element signature="e#1575#1801#0" expanded="true" />
-                <element signature="e#5710#6094#0" expanded="true" />
-                <element signature="e#6266#6408#0" expanded="true" />
-                <element signature="e#6671#6870#0" expanded="true" />
-                <element signature="e#8048#8161#0" expanded="true" />
-                <element signature="e#8545#8601#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AppDelegate.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/AppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSFCetaceaAbstractSharedDocument.h" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+            <state relative-caret-position="128">
+              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
-                <element signature="e#132#165#0" expanded="true" />
-                <element signature="e#317#402#0" expanded="true" />
-                <element signature="e#1802#2028#0" expanded="true" />
+                <element signature="e#147#170#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,6 +157,7 @@
     <findStrings>
       <find>CSFCetaceaNativeSharedDocument</find>
       <find>isequal</find>
+      <find>saveDocument</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -127,6 +169,9 @@
         <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFConstants.h" />
         <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.m" />
         <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h" />
+        <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaThemeSharedDocument.h" />
+        <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.h" />
+        <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h" />
       </list>
     </option>
   </component>
@@ -137,7 +182,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="3360" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -510,12 +555,12 @@
       <workItem from="1494240698744" duration="135000" />
       <workItem from="1495074941367" duration="790000" />
       <workItem from="1495075840911" duration="1381000" />
-      <workItem from="1495077360463" duration="1815000" />
+      <workItem from="1495077360463" duration="6821000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4302000" />
+    <option name="totallyTimeSpent" value="9308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -527,10 +572,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="3360" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -606,11 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="106" column="49" lean-forward="false" selection-start-line="106" selection-start-column="49" selection-end-line="106" selection-end-column="49" />
-          <folding>
-            <element signature="e#132#165#0" expanded="true" />
-            <element signature="e#317#402#0" expanded="true" />
-            <element signature="e#1802#2028#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -618,16 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1755">
           <caret line="117" column="5" lean-forward="false" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-          <folding>
-            <element signature="e#132#176#0" expanded="true" />
-            <element signature="e#873#940#0" expanded="true" />
-            <element signature="e#1575#1801#0" expanded="true" />
-            <element signature="e#5710#6094#0" expanded="true" />
-            <element signature="e#6266#6408#0" expanded="true" />
-            <element signature="e#6671#6870#0" expanded="true" />
-            <element signature="e#8048#8161#0" expanded="true" />
-            <element signature="e#8545#8601#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +668,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#147#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,14 +697,6 @@
     <entry file="appcode.project-settings://1e842574">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/AppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.h">
@@ -706,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFConstants.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -726,16 +745,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4480">
           <caret line="280" column="0" lean-forward="false" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
-          <folding>
-            <element signature="e#132#176#0" expanded="true" />
-            <element signature="e#873#940#0" expanded="true" />
-            <element signature="e#1575#1801#0" expanded="true" />
-            <element signature="e#5710#6094#0" expanded="true" />
-            <element signature="e#6266#6408#0" expanded="true" />
-            <element signature="e#6671#6870#0" expanded="true" />
-            <element signature="e#8048#8161#0" expanded="true" />
-            <element signature="e#8545#8601#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,10 +753,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
           <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <element signature="e#132#165#0" expanded="true" />
+            <element signature="e#147#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocumentEditManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#125#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocument.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
             <element signature="e#317#402#0" expanded="true" />
             <element signature="e#1802#2028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocument.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="120" column="1" lean-forward="true" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+          <folding>
+            <element signature="e#865#932#0" expanded="true" />
+            <element signature="e#5702#6086#0" expanded="true" />
+            <element signature="e#6258#6400#0" expanded="true" />
+            <element signature="e#6663#6862#0" expanded="true" />
+            <element signature="e#8040#8153#0" expanded="true" />
+            <element signature="e#8537#8593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495092761000" expanded="true" signature="2874:2918" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="2945:2987" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="3019:4341" ph="{...}" />
+            <marker date="1495092761000" expanded="false" signature="3301:3368" ph="..." />
+            <marker date="1495092761000" expanded="false" signature="4018:4249" ph="..." />
+            <marker date="1495092761000" expanded="true" signature="4444:4900" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="4938:5003" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="5047:5377" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="5399:5439" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="5502:5505" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="5533:5751" ph="{...}" />
+            <marker date="1495092761000" expanded="true" signature="5790:6008" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <marker date="1495093285000" expanded="true" signature="532:749" ph="..." />
+            <marker date="1495093285000" expanded="true" signature="2848:2898" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaThemeSharedDocument.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#139#172#0" expanded="true" />
+            <element signature="e#363#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#175#0" expanded="true" />
+            <element signature="e#294#319#0" expanded="true" />
           </folding>
         </state>
       </provider>
