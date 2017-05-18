@@ -21,30 +21,36 @@
  @param color Color To Set
  */
 - (void)setColor:(CSFColor *)color;
+
+/**
+ Get (UIColor/NScolor) from current RGBA Storage
+
+ @return (UIColor/NScolor) instance
+ */
 - (CSFColor *)getColor;
 
 /**
  Red
  @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
-@property (nonatomic) NSNumber *r;
+@property (nonatomic,strong) NSNumber *r;
 
 /**
  Green
  @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
-@property (nonatomic) NSNumber *g;
+@property (nonatomic,strong) NSNumber *g;
 
 /**
  Blue
  @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
-@property (nonatomic) NSNumber *b;
+@property (nonatomic,strong) NSNumber *b;
 
 /**
  Alpha
  @note read only, to set this value, use [setColor](#/c:objc(cs)CSFColorStorage(im)setColor:)
  */
-@property (nonatomic) NSNumber *a;
+@property (nonatomic,strong) NSNumber *a;
 
 @end

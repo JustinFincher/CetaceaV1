@@ -16,6 +16,10 @@
 #define CSFFont NSFont
 #endif
 
+
+/**
+ Manager For Feedback Generator
+ */
 @interface CSFFeedbackGeneratorManager : NSObject
 
 + (id)sharedManager;
