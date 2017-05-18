@@ -454,6 +454,7 @@
 		564D4928CEDB57CCA464190D /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		57C55CD60FB84E88E19EEC4B /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		57FD1CC3F8E4363383A8F384 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		5A3D38078DACD6D534ABDEBB /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		624604E06CAD7A769BA2D6A0 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		647417CB5F66DC4B90EA4809 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		64BCC8F31AFC7A4BFEB70E0B /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -997,6 +998,7 @@
 				3F24F8665723DCE82EE16C2A /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				38A74FCF07B079BE8E43E6AC /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				3D75EAC6EF3382F84E8B2727 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				5A3D38078DACD6D534ABDEBB /* Pods-Cetacea-Mac-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
