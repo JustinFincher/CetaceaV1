@@ -7,7 +7,3 @@
 //
 
 #import "CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h"
-
-@implementation CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel
-
-@end

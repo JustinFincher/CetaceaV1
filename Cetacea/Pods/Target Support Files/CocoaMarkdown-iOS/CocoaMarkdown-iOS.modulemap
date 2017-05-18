@@ -1,0 +1,6 @@
+framework module CocoaMarkdown {
+  umbrella header "CocoaMarkdown-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

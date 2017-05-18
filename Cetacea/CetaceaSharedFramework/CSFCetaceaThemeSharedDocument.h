@@ -30,4 +30,7 @@
 #pragma mark - Override
 + (CSFCetaceaThemeAbstractSharedDocument *)newDocument;
 - (CSFCetaceaNativeSharedDocument *)nativeDocument;
+
+#pragma mark - Property
+
 @end
