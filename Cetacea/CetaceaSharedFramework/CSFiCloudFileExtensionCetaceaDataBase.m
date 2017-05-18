@@ -7,7 +7,7 @@
 //
 
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
-#import "CSFCetaceaAbstractSharedDocument.h"
+#import "CSFCetaceaSharedDocument.h"
 #import "CSFiCloudSyncManager.h"
 #import "CSFGlobalHeader.h"
 

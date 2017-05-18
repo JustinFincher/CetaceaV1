@@ -16,7 +16,7 @@
 #define EditorTextViewClass NSTextView
 #endif
 
-#import "CSFCetaceaAbstractSharedDocument.h"
+#import "CSFCetaceaSharedDocument.h"
 
 
 /**

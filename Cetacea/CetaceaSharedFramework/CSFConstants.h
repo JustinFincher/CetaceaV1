@@ -16,12 +16,18 @@
  Developer TeamID
  */
 extern NSString *const CSFStringIdentiferDeveloperTeamID;
+/// CSF.String.Identifer.Developer
+/// iCloud Container Name
 extern NSString *const CSFStringIdentiferiCloudContainerName;
 extern NSString *const CSFStringIdentiferApplicationBundleID;
 extern NSString *const CSFStringIdentiferAppGroupName;
 
 #pragma mark - CSF.String.Identifer.UserDefault
+/// CSF.String.Identifer.UserDefault
+/// Saved Editor Base Font Name
 extern NSString * const CSFStringIdentiferUserDefaultEditorBaseFontName;
+/// CSF.String.Identifer.UserDefault
+/// Saved Editor Base Font Size
 extern NSString * const CSFStringIdentiferUserDefaultEditorBaseFontSize;
 
 #pragma mark - CSF.String.Identifer.ActivityType
