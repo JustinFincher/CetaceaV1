@@ -1,9 +1,10 @@
 CODE_SIGN_IDENTITY =
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DateTools-OSX" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-OSX" "$PODS_CONFIGURATION_BUILD_DIR/Realm-OSX"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/CocoaMarkdown-OSX" "$PODS_CONFIGURATION_BUILD_DIR/DateTools-OSX" "$PODS_CONFIGURATION_BUILD_DIR/Ono-OSX" "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-OSX" "$PODS_CONFIGURATION_BUILD_DIR/Realm-OSX" "$PODS_CONFIGURATION_BUILD_DIR/cmark-OSX"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools-OSX/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-OSX/ReactiveObjC.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Realm-OSX/Realm.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "DateTools" -framework "ReactiveObjC" -framework "Realm"
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/CocoaMarkdown-OSX/CocoaMarkdown.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/DateTools-OSX/DateTools.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Ono-OSX/Ono.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/ReactiveObjC-OSX/ReactiveObjC.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Realm-OSX/Realm.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/cmark-OSX/cmark.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "CocoaMarkdown" -framework "DateTools" -framework "Ono" -framework "ReactiveObjC" -framework "Realm" -framework "cmark"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/..

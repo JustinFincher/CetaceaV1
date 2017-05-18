@@ -8,3 +8,11 @@
 
 #import "CSFCetaceaThemeSharedDocument.h"
 
+@implementation CSFCetaceaThemeAbstractSharedDocument
+
+- (void)updateFileWrappers
+{
+
+}
+
+@end

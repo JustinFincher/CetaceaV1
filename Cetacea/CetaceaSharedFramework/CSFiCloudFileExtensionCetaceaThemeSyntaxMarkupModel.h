@@ -15,7 +15,6 @@
 #import <AppKit/AppKit.h>
 #endif
 
-
 /**
  Cetacea Theme, Single Syntax Markup Color Model
  */
