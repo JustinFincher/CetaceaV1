@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CSFiCloudFileExtensionCetaceaDataBase.h"
-#import "CSFCetaceaAbstractSharedDocument.h"
+#import "CSFCetaceaSharedDocument.h"
 
 
 /**

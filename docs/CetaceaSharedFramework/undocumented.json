@@ -2,161 +2,77 @@
   "warnings": [
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 64,
+      "line": 74,
       "symbol": "CSFCetaceaAbstractSharedDocumentDelegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 68,
+      "line": 78,
       "symbol": "CSFCetaceaAbstractSharedDocumentDelegate.-uploadingStatusChanged",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 69,
+      "line": 79,
       "symbol": "CSFCetaceaAbstractSharedDocumentDelegate.-downloadingStatusChanged",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 79,
-      "symbol": "CSFCetaceaAbstractSharedDocument.-initWithURL:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 82,
-      "symbol": "CSFCetaceaAbstractSharedDocument.+newDocument",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 83,
-      "symbol": "CSFCetaceaAbstractSharedDocument.-saveDocument",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 84,
-      "symbol": "CSFCetaceaAbstractSharedDocument.-deleteDocument:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 87,
-      "symbol": "CSFCetaceaAbstractSharedDocument.-isEqual:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 88,
+      "line": 119,
       "symbol": "CSFCetaceaAbstractSharedDocument.-scriptingIsEqualTo:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 91,
+      "line": 122,
       "symbol": "CSFCetaceaAbstractSharedDocument.-updateFileWrappers",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 94,
-      "symbol": "CSFCetaceaAbstractSharedDocument.document",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 95,
-      "symbol": "CSFCetaceaAbstractSharedDocument.fileWrapper",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 96,
-      "symbol": "CSFCetaceaAbstractSharedDocument.url",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 97,
-      "symbol": "CSFCetaceaAbstractSharedDocument.markdownString",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 98,
-      "symbol": "CSFCetaceaAbstractSharedDocument.title",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 99,
-      "symbol": "CSFCetaceaAbstractSharedDocument.creationDate",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 100,
-      "symbol": "CSFCetaceaAbstractSharedDocument.lastChangeDate",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 102,
+      "line": 140,
       "symbol": "CSFCetaceaAbstractSharedDocument.tags",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 105,
+      "line": 143,
       "symbol": "CSFCetaceaAbstractSharedDocument.metaDataItem",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 107,
+      "line": 145,
       "symbol": "CSFCetaceaAbstractSharedDocument.isUploading",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 108,
+      "line": 146,
       "symbol": "CSFCetaceaAbstractSharedDocument.isUploaded",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 109,
+      "line": 147,
       "symbol": "CSFCetaceaAbstractSharedDocument.isDownloading",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaAbstractSharedDocument.h",
-      "line": 110,
+      "line": 148,
       "symbol": "CSFCetaceaAbstractSharedDocument.isDownloaded",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
@@ -184,65 +100,37 @@
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 19,
-      "symbol": "CSFStringIdentiferiCloudContainerName",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 20,
+      "line": 22,
       "symbol": "CSFStringIdentiferApplicationBundleID",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 21,
+      "line": 23,
       "symbol": "CSFStringIdentiferAppGroupName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 24,
-      "symbol": "CSFStringIdentiferUserDefaultEditorBaseFontName",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 25,
-      "symbol": "CSFStringIdentiferUserDefaultEditorBaseFontSize",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 28,
+      "line": 34,
       "symbol": "CSFStringIdentiferActivityTypeEditingDocument",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 31,
+      "line": 37,
       "symbol": "CSFStringNotificationiCloudNotAvailiableName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFConstants.h",
-      "line": 32,
+      "line": 38,
       "symbol": "CSFStringNotificationCurrentDocumentChangedName",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFDeviceCapabilityManager.h",
-      "line": 17,
-      "symbol": "CSFDeviceCapabilityManager.+sharedManager",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {

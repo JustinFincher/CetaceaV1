@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSFCetaceaSharedDocument Class Reference</title>
+    <title>CSFCetaceaNativeSharedDocument Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,18 +10,18 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/CSFCetaceaSharedDocument" class="dashAnchor"></a>
-    <a title="CSFCetaceaSharedDocument Class Reference"></a>
+    <a name="//apple_ref/objc/Class/CSFCetaceaNativeSharedDocument" class="dashAnchor"></a>
+    <a title="CSFCetaceaNativeSharedDocument Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (28% documented)</p>
+        <p><a href="../index.html">CetaceaSharedFramework Docs</a> (44% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">CetaceaSharedFramework Reference</a>
         <img id="carat" src="../img/carat.png" />
-        CSFCetaceaSharedDocument Class Reference
+        CSFCetaceaNativeSharedDocument Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -34,7 +34,7 @@
                 <a href="../Classes/CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CSFCetaceaSharedDocument.html">CSFCetaceaSharedDocument</a>
+                <a href="../Classes/CSFCetaceaNativeSharedDocument.html">CSFCetaceaNativeSharedDocument</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CSFCetaceaSharedDocumentEditManager.html">CSFCetaceaSharedDocumentEditManager</a>
@@ -128,21 +128,30 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>CSFCetaceaSharedDocument</h1>
+            <h1>CSFCetaceaNativeSharedDocument</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaSharedDocument</span></code></pre>
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CSFCetaceaNativeSharedDocument</span></code></pre>
 
                 </div>
               </div>
             <p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></p>
+
+<p>┌──────────────────────────────────┐
+│      AbstractSharedDocument      │◀─┐
+└──────────────────────────────────┘  │
+┌──────────────────────────────────┐  │
+│       NativeSharedDocument       │◀─┘
+└──────────────────────────────────┘</p>
 <h2 id='on-ios' class='heading'>On iOS:</h2>
 <pre class="highlight plaintext"><code>CSFDocument = UIDocument
-CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaUIDocument
+CSFCetaceaNativeSharedDocument = CSFCetaceaUIDocument
+so CSFCetaceaNativeSharedDocument is a subclass of UIDocumet
 </code></pre>
 <h2 id='on-osx' class='heading'>On OSX:</h2>
 <pre class="highlight plaintext"><code>CSFDocument = NSDocument
-CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
+CSFCetaceaNativeSharedDocument = CSFCetaceaNSDocument
+so CSFCetaceaNativeSharedDocument is a subclass of NSDocument
 </code></pre>
 
           </section>
@@ -152,9 +161,9 @@ CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)CSFCetaceaSharedDocument(py)sharedDocument"></a>
+                    <a name="/c:objc(cs)CSFCetaceaNativeSharedDocument(py)sharedDocument"></a>
                     <a name="//apple_ref/objc/Property/sharedDocument" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)CSFCetaceaSharedDocument(py)sharedDocument">sharedDocument</a>
+                    <a class="token" href="#/c:objc(cs)CSFCetaceaNativeSharedDocument(py)sharedDocument">sharedDocument</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -181,7 +190,7 @@ CSFCetaceaSharedDocument = CSFiCloudFileExtensionCetaceaNSDocument
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-17)</p>
+          <p>&copy; 2017 <a class="link" href="https://fincher.im" target="_blank" rel="external">Justin</a>. All rights reserved. (Last updated: 2017-05-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

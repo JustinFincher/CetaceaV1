@@ -14,12 +14,16 @@
  */
 @interface CSFDeviceCapabilityManager : NSObject
 
+#pragma mark - Singleton Methods
+/// @brief Singleton Method
 + (id)sharedManager;
 
+#pragma mark - iOS Methods
 #if TARGET_OS_IOS
 
 - (BOOL)isForceTouchAvailable;
 
+#pragma mark - OSX Methods
 #elif TARGET_OS_OSX
 
 #endif
