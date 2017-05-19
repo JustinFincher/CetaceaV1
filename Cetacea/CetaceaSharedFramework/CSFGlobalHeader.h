@@ -14,7 +14,6 @@
 
 #if TARGET_OS_IOS || TARGET_OS_OSX
 @import DateTools;
-//#import <DateTools/DateTools.h>
 #endif
 
 #if TARGET_OS_IOS

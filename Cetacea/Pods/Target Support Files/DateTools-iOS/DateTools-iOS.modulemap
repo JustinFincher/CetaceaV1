@@ -1,6 +1,0 @@
-framework module DateTools {
-  umbrella header "DateTools-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

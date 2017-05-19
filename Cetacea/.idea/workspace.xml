@@ -9,35 +9,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_3cf29b15caf4d35053bb2a2a50e9447b0e95a654" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_c8c05ece63c14aaddee6ad216f01eae4fe5190cd" />
   <component name="FavoritesManager">
     <favorites_list name="Cetacea" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CSFCetaceaSharedDocument.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaSharedDocument.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-              <folding>
-                <element signature="e#317#402#0" expanded="true" />
-                <element signature="e#1802#2028#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSFAttributedStringRenderer.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFAttributedStringRenderer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CSFAttributedStringRenderer.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFAttributedStringRenderer.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,11 +41,10 @@
       <file leaf-file-name="CSFEditorTextView.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="848">
+              <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding>
-                <marker date="1495180413000" expanded="true" signature="420:422" ph="..." />
-                <marker date="1495180413000" expanded="true" signature="4751:4752" ph="..." />
+                <marker date="1495183285000" expanded="true" signature="5208:5209" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,8 +53,8 @@
       <file leaf-file-name="JZEditorTextView.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorTextView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
-              <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="486">
+              <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -87,18 +63,48 @@
       <file leaf-file-name="JZEditorViewController.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+            <state relative-caret-position="293">
+              <caret line="107" column="67" lean-forward="false" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JZiCloudFileExtensionCetaceaDocument.m" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CSFGlobalHeader.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFGlobalHeader.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JZiCloudFileExtensionCetaceaDocument.m" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZiCloudFileExtensionCetaceaDocument.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
+            <state relative-caret-position="194">
+              <caret line="144" column="26" lean-forward="false" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JZiCloudFileExtensionCetaceaDocument.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZiCloudFileExtensionCetaceaDocument.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JZEditorPreviewSplitViewController.m" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorPreviewSplitViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -114,19 +120,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#142#175#0" expanded="true" />
-                <element signature="e#294#319#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -134,6 +127,8 @@
       <find>CSFCetaceaNativeSharedDocument</find>
       <find>isequal</find>
       <find>saveDocument</find>
+      <find>markdownEditorTextDidChanged</find>
+      <find>textDidChange</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -152,6 +147,7 @@
         <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFAttributedStringRenderer.m" />
         <option value="$PROJECT_DIR$/Pods/CocoaMarkdown/CocoaMarkdown/CMParser.h" />
         <option value="$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorTextView.m" />
+        <option value="$PROJECT_DIR$/CetaceaSharedFramework/CSFGlobalHeader.h" />
       </list>
     </option>
   </component>
@@ -161,6 +157,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="3360" />
     <option name="width" value="1920" />
@@ -471,7 +468,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CSF-iOS">
+  <component name="RunManager" selected="Application.Cetacea-iOS">
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" MAKE_ACTIVE="TRUE">
       <envs />
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
@@ -606,7 +603,42 @@
       </EXTENSION>
       <method />
     </configuration>
-    <list size="16">
+    <configuration default="false" name="Pods-Cetacea-Mac" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Cetacea-Mac" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Cetacea-Mac" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-Cetacea-iOS" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-Cetacea-iOS" CONFIG_NAME="Debug" SCHEME_NAME="Pods-Cetacea-iOS" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-CetaceaSharedFramework-OSX" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-CetaceaSharedFramework-OSX" CONFIG_NAME="Debug" SCHEME_NAME="Pods-CetaceaSharedFramework-OSX" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-CetaceaSharedFramework-iOS" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-CetaceaSharedFramework-iOS" CONFIG_NAME="Debug" SCHEME_NAME="Pods-CetaceaSharedFramework-iOS" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <configuration default="false" name="Pods-CetaceaSharedFramework-watchOS" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="Pods-CetaceaSharedFramework-watchOS" CONFIG_NAME="Debug" SCHEME_NAME="Pods-CetaceaSharedFramework-watchOS" MAKE_ACTIVE="TRUE">
+      <envs />
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <method />
+    </configuration>
+    <list size="21">
       <item index="0" class="java.lang.String" itemvalue="Application.Cetacea-Mac" />
       <item index="1" class="java.lang.String" itemvalue="Application.CSF-iOS" />
       <item index="2" class="java.lang.String" itemvalue="Application.Cetacea-MacTravisCI" />
@@ -623,6 +655,11 @@
       <item index="13" class="java.lang.String" itemvalue="Application.DocumentProviderExtension" />
       <item index="14" class="java.lang.String" itemvalue="Application.DocumentProviderExtensionFileProvider" />
       <item index="15" class="java.lang.String" itemvalue="Application.ActionExtension" />
+      <item index="16" class="java.lang.String" itemvalue="Application.Pods-Cetacea-Mac" />
+      <item index="17" class="java.lang.String" itemvalue="Application.Pods-Cetacea-iOS" />
+      <item index="18" class="java.lang.String" itemvalue="Application.Pods-CetaceaSharedFramework-OSX" />
+      <item index="19" class="java.lang.String" itemvalue="Application.Pods-CetaceaSharedFramework-iOS" />
+      <item index="20" class="java.lang.String" itemvalue="Application.Pods-CetaceaSharedFramework-watchOS" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -644,12 +681,12 @@
       <workItem from="1495074941367" duration="790000" />
       <workItem from="1495075840911" duration="1381000" />
       <workItem from="1495077360463" duration="7764000" />
-      <workItem from="1495167668449" duration="3717000" />
+      <workItem from="1495167668449" duration="6284000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13968000" />
+    <option name="totallyTimeSpent" value="16535000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,18 +699,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="3360" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6631171" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -776,18 +813,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1495181437000" expanded="true" signature="2874:2918" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="2945:2987" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="3019:4341" ph="{...}" />
-            <marker date="1495181437000" expanded="false" signature="3301:3368" ph="..." />
-            <marker date="1495181437000" expanded="false" signature="4018:4249" ph="..." />
-            <marker date="1495181437000" expanded="true" signature="4444:4900" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="4938:5003" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5047:5377" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5399:5401" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5767:5769" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5797:6015" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="6054:6272" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="2874:2918" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="2945:2987" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="3019:4341" ph="{...}" />
+            <marker date="1495181941000" expanded="false" signature="3301:3368" ph="..." />
+            <marker date="1495181941000" expanded="false" signature="4018:4249" ph="..." />
+            <marker date="1495181941000" expanded="true" signature="4444:4900" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="4938:5003" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="5047:5377" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="5399:5401" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6410:6412" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6440:6658" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6697:6915" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -807,8 +844,8 @@
         <state relative-caret-position="1040">
           <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding>
-            <element signature="e#317#402#0" expanded="true" />
-            <element signature="e#1802#2028#0" expanded="true" />
+            <element signature="e#317#402#0" expanded="false" />
+            <element signature="e#1802#2028#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,18 +1001,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1495181437000" expanded="true" signature="2874:2918" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="2945:2987" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="3019:4341" ph="{...}" />
-            <marker date="1495181437000" expanded="false" signature="3301:3368" ph="..." />
-            <marker date="1495181437000" expanded="false" signature="4018:4249" ph="..." />
-            <marker date="1495181437000" expanded="true" signature="4444:4900" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="4938:5003" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5047:5377" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5399:5401" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5767:5769" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="5797:6015" ph="{...}" />
-            <marker date="1495181437000" expanded="true" signature="6054:6272" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="2874:2918" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="2945:2987" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="3019:4341" ph="{...}" />
+            <marker date="1495181941000" expanded="false" signature="3301:3368" ph="..." />
+            <marker date="1495181941000" expanded="false" signature="4018:4249" ph="..." />
+            <marker date="1495181941000" expanded="true" signature="4444:4900" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="4938:5003" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="5047:5377" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="5399:5401" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6410:6412" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6440:6658" ph="{...}" />
+            <marker date="1495181941000" expanded="true" signature="6697:6915" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1028,8 +1065,8 @@
         <state relative-caret-position="0">
           <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding>
-            <element signature="e#317#402#0" expanded="true" />
-            <element signature="e#1802#2028#0" expanded="true" />
+            <element signature="e#317#402#0" expanded="false" />
+            <element signature="e#1802#2028#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1063,20 +1100,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="848">
+          <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
-            <marker date="1495180413000" expanded="true" signature="420:422" ph="..." />
-            <marker date="1495180413000" expanded="true" signature="4751:4752" ph="..." />
+            <marker date="1495183285000" expanded="true" signature="5208:5209" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorTextView.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,18 +1124,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorViewController.m">
+    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZiCloudFileExtensionCetaceaDocument.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="91" column="38" lean-forward="true" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+        <state relative-caret-position="194">
+          <caret line="144" column="26" lean-forward="false" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZiCloudFileExtensionCetaceaDocument.m">
+    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZiCloudFileExtensionCetaceaDocument.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="152" selection-end-column="1" />
+        <state relative-caret-position="416">
+          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorPreviewSplitViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="44" column="67" lean-forward="false" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorTextView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac/JZEditorViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="107" column="67" lean-forward="false" selection-start-line="107" selection-start-column="67" selection-end-line="107" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFGlobalHeader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding />
         </state>
       </provider>
