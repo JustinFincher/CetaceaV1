@@ -29,5 +29,6 @@
 - (void)setupTextView;
 - (void)refreshHightLight;
 - (void)refreshFileContent;
+- (void)updateTextView;
 
 @end

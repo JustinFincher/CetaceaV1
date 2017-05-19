@@ -1,6 +1,0 @@
-framework module DynamicColor {
-  umbrella header "DynamicColor-OSX-umbrella.h"
-
-  export *
-  module * { export * }
-}

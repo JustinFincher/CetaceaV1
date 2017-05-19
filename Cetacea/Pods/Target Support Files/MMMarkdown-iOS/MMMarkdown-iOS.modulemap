@@ -1,6 +1,0 @@
-framework module MMMarkdown {
-  umbrella header "MMMarkdown-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

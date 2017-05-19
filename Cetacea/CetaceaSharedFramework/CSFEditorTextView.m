@@ -16,7 +16,14 @@
 #import <CocoaMarkdown/CocoaMarkdown.h>
 #import "CSFAttributedStringRenderer.h"
 
-@interface CSFEditorTextView()
+#if TARGET_OS_IOS
+#define textViewDelegate UITextViewDelegate
+#elif TARGET_OS_OSX
+#define textViewDelegate NSTextViewDelegate
+#endif
+
+
+@interface CSFEditorTextView()<textViewDelegate>
 
 @property (nonatomic,strong) NSAttributedString *generatedAttributedString;
 @property (nonatomic,strong) CSFEditorTextLayoutManager *csfTextLayoutManager;
@@ -32,72 +39,74 @@
 
 - (instancetype)init
 {
-    if (self = [super init])
-    {
-        _hasBeenSetup = NO;
+	if (self = [super init])
+	{
+		_hasBeenSetup = NO;
 #if TARGET_OS_IOS
-        [self setupTextView];
+		[self setupTextView];
 #elif TARGET_OS_OSX
 #endif
-    }
-    return self;
+	}
+	return self;
 }
 
 - (void)setupTextView
 {
-    JZLog(@"setupTextView");
-    self.csfTextLayoutManager = [[CSFEditorTextLayoutManager alloc] init];
-    [self.textContainer replaceLayoutManager:self.csfTextLayoutManager];
-    self.layoutManager.allowsNonContiguousLayout = YES;
+	JZLog(@"setupTextView");
+	self.csfTextLayoutManager = [[CSFEditorTextLayoutManager alloc] init];
+	[self.textContainer replaceLayoutManager:self.csfTextLayoutManager];
+	self.layoutManager.allowsNonContiguousLayout = YES;
 #if TARGET_OS_IOS
-    
-    
+	
+	
 #elif TARGET_OS_OSX
-    self.wantsLayer = YES;
-    self.automaticDashSubstitutionEnabled = NO;
-    self.allowsDocumentBackgroundColorChange = YES;
+	self.wantsLayer = YES;
+	self.automaticDashSubstitutionEnabled = NO;
+	self.allowsDocumentBackgroundColorChange = YES;
 #endif
 	
 	self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
 	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
 	
-    self.hasBeenSetup = YES;
+	self.delegate = self;
+	
+	self.hasBeenSetup = YES;
 }
 
 #if TARGET_OS_IOS
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
-    if (!_hasBeenSetup)
-    {
-        [self setupTextView];
-    }
+	if (!_hasBeenSetup)
+	{
+		[self setupTextView];
+	}
 }
 #elif TARGET_OS_OSX
 - (BOOL)isFlipped
 {
-    return YES;
+	return YES;
 }
 - (void)viewDidMoveToWindow
 {
-    if (!_hasBeenSetup)
-    {
-        [self setupTextView];
-    }
+	if (!_hasBeenSetup)
+	{
+		[self setupTextView];
+	}
 }
 #endif
 
 - (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument
 {
-    _currentEditingDocument = currentEditingDocument;
+	_currentEditingDocument = currentEditingDocument;
 	[self refreshFileContent];
-    [self refreshHightLight];
+	[self refreshHightLight];
 	[self updateTextView];
 }
 - (void)refreshFileContent
 {
 	if (self.currentEditingDocument)
 	{
-		[self.cmDocument updateWithContentsOfFile:[self.currentEditingDocument.markdownStringFileURL path] options:0];
+		[self.cmDocument updateWithData:[self.currentEditingDocument.markdownString dataUsingEncoding:NSUnicodeStringEncoding] options:0];
 	}else
 	{
 		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
@@ -108,7 +117,7 @@
 #if TARGET_OS_IOS
 	self.generatedAttributedString = [self.renderer render];
 #elif TARGET_OS_OSX
-
+	
 #endif
 }
 - (void)updateTextView
@@ -148,13 +157,13 @@
 }
 - (NSRange)characterRangeFromVisibleRect
 {
-	#if TARGET_OS_IOS
+#if TARGET_OS_IOS
 	CGRect bounds = self.bounds;
 	UITextPosition *start = [self characterRangeAtPoint:bounds.origin].start;
 	UITextPosition *end = [self characterRangeAtPoint:CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds))].end;
 	return NSMakeRange([self offsetFromPosition:self.beginningOfDocument toPosition:start],
         [self offsetFromPosition:start toPosition:end]);
-	#elif TARGET_OS_OSX
+#elif TARGET_OS_OSX
 	NSRange glyphRange, charRange;
 	NSLayoutManager *layoutManager = [self
 									  layoutManager];
@@ -172,7 +181,27 @@
 				 characterRangeForGlyphRange:glyphRange
 				 actualGlyphRange:NULL];
 	return charRange;
-	#endif
+#endif
 }
 
+#pragma mark - TextViewDelegate
+#if TARGET_OS_IOS
+- (void)textViewDidChange:(UITextView *)textView
+{
+	[self onTextChange];
+}
+#elif TARGET_OS_OSX
+- (void)didChangeText
+{
+	[super didChangeText];
+	[self onTextChange];
+}
+#endif
+- (void)onTextChange
+{
+	#if TARGET_OS_IOS
+	self.currentEditingDocument.markdownString = self.text;
+	#elif TARGET_OS_OSX
+	#endif
+}
 @end
