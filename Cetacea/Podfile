@@ -8,7 +8,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     pod 'Realm'
     pod 'ReactiveObjC'
     pod 'DateTools'
-    pod 'CocoaMarkdown', :git => 'https://github.com/indragiek/CocoaMarkdown.git'
+    pod 'CocoaMarkdown', :git => 'https://github.com/SecondRenaissance/CocoaMarkdown.git'
   end
 
   target 'CetaceaSharedFramework-OSX' do
@@ -19,7 +19,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     pod 'Realm'
     pod 'ReactiveObjC'
     pod 'DateTools'
-    pod 'CocoaMarkdown', :git => 'https://github.com/indragiek/CocoaMarkdown.git'
+    pod 'CocoaMarkdown', :git => 'https://github.com/SecondRenaissance/CocoaMarkdown.git'
   end
 
   target 'CetaceaSharedFramework-watchOS' do
@@ -34,7 +34,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :ios, '10.0'
     project 'Cetacea-iOS/Cetacea-iOS.xcodeproj'
     workspace 'Cetacea'
-    pod 'CocoaMarkdown', :git => 'https://github.com/indragiek/CocoaMarkdown.git'
+    pod 'CocoaMarkdown', :git => 'https://github.com/SecondRenaissance/CocoaMarkdown.git'
     pod 'Realm'
     pod 'IQKeyboardManager'
     pod 'GDPerformanceView', '~> 1.3.1'
@@ -70,7 +70,7 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     platform :osx, '10.12'
     project 'Cetacea-Mac/Cetacea-Mac.xcodeproj'
     workspace 'Cetacea'
-    pod 'CocoaMarkdown', :git => 'https://github.com/indragiek/CocoaMarkdown.git'
+    pod 'CocoaMarkdown', :git => 'https://github.com/SecondRenaissance/CocoaMarkdown.git'
     pod 'Realm'
     pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
