@@ -1,0 +1,6 @@
+framework module Bohr {
+  umbrella header "Bohr-umbrella.h"
+
+  export *
+  module * { export * }
+}
