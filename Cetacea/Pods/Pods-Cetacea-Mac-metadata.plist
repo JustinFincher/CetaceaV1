@@ -546,9 +546,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<key>socialMediaURL</key>
 			<string>https://twitter.com/yannickloriot</string>
 			<key>summary</key>
-			<string>Yet another extension to manipulate colors easily in Swift</string>
+			<string>Yet another extension to manipulate colors easily in Swift (UIColor and NSColor)</string>
 			<key>version</key>
-			<string>3.2.1</string>
+			<string>3.3</string>
 		</dict>
 		<dict>
 			<key>authors</key>

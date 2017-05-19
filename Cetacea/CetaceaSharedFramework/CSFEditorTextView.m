@@ -13,13 +13,18 @@
 #import "CSFEditorTextStorage.h"
 #import "CSFGlobalHeader.h"
 
+#import <CocoaMarkdown/CocoaMarkdown.h>
+#import "CSFAttributedStringRenderer.h"
+
 @interface CSFEditorTextView()
 
-@property (nonatomic,strong) NSAttributedString *attParagraphStrWithAllRange;
-@property (nonatomic,strong) NSAttributedString *attLineStrWithinVisiableRange;
+@property (nonatomic,strong) NSAttributedString *generatedAttributedString;
 @property (nonatomic,strong) CSFEditorTextLayoutManager *csfTextLayoutManager;
 
 @property (atomic) BOOL hasBeenSetup;
+
+@property (nonatomic,strong) CSFAttributedStringRenderer *renderer;
+@property (nonatomic,strong) CMDocument *cmDocument;
 
 @end
 
@@ -52,7 +57,10 @@
     self.automaticDashSubstitutionEnabled = NO;
     self.allowsDocumentBackgroundColorChange = YES;
 #endif
-    
+	
+	self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
+	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
+	
     self.hasBeenSetup = YES;
 }
 
@@ -81,16 +89,90 @@
 - (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument
 {
     _currentEditingDocument = currentEditingDocument;
-#if TARGET_OS_IOS
-    [self setText:(currentEditingDocument == nil) ? @"" : currentEditingDocument.markdownString];
-#elif TARGET_OS_OSX
-    [self setString:(currentEditingDocument == nil) ? @"" : currentEditingDocument.markdownString];
-#endif
-    //    [self.editorTextView.parser refreshAttributesTheme];
+	[self refreshFileContent];
     [self refreshHightLight];
+	[self updateTextView];
+}
+- (void)refreshFileContent
+{
+	if (self.currentEditingDocument)
+	{
+		[self.cmDocument updateWithContentsOfFile:[self.currentEditingDocument.markdownStringFileURL path] options:0];
+	}else
+	{
+		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
+	}
 }
 - (void)refreshHightLight
 {
-    
+#if TARGET_OS_IOS
+	self.generatedAttributedString = [self.renderer render];
+#elif TARGET_OS_OSX
+
+#endif
 }
+- (void)updateTextView
+{
+	BOOL isNotTypingPinyin = NO;
+#if TARGET_OS_IOS
+	isNotTypingPinyin = self.markedTextRange == nil;
+#elif TARGET_OS_OSX
+	isNotTypingPinyin = self.markedRange.length == 0;
+#endif
+	if (isNotTypingPinyin)
+	{
+		//不在输入拼音
+		NSRange range = self.selectedRange;
+		if (self.generatedAttributedString != nil)
+		{
+			[self.textStorage setAttributedString: self.generatedAttributedString];
+			if ([self.generatedAttributedString.string length] >= range.location + range.length)
+			{
+				// [begin--range--end]--stringend
+				[self setSelectedRange:range];
+			}
+			else if ([self.generatedAttributedString.string length] < range.location + range.length && [self.generatedAttributedString.string length] > range.location)
+			{
+				// [begin--range--stringend--end]
+				[self setSelectedRange:NSMakeRange(range.location, 0)];
+			}else
+			{
+				// stringend--[begin--range--end]
+				[self setSelectedRange:NSMakeRange([self.generatedAttributedString.string length], 0)];
+			}
+		}
+	}else
+	{
+		//正在输入拼音 不能替换
+	}
+}
+- (NSRange)characterRangeFromVisibleRect
+{
+	#if TARGET_OS_IOS
+	CGRect bounds = self.bounds;
+	UITextPosition *start = [self characterRangeAtPoint:bounds.origin].start;
+	UITextPosition *end = [self characterRangeAtPoint:CGPointMake(CGRectGetMaxX(bounds), CGRectGetMaxY(bounds))].end;
+	return NSMakeRange([self offsetFromPosition:self.beginningOfDocument toPosition:start],
+        [self offsetFromPosition:start toPosition:end]);
+	#elif TARGET_OS_OSX
+	NSRange glyphRange, charRange;
+	NSLayoutManager *layoutManager = [self
+									  layoutManager];
+	NSTextContainer *textContainer = [self
+									  textContainer];
+	NSPoint containerOrigin = [self
+							   textContainerOrigin];
+	aRect = NSOffsetRect([self visibleRect], -containerOrigin.x,
+						 -containerOrigin.y);
+	
+	glyphRange = [layoutManager
+				  glyphRangeForBoundingRect:[self visibleRect]
+				  inTextContainer:textContainer];
+	charRange = [layoutManager
+				 characterRangeForGlyphRange:glyphRange
+				 actualGlyphRange:NULL];
+	return charRange;
+	#endif
+}
+
 @end

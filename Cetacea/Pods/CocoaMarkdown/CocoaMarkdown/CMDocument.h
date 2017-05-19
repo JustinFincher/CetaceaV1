@@ -48,6 +48,7 @@ typedef NS_OPTIONS(NSInteger, CMDocumentOptions) {
  *  @return An initialized instance of the receiver.
  */
 - (instancetype)initWithData:(NSData *)data options:(CMDocumentOptions)options;
+- (void)updateWithData:(NSData *)data options:(CMDocumentOptions)options;
 
 /**
  *  Initializes the receiver with data read from a file.
@@ -59,5 +60,5 @@ typedef NS_OPTIONS(NSInteger, CMDocumentOptions) {
  *  could not be opened.
  */
 - (instancetype)initWithContentsOfFile:(NSString *)path options:(CMDocumentOptions)options;
-
+- (void)updateWithContentsOfFile:(NSString *)path options:(CMDocumentOptions)options;
 @end

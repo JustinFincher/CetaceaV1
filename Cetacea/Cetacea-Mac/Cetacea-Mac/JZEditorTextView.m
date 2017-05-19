@@ -218,7 +218,7 @@
                                       textContainer];
     NSPoint containerOrigin = [self
                                textContainerOrigin];
-    
+
     // Convert from view coordinates to container coordinates
     aRect = NSOffsetRect(aRect, -containerOrigin.x,
                          -containerOrigin.y);

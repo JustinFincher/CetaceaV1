@@ -132,6 +132,7 @@
 @property (nonatomic,strong) NSURL *url;
 /// markdown string
 @property (nonatomic,strong) NSString *markdownString;
+@property (nonatomic,strong) NSURL *markdownStringFileURL;
 /// title string generated from markdown string
 @property (nonatomic,strong) NSString *title;
 /// creation date read from system

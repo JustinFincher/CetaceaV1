@@ -201,11 +201,32 @@
 }
 - (BOOL)saveDocument
 {
-#warning Not Implemnted
-	return YES;
+	[self updateFileWrappers];
+	#if TARGET_OS_IOS
+	return [self.nativeDocument writeContents:self.fileWrapper toURL:self.url forSaveOperation:UIDocumentSaveForOverwriting originalContentsURL:self.url error:nil];
+	#elif TARGET_OS_OSX
+	return [self.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+	#endif
 }
+#if TARGET_OS_IOS
+
+#elif TARGET_OS_OSX
+//- (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+//{
+//	[self updateFileWrappers];
+//	NSError *err;
+//	BOOL isSucess = [self.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+//	if (err)
+//	{
+//		JZLog(@"%@",[err localizedDescription]);
+//	}
+//	return isSucess;
+//}
+#endif
 - (void)deleteDocument:(void (^)(BOOL isSuccessful))completed
 {
+	[[NSFileManager defaultManager] removeItemAtURL:self.url error:nil];
+	completed(YES);
 }
 - (BOOL)isEqual:(id)object
 {

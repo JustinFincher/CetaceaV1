@@ -147,6 +147,10 @@
 }
 
 #pragma mark - Properties
+- (NSURL *)markdownStringFileURL
+{
+	return [[self url] URLByAppendingPathComponent:@"markdownString" isDirectory:NO];
+}
 - (BOOL)isUploading
 {
 	if (self.metaDataItem)
