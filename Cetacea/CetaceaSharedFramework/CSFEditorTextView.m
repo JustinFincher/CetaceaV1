@@ -106,7 +106,7 @@
 {
 	if (self.currentEditingDocument)
 	{
-		[self.cmDocument updateWithData:[self.currentEditingDocument.markdownString dataUsingEncoding:NSUnicodeStringEncoding] options:0];
+		[self.cmDocument updateWithData:[self.currentEditingDocument.markdownString dataUsingEncoding:NSUTF8StringEncoding] options:0];
 	}else
 	{
 		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
@@ -119,6 +119,7 @@
 #elif TARGET_OS_OSX
 	
 #endif
+	[self.renderer invalidate];
 }
 - (void)updateTextView
 {
@@ -199,9 +200,9 @@
 #endif
 - (void)onTextChange
 {
-	#if TARGET_OS_IOS
+#if TARGET_OS_IOS
 	self.currentEditingDocument.markdownString = self.text;
-	#elif TARGET_OS_OSX
-	#endif
+#elif TARGET_OS_OSX
+#endif
 }
 @end
