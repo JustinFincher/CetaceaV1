@@ -37,42 +37,49 @@
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 142,
+      "line": 135,
+      "symbol": "CSFCetaceaAbstractSharedDocument.markdownStringFileURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
+      "line": 143,
       "symbol": "CSFCetaceaAbstractSharedDocument.tags",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 145,
+      "line": 146,
       "symbol": "CSFCetaceaAbstractSharedDocument.metaDataItem",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 147,
+      "line": 148,
       "symbol": "CSFCetaceaAbstractSharedDocument.isUploading",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 148,
+      "line": 149,
       "symbol": "CSFCetaceaAbstractSharedDocument.isUploaded",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 149,
+      "line": 150,
       "symbol": "CSFCetaceaAbstractSharedDocument.isDownloading",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFCetaceaSharedDocument.h",
-      "line": 150,
+      "line": 151,
       "symbol": "CSFCetaceaAbstractSharedDocument.isDownloaded",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
@@ -194,20 +201,6 @@
       "line": 27,
       "symbol": "CSFEditorTextView.currentEditingDocument",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFEditorTextView.h",
-      "line": 29,
-      "symbol": "CSFEditorTextView.-setupTextView",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFEditorTextView.h",
-      "line": 30,
-      "symbol": "CSFEditorTextView.-refreshHightLight",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
@@ -366,98 +359,49 @@
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 24,
-      "symbol": "CSFiCloudSyncManager.+sharedManager",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 26,
-      "symbol": "CSFiCloudSyncManager.-isIcloudAvailiable",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 28,
-      "symbol": "CSFiCloudSyncManager.-ubiquitousURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 29,
-      "symbol": "CSFiCloudSyncManager.-ubiquitousDocumentsReadMeURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 30,
-      "symbol": "CSFiCloudSyncManager.-ubiquitousDocumentsURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 31,
-      "symbol": "CSFiCloudSyncManager.-ubiquitousDocumentsCetaceaURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 32,
-      "symbol": "CSFiCloudSyncManager.-ubiquitousDocumentsHighlightThemesURL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 33,
+      "line": 74,
       "symbol": "CSFiCloudSyncManager.-directoryExistCheck:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 34,
+      "line": 75,
       "symbol": "CSFiCloudSyncManager.iCloudFilesMetadataQuery",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 35,
+      "line": 76,
       "symbol": "CSFiCloudSyncManager.iCloudCetaceaFilesMetadataQuery",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 36,
+      "line": 77,
       "symbol": "CSFiCloudSyncManager.iCloudThemeFilesMetadataQuery",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 38,
+      "line": 79,
       "symbol": "CSFiCloudSyncManager.delegate",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 40,
+      "line": 81,
       "symbol": "CSFiCloudSyncManager.cetaceaDocumentArray",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/fincher/Desktop/Fincher/Develop/Mac/Cetacea-Mac/Cetacea/CetaceaSharedFramework/CSFiCloudSyncManager.h",
-      "line": 41,
+      "line": 82,
       "symbol": "CSFiCloudSyncManager.highlightThemesDocumentArray",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ Place to store CSF MD Text Attribute on TextView
+ */
 @interface CSFTextAttributes : NSObject
 
 @end
