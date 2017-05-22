@@ -15,4 +15,7 @@
 @property (nonatomic,strong) TSBaseParser *paragraphParser;
 @property (nonatomic,strong) TSBaseParser *fullParser;
 
++ (id)sharedManager;
+
+
 @end

@@ -13,9 +13,6 @@
 #import "CSFEditorTextStorage.h"
 #import "CSFGlobalHeader.h"
 
-#import <CocoaMarkdown/CocoaMarkdown.h>
-#import "CSFAttributedStringRenderer.h"
-
 #if TARGET_OS_IOS
 #define textViewDelegate UITextViewDelegate
 #elif TARGET_OS_OSX
@@ -29,9 +26,6 @@
 @property (nonatomic,strong) CSFEditorTextLayoutManager *csfTextLayoutManager;
 
 @property (atomic) BOOL hasBeenSetup;
-
-@property (nonatomic,strong) CSFAttributedStringRenderer *renderer;
-@property (nonatomic,strong) CMDocument *cmDocument;
 
 @end
 
@@ -64,9 +58,6 @@
 	self.automaticDashSubstitutionEnabled = NO;
 	self.allowsDocumentBackgroundColorChange = YES;
 #endif
-	
-	self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
-	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
 	
 	self.delegate = self;
 	
@@ -104,22 +95,13 @@
 }
 - (void)refreshFileContent
 {
-	if (self.currentEditingDocument)
-	{
-		[self.cmDocument updateWithData:[self.currentEditingDocument.markdownString dataUsingEncoding:NSUTF8StringEncoding] options:0];
-	}else
-	{
-		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
-	}
 }
 - (void)refreshHightLight
 {
 #if TARGET_OS_IOS
-	self.generatedAttributedString = [self.renderer render];
 #elif TARGET_OS_OSX
 	
 #endif
-	[self.renderer invalidate];
 }
 - (void)updateTextView
 {
