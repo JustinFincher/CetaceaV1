@@ -1,6 +1,0 @@
-framework module cmark {
-  umbrella header "cmark-OSX-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -89,12 +89,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CocoaMarkdown-iOS/CocoaMarkdown.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Ono-iOS/Ono.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/cmark-iOS/cmark.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bohr/Bohr.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"
@@ -106,12 +103,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-iOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CocoaMarkdown-iOS/CocoaMarkdown.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Ono-iOS/Ono.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/cmark-iOS/cmark.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Bohr/Bohr.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DKNightVersion/DKNightVersion.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DynamicColor-iOS/DynamicColor.framework"

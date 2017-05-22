@@ -1,6 +1,0 @@
-framework module cmark {
-  umbrella header "cmark-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
