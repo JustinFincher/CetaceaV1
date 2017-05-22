@@ -26,9 +26,25 @@
 
 @property (nonatomic,strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument;
 
+
+/**
+ Some Property Init Methods
+ */
 - (void)setupTextView;
+
+/**
+ Refresh Hightlight and store to buffer (not apply to textview yet)
+ */
 - (void)refreshHightLight;
+
+/**
+ Reload Hightlight source from the currentEditingDocument
+ */
 - (void)refreshFileContent;
+
+/**
+ Update TextView Content With Buffer
+ */
 - (void)updateTextView;
 
 @end
