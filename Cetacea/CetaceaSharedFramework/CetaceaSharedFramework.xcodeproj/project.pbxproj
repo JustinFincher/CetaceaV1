@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0D799C511ED40AD40044C0DC /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0D799C541ED40AD40044C0DC /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				0D799C551ED40AEC0044C0DC /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0D0523D81EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */; };
 		0D0523D91EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */; };
@@ -311,8 +325,6 @@
 			children = (
 				0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */,
 				0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */,
-				0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */,
-				0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */,
 				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
 				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
 				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
@@ -411,6 +423,8 @@
 				0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */,
 				0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */,
 				0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */,
+				0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */,
+				0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -723,6 +737,11 @@
 						DevelopmentTeam = 9QJ8M25J77;
 						ProvisioningStyle = Automatic;
 					};
+					0D799C511ED40AD40044C0DC = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 0D5669BB1EB588B0000C3E39 /* Build configuration list for PBXProject "CetaceaSharedFramework" */;
@@ -740,6 +759,7 @@
 				0D5669E91EB58FAF000C3E39 /* CetaceaSharedFramework-iOS */,
 				0D5669F61EB58FBE000C3E39 /* CetaceaSharedFramework-OSX */,
 				0D566A031EB58FF1000C3E39 /* CetaceaSharedFramework-watchOS */,
+				0D799C511ED40AD40044C0DC /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -795,6 +815,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		0D799C551ED40AEC0044C0DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"FinGameWorks\" \\\n--company-id \"com.justzht\" \\\n--output \"${PROJECT_DIR}\"/../../docs \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
 		};
 		613CFFBEDAAC5B3A61BBA261 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1352,6 +1385,22 @@
 			};
 			name = Release;
 		};
+		0D799C521ED40AD40044C0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D799C531ED40AD40044C0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1387,6 +1436,15 @@
 			buildConfigurations = (
 				0D566A0A1EB58FF1000C3E39 /* Debug */,
 				0D566A0B1EB58FF1000C3E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D799C541ED40AD40044C0DC /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D799C521ED40AD40044C0DC /* Debug */,
+				0D799C531ED40AD40044C0DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

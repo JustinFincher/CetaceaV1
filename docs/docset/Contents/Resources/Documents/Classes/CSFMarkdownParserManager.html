@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CSFMarkdownParserManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CetaceaSharedFramework </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">FinGameWorks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/atxHeaderTagAttributes">atxHeaderTagAttributes</option>
+		
+		<option value="//api/name/atxHeaderTextAttributes">atxHeaderTextAttributes</option>
+		
+		<option value="//api/name/boldTagAttributes">boldTagAttributes</option>
+		
+		<option value="//api/name/boldTextAttributes">boldTextAttributes</option>
+		
+		<option value="//api/name/codeBlockTagAttributes">codeBlockTagAttributes</option>
+		
+		<option value="//api/name/codeBlockTextAttributes">codeBlockTextAttributes</option>
+		
+		<option value="//api/name/defaultAttributes">defaultAttributes</option>
+		
+		<option value="//api/name/fullParser">fullParser</option>
+		
+		<option value="//api/name/imageTagAttributes">imageTagAttributes</option>
+		
+		<option value="//api/name/imageTextAttributes">imageTextAttributes</option>
+		
+		<option value="//api/name/italicTagAttributes">italicTagAttributes</option>
+		
+		<option value="//api/name/italicTextAttributes">italicTextAttributes</option>
+		
+		<option value="//api/name/lineParser">lineParser</option>
+		
+		<option value="//api/name/linkTagAttributes">linkTagAttributes</option>
+		
+		<option value="//api/name/linkTextAttributes">linkTextAttributes</option>
+		
+		<option value="//api/name/listTagAttributes">listTagAttributes</option>
+		
+		<option value="//api/name/listTextAttributes">listTextAttributes</option>
+		
+		<option value="//api/name/paragraphParser">paragraphParser</option>
+		
+		<option value="//api/name/quoteTagAttributes">quoteTagAttributes</option>
+		
+		<option value="//api/name/quoteTextAttributes">quoteTextAttributes</option>
+		
+		<option value="//api/name/setextHeaderTagAttributes">setextHeaderTagAttributes</option>
+		
+		<option value="//api/name/setextHeaderTextAttributes">setextHeaderTextAttributes</option>
+		
+		<option value="//api/name/shouldRemoveTags">shouldRemoveTags</option>
+		
+		<option value="//api/name/strikeThroughTagAttributes">strikeThroughTagAttributes</option>
+		
+		<option value="//api/name/strikeThroughTextAttributes">strikeThroughTextAttributes</option>
+		
+		<option value="//api/name/tabIndentTagAttributes">tabIndentTagAttributes</option>
+		
+		<option value="//api/name/tabIndentTextAttributes">tabIndentTextAttributes</option>
+		
+		<option value="//api/name/themeDoc">themeDoc</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedManager">+ sharedManager</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/attributedLineParserStringFromMarkdown:">- attributedLineParserStringFromMarkdown:</option>
+		
+		<option value="//api/name/attributedParagraphParserStringFromMarkdown:">- attributedParagraphParserStringFromMarkdown:</option>
+		
+		<option value="//api/name/attributedStringFromMarkdown:">- attributedStringFromMarkdown:</option>
+		
+		<option value="//api/name/dealloc">- dealloc</option>
+		
+		<option value="//api/name/init">- init</option>
+		
+		<option value="//api/name/refreshAttributesTheme">- refreshAttributesTheme</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CSFMarkdownParserManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CSFMarkdownParserManager.h<br />CSFMarkdownParserManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/lineParser" title="lineParser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lineParser">&nbsp;&nbsp;lineParser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) TSBaseParser *lineParser</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/paragraphParser" title="paragraphParser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/paragraphParser">&nbsp;&nbsp;paragraphParser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) TSBaseParser *paragraphParser</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fullParser" title="fullParser"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fullParser">&nbsp;&nbsp;fullParser</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) TSBaseParser *fullParser</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/shouldRemoveTags" title="shouldRemoveTags"></a>
+	<h3 class="method-title"><code><a href="#//api/name/shouldRemoveTags">&nbsp;&nbsp;shouldRemoveTags</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL shouldRemoveTags</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/themeDoc" title="themeDoc"></a>
+	<h3 class="method-title"><code><a href="#//api/name/themeDoc">&nbsp;&nbsp;themeDoc</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) CSFCetaceaThemeAbstractSharedDocument *themeDoc</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/defaultAttributes" title="defaultAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/defaultAttributes">&nbsp;&nbsp;defaultAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/atxHeaderTextAttributes" title="atxHeaderTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/atxHeaderTextAttributes">&nbsp;&nbsp;atxHeaderTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/atxHeaderTagAttributes" title="atxHeaderTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/atxHeaderTagAttributes">&nbsp;&nbsp;atxHeaderTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setextHeaderTextAttributes" title="setextHeaderTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setextHeaderTextAttributes">&nbsp;&nbsp;setextHeaderTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setextHeaderTagAttributes" title="setextHeaderTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setextHeaderTagAttributes">&nbsp;&nbsp;setextHeaderTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/codeBlockTextAttributes" title="codeBlockTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/codeBlockTextAttributes">&nbsp;&nbsp;codeBlockTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/codeBlockTagAttributes" title="codeBlockTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/codeBlockTagAttributes">&nbsp;&nbsp;codeBlockTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/boldTextAttributes" title="boldTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/boldTextAttributes">&nbsp;&nbsp;boldTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/boldTagAttributes" title="boldTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/boldTagAttributes">&nbsp;&nbsp;boldTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/italicTextAttributes" title="italicTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/italicTextAttributes">&nbsp;&nbsp;italicTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/italicTagAttributes" title="italicTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/italicTagAttributes">&nbsp;&nbsp;italicTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/strikeThroughTextAttributes" title="strikeThroughTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/strikeThroughTextAttributes">&nbsp;&nbsp;strikeThroughTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/strikeThroughTagAttributes" title="strikeThroughTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/strikeThroughTagAttributes">&nbsp;&nbsp;strikeThroughTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tabIndentTextAttributes" title="tabIndentTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tabIndentTextAttributes">&nbsp;&nbsp;tabIndentTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/tabIndentTagAttributes" title="tabIndentTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tabIndentTagAttributes">&nbsp;&nbsp;tabIndentTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listTextAttributes" title="listTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listTextAttributes">&nbsp;&nbsp;listTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/listTagAttributes" title="listTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/listTagAttributes">&nbsp;&nbsp;listTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/quoteTextAttributes" title="quoteTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/quoteTextAttributes">&nbsp;&nbsp;quoteTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/quoteTagAttributes" title="quoteTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/quoteTagAttributes">&nbsp;&nbsp;quoteTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/imageTextAttributes" title="imageTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/imageTextAttributes">&nbsp;&nbsp;imageTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/imageTagAttributes" title="imageTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/imageTagAttributes">&nbsp;&nbsp;imageTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkTextAttributes" title="linkTextAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkTextAttributes">&nbsp;&nbsp;linkTextAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTextAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/linkTagAttributes" title="linkTagAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/linkTagAttributes">&nbsp;&nbsp;linkTagAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTagAttributes</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (id)sharedManager</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshAttributesTheme" title="refreshAttributesTheme"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshAttributesTheme">&ndash;&nbsp;refreshAttributesTheme</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshAttributesTheme</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attributedParagraphParserStringFromMarkdown:" title="attributedParagraphParserStringFromMarkdown:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attributedParagraphParserStringFromMarkdown:">&ndash;&nbsp;attributedParagraphParserStringFromMarkdown:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSAttributedString *)attributedParagraphParserStringFromMarkdown:(NSString *)<em>markdown</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attributedLineParserStringFromMarkdown:" title="attributedLineParserStringFromMarkdown:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attributedLineParserStringFromMarkdown:">&ndash;&nbsp;attributedLineParserStringFromMarkdown:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSAttributedString *)attributedLineParserStringFromMarkdown:(NSString *)<em>markdown</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/attributedStringFromMarkdown:" title="attributedStringFromMarkdown:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attributedStringFromMarkdown:">&ndash;&nbsp;attributedStringFromMarkdown:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSAttributedString *)attributedStringFromMarkdown:(NSString *)<em>markdown</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="method-title"><code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dealloc" title="dealloc"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dealloc">&ndash;&nbsp;dealloc</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)dealloc</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 FinGameWorks. All rights reserved. Updated: 2017-05-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

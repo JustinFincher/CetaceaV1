@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFAbstractSharedDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFAbstractSharedDocument</TokenIdentifier>
+			<Abstract type="html">Example of how Abstract-Native Shared Document work</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/initWithURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (id _Nullable)initWithURL:(NSURL *_Nonnull)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFAbstractSharedDocument/newDocument</TokenIdentifier>
+			<Abstract type="html">New Document</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>+ (CSFAbstractSharedDocument *)newDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">New Document Instance</Abstract></ReturnValue>
+			<Anchor>//api/name/newDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFAbstractSharedDocument/getNewDocumentNextPath</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)getNewDocumentNextPath</Declaration>
+			
+			
+			<Anchor>//api/name/getNewDocumentNextPath</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/saveDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveDocument</Declaration>
+			
+			
+			<Anchor>//api/name/saveDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/deleteDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteDocument:(void ( ^ ) ( BOOL isSuccessful ))completed</Declaration>
+			
+			
+			<Anchor>//api/name/deleteDocument:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/isEqual:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqual:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/isEqual:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/scriptingIsEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)scriptingIsEqualTo:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/scriptingIsEqualTo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/updateFileWrappers</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (void)updateFileWrappers</Declaration>
+			
+			
+			<Anchor>//api/name/updateFileWrappers</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/setNativeDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (strong) id nativeDocument</Declaration>
+			
+			
+			<Anchor>//api/name/nativeDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/nativeDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (strong) id nativeDocument</Declaration>
+			
+			
+			<Anchor>//api/name/nativeDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFAbstractSharedDocument/nativeDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (strong) id nativeDocument</Declaration>
+			
+			
+			<Anchor>//api/name/nativeDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/getNativeDocument</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (CSFNativeSharedDocument *)getNativeDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">a native representation of document</Abstract></ReturnValue>
+			<Anchor>//api/name/getNativeDocument</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/getNativeDocumentClass</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (Class)getNativeDocumentClass</Declaration>
+			
+			
+			<Anchor>//api/name/getNativeDocumentClass</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/getDatabaseClass</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (Class)getDatabaseClass</Declaration>
+			
+			
+			<Anchor>//api/name/getDatabaseClass</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/setFileWrapper:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/fileWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFAbstractSharedDocument/fileWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/setUrl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFAbstractSharedDocument/url</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/setMetaDataItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/metaDataItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFAbstractSharedDocument/metaDataItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/updateFileWrappersByPreferredFileName:Contents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.m</DeclaredIn>
+			
+			<Declaration>- (void)updateFileWrappersByPreferredFileName:(NSString *)fileName Contents:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/updateFileWrappersByPreferredFileName:Contents:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

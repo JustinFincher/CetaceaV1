@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaNativeSharedDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaNativeSharedDocument</TokenIdentifier>
+			<Abstract type="html">a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see CSFCetaceaAbstractSharedDocument</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/setSharedDocument:</TokenIdentifier>
+			<Abstract type="html">SharedDocument Instance, owner of this class instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (weak) CSFCetaceaAbstractSharedDocument *sharedDocument</Declaration>
+			
+			
+			<Anchor>//api/name/sharedDocument</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/sharedDocument</TokenIdentifier>
+			<Abstract type="html">SharedDocument Instance, owner of this class instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (weak) CSFCetaceaAbstractSharedDocument *sharedDocument</Declaration>
+			
+			
+			<Anchor>//api/name/sharedDocument</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaNativeSharedDocument/sharedDocument</TokenIdentifier>
+			<Abstract type="html">SharedDocument Instance, owner of this class instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (weak) CSFCetaceaAbstractSharedDocument *sharedDocument</Declaration>
+			
+			
+			<Anchor>//api/name/sharedDocument</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/initWithFileURL:withSharedDocument:</TokenIdentifier>
+			<Abstract type="html">Init Method On iOS</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFileURL:(NSURL *)url withSharedDocument:(CSFCetaceaAbstractSharedDocument *)doc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">File URL</Abstract>
+				</Parameter><Parameter>
+					<Name>doc</Name>
+					<Abstract type="html">Shared Document</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A platform depentdent CSFDocument instance (UIDocument)</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFileURL:withSharedDocument:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/initWithContentsOfURL:ofType:error:withSharedDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithContentsOfURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError *_Nullable *)outError withSharedDocument:(CSFCetaceaAbstractSharedDocument *_Nonnull)doc</Declaration>
+			
+			
+			<Anchor>//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/contentsForType:error:#:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (id)contentsForType:(NSString *)typeName error:(NSError *_Nullable *)outError #</Declaration>
+			
+			
+			<Anchor>//api/name/contentsForType:error:#:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/loadFromContents:ofType:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError *_Nullable *)outError</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromContents:ofType:error:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaNativeSharedDocument/abstractDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (CSFCetaceaThemeAbstractSharedDocument *)abstractDocument</Declaration>
+			
+			
+			<Anchor>//api/name/abstractDocument</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

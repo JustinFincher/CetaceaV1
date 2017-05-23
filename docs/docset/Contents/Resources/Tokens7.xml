@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaThemeSyntaxPresentationModel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaThemeSyntaxPresentationModel</TokenIdentifier>
+			<Abstract type="html">Cetacea Theme, Single Syntax Markup Color Model For Both Day/Night Presentation</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/setDayMarkup:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/dayMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/dayMarkup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/dayMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxPresentationModel/dayMarkup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/dayMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/setNightMarkup:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/nightMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/nightMarkup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/nightMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxPresentationModel/nightMarkup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>
+			
+			
+			<Anchor>//api/name/nightMarkup</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

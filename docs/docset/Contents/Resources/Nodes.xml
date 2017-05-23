@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>CetaceaSharedFramework</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+                
+                <Node>
+                    <Name>Blocks</Name>
+                    <Path>index.html</Path>
+                    <Subnodes>
+                        <NodeRef refid="32"/>
+                        
+                    </Subnodes>
+                </Node>
+                
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>CSFAbstractSharedDocument</Name>
+            <Path>Classes/CSFAbstractSharedDocument.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFAbstractSharedDocument.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFAbstractSharedDocument.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFAbstractSharedDocument.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFAbstractSharedDocument.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFAbstractSharedDocument.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>CSFCetaceaAbstractSharedDocument</Name>
+            <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaAbstractSharedDocument.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>CSFCetaceaNativeSharedDocument</Name>
+            <Path>Classes/CSFCetaceaNativeSharedDocument.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaNativeSharedDocument.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaNativeSharedDocument.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaNativeSharedDocument.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaNativeSharedDocument.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>CSFCetaceaSharedDocumentEditManager</Name>
+            <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaSharedDocumentEditManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>CSFCetaceaThemeAbstractSharedDocument</Name>
+            <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>CSFCetaceaThemeSyntaxMarkupModel</Name>
+            <Path>Classes/CSFCetaceaThemeSyntaxMarkupModel.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxMarkupModel.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxMarkupModel.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxMarkupModel.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>CSFCetaceaThemeSyntaxPresentationModel</Name>
+            <Path>Classes/CSFCetaceaThemeSyntaxPresentationModel.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxPresentationModel.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxPresentationModel.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxPresentationModel.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>CSFColorStorage</Name>
+            <Path>Classes/CSFColorStorage.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFColorStorage.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFColorStorage.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFColorStorage.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFColorStorage.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>CSFConstants</Name>
+            <Path>Classes/CSFConstants.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>CSFDeviceCapabilityManager</Name>
+            <Path>Classes/CSFDeviceCapabilityManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFDeviceCapabilityManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFDeviceCapabilityManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFDeviceCapabilityManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFDeviceCapabilityManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>CSFEditorTextAttributeManager</Name>
+            <Path>Classes/CSFEditorTextAttributeManager.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>CSFEditorTextContainer</Name>
+            <Path>Classes/CSFEditorTextContainer.html</Path>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>CSFEditorTextFontManager</Name>
+            <Path>Classes/CSFEditorTextFontManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextFontManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextFontManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextFontManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextFontManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextFontManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>CSFEditorTextLayoutManager</Name>
+            <Path>Classes/CSFEditorTextLayoutManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextLayoutManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextLayoutManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextLayoutManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>CSFEditorTextRulerView</Name>
+            <Path>Classes/CSFEditorTextRulerView.html</Path>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>CSFEditorTextStorage</Name>
+            <Path>Classes/CSFEditorTextStorage.html</Path>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>CSFEditorTextView</Name>
+            <Path>Classes/CSFEditorTextView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFEditorTextView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>CSFFeedbackGeneratorManager</Name>
+            <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFFeedbackGeneratorManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>CSFInitialProcessManager</Name>
+            <Path>Classes/CSFInitialProcessManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFInitialProcessManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFInitialProcessManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFInitialProcessManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFInitialProcessManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>CSFMarkdownParserManager</Name>
+            <Path>Classes/CSFMarkdownParserManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFMarkdownParserManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFMarkdownParserManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFMarkdownParserManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFMarkdownParserManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFMarkdownParserManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>CSFNativeSharedDocument</Name>
+            <Path>Classes/CSFNativeSharedDocument.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFNativeSharedDocument.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFNativeSharedDocument.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFNativeSharedDocument.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFNativeSharedDocument.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFNativeSharedDocument.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>CSFSingletonRegister</Name>
+            <Path>Classes/CSFSingletonRegister.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFSingletonRegister.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFSingletonRegister.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFSingletonRegister.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFSingletonRegister.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFSingletonRegister.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>CSFiCloudFileDataBase</Name>
+            <Path>Classes/CSFiCloudFileDataBase.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileDataBase.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileDataBase.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileDataBase.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileDataBase.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>CSFiCloudFileExtensionCetaceaDataBase</Name>
+            <Path>Classes/CSFiCloudFileExtensionCetaceaDataBase.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaDataBase.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaDataBase.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaDataBase.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>CSFiCloudFileExtensionCetaceaThemeDataBase</Name>
+            <Path>Classes/CSFiCloudFileExtensionCetaceaThemeDataBase.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaThemeDataBase.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaThemeDataBase.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudFileExtensionCetaceaThemeDataBase.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>CSFiCloudSyncManager</Name>
+            <Path>Classes/CSFiCloudSyncManager.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudSyncManager.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CSFiCloudSyncManager.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudSyncManager.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudSyncManager.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CSFiCloudSyncManager.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>TSBaseParser</Name>
+            <Path>Classes/TSBaseParser.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TSBaseParser.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TSBaseParser.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TSBaseParser.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/TSBaseParser.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>TSExpressionBlockPair</Name>
+            <Path>Classes/TSExpressionBlockPair.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/TSExpressionBlockPair.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/TSExpressionBlockPair.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/TSExpressionBlockPair.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/TSExpressionBlockPair.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="29" type="file" documentType="reference">
+            <Name>CSFAbstractSharedDocumentDelegate</Name>
+            <Path>Protocols/CSFAbstractSharedDocumentDelegate.html</Path>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>CSFCetaceaAbstractSharedDocumentDelegate</Name>
+            <Path>Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>CSFiCloudSyncDelegate</Name>
+            <Path>Protocols/CSFiCloudSyncDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CSFiCloudSyncDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CSFiCloudSyncDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CSFiCloudSyncDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        
+        <Node id="32" type="file" documentType="reference">
+            <Name>TSMarkdownParserMatchBlock</Name>
+            <Path>Blocks/TSMarkdownParserMatchBlock.html</Path>
+            
+        </Node>
+        
+	</Library>
+</DocSetNodes>

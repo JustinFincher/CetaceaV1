@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFiCloudFileExtensionCetaceaDataBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFiCloudFileExtensionCetaceaDataBase</TokenIdentifier>
+			<Abstract type="html">DataBase For iCloudFileExtensionCetacea (.cetacea) file.</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaDataBase.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaDataBase/fileContainerFolderName</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaDataBase/fileExtensionName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileExtensionName</Declaration>
+			
+			<ReturnValue><Abstract type="html">file extension eg: cetacea for &apos;a.cetacea&apos; file</Abstract></ReturnValue>
+			<Anchor>//api/name/fileExtensionName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaDataBase/fileContainerFolderName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileContainerFolderName</Declaration>
+			
+			<ReturnValue><Abstract type="html">folder name which the files will be saved</Abstract></ReturnValue>
+			<Anchor>//api/name/fileContainerFolderName</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaDataBase/filesFromArray:</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)filesFromArray:(NSArray *)query</Declaration>
+			
+			
+			<Anchor>//api/name/filesFromArray:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

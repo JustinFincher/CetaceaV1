@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFColorStorage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFColorStorage</TokenIdentifier>
+			<Abstract type="html">A RGBA Properties based presentation of CSFColor (UIColor/NSColor</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+            
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setColor:</TokenIdentifier>
+			<Abstract type="html">Set Color Storage with a plaform specific Color Class (UIColor/NScolor instance</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>- (void)setColor:(CSFColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color To Set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setColor:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/getColor</TokenIdentifier>
+			<Abstract type="html">Get (UIColor/NScolor from current RGBA Storage</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>- (CSFColor *)getColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">(UIColor/NScolor instance</Abstract></ReturnValue>
+			<Anchor>//api/name/getColor</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setR:</TokenIdentifier>
+			<Abstract type="html">Red</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *r</Declaration>
+			
+			
+			<Anchor>//api/name/r</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/r</TokenIdentifier>
+			<Abstract type="html">Red</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *r</Declaration>
+			
+			
+			<Anchor>//api/name/r</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFColorStorage/r</TokenIdentifier>
+			<Abstract type="html">Red</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *r</Declaration>
+			
+			
+			<Anchor>//api/name/r</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setG:</TokenIdentifier>
+			<Abstract type="html">Green</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *g</Declaration>
+			
+			
+			<Anchor>//api/name/g</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/g</TokenIdentifier>
+			<Abstract type="html">Green</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *g</Declaration>
+			
+			
+			<Anchor>//api/name/g</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFColorStorage/g</TokenIdentifier>
+			<Abstract type="html">Green</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *g</Declaration>
+			
+			
+			<Anchor>//api/name/g</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setB:</TokenIdentifier>
+			<Abstract type="html">Blue</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *b</Declaration>
+			
+			
+			<Anchor>//api/name/b</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/b</TokenIdentifier>
+			<Abstract type="html">Blue</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *b</Declaration>
+			
+			
+			<Anchor>//api/name/b</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFColorStorage/b</TokenIdentifier>
+			<Abstract type="html">Blue</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *b</Declaration>
+			
+			
+			<Anchor>//api/name/b</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setA:</TokenIdentifier>
+			<Abstract type="html">Alpha</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *a</Declaration>
+			
+			
+			<Anchor>//api/name/a</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/a</TokenIdentifier>
+			<Abstract type="html">Alpha</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *a</Declaration>
+			
+			
+			<Anchor>//api/name/a</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFColorStorage/a</TokenIdentifier>
+			<Abstract type="html">Alpha</Abstract>
+			<DeclaredIn>CSFColorStorage.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *a</Declaration>
+			
+			
+			<Anchor>//api/name/a</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/initWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFColorStorage.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCoder:(NSCoder *)aDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFColorStorage.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)aCoder</Declaration>
+			
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/setPlatformDependentColorInstance:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFColorStorage.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColor *platformDependentColorInstance</Declaration>
+			
+			
+			<Anchor>//api/name/platformDependentColorInstance</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFColorStorage/platformDependentColorInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFColorStorage.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColor *platformDependentColorInstance</Declaration>
+			
+			
+			<Anchor>//api/name/platformDependentColorInstance</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFColorStorage/platformDependentColorInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFColorStorage.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColor *platformDependentColorInstance</Declaration>
+			
+			
+			<Anchor>//api/name/platformDependentColorInstance</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

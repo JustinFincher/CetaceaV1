@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CSFiCloudSyncDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CSFiCloudSyncDelegate</TokenIdentifier>
+			<Abstract type="html">Delegates for iCloud updates</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CSFiCloudSyncDelegate/iCloudFileUpdated:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (void)iCloudFileUpdated:(NSMutableArray *)list</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudFileUpdated:</Anchor>
+            <NodeRef refid="31"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

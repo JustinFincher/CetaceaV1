@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFEditorTextLayoutManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFEditorTextLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextLayoutManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextLayoutManager/fillBackgroundRectArray:count:forCharacterRange:color:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextLayoutManager.m</DeclaredIn>
+			
+			<Declaration>- (void)fillBackgroundRectArray:(const CSFRect *)rectArray count:(NSUInteger)rectCount forCharacterRange:(NSRange)charRange color:(CSFColor *)color</Declaration>
+			
+			
+			<Anchor>//api/name/fillBackgroundRectArray:count:forCharacterRange:color:</Anchor>
+            <NodeRef refid="14"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -18,11 +18,27 @@
 #define CSFPrefixNativeSharedDocument CSFPrefixNSDocument
 #endif
 
-/**
- Example of how Abstract-Native Shared Document work
- */
+
 @class CSFAbstractSharedDocument;
 
+/**
+ Example of how Abstract-Native Shared Document work
+ 
+ ## Methods to override:
+
+ ### iOS
+ ```
+– getAbstractDocument
+– loadFromContents:ofType:error:
+ ```
+ 
+ ### OSX
+ ```
+– getAbstractDocument
+– readFromFileWrapper:ofType:error:
+ ```
+ 
+ */
 @interface CSFNativeSharedDocument : CSFDocument
 
 
@@ -35,19 +51,39 @@
 - (CSFAbstractSharedDocument *_Nonnull)getAbstractDocument;
 
 #if TARGET_OS_IOS
-- (id _Nullable )initWithFileURL:(NSURL *_Nonnull)url
-   withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)doc;
+
+/**
+ Init Method
+
+ @param url <#url description#>
+ @param doc <#doc description#>
+ @return <#return value description#>
+ */
+- (id _Nullable)initWithFileURL:(NSURL *_Nonnull)url
+			 withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)doc;
 
 /**
  @warning must be overrided
 
- @param contents <#contents description#>
+ @param contents File Wrapper
+ @param typeName File Type
+ @param outError Error
+ @return Load is success or not
+ */
+- (BOOL)loadFromContents:(id _Nullable )contents
+				  ofType:(NSString *_Nullable)typeName
+				   error:(NSError * _Nullable *_Nullable)outError;
+#elif TARGET_OS_OSX
+
+/**
+ Init Method
+
+ @param url <#url description#>
  @param typeName <#typeName description#>
  @param outError <#outError description#>
+ @param doc <#doc description#>
  @return <#return value description#>
  */
-- (BOOL)loadFromContents:(id _Nullable )contents ofType:(NSString *_Nullable)typeName error:(NSError * _Nullable *_Nullable)outError;
-#elif TARGET_OS_OSX
 - (id)initWithContentsOfURL:(NSURL *)url
 					 ofType:(NSString *)typeName
 					  error:(NSError * _Nullable *)outError
@@ -56,12 +92,14 @@
 /**
  @warning must be overrided
 
- @param fileWrapper <#fileWrapper description#>
- @param typeName <#typeName description#>
- @param outError <#outError description#>
- @return <#return value description#>
+ @param fileWrapper File Wrapper
+ @param typeName File Name
+ @param outError Error
+ @return Load is success or not
  */
-- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError;
+- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper
+					 ofType:(NSString *)typeName
+					  error:(NSError * _Nullable __autoreleasing *)outError;
 #endif
 
 @end

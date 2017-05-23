@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFiCloudFileExtensionCetaceaThemeDataBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFiCloudFileExtensionCetaceaThemeDataBase</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeDataBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaThemeDataBase/fileExtensionName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileExtensionName</Declaration>
+			
+			<ReturnValue><Abstract type="html">file extension eg: cetacea for &apos;a.cetacea&apos; file</Abstract></ReturnValue>
+			<Anchor>//api/name/fileExtensionName</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileExtensionCetaceaThemeDataBase/fileContainerFolderName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileContainerFolderName</Declaration>
+			
+			<ReturnValue><Abstract type="html">folder name which the files will be saved</Abstract></ReturnValue>
+			<Anchor>//api/name/fileContainerFolderName</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
