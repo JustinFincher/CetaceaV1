@@ -827,7 +827,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/zsh;
-			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"FinGameWorks\" \\\n--company-id \"com.justzht\" \\\n--output \"${PROJECT_DIR}\"/../../docs \\\n--install-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"FinGameWorks\" \\\n--company-id \"com.justzht\" \\\n--output \"${PROJECT_DIR}\"/../../docs \\\n--install-docset \\\n--clean-output \\\n--create-html \\\n--create-docset \\\n--publish-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--search-undocumented-doc \\\n--print-information-block-titles \\\n--no-warn-invalid-crossref \\\n--merge-categories \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
 		};
 		613CFFBEDAAC5B3A61BBA261 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

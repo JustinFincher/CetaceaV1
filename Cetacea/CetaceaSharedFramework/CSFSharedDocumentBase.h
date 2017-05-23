@@ -19,10 +19,23 @@
 #endif
 
 
-@class CSFAbstractSharedDocument;
 
 /**
- Example of how Abstract-Native Shared Document work
+ Pre declare CSFAbstractSharedDocument in front of CSFNativeSharedDocument
+ */
+@class CSFAbstractSharedDocument;
+
+
+/**
+ Base Class of Native Part of how Abstract-Native Shared Document work
+
+ - Inherits from CSFDocument
+	 - On iOS CSFDocument => UIKit.UIDocument
+	 - On OSX CSFDocument => AppKit.NSDocument
+ 
+ - SeeAlso:
+ CSFAbstractSharedDocument
+ 
  
  ## Methods to override:
 
@@ -32,19 +45,78 @@
  
  **OVERRIDE EXAMPLE**
 
-	- (CSFAbstractSharedDocument *)getAbstractDocument
+	- (TargetCSFAbstractSharedDocumentClass *)getAbstractDocument
 	{
-		return (CSFAbstractSharedDocument *)self.abstractDocument;
+		return (TargetCSFAbstractSharedDocumentClass *)self.abstractDocument;
 	}
 
 – loadFromContents:ofType:error:
+ 
+ **OVERRIDE EXAMPLE**
+
+	- (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError * _Nullable *)outError
+	{
+		self.sharedDocument.fileWrapper = contents;
+		NSFileWrapper *subFileWrapper;
+		NSData *data;
+
+		subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+		data = [subFileWrapper regularFileContents];
+		NSString *title = [[NSString alloc] initWithData:data
+		encoding:NSUTF8StringEncoding];
+		self.sharedDocument.title = title;
+
+		subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+		data = [subFileWrapper regularFileContents];
+		NSString *markdownString = [[NSString alloc] initWithData:data
+		encoding:NSUTF8StringEncoding];
+		self.sharedDocument.markdownString = markdownString;
+
+		self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+		self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+
+		return YES;
+	}
 
  
  ### OSX
  ```
-– getAbstractDocument
+ – getAbstractDocument
 
-– readFromFileWrapper:ofType:error:
+ **OVERRIDE EXAMPLE**
+ 
+	- (TargetCSFAbstractSharedDocumentClass *)getAbstractDocument
+	{
+		return (TargetCSFAbstractSharedDocumentClass *)self.abstractDocument;
+	}
+ 
+ – readFromFileWrapper:ofType:error:
+ 
+ **OVERRIDE EXAMPLE**
+
+	- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+	{
+		self.sharedDocument.fileWrapper = fileWrapper;
+		NSFileWrapper *subFileWrapper;
+		NSData *data;
+
+		subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+		data = [subFileWrapper regularFileContents];
+		NSString *title = [[NSString alloc] initWithData:data
+		encoding:NSUTF8StringEncoding];
+		self.sharedDocument.title = title;
+
+		subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+		data = [subFileWrapper regularFileContents];
+		NSString *markdownString = [[NSString alloc] initWithData:data
+		encoding:NSUTF8StringEncoding];
+		self.sharedDocument.markdownString = markdownString;
+
+		self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+		self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+
+		return YES;
+	}
  ```
  
  */
@@ -67,9 +139,9 @@
 /**
  Init Method
 
- @param url <#url description#>
- @param doc <#doc description#>
- @return <#return value description#>
+ @param url File URL
+ @param doc CSFAbstractSharedDocument instance
+ @return native sharedDocument intance
  */
 - (id _Nullable)initWithFileURL:(NSURL *_Nonnull)url
 			 withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)doc;
@@ -90,11 +162,11 @@
 /**
  Init Method
 
- @param url <#url description#>
- @param typeName <#typeName description#>
- @param outError <#outError description#>
- @param doc <#doc description#>
- @return <#return value description#>
+ @param url File URL
+ @param typeName file type
+ @param outError Error
+ @param doc CSFAbstractSharedDocument instance
+ @return native sharedDocument intance
  */
 - (id)initWithContentsOfURL:(NSURL *)url
 					 ofType:(NSString *)typeName
@@ -116,6 +188,10 @@
 
 @end
 
+
+/**
+ Delegate For Abstract Shared Document
+ */
 @protocol CSFAbstractSharedDocumentDelegate <NSObject>
 
 @optional
@@ -123,10 +199,29 @@
 @end
 
 /**
- Example of how Abstract-Native Shared Document work
+ Base Class of Abstract Part of how Abstract-Native Shared Document work
+ 
+ - SeeAlso:
+ CSFNativeSharedDocument
+ 
+
+ ## Methods to override:
+ 
+ + getNewDocumentNextPath
+ - updateFileWrappers
+ - getNativeDocument
+ 
+ 
  */
 @interface CSFAbstractSharedDocument : NSObject
 #pragma mark - Init Method
+
+/**
+ Init Method For Abstract Document
+
+ @param url File URL
+ @return Instance
+ */
 - (id _Nullable )initWithURL:(NSURL *_Nonnull)url;
 
 #pragma mark - New File
@@ -138,11 +233,10 @@
 + (CSFAbstractSharedDocument *)newDocument;
 /**
  @warning must be overrided
+ 
+ **Override with nextFilePath**:
 
- Override with nextFilePath like:
- ```
- return [[CSFiCloudFileDataBase sharedManager] nextFilePath];
- ```
+		return [[CSFiCloudFileDataBase sharedManager] nextFilePath];
  */
 + (NSString *)getNewDocumentNextPath;
 

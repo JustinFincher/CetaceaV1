@@ -122,7 +122,20 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Example of how Abstract-Native Shared Document work</p>
+						<p>Base Class of Native Part of how Abstract-Native Shared Document work</p>
+
+<ul>
+<li><p>Inherits from CSFDocument</p>
+
+<ul>
+<li> On iOS CSFDocument => UIKit.UIDocument</li>
+<li> On OSX CSFDocument => AppKit.NSDocument</li>
+</ul>
+</li>
+<li><p>SeeAlso:
+<a href="../Classes/CSFAbstractSharedDocument.html">CSFAbstractSharedDocument</a></p></li>
+</ul>
+
 
 <h2>Methods to override:</h2>
 
@@ -132,19 +145,81 @@
 
 <p><strong>OVERRIDE EXAMPLE</strong></p>
 
-<pre><code>- (CSFAbstractSharedDocument *)getAbstractDocument
+<pre><code>- (TargetCSFAbstractSharedDocumentClass *)getAbstractDocument
 {
-    return (CSFAbstractSharedDocument *)self.abstractDocument;
+    return (TargetCSFAbstractSharedDocumentClass *)self.abstractDocument;
 }
 </code></pre>
 
 <p>– <a href="#//api/name/loadFromContents:ofType:error:">loadFromContents:ofType:error:</a></p>
 
+<p><strong>OVERRIDE EXAMPLE</strong></p>
+
+<pre><code>- (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError * _Nullable *)outError
+{
+    self.sharedDocument.fileWrapper = contents;
+    NSFileWrapper *subFileWrapper;
+    NSData *data;
+
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+    data = [subFileWrapper regularFileContents];
+    NSString *title = [[NSString alloc] initWithData:data
+    encoding:NSUTF8StringEncoding];
+    self.sharedDocument.title = title;
+
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+    data = [subFileWrapper regularFileContents];
+    NSString *markdownString = [[NSString alloc] initWithData:data
+    encoding:NSUTF8StringEncoding];
+    self.sharedDocument.markdownString = markdownString;
+
+    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+
+    return YES;
+}
+</code></pre>
+
 <h3>OSX</h3>
 
 <p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a></p>
 
+<p><strong>OVERRIDE EXAMPLE</strong></p>
+
+<pre><code>- (TargetCSFAbstractSharedDocumentClass *)getAbstractDocument
+{
+    return (TargetCSFAbstractSharedDocumentClass *)self.abstractDocument;
+}
+</code></pre>
+
 <p>– <a href="#//api/name/readFromFileWrapper:ofType:error:">readFromFileWrapper:ofType:error:</a></p>
+
+<p><strong>OVERRIDE EXAMPLE</strong></p>
+
+<pre><code>- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
+{
+    self.sharedDocument.fileWrapper = fileWrapper;
+    NSFileWrapper *subFileWrapper;
+    NSData *data;
+
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"title"];
+    data = [subFileWrapper regularFileContents];
+    NSString *title = [[NSString alloc] initWithData:data
+    encoding:NSUTF8StringEncoding];
+    self.sharedDocument.title = title;
+
+    subFileWrapper = [self.sharedDocument.fileWrapper.fileWrappers objectForKey:@"markdownString"];
+    data = [subFileWrapper regularFileContents];
+    NSString *markdownString = [[NSString alloc] initWithData:data
+    encoding:NSUTF8StringEncoding];
+    self.sharedDocument.markdownString = markdownString;
+
+    self.sharedDocument.title = self.sharedDocument.title ? self.sharedDocument.title : @"";
+    self.sharedDocument.markdownString = self.sharedDocument.markdownString ? self.sharedDocument.markdownString : @"";
+
+    return YES;
+}
+</code></pre>
 					</div>
 					
 					
@@ -283,12 +358,12 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>&lt;#url description#></p></td>
+						<td><p>File URL</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>doc</code></th>
-						<td><p>&lt;#doc description#></p></td>
+						<td><p><a href="../Classes/CSFAbstractSharedDocument.html">CSFAbstractSharedDocument</a> instance</p></td>
 					</tr>
 				
 				</table>
@@ -298,7 +373,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>&lt;#return value description#></p>
+				<p>native sharedDocument intance</p>
 			</div>
 			
 
@@ -424,22 +499,22 @@
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>&lt;#url description#></p></td>
+						<td><p>File URL</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>typeName</code></th>
-						<td><p>&lt;#typeName description#></p></td>
+						<td><p>file type</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>outError</code></th>
-						<td><p>&lt;#outError description#></p></td>
+						<td><p>Error</p></td>
 					</tr>
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>doc</code></th>
-						<td><p>&lt;#doc description#></p></td>
+						<td><p><a href="../Classes/CSFAbstractSharedDocument.html">CSFAbstractSharedDocument</a> instance</p></td>
 					</tr>
 				
 				</table>
@@ -449,7 +524,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>&lt;#return value description#></p>
+				<p>native sharedDocument intance</p>
 			</div>
 			
 

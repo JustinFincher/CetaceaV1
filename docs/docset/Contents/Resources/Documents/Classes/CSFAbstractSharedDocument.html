@@ -134,7 +134,22 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Example of how Abstract-Native Shared Document work</p>
+						<p>Base Class of Abstract Part of how Abstract-Native Shared Document work</p>
+
+<ul>
+<li>SeeAlso:
+<a href="../Classes/CSFNativeSharedDocument.html">CSFNativeSharedDocument</a></li>
+</ul>
+
+
+<h2>Methods to override:</h2>
+
+<ul>
+<li><a href="#//api/name/getNewDocumentNextPath">getNewDocumentNextPath</a></li>
+<li><a href="#//api/name/updateFileWrappers">updateFileWrappers</a></li>
+<li><a href="#//api/name/getNativeDocument">getNativeDocument</a></li>
+</ul>
+
 					</div>
 					
 					
@@ -159,10 +174,57 @@
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Init Method For Abstract Document</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>- (id _Nullable)initWithURL:(NSURL *_Nonnull)<em>url</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>File URL</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Instance</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Init Method For Abstract Document</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">
@@ -247,8 +309,10 @@
 				<h4 class="method-subtitle">Discussion</h4>
 				<div class="warning"><p><strong>Warning:</strong> must be overrided</p>
 
-<p>Override with nextFilePath like:
-return [[CSFiCloudFileDataBase sharedManager] nextFilePath];</p></div>
+<p><strong>Override with nextFilePath</strong>:</p>
+
+<pre><code>  return [[CSFiCloudFileDataBase sharedManager] nextFilePath];
+</code></pre></div>
 			</div>
 			
 

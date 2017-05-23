@@ -35,6 +35,10 @@ jazzy \
 --company-id "com.justzht" \
 --output "${PROJECT_DIR}"/../../docs \
 --install-docset \
+--clean-output \
+--create-html \
+--create-docset \
+--publish-docset \
 --logformat xcode \
 --keep-undocumented-objects \
 --keep-undocumented-members \
