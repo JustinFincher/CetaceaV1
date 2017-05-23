@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFiCloudFileDataBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFiCloudFileDataBase</TokenIdentifier>
+			<Abstract type="html">DataBase Base Class for All iCloud Based Files.</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFiCloudFileDataBase/sharedManager</TokenIdentifier>
+			<Abstract type="html">Singleton method</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">database instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/nextFilePath</TokenIdentifier>
+			<Abstract type="html">returen [nextFileURL path];</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)nextFilePath</Declaration>
+			
+			<ReturnValue><Abstract type="html">next file path</Abstract></ReturnValue>
+			<Anchor>//api/name/nextFilePath</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/nextFileURL</TokenIdentifier>
+			<Abstract type="html">Return next file url for new document</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)nextFileURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">url for the next doc location</Abstract></ReturnValue>
+			<Anchor>//api/name/nextFileURL</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/fileExtensionName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileExtensionName</Declaration>
+			
+			<ReturnValue><Abstract type="html">file extension eg: cetacea for &apos;a.cetacea&apos; file</Abstract></ReturnValue>
+			<Anchor>//api/name/fileExtensionName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/fileContainerFolderName</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)fileContainerFolderName</Declaration>
+			
+			<ReturnValue><Abstract type="html">folder name which the files will be saved</Abstract></ReturnValue>
+			<Anchor>//api/name/fileContainerFolderName</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/filesFromArray:</TokenIdentifier>
+			<Abstract type="html">For Override</Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.h</DeclaredIn>
+			
+			<Declaration>- (NSMutableArray *)filesFromArray:(NSArray *)query</Declaration>
+			
+			
+			<Anchor>//api/name/filesFromArray:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudFileDataBase/getPrivateDocsDir</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileDataBase.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getPrivateDocsDir</Declaration>
+			
+			
+			<Anchor>//api/name/getPrivateDocsDir</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

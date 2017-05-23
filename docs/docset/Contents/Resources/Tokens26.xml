@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFiCloudSyncManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFiCloudSyncManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFiCloudSyncManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Singleton Method</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">Instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/isIcloudAvailiable</TokenIdentifier>
+			<Abstract type="html">Detect if iCloud Storage is enabled and logined</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isIcloudAvailiable</Declaration>
+			
+			<ReturnValue><Abstract type="html">BOOL value for iCloud Status</Abstract></ReturnValue>
+			<Anchor>//api/name/isIcloudAvailiable</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquitousURL</TokenIdentifier>
+			<Abstract type="html">iCloud App Root URL</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/CSFiCloudSyncManager</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSURL *)ubiquitousURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL</Abstract></ReturnValue>
+			<Anchor>//api/name/ubiquitousURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquitousDocumentsReadMeURL</TokenIdentifier>
+			<Abstract type="html">URL For root/Documents/README</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)ubiquitousDocumentsReadMeURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL</Abstract></ReturnValue>
+			<Anchor>//api/name/ubiquitousDocumentsReadMeURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquitousDocumentsURL</TokenIdentifier>
+			<Abstract type="html">URL For root/Documents</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)ubiquitousDocumentsURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL</Abstract></ReturnValue>
+			<Anchor>//api/name/ubiquitousDocumentsURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquitousDocumentsCetaceaURL</TokenIdentifier>
+			<Abstract type="html">URL For root/Documents/Cetacea</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)ubiquitousDocumentsCetaceaURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL</Abstract></ReturnValue>
+			<Anchor>//api/name/ubiquitousDocumentsCetaceaURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquitousDocumentsHighlightThemesURL</TokenIdentifier>
+			<Abstract type="html">URL For root/Documents/Theme</Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (NSURL *)ubiquitousDocumentsHighlightThemesURL</Declaration>
+			
+			<ReturnValue><Abstract type="html">NSURL</Abstract></ReturnValue>
+			<Anchor>//api/name/ubiquitousDocumentsHighlightThemesURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/directoryExistCheck:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>- (void)directoryExistCheck:(NSURL *)url</Declaration>
+			
+			
+			<Anchor>//api/name/directoryExistCheck:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setICloudFilesMetadataQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/iCloudFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/iCloudFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setICloudCetaceaFilesMetadataQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudCetaceaFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudCetaceaFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/iCloudCetaceaFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudCetaceaFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudCetaceaFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/iCloudCetaceaFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudCetaceaFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudCetaceaFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setICloudThemeFilesMetadataQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudThemeFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/iCloudThemeFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudThemeFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/iCloudThemeFilesMetadataQuery</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMetadataQuery *iCloudThemeFilesMetadataQuery</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudThemeFilesMetadataQuery</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CSFiCloudSyncDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CSFiCloudSyncDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CSFiCloudSyncDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setCetaceaDocumentArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cetaceaDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/cetaceaDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/cetaceaDocumentArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cetaceaDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/cetaceaDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/cetaceaDocumentArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *cetaceaDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/cetaceaDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setHighlightThemesDocumentArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *highlightThemesDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/highlightThemesDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/highlightThemesDocumentArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *highlightThemesDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/highlightThemesDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/highlightThemesDocumentArray</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *highlightThemesDocumentArray</Declaration>
+			
+			
+			<Anchor>//api/name/highlightThemesDocumentArray</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/ubiquityIdentityDidChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (void)ubiquityIdentityDidChanged:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/ubiquityIdentityDidChanged:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/didStartGatheriCloudFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (void)didStartGatheriCloudFiles:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/didStartGatheriCloudFiles:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/didGatheringiCloudFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (void)didGatheringiCloudFiles:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/didGatheringiCloudFiles:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/didUpdateiCloudFiles:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>- (void)didUpdateiCloudFiles:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/didUpdateiCloudFiles:</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/setICloudUbiquitousURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *iCloudUbiquitousURL</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudUbiquitousURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFiCloudSyncManager/iCloudUbiquitousURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *iCloudUbiquitousURL</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudUbiquitousURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFiCloudSyncManager/iCloudUbiquitousURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudSyncManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *iCloudUbiquitousURL</Declaration>
+			
+			
+			<Anchor>//api/name/iCloudUbiquitousURL</Anchor>
+            <NodeRef refid="26"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

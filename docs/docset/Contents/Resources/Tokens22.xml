@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFSingletonRegister.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFSingletonRegister</TokenIdentifier>
+			<Abstract type="html">Instance For Storing all single stuff (ui, data manager, etc)</Abstract>
+			<DeclaredIn>CSFSingletonRegister.h</DeclaredIn>
+            
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFSingletonRegister/sharedManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/registerSingleton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.h</DeclaredIn>
+			
+			<Declaration>- (void)registerSingleton:(id)instance</Declaration>
+			
+			
+			<Anchor>//api/name/registerSingleton:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/unRegisterSingleton:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.h</DeclaredIn>
+			
+			<Declaration>- (void)unRegisterSingleton:(id)instance</Declaration>
+			
+			
+			<Anchor>//api/name/unRegisterSingleton:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/getRegisteredSingletonForClassName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.h</DeclaredIn>
+			
+			<Declaration>- (id)getRegisteredSingletonForClassName:(NSString *)className</Declaration>
+			
+			
+			<Anchor>//api/name/getRegisteredSingletonForClassName:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/setSingletonDict:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *singletonDict</Declaration>
+			
+			
+			<Anchor>//api/name/singletonDict</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFSingletonRegister/singletonDict</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *singletonDict</Declaration>
+			
+			
+			<Anchor>//api/name/singletonDict</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFSingletonRegister/singletonDict</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSingletonRegister.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *singletonDict</Declaration>
+			
+			
+			<Anchor>//api/name/singletonDict</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

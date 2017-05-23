@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFNativeSharedDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFNativeSharedDocument</TokenIdentifier>
+			<Abstract type="html">Example of how Abstract-Native Shared Document work</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/setAbstractDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id _Nullable abstractDocument</Declaration>
+			
+			
+			<Anchor>//api/name/abstractDocument</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/abstractDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id _Nullable abstractDocument</Declaration>
+			
+			
+			<Anchor>//api/name/abstractDocument</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFNativeSharedDocument/abstractDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>@property (weak) id _Nullable abstractDocument</Declaration>
+			
+			
+			<Anchor>//api/name/abstractDocument</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/getAbstractDocument</TokenIdentifier>
+			<Abstract type="html">For Override Return Type</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (CSFAbstractSharedDocument *_Nonnull)getAbstractDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">a abstract representation of document</Abstract></ReturnValue>
+			<Anchor>//api/name/getAbstractDocument</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/initWithFileURL:withSharedDocument:</TokenIdentifier>
+			<Abstract type="html">Init Method</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (id _Nullable)initWithFileURL:(NSURL *_Nonnull)url withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)doc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">&lt;#url description#&gt;</Abstract>
+				</Parameter><Parameter>
+					<Name>doc</Name>
+					<Abstract type="html">&lt;#doc description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFileURL:withSharedDocument:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/loadFromContents:ofType:error:</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadFromContents:(id _Nullable)contents ofType:(NSString *_Nullable)typeName error:(NSError *_Nullable *_Nullable)outError</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contents</Name>
+					<Abstract type="html">File Wrapper</Abstract>
+				</Parameter><Parameter>
+					<Name>typeName</Name>
+					<Abstract type="html">File Type</Abstract>
+				</Parameter><Parameter>
+					<Name>outError</Name>
+					<Abstract type="html">Error</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Load is success or not</Abstract></ReturnValue>
+			<Anchor>//api/name/loadFromContents:ofType:error:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/initWithContentsOfURL:ofType:error:withSharedDocument:</TokenIdentifier>
+			<Abstract type="html">Init Method</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithContentsOfURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError *_Nullable *)outError withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)doc</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">&lt;#url description#&gt;</Abstract>
+				</Parameter><Parameter>
+					<Name>typeName</Name>
+					<Abstract type="html">&lt;#typeName description#&gt;</Abstract>
+				</Parameter><Parameter>
+					<Name>outError</Name>
+					<Abstract type="html">&lt;#outError description#&gt;</Abstract>
+				</Parameter><Parameter>
+					<Name>doc</Name>
+					<Abstract type="html">&lt;#doc description#&gt;</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/readFromFileWrapper:ofType:error:</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)readFromFileWrapper:(NSFileWrapper *)fileWrapper ofType:(NSString *)typeName error:(NSError *_Nullable __autoreleasing *)outError</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileWrapper</Name>
+					<Abstract type="html">File Wrapper</Abstract>
+				</Parameter><Parameter>
+					<Name>typeName</Name>
+					<Abstract type="html">File Name</Abstract>
+				</Parameter><Parameter>
+					<Name>outError</Name>
+					<Abstract type="html">Error</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Load is success or not</Abstract></ReturnValue>
+			<Anchor>//api/name/readFromFileWrapper:ofType:error:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/contentsForType:error:#:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.m</DeclaredIn>
+			
+			<Declaration>- (id)contentsForType:(NSString *)typeName error:(NSError *_Nullable *)outError #</Declaration>
+			
+			
+			<Anchor>//api/name/contentsForType:error:#:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/loadFromContents:ofType:error:#:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError *_Nullable *)outError #</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromContents:ofType:error:#:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFNativeSharedDocument/writeContents:toURL:forSaveOperation:originalContentsURL:error:#:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)writeContents:(id)contents toURL:(NSURL *)url forSaveOperation:(UIDocumentSaveOperation)saveOperation originalContentsURL:(NSURL *)originalContentsURL error:(NSError *_Nullable *)outError #</Declaration>
+			
+			
+			<Anchor>//api/name/writeContents:toURL:forSaveOperation:originalContentsURL:error:#:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFNativeSharedDocument/autosavesInPlace</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFSharedDocumentBase.m</DeclaredIn>
+			
+			<Declaration>+ (BOOL)autosavesInPlace</Declaration>
+			
+			
+			<Anchor>//api/name/autosavesInPlace</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

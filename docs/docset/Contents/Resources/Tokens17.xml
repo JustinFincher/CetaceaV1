@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFEditorTextView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFEditorTextView</TokenIdentifier>
+			<Abstract type="html">CSF EdiorTextView (UITextView / NSTextView)</Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/setCurrentEditingDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/currentEditingDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFEditorTextView/currentEditingDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/setupTextView</TokenIdentifier>
+			<Abstract type="html">Some Property Init Methods</Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>- (void)setupTextView</Declaration>
+			
+			
+			<Anchor>//api/name/setupTextView</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/refreshHightLight</TokenIdentifier>
+			<Abstract type="html">Refresh Hightlight and store to buffer (not apply to textview yet)</Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshHightLight</Declaration>
+			
+			
+			<Anchor>//api/name/refreshHightLight</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/refreshFileContent</TokenIdentifier>
+			<Abstract type="html">Reload Hightlight source from the currentEditingDocument</Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshFileContent</Declaration>
+			
+			
+			<Anchor>//api/name/refreshFileContent</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/updateTextView</TokenIdentifier>
+			<Abstract type="html">Update TextView Content With Buffer</Abstract>
+			<DeclaredIn>CSFEditorTextView.h</DeclaredIn>
+			
+			<Declaration>- (void)updateTextView</Declaration>
+			
+			
+			<Anchor>//api/name/updateTextView</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/willMoveToSuperview:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (void)willMoveToSuperview:(UIView *)newSuperview</Declaration>
+			
+			
+			<Anchor>//api/name/willMoveToSuperview:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/isFlipped</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isFlipped</Declaration>
+			
+			
+			<Anchor>//api/name/isFlipped</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/viewDidMoveToWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (void)viewDidMoveToWindow</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidMoveToWindow</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/characterRangeFromVisibleRect</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (NSRange)characterRangeFromVisibleRect</Declaration>
+			
+			
+			<Anchor>//api/name/characterRangeFromVisibleRect</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/textViewDidChange:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (void)textViewDidChange:(UITextView *)textView</Declaration>
+			
+			
+			<Anchor>//api/name/textViewDidChange:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/didChangeText</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (void)didChangeText</Declaration>
+			
+			
+			<Anchor>//api/name/didChangeText</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/onTextChange</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>- (void)onTextChange</Declaration>
+			
+			
+			<Anchor>//api/name/onTextChange</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/setGeneratedAttributedString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSAttributedString *generatedAttributedString</Declaration>
+			
+			
+			<Anchor>//api/name/generatedAttributedString</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/generatedAttributedString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSAttributedString *generatedAttributedString</Declaration>
+			
+			
+			<Anchor>//api/name/generatedAttributedString</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFEditorTextView/generatedAttributedString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSAttributedString *generatedAttributedString</Declaration>
+			
+			
+			<Anchor>//api/name/generatedAttributedString</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/setCsfTextLayoutManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFEditorTextLayoutManager *csfTextLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/csfTextLayoutManager</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/csfTextLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFEditorTextLayoutManager *csfTextLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/csfTextLayoutManager</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFEditorTextView/csfTextLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFEditorTextLayoutManager *csfTextLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/csfTextLayoutManager</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/setHasBeenSetup:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hasBeenSetup</Declaration>
+			
+			
+			<Anchor>//api/name/hasBeenSetup</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextView/hasBeenSetup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hasBeenSetup</Declaration>
+			
+			
+			<Anchor>//api/name/hasBeenSetup</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFEditorTextView/hasBeenSetup</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextView.m</DeclaredIn>
+			
+			<Declaration>@property (atomic) BOOL hasBeenSetup</Declaration>
+			
+			
+			<Anchor>//api/name/hasBeenSetup</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

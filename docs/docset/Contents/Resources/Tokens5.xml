@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaThemeAbstractSharedDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaThemeAbstractSharedDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFCetaceaThemeAbstractSharedDocument/newDocument</TokenIdentifier>
+			<Abstract type="html">New Document</Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>+ (CSFCetaceaThemeAbstractSharedDocument *)newDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">New Document Instance</Abstract></ReturnValue>
+			<Anchor>//api/name/newDocument</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/nativeDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (CSFCetaceaNativeSharedDocument *)nativeDocument</Declaration>
+			
+			
+			<Anchor>//api/name/nativeDocument</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/updateFileWrappers</TokenIdentifier>
+			<Abstract type="html">must be overrided</Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (void)updateFileWrappers</Declaration>
+			
+			
+			<Anchor>//api/name/updateFileWrappers</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

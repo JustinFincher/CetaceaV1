@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaSharedDocumentEditManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaSharedDocumentEditManager</TokenIdentifier>
+			<Abstract type="html">An Edit Manager For Cetacea Files</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFCetaceaSharedDocumentEditManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Singleton for this class</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/setCurrentEditingDocument:</TokenIdentifier>
+			<Abstract type="html">Current editing cetacea file CSFCetaceaAbstractSharedDocument instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/currentEditingDocument</TokenIdentifier>
+			<Abstract type="html">Current editing cetacea file CSFCetaceaAbstractSharedDocument instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaSharedDocumentEditManager/currentEditingDocument</TokenIdentifier>
+			<Abstract type="html">Current editing cetacea file CSFCetaceaAbstractSharedDocument instance</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/currentEditingDocument</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/setCurrentEditingDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)doc</Declaration>
+			
+			
+			<Anchor>//api/name/setCurrentEditingDocument:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/hasCurrentEditingDocument</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasCurrentEditingDocument</Declaration>
+			
+			
+			<Anchor>//api/name/hasCurrentEditingDocument</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/setCurrentUserActivity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserActivity *currentUserActivity</Declaration>
+			
+			
+			<Anchor>//api/name/currentUserActivity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaSharedDocumentEditManager/currentUserActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserActivity *currentUserActivity</Declaration>
+			
+			
+			<Anchor>//api/name/currentUserActivity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaSharedDocumentEditManager/currentUserActivity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocumentEditManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSUserActivity *currentUserActivity</Declaration>
+			
+			
+			<Anchor>//api/name/currentUserActivity</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

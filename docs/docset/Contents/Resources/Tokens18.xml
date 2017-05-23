@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFFeedbackGeneratorManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFFeedbackGeneratorManager</TokenIdentifier>
+			<Abstract type="html">Manager For Feedback Generator</Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFFeedbackGeneratorManager/sharedManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/setSelectionFeedbackGenerator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UISelectionFeedbackGenerator *selectionFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/selectionFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/selectionFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UISelectionFeedbackGenerator *selectionFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/selectionFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFFeedbackGeneratorManager/selectionFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UISelectionFeedbackGenerator *selectionFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/selectionFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/setImpactFeedbackGenerator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImpactFeedbackGenerator *impactFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/impactFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/impactFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImpactFeedbackGenerator *impactFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/impactFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFFeedbackGeneratorManager/impactFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIImpactFeedbackGenerator *impactFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/impactFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/setNotificationFeedbackGenerator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UINotificationFeedbackGenerator *notificationFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/notificationFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/notificationFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UINotificationFeedbackGenerator *notificationFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/notificationFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFFeedbackGeneratorManager/notificationFeedbackGenerator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UINotificationFeedbackGenerator *notificationFeedbackGenerator</Declaration>
+			
+			
+			<Anchor>//api/name/notificationFeedbackGenerator</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFFeedbackGeneratorManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFFeedbackGeneratorManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

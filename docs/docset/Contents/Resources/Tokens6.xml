@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaThemeSyntaxMarkupModel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaThemeSyntaxMarkupModel</TokenIdentifier>
+			<Abstract type="html">Cetacea Theme, Single Syntax Markup Color Model</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/setTextFrontColor:</TokenIdentifier>
+			<Abstract type="html">Text Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/textFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/textFrontColor</TokenIdentifier>
+			<Abstract type="html">Text Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/textFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxMarkupModel/textFrontColor</TokenIdentifier>
+			<Abstract type="html">Text Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/textFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/setTextBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">Text Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/textBackgroundColor</TokenIdentifier>
+			<Abstract type="html">Text Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxMarkupModel/textBackgroundColor</TokenIdentifier>
+			<Abstract type="html">Text Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *textBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/textBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/setMarkupFrontColor:</TokenIdentifier>
+			<Abstract type="html">Markup Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/markupFrontColor</TokenIdentifier>
+			<Abstract type="html">Markup Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxMarkupModel/markupFrontColor</TokenIdentifier>
+			<Abstract type="html">Markup Front Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupFrontColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupFrontColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/setMarkupBackgroundColor:</TokenIdentifier>
+			<Abstract type="html">Markup Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/markupBackgroundColor</TokenIdentifier>
+			<Abstract type="html">Markup Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxMarkupModel/markupBackgroundColor</TokenIdentifier>
+			<Abstract type="html">Markup Background Color</Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFColorStorage *markupBackgroundColor</Declaration>
+			
+			
+			<Anchor>//api/name/markupBackgroundColor</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

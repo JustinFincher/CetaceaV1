@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSExpressionBlockPair.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSExpressionBlockPair</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSExpressionBlockPair/setRegularExpression:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSRegularExpression *regularExpression</Declaration>
+			
+			
+			<Anchor>//api/name/regularExpression</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSExpressionBlockPair/regularExpression</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSRegularExpression *regularExpression</Declaration>
+			
+			
+			<Anchor>//api/name/regularExpression</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSExpressionBlockPair/regularExpression</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSRegularExpression *regularExpression</Declaration>
+			
+			
+			<Anchor>//api/name/regularExpression</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSExpressionBlockPair/setBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSMarkdownParserMatchBlock block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSExpressionBlockPair/block</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSMarkdownParserMatchBlock block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSExpressionBlockPair/block</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSMarkdownParserMatchBlock block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TSExpressionBlockPair/pairWithRegularExpression:block:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>+ (TSExpressionBlockPair *)pairWithRegularExpression:(NSRegularExpression *)regularExpression block:(TSMarkdownParserMatchBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/pairWithRegularExpression:block:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

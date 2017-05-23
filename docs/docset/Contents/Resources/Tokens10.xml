@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFDeviceCapabilityManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFDeviceCapabilityManager</TokenIdentifier>
+			<Abstract type="html">Manager for providing infomations for device capablitiy</Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFDeviceCapabilityManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">Singleton Method</Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFDeviceCapabilityManager/isForceTouchAvailable</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isForceTouchAvailable</Declaration>
+			
+			
+			<Anchor>//api/name/isForceTouchAvailable</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFDeviceCapabilityManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFDeviceCapabilityManager/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFEditorTextFontManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFEditorTextFontManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFEditorTextFontManager/sharedManager</TokenIdentifier>
+			<Abstract type="html">get single instance</Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			<ReturnValue><Abstract type="html">CSFEditorTextFontManager instance</Abstract></ReturnValue>
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getAllFontInApp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getAllFontInApp</Declaration>
+			
+			
+			<Anchor>//api/name/getAllFontInApp</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getEditorBaseFontFamilyName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getEditorBaseFontFamilyName</Declaration>
+			
+			
+			<Anchor>//api/name/getEditorBaseFontFamilyName</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getEditorBaseFontSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)getEditorBaseFontSize</Declaration>
+			
+			
+			<Anchor>//api/name/getEditorBaseFontSize</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/setEditorBaseFont:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setEditorBaseFont:(CSFFont *)font</Declaration>
+			
+			
+			<Anchor>//api/name/setEditorBaseFont:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getEditorBaseFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (CSFFont *)getEditorBaseFont</Declaration>
+			
+			
+			<Anchor>//api/name/getEditorBaseFont</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getEditorMonospacedFont</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (CSFFont *)getEditorMonospacedFont</Declaration>
+			
+			
+			<Anchor>//api/name/getEditorMonospacedFont</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/setEditorBaseFontSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *editorBaseFontSize</Declaration>
+			
+			
+			<Anchor>//api/name/editorBaseFontSize</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/editorBaseFontSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *editorBaseFontSize</Declaration>
+			
+			
+			<Anchor>//api/name/editorBaseFontSize</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFEditorTextFontManager/editorBaseFontSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *editorBaseFontSize</Declaration>
+			
+			
+			<Anchor>//api/name/editorBaseFontSize</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

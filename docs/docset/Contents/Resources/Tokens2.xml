@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFCetaceaAbstractSharedDocument.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFCetaceaAbstractSharedDocument</TokenIdentifier>
+			<Abstract type="html">Platform Indepentdent Shared Document Data Model;
+When used, contains a CSFCetaceaNativeSharedDocument property for native (iOS/OSX) event and handles
+┌──────────────────────────────────┐
+│      AbstractSharedDocument      │◀─┐
+└──────────────────────────────────┘  │
+┌──────────────────────────────────┐  │
+│       NativeSharedDocument       │◀─┘
+└──────────────────────────────────┘</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/initWithURL:</TokenIdentifier>
+			<Abstract type="html">Init Method for Already saved document. Just pass file url and filewrapper will handle the rest.</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The file url</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">instance containing infomation of Abstract cetacea document with a native document instance reference.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithURL:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFCetaceaAbstractSharedDocument/newDocument</TokenIdentifier>
+			<Abstract type="html">Used when a add button is pressed or so</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>+ (CSFCetaceaAbstractSharedDocument *)newDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">a fresh cetacea document taking up next file path</Abstract></ReturnValue>
+			<Anchor>//api/name/newDocument</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/saveDocument</TokenIdentifier>
+			<Abstract type="html">Save document</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveDocument</Declaration>
+			
+			<ReturnValue><Abstract type="html">Is save successful</Abstract></ReturnValue>
+			<Anchor>//api/name/saveDocument</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/deleteDocument:</TokenIdentifier>
+			<Abstract type="html">Delete Document</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (void)deleteDocument:(void ( ^ ) ( BOOL isSuccessful ))completed</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completed</Name>
+					<Abstract type="html">success callback</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteDocument:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/isEqual:</TokenIdentifier>
+			<Abstract type="html">Is Equal to another object</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEqual:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">object to be compared</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">BOOL for is equal or not</Abstract></ReturnValue>
+			<Anchor>//api/name/isEqual:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/scriptingIsEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)scriptingIsEqualTo:(id)object</Declaration>
+			
+			
+			<Anchor>//api/name/scriptingIsEqualTo:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/updateFileWrappers</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (void)updateFileWrappers</Declaration>
+			
+			
+			<Anchor>//api/name/updateFileWrappers</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setDocument:</TokenIdentifier>
+			<Abstract type="html">native document presentation reference</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaNativeSharedDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/document</TokenIdentifier>
+			<Abstract type="html">native document presentation reference</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaNativeSharedDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/document</TokenIdentifier>
+			<Abstract type="html">native document presentation reference</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFCetaceaNativeSharedDocument *document</Declaration>
+			
+			
+			<Anchor>//api/name/document</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setFileWrapper:</TokenIdentifier>
+			<Abstract type="html">file wrapper for native IO</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/fileWrapper</TokenIdentifier>
+			<Abstract type="html">file wrapper for native IO</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/fileWrapper</TokenIdentifier>
+			<Abstract type="html">file wrapper for native IO</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSFileWrapper *fileWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/fileWrapper</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setUrl:</TokenIdentifier>
+			<Abstract type="html">file store url</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/url</TokenIdentifier>
+			<Abstract type="html">file store url</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/url</TokenIdentifier>
+			<Abstract type="html">file store url</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setMarkdownString:</TokenIdentifier>
+			<Abstract type="html">markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *markdownString</Declaration>
+			
+			
+			<Anchor>//api/name/markdownString</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/markdownString</TokenIdentifier>
+			<Abstract type="html">markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *markdownString</Declaration>
+			
+			
+			<Anchor>//api/name/markdownString</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/markdownString</TokenIdentifier>
+			<Abstract type="html">markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *markdownString</Declaration>
+			
+			
+			<Anchor>//api/name/markdownString</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setMarkdownStringFileURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *markdownStringFileURL</Declaration>
+			
+			
+			<Anchor>//api/name/markdownStringFileURL</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/markdownStringFileURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *markdownStringFileURL</Declaration>
+			
+			
+			<Anchor>//api/name/markdownStringFileURL</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/markdownStringFileURL</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSURL *markdownStringFileURL</Declaration>
+			
+			
+			<Anchor>//api/name/markdownStringFileURL</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setTitle:</TokenIdentifier>
+			<Abstract type="html">title string generated from markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/title</TokenIdentifier>
+			<Abstract type="html">title string generated from markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/title</TokenIdentifier>
+			<Abstract type="html">title string generated from markdown string</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setCreationDate:</TokenIdentifier>
+			<Abstract type="html">creation date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/creationDate</TokenIdentifier>
+			<Abstract type="html">creation date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/creationDate</TokenIdentifier>
+			<Abstract type="html">creation date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *creationDate</Declaration>
+			
+			
+			<Anchor>//api/name/creationDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setLastChangeDate:</TokenIdentifier>
+			<Abstract type="html">last changed date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastChangeDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastChangeDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/lastChangeDate</TokenIdentifier>
+			<Abstract type="html">last changed date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastChangeDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastChangeDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/lastChangeDate</TokenIdentifier>
+			<Abstract type="html">last changed date read from system</Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastChangeDate</Declaration>
+			
+			
+			<Anchor>//api/name/lastChangeDate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setTags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/tags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/tags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSArray *tags</Declaration>
+			
+			
+			<Anchor>//api/name/tags</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setMetaDataItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/metaDataItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/metaDataItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSMetadataItem *metaDataItem</Declaration>
+			
+			
+			<Anchor>//api/name/metaDataItem</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setIsUploading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploading</Declaration>
+			
+			
+			<Anchor>//api/name/isUploading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/isUploading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploading</Declaration>
+			
+			
+			<Anchor>//api/name/isUploading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/isUploading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploading</Declaration>
+			
+			
+			<Anchor>//api/name/isUploading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setIsUploaded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/isUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/isUploaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/isUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/isUploaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/isUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setIsDownloading:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloading</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/isDownloading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloading</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/isDownloading</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloading</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloading</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setIsDownloaded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/isDownloaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/isDownloaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/isDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/updateFileWrappersByPreferredFileName:Contents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (void)updateFileWrappersByPreferredFileName:(NSString *)fileName Contents:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/updateFileWrappersByPreferredFileName:Contents:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/itemPercentUploaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (NSNumber *)itemPercentUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/itemPercentDownloaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>- (NSNumber *)itemPercentDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setItemPercentDownloaded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/itemPercentDownloaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/itemPercentDownloaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentDownloaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentDownloaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/setItemPercentUploaded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaAbstractSharedDocument/itemPercentUploaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaAbstractSharedDocument/itemPercentUploaded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSNumber *itemPercentUploaded</Declaration>
+			
+			
+			<Anchor>//api/name/itemPercentUploaded</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

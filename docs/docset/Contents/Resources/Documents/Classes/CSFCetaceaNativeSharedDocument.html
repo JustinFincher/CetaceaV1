@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CSFCetaceaNativeSharedDocument Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CetaceaSharedFramework </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">FinGameWorks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/sharedDocument">sharedDocument</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/abstractDocument">- abstractDocument</option>
+		
+		<option value="//api/name/contentsForType:error:#:">- contentsForType:error:#:</option>
+		
+		<option value="//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:">- initWithContentsOfURL:ofType:error:withSharedDocument:</option>
+		
+		<option value="//api/name/initWithFileURL:withSharedDocument:">- initWithFileURL:withSharedDocument:</option>
+		
+		<option value="//api/name/loadFromContents:ofType:error:">- loadFromContents:ofType:error:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CSFCetaceaNativeSharedDocument Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>CSFDocument</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CSFCetaceaSharedDocument.h<br />CSFCetaceaSharedDocument.m<br />CSFCetaceaThemeSharedDocument.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>a CSFDocument subclass. Presentation for platform runtime document, this class is used as platform depentdent class and used mainly for file write/read process. For the platform-indepentdent data model, see <a href="CSFCetaceaAbstractSharedDocument.html">CSFCetaceaAbstractSharedDocument</a></p>
+
+<p>┌──────────────────────────────────┐
+│      AbstractSharedDocument      │◀─┐
+└──────────────────────────────────┘  │
+┌──────────────────────────────────┐  │
+│       NativeSharedDocument       │◀─┘
+└──────────────────────────────────┘</p>
+
+<h2>On iOS:</h2>
+
+<p>CSFDocument = UIDocument
+CSFCetaceaNativeSharedDocument = CSFCetaceaUIDocument
+so CSFCetaceaNativeSharedDocument is a subclass of UIDocumet</p>
+
+<h2>On OSX:</h2>
+
+<p>CSFDocument = NSDocument
+CSFCetaceaNativeSharedDocument = CSFCetaceaNSDocument
+so CSFCetaceaNativeSharedDocument is a subclass of NSDocument</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedDocument" title="sharedDocument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedDocument">&nbsp;&nbsp;sharedDocument</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SharedDocument Instance, owner of this class instance</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (weak) CSFCetaceaAbstractSharedDocument *sharedDocument</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>SharedDocument Instance, owner of this class instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFCetaceaSharedDocument.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithFileURL:withSharedDocument:" title="initWithFileURL:withSharedDocument:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFileURL:withSharedDocument:">&ndash;&nbsp;initWithFileURL:withSharedDocument:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Init Method On iOS</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithFileURL:(NSURL *)<em>url</em> withSharedDocument:(CSFCetaceaAbstractSharedDocument *)<em>doc</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>File URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>doc</code></th>
+						<td><p>Shared Document</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A platform depentdent CSFDocument instance (UIDocument)</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Init Method On iOS</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFCetaceaSharedDocument.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:" title="initWithContentsOfURL:ofType:error:withSharedDocument:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:">&ndash;&nbsp;initWithContentsOfURL:ofType:error:withSharedDocument:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithContentsOfURL:(NSURL *)<em>url</em> ofType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em> withSharedDocument:(CSFCetaceaAbstractSharedDocument *_Nonnull)<em>doc</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/contentsForType:error:#:" title="contentsForType:error:#:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentsForType:error:#:">&ndash;&nbsp;contentsForType:error:#:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)contentsForType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em> #</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadFromContents:ofType:error:" title="loadFromContents:ofType:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadFromContents:ofType:error:">&ndash;&nbsp;loadFromContents:ofType:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)loadFromContents:(id)<em>contents</em> ofType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/abstractDocument" title="abstractDocument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/abstractDocument">&ndash;&nbsp;abstractDocument</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (CSFCetaceaThemeAbstractSharedDocument *)abstractDocument</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 FinGameWorks. All rights reserved. Updated: 2017-05-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

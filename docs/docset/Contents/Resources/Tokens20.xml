@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CSFMarkdownParserManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CSFMarkdownParserManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setLineParser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *lineParser</Declaration>
+			
+			
+			<Anchor>//api/name/lineParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/lineParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *lineParser</Declaration>
+			
+			
+			<Anchor>//api/name/lineParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/lineParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *lineParser</Declaration>
+			
+			
+			<Anchor>//api/name/lineParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setParagraphParser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *paragraphParser</Declaration>
+			
+			
+			<Anchor>//api/name/paragraphParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/paragraphParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *paragraphParser</Declaration>
+			
+			
+			<Anchor>//api/name/paragraphParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/paragraphParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *paragraphParser</Declaration>
+			
+			
+			<Anchor>//api/name/paragraphParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setFullParser:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *fullParser</Declaration>
+			
+			
+			<Anchor>//api/name/fullParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/fullParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *fullParser</Declaration>
+			
+			
+			<Anchor>//api/name/fullParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/fullParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) TSBaseParser *fullParser</Declaration>
+			
+			
+			<Anchor>//api/name/fullParser</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setShouldRemoveTags:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRemoveTags</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRemoveTags</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/shouldRemoveTags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRemoveTags</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRemoveTags</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/shouldRemoveTags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldRemoveTags</Declaration>
+			
+			
+			<Anchor>//api/name/shouldRemoveTags</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setThemeDoc:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CSFCetaceaThemeAbstractSharedDocument *themeDoc</Declaration>
+			
+			
+			<Anchor>//api/name/themeDoc</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/themeDoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CSFCetaceaThemeAbstractSharedDocument *themeDoc</Declaration>
+			
+			
+			<Anchor>//api/name/themeDoc</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/themeDoc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) CSFCetaceaThemeAbstractSharedDocument *themeDoc</Declaration>
+			
+			
+			<Anchor>//api/name/themeDoc</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setDefaultAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/defaultAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/defaultAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setAtxHeaderTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/atxHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/atxHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setAtxHeaderTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/atxHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/atxHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setSetextHeaderTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setextHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/setextHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setSetextHeaderTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setextHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/setextHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setCodeBlockTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/codeBlockTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/codeBlockTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setCodeBlockTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/codeBlockTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/codeBlockTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setBoldTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/boldTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/boldTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setBoldTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/boldTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/boldTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *boldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/boldTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setItalicTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/italicTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/italicTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setItalicTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/italicTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/italicTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *italicTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/italicTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setStrikeThroughTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/strikeThroughTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/strikeThroughTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setStrikeThroughTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/strikeThroughTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/strikeThroughTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *strikeThroughTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setTabIndentTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/tabIndentTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/tabIndentTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setTabIndentTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/tabIndentTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/tabIndentTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setListTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/listTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/listTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setListTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/listTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/listTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *listTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/listTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setQuoteTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/quoteTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/quoteTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setQuoteTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/quoteTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/quoteTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *quoteTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/quoteTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setImageTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/imageTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/imageTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setImageTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/imageTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/imageTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *imageTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/imageTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setLinkTextAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/linkTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/linkTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTextAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/setLinkTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/linkTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFMarkdownParserManager/linkTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *linkTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/linkTagAttributes</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CSFMarkdownParserManager/sharedManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>+ (id)sharedManager</Declaration>
+			
+			
+			<Anchor>//api/name/sharedManager</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/refreshAttributesTheme</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshAttributesTheme</Declaration>
+			
+			
+			<Anchor>//api/name/refreshAttributesTheme</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/attributedParagraphParserStringFromMarkdown:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedParagraphParserStringFromMarkdown:(NSString *)markdown</Declaration>
+			
+			
+			<Anchor>//api/name/attributedParagraphParserStringFromMarkdown:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/attributedLineParserStringFromMarkdown:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedLineParserStringFromMarkdown:(NSString *)markdown</Declaration>
+			
+			
+			<Anchor>//api/name/attributedLineParserStringFromMarkdown:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/attributedStringFromMarkdown:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown</Declaration>
+			
+			
+			<Anchor>//api/name/attributedStringFromMarkdown:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.m</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFMarkdownParserManager/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFMarkdownParserManager.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

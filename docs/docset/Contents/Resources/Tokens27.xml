@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TSBaseParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TSBaseParser</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/setDefaultAttributes:</TokenIdentifier>
+			<Abstract type="html">Default attributes for attributedStringFromMarkdown:.</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/defaultAttributes</TokenIdentifier>
+			<Abstract type="html">Default attributes for attributedStringFromMarkdown:.</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSBaseParser/defaultAttributes</TokenIdentifier>
+			<Abstract type="html">Default attributes for attributedStringFromMarkdown:.</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, nullable) NSDictionary&lt;NSString*id&gt; *defaultAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultAttributes</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/attributedStringFromMarkdown:</TokenIdentifier>
+			<Abstract type="html">Applies defaultAttributes then markdown</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown</Declaration>
+			
+			
+			<Anchor>//api/name/attributedStringFromMarkdown:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/attributedStringFromMarkdown:attributes:</TokenIdentifier>
+			<Abstract type="html">Applies attributes then markdown</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedStringFromMarkdown:(NSString *)markdown attributes:(nullable NSDictionary&lt;NSString*,id&gt; *)attributes</Declaration>
+			
+			
+			<Anchor>//api/name/attributedStringFromMarkdown:attributes:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/attributedStringFromAttributedMarkdownString:</TokenIdentifier>
+			<Abstract type="html">Applies markdown</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>- (NSAttributedString *)attributedStringFromAttributedMarkdownString:(NSAttributedString *)attributedString</Declaration>
+			
+			
+			<Anchor>//api/name/attributedStringFromAttributedMarkdownString:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/addParsingRuleWithRegularExpression:block:</TokenIdentifier>
+			<Abstract type="html">Adds a custom parsing rule to parser. Use [TSMarkdownParser new] for an empty parser.</Abstract>
+			<DeclaredIn>TSBaseParser.h</DeclaredIn>
+			
+			<Declaration>- (void)addParsingRuleWithRegularExpression:(NSRegularExpression *)regularExpression block:(TSMarkdownParserMatchBlock)block</Declaration>
+			
+			
+			<Anchor>//api/name/addParsingRuleWithRegularExpression:block:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/init</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/setParsingPairs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *parsingPairs</Declaration>
+			
+			
+			<Anchor>//api/name/parsingPairs</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TSBaseParser/parsingPairs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *parsingPairs</Declaration>
+			
+			
+			<Anchor>//api/name/parsingPairs</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TSBaseParser/parsingPairs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>TSBaseParser.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableArray *parsingPairs</Declaration>
+			
+			
+			<Anchor>//api/name/parsingPairs</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

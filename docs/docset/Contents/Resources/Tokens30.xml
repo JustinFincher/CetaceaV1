@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CSFCetaceaAbstractSharedDocumentDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CSFCetaceaAbstractSharedDocumentDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+            
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CSFCetaceaAbstractSharedDocumentDelegate/uploadingStatusChanged</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (void)uploadingStatusChanged</Declaration>
+			
+			
+			<Anchor>//api/name/uploadingStatusChanged</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CSFCetaceaAbstractSharedDocumentDelegate/downloadingStatusChanged</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaSharedDocument.h</DeclaredIn>
+			
+			<Declaration>- (void)downloadingStatusChanged</Declaration>
+			
+			
+			<Anchor>//api/name/downloadingStatusChanged</Anchor>
+            <NodeRef refid="30"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>CSFNativeSharedDocument Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">CetaceaSharedFramework </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">FinGameWorks</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/abstractDocument">abstractDocument</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/autosavesInPlace">+ autosavesInPlace</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/contentsForType:error:#:">- contentsForType:error:#:</option>
+		
+		<option value="//api/name/getAbstractDocument">- getAbstractDocument</option>
+		
+		<option value="//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:">- initWithContentsOfURL:ofType:error:withSharedDocument:</option>
+		
+		<option value="//api/name/initWithFileURL:withSharedDocument:">- initWithFileURL:withSharedDocument:</option>
+		
+		<option value="//api/name/loadFromContents:ofType:error:">- loadFromContents:ofType:error:</option>
+		
+		<option value="//api/name/loadFromContents:ofType:error:#:">- loadFromContents:ofType:error:#:</option>
+		
+		<option value="//api/name/readFromFileWrapper:ofType:error:">- readFromFileWrapper:ofType:error:</option>
+		
+		<option value="//api/name/writeContents:toURL:forSaveOperation:originalContentsURL:error:#:">- writeContents:toURL:forSaveOperation:originalContentsURL:error:#:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">CSFNativeSharedDocument Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>CSFDocument</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>CSFSharedDocumentBase.h<br />CSFSharedDocumentBase.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Example of how Abstract-Native Shared Document work</p>
+
+<h2>Methods to override:</h2>
+
+<h3>iOS</h3>
+
+<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a>
+– <a href="#//api/name/loadFromContents:ofType:error:">loadFromContents:ofType:error:</a></p>
+
+<h3>OSX</h3>
+
+<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a>
+– <a href="#//api/name/readFromFileWrapper:ofType:error:">readFromFileWrapper:ofType:error:</a></p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/abstractDocument" title="abstractDocument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/abstractDocument">&nbsp;&nbsp;abstractDocument</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (weak) id _Nullable abstractDocument</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAbstractDocument" title="getAbstractDocument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAbstractDocument">&ndash;&nbsp;getAbstractDocument</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For Override Return Type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (CSFAbstractSharedDocument *_Nonnull)getAbstractDocument</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a abstract representation of document</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For Override Return Type</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithFileURL:withSharedDocument:" title="initWithFileURL:withSharedDocument:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithFileURL:withSharedDocument:">&ndash;&nbsp;initWithFileURL:withSharedDocument:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Init Method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id _Nullable)initWithFileURL:(NSURL *_Nonnull)<em>url</em> withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)<em>doc</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>&lt;#url description#></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>doc</code></th>
+						<td><p>&lt;#doc description#></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>&lt;#return value description#></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Init Method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadFromContents:ofType:error:" title="loadFromContents:ofType:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadFromContents:ofType:error:">&ndash;&nbsp;loadFromContents:ofType:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>must be overrided</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)loadFromContents:(id _Nullable)<em>contents</em> ofType:(NSString *_Nullable)<em>typeName</em> error:(NSError *_Nullable *_Nullable)<em>outError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contents</code></th>
+						<td><p>File Wrapper</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>typeName</code></th>
+						<td><p>File Type</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outError</code></th>
+						<td><p>Error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Load is success or not</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> must be overrided</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:" title="initWithContentsOfURL:ofType:error:withSharedDocument:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:">&ndash;&nbsp;initWithContentsOfURL:ofType:error:withSharedDocument:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Init Method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initWithContentsOfURL:(NSURL *)<em>url</em> ofType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em> withSharedDocument:(CSFAbstractSharedDocument *_Nonnull)<em>doc</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>&lt;#url description#></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>typeName</code></th>
+						<td><p>&lt;#typeName description#></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outError</code></th>
+						<td><p>&lt;#outError description#></p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>doc</code></th>
+						<td><p>&lt;#doc description#></p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>&lt;#return value description#></p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Init Method</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readFromFileWrapper:ofType:error:" title="readFromFileWrapper:ofType:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readFromFileWrapper:ofType:error:">&ndash;&nbsp;readFromFileWrapper:ofType:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>must be overrided</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)readFromFileWrapper:(NSFileWrapper *)<em>fileWrapper</em> ofType:(NSString *)<em>typeName</em> error:(NSError *_Nullable __autoreleasing *)<em>outError</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileWrapper</code></th>
+						<td><p>File Wrapper</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>typeName</code></th>
+						<td><p>File Name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>outError</code></th>
+						<td><p>Error</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Load is success or not</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> must be overrided</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/contentsForType:error:#:" title="contentsForType:error:#:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentsForType:error:#:">&ndash;&nbsp;contentsForType:error:#:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)contentsForType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em> #</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadFromContents:ofType:error:#:" title="loadFromContents:ofType:error:#:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadFromContents:ofType:error:#:">&ndash;&nbsp;loadFromContents:ofType:error:#:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)loadFromContents:(id)<em>contents</em> ofType:(NSString *)<em>typeName</em> error:(NSError *_Nullable *)<em>outError</em> #</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeContents:toURL:forSaveOperation:originalContentsURL:error:#:" title="writeContents:toURL:forSaveOperation:originalContentsURL:error:#:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeContents:toURL:forSaveOperation:originalContentsURL:error:#:">&ndash;&nbsp;writeContents:toURL:forSaveOperation:originalContentsURL:error:#:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)writeContents:(id)<em>contents</em> toURL:(NSURL *)<em>url</em> forSaveOperation:(UIDocumentSaveOperation)<em>saveOperation</em> originalContentsURL:(NSURL *)<em>originalContentsURL</em> error:(NSError *_Nullable *)<em>outError</em> #</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/autosavesInPlace" title="autosavesInPlace"></a>
+	<h3 class="method-title"><code><a href="#//api/name/autosavesInPlace">+&nbsp;autosavesInPlace</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)autosavesInPlace</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 FinGameWorks. All rights reserved. Updated: 2017-05-23</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
