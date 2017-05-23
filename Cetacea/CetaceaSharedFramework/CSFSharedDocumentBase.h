@@ -208,8 +208,27 @@
  ## Methods to override:
  
  + getNewDocumentNextPath
+ **Override with TargetCSFiCloudFileDataBaseClass.nextFilePath**
+		+ (NSString *)getNewDocumentNextPath
+		{
+			return [[TargetCSFiCloudFileDataBaseClass sharedManager] nextFilePath];
+		}
+ 
  - updateFileWrappers
+ **Override with updateFileWrappersByPreferredFileName:Contents:**
+		- (void)updateFileWrappers
+		{
+			[self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];
+			[self updateFileWrappersByPreferredFileName:@"markdownString" Contents:[self.markdownString dataUsingEncoding:NSUTF8StringEncoding]];
+			[self updateFileWrappersByPreferredFileName:@"tags" Contents:[NSJSONSerialization dataWithJSONObject:self.tags options:NSJSONWritingPrettyPrinted error:nil]];
+		}
+ 
  - getNativeDocument
+ **Override Example**
+		- (TargetCSFNativeSharedDocumentClass *)getNativeDocument
+		{
+			return (TargetCSFNativeSharedDocumentClass *)self.nativeDocument;
+		}
  
  
  */
