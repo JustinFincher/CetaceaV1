@@ -145,9 +145,32 @@
 <h2>Methods to override:</h2>
 
 <ul>
-<li><a href="#//api/name/getNewDocumentNextPath">getNewDocumentNextPath</a></li>
-<li><a href="#//api/name/updateFileWrappers">updateFileWrappers</a></li>
-<li><a href="#//api/name/getNativeDocument">getNativeDocument</a></li>
+<li><p><a href="#//api/name/getNewDocumentNextPath">getNewDocumentNextPath</a>
+<strong>Override with TargetCSFiCloudFileDataBaseClass.nextFilePath</strong></p>
+
+<pre><code>  + (NSString *)getNewDocumentNextPath
+  {
+      return [[TargetCSFiCloudFileDataBaseClass sharedManager] nextFilePath];
+  }
+</code></pre></li>
+<li><p><a href="#//api/name/updateFileWrappers">updateFileWrappers</a>
+<strong>Override with <a href="#//api/name/updateFileWrappersByPreferredFileName:Contents:">updateFileWrappersByPreferredFileName:Contents:</a></strong></p>
+
+<pre><code>  - (void)updateFileWrappers
+  {
+      [self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];
+      [self updateFileWrappersByPreferredFileName:@"markdownString" Contents:[self.markdownString dataUsingEncoding:NSUTF8StringEncoding]];
+      [self updateFileWrappersByPreferredFileName:@"tags" Contents:[NSJSONSerialization dataWithJSONObject:self.tags options:NSJSONWritingPrettyPrinted error:nil]];
+  }
+</code></pre></li>
+<li><p><a href="#//api/name/getNativeDocument">getNativeDocument</a>
+<strong>Override Example</strong></p>
+
+<pre><code>  - (TargetCSFNativeSharedDocumentClass *)getNativeDocument
+  {
+      return (TargetCSFNativeSharedDocumentClass *)self.nativeDocument;
+  }
+</code></pre></li>
 </ul>
 
 					</div>
