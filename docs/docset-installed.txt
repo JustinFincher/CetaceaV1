@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/fincher/Library/Developer/Shared/Documentation/DocSets/com.justzht.CetaceaSharedFramework.docset
-Time: 2017-05-23 06:33:32 +0000
+Time: 2017-05-23 07:19:05 +0000

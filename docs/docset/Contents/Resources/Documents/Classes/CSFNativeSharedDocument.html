@@ -128,13 +128,23 @@
 
 <h3>iOS</h3>
 
-<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a>
-– <a href="#//api/name/loadFromContents:ofType:error:">loadFromContents:ofType:error:</a></p>
+<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a></p>
+
+<p><strong>OVERRIDE EXAMPLE</strong></p>
+
+<pre><code>- (CSFAbstractSharedDocument *)getAbstractDocument
+{
+    return (CSFAbstractSharedDocument *)self.abstractDocument;
+}
+</code></pre>
+
+<p>– <a href="#//api/name/loadFromContents:ofType:error:">loadFromContents:ofType:error:</a></p>
 
 <h3>OSX</h3>
 
-<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a>
-– <a href="#//api/name/readFromFileWrapper:ofType:error:">readFromFileWrapper:ofType:error:</a></p>
+<p>– <a href="#//api/name/getAbstractDocument">getAbstractDocument</a></p>
+
+<p>– <a href="#//api/name/readFromFileWrapper:ofType:error:">readFromFileWrapper:ofType:error:</a></p>
 					</div>
 					
 					
@@ -159,10 +169,40 @@
 
 		<div class="method-info-container">
 			
+			
+			<div class="method-subsection brief-description">
+				<p>Abstract Document Reference</p>
+			</div>
+			
+		    
 
 			<div class="method-subsection method-declaration"><code>@property (weak) id _Nullable abstractDocument</code></div>
 
 		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Abstract Document Reference</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">CSFSharedDocumentBase.h</code></p>
+			</div>
+			
+			
 		</div>
 	</div>
 </div><div class="section-method">

@@ -27,14 +27,23 @@
  ## Methods to override:
 
  ### iOS
- ```
-– getAbstractDocument
+
+ – getAbstractDocument
+ 
+ **OVERRIDE EXAMPLE**
+
+	- (CSFAbstractSharedDocument *)getAbstractDocument
+	{
+		return (CSFAbstractSharedDocument *)self.abstractDocument;
+	}
+
 – loadFromContents:ofType:error:
- ```
+
  
  ### OSX
  ```
 – getAbstractDocument
+
 – readFromFileWrapper:ofType:error:
  ```
  
@@ -42,6 +51,9 @@
 @interface CSFNativeSharedDocument : CSFDocument
 
 
+/**
+ Abstract Document Reference
+ */
 @property (weak) id _Nullable abstractDocument;
 /**
  For Override Return Type
