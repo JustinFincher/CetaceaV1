@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/CSFNativeSharedDocument</TokenIdentifier>
-			<Abstract type="html">Example of how Abstract-Native Shared Document work</Abstract>
+			<Abstract type="html">Base Class of Native Part of how Abstract-Native Shared Document work</Abstract>
 			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
             
 			
@@ -69,13 +69,13 @@
 			<Parameters>
 				<Parameter>
 					<Name>url</Name>
-					<Abstract type="html">&lt;#url description#&gt;</Abstract>
+					<Abstract type="html">File URL</Abstract>
 				</Parameter><Parameter>
 					<Name>doc</Name>
-					<Abstract type="html">&lt;#doc description#&gt;</Abstract>
+					<Abstract type="html">CSFAbstractSharedDocument instance</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">native sharedDocument intance</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithFileURL:withSharedDocument:</Anchor>
             <NodeRef refid="21"/>
 		</Token>
@@ -112,19 +112,19 @@
 			<Parameters>
 				<Parameter>
 					<Name>url</Name>
-					<Abstract type="html">&lt;#url description#&gt;</Abstract>
+					<Abstract type="html">File URL</Abstract>
 				</Parameter><Parameter>
 					<Name>typeName</Name>
-					<Abstract type="html">&lt;#typeName description#&gt;</Abstract>
+					<Abstract type="html">file type</Abstract>
 				</Parameter><Parameter>
 					<Name>outError</Name>
-					<Abstract type="html">&lt;#outError description#&gt;</Abstract>
+					<Abstract type="html">Error</Abstract>
 				</Parameter><Parameter>
 					<Name>doc</Name>
-					<Abstract type="html">&lt;#doc description#&gt;</Abstract>
+					<Abstract type="html">CSFAbstractSharedDocument instance</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">&lt;#return value description#&gt;</Abstract></ReturnValue>
+			<ReturnValue><Abstract type="html">native sharedDocument intance</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithContentsOfURL:ofType:error:withSharedDocument:</Anchor>
             <NodeRef refid="21"/>
 		</Token>

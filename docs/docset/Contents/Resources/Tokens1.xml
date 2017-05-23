@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/CSFAbstractSharedDocument</TokenIdentifier>
-			<Abstract type="html">Example of how Abstract-Native Shared Document work</Abstract>
+			<Abstract type="html">Base Class of Abstract Part of how Abstract-Native Shared Document work</Abstract>
 			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
             
 			
@@ -14,12 +14,17 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFAbstractSharedDocument/initWithURL:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Init Method For Abstract Document</Abstract>
 			<DeclaredIn>CSFSharedDocumentBase.h</DeclaredIn>
 			
 			<Declaration>- (id _Nullable)initWithURL:(NSURL *_Nonnull)url</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">File URL</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Instance</Abstract></ReturnValue>
 			<Anchor>//api/name/initWithURL:</Anchor>
             <NodeRef refid="1"/>
 		</Token>

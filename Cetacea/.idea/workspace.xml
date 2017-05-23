@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f77aa067-35bb-4ecc-87ec-6e855a28c13f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/CetaceaSharedFramework/docsets/CetaceaSharedFramework.tgz" afterPath="$PROJECT_DIR$/../docs/CetaceaSharedFramework/docsets/CetaceaSharedFramework.tgz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx-shm" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx-shm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx-wal" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.dsidx-wal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.skidx" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.skidx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.toc" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.toc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.tokencache" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/docSet.tokencache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.h" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.h" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFSharedDocumentBase.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset-installed.txt" afterPath="$PROJECT_DIR$/../docs/docset-installed.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/docset/Contents/Resources/Documents/Classes/CSFNativeSharedDocument.html" afterPath="$PROJECT_DIR$/../docs/docset/Contents/Resources/Documents/Classes/CSFNativeSharedDocument.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/html/Classes/CSFNativeSharedDocument.html" afterPath="$PROJECT_DIR$/../docs/html/Classes/CSFNativeSharedDocument.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../genDoc.sh" afterPath="$PROJECT_DIR$/../genDoc.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +34,22 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-              <folding />
+              <folding>
+                <marker date="1493527203000" expanded="true" signature="157:431" ph="..." />
+                <marker date="1493527203000" expanded="true" signature="490:656" ph="..." />
+                <marker date="1493527203000" expanded="true" signature="700:5397" ph="..." />
+                <marker date="1493527203000" expanded="true" signature="776:1784" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="1136:1339" ph="@{...}" />
+                <marker date="1493527203000" expanded="true" signature="1807:2141" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="2240:2563" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="2636:2883" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="2909:2957" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="3164:3321" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="3346:4161" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="3666:3956" ph="^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop){...}" />
+                <marker date="1493527203000" expanded="true" signature="4325:4333" ph="{...}" />
+                <marker date="1493527203000" expanded="true" signature="4440:5370" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,9 +58,10 @@
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextAttributeManager.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#240#288#0" expanded="true" />
+                <marker date="1495087069000" expanded="true" signature="240:288" ph="..." />
+                <marker date="1495087069000" expanded="true" signature="348:350" ph="..." />
               </folding>
             </state>
           </provider>
@@ -48,7 +72,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1494737156000" expanded="true" signature="208:210" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,7 +84,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
               <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding />
+              <folding>
+                <marker date="1494737002000" expanded="false" signature="235:283" ph="..." />
+                <marker date="1494737002000" expanded="true" signature="338:724" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,7 +98,8 @@
             <state relative-caret-position="144">
               <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
-                <element signature="e#127#160#0" expanded="true" />
+                <marker date="1495439697000" expanded="true" signature="135:194" ph="..." />
+                <marker date="1495439697000" expanded="true" signature="530:532" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,7 +110,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
               <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding />
+              <folding>
+                <marker date="1495439697000" expanded="false" signature="135:274" ph="..." />
+                <marker date="1495439697000" expanded="true" signature="329:3228" ph="..." />
+                <marker date="1495439697000" expanded="true" signature="362:388" ph="{...}" />
+                <marker date="1495439697000" expanded="true" signature="427:453" ph="{...}" />
+                <marker date="1495439697000" expanded="true" signature="506:3225" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -88,10 +124,12 @@
       <file leaf-file-name="CSFMarkdownParserManager.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="216">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
-                <marker date="1495508807000" expanded="true" signature="2775:2777" ph="..." />
+                <marker date="1495508807000" expanded="false" signature="123:173" ph="..." />
+                <marker date="1495508807000" expanded="true" signature="123:215" ph="..." />
+                <marker date="1495508807000" expanded="true" signature="263:2777" ph="..." />
               </folding>
             </state>
           </provider>
@@ -101,8 +139,14 @@
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.m">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
-              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-              <folding />
+              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding>
+                <marker date="1495440833000" expanded="true" signature="193:656" ph="..." />
+                <marker date="1495440833000" expanded="true" signature="247:443" ph="{...}" />
+                <marker date="1495440833000" expanded="true" signature="368:414" ph="^{...}" />
+                <marker date="1495440833000" expanded="true" signature="456:630" ph="{...}" />
+                <marker date="1495440833000" expanded="true" signature="648:653" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -662,12 +706,12 @@
       <workItem from="1495443580649" duration="1394000" />
       <workItem from="1495445193350" duration="483000" />
       <workItem from="1495445713284" duration="115000" />
-      <workItem from="1495445870561" duration="2082000" />
+      <workItem from="1495445870561" duration="2089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21385000" />
+    <option name="totallyTimeSpent" value="21392000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,7 +724,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21927084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -977,7 +1020,8 @@
         <state relative-caret-position="144">
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <element signature="e#127#160#0" expanded="true" />
+            <marker date="1495439697000" expanded="true" signature="135:194" ph="..." />
+            <marker date="1495439697000" expanded="true" signature="530:532" ph="..." />
           </folding>
         </state>
       </provider>
@@ -986,7 +1030,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="25" column="39" lean-forward="false" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
+          <folding>
+            <marker date="1495439697000" expanded="false" signature="135:274" ph="..." />
+            <marker date="1495439697000" expanded="true" signature="329:3228" ph="..." />
+            <marker date="1495439697000" expanded="true" signature="362:388" ph="{...}" />
+            <marker date="1495439697000" expanded="true" signature="427:453" ph="{...}" />
+            <marker date="1495439697000" expanded="true" signature="506:3225" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -994,16 +1044,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
+          <folding>
+            <marker date="1493527203000" expanded="true" signature="157:431" ph="..." />
+            <marker date="1493527203000" expanded="true" signature="490:656" ph="..." />
+            <marker date="1493527203000" expanded="true" signature="700:5397" ph="..." />
+            <marker date="1493527203000" expanded="true" signature="776:1784" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="1136:1339" ph="@{...}" />
+            <marker date="1493527203000" expanded="true" signature="1807:2141" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="2240:2563" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="2636:2883" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="2909:2957" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="3164:3321" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="3346:4161" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="3666:3956" ph="^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop){...}" />
+            <marker date="1493527203000" expanded="true" signature="4325:4333" ph="{...}" />
+            <marker date="1493527203000" expanded="true" signature="4440:5370" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextAttributeManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#240#288#0" expanded="true" />
+            <marker date="1495087069000" expanded="true" signature="240:288" ph="..." />
+            <marker date="1495087069000" expanded="true" signature="348:350" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1012,7 +1078,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1494737156000" expanded="true" signature="208:210" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,24 +1088,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="27" column="25" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
+          <folding>
+            <marker date="1494737002000" expanded="false" signature="235:283" ph="..." />
+            <marker date="1494737002000" expanded="true" signature="338:724" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <marker date="1495440833000" expanded="true" signature="193:656" ph="..." />
+            <marker date="1495440833000" expanded="true" signature="247:443" ph="{...}" />
+            <marker date="1495440833000" expanded="true" signature="368:414" ph="^{...}" />
+            <marker date="1495440833000" expanded="true" signature="456:630" ph="{...}" />
+            <marker date="1495440833000" expanded="true" signature="648:653" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="216">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <marker date="1495508807000" expanded="true" signature="2775:2777" ph="..." />
+            <marker date="1495508807000" expanded="false" signature="123:173" ph="..." />
+            <marker date="1495508807000" expanded="true" signature="123:215" ph="..." />
+            <marker date="1495508807000" expanded="true" signature="263:2777" ph="..." />
           </folding>
         </state>
       </provider>
