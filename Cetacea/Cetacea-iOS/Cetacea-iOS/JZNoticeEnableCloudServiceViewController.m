@@ -30,6 +30,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+	self.navigationController.navigationBarHidden = YES;
     if ([[CSFiCloudSyncManager sharedManager] isIcloudAvailiable])
     {
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
