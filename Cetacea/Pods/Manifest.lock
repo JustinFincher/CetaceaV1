@@ -1,5 +1,5 @@
 PODS:
-  - Bohr (3.0.0)
+  - Bohr (3.0.1)
   - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - DateTools (2.0.0)
@@ -55,7 +55,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Bohr:
-    :commit: 131316fc8b06f8e7e1674496ed2112752f46547a
+    :commit: 22bdfcdafb12fdf38c93ccee11ebac29780381bf
     :git: https://github.com/SecondRenaissance/Bohr.git
   PeerTalk:
     :commit: 5de384b349a1d51fc148c45f8ce0ac46b9bce39e
@@ -65,7 +65,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/SecondRenaissance/SyntaxKit.git
 
 SPEC CHECKSUMS:
-  Bohr: 17b150766e54e1fb8ff417d85b830c7caafa8b4a
+  Bohr: e7e90f4dcf8cf1aebc0843ed74dea4d9d328b00d
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3

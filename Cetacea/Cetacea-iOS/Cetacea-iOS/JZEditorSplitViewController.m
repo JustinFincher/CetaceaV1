@@ -44,13 +44,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	
-//    if (![[CSFiCloudSyncManager sharedManager] isIcloudAvailiable])
-//    {
-//        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:CSF_Block_Main_Storyboard_VC_From_Identifier(NSStringFromClass([JZNoticeEnableCloudServiceViewController class]))];
-//        navController.modalPresentationStyle = UIModalPresentationFormSheet;
-//        [self presentViewController:navController animated:YES completion:nil];
-//    }
     BOOL isPrimaryPanelHidden = [(JZMainSplitViewController*)[[CSFSingletonRegister sharedManager] getRegisteredSingletonForClassName:NSStringFromClass([JZMainSplitViewController class])] isPrimayPanelHidden];
     [self.resizePanelButtonItem setImage:[UIImage imageNamed: (isPrimaryPanelHidden ? @"icon_ios_right" : @"icon_ios_left")]];
 }
