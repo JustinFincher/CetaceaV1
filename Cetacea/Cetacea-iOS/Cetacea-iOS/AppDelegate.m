@@ -12,7 +12,6 @@
 #import <CetaceaSharedFramework/CetaceaSharedFramework.h>
 #import "JZNoticeEnableCloudServiceViewController.h"
 #import <GDPerformanceView/GDPerformanceMonitor.h>
-
 #import "JZDocumentImportViewController.h"
 
 @interface AppDelegate ()
@@ -63,6 +62,16 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+	if (![[CSFiCloudSyncManager sharedManager] isIcloudAvailiable])
+	{
+		if (self.window.rootViewController.presentedViewController && [self.window.rootViewController.presentedViewController isKindOfClass:[UINavigationController class]] && [((UINavigationController *)self.window.rootViewController.presentedViewController).topViewController isKindOfClass:[JZNoticeEnableCloudServiceViewController class]])
+		{
+			return;
+		}
+		UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:CSF_Block_Main_Storyboard_VC_From_Identifier(NSStringFromClass([JZNoticeEnableCloudServiceViewController class]))];
+		navController.modalPresentationStyle = UIModalPresentationFormSheet;
+		[self.window.rootViewController presentViewController:navController animated:YES completion:nil];
+	}
 }
 
 
