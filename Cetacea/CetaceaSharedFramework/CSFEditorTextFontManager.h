@@ -27,6 +27,7 @@
 
 #pragma mark Font Helpers
 - (NSArray *)getAllFontInApp;
+- (NSArray *)getCanBeSelectedFontInApp;
 
 #pragma mark - Editor Base Font
 - (NSString *)getEditorBaseFontFamilyName;

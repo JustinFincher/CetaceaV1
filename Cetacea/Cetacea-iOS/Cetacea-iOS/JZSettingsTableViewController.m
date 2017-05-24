@@ -11,6 +11,7 @@
 #import "JZSettingsTableViewController.h"
 #import <MessageUI/MessageUI.h>
 #import "BOFontSizeTableViewCell.h"
+#import "JZSettingsFontOptionsTableViewController.h"
 
 @interface JZSettingsTableViewController () <MFMailComposeViewControllerDelegate>
 
@@ -88,12 +89,12 @@
                           
                           BOChoiceTableViewCell *baseFontsCell = [BOChoiceTableViewCell cellWithTitle:@"Base Font" key:@"com.JustZht.Cetacea.Settings.Editor.BaseFont.Name" handler:^(BOChoiceTableViewCell *cell)
                                                                   {
-                                                                      cell.secondaryFont = [UIFont fontWithName:cell.setting.value size:12.0f];
+                                                                      cell.options = [[CSFEditorTextFontManager sharedManager] getCanBeSelectedFontInApp];
+																	  cell.destinationViewController = [JZSettingsFontOptionsTableViewController new];
+//																	  cell.secondaryFont = [UIFont fontWithName:[[[CSFEditorTextFontManager sharedManager] getCanBeSelectedFontInApp] objectAtIndex:[cell.setting.value integerValue]] size:[UIFont systemFontSize]];
                                                                   }];
-                          baseFontsCell.options = [[CSFEditorTextFontManager sharedManager] getAllFontInApp];
                           
                           [section addCell:baseFontsCell];
-                          
                           
                           [section addCell:[BOSwitchTableViewCell cellWithTitle:@"Show Line Number" key:@"com.JustZht.Cetacea.Settings.Appearance.Show-Line-Number" handler:nil]];
                       }]];

@@ -50,6 +50,7 @@
 }
 
 - (void)awakeFromNib {
+	[super awakeFromNib];
 	[self commonInit];
 }
 
@@ -136,18 +137,24 @@
 	BOTableViewCell *cell = section.cells[indexPath.row];
 	cell.indexPath = indexPath;
 	
-	if (cell.setting && !cell.setting.valueDidChangeBlock) {
-		__unsafe_unretained typeof(self) weakSelf = self;
-		__unsafe_unretained typeof(cell) weakCell = cell;
-		cell.setting.valueDidChangeBlock = ^{
-			dispatch_async(dispatch_get_main_queue(), ^{
-				[weakCell settingValueDidChange];
-				[weakSelf reloadTableView];
-			});
-		};
-		
+	if (cell.setting)
+	{
+		if(!cell.setting.valueDidChangeBlock)
+		{
+			__block typeof(self) weakSelf = self;
+			__block typeof(cell) weakCell = cell;
+			cell.setting.valueDidChangeBlock = ^{
+				dispatch_async(dispatch_get_main_queue(), ^{
+					
+					[weakCell settingValueDidChange];
+					[weakSelf reloadTableView];
+				});
+			};
+		}
 		[UIView performWithoutAnimation:^{
-			[cell settingValueDidChange];
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[cell settingValueDidChange];
+			});
 		}];
 	}
 	

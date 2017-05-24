@@ -53,7 +53,11 @@
     }
     return fonts;
 }
-
+- (NSArray *)getCanBeSelectedFontInApp
+{
+	[self getAllFontInApp];
+	return [NSArray arrayWithObjects:@"AmericanTypewriter",@"AmericanTypewriter-Condensed",@"Avenir-Book",@"AvenirNext-Medium",@"AvenirNextCondensed-Regular",@"Courier-Bold",@"CourierNewPSMT",@"FiraCode-Retina",@"FiraCode-Bold",@"Futura-Medium",@"Helvetica",@"HelveticaNeue-CondensedBold",@"Menlo-Regular",@"Monoid-Retina", nil];
+}
 #pragma mark - Editor Base Font
 - (NSString *)getEditorBaseFontFamilyName
 {
