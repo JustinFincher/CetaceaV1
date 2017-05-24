@@ -25,7 +25,6 @@
 		for (NSString *name in [[CSFEditorTextFontManager sharedManager] getCanBeSelectedFontInApp])
 		{
 			[section addCell:[BOOptionTableViewCell cellWithTitle:name key:@"com.JustZht.Cetacea.Settings.Editor.BaseFont.Name" handler:^(BOOptionTableViewCell *cell) {
-				cell.footerTitle = name;
 				cell.mainFont = [UIFont fontWithName:name size:[UIFont systemFontSize]];
 			}]];
 		}

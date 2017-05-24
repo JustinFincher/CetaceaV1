@@ -55,8 +55,35 @@
 }
 - (NSArray *)getCanBeSelectedFontInApp
 {
-	[self getAllFontInApp];
-	return [NSArray arrayWithObjects:@"AmericanTypewriter",@"AmericanTypewriter-Condensed",@"Avenir-Book",@"AvenirNext-Medium",@"AvenirNextCondensed-Regular",@"Courier-Bold",@"CourierNewPSMT",@"FiraCode-Retina",@"FiraCode-Bold",@"Futura-Medium",@"Helvetica",@"HelveticaNeue-CondensedBold",@"Menlo-Regular",@"Monoid-Retina", nil];
+//	return [self getAllFontInApp];
+	return [NSArray arrayWithObjects:
+			@"AmericanTypewriter",
+			@"AmericanTypewriter-Semibold",
+			@"AmericanTypewriter-Bold",
+			@"ArialMT",
+			@"Avenir-Book",
+			@"Avenir-Medium",
+			@"AvenirNext-Medium",
+			@"AvenirNext-Regular",
+			@"AvenirNextCondensed-Regular",
+			@"Courier-Bold",
+			@"CourierNewPSMT",
+			@"CourierNewPS-BoldMT",
+			@"FiraCode-Light",
+			@"FiraCode-Medium",
+			@"FiraCode-Retina",
+			@"FiraCode-Bold",
+			@"Futura-Medium",
+			@"GillSans",
+			@"Helvetica",
+			@"Helvetica-Light",
+			@"HelveticaNeue",
+			@"Menlo-Regular",
+			@"Menlo-Bold",
+			@"Monoid-Regular",
+			@"Monoid-Retina",
+			@"Monoid-Bold",
+			nil];
 }
 #pragma mark - Editor Base Font
 - (NSString *)getEditorBaseFontFamilyName
