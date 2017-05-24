@@ -47,6 +47,10 @@
     }
     return isForceTouchAvailable;
 }
+- (BOOL)isTestFlightBuild
+{
+	return [[[[NSBundle mainBundle] appStoreReceiptURL] lastPathComponent] isEqualToString:@"sandboxReceipt"];
+}
 #elif TARGET_OS_OSX
 #endif
 

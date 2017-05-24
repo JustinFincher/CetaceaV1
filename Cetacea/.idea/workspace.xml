@@ -2,232 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f77aa067-35bb-4ecc-87ec-6e855a28c13f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZSettingsFontOptionsTableViewController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZSettingsFontOptionsTableViewController.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDVersion/SDVersion.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Private/SDVersion/SDwatchOSVersion.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDVersion/SDVersion.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Headers/Public/SDVersion/SDwatchOSVersion.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Bohr-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Bohr-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Bohr-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Bohr.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Bohr.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Bohr/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/DKNightVersion-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/DKNightVersion-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/DKNightVersion-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/DKNightVersion.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/DKNightVersion.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DKNightVersion/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/DateTools-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/DateTools-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/DateTools-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/DateTools-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/DateTools-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/DateTools-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/DateTools-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/DateTools-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/DateTools-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/DateTools-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DateTools-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/DynamicColor-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/DynamicColor-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/DynamicColor-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/DynamicColor-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/DynamicColor-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/DynamicColor-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/DynamicColor-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/DynamicColor-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/DynamicColor-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/DynamicColor-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/DynamicColor-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/GDPerformanceView-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/GDPerformanceView-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/GDPerformanceView-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/GDPerformanceView.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/GDPerformanceView.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/GDPerformanceView/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/IQKeyboardManager.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/IQKeyboardManager/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-OSX/MMMarkdown-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/MMMarkdown-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/MMMarkdown-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/MMMarkdown-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/MMMarkdown-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/MMMarkdown-iOS/MMMarkdown-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/PeerTalk-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/PeerTalk-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/PeerTalk-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/PeerTalk-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-OSX/PeerTalk-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/PeerTalk-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/PeerTalk-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/PeerTalk-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/PeerTalk-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/PeerTalk-iOS/PeerTalk-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-frameworks.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-frameworks.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Cetacea-iOS/Pods-Cetacea-iOS.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-iOS/Pods-CetaceaSharedFramework-iOS.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension-frameworks.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp Extension/Pods-WatchKitApp Extension.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp-acknowledgements.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp-acknowledgements.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp-frameworks.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp-resources.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp.appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp.debug.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp.non-appstore.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-WatchKitApp/Pods-WatchKitApp.release.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/ReactiveObjC-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/ReactiveObjC-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/ReactiveObjC-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/ReactiveObjC-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-OSX/ReactiveObjC-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/ReactiveObjC-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/ReactiveObjC-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/ReactiveObjC-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/ReactiveObjC-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/ReactiveObjC-iOS/ReactiveObjC-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-OSX/Realm-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-OSX/Realm-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-OSX/Realm-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-OSX/Realm-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-iOS/Realm-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-iOS/Realm-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-iOS/Realm-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/Realm-iOS/Realm-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/SDVersion-framework-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/SDVersion-framework-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/SDVersion-framework-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/SDVersion-framework-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-OSX/SDVersion-framework-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/SDVersion-framework-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/SDVersion-framework-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/SDVersion-framework-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/SDVersion-framework-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-framework-iOS/SDVersion-framework-iOS.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-library/SDVersion-library-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-library/SDVersion-library-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SDVersion-library/SDVersion-library.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/SyntaxKit-OSX-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/SyntaxKit-OSX-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/SyntaxKit-OSX-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/SyntaxKit-OSX.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-OSX/SyntaxKit-OSX.xcconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/SyntaxKit-iOS-dummy.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/SyntaxKit-iOS-prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/SyntaxKit-iOS-umbrella.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/SyntaxKit-iOS.modulemap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Pods/Target Support Files/SyntaxKit-iOS/SyntaxKit-iOS.xcconfig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Cetacea-Mac/Cetacea-Mac.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/ActionExtension/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/ActionExtension/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea iOS Today Extension/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea iOS Today Extension/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZEditorSplitViewController.m" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZEditorSplitViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZSettingsTableViewController.m" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/JZSettingsTableViewController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/Settings.bundle/Root.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/Cetacea-iOS/Settings.bundle/Root.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/DocumentProviderExtension/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/DocumentProviderExtension/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/DocumentProviderExtensionFileProvider/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/DocumentProviderExtensionFileProvider/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/watchKitApp Extension/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/watchKitApp Extension/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cetacea-iOS/watchKitApp/Info.plist" afterPath="$PROJECT_DIR$/Cetacea-iOS/watchKitApp/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextFontManager.h" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextFontManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextFontManager.m" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFEditorTextFontManager.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOOptionTableViewCell.h" afterPath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOOptionTableViewCell.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOOptionTableViewCell.m" afterPath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOOptionTableViewCell.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOSetting.m" afterPath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOSetting.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOTableViewController.m" afterPath="$PROJECT_DIR$/Pods/Bohr/Bohr/BOTableViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Local Podspecs/Bohr.podspec.json" afterPath="$PROJECT_DIR$/Pods/Local Podspecs/Bohr.podspec.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods-Cetacea-iOS-metadata.plist" afterPath="$PROJECT_DIR$/Pods/Pods-Cetacea-iOS-metadata.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.h" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.m" afterPath="$PROJECT_DIR$/CetaceaSharedFramework/CSFDeviceCapabilityManager.m" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -236,7 +20,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_22d0412f8c11d33d343e61611c67b05bb77b9803" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_d09406af1368ca7aec39d6db6954d182f2267555" />
   <component name="FavoritesManager">
     <favorites_list name="Cetacea" />
   </component>
@@ -347,17 +131,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Podfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSFMarkdownParserManager.m" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CSFMarkdownParserManager.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.m">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="648">
@@ -927,12 +701,12 @@
       <workItem from="1495445193350" duration="483000" />
       <workItem from="1495445713284" duration="115000" />
       <workItem from="1495445870561" duration="2089000" />
-      <workItem from="1495596628729" duration="508000" />
+      <workItem from="1495596628729" duration="874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21900000" />
+    <option name="totallyTimeSpent" value="22266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +719,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21927084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1300,20 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <marker date="1495440833000" expanded="true" signature="193:656" ph="..." />
-            <marker date="1495440833000" expanded="true" signature="247:443" ph="{...}" />
-            <marker date="1495440833000" expanded="true" signature="368:414" ph="^{...}" />
-            <marker date="1495440833000" expanded="true" signature="456:630" ph="{...}" />
-            <marker date="1495440833000" expanded="true" signature="648:653" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFCetaceaThemeSharedDocument.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1335,9 +1094,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Podfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CetaceaSharedFramework/CSFMarkdownParserManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <marker date="1495440833000" expanded="true" signature="193:656" ph="..." />
+            <marker date="1495440833000" expanded="true" signature="247:443" ph="{...}" />
+            <marker date="1495440833000" expanded="true" signature="368:414" ph="^{...}" />
+            <marker date="1495440833000" expanded="true" signature="456:630" ph="{...}" />
+            <marker date="1495440833000" expanded="true" signature="648:653" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

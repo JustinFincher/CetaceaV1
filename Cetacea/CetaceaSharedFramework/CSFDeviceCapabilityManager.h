@@ -22,6 +22,7 @@
 #if TARGET_OS_IOS
 
 - (BOOL)isForceTouchAvailable;
+- (BOOL)isTestFlightBuild;
 
 #pragma mark - OSX Methods
 #elif TARGET_OS_OSX
