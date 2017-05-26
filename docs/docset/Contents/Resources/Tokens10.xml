@@ -37,6 +37,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFDeviceCapabilityManager/isTestFlightBuild</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFDeviceCapabilityManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isTestFlightBuild</Declaration>
+			
+			
+			<Anchor>//api/name/isTestFlightBuild</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFDeviceCapabilityManager/init</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CSFDeviceCapabilityManager.m</DeclaredIn>

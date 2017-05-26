@@ -37,6 +37,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getCanBeSelectedFontInApp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getCanBeSelectedFontInApp</Declaration>
+			
+			
+			<Anchor>//api/name/getCanBeSelectedFontInApp</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFEditorTextFontManager/getEditorBaseFontFamilyName</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>CSFEditorTextFontManager.h</DeclaredIn>

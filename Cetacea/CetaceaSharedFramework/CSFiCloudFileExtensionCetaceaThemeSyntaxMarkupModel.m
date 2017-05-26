@@ -7,3 +7,39 @@
 //
 
 #import "CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h"
+
+@implementation CSFCetaceaThemeSyntaxMarkupModel
+
+#pragma mark - NSCoding
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super init];
+	if (!self) {
+		return nil;
+	}
+	return self;
+}
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+}
+
+
+@end
+
+@implementation CSFCetaceaThemeSyntaxPresentationModel
+
+#pragma mark - NSCoding
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super init];
+	if (!self) {
+		return nil;
+	}
+	return self;
+}
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+}
+
+
+@end

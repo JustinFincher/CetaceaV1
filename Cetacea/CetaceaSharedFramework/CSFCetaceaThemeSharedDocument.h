@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CSFGlobalHeader.h"
+#import "CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h"
 #import "CSFSharedDocumentBase.h"
 
 #if TARGET_OS_IOS
@@ -31,6 +32,22 @@
 + (CSFCetaceaThemeAbstractSharedDocument *)newDocument;
 - (CSFCetaceaNativeSharedDocument *)nativeDocument;
 
+
+
 #pragma mark - Property
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel;
+@property (nonatomic,strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel;
 
 @end

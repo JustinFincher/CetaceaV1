@@ -14,7 +14,8 @@
 
 #pragma mark Singleton Methods
 
-+ (id)sharedManager {
++ (id)sharedManager
+{
     static CSFDeviceCapabilityManager *sharedMyManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

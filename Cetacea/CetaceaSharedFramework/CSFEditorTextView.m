@@ -95,13 +95,11 @@
 }
 - (void)refreshFileContent
 {
+	
 }
 - (void)refreshHightLight
 {
-#if TARGET_OS_IOS
-#elif TARGET_OS_OSX
-	
-#endif
+	self.generatedAttributedString = [[NSAttributedString alloc] initWithString:_currentEditingDocument.markdownString];
 }
 - (void)updateTextView
 {

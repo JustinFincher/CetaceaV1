@@ -238,6 +238,12 @@
                     <Anchor>tasks</Anchor>
                 </Node>
                 
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
                 
                 <Node type="section">
                     <Path>Classes/CSFCetaceaThemeAbstractSharedDocument.html</Path>
@@ -279,6 +285,12 @@
                 
                 
                 
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxMarkupModel.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
             </Subnodes>
             
         </Node>
@@ -305,6 +317,12 @@
                 </Node>
                 
                 
+                
+                <Node type="section">
+                    <Path>Classes/CSFCetaceaThemeSyntaxPresentationModel.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
                 
             </Subnodes>
             
