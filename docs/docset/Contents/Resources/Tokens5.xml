@@ -37,6 +37,510 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setDefaultDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/defaultDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/defaultDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/defaultDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setAtxHeaderDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/atxHeaderDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/atxHeaderDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setSetextHeaderDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setextHeaderDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/setextHeaderDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setCodeBlockDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/codeBlockDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/codeBlockDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setTabIndentDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/tabIndentDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/tabIndentDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setBoldDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/boldDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/boldDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/boldDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/boldDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/boldDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setItalicDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/italicDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/italicDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/italicDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/italicDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/italicDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setStrikeThroughDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/strikeThroughDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/strikeThroughDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/strikeThroughDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setListDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/listDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/listDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/listDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/listDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/listDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setQuoteDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/quoteDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/quoteDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/quoteDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/quoteDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/quoteDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setImageDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/imageDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/imageDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/imageDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/imageDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/imageDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setLinkDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/linkDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/linkDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/linkDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/linkDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/linkDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setEditorViewDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/editorViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/editorViewDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/editorViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/editorViewDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/editorViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setRuleViewDataModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/ruleViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/ruleViewDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/ruleViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/ruleViewDataModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
+			
+			
+			<Anchor>//api/name/ruleViewDataModel</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/updateFileWrappers</TokenIdentifier>
 			<Abstract type="html">must be overrided</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.m</DeclaredIn>

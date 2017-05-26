@@ -89,6 +89,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-OSX/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-OSX/Realm.framework"
@@ -99,6 +100,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-OSX/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-OSX/Realm.framework"
@@ -109,6 +111,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-OSX/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-OSX/Realm.framework"
@@ -119,6 +122,7 @@ if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-OSX/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-OSX/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-OSX/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-OSX/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-OSX/Realm.framework"

@@ -27,6 +27,10 @@
 		self.paragraphParser = [TSBaseParser new];
 		self.fullParser = [TSBaseParser new];
 		self.lineParser = [TSBaseParser new];
+		self.shouldRemoveTags = NO;
+		
+		
+		
 	}
 	return self;
 }

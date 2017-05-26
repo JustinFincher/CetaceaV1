@@ -156,6 +156,30 @@
             <NodeRef refid="6"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/initWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithCoder:(NSCoder *)aDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCoder:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxMarkupModel/encodeWithCoder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m</DeclaredIn>
+			
+			<Declaration>- (void)encodeWithCoder:(NSCoder *)aCoder</Declaration>
+			
+			
+			<Anchor>//api/name/encodeWithCoder:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
         
         
 	</File>

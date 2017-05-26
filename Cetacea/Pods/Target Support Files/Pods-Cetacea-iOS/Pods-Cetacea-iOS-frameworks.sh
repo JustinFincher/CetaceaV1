@@ -89,6 +89,7 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-iOS/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"
@@ -103,6 +104,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SyntaxKit-iOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Aspects-iOS/Aspects.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools-iOS/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ReactiveObjC-iOS/ReactiveObjC.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"

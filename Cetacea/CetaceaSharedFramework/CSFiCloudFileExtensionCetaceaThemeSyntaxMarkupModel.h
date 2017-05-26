@@ -18,7 +18,7 @@
 /**
  Cetacea Theme, Single Syntax Markup Color Model
  */
-@interface CSFCetaceaThemeSyntaxMarkupModel : NSObject
+@interface CSFCetaceaThemeSyntaxMarkupModel : NSObject<NSCoding>
 
 /**
  Text Front Color
@@ -46,7 +46,7 @@
 /**
  Cetacea Theme, Single Syntax Markup Color Model For Both Day/Night Presentation
  */
-@interface CSFCetaceaThemeSyntaxPresentationModel : NSObject
+@interface CSFCetaceaThemeSyntaxPresentationModel : NSObject<NSCoding>
 
 @property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup;
 @property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup;

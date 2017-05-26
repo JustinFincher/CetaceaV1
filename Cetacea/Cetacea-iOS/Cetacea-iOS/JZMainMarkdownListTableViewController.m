@@ -228,7 +228,6 @@
     CSFCetaceaAbstractSharedDocument *doc = [self.markdownArray objectAtIndex:indexPath.row];
     if (doc)
     {
-
         [[[CSFFeedbackGeneratorManager sharedManager] selectionFeedbackGenerator] selectionChanged];
         [[CSFCetaceaSharedDocumentEditManager sharedManager] setCurrentEditingDocument:doc];
     }
