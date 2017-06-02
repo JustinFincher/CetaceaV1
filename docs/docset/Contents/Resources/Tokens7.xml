@@ -14,7 +14,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/setDayMarkup:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Day</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/dayMarkup</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Day</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxPresentationModel/dayMarkup</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Day</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup</Declaration>
@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/setNightMarkup:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Night</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeSyntaxPresentationModel/nightMarkup</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Night</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>
@@ -74,7 +74,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeSyntaxPresentationModel/nightMarkup</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Markup Model For The Night</Abstract>
 			<DeclaredIn>CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup</Declaration>

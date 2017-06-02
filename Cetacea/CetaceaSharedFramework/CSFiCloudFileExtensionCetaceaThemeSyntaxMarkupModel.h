@@ -48,7 +48,15 @@
  */
 @interface CSFCetaceaThemeSyntaxPresentationModel : NSObject<NSCoding>
 
+
+/**
+ Markup Model For The Day
+ */
 @property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *dayMarkup;
+
+/**
+ Markup Model For The Night
+ */
 @property (nonatomic,strong) CSFCetaceaThemeSyntaxMarkupModel *nightMarkup;
 
 @end
