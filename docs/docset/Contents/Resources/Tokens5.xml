@@ -38,7 +38,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setDefaultDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
@@ -50,7 +50,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/defaultDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
@@ -62,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/defaultDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Default Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *defaultDataModel</Declaration>
@@ -73,8 +73,44 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setAtxHeaderDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setDefaultTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/defaultTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/defaultTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *defaultTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/defaultTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setAtxHeaderDataModel:</TokenIdentifier>
+			<Abstract type="html">Atx Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
@@ -86,7 +122,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/atxHeaderDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Atx Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
@@ -98,7 +134,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/atxHeaderDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Atx Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *atxHeaderDataModel</Declaration>
@@ -109,8 +145,80 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setSetextHeaderDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setAtxHeaderTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/atxHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/atxHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setAtxHeaderTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/atxHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/atxHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *atxHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/atxHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setSetextHeaderDataModel:</TokenIdentifier>
+			<Abstract type="html">Setext Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
@@ -122,7 +230,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setextHeaderDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Setext Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
@@ -134,7 +242,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/setextHeaderDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Setext Header Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *setextHeaderDataModel</Declaration>
@@ -145,8 +253,80 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setCodeBlockDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setSetextHeaderTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setextHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/setextHeaderTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setSetextHeaderTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setextHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/setextHeaderTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *setextHeaderTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/setextHeaderTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setCodeBlockDataModel:</TokenIdentifier>
+			<Abstract type="html">Code Block Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
@@ -158,7 +338,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/codeBlockDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Code Block Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
@@ -170,7 +350,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/codeBlockDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Code Block Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *codeBlockDataModel</Declaration>
@@ -181,8 +361,80 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setTabIndentDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setCodeBlockTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/codeBlockTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/codeBlockTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setCodeBlockTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/codeBlockTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/codeBlockTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *codeBlockTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/codeBlockTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setTabIndentDataModel:</TokenIdentifier>
+			<Abstract type="html">Tab Indent Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
@@ -194,7 +446,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/tabIndentDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Tab Indent Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
@@ -206,7 +458,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/tabIndentDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Tab Indent Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *tabIndentDataModel</Declaration>
@@ -217,8 +469,80 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setBoldDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setTabIndentTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/tabIndentTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/tabIndentTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setTabIndentTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/tabIndentTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/tabIndentTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *tabIndentTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/tabIndentTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setBoldDataModel:</TokenIdentifier>
+			<Abstract type="html">Bold Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
@@ -230,7 +554,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/boldDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Bold Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
@@ -242,7 +566,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/boldDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Bold Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *boldDataModel</Declaration>
@@ -253,8 +577,80 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setItalicDataModel:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setBoldTextAttributes:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/BoldTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/BoldTextAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTextAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTextAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setBoldTagAttributes:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/BoldTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/BoldTagAttributes</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*id&gt; *BoldTagAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/BoldTagAttributes</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setItalicDataModel:</TokenIdentifier>
+			<Abstract type="html">Italic Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
@@ -266,7 +662,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/italicDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Italic Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
@@ -278,7 +674,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/italicDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Italic Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *italicDataModel</Declaration>
@@ -290,7 +686,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setStrikeThroughDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Strike Through Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
@@ -302,7 +698,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/strikeThroughDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Strike Through Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
@@ -314,7 +710,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/strikeThroughDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Strike Through Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *strikeThroughDataModel</Declaration>
@@ -326,7 +722,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setListDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">List Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
@@ -338,7 +734,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/listDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">List Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
@@ -350,7 +746,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/listDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">List Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *listDataModel</Declaration>
@@ -362,7 +758,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setQuoteDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Quote Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
@@ -374,7 +770,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/quoteDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Quote Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
@@ -386,7 +782,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/quoteDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Quote Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *quoteDataModel</Declaration>
@@ -398,7 +794,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setImageDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Image Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
@@ -410,7 +806,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/imageDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Image Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
@@ -422,7 +818,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/imageDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Image Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *imageDataModel</Declaration>
@@ -434,7 +830,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setLinkDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Link Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
@@ -446,7 +842,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/linkDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Link Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
@@ -458,7 +854,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/linkDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Link Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *linkDataModel</Declaration>
@@ -470,7 +866,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setEditorViewDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Editor View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
@@ -482,7 +878,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/editorViewDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Editor View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
@@ -494,7 +890,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/editorViewDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Editor View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *editorViewDataModel</Declaration>
@@ -506,7 +902,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/setRuleViewDataModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Ruler View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
@@ -518,7 +914,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/CSFCetaceaThemeAbstractSharedDocument/ruleViewDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Ruler View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
@@ -530,7 +926,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/CSFCetaceaThemeAbstractSharedDocument/ruleViewDataModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Ruler View Markup</Abstract>
 			<DeclaredIn>CSFCetaceaThemeSharedDocument.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, strong) CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel *ruleViewDataModel</Declaration>
