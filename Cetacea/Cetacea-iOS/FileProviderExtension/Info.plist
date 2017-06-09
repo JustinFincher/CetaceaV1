@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Cetacea</string>
+	<string>FileProviderExtension</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,29 +17,19 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1.5</string>
+	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1073</string>
+	<string>1078</string>
 	<key>NSExtension</key>
 	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>UIDocumentPickerModes</key>
-			<array>
-				<string>UIDocumentPickerModeImport</string>
-				<string>UIDocumentPickerModeOpen</string>
-				<string>UIDocumentPickerModeExportToService</string>
-				<string>UIDocumentPickerModeMoveToService</string>
-			</array>
-			<key>UIDocumentPickerSupportedFileTypes</key>
-			<array>
-				<string>public.content</string>
-			</array>
-		</dict>
-		<key>NSExtensionMainStoryboard</key>
-		<string>MainInterface</string>
+		<key>NSExtensionFileProviderDocumentGroup</key>
+		<string>group.com.JustZht.Cetacea-iOS</string>
+		<key>NSExtensionFileProviderSupportsEnumeration</key>
+		<true/>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.fileprovider-ui</string>
+		<string>com.apple.fileprovider-nonui</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>FileProviderExtension</string>
 	</dict>
 </dict>
 </plist>
