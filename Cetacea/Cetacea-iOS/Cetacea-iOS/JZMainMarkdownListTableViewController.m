@@ -48,6 +48,13 @@
 //    [self.feedbackGenerator prepare];
 
     self.searchBar.delegate = self;
+    
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+    } else {
+        // Fallback on earlier versions
+    }
+    
 }
 - (void)viewWillAppear:(BOOL)animated
 {

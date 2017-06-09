@@ -116,15 +116,12 @@
 		0DC830EC1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */; };
 		0DC830ED1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
 		0DC830EE1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
-		0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
-		0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
 		0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
 		0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
 		0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
-		0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
 		0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
 		0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
 		0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
@@ -211,6 +208,7 @@
 		28C486836759ED1F09F11C33 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		2AEECE9E85BA7E3B3C9EDDBF /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		2CAB3AC13BDF4B013FDE0426 /* Pods_CetaceaSharedFramework_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CetaceaSharedFramework_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300DFCB3709C16CE31061E60 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		3248DDC5916BDBBD03CCCEA3 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		34014D6902E931FF257C6637 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		3488CA873890F5F9B7AAFA23 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -260,6 +258,7 @@
 		AD687D9FCC9D42908394C913 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		AF6C775DC65EB9EF4A6C06A6 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-watchOS-metadata.plist"; sourceTree = "<group>"; };
+		AFFB6CBEC3CD4E00C2B9E5F0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		B202E613EDBCCF1AE1CDAF12 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		B23B7D7DD43B7EC09297940F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		B3991D43F270B3E4F7BF2356 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -574,6 +573,8 @@
 				46B400C02BA5094113886B8C /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 				F48817C76D56D888B084F265 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
 				A9C35F9ED30A83EE0DBEB210 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				300DFCB3709C16CE31061E60 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				AFFB6CBEC3CD4E00C2B9E5F0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -734,7 +735,7 @@
 		0D5669B81EB588B0000C3E39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					0D5669E91EB58FAF000C3E39 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -786,7 +787,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
-				0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */,
 			);
@@ -796,7 +796,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */,
@@ -809,7 +808,6 @@
 			files = (
 				0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
-				0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -998,6 +996,31 @@
 		0D5669BC1EB588B0000C3E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 			};
 			name = Debug;
@@ -1005,6 +1028,29 @@
 		0D5669BD1EB588B0000C3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 			};
 			name = Release;
@@ -1034,7 +1080,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1106,7 +1152,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1151,7 +1197,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1220,7 +1265,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

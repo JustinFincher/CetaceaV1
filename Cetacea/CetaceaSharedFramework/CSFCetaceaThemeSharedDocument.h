@@ -19,6 +19,8 @@
 #define CSFCetaceaNativeSharedDocument CSFCetaceaThemeNSDocument
 #endif
 
+@class CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel;
+
 @class CSFCetaceaThemeAbstractSharedDocument;
 
 @interface CSFCetaceaNativeSharedDocument : CSFNativeSharedDocument
