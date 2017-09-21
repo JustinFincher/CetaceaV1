@@ -58,12 +58,8 @@
 		_HTMLStack = nil;
 		_buffer = nil;
 	}
-	NSLog(@"%@",_attributedString);
+	
 	return _attributedString;
-}
-- (void)invalidate
-{
-	self.attributedString = nil;
 }
 
 #pragma mark - CMParserDelegate
@@ -341,14 +337,8 @@
 
 - (void)appendString:(NSString *)string
 {
-	if (string != nil)
-	{
-		NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:string attributes:_attributeStack.cascadedAttributes];
-		[_buffer appendAttributedString:attrString];
-	}else
-	{
-		NSLog(@"Append String Nil");
-	}
+	NSAttributedString *attrString = [[NSAttributedString alloc] initWithString:string attributes:_attributeStack.cascadedAttributes];
+	[_buffer appendAttributedString:attrString];
 }
 
 - (void)appendHTMLElement:(CMHTMLElement *)element

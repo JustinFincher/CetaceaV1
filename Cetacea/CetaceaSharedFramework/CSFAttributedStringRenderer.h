@@ -33,6 +33,5 @@
  @return NSAttributedString
  */
 - (NSAttributedString *)render;
-- (void)invalidate;
 
 @end
