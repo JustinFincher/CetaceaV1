@@ -40,7 +40,8 @@
 #pragma mark Font Helpers
 - (NSArray *)getAllFontInApp
 {
-    NSMutableArray *fonts = [NSMutableArray array];
+     NSMutableArray *fonts = [NSMutableArray array];
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
     for (NSString* family in [[UIFont familyNames] sortedArrayUsingSelector:@selector(compare:)])
     {
         NSLog(@"%@", family);
@@ -51,6 +52,9 @@
             [fonts addObject:name];
         }
     }
+#elif TARGET_OS_MAC
+    fonts = [[[NSFontManager sharedFontManager] availableFonts] mutableCopy];
+#endif
     return fonts;
 }
 

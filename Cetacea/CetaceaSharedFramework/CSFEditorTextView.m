@@ -112,14 +112,6 @@
 		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
 	}
 }
-- (void)refreshHightLight
-{
-#if TARGET_OS_IOS
-	self.generatedAttributedString = [self.renderer render];
-#elif TARGET_OS_OSX
-	
-#endif
-}
 - (void)updateTextView
 {
 	BOOL isNotTypingPinyin = NO;
@@ -171,7 +163,7 @@
 									  textContainer];
 	NSPoint containerOrigin = [self
 							   textContainerOrigin];
-	aRect = NSOffsetRect([self visibleRect], -containerOrigin.x,
+	CGRect aRect = NSOffsetRect([self visibleRect], -containerOrigin.x,
 						 -containerOrigin.y);
 	
 	glyphRange = [layoutManager
@@ -199,9 +191,14 @@
 #endif
 - (void)onTextChange
 {
-	#if TARGET_OS_IOS
-	self.currentEditingDocument.markdownString = self.text;
-	#elif TARGET_OS_OSX
-	#endif
+#if TARGET_OS_IOS
+    self.currentEditingDocument.markdownString = self.text;
+#elif TARGET_OS_OSX
+    self.currentEditingDocument.markdownString = self.string;
+#endif
+    [self.currentEditingDocument saveDocument];
+    [self refreshFileContent];
+    self.generatedAttributedString = [self.renderer render];
+    [self updateTextView];
 }
 @end

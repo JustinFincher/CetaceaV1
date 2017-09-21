@@ -205,7 +205,7 @@
 	#if TARGET_OS_IOS
 	return [self.nativeDocument writeContents:self.fileWrapper toURL:self.url forSaveOperation:UIDocumentSaveForOverwriting originalContentsURL:self.url error:nil];
 	#elif TARGET_OS_OSX
-	return [self.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:url error:&err];
+	return [self.fileWrapper writeToURL:self.url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:self.url error:nil];
 	#endif
 }
 #if TARGET_OS_IOS
