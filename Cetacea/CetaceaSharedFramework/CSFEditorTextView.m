@@ -152,7 +152,7 @@
 									  textContainer];
 	NSPoint containerOrigin = [self
 							   textContainerOrigin];
-	aRect = NSOffsetRect([self visibleRect], -containerOrigin.x,
+	NSRect aRect = NSOffsetRect([self visibleRect], -containerOrigin.x,
 						 -containerOrigin.y);
 	
 	glyphRange = [layoutManager

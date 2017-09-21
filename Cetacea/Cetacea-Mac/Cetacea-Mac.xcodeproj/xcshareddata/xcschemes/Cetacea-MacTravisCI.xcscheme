@@ -42,6 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0D6A5E381D2100BB00211AFC"
+               BuildableName = "Cetacea-MacUITests.xctest"
+               BlueprintName = "Cetacea-MacUITests"
+               ReferencedContainer = "container:Cetacea-Mac.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0D6A5E2D1D2100BB00211AFC"
+               BuildableName = "Cetacea-MacTests.xctest"
+               BlueprintName = "Cetacea-MacTests"
+               ReferencedContainer = "container:Cetacea-Mac.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
