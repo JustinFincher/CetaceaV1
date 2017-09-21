@@ -11,14 +11,10 @@
 #import <Crashlytics/Crashlytics.h>
 #import <CetaceaSharedFramework/CetaceaSharedFramework.h>
 #import "JZNoticeEnableCloudServiceViewController.h"
-#import <GDPerformanceView/GDPerformanceMonitor.h>
 
 #import "JZDocumentImportViewController.h"
 
 @interface AppDelegate ()
-
-@property (nonatomic, strong) GDPerformanceMonitor *performanceMonitor;
-
 @end
 
 @implementation AppDelegate
@@ -29,10 +25,6 @@
     [[CSFInitialProcessManager sharedManager] initialProcess];
     
 #if DEBUG
-    self.performanceMonitor = [[GDPerformanceMonitor alloc] init];
-    [self.performanceMonitor setAppVersionHidden:YES];
-    [self.performanceMonitor setDeviceVersionHidden:YES];
-    [self.performanceMonitor startMonitoringWithConfiguration:^(UILabel *textLabel) {    }];
 #endif
 
     CSF_Block_Add_Notification_Observer_With_Name_Object_Block(CSFStringNotificationiCloudNotAvailiableName,nil,^(NSNotification *notification)

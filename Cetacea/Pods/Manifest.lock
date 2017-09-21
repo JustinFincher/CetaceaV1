@@ -22,7 +22,6 @@ PODS:
     - DKNightVersion/Core
   - DynamicColor (3.3)
   - Fabric (1.6.13)
-  - GDPerformanceView (1.3.1)
   - IQKeyboardManager (4.0.13)
   - MMMarkdown (0.5.5)
   - Ono (1.2.2)
@@ -42,7 +41,6 @@ DEPENDENCIES:
   - DKNightVersion
   - DynamicColor
   - Fabric
-  - GDPerformanceView (~> 1.3.1)
   - IQKeyboardManager
   - MMMarkdown
   - PeerTalk (from `https://github.com/rsms/peertalk.git`)
@@ -84,7 +82,6 @@ SPEC CHECKSUMS:
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
   DynamicColor: 3cdaa1e01c16e93ba744e0630f768373e0fc7a7d
   Fabric: 2fb5676bc811af011a04513451f463dac6803206
-  GDPerformanceView: d70d646bf7022a3dfd64222e4966f403bfffef19
   IQKeyboardManager: 8eab4d8111418414619d1df8e4779ce5d0f8d7e2
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
@@ -94,6 +91,6 @@ SPEC CHECKSUMS:
   SDVersion: 29ec8c9fbb3c12916782eb23888cb40f16475226
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: 2d013b234dfbe15d5d39a9629d6259d0b245c4c5
+PODFILE CHECKSUM: a8c9d79eee0bb07ed3aab7685d27079ac43b72b2
 
 COCOAPODS: 1.3.1

@@ -37,7 +37,6 @@ plugin 'cocoapods-acknowledgements', :settings_bundle => true, :add_to_target =>
     pod 'CocoaMarkdown', :git => 'https://github.com/SecondRenaissance/CocoaMarkdown.git'
     pod 'Realm'
     pod 'IQKeyboardManager'
-    pod 'GDPerformanceView', '~> 1.3.1'
     pod 'PeerTalk', :git => 'https://github.com/rsms/peertalk.git'
     pod 'DateTools'
     pod 'MMMarkdown'
