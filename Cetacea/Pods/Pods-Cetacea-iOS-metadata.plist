@@ -7,6 +7,51 @@
 		<dict>
 			<key>authors</key>
 			<dict>
+				<key>Indragie Karunaratne</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string>&lt;p&gt;CocoaMarkdown aims to solve two primary problems better than existing libraries:
+More flexibility. CocoaMarkdown allows you to define custom parsing hooks or even traverse the Markdown AST using the low-level API.
+Efficient NSAttributedString creation for easy rendering on iOS and OS X. Most existing libraries just generate HTML from the Markdown, which is not a convenient representation to work with in native apps.&lt;/p&gt;
+</string>
+			<key>homepage</key>
+			<string>https://github.com/indragiek/CocoaMarkdown</string>
+			<key>licenseText</key>
+			<string>Copyright (c) 2014 Indragie Karunaratne
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+			<key>licenseType</key>
+			<string>MIT</string>
+			<key>name</key>
+			<string>CocoaMarkdown</string>
+			<key>socialMediaURL</key>
+			<string></string>
+			<key>summary</key>
+			<string>Markdown parsing and rendering for iOS and OS X</string>
+			<key>version</key>
+			<string>1.0</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
 				<key>Matthew York</key>
 				<string>my3681@gmail.com</string>
 			</dict>
@@ -47,6 +92,48 @@ SOFTWARE.</string>
 			<string>Dates and time made easy in Objective-C</string>
 			<key>version</key>
 			<string>2.0.0</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
+				<key>Mattt Thompson</key>
+				<string>m@mattt.me</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>homepage</key>
+			<string>https://github.com/mattt/Ono</string>
+			<key>licenseText</key>
+			<string>Copyright (c) 2014 Mattt Thompson (http://mattt.me/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+			<key>licenseType</key>
+			<string>MIT</string>
+			<key>name</key>
+			<string>Ono</string>
+			<key>socialMediaURL</key>
+			<string>https://twitter.com/mattt</string>
+			<key>summary</key>
+			<string>A sensible way to deal with XML &amp; HTML for iOS &amp; Mac OS X.</string>
+			<key>version</key>
+			<string>1.2.2</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -113,7 +200,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 2. Realm Components
 3. Export Compliance
 
--------------------------------------------------------------------------------
+1. -------------------------------------------------------------------------------
 
                                  Apache License
                            Version 2.0, January 2004
@@ -290,17 +377,19 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
+2. -------------------------------------------------------------------------------
+
 REALM COMPONENTS
 
 This software contains components with separate copyright and license terms.
 Your use of these components is subject to the terms and conditions of the
 following licenses.
 
-For the Realm Core component
+For the Realm Platform Extensions component
 
-  Realm Core Binary License
+  Realm Platform Extensions License
 
-  Copyright (c) 2011-2016 Realm Inc All rights reserved
+  Copyright (c) 2011-2017 Realm Inc All rights reserved
 
   Redistribution and use in binary form, with or without modification, is
   permitted provided that the following conditions are met:
@@ -330,6 +419,8 @@ For the Realm Core component
   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
   POSSIBILITY OF SUCH DAMAGE.
+
+3. -------------------------------------------------------------------------------
 
 EXPORT COMPLIANCE
 
@@ -361,7 +452,41 @@ regulations.
 			<key>summary</key>
 			<string>Realm is a modern data framework &amp; database for iOS, macOS, tvOS &amp; watchOS.</string>
 			<key>version</key>
-			<string>2.7.0</string>
+			<string>2.10.1</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
+				<key>John MacFarlane</key>
+				<string>email@address.com</string>
+			</dict>
+			<key>description</key>
+			<string>&lt;p&gt;&lt;code&gt;cmark&lt;/code&gt; is the C reference implementation of [CommonMark], a
+rationalized version of Markdown syntax with a [spec][the spec].
+(For the JavaScript reference implementation, see
+[commonmark.js].)&lt;/p&gt;
+
+&lt;p&gt;It provides a shared library (&lt;code&gt;libcmark&lt;/code&gt;) with functions for parsing
+CommonMark documents to an abstract syntax tree (AST), manipulating
+the AST, and rendering the document to HTML, groff man, LaTeX,
+CommonMark, or an XML representation of the AST.  It also provides a
+command-line program (&lt;code&gt;cmark&lt;/code&gt;) for parsing and rendering CommonMark
+documents.&lt;/p&gt;
+</string>
+			<key>homepage</key>
+			<string>https://github.com/jgm/cmark</string>
+			<key>licenseText</key>
+			<string></string>
+			<key>licenseType</key>
+			<string>BSD2</string>
+			<key>name</key>
+			<string>cmark</string>
+			<key>socialMediaURL</key>
+			<string></string>
+			<key>summary</key>
+			<string>CommonMark parsing and rendering library and program in C</string>
+			<key>version</key>
+			<string>0.21.0</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -405,20 +530,20 @@ THE SOFTWARE.
 			<key>summary</key>
 			<string>Settings screen composing framework</string>
 			<key>version</key>
-			<string>3.0.0</string>
+			<string>3.0.1</string>
 		</dict>
 		<dict>
 			<key>authors</key>
 			<dict>
-				<key>Twitter</key>
+				<key>Google</key>
 				<string></string>
 			</dict>
 			<key>description</key>
 			<string></string>
 			<key>homepage</key>
-			<string>https://get.fabric.io/crashlytics</string>
+			<string>http://try.crashlytics.com/</string>
 			<key>licenseText</key>
-			<string>Fabric: Copyright 2016 Twitter, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Fabric Software and Services Agreement located at https://fabric.io/terms. Crashlytics Kit: Copyright 2016 Crashlytics, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Crashlytics Terms of Service located at http://try.crashlytics.com/terms/terms-of-service.pdf and the Crashlytics Privacy Policy located at http://try.crashlytics.com/terms/privacy-policy.pdf. OSS: http://get.fabric.io/terms/opensource.txt</string>
+			<string>Fabric: Copyright 2017 Google, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Fabric Software and Services Agreement located at https://fabric.io/terms. Crashlytics Kit: Copyright 2017 Crashlytics, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Crashlytics Terms of Service located at http://try.crashlytics.com/terms/terms-of-service.pdf and the Crashlytics Privacy Policy located at http://try.crashlytics.com/terms/privacy-policy.pdf. OSS: http://get.fabric.io/terms/opensource.txt</string>
 			<key>licenseType</key>
 			<string>Commercial</string>
 			<key>name</key>
@@ -428,7 +553,7 @@ THE SOFTWARE.
 			<key>summary</key>
 			<string>Best and lightest-weight crash reporting for mobile, desktop and tvOS.</string>
 			<key>version</key>
-			<string>3.8.4</string>
+			<string>3.8.6</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -524,7 +649,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<dict>
 			<key>authors</key>
 			<dict>
-				<key>Twitter</key>
+				<key>Google</key>
 				<string></string>
 			</dict>
 			<key>description</key>
@@ -532,7 +657,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<key>homepage</key>
 			<string>https://fabric.io</string>
 			<key>licenseText</key>
-			<string>Fabric: Copyright 2016 Twitter, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Fabric Software and Services Agreement located at https://fabric.io/terms. OSS: http://get.fabric.io/terms/opensource.txt</string>
+			<string>Fabric: Copyright 2017 Google, Inc. All Rights Reserved. Use of this software is subject to the terms and conditions of the Fabric Software and Services Agreement located at https://fabric.io/terms. OSS: http://get.fabric.io/terms/opensource.txt</string>
 			<key>licenseType</key>
 			<string>Commercial</string>
 			<key>name</key>
@@ -540,9 +665,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<key>socialMediaURL</key>
 			<string></string>
 			<key>summary</key>
-			<string>Fabric by Twitter, Inc.</string>
+			<string>Fabric by Google, Inc.</string>
 			<key>version</key>
-			<string>1.6.11</string>
+			<string>1.6.13</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -633,7 +758,7 @@ SOFTWARE.
 			<key>summary</key>
 			<string>Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView.</string>
 			<key>version</key>
-			<string>4.0.9</string>
+			<string>4.0.13</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -772,7 +897,7 @@ SOFTWARE.
 			<key>summary</key>
 			<string>Objective-C library for detecting running device model and screen size.</string>
 			<key>version</key>
-			<string>4.0.2</string>
+			<string>4.2.1</string>
 		</dict>
 		<dict>
 			<key>authors</key>

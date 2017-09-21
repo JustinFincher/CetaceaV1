@@ -1,0 +1,6 @@
+framework module SDVersion {
+  umbrella header "SDVersion-framework-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

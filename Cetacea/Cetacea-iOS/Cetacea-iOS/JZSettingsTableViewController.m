@@ -21,6 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (@available(iOS 11, *))
+    {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+        self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+    }
+    
     [BOTableViewSection appearance].headerTitleColor = [UIColor colorWithWhite:0.5 alpha:1];
     [BOTableViewSection appearance].footerTitleColor = [UIColor colorWithWhite:0.6 alpha:1];
     

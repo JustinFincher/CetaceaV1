@@ -7,14 +7,18 @@
 //
 
 #import "BOSetting+Private.h"
-
 @implementation BOSetting
 
 - (instancetype)initWithKey:(NSString *)key {
 	if (key) {
 		if (self = [super init]) {
 			_key = key;
-			[[NSUserDefaults standardUserDefaults] addObserver:self forKeyPath:self.key options:NSKeyValueObservingOptionNew context:nil];
+			[[NSOperationQueue mainQueue] addOperationWithBlock:^
+			 {
+				 [[NSUserDefaults standardUserDefaults] addObserver:self forKeyPath:self.key options:NSKeyValueObservingOptionNew context:nil];
+				 
+				 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDefaultsDidChange:) name:NSUserDefaultsDidChangeNotification object:nil];
+			 }];
 		}
 	}
 	
@@ -24,21 +28,51 @@
 + (instancetype)settingWithKey:(NSString *)key {
 	return [[self alloc] initWithKey:key];
 }
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-	self.value = change[@"new"];
-	if (self.valueDidChangeBlock) self.valueDidChangeBlock();
+- (void)userDefaultsDidChange:(NSNotification *)notif
+{
+	[[NSOperationQueue mainQueue] addOperationWithBlock:^
+	 {
+		 if (self.valueDidChangeBlock) self.valueDidChangeBlock();
+	 }];
+}
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+	[[NSOperationQueue mainQueue] addOperationWithBlock:^
+	 {
+		 self.value = change[@"new"];
+		 if (self.valueDidChangeBlock) self.valueDidChangeBlock();
+	 }];
 }
 
-- (id)value {
+- (id)value
+{
 	return [[NSUserDefaults standardUserDefaults] objectForKey:self.key];
 }
 
 - (void)setValue:(id)value {
-	if (self.value != value) {
-		[[NSUserDefaults standardUserDefaults] setObject:value forKey:self.key];
-        _valueDidChangeBlock();
+	if (self.value != value)
+	{
+		[[NSOperationQueue mainQueue] addOperationWithBlock:^
+		 {
+			 [[NSUserDefaults standardUserDefaults] setObject:value forKey:self.key];
+			 if (![[NSUserDefaults standardUserDefaults] synchronize])
+			 {
+				 NSLog(@"[[NSUserDefaults standardUserDefaults] synchronize] = NO");
+			 }
+		 }];
+		if (self.valueDidChangeBlock)
+		{
+			self.valueDidChangeBlock();
+		}
 	}
+//	[[NSOperationQueue mainQueue] addOperationWithBlock:^
+//	 {
+//		 [[NSUserDefaults standardUserDefaults] setObject:value forKey:self.key];
+//		 if (![[NSUserDefaults standardUserDefaults] synchronize])
+//		 {
+//			 NSLog(@"[[NSUserDefaults standardUserDefaults] synchronize] = NO");
+//		 }
+//	 }];
 }
 
 - (void)setValueDidChangeBlock:(void (^)(void))valueDidChangeBlock {
@@ -47,7 +81,11 @@
 }
 
 - (void)dealloc {
-	if (self.key) [[NSUserDefaults standardUserDefaults] removeObserver:self forKeyPath:self.key];
+	if (self.key)
+	{
+		[[NSUserDefaults standardUserDefaults] removeObserver:self forKeyPath:self.key];
+		[[NSNotificationCenter defaultCenter] removeObserver:self name:NSUserDefaultsDidChangeNotification object:nil];
+	}
 }
 
 @end

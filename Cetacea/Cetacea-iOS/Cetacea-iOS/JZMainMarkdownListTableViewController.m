@@ -29,6 +29,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    if (@available(iOS 11, *))
+    {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+        self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+    }
+    
     self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;

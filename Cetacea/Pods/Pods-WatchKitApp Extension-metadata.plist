@@ -48,7 +48,7 @@ SOFTWARE.
 			<key>summary</key>
 			<string>Objective-C library for detecting running device model and screen size.</string>
 			<key>version</key>
-			<string>4.0.2</string>
+			<string>4.2.1</string>
 		</dict>
 	</array>
 </dict>
