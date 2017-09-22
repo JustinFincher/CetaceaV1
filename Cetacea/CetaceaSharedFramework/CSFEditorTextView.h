@@ -25,6 +25,13 @@
 @interface CSFEditorTextView : EditorTextViewClass
 
 @property (nonatomic,strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument;
+
+
+/**
+ Set Current Editing CSFCetaceaAbstractSharedDocument, will trigger RE-INIT of cmDocument and renderer
+
+ @param currentEditingDocument The Doc to be set
+ */
 - (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument;
 
 /**

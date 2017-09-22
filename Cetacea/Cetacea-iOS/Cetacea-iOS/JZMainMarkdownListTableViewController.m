@@ -34,6 +34,7 @@
     {
         self.navigationController.navigationBar.prefersLargeTitles = YES;
         self.navigationController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAlways;
+        [self.tableView setContentOffset:CGPointMake(0.0f, -100) animated:YES];
     }
     
     self.clearsSelectionOnViewWillAppear = NO;

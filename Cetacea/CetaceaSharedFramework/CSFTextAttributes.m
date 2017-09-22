@@ -27,7 +27,7 @@ static NSDictionary * CSFDefaultTextAttributes()
 static NSDictionary * CSFDefaultH1Attributes()
 {
 #if TARGET_OS_IPHONE
-    return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline]};
+    return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleLargeTitle]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:24.0]};
 #endif

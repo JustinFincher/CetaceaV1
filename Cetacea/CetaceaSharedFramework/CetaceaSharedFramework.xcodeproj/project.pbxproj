@@ -11,6 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 111C1A5D1F73952800E41499 /* Build configuration list for PBXAggregateTarget "Documentation" */;
 			buildPhases = (
+				11A6F9971F75529A00822F94 /* ShellScript */,
 			);
 			dependencies = (
 			);
@@ -212,6 +213,7 @@
 		0DF6BAE61ECEA13E00F4EB93 /* CSFTextAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFTextAttributes.m; sourceTree = "<group>"; };
 		0FE162179523DC659AD864E6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		115A7851C5301E5157028A17 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		11A6F9991F75548600822F94 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
 		1224AE6ABC559EECDBAD6B06 /* Pods-CetaceaSharedFramework-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-OSX.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		133ADFC2848F4111CC6B2197 /* Pods-CetaceaSharedFramework-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 				0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */,
 				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
 				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
+				11A6F9991F75548600822F94 /* AppledocSettings.plist */,
 				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
 				0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */,
 				0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */,
@@ -871,6 +874,19 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		11A6F9971F75529A00822F94 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "appledoc \"$SOURCE_ROOT\"";
+		};
 		613CFFBEDAAC5B3A61BBA261 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1105,7 +1121,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "CetaceaSharedFramework-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -1171,7 +1187,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "CetaceaSharedFramework-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-iOS";

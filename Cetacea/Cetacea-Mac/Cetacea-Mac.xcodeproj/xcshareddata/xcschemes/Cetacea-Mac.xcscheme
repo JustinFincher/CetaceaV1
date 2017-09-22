@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24428FD7AC7269255F5D66350090698A"
-               BuildableName = "Pods_Cetacea.framework"
-               BlueprintName = "Pods-Cetacea"
-               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+               BlueprintIdentifier = "0D5669F61EB58FBE000C3E39"
+               BuildableName = "CetaceaSharedFramework.framework"
+               BlueprintName = "CetaceaSharedFramework-OSX"
+               ReferencedContainer = "container:../CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry

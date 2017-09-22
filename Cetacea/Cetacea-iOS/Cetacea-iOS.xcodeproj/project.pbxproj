@@ -71,7 +71,8 @@
 		0DF4FCBF1EC619F10076512E /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FCBE1EC619F10076512E /* FileProvider.m */; };
 		0DF4FCC31EC619F10076512E /* DocumentProviderExtensionFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DF4FCB91EC619F10076512E /* DocumentProviderExtensionFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0DF4FCC61EC619F10076512E /* DocumentProviderExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0DF4FCAA1EC619F00076512E /* DocumentProviderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		111C1A5E1F73B87C00E41499 /* CetaceaSharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF6BAF71ECEF33E00F4EB93 /* CetaceaSharedFramework.framework */; };
+		11A6F99A1F7558C300822F94 /* CetaceaSharedFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF6BAF71ECEF33E00F4EB93 /* CetaceaSharedFramework.framework */; };
+		11A6F99B1F7558C300822F94 /* CetaceaSharedFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF6BAF71ECEF33E00F4EB93 /* CetaceaSharedFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CC9C96F8B66777538EB3647 /* Pods-WatchKitApp Extension-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E53C9D2C9ADA5FA846DFD6AE /* Pods-WatchKitApp Extension-metadata.plist */; };
 		75C4BAA0FBD96023B9A64B89 /* libPods-WatchKitApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A32BC0654B09A3C0496CFB2F /* libPods-WatchKitApp.a */; };
 		D737A157A5B53EF148770B59 /* libPods-WatchKitApp Extension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C5720EDE527A23235909C2 /* libPods-WatchKitApp Extension.a */; };
@@ -160,6 +161,17 @@
 				0DF4FCC31EC619F10076512E /* DocumentProviderExtensionFileProvider.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11A6F99C1F7558C300822F94 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11A6F99B1F7558C300822F94 /* CetaceaSharedFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -500,7 +512,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111C1A5E1F73B87C00E41499 /* CetaceaSharedFramework.framework in Frameworks */,
+				11A6F99A1F7558C300822F94 /* CetaceaSharedFramework.framework in Frameworks */,
 				F30AC5DFF7112E9E6A37C724 /* Pods_Cetacea_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1066,6 +1078,7 @@
 				0D5669431EB52094000C3E39 /* Fabric/run */,
 				6365B666CFCEF60503006090 /* [CP] Embed Pods Frameworks */,
 				27594B437E8FB43BDA05319B /* [CP] Copy Pods Resources */,
+				11A6F99C1F7558C300822F94 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1886,7 +1899,7 @@
 					"${PROJECT_DIR}/../",
 				);
 				INFOPLIST_FILE = "Cetacea-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1950,7 +1963,7 @@
 					"${PROJECT_DIR}/../",
 				);
 				INFOPLIST_FILE = "Cetacea-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1992,6 +2005,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = ActionExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.ActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2004,6 +2018,7 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = ActionExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.ActionExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2025,7 +2040,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -2043,7 +2058,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -2062,7 +2077,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -2081,7 +2096,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -2091,7 +2106,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Cetacea iOS Today Extension/Cetacea iOS Today Extension.entitlements";
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = "Cetacea iOS Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.Cetacea-iOS-Today-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2105,7 +2120,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Cetacea iOS Today Extension/Cetacea iOS Today Extension.entitlements";
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = "Cetacea iOS Today Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.Cetacea-iOS-Today-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2119,6 +2134,7 @@
 				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtensionFileProvider/DocumentProviderExtensionFileProvider.entitlements;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = DocumentProviderExtensionFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.DocumentProviderExtensionFileProvider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2132,6 +2148,7 @@
 				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtensionFileProvider/DocumentProviderExtensionFileProvider.entitlements;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = DocumentProviderExtensionFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.DocumentProviderExtensionFileProvider";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2145,6 +2162,7 @@
 				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtension/DocumentProviderExtension.entitlements;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = DocumentProviderExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.DocumentProviderExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2158,6 +2176,7 @@
 				CODE_SIGN_ENTITLEMENTS = DocumentProviderExtension/DocumentProviderExtension.entitlements;
 				DEVELOPMENT_TEAM = 9QJ8M25J77;
 				INFOPLIST_FILE = DocumentProviderExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.Cetacea-iOS.DocumentProviderExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
