@@ -13,15 +13,15 @@
 #import <CocoaMarkdown/CMHTMLElementTransformer.h>
 #import <CocoaMarkdown/CMHTMLElement.h>
 #import <CocoaMarkdown/CMHTMLUtilities.h>
-#import <CocoaMarkdown/CMTextAttributes.h>
 #import <CocoaMarkdown/CMNode.h>
 #import <CocoaMarkdown/CMParser.h>
+#import "CSFTextAttributes.h"
 
 #import <Ono/Ono.h>
 @interface CSFAttributedStringRenderer()<CMParserDelegate>
 
 @property (nonatomic,weak) CMDocument *document;
-@property (nonatomic,weak) CMTextAttributes *attributes;
+@property (nonatomic,weak) CSFTextAttributes *attributes;
 @property (nonatomic,strong) NSMutableDictionary *tagNameToTransformerMapping;
 
 @property (nonatomic,strong) CMCascadingAttributeStack *attributeStack;
@@ -33,7 +33,7 @@
 
 @implementation CSFAttributedStringRenderer
 
-- (instancetype)initWithDocument:(CMDocument *)document attributes:(CMTextAttributes *)attributes
+- (instancetype)initWithDocument:(CMDocument *)document attributes:(CSFTextAttributes *)attributes
 {
 	if ((self = [super init])) {
 		_document = document;

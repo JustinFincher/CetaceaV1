@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class CMDocument;
-@class CMTextAttributes;
+@class CSFTextAttributes;
 @protocol CMHTMLElementTransformer;
 
 
@@ -26,7 +26,7 @@
  @param attributes TextAttributes Storage
  @return A Renderer Instance
  */
-- (instancetype)initWithDocument:(CMDocument *)document attributes:(CMTextAttributes *)attributes;
+- (instancetype)initWithDocument:(CMDocument *)document attributes:(CSFTextAttributes *)attributes;
 /**
  Render the current document to attributedString
 

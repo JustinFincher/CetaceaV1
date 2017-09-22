@@ -63,9 +63,9 @@
 {
     NSParameterAssert(currentEditingMarkdown);
     [self.editorTextView setCurrentEditingDocument:currentEditingMarkdown];
-//    [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView refreshHightLight];
-    [self.editorTextView updateTextView];
+////    [self.editorTextView.parser refreshAttributesTheme];
+//    [self.editorTextView refreshHightLight];
+//    [self.editorTextView updateTextView];
     [self updateStatView];
 }
 - (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification

@@ -66,7 +66,6 @@
 #endif
 	
     self.cmDocument = [[CMDocument alloc] initWithString:@"" options:0];
-	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
 	
 	self.delegate = self;
 	
@@ -97,7 +96,9 @@
 
 - (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument
 {
+    NSParameterAssert(currentEditingDocument);
 	_currentEditingDocument = currentEditingDocument;
+    _cmDocument = nil;
 	[self refreshFileContent];
 	[self refreshHightLight];
 	[self updateTextView];
@@ -113,15 +114,15 @@
         else
         {
             self.cmDocument = [[CMDocument alloc] initWithString:self.currentEditingDocument.markdownString options:0];
+            self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
         }
 	}else
 	{
-		self.cmDocument = [[CMDocument alloc] initWithString:@"" options:0];
+        NSAssert(self.currentEditingDocument != nil, @"self.currentEditingDocument == nil");
 	}
 }
 - (void)updateTextView
 {
-    
 	BOOL isNotTypingPinyin = NO;
 #if TARGET_OS_IOS
 	isNotTypingPinyin = self.markedTextRange == nil;
