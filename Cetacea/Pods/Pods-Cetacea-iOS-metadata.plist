@@ -47,7 +47,7 @@ THE SOFTWARE.
 			<key>summary</key>
 			<string>Markdown parsing and rendering for iOS and OS X</string>
 			<key>version</key>
-			<string>1.0</string>
+			<string>1.0.1</string>
 		</dict>
 		<dict>
 			<key>authors</key>

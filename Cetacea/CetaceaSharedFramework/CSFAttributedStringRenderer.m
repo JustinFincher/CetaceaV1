@@ -50,7 +50,7 @@
 		_HTMLStack = [[CMStack alloc] init];
 		_buffer = [[NSMutableAttributedString alloc] init];
 		
-		CMParser *parser = [[CMParser alloc] initWithDocument:_document delegate:self];
+		CMParser *parser = [[CMParser alloc] initWithDocument:self.document delegate:self];
 		[parser parse];
 		
 		_attributedString = [_buffer copy];

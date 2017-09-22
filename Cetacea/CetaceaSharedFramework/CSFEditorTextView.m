@@ -65,7 +65,7 @@
 	self.allowsDocumentBackgroundColorChange = YES;
 #endif
 	
-	self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
+    self.cmDocument = [[CMDocument alloc] initWithString:@"" options:0];
 	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
 	
 	self.delegate = self;
@@ -106,14 +106,22 @@
 {
 	if (self.currentEditingDocument)
 	{
-		[self.cmDocument updateWithData:[self.currentEditingDocument.markdownString dataUsingEncoding:NSUnicodeStringEncoding] options:0];
+		if (self.cmDocument)
+        {
+            [self.cmDocument updateWithString:self.currentEditingDocument.markdownString options:0];
+        }
+        else
+        {
+            self.cmDocument = [[CMDocument alloc] initWithString:self.currentEditingDocument.markdownString options:0];
+        }
 	}else
 	{
-		self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
+		self.cmDocument = [[CMDocument alloc] initWithString:@"" options:0];
 	}
 }
 - (void)updateTextView
 {
+    
 	BOOL isNotTypingPinyin = NO;
 #if TARGET_OS_IOS
 	isNotTypingPinyin = self.markedTextRange == nil;
@@ -189,6 +197,14 @@
 	[self onTextChange];
 }
 #endif
+
+- (void)refreshHightLight
+{
+    [self refreshFileContent];
+    self.generatedAttributedString = [self.renderer render];
+    
+}
+
 - (void)onTextChange
 {
 #if TARGET_OS_IOS
@@ -197,8 +213,6 @@
     self.currentEditingDocument.markdownString = self.string;
 #endif
     [self.currentEditingDocument saveDocument];
-    [self refreshFileContent];
-    self.generatedAttributedString = [self.renderer render];
     [self updateTextView];
 }
 @end

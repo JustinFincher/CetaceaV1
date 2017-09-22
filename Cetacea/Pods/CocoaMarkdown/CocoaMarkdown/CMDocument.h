@@ -61,4 +61,8 @@ typedef NS_OPTIONS(NSInteger, CMDocumentOptions) {
  */
 - (instancetype)initWithContentsOfFile:(NSString *)path options:(CMDocumentOptions)options;
 - (void)updateWithContentsOfFile:(NSString *)path options:(CMDocumentOptions)options;
+
+
+- (instancetype)initWithString:(NSString *)string options:(CMDocumentOptions)options;
+- (void)updateWithString:(NSString *)string options:(CMDocumentOptions)options;
 @end

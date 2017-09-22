@@ -7,6 +7,51 @@
 		<dict>
 			<key>authors</key>
 			<dict>
+				<key>Indragie Karunaratne</key>
+				<string></string>
+			</dict>
+			<key>description</key>
+			<string>&lt;p&gt;CocoaMarkdown aims to solve two primary problems better than existing libraries:
+More flexibility. CocoaMarkdown allows you to define custom parsing hooks or even traverse the Markdown AST using the low-level API.
+Efficient NSAttributedString creation for easy rendering on iOS and OS X. Most existing libraries just generate HTML from the Markdown, which is not a convenient representation to work with in native apps.&lt;/p&gt;
+</string>
+			<key>homepage</key>
+			<string>https://github.com/indragiek/CocoaMarkdown</string>
+			<key>licenseText</key>
+			<string>Copyright (c) 2014 Indragie Karunaratne
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+			<key>licenseType</key>
+			<string>MIT</string>
+			<key>name</key>
+			<string>CocoaMarkdown</string>
+			<key>socialMediaURL</key>
+			<string></string>
+			<key>summary</key>
+			<string>Markdown parsing and rendering for iOS and OS X</string>
+			<key>version</key>
+			<string>1.0.1</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
 				<key>Matthew York</key>
 				<string>my3681@gmail.com</string>
 			</dict>
@@ -47,6 +92,48 @@ SOFTWARE.</string>
 			<string>Dates and time made easy in Objective-C</string>
 			<key>version</key>
 			<string>2.0.0</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
+				<key>Mattt Thompson</key>
+				<string>m@mattt.me</string>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>homepage</key>
+			<string>https://github.com/mattt/Ono</string>
+			<key>licenseText</key>
+			<string>Copyright (c) 2014 Mattt Thompson (http://mattt.me/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</string>
+			<key>licenseType</key>
+			<string>MIT</string>
+			<key>name</key>
+			<string>Ono</string>
+			<key>socialMediaURL</key>
+			<string>https://twitter.com/mattt</string>
+			<key>summary</key>
+			<string>A sensible way to deal with XML &amp; HTML for iOS &amp; Mac OS X.</string>
+			<key>version</key>
+			<string>1.2.2</string>
 		</dict>
 		<dict>
 			<key>authors</key>
@@ -366,6 +453,40 @@ regulations.
 			<string>Realm is a modern data framework &amp; database for iOS, macOS, tvOS &amp; watchOS.</string>
 			<key>version</key>
 			<string>2.10.1</string>
+		</dict>
+		<dict>
+			<key>authors</key>
+			<dict>
+				<key>John MacFarlane</key>
+				<string>email@address.com</string>
+			</dict>
+			<key>description</key>
+			<string>&lt;p&gt;&lt;code&gt;cmark&lt;/code&gt; is the C reference implementation of [CommonMark], a
+rationalized version of Markdown syntax with a [spec][the spec].
+(For the JavaScript reference implementation, see
+[commonmark.js].)&lt;/p&gt;
+
+&lt;p&gt;It provides a shared library (&lt;code&gt;libcmark&lt;/code&gt;) with functions for parsing
+CommonMark documents to an abstract syntax tree (AST), manipulating
+the AST, and rendering the document to HTML, groff man, LaTeX,
+CommonMark, or an XML representation of the AST.  It also provides a
+command-line program (&lt;code&gt;cmark&lt;/code&gt;) for parsing and rendering CommonMark
+documents.&lt;/p&gt;
+</string>
+			<key>homepage</key>
+			<string>https://github.com/jgm/cmark</string>
+			<key>licenseText</key>
+			<string></string>
+			<key>licenseType</key>
+			<string>BSD2</string>
+			<key>name</key>
+			<string>cmark</string>
+			<key>socialMediaURL</key>
+			<string></string>
+			<key>summary</key>
+			<string>CommonMark parsing and rendering library and program in C</string>
+			<key>version</key>
+			<string>0.21.0</string>
 		</dict>
 		<dict>
 			<key>authors</key>

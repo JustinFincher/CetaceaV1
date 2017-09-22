@@ -102,9 +102,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaMarkdown-macOS/CocoaMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DateTools-macOS/DateTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Ono-macOS/Ono.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-macOS/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cmark-macOS/cmark.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor-macOS/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMMarkdown-macOS/MMMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PeerTalk-macOS/PeerTalk.framework"
@@ -112,9 +115,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SyntaxKit-macOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaMarkdown-macOS/CocoaMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DateTools-macOS/DateTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Ono-macOS/Ono.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-macOS/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cmark-macOS/cmark.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor-macOS/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMMarkdown-macOS/MMMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PeerTalk-macOS/PeerTalk.framework"
@@ -122,9 +128,12 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SyntaxKit-macOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaMarkdown-macOS/CocoaMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DateTools-macOS/DateTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Ono-macOS/Ono.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-macOS/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cmark-macOS/cmark.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor-macOS/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMMarkdown-macOS/MMMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PeerTalk-macOS/PeerTalk.framework"
@@ -132,9 +141,12 @@ if [[ "$CONFIGURATION" == "Non-AppStore" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/SyntaxKit-macOS/SyntaxKit.framework"
 fi
 if [[ "$CONFIGURATION" == "AppStore" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/CocoaMarkdown-macOS/CocoaMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DateTools-macOS/DateTools.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Ono-macOS/Ono.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC-macOS/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cmark-macOS/cmark.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DynamicColor-macOS/DynamicColor.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMMarkdown-macOS/MMMarkdown.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PeerTalk-macOS/PeerTalk.framework"

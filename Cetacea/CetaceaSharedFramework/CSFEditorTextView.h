@@ -25,7 +25,7 @@
 @interface CSFEditorTextView : EditorTextViewClass
 
 @property (nonatomic,strong) CSFCetaceaAbstractSharedDocument *currentEditingDocument;
-
+- (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument;
 
 /**
  Some Property Init Methods

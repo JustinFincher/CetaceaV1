@@ -60,4 +60,27 @@
 	_rootNode = [[CMNode alloc] initWithNode:node freeWhenDone:YES];
 	_options = options;
 }
+- (instancetype)initWithString:(NSString *)string options:(CMDocumentOptions)options
+{
+    NSParameterAssert(string);
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    if ((self = [super init])) {
+        cmark_node *node = cmark_parse_document((const char *)data.bytes, data.length, options);
+        if (node == NULL) return nil;
+        
+        _rootNode = [[CMNode alloc] initWithNode:node freeWhenDone:YES];
+        _options = options;
+    }
+    return self;
+}
+- (void)updateWithString:(NSString *)string options:(CMDocumentOptions)options
+{
+    NSParameterAssert(string);
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    cmark_node *node = cmark_parse_document((const char *)data.bytes, data.length, options);
+    if (node == NULL) return;
+    
+    _rootNode = [[CMNode alloc] initWithNode:node freeWhenDone:YES];
+    _options = options;
+}
 @end

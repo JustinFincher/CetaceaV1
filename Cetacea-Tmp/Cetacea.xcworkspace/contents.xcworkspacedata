@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CetaceaSharedFramework/CetaceaSharedFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cetacea-iOS/Cetacea-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cetacea-Mac/Cetacea-Mac.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,1362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		111C1A5A1F73952800E41499 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 111C1A5D1F73952800E41499 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0D0523D81EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */; };
+		0D0523D91EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */; };
+		0D0523DA1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */; };
+		0D0523DB1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */; };
+		0D0523DE1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */; };
+		0D0523DF1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */; };
+		0D0523E01EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */; };
+		0D0523E11EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */; };
+		0D1AB4FF1ECAA25700C8A953 /* CSFColorStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */; };
+		0D1AB5001ECAA25700C8A953 /* CSFColorStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */; };
+		0D1AB5011ECAA25700C8A953 /* CSFColorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */; };
+		0D1AB5021ECAA25700C8A953 /* CSFColorStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */; };
+		0D1AB5051ECAA94E00C8A953 /* CSFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */; };
+		0D1AB5061ECAA94E00C8A953 /* CSFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */; };
+		0D1AB5071ECAA94E00C8A953 /* CSFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */; };
+		0D1AB5081ECAA94E00C8A953 /* CSFConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */; };
+		0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
+		0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */; };
+		0D1B5F191EC1CB64007EBE5D /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */; };
+		0D1B5F1A1EC1CB64007EBE5D /* TSBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */; };
+		0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */; };
+		0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */; };
+		0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */; };
+		0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */; };
+		0D339FC61EC3135100414267 /* CSFDeviceCapabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D339FC41EC3135100414267 /* CSFDeviceCapabilityManager.h */; };
+		0D339FC71EC3135100414267 /* CSFDeviceCapabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D339FC51EC3135100414267 /* CSFDeviceCapabilityManager.m */; };
+		0D339FC81EC3135900414267 /* CSFDeviceCapabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D339FC51EC3135100414267 /* CSFDeviceCapabilityManager.m */; };
+		0D4135DF1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135DD1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h */; };
+		0D4135E01EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135DD1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h */; };
+		0D4135E11EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */; };
+		0D4135E21EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */; };
+		0D4135ED1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */; };
+		0D4135EE1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */; };
+		0D4135EF1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */; };
+		0D4135F01EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */; };
+		0D4136181EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */; };
+		0D4136191EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */; };
+		0D41361A1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */; };
+		0D41361B1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */; };
+		0D41361E1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */; };
+		0D41361F1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */; };
+		0D4136201EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */; };
+		0D4136211EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */; };
+		0D482AF01EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */; };
+		0D482AF11EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */; };
+		0D482AF21EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */; };
+		0D482AF31EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */; };
+		0D482AF61EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AF41EC6BC1A0035B7D3 /* CSFEditorTextContainer.h */; };
+		0D482AF71EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D482AF41EC6BC1A0035B7D3 /* CSFEditorTextContainer.h */; };
+		0D482AF81EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D482AF51EC6BC1A0035B7D3 /* CSFEditorTextContainer.m */; };
+		0D482AF91EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D482AF51EC6BC1A0035B7D3 /* CSFEditorTextContainer.m */; };
+		0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
+		0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */; };
+		0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */; };
+		0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */; };
+		0D516C701EC0618E007AAB05 /* CSFCetaceaSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C6E1EC0618E007AAB05 /* CSFCetaceaSharedDocument.h */; };
+		0D516C711EC0618E007AAB05 /* CSFCetaceaSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D516C6E1EC0618E007AAB05 /* CSFCetaceaSharedDocument.h */; };
+		0D516C721EC0618E007AAB05 /* CSFCetaceaSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C6F1EC0618E007AAB05 /* CSFCetaceaSharedDocument.m */; };
+		0D516C731EC0618E007AAB05 /* CSFCetaceaSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D516C6F1EC0618E007AAB05 /* CSFCetaceaSharedDocument.m */; };
+		0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */; };
+		0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */; };
+		0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
+		0D7F31C31EBC578700D29651 /* CSFiCloudSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */; };
+		0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */; };
+		0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */; };
+		0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */; };
+		0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */; };
+		0D903FF41EC9909B0013F7D9 /* CSFiCloudFileDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D903FF21EC9909B0013F7D9 /* CSFiCloudFileDataBase.h */; };
+		0D903FF51EC9909B0013F7D9 /* CSFiCloudFileDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D903FF21EC9909B0013F7D9 /* CSFiCloudFileDataBase.h */; };
+		0D903FF61EC9909B0013F7D9 /* CSFiCloudFileDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D903FF31EC9909B0013F7D9 /* CSFiCloudFileDataBase.m */; };
+		0D903FF71EC9909B0013F7D9 /* CSFiCloudFileDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D903FF31EC9909B0013F7D9 /* CSFiCloudFileDataBase.m */; };
+		0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */; };
+		0DA94CB81EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */; };
+		0DA94CB91EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */; };
+		0DA94CBA1EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */; };
+		0DA94CBD1EC563A100D597E1 /* CSFEditorTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CBB1EC563A100D597E1 /* CSFEditorTextView.h */; };
+		0DA94CBE1EC563A100D597E1 /* CSFEditorTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA94CBB1EC563A100D597E1 /* CSFEditorTextView.h */; };
+		0DA94CBF1EC563A100D597E1 /* CSFEditorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CBC1EC563A100D597E1 /* CSFEditorTextView.m */; };
+		0DA94CC01EC563A100D597E1 /* CSFEditorTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA94CBC1EC563A100D597E1 /* CSFEditorTextView.m */; };
+		0DBA78D91ECD4EE600A4A171 /* CSFSharedDocumentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DBA78D71ECD4EE600A4A171 /* CSFSharedDocumentBase.h */; };
+		0DBA78DA1ECD4EE600A4A171 /* CSFSharedDocumentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DBA78D71ECD4EE600A4A171 /* CSFSharedDocumentBase.h */; };
+		0DBA78DB1ECD4EE600A4A171 /* CSFSharedDocumentBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA78D81ECD4EE600A4A171 /* CSFSharedDocumentBase.m */; };
+		0DBA78DC1ECD4EE600A4A171 /* CSFSharedDocumentBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DBA78D81ECD4EE600A4A171 /* CSFSharedDocumentBase.m */; };
+		0DC830DF1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830DD1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h */; };
+		0DC830E01EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830DD1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h */; };
+		0DC830E11EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830DE1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m */; };
+		0DC830E21EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830DE1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m */; };
+		0DC830E51EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E31EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h */; };
+		0DC830E61EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E31EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h */; };
+		0DC830E71EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830E41EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m */; };
+		0DC830E81EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830E41EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m */; };
+		0DC830EB1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */; };
+		0DC830EC1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */; };
+		0DC830ED1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
+		0DC830EE1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
+		0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
+		0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
+		0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
+		0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
+		0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		0DD902991EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */; };
+		0DF6BAE11ECE98F500F4EB93 /* CSFAttributedStringRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF6BADF1ECE98F500F4EB93 /* CSFAttributedStringRenderer.h */; };
+		0DF6BAE21ECE98F500F4EB93 /* CSFAttributedStringRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF6BADF1ECE98F500F4EB93 /* CSFAttributedStringRenderer.h */; };
+		0DF6BAE31ECE98F500F4EB93 /* CSFAttributedStringRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6BAE01ECE98F500F4EB93 /* CSFAttributedStringRenderer.m */; };
+		0DF6BAE41ECE98F500F4EB93 /* CSFAttributedStringRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6BAE01ECE98F500F4EB93 /* CSFAttributedStringRenderer.m */; };
+		0DF6BAE71ECEA13E00F4EB93 /* CSFTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF6BAE51ECEA13E00F4EB93 /* CSFTextAttributes.h */; };
+		0DF6BAE81ECEA13E00F4EB93 /* CSFTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF6BAE51ECEA13E00F4EB93 /* CSFTextAttributes.h */; };
+		0DF6BAE91ECEA13E00F4EB93 /* CSFTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6BAE61ECEA13E00F4EB93 /* CSFTextAttributes.m */; };
+		0DF6BAEA1ECEA13E00F4EB93 /* CSFTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6BAE61ECEA13E00F4EB93 /* CSFTextAttributes.m */; };
+		185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */; };
+		30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */; };
+		C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		025B2BB30202B3B303740FF1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		04CD774C14267710F8A1734B /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextRulerView.h; sourceTree = "<group>"; };
+		0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextRulerView.m; sourceTree = "<group>"; };
+		0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextStorage.h; sourceTree = "<group>"; };
+		0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextStorage.m; sourceTree = "<group>"; };
+		0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFColorStorage.h; sourceTree = "<group>"; };
+		0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFColorStorage.m; sourceTree = "<group>"; };
+		0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFConstants.h; sourceTree = "<group>"; };
+		0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFConstants.m; sourceTree = "<group>"; };
+		0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSBaseParser.h; sourceTree = "<group>"; };
+		0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSBaseParser.m; sourceTree = "<group>"; };
+		0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFCetaceaSharedDocumentEditManager.h; sourceTree = "<group>"; };
+		0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFCetaceaSharedDocumentEditManager.m; sourceTree = "<group>"; };
+		0D339FC41EC3135100414267 /* CSFDeviceCapabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFDeviceCapabilityManager.h; sourceTree = "<group>"; };
+		0D339FC51EC3135100414267 /* CSFDeviceCapabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFDeviceCapabilityManager.m; sourceTree = "<group>"; };
+		0D4135DD1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextFontManager.h; sourceTree = "<group>"; };
+		0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextFontManager.m; sourceTree = "<group>"; };
+		0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextAttributeManager.h; sourceTree = "<group>"; };
+		0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextAttributeManager.m; sourceTree = "<group>"; };
+		0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFFeedbackGeneratorManager.h; sourceTree = "<group>"; };
+		0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFFeedbackGeneratorManager.m; sourceTree = "<group>"; };
+		0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFMarkdownParserManager.h; sourceTree = "<group>"; };
+		0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFMarkdownParserManager.m; sourceTree = "<group>"; };
+		0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextLayoutManager.h; sourceTree = "<group>"; };
+		0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextLayoutManager.m; sourceTree = "<group>"; };
+		0D482AF41EC6BC1A0035B7D3 /* CSFEditorTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextContainer.h; sourceTree = "<group>"; };
+		0D482AF51EC6BC1A0035B7D3 /* CSFEditorTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextContainer.m; sourceTree = "<group>"; };
+		0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaDataBase.h; sourceTree = "<group>"; };
+		0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaDataBase.m; sourceTree = "<group>"; };
+		0D516C6E1EC0618E007AAB05 /* CSFCetaceaSharedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFCetaceaSharedDocument.h; sourceTree = "<group>"; };
+		0D516C6F1EC0618E007AAB05 /* CSFCetaceaSharedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFCetaceaSharedDocument.m; sourceTree = "<group>"; };
+		0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CetaceaSharedFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D73691776817BF8503BBDCD /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFInitialProcessManager.h; sourceTree = "<group>"; };
+		0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFInitialProcessManager.m; sourceTree = "<group>"; };
+		0D903FF21EC9909B0013F7D9 /* CSFiCloudFileDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileDataBase.h; sourceTree = "<group>"; };
+		0D903FF31EC9909B0013F7D9 /* CSFiCloudFileDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileDataBase.m; sourceTree = "<group>"; };
+		0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFSingletonRegister.h; sourceTree = "<group>"; };
+		0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFSingletonRegister.m; sourceTree = "<group>"; };
+		0DA94CBB1EC563A100D597E1 /* CSFEditorTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFEditorTextView.h; sourceTree = "<group>"; };
+		0DA94CBC1EC563A100D597E1 /* CSFEditorTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFEditorTextView.m; sourceTree = "<group>"; };
+		0DBA78D71ECD4EE600A4A171 /* CSFSharedDocumentBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFSharedDocumentBase.h; sourceTree = "<group>"; };
+		0DBA78D81ECD4EE600A4A171 /* CSFSharedDocumentBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFSharedDocumentBase.m; sourceTree = "<group>"; };
+		0DC830DD1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFCetaceaThemeSharedDocument.h; sourceTree = "<group>"; };
+		0DC830DE1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFCetaceaThemeSharedDocument.m; sourceTree = "<group>"; };
+		0DC830E31EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h; sourceTree = "<group>"; };
+		0DC830E41EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m; sourceTree = "<group>"; };
+		0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudFileExtensionCetaceaThemeDataBase.h; sourceTree = "<group>"; };
+		0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudFileExtensionCetaceaThemeDataBase.m; sourceTree = "<group>"; };
+		0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFiCloudSyncManager.h; sourceTree = "<group>"; };
+		0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFiCloudSyncManager.m; sourceTree = "<group>"; };
+		0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-iOS-Info.plist"; sourceTree = "<group>"; };
+		0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-OSX-Info.plist"; sourceTree = "<group>"; };
+		0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CetaceaSharedFramework-watchOS-Info.plist"; sourceTree = "<group>"; };
+		0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CetaceaSharedFramework.h; sourceTree = "<group>"; };
+		0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFGlobalHeader.h; sourceTree = "<group>"; };
+		0DF6BADF1ECE98F500F4EB93 /* CSFAttributedStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFAttributedStringRenderer.h; sourceTree = "<group>"; };
+		0DF6BAE01ECE98F500F4EB93 /* CSFAttributedStringRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFAttributedStringRenderer.m; sourceTree = "<group>"; };
+		0DF6BAE51ECEA13E00F4EB93 /* CSFTextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFTextAttributes.h; sourceTree = "<group>"; };
+		0DF6BAE61ECEA13E00F4EB93 /* CSFTextAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFTextAttributes.m; sourceTree = "<group>"; };
+		0FE162179523DC659AD864E6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		115A7851C5301E5157028A17 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		14BAB39002DD1B645EF06FA4 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		1B1BD54D9FE19E9C5138F4C9 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		1D648D1E015F66B8C3CC0D95 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		1FC7F40DD874AEA6471E0420 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		21FD08A6E030C9D3CD3AD53F /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		228221902E029F35A8BF14D6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		2446A6B1F599D181EA2EB616 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		28C486836759ED1F09F11C33 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		2AEECE9E85BA7E3B3C9EDDBF /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		34014D6902E931FF257C6637 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		3488CA873890F5F9B7AAFA23 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		372428C5FD3A78833B6B5158 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		37935E33E94EFDC4E6977951 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		39A3E33401F60A5414F1B19C /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		3AE7747E7BDCBD1C105C5C96 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		40E165F283E490F2E48E637C /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		41C914E0F610569861CF21AD /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		420A28E488736D90E77BF58F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		42566DF2AA0BADC6530D9B73 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		43C787CEEE847C8C6309E30B /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		48F0656F4A20A47AFE6CEF28 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		4BAC260C170065E7EF929385 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		4C1AC2407BB02C0795D474A3 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		529A8372C6AD567942C02841 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		53170A1BE047B67B96CD9CB3 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-OSX-metadata.plist"; sourceTree = "<group>"; };
+		53CAB37A8A6DE458C72B4C82 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		568D37438EB6E51D3131B8F6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		591C43FF40054DE4759E3659 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		5A8FD26F721F3C3622D03E1E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		5AE99B2BC1721866DC099506 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		5CBB2F357BF71EADD34C24DE /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		609B2C555952BFDA9E65D6FA /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		6223F43649DCDE9BF014F2DE /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		62991DC615402B78DA84D022 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-iOS-metadata.plist"; sourceTree = "<group>"; };
+		662F83B76BE6A594A7F95A12 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		6A6761508A6CDDFFF0470860 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		6D50369AD0044FC32C455DEA /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		70E17EC93789AC993D07F0D1 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		7ABB60F69554AA6671766759 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		7D1DBFC860ACCAF407F1A738 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		7D3B542245CB337A2D1D9BA0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		83C96CF476080CA063B4337A /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		8761823044D019CA63F22F09 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		8812039D46D5371AC7CED752 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		8BBCFB9DBF805176DEB4371F /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		90933F82610FFDD3873EB34F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		917AC8287D92FD41F94EDB13 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		9328B6EA437D7BE13A21B005 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		95AB43DBD4DDE70FD03223EC /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		95D20D114F6463A435A4E690 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		984D969BB57AED65A68FB522 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		9917B598AB28A0DECABE65ED /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		9971774312FB0F0BDD7055C7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		9ED13DB22FA0118D9508D962 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		AC018D3847526289712451D1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		AD086CC141A0C8387710073E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		AD687D9FCC9D42908394C913 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		AF6C775DC65EB9EF4A6C06A6 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-metadata.plist"; path = "../Pods/Pods-CetaceaSharedFramework-watchOS-metadata.plist"; sourceTree = "<group>"; };
+		B202E613EDBCCF1AE1CDAF12 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		B23B7D7DD43B7EC09297940F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		B3991D43F270B3E4F7BF2356 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		B81715173761DB8F157FF434 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		BC636D90AA2CCA9FA0951198 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		C14F09E93CC0B012FF6D303A /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		C3AE08DCFFC26EB2A1D638B4 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		C5E1B849D2621209D2FD0116 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		C6CCF103436EB5E0AA012B9D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		C92F69933E90BFD838B58081 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		CBFF9B5D0DC0A4E1DC3FB99E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		D1E70159647CAEF54334181F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		D407398BDA40705145E8C2BF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		D5514E5B1B9F27439BD76E94 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		D81F0C9EF328F48542BBBDFE /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		DC5B3592DE157E427111B984 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		DE484F5F48FA7E2C05AFA4F7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		E4061534176D42E258D1F3B5 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		E41C9E9DF0450BD6498217A2 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		E469FAD8E3DE1BBECF11E089 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		E4D2CA60FD266A6FE54E38AF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		E90130D1D78BA4A3B9A06933 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		EC524A6AD3647BC7BC5D1548 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		EDCFC74555CFFD8659217817 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		EE434B42C03DB41E46937917 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		F3E2F2E73CE2B49E3436E3FF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		F96D565A347EF1DA1E6DF081 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		F989CAFE26B5A387359E7919 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		FC12A606932E495390263B59 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		FCD07541F8FE7D28000E4B9F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		FD6D17F457726083EFFF2CE0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		FF85A69819CE52884F6E16BC /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D5669E61EB58FAF000C3E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5669F31EB58FBE000C3E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D566A001EB58FF1000C3E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D1B5F1F1EC1CB7D007EBE5D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D1B5F131EC1CB64007EBE5D /* TSBaseParser.h */,
+				0D1B5F141EC1CB64007EBE5D /* TSBaseParser.m */,
+				0D41361C1EC8E95600BF9E5B /* CSFMarkdownParserManager.h */,
+				0D41361D1EC8E95600BF9E5B /* CSFMarkdownParserManager.m */,
+				0D7F31BA1EBC54F000D29651 /* CSFInitialProcessManager.h */,
+				0D7F31BB1EBC54F000D29651 /* CSFInitialProcessManager.m */,
+				0DD902781EB66BF200AEDCB1 /* CSFiCloudSyncManager.h */,
+				0DD902791EB66BF200AEDCB1 /* CSFiCloudSyncManager.m */,
+				0D903FF21EC9909B0013F7D9 /* CSFiCloudFileDataBase.h */,
+				0D903FF31EC9909B0013F7D9 /* CSFiCloudFileDataBase.m */,
+				0DBA78D71ECD4EE600A4A171 /* CSFSharedDocumentBase.h */,
+				0DBA78D81ECD4EE600A4A171 /* CSFSharedDocumentBase.m */,
+				0DC830EF1EC95256004D12D1 /* Cetacea */,
+				0DC830F01EC9525D004D12D1 /* CetaceaTheme */,
+				0D339FC41EC3135100414267 /* CSFDeviceCapabilityManager.h */,
+				0D339FC51EC3135100414267 /* CSFDeviceCapabilityManager.m */,
+				0DA94CB51EC4C02200D597E1 /* CSFSingletonRegister.h */,
+				0DA94CB61EC4C02200D597E1 /* CSFSingletonRegister.m */,
+				0D4135DD1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h */,
+				0D4135DE1EC7F72D00BF9E5B /* CSFEditorTextFontManager.m */,
+				0D4135EB1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h */,
+				0D4135EC1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m */,
+				0D4136161EC8E46600BF9E5B /* CSFFeedbackGeneratorManager.h */,
+				0D4136171EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		0D4135E31EC8079F00BF9E5B /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Asset;
+			sourceTree = "<group>";
+		};
+		0D516C7C1EC06490007AAB05 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		0D516C7D1EC06497007AAB05 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0D5669B71EB588B0000C3E39 = {
+			isa = PBXGroup;
+			children = (
+				0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */,
+				0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */,
+				0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */,
+				0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */,
+				0DD902841EB66C1500AEDCB1 /* CSFGlobalHeader.h */,
+				0D1AB5031ECAA94E00C8A953 /* CSFConstants.h */,
+				0D1AB5041ECAA94E00C8A953 /* CSFConstants.m */,
+				0D516C7C1EC06490007AAB05 /* OSX */,
+				0D516C7D1EC06497007AAB05 /* iOS */,
+				0D7F31B91EBC4ABB00D29651 /* Shared */,
+				0D5669C41EB588DC000C3E39 /* Products */,
+				23AE71A41E33FA38B6B830D9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0D5669C41EB588DC000C3E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */,
+				0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */,
+				0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D7F31B91EBC4ABB00D29651 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0DC830D91EC94EAA004D12D1 /* Framework */,
+				0D4135E31EC8079F00BF9E5B /* Asset */,
+				0DA94CC11EC563A800D597E1 /* View */,
+				0D1B5F1F1EC1CB7D007EBE5D /* Data */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		0DA94CC11EC563A800D597E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DA94CBB1EC563A100D597E1 /* CSFEditorTextView.h */,
+				0DA94CBC1EC563A100D597E1 /* CSFEditorTextView.m */,
+				0D482AF41EC6BC1A0035B7D3 /* CSFEditorTextContainer.h */,
+				0D482AF51EC6BC1A0035B7D3 /* CSFEditorTextContainer.m */,
+				0D482AEE1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h */,
+				0D482AEF1EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m */,
+				0D0523D61EC6EAFC00E1931A /* CSFEditorTextRulerView.h */,
+				0D0523D71EC6EAFC00E1931A /* CSFEditorTextRulerView.m */,
+				0D0523DC1EC6ECC900E1931A /* CSFEditorTextStorage.h */,
+				0D0523DD1EC6ECC900E1931A /* CSFEditorTextStorage.m */,
+				0DF6BADF1ECE98F500F4EB93 /* CSFAttributedStringRenderer.h */,
+				0DF6BAE01ECE98F500F4EB93 /* CSFAttributedStringRenderer.m */,
+				0DF6BAE51ECEA13E00F4EB93 /* CSFTextAttributes.h */,
+				0DF6BAE61ECEA13E00F4EB93 /* CSFTextAttributes.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0DC830D91EC94EAA004D12D1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		0DC830EF1EC95256004D12D1 /* Cetacea */ = {
+			isa = PBXGroup;
+			children = (
+				0D1B5F201EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h */,
+				0D1B5F211EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m */,
+				0D516C681EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h */,
+				0D516C691EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m */,
+				0D516C6E1EC0618E007AAB05 /* CSFCetaceaSharedDocument.h */,
+				0D516C6F1EC0618E007AAB05 /* CSFCetaceaSharedDocument.m */,
+			);
+			name = Cetacea;
+			sourceTree = "<group>";
+		};
+		0DC830F01EC9525D004D12D1 /* CetaceaTheme */ = {
+			isa = PBXGroup;
+			children = (
+				0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */,
+				0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */,
+				0DC830DD1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h */,
+				0DC830DE1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m */,
+				0DC830E31EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h */,
+				0DC830E41EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m */,
+				0D1AB4FD1ECAA25700C8A953 /* CSFColorStorage.h */,
+				0D1AB4FE1ECAA25700C8A953 /* CSFColorStorage.m */,
+			);
+			name = CetaceaTheme;
+			sourceTree = "<group>";
+		};
+		23AE71A41E33FA38B6B830D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64098947FC363EA1BECADD91 /* Pods-CetaceaSharedFramework-iOS-metadata.plist */,
+				F989CAFE26B5A387359E7919 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				53CAB37A8A6DE458C72B4C82 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				5328E1C62E315229166B5480 /* Pods-CetaceaSharedFramework-OSX-metadata.plist */,
+				6A6761508A6CDDFFF0470860 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				AD086CC141A0C8387710073E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				AC018D3847526289712451D1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				AF78A33C95DB1DF0E9C47865 /* Pods-CetaceaSharedFramework-watchOS-metadata.plist */,
+				B81715173761DB8F157FF434 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				EE434B42C03DB41E46937917 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				90933F82610FFDD3873EB34F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				6223F43649DCDE9BF014F2DE /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				B202E613EDBCCF1AE1CDAF12 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				C5E1B849D2621209D2FD0116 /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				3AE7747E7BDCBD1C105C5C96 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				1D648D1E015F66B8C3CC0D95 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				39A3E33401F60A5414F1B19C /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				8812039D46D5371AC7CED752 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				B23B7D7DD43B7EC09297940F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				D1E70159647CAEF54334181F /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */,
+				E90130D1D78BA4A3B9A06933 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				DC5B3592DE157E427111B984 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				14BAB39002DD1B645EF06FA4 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				AF6C775DC65EB9EF4A6C06A6 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				0FE162179523DC659AD864E6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				7D3B542245CB337A2D1D9BA0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				0D73691776817BF8503BBDCD /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				2AEECE9E85BA7E3B3C9EDDBF /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				42566DF2AA0BADC6530D9B73 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				FF85A69819CE52884F6E16BC /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				C92F69933E90BFD838B58081 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				EC524A6AD3647BC7BC5D1548 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				5A8FD26F721F3C3622D03E1E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				FCD07541F8FE7D28000E4B9F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				7ABB60F69554AA6671766759 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				984D969BB57AED65A68FB522 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				48F0656F4A20A47AFE6CEF28 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				AD687D9FCC9D42908394C913 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				E469FAD8E3DE1BBECF11E089 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				34014D6902E931FF257C6637 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				8BBCFB9DBF805176DEB4371F /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				E41C9E9DF0450BD6498217A2 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				B3991D43F270B3E4F7BF2356 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				F96D565A347EF1DA1E6DF081 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				37935E33E94EFDC4E6977951 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				1FC7F40DD874AEA6471E0420 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				C6CCF103436EB5E0AA012B9D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				115A7851C5301E5157028A17 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				5CBB2F357BF71EADD34C24DE /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				4C1AC2407BB02C0795D474A3 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				F3E2F2E73CE2B49E3436E3FF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				9ED13DB22FA0118D9508D962 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				E4D2CA60FD266A6FE54E38AF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				9917B598AB28A0DECABE65ED /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				917AC8287D92FD41F94EDB13 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				DE484F5F48FA7E2C05AFA4F7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				228221902E029F35A8BF14D6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				529A8372C6AD567942C02841 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				568D37438EB6E51D3131B8F6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				2446A6B1F599D181EA2EB616 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				E4061534176D42E258D1F3B5 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				D81F0C9EF328F48542BBBDFE /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				EDCFC74555CFFD8659217817 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				9971774312FB0F0BDD7055C7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				28C486836759ED1F09F11C33 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				04CD774C14267710F8A1734B /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				5AE99B2BC1721866DC099506 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				591C43FF40054DE4759E3659 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				CBFF9B5D0DC0A4E1DC3FB99E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				40E165F283E490F2E48E637C /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				D5514E5B1B9F27439BD76E94 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				FD6D17F457726083EFFF2CE0 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				FC12A606932E495390263B59 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				BC636D90AA2CCA9FA0951198 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				70E17EC93789AC993D07F0D1 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				95AB43DBD4DDE70FD03223EC /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				53170A1BE047B67B96CD9CB3 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				C3AE08DCFFC26EB2A1D638B4 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				372428C5FD3A78833B6B5158 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				83C96CF476080CA063B4337A /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				D407398BDA40705145E8C2BF /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				3488CA873890F5F9B7AAFA23 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				8761823044D019CA63F22F09 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				609B2C555952BFDA9E65D6FA /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				7D1DBFC860ACCAF407F1A738 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				9328B6EA437D7BE13A21B005 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				C14F09E93CC0B012FF6D303A /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				025B2BB30202B3B303740FF1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				21FD08A6E030C9D3CD3AD53F /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				420A28E488736D90E77BF58F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				662F83B76BE6A594A7F95A12 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				1B1BD54D9FE19E9C5138F4C9 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				62991DC615402B78DA84D022 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				41C914E0F610569861CF21AD /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				95D20D114F6463A435A4E690 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				6D50369AD0044FC32C455DEA /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				4BAC260C170065E7EF929385 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				43C787CEEE847C8C6309E30B /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D5669E71EB58FAF000C3E39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7F31C61EBC578800D29651 /* CSFiCloudSyncManager.h in Headers */,
+				0DC830E51EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h in Headers */,
+				0D1AB5051ECAA94E00C8A953 /* CSFConstants.h in Headers */,
+				0DA94CBD1EC563A100D597E1 /* CSFEditorTextView.h in Headers */,
+				0D4135DF1EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */,
+				0DF6BAE71ECEA13E00F4EB93 /* CSFTextAttributes.h in Headers */,
+				0DC830DF1EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h in Headers */,
+				0DD902971EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0D482AF01EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */,
+				0D339FC61EC3135100414267 /* CSFDeviceCapabilityManager.h in Headers */,
+				0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0DF6BAE11ECE98F500F4EB93 /* CSFAttributedStringRenderer.h in Headers */,
+				0D41361E1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */,
+				0D4135ED1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */,
+				0DBA78D91ECD4EE600A4A171 /* CSFSharedDocumentBase.h in Headers */,
+				0D1B5F221EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
+				0DC830EB1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */,
+				0D0523DE1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
+				0D1B5F171EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
+				0D1AB4FF1ECAA25700C8A953 /* CSFColorStorage.h in Headers */,
+				0D516C701EC0618E007AAB05 /* CSFCetaceaSharedDocument.h in Headers */,
+				0DA94CB71EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
+				0D7F31C41EBC578800D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D4136181EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */,
+				0D0523D81EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */,
+				0D482AF61EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */,
+				0D903FF41EC9909B0013F7D9 /* CSFiCloudFileDataBase.h in Headers */,
+				0D516C6A1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5669F41EB58FBE000C3E39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7F31C21EBC578700D29651 /* CSFiCloudSyncManager.h in Headers */,
+				0D903FF51EC9909B0013F7D9 /* CSFiCloudFileDataBase.h in Headers */,
+				0DC830EC1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */,
+				0DA94CB81EC4C02200D597E1 /* CSFSingletonRegister.h in Headers */,
+				0DD902981EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0D1B5F231EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.h in Headers */,
+				0DA94CBE1EC563A100D597E1 /* CSFEditorTextView.h in Headers */,
+				0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+				0DC830E61EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.h in Headers */,
+				0D4135E01EC7F72D00BF9E5B /* CSFEditorTextFontManager.h in Headers */,
+				0D1B5F181EC1CB64007EBE5D /* TSBaseParser.h in Headers */,
+				0D516C711EC0618E007AAB05 /* CSFCetaceaSharedDocument.h in Headers */,
+				0D41361F1EC8E95600BF9E5B /* CSFMarkdownParserManager.h in Headers */,
+				0DF6BAE21ECE98F500F4EB93 /* CSFAttributedStringRenderer.h in Headers */,
+				0D1AB5061ECAA94E00C8A953 /* CSFConstants.h in Headers */,
+				0D1AB5001ECAA25700C8A953 /* CSFColorStorage.h in Headers */,
+				0D0523DF1EC6ECC900E1931A /* CSFEditorTextStorage.h in Headers */,
+				0DF6BAE81ECEA13E00F4EB93 /* CSFTextAttributes.h in Headers */,
+				0DC830E01EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.h in Headers */,
+				0D482AF71EC6BC1A0035B7D3 /* CSFEditorTextContainer.h in Headers */,
+				0D4135EE1EC8188400BF9E5B /* CSFEditorTextAttributeManager.h in Headers */,
+				0D7F31C01EBC578700D29651 /* CSFInitialProcessManager.h in Headers */,
+				0D0523D91EC6EAFC00E1931A /* CSFEditorTextRulerView.h in Headers */,
+				0DBA78DA1ECD4EE600A4A171 /* CSFSharedDocumentBase.h in Headers */,
+				0D516C6B1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.h in Headers */,
+				0D482AF11EC6BA860035B7D3 /* CSFEditorTextLayoutManager.h in Headers */,
+				0D4136191EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D566A011EB58FF1000C3E39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD902991EB66C1500AEDCB1 /* CSFGlobalHeader.h in Headers */,
+				0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D5669E91EB58FAF000C3E39 /* CetaceaSharedFramework-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5669EF1EB58FAF000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-iOS" */;
+			buildPhases = (
+				0D5669E51EB58FAF000C3E39 /* Sources */,
+				0D5669E61EB58FAF000C3E39 /* Frameworks */,
+				0D5669E71EB58FAF000C3E39 /* Headers */,
+				0D5669E81EB58FAF000C3E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CetaceaSharedFramework-iOS";
+			productName = "CSF-iOS";
+			productReference = 0D5669EA1EB58FAF000C3E39 /* CetaceaSharedFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0D5669F61EB58FBE000C3E39 /* CetaceaSharedFramework-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5669FC1EB58FBE000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-OSX" */;
+			buildPhases = (
+				0D5669F21EB58FBE000C3E39 /* Sources */,
+				0D5669F31EB58FBE000C3E39 /* Frameworks */,
+				0D5669F41EB58FBE000C3E39 /* Headers */,
+				0D5669F51EB58FBE000C3E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CetaceaSharedFramework-OSX";
+			productName = "CSF-OSX";
+			productReference = 0D5669F71EB58FBE000C3E39 /* CetaceaSharedFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0D566A031EB58FF1000C3E39 /* CetaceaSharedFramework-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D566A091EB58FF1000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-watchOS" */;
+			buildPhases = (
+				0D5669FF1EB58FF1000C3E39 /* Sources */,
+				0D566A001EB58FF1000C3E39 /* Frameworks */,
+				0D566A011EB58FF1000C3E39 /* Headers */,
+				0D566A021EB58FF1000C3E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CetaceaSharedFramework-watchOS";
+			productName = "CSF-watchOS";
+			productReference = 0D566A041EB58FF1000C3E39 /* CetaceaSharedFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D5669B81EB588B0000C3E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					0D5669E91EB58FAF000C3E39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					0D5669F61EB58FBE000C3E39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					0D566A031EB58FF1000C3E39 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 9QJ8M25J77;
+						ProvisioningStyle = Automatic;
+					};
+					111C1A5A1F73952800E41499 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = 9QJ8M25J77;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0D5669BB1EB588B0000C3E39 /* Build configuration list for PBXProject "CetaceaSharedFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D5669B71EB588B0000C3E39;
+			productRefGroup = 0D5669C41EB588DC000C3E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D5669E91EB58FAF000C3E39 /* CetaceaSharedFramework-iOS */,
+				0D5669F61EB58FBE000C3E39 /* CetaceaSharedFramework-OSX */,
+				0D566A031EB58FF1000C3E39 /* CetaceaSharedFramework-watchOS */,
+				111C1A5A1F73952800E41499 /* Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D5669E81EB58FAF000C3E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5669F51EB58FBE000C3E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D566A021EB58FF1000C3E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
+				0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
+				0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
+				30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D5669E51EB58FAF000C3E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D482AF21EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */,
+				0D516C721EC0618E007AAB05 /* CSFCetaceaSharedDocument.m in Sources */,
+				0DC830E71EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */,
+				0D1B5F241EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
+				0D1AB5071ECAA94E00C8A953 /* CSFConstants.m in Sources */,
+				0D4136201EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
+				0D7F31C51EBC578800D29651 /* CSFInitialProcessManager.m in Sources */,
+				0DBA78DB1ECD4EE600A4A171 /* CSFSharedDocumentBase.m in Sources */,
+				0DC830E11EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m in Sources */,
+				0D516C6C1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0DA94CB91EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
+				0D0523DA1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */,
+				0DA94CBF1EC563A100D597E1 /* CSFEditorTextView.m in Sources */,
+				0DC830ED1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
+				0D1AB5011ECAA25700C8A953 /* CSFColorStorage.m in Sources */,
+				0D339FC71EC3135100414267 /* CSFDeviceCapabilityManager.m in Sources */,
+				0DF6BAE31ECE98F500F4EB93 /* CSFAttributedStringRenderer.m in Sources */,
+				0D0523E01EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */,
+				0D4135EF1EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */,
+				0D1B5F191EC1CB64007EBE5D /* TSBaseParser.m in Sources */,
+				0D482AF81EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */,
+				0D7F31C71EBC578800D29651 /* CSFiCloudSyncManager.m in Sources */,
+				0DF6BAE91ECEA13E00F4EB93 /* CSFTextAttributes.m in Sources */,
+				0D903FF61EC9909B0013F7D9 /* CSFiCloudFileDataBase.m in Sources */,
+				0D4135E11EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */,
+				0D41361A1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5669F21EB58FBE000C3E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D482AF31EC6BA860035B7D3 /* CSFEditorTextLayoutManager.m in Sources */,
+				0DC830E81EC95237004D12D1 /* CSFiCloudFileExtensionCetaceaThemeSyntaxMarkupModel.m in Sources */,
+				0D1B5F251EC1CC76007EBE5D /* CSFCetaceaSharedDocumentEditManager.m in Sources */,
+				0D4136211EC8E95600BF9E5B /* CSFMarkdownParserManager.m in Sources */,
+				0D1AB5081ECAA94E00C8A953 /* CSFConstants.m in Sources */,
+				0D516C731EC0618E007AAB05 /* CSFCetaceaSharedDocument.m in Sources */,
+				0DC830E21EC9515C004D12D1 /* CSFCetaceaThemeSharedDocument.m in Sources */,
+				0DBA78DC1ECD4EE600A4A171 /* CSFSharedDocumentBase.m in Sources */,
+				0D7F31C11EBC578700D29651 /* CSFInitialProcessManager.m in Sources */,
+				0DA94CBA1EC4C02200D597E1 /* CSFSingletonRegister.m in Sources */,
+				0D0523DB1EC6EAFC00E1931A /* CSFEditorTextRulerView.m in Sources */,
+				0D516C6D1EC05038007AAB05 /* CSFiCloudFileExtensionCetaceaDataBase.m in Sources */,
+				0DA94CC01EC563A100D597E1 /* CSFEditorTextView.m in Sources */,
+				0DC830EE1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */,
+				0D1AB5021ECAA25700C8A953 /* CSFColorStorage.m in Sources */,
+				0D339FC81EC3135900414267 /* CSFDeviceCapabilityManager.m in Sources */,
+				0DF6BAE41ECE98F500F4EB93 /* CSFAttributedStringRenderer.m in Sources */,
+				0D0523E11EC6ECC900E1931A /* CSFEditorTextStorage.m in Sources */,
+				0D4135F01EC8188400BF9E5B /* CSFEditorTextAttributeManager.m in Sources */,
+				0D1B5F1A1EC1CB64007EBE5D /* TSBaseParser.m in Sources */,
+				0D482AF91EC6BC1A0035B7D3 /* CSFEditorTextContainer.m in Sources */,
+				0D7F31C31EBC578700D29651 /* CSFiCloudSyncManager.m in Sources */,
+				0DF6BAEA1ECEA13E00F4EB93 /* CSFTextAttributes.m in Sources */,
+				0D903FF71EC9909B0013F7D9 /* CSFiCloudFileDataBase.m in Sources */,
+				0D4135E21EC7F72D00BF9E5B /* CSFEditorTextFontManager.m in Sources */,
+				0D41361B1EC8E46700BF9E5B /* CSFFeedbackGeneratorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5669FF1EB58FF1000C3E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D5669BC1EB588B0000C3E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		0D5669BD1EB588B0000C3E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		0D5669F01EB58FAF000C3E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CetaceaSharedFramework-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-iOS";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D5669F11EB58FAF000C3E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CetaceaSharedFramework-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-iOS";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D5669FD1EB58FBE000C3E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CetaceaSharedFramework-OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-OSX";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D5669FE1EB58FBE000C3E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CetaceaSharedFramework-OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-OSX";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D566A0A1EB58FF1000C3E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/";
+				INFOPLIST_FILE = "CetaceaSharedFramework-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-watchOS";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		0D566A0B1EB58FF1000C3E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/";
+				INFOPLIST_FILE = "CetaceaSharedFramework-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JustZht.CSF-watchOS";
+				PRODUCT_NAME = CetaceaSharedFramework;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		111C1A5B1F73952800E41499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		111C1A5C1F73952800E41499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QJ8M25J77;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D5669BB1EB588B0000C3E39 /* Build configuration list for PBXProject "CetaceaSharedFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5669BC1EB588B0000C3E39 /* Debug */,
+				0D5669BD1EB588B0000C3E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D5669EF1EB58FAF000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5669F01EB58FAF000C3E39 /* Debug */,
+				0D5669F11EB58FAF000C3E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D5669FC1EB58FBE000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5669FD1EB58FBE000C3E39 /* Debug */,
+				0D5669FE1EB58FBE000C3E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D566A091EB58FF1000C3E39 /* Build configuration list for PBXNativeTarget "CetaceaSharedFramework-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D566A0A1EB58FF1000C3E39 /* Debug */,
+				0D566A0B1EB58FF1000C3E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111C1A5D1F73952800E41499 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111C1A5B1F73952800E41499 /* Debug */,
+				111C1A5C1F73952800E41499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D5669B81EB588B0000C3E39 /* Project object */;
+}

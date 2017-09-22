@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="JZEditorLinkPopoverContentViewController">
+            <connections>
+                <outlet property="progressIndicator" destination="x8c-qM-PCX" id="KFJ-Pw-Fxo"/>
+                <outlet property="toolbarView" destination="DEK-AM-c0X" id="S7u-bv-Wy4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="webViewContainer" destination="LOG-ku-D4A" id="Zqb-0w-E7a"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="x8c-qM-PCX">
+                    <rect key="frame" x="184" y="134" width="32" height="32"/>
+                </progressIndicator>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="LOG-ku-D4A">
+                    <rect key="frame" x="0.0" y="32" width="400" height="268"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="DEK-AM-c0X">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="32"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pQp-No-7RD">
+                            <rect key="frame" x="2" y="-1" width="72" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="vAL-eF-gp9"/>
+                            </constraints>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSRefreshTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dmj-VX-ep1">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="refreshButtonPressed:" target="-2" id="1Kh-ea-jr6"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3ii-HQ-qWg">
+                            <rect key="frame" x="328" y="-1" width="72" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="izF-Pv-GoU"/>
+                            </constraints>
+                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSShareTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BgS-uj-YJF">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="shareButtonPressed:" target="-2" id="ekY-DT-emF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3ii-HQ-qWg" firstAttribute="centerY" secondItem="DEK-AM-c0X" secondAttribute="centerY" id="FGU-da-a7m"/>
+                        <constraint firstItem="pQp-No-7RD" firstAttribute="leading" secondItem="DEK-AM-c0X" secondAttribute="leading" constant="8" id="M8p-aQ-sgR"/>
+                        <constraint firstAttribute="height" constant="32" id="Wgc-ov-gjm"/>
+                        <constraint firstItem="pQp-No-7RD" firstAttribute="centerY" secondItem="DEK-AM-c0X" secondAttribute="centerY" id="mH1-uk-NbU"/>
+                        <constraint firstAttribute="trailing" secondItem="3ii-HQ-qWg" secondAttribute="trailing" constant="6" id="vuX-cZ-nQx"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LOG-ku-D4A" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="3Xk-hc-XoV"/>
+                <constraint firstAttribute="trailing" secondItem="LOG-ku-D4A" secondAttribute="trailing" id="Ldh-P7-zdm"/>
+                <constraint firstAttribute="bottom" secondItem="DEK-AM-c0X" secondAttribute="bottom" id="QM7-SJ-x1x"/>
+                <constraint firstItem="x8c-qM-PCX" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="ZBw-bg-5qq"/>
+                <constraint firstItem="LOG-ku-D4A" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="beo-Nz-qc9"/>
+                <constraint firstItem="x8c-qM-PCX" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="dL0-JM-iVw"/>
+                <constraint firstAttribute="trailing" secondItem="DEK-AM-c0X" secondAttribute="trailing" id="sR1-1m-CLI"/>
+                <constraint firstItem="DEK-AM-c0X" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="tMY-5N-Uqm"/>
+                <constraint firstItem="DEK-AM-c0X" firstAttribute="top" secondItem="LOG-ku-D4A" secondAttribute="bottom" id="zti-Ge-ryQ"/>
+            </constraints>
+        </customView>
+    </objects>
+    <resources>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+        <image name="NSShareTemplate" width="11" height="16"/>
+    </resources>
+</document>

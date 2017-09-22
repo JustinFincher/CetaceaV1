@@ -34,15 +34,15 @@
     [super viewDidLoad];
     // Do view setup here.
     self.visualEffectBackgroundView.translatesAutoresizingMaskIntoConstraints = YES;
-    self.editorTextView.delegate = self;
-    self.editorTextView.wantsLayer = YES;
-    self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
+//    self.editorTextView.delegate = self;
+//    self.editorTextView.wantsLayer = YES;
+//    self.editorTextView.parser = [[JZEditorMarkdownTextParserWithTSBaseParser alloc] init];
 
-    self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
-                                                NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    
-    [self.editorTextView.parser refreshAttributesTheme];
-    [self.editorTextView refreshHightLight];
+//    self.editorTextView.linkTextAttributes = @{ NSForegroundColorAttributeName: [[JZFontDisplayManager sharedManager] getLinkForegroundColor],
+//                                                NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
+//
+//    [self.editorTextView.parser refreshAttributesTheme];
+//    [self.editorTextView refreshHightLight];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(themeChangedOnHighLightEditView:)
@@ -61,27 +61,25 @@
 
 - (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
 {
-    if (currentEditingMarkdown == nil)
-    {
-        [self.editorTextView setString:@""];
-    }else
-    {
-        [self.editorTextView setString:currentEditingMarkdown.markdownString];
-    }
-    [self.editorTextView.parser refreshAttributesTheme];
+    NSParameterAssert(currentEditingMarkdown);
+    [self.editorTextView setCurrentEditingDocument:currentEditingMarkdown];
+//    [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
+    [self.editorTextView updateTextView];
     [self updateStatView];
 }
 - (void)themeChangedOnHighLightEditView:(NSNotification *)aNotification
 {
-    self.editorTextView.parser.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
-    [self.editorTextView.parser refreshAttributesTheme];
+//    self.editorTextView.parser.themeDoc = [[JZEditorHighlightThemeManager sharedManager] selectedDoc];
+//    [self.editorTextView.parser refreshAttributesTheme];
     [self.editorTextView refreshHightLight];
+    [self.editorTextView updateTextView];
     [self.editorTextView updateRuler];
 }
 - (void)refreshHighLight
 {
     [self.editorTextView refreshHightLight];
+    [self.editorTextView updateTextView];
 }
 
 
