@@ -116,15 +116,12 @@
 		0DC830EC1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC830E91EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.h */; };
 		0DC830ED1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
 		0DC830EE1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC830EA1EC9524C004D12D1 /* CSFiCloudFileExtensionCetaceaThemeDataBase.m */; };
-		0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027E1EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist */; };
 		0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
-		0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
 		0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9027F1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist */; };
 		0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
 		0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
-		0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DD902801EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist */; };
 		0DD9028E1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
 		0DD9028F1EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
 		0DD902901EB66C1500AEDCB1 /* CetaceaSharedFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DD902811EB66C1500AEDCB1 /* CetaceaSharedFramework.h */; };
@@ -776,7 +773,7 @@
 		0D5669B81EB588B0000C3E39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					0D5669E91EB58FAF000C3E39 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -828,7 +825,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DD902881EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
-				0DD902851EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028B1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				185072CA8A1631A9E13202C3 /* Pods-CetaceaSharedFramework-iOS-metadata.plist in Resources */,
 			);
@@ -838,7 +834,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD902891EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902861EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
 				0DD9028C1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				C7812BAB747C480C1B30563C /* Pods-CetaceaSharedFramework-OSX-metadata.plist in Resources */,
@@ -851,7 +846,6 @@
 			files = (
 				0DD9028A1EB66C1500AEDCB1 /* CetaceaSharedFramework-OSX-Info.plist in Resources */,
 				0DD902871EB66C1500AEDCB1 /* CetaceaSharedFramework-iOS-Info.plist in Resources */,
-				0DD9028D1EB66C1500AEDCB1 /* CetaceaSharedFramework-watchOS-Info.plist in Resources */,
 				30B1297BAEE3A008C3877EBC /* Pods-CetaceaSharedFramework-watchOS-metadata.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1053,8 +1047,33 @@
 		0D5669BC1EB588B0000C3E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 			};
 			name = Debug;
@@ -1062,6 +1081,29 @@
 		0D5669BD1EB588B0000C3E39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1093,7 +1135,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1165,7 +1207,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1210,7 +1252,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -1279,7 +1320,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
