@@ -99,6 +99,9 @@
 - (void)setCurrentEditingDocument:(CSFCetaceaAbstractSharedDocument *)currentEditingDocument
 {
     NSParameterAssert(currentEditingDocument);
+
+    NSAssert([currentEditingDocument isKindOfClass:[CSFCetaceaAbstractSharedDocument class]], @"currentEditingDocument is not a class of CSFCetaceaAbstractSharedDocument");
+
 	_currentEditingDocument = currentEditingDocument;
     _cmDocument = nil;
 	[self refreshFileContent];

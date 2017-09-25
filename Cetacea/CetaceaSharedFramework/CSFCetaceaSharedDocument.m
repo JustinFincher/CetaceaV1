@@ -138,6 +138,11 @@
 }
 - (BOOL)saveDocument
 {
+#if TARGET_OS_IOS
+    [self.document writeContents:self.fileWrapper toURL:self.url forSaveOperation:UIDocumentSaveForOverwriting originalContentsURL:self.url error:nil];
+#elif TARGET_OS_OSX
+    [self.document writeToURL:self.url ofType:@"cetacea" error:nil];
+#endif
 	return YES;
 }
 - (void)deleteDocument:(void (^)(BOOL isSuccessful))completed

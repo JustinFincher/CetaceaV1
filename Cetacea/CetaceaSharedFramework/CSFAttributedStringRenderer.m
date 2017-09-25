@@ -86,6 +86,10 @@
 - (void)parser:(CMParser *)parser didStartHeaderWithLevel:(NSInteger)level
 {
 	[_attributeStack push:CMDefaultAttributeRun([_attributes attributesForHeaderLevel:level])];
+    
+    // This
+    [self appendString:[@"" stringByPaddingToLength:level withString: @"#" startingAtIndex:0]]; // append level times of "#"
+    [self appendString:@" "];
 }
 
 - (void)parser:(CMParser *)parser didEndHeaderWithLevel:(NSInteger)level
@@ -144,10 +148,13 @@
 #endif
 	[baseAttributes addEntriesFromDictionary:_attributes.linkAttributes];
 	[_attributeStack push:CMDefaultAttributeRun(baseAttributes)];
+    
+    [self appendString:[NSString stringWithFormat:@"["]]; // Add the [<--]()
 }
 
 - (void)parser:(CMParser *)parser didEndLinkWithURL:(NSURL *)URL title:(NSString *)title
 {
+    [self appendString:[NSString stringWithFormat:@"](%@)",[URL absoluteString]]]; // Add the  [-->]()
 	[_attributeStack pop];
 }
 
@@ -190,14 +197,19 @@
 - (void)parser:(CMParser *)parser foundCodeBlock:(NSString *)code info:(NSString *)info
 {
 	[_attributeStack push:CMDefaultAttributeRun(_attributes.codeBlockAttributes)];
+    [self appendString:@"```"];
+    [self appendString:info];
 	[self appendString:[NSString stringWithFormat:@"\n\n%@\n\n", code]];
+    [self appendString:@"```"];
 	[_attributeStack pop];
 }
 
 - (void)parser:(CMParser *)parser foundInlineCode:(NSString *)code
 {
 	[_attributeStack push:CMDefaultAttributeRun(_attributes.inlineCodeAttributes)];
+    [self appendString:@"`"];
 	[self appendString:code];
+    [self appendString:@"`"];
 	[_attributeStack pop];
 }
 
@@ -251,7 +263,8 @@
 			NSAssert(NO, @"Parent node of list item must be a list");
 			break;
 		case CMListTypeUnordered: {
-			[self appendString:@"\u2022 "];
+			// [self appendString:@"\u2022 "];
+            [self appendString:@"- "]; // disable round dot
 			[_attributeStack push:CMDefaultAttributeRun(_attributes.unorderedListItemAttributes)];
 			break;
 		}
