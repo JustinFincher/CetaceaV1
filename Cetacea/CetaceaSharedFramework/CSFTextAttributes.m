@@ -17,7 +17,7 @@
 
 static NSDictionary * CSFDefaultTextAttributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:12.0]};
@@ -26,7 +26,7 @@ static NSDictionary * CSFDefaultTextAttributes()
 
 static NSDictionary * CSFDefaultH1Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleLargeTitle]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:24.0]};
@@ -35,7 +35,7 @@ static NSDictionary * CSFDefaultH1Attributes()
 
 static NSDictionary * CSFDefaultH2Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:18.0]};
@@ -44,7 +44,7 @@ static NSDictionary * CSFDefaultH2Attributes()
 
 static NSDictionary * CSFDefaultH3Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:14.0]};
@@ -53,7 +53,7 @@ static NSDictionary * CSFDefaultH3Attributes()
 
 static NSDictionary * CSFDefaultH4Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:12.0]};
@@ -62,7 +62,7 @@ static NSDictionary * CSFDefaultH4Attributes()
 
 static NSDictionary * CSFDefaultH5Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:10.0]};
@@ -71,7 +71,7 @@ static NSDictionary * CSFDefaultH5Attributes()
 
 static NSDictionary * CSFDefaultH6Attributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]};
 #else
     return @{NSFontAttributeName: [NSFont userFontOfSize:8.0]};
@@ -81,7 +81,7 @@ static NSDictionary * CSFDefaultH6Attributes()
 static NSDictionary * CSFDefaultLinkAttributes()
 {
     return @{
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
              NSForegroundColorAttributeName: UIColor.blueColor,
 #else
              NSForegroundColorAttributeName: NSColor.blueColor,
@@ -90,7 +90,7 @@ static NSDictionary * CSFDefaultLinkAttributes()
              };
 }
 
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
 static UIFont * MonospaceFont()
 {
     CGFloat size = [[UIFont preferredFontForTextStyle:UIFontTextStyleBody] pointSize];
@@ -109,7 +109,7 @@ static NSParagraphStyle * DefaultIndentedParagraphStyle()
 static NSDictionary * CSFDefaultCodeBlockAttributes()
 {
     return @{
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
              NSFontAttributeName: MonospaceFont(),
 #else
              NSFontAttributeName: [NSFont userFixedPitchFontOfSize:12.0],
@@ -120,7 +120,7 @@ static NSDictionary * CSFDefaultCodeBlockAttributes()
 
 static NSDictionary * CSFDefaultInlineCodeAttributes()
 {
-#if TARGET_OS_IPHONE
+#if TARGET_OS_IOS
     return @{NSFontAttributeName: MonospaceFont()};
 #else
     return @{NSFontAttributeName: [NSFont userFixedPitchFontOfSize:12.0]};

@@ -12,7 +12,7 @@
 #import "CSFEditorTextRulerView.h"
 #import "CSFEditorTextStorage.h"
 #import "CSFGlobalHeader.h"
-
+#import "CSFTextAttributes.h"
 #import <CocoaMarkdown/CocoaMarkdown.h>
 #import "CSFAttributedStringRenderer.h"
 
@@ -32,6 +32,8 @@
 
 @property (nonatomic,strong) CSFAttributedStringRenderer *renderer;
 @property (nonatomic,strong) CMDocument *cmDocument;
+
+@property (nonatomic,strong) CSFTextAttributes *textAttributes;
 
 @end
 
@@ -113,8 +115,9 @@
         }
         else
         {
+            self.textAttributes = [[CSFTextAttributes alloc] init];
             self.cmDocument = [[CMDocument alloc] initWithString:self.currentEditingDocument.markdownString options:0];
-            self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
+            self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:self.textAttributes];
         }
 	}else
 	{
