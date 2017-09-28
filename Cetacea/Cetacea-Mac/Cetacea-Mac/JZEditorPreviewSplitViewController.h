@@ -7,14 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudFileExtensionCetaceaDocument.h"
+#import <CetaceaSharedFramework/CSFCetaceaSharedDocument.h>
 
 @interface JZEditorPreviewSplitViewController : NSSplitViewController
 @property (weak) IBOutlet NSSplitViewItem *editorSplitViewItem;
 @property (weak) IBOutlet NSSplitViewItem *previewSplitViewItem;
 
 
-@property (nonatomic,strong) JZiCloudFileExtensionCetaceaDocument* currentEditingMarkdown;
+@property (nonatomic,strong) CSFCetaceaAbstractSharedDocument* currentEditingMarkdown;
 
 /**
  *  indicates the left edit view is collasped or not
@@ -33,7 +33,7 @@
 /**
  *  Set current JZiCloudMarkdownFileModel to Split VC
  *
- *  @param currentEditingMarkdown the JZiCloudMarkdownFileModel to be updated on view
+ *  @param currentEditingMarkdown the CSFCetaceaAbstractSharedDocument to be updated on view
  */
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown;
+- (void)setCurrentEditingMarkdown:(CSFCetaceaAbstractSharedDocument *)currentEditingMarkdown;
 @end

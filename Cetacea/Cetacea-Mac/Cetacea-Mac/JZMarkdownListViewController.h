@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "JZiCloudFileExtensionCetaceaDocument.h"
+#import <CetaceaSharedFramework/CSFCetaceaSharedDocument.h>
 
 @protocol JZMarkdownListViewDelegate;
 
@@ -20,6 +20,6 @@
 @protocol JZMarkdownListViewDelegate <NSObject>
 @optional
 
-- (void)rowSelected:(JZiCloudFileExtensionCetaceaDocument *)markdown;
+- (void)rowSelected:(CSFCetaceaAbstractSharedDocument *)markdown;
 
 @end

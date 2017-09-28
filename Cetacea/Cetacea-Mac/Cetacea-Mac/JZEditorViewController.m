@@ -59,9 +59,10 @@
      self.editorTextView.layoutManager.allowsNonContiguousLayout = YES;
 }
 
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(CSFCetaceaAbstractSharedDocument *)currentEditingMarkdown
 {
     NSParameterAssert(currentEditingMarkdown);
+    NSAssert([currentEditingMarkdown isKindOfClass:[CSFCetaceaAbstractSharedDocument class]], @"currentEditingDocument is not a class of CSFCetaceaAbstractSharedDocument");
     [self.editorTextView setCurrentEditingDocument:currentEditingMarkdown];
 ////    [self.editorTextView.parser refreshAttributesTheme];
 //    [self.editorTextView refreshHightLight];

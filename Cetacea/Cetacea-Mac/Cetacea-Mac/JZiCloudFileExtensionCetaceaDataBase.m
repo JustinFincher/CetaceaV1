@@ -41,7 +41,7 @@
     
 }
 
-- (NSMutableArray *)loadDocs {
+- (NSMutableArray<CSFCetaceaAbstractSharedDocument *> *)loadDocs {
     
     // Get private docs dir
     NSString *documentsDirectory = [self getPrivateDocsDir];
@@ -63,12 +63,7 @@
         {
             NSString *fullPath = [documentsDirectory stringByAppendingPathComponent:file];
             NSURL *url = [[NSURL alloc] initFileURLWithPath:fullPath isDirectory:YES];
-            JZiCloudFileExtensionCetaceaDocument *doc = [[JZiCloudFileExtensionCetaceaDocument alloc] initWithURL:url];
-//            [doc.documentFileWrapper readFromURL:[NSURL URLWithString:fullPath] options:0 error:nil];
-//            if ([doc readFromFileWrapper:doc.documentFileWrapper ofType:@"cetacea" error:nil])
-//            {
-//                
-//            }
+            CSFCetaceaAbstractSharedDocument *doc = [[CSFCetaceaAbstractSharedDocument alloc] initWithURL:url];
             [retval addObject:doc];
         }
     }

@@ -140,8 +140,6 @@
 /// last changed date read from system
 @property (nonatomic,strong) NSDate *lastChangeDate;
 
-@property (nonatomic,strong) NSArray *tags;
-
 
 @property (nonatomic,weak) NSMetadataItem *metaDataItem;
 

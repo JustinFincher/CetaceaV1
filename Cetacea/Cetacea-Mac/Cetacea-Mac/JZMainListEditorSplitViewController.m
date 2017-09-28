@@ -85,7 +85,7 @@ canCollapseSubview:(NSView *)subview
 }
 
 #pragma mark - JZMarkdownListViewDelegate
-- (void)rowSelected:(JZiCloudFileExtensionCetaceaDocument *)markdown
+- (void)rowSelected:(CSFCetaceaAbstractSharedDocument *)markdown
 {
 //    JZLog(@"rowSelected: %@",markdown.markdownString);
     JZEditorPreviewSplitViewController *editorPreviewSplitVC = (JZEditorPreviewSplitViewController *)_editorViewItem.viewController;

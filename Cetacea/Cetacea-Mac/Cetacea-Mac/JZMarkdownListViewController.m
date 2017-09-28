@@ -11,6 +11,7 @@
 #import "JZMarkdownListTableCellView.h"
 #import "DateTools.h"
 #import "JZMarkdownListSortSelectionMenu.h"
+#import <CetaceaSharedFramework/CSFCetaceaSharedDocument.h>
 
 @interface JZMarkdownListViewController ()<NSTableViewDelegate,NSTableViewDataSource,JZiCloudStorageProcesserDelegate,JZMarkdownListSortSelectionMenuDelegate>
 @property (weak) IBOutlet NSTableView *markdownListTableView;
@@ -44,15 +45,15 @@
 - (void)articleEditDeleteMenuClicked:(id)sender
 {
     NSInteger clickedRowIndex = self.markdownListTableView.clickedRow;
-    JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:clickedRowIndex];
-    [markdown deleteCetaceDocument:^(BOOL isSuccessful)
-    {
-        [self.markdownListTableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:clickedRowIndex] withAnimation:NSTableViewAnimationSlideUp];
-        if (clickedRowIndex == self.markdownListTableView.selectedRow)
-        {
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys: nil, @"newValue" ,nil]];
-        }
-    }];
+    CSFCetaceaAbstractSharedDocument *markdown = [self.markdownFileArray objectAtIndex:clickedRowIndex];
+//    [markdown deleteCetaceDocument:^(BOOL isSuccessful)
+//    {
+//        [self.markdownListTableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:clickedRowIndex] withAnimation:NSTableViewAnimationSlideUp];
+//        if (clickedRowIndex == self.markdownListTableView.selectedRow)
+//        {
+//            [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys: nil, @"newValue" ,nil]];
+//        }
+//    }];
 }
 
 
@@ -66,20 +67,20 @@
     {
 
     }
-    JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:row];
+    CSFCetaceaAbstractSharedDocument *markdown = [self.markdownFileArray objectAtIndex:row];
     
     cellView.titleTextField.stringValue = markdown.title;
-    if (markdown.highLightString)
+    if (markdown.markdownString)
     {
-        cellView.contentTextField.attributedStringValue = markdown.highLightString;
+        cellView.contentTextField.stringValue = markdown.markdownString;
     }else
     {
         cellView.contentTextField.stringValue = @"";
     }
     
-    if (markdown.fileModificationDate)
+    if (markdown.lastChangeDate)
     {
-        cellView.updateDateTextField.stringValue = markdown.fileModificationDate.timeAgoSinceNow;
+        cellView.updateDateTextField.stringValue = markdown.lastChangeDate.timeAgoSinceNow;
     }
     return cellView;
 }
@@ -102,7 +103,7 @@
     NSInteger row = [[notification object] selectedRow];
     if (row >= 0)
     {
-        JZiCloudFileExtensionCetaceaDocument *markdown = [self.markdownFileArray objectAtIndex:row];
+        CSFCetaceaAbstractSharedDocument *markdown = [self.markdownFileArray objectAtIndex:row];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"markdownListSelectionChanged" object:nil userInfo:[NSDictionary dictionaryWithObjectsAndKeys:markdown, @"newValue" ,nil]];
         id<JZMarkdownListViewDelegate> strongDelegate = self.delegate;
         [strongDelegate rowSelected:markdown];
@@ -127,13 +128,13 @@
 {
     if (self.markdownListTableView.selectedRow != -1)
     {
-        JZiCloudFileExtensionCetaceaDocument *selectedDoc = (JZiCloudFileExtensionCetaceaDocument *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow];
+        CSFCetaceaAbstractSharedDocument *selectedDoc = (CSFCetaceaAbstractSharedDocument *)[self.markdownFileArray objectAtIndex:self.markdownListTableView.selectedRow];
         self.markdownFileArray = [self sortedArrayFrom:markdowns];
         [self.markdownListTableView reloadData];
         for (int i = 0; i < self.markdownFileArray.count; i++)
         {
-            JZiCloudFileExtensionCetaceaDocument *a = [self.markdownFileArray objectAtIndex:i];
-            if ([a isEqualToDocument:selectedDoc])
+            CSFCetaceaAbstractSharedDocument *a = [self.markdownFileArray objectAtIndex:i];
+            if ([a isEqual:selectedDoc])
             {
                 [self.markdownListTableView scrollRowToVisible:i];
                 [self.markdownListTableView selectRow:i byExtendingSelection:NO];
@@ -187,8 +188,8 @@
         {
             case JZMarkdownListSortMethodByCreateDate:
             {
-                NSDate *first = [(JZiCloudFileExtensionCetaceaDocument*)a fileModificationDate];
-                NSDate *second = [(JZiCloudFileExtensionCetaceaDocument*)b fileModificationDate];
+                NSDate *first = [(CSFCetaceaAbstractSharedDocument*)a lastChangeDate];
+                NSDate *second = [(CSFCetaceaAbstractSharedDocument*)b lastChangeDate];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:
@@ -202,8 +203,8 @@
                 break;
             case JZMarkdownListSortMethodByEditDate:
             {
-                NSDate *first = [(JZiCloudFileExtensionCetaceaDocument*)a fileModificationDate];
-                NSDate *second = [(JZiCloudFileExtensionCetaceaDocument*)b fileModificationDate];
+                NSDate *first = [(CSFCetaceaAbstractSharedDocument*)a lastChangeDate];
+                NSDate *second = [(CSFCetaceaAbstractSharedDocument*)b lastChangeDate];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:
@@ -217,8 +218,8 @@
                 break;
             case JZMarkdownListSortMethodByTitle:
             {
-                NSString *first = [(JZiCloudFileExtensionCetaceaDocument*)a title];
-                NSString *second = [(JZiCloudFileExtensionCetaceaDocument*)b title];
+                NSString *first = [(CSFCetaceaAbstractSharedDocument*)a title];
+                NSString *second = [(CSFCetaceaAbstractSharedDocument*)b title];
                 switch (direction)
                 {
                     case JZMarkdownListSortDirectionAscending:

@@ -25,8 +25,8 @@
 /**
  *  iCloud Files Processed Delegate
  *
- *  @param markdowns give you processed Markdowns Array contains of JZiCloudMarkdownFileModel
+ *  @param markdowns give you processed Markdowns Array contains of CSFCetaceaAbstractSharedDocument
  */
-- (void)iCloudFileProcessed:(NSMutableArray *)markdowns;
+- (void)iCloudFileProcessed:(NSMutableArray<CSFCetaceaAbstractSharedDocument *> *)markdowns;
 
 @end

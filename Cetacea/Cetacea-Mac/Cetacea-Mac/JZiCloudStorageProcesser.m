@@ -46,7 +46,7 @@
 - (void)iCloudFileUpdated:(NSMetadataQuery *)query
 {
     JZLog(@"iCloudFileUpdated");
-    NSMutableArray *proccessedResultArray = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs];
+    NSMutableArray<CSFCetaceaAbstractSharedDocument *> *proccessedResultArray = [[JZiCloudFileExtensionCetaceaDataBase sharedManager] loadDocs];
 
     id<JZiCloudStorageProcesserDelegate> strongDelegate = self.delegate;
     [strongDelegate iCloudFileProcessed:proccessedResultArray];

@@ -74,7 +74,6 @@
 {
 	[self updateFileWrappersByPreferredFileName:@"title" Contents:[self.title dataUsingEncoding:NSUTF8StringEncoding]];
 	[self updateFileWrappersByPreferredFileName:@"markdownString" Contents:[self.markdownString dataUsingEncoding:NSUTF8StringEncoding]];
-	[self updateFileWrappersByPreferredFileName:@"tags" Contents:[NSJSONSerialization dataWithJSONObject:self.tags options:NSJSONWritingPrettyPrinted error:nil]];
 }
 - (void)updateFileWrappersByPreferredFileName:(NSString *)fileName
                                      Contents:(NSData *)data
@@ -268,6 +267,9 @@
 - (BOOL)writeToURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError * _Nullable __autoreleasing *)outError
 #endif
 {
+    if ([url absoluteString]) {
+        
+    }
 	[self.sharedDocument updateFileWrappers];
 	NSError *err;
 	BOOL isSucess = [self.sharedDocument.fileWrapper writeToURL:url options:NSFileWrapperWritingAtomic | NSFileWrapperWritingWithNameUpdating originalContentsURL:nil error:&err];

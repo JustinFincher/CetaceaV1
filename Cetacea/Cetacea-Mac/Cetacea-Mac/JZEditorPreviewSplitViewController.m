@@ -106,7 +106,7 @@
 
 
 #pragma mark - Text Editing
-- (void)setCurrentEditingMarkdown:(JZiCloudFileExtensionCetaceaDocument *)currentEditingMarkdown
+- (void)setCurrentEditingMarkdown:(CSFCetaceaAbstractSharedDocument *)currentEditingMarkdown
 {
     if (currentEditingMarkdown == nil)
     {
@@ -120,7 +120,7 @@
     }else
     {
         self.isSwitchingDocumentFlag = YES;
-        if (![_currentEditingMarkdown isEqualToDocument:currentEditingMarkdown])
+        if (![_currentEditingMarkdown isEqual:currentEditingMarkdown])
         {
             _currentEditingMarkdown = currentEditingMarkdown;
             [_editorVC setCurrentEditingMarkdown:currentEditingMarkdown];
@@ -144,10 +144,9 @@
     if (!self.isSwitchingDocumentFlag)
     {
         self.currentEditingMarkdown.markdownString = _editorVC.editorTextView.string;
-        self.currentEditingMarkdown.highLightString = _editorVC.editorTextView.attributedString;
         self.currentEditingMarkdown.title = [self.currentEditingMarkdown.markdownString substringWithRange:[self.currentEditingMarkdown.markdownString lineRangeForRange:NSMakeRange(0, 0)]];
         
-        [self.currentEditingMarkdown saveCetaceaDocument];
+        [self.currentEditingMarkdown saveDocument];
         
         refreshHighLightCounter++;
     }
