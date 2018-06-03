@@ -21,4 +21,8 @@
 	if (self.actionBlock) self.actionBlock();
 }
 
+- (void)updateAppearance
+{
+}
+
 @end

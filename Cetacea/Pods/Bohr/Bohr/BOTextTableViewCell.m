@@ -19,17 +19,19 @@
 	self.textField.textAlignment = NSTextAlignmentRight;
 	self.textField.returnKeyType = UIReturnKeyDone;
 	self.textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-	self.textField.frame = CGRectMake(0, 0, 130, self.textField.intrinsicContentSize.height);
+	self.textField.frame = CGRectMake(0, 0, self.contentView.frame.size.width/2, self.textField.intrinsicContentSize.height);
+    self.textField.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth;
 	self.accessoryView = self.textField;
 }
 
-- (void)updateAppearance {
+- (void)updateAppearance
+{
 	self.textField.textColor = self.secondaryColor;
 	self.textField.tintColor = self.secondaryColor;
 	
 	if (self.secondaryFont) {
 		self.textField.font = self.secondaryFont;
-		self.textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.textField.placeholder attributes:@{NSFontAttributeName : self.secondaryFont}];
+		self.textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.textField.placeholder attributes:@{NSFontAttributeName : self.secondaryFont,NSForegroundColorAttributeName:self.placeholderColor}];
 	}
 }
 

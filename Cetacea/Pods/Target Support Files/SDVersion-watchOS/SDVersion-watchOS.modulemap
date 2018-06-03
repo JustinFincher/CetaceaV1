@@ -1,0 +1,6 @@
+framework module SDVersion {
+  umbrella header "SDVersion-watchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

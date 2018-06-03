@@ -39,7 +39,7 @@
 }
 
 - (void)settingValueDidChange {
-    self.detailTextLabel.text = self.options[[self indexFromCurrentValue:[self.setting.value integerValue]]];
+    self.detailTextLabel.text = self.options[[self indexFromCurrentValue:self.setting.value ? [self.setting.value integerValue] : 0]];
 }
 
 - (NSInteger)valueForIndex:(NSInteger)index {
@@ -50,10 +50,15 @@
     }
 }
 
-- (NSInteger)indexFromCurrentValue:(NSInteger)value {
+- (NSInteger)indexFromCurrentValue:(NSInteger)value
+{
     NSInteger index = value;
     if (self.optionValues) {
         index = [self.optionValues indexOfObject:@(value)];
+        if (index == NSNotFound)
+        {
+            index = 0;
+        }
     }
     
     return index;

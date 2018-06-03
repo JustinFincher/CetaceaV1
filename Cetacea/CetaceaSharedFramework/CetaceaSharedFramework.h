@@ -31,8 +31,8 @@ FOUNDATION_EXPORT const unsigned char CetaceaSharedFrameworkVersionString[];
 #import <CetaceaSharedFramework/CSFFeedbackGeneratorManager.h>
 #import <CetaceaSharedFramework/CSFColorStorage.h>
 #import <CetaceaSharedFramework/CSFSharedDocumentBase.h>
-#import <CetaceaSharedFramework/CSFAttributedStringRenderer.h>
-#import <CetaceaSharedFramework/CSFTextAttributes.h>
+//#import <CetaceaSharedFramework/CSFAttributedStringRenderer.h>
+//#import <CetaceaSharedFramework/CSFTextAttributes.h>
 #import <CetaceaSharedFramework/CSFColorStorage.h>
 
 #if TARGET_OS_IOS

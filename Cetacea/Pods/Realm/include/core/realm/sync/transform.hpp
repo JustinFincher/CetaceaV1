@@ -24,11 +24,14 @@
 #include <stddef.h>
 
 #include <realm/util/buffer.hpp>
-#include <realm/impl/continuous_transactions_history.hpp>
+#include <realm/impl/cont_transact_hist.hpp>
 #include <realm/group_shared.hpp>
+#include <realm/chunked_binary.hpp>
 
 namespace realm {
 namespace sync {
+
+struct Changeset;
 
 /// Represents an entry in the history of changes in a sync-enabled Realm
 /// file. Server and client use different history formats, but this class is
@@ -93,7 +96,7 @@ public:
     version_type remote_version;
 
     /// Referenced memory is not owned by this class.
-    BinaryData changeset;
+    ChunkedBinaryData changeset;
 };
 
 
@@ -140,50 +143,26 @@ public:
     /// criteria.
     virtual version_type find_history_entry(version_type begin_version, version_type end_version,
                                             file_ident_type not_from_remote_client_file_ident,
-                                            bool only_nonempty, HistoryEntry& entry,
-                                            util::Optional<std::unique_ptr<char[]>&> buffer) const noexcept = 0;
+                                            bool only_nonempty, HistoryEntry& entry) const noexcept = 0;
 
-    /// Copy a contiguous sequence of bytes from the specified reciprocally
-    /// transformed changeset into the specified buffer. The targeted history
-    /// entry is the one whose untransformed changeset produced the specified
-    /// version. Copying starts at the specified offset within the transform,
-    /// and will continue until the end of the transform or the end of the
-    /// buffer, whichever comes first. The first copied byte is always placed in
-    /// `buffer[0]`. The number of copied bytes is returned.
+    /// Get the specified reciprocal changeset. The targeted history entry is
+    /// the one whose untransformed changeset produced the specified version.
     ///
     /// \param remote_client_file_ident Zero if the remote peer is the server,
     /// otherwise the peer identifier of a client.
-    virtual size_t read_reciprocal_transform(version_type version,
-                                             file_ident_type remote_client_file_ident,
-                                             size_t offset, char* buffer, size_t size) const = 0;
+    virtual ChunkedBinaryData get_reciprocal_transform(version_type version,
+                                                       file_ident_type remote_client_file_ident) const = 0;
 
-    /// Replace a contiguous chunk of bytes within the specified reciprocally
-    /// transformed changeset. The targeted history entry is the one whose
-    /// untransformed changeset produced the specified version. If the new chunk
-    /// has a different size than the on it replaces, subsequent bytes (those
-    /// beyond the end of the replaced chunk) are shifted to lower or higher
-    /// offsets accordingly. If `replaced_size` is equal to `size_t(-1)`, the
-    /// replaced chunk extends from `offset` to the end of the transform. Let
-    /// `replaced_size_2` be the actual size of the replaced chunk, then the
-    /// total number of bytes in the transform will increase by `size -
-    /// replaced_size_2`. It is an error if `replaced_size` is not `size_t(-1)`
-    /// and `offset + replaced_size` is greater than the size of the transform.
+    /// Replace the specified reciprocally transformed changeset. The targeted
+    /// history entry is the one whose untransformed changeset produced the
+    /// specified version.
     ///
-    /// \param remote_client_file_ident See read_reciprocal_transform().
+    /// \param remote_client_file_ident See get_reciprocal_transform().
     ///
-    /// \param offset The index of the first replaced byte relative to the
-    /// beginning of the transform.
-    ///
-    /// \param replaced_size The number of bytes in the replaced chunk.
-    ///
-    /// \param data The buffer holding the replacing chunk.
-    ///
-    /// \param size The number of bytes in the replacing chunk, which is also
-    /// the number of bytes that will be read from the specified buffer.
-    virtual void write_reciprocal_transform(version_type version,
-                                            file_ident_type remote_client_file_ident,
-                                            size_t offset, size_t replaced_size,
-                                            const char* data, size_t size) = 0;
+    /// \param encoded_changeset The new reciprocally transformed changeset.
+    virtual void set_reciprocal_transform(version_type version,
+                                          file_ident_type remote_client_file_ident,
+                                          BinaryData encoded_changeset) = 0;
 
     virtual ~TransformHistory() noexcept {}
 };
@@ -191,60 +170,22 @@ public:
 
 class TransformError; // Exception
 
-
 class Transformer {
 public:
     using timestamp_type  = HistoryEntry::timestamp_type;
     using file_ident_type = HistoryEntry::file_ident_type;
     using version_type    = HistoryEntry::version_type;
 
-    struct RemoteChangeset {
-        /// The version produced on the remote peer by this changeset.
-        ///
-        /// On the server, the remote peer is the client from which the
-        /// changeset originated, and `remote_version` is the client version
-        /// produced by the changeset on that client.
-        ///
-        /// On a client, the remote peer is the server, and `remote_version` is
-        /// the server version produced by this changeset on the server. Since
-        /// the server is never the originator of changes, this changeset must
-        /// in turn have been produced on the server by integration of a
-        /// changeset uploaded by some other client.
-        version_type remote_version;
+    class RemoteChangeset;
+    class Reporter;
 
-        /// The last local version that has been integrated into
-        /// `remote_version`.
-        ///
-        /// A local version, L, has been integrated into a remote version, R,
-        /// when, and only when L is the latest local version such that all
-        /// preceeding changesets in the local history have been integrated by
-        /// the remote peer prior to R.
-        ///
-        /// On the server, this is the last server version integrated into the
-        /// client version `remote_version`. On a client, it is the last client
-        /// version integrated into the server version `remote_version`.
-        version_type last_integrated_local_version;
-
-        /// The changeset itself.
-        BinaryData data;
-
-        /// Same meaning as `HistoryEntry::origin_timestamp`.
-        timestamp_type origin_timestamp;
-
-        /// Same meaning as `HistoryEntry::origin_client_file_ident`.
-        file_ident_type origin_client_file_ident;
-
-        RemoteChangeset(version_type rv, version_type lv, BinaryData d, timestamp_type ot,
-                        file_ident_type fi);
-    };
-
-    /// Produce an operationally transformed version of the specified changeset,
-    /// which is assumed to be of remote origin, and received from remote peer
+    /// Produce an operationally transformed version of the specified changesets,
+    /// which are assumed to be of remote origin, and received from remote peer
     /// P. Note that P is not necessarily the peer from which the changes
     /// originated.
     ///
     /// Operational transformation is carried out between the specified
-    /// changeset and all causally unrelated changesets in the local history. A
+    /// changesets and all causally unrelated changesets in the local history. A
     /// changeset in the local history is causally unrelated if, and only if it
     /// occurs after the local changeset that produced
     /// `remote_changeset.last_integrated_local_version` and is not a produced
@@ -272,24 +213,77 @@ public:
     /// version.
     ///
     /// \return The size of the transformed version of the specified
-    /// changeset. Upon return, the changeset itself is stored in the specified
-    /// output buffer.
+    /// changesets. Upon return, the transformed changesets are concatenated
+    /// and placed in \a output_buffer.
     ///
     /// \throw TransformError Thrown if operational transformation fails due to
     /// a problem with the specified changeset.
-    virtual size_t transform_remote_changeset(TransformHistory&,
-                                              version_type current_local_version,
-                                              RemoteChangeset changeset,
-                                              util::Buffer<char>& output_buffer) = 0;
+    virtual void transform_remote_changesets(TransformHistory&,
+                                             version_type current_local_version,
+                                             Changeset* changesets,
+                                             std::size_t num_changesets,
+                                             Reporter* = nullptr) = 0;
 
     virtual ~Transformer() noexcept {}
 };
-
 
 /// \param local_client_file_ident The server assigned local client file
 /// identifier. This must be zero on the server-side, and only on the
 /// server-side.
 std::unique_ptr<Transformer> make_transformer(Transformer::file_ident_type local_client_file_ident);
+
+class Transformer::RemoteChangeset {
+public:
+    /// The version produced on the remote peer by this changeset.
+    ///
+    /// On the server, the remote peer is the client from which the changeset
+    /// originated, and `remote_version` is the client version produced by the
+    /// changeset on that client.
+    ///
+    /// On a client, the remote peer is the server, and `remote_version` is the
+    /// server version produced by this changeset on the server. Since the
+    /// server is never the originator of changes, this changeset must in turn
+    /// have been produced on the server by integration of a changeset uploaded
+    /// by some other client.
+    version_type remote_version = 0;
+
+    /// The last local version that has been integrated into `remote_version`.
+    ///
+    /// A local version, L, has been integrated into a remote version, R, when,
+    /// and only when L is the latest local version such that all preceeding
+    /// changesets in the local history have been integrated by the remote peer
+    /// prior to R.
+    ///
+    /// On the server, this is the last server version integrated into the
+    /// client version `remote_version`. On a client, it is the last client
+    /// version integrated into the server version `remote_version`.
+    version_type last_integrated_local_version = 0;
+
+    /// The changeset itself.
+    ChunkedBinaryData data;
+
+    /// Same meaning as `HistoryEntry::origin_timestamp`.
+    timestamp_type origin_timestamp = 0;
+
+    /// Same meaning as `HistoryEntry::origin_client_file_ident`.
+    file_ident_type origin_client_file_ident = 0;
+
+    /// If the changeset was compacted during download, the size of the original
+    /// changeset.
+    size_t original_changeset_size = 0;
+
+    RemoteChangeset() {}
+    RemoteChangeset(version_type rv, version_type lv, ChunkedBinaryData d, timestamp_type ot,
+                    file_ident_type fi);
+};
+
+class Transformer::Reporter {
+public:
+    virtual void report_merges(long num_merges) = 0;
+};
+
+
+void parse_remote_changeset(const Transformer::RemoteChangeset&, Changeset&);
 
 
 
@@ -305,7 +299,7 @@ public:
 };
 
 inline Transformer::RemoteChangeset::RemoteChangeset(version_type rv, version_type lv,
-                                                     BinaryData d, timestamp_type ot,
+                                                     ChunkedBinaryData d, timestamp_type ot,
                                                      file_ident_type fi):
     remote_version(rv),
     last_integrated_local_version(lv),

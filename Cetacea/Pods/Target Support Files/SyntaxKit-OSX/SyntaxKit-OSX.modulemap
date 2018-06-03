@@ -1,6 +1,0 @@
-framework module SyntaxKit {
-  umbrella header "SyntaxKit-OSX-umbrella.h"
-
-  export *
-  module * { export * }
-}

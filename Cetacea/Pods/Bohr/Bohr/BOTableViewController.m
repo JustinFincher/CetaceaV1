@@ -37,6 +37,47 @@
 	[self setup];
 }
 
+- (void)clear
+{
+    self.sections = [NSArray new];
+    self.tableView.tableFooterView = [UIView new];
+}
+
+- (void)reload
+{
+    //    NSRange range = NSMakeRange(0, [self numberOfSectionsInTableView:self.tableView]);
+    //    NSIndexSet *sections = [NSIndexSet indexSetWithIndexesInRange:range];
+    //    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    //    [self.tableView reloadData];
+    //    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+    
+    [self clear];
+    [self setup];
+    [self reloadTableView];
+    [self updateAppearance];
+}
+
+- (void)updateAppearance
+{
+//    for (UIWindow *window in [UIApplication sharedApplication].windows) {
+//        for (UIView *view in window.subviews) {
+//            [view removeFromSuperview];
+//            [window addSubview:view];
+//        }
+//    }
+    for (BOTableViewSection *section in self.sections) {
+        for (BOTableViewCell *cell in [section cells])
+        {
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^(void)
+             {
+                 [cell _updateAppearance];
+                 [cell updateAppearance];
+             }];
+        }
+    }
+}
+
 - (instancetype)initWithStyle:(UITableViewStyle)style {
 	if (self = [super initWithStyle:style]) {
 		[self commonInit];
@@ -50,6 +91,7 @@
 }
 
 - (void)awakeFromNib {
+	[super awakeFromNib];
 	[self commonInit];
 }
 
@@ -136,18 +178,24 @@
 	BOTableViewCell *cell = section.cells[indexPath.row];
 	cell.indexPath = indexPath;
 	
-	if (cell.setting && !cell.setting.valueDidChangeBlock) {
-		__unsafe_unretained typeof(self) weakSelf = self;
-		__unsafe_unretained typeof(cell) weakCell = cell;
-		cell.setting.valueDidChangeBlock = ^{
-			dispatch_async(dispatch_get_main_queue(), ^{
-				[weakCell settingValueDidChange];
-				[weakSelf reloadTableView];
-			});
-		};
-		
+	if (cell.setting)
+	{
+		if(!cell.setting.valueDidChangeBlock)
+		{
+			__block typeof(self) weakSelf = self;
+			__block typeof(cell) weakCell = cell;
+			cell.setting.valueDidChangeBlock = ^{
+				dispatch_async(dispatch_get_main_queue(), ^{
+					
+					[weakCell settingValueDidChange];
+					[weakSelf reloadTableView];
+				});
+			};
+		}
 		[UIView performWithoutAnimation:^{
-			[cell settingValueDidChange];
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[cell settingValueDidChange];
+			});
 		}];
 	}
 	

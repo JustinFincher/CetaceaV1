@@ -190,6 +190,7 @@
 		133ADFC2848F4111CC6B2197 /* Pods-CetaceaSharedFramework-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-watchOS/Pods-CetaceaSharedFramework-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		1397B67CA790575324F2514D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		14BAB39002DD1B645EF06FA4 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		17F620065C5E45BB8855899F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		1D648D1E015F66B8C3CC0D95 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		1FC7F40DD874AEA6471E0420 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		228221902E029F35A8BF14D6 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -203,7 +204,9 @@
 		37935E33E94EFDC4E6977951 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		39A3E33401F60A5414F1B19C /* Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-watchOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		3AE7747E7BDCBD1C105C5C96 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
+		3E8767ECDC703A06217FCD4D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		40E165F283E490F2E48E637C /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		41262D0BF409F279B2A471B7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		42566DF2AA0BADC6530D9B73 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		48F0656F4A20A47AFE6CEF28 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		4C1AC2407BB02C0795D474A3 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -235,6 +238,7 @@
 		9917B598AB28A0DECABE65ED /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		9971774312FB0F0BDD7055C7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		9ED13DB22FA0118D9508D962 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
+		A84746DBFE02FE36F8CF47D7 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
 		AA680F71509C8AD6072F2BD4 /* Pods-CetaceaSharedFramework-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CetaceaSharedFramework-OSX.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CetaceaSharedFramework-OSX/Pods-CetaceaSharedFramework-OSX.debug.xcconfig"; sourceTree = "<group>"; };
 		AC018D3847526289712451D1 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-OSX-settings-metadata.plist"; sourceTree = "<group>"; };
 		AD086CC141A0C8387710073E /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-CetaceaSharedFramework-iOS-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -544,6 +548,10 @@
 				3488CA873890F5F9B7AAFA23 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 				8761823044D019CA63F22F09 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
 				609B2C555952BFDA9E65D6FA /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				3E8767ECDC703A06217FCD4D /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				17F620065C5E45BB8855899F /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
+				A84746DBFE02FE36F8CF47D7 /* Pods-CetaceaSharedFramework-iOS-settings-metadata.plist */,
+				41262D0BF409F279B2A471B7 /* Pods-CetaceaSharedFramework-OSX-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -802,13 +810,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CetaceaSharedFramework-watchOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A11056E5EF8084A428049FF6 /* [CP] Check Pods Manifest.lock */ = {
@@ -817,13 +828,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CetaceaSharedFramework-OSX-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B717DB09F39C3A8ADBC244FD /* [CP] Copy Pods Resources */ = {
@@ -847,13 +861,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CetaceaSharedFramework-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE1E5C5F638F1F31D46958BA /* [CP] Copy Pods Resources */ = {

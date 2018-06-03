@@ -14,7 +14,7 @@
 #import "CSFGlobalHeader.h"
 
 #import <CocoaMarkdown/CocoaMarkdown.h>
-#import "CSFAttributedStringRenderer.h"
+//#import "CSFAttributedStringRenderer.h"
 
 #if TARGET_OS_IOS
 #define textViewDelegate UITextViewDelegate
@@ -30,7 +30,7 @@
 
 @property (atomic) BOOL hasBeenSetup;
 
-@property (nonatomic,strong) CSFAttributedStringRenderer *renderer;
+@property (nonatomic,strong) CMAttributedStringRenderer *renderer;
 @property (nonatomic,strong) CMDocument *cmDocument;
 
 @end
@@ -66,7 +66,7 @@
 #endif
 	
 	self.cmDocument = [[CMDocument alloc] initWithData:[[NSString stringWithFormat:@""] dataUsingEncoding:NSUTF8StringEncoding] options:0];
-	self.renderer = [[CSFAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
+	self.renderer = [[CMAttributedStringRenderer alloc] initWithDocument:self.cmDocument attributes:[[CMTextAttributes alloc] init]];
 	
 	self.delegate = self;
 	
@@ -119,7 +119,7 @@
 #elif TARGET_OS_OSX
 	
 #endif
-	[self.renderer invalidate];
+//    [self.renderer invalidate];
 }
 - (void)updateTextView
 {

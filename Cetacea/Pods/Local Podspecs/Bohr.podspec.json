@@ -1,6 +1,6 @@
 {
   "name": "Bohr",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "summary": "Settings screen composing framework",
   "homepage": "https://github.com/DavdRoman/Bohr",
   "authors": {
@@ -14,8 +14,8 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/DavdRoman/Bohr.git",
-    "tag": "3.0.0"
+    "git": "https://github.com/SecondRenaissance/Bohr.git",
+    "tag": "3.0.2"
   },
   "source_files": "Bohr/*.{h,m}",
   "frameworks": [

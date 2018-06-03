@@ -1,7 +1,11 @@
 PODS:
-  - Bohr (3.0.0)
-  - Crashlytics (3.8.4):
-    - Fabric (~> 1.6.3)
+  - Bohr (3.0.2)
+  - cmark (0.21.0)
+  - CocoaMarkdown (1.0.1):
+    - cmark (~> 0.21.0)
+    - Ono
+  - Crashlytics (3.10.0):
+    - Fabric (~> 1.7.3)
   - DateTools (2.0.0)
   - DKNightVersion (2.4.3):
     - DKNightVersion/Core (= 2.4.3)
@@ -16,21 +20,23 @@ PODS:
     - DKNightVersion/Core
   - DKNightVersion/UIKit (2.4.3):
     - DKNightVersion/Core
-  - DynamicColor (3.3)
-  - Fabric (1.6.11)
+  - DynamicColor (4.0.2)
+  - Fabric (1.7.3)
   - GDPerformanceView (1.3.1)
-  - IQKeyboardManager (4.0.9)
+  - IQKeyboardManager (5.0.7)
   - MMMarkdown (0.5.5)
+  - Ono (1.2.2)
   - PeerTalk (0.0.2)
-  - ReactiveObjC (3.0.0)
-  - Realm (2.7.0):
-    - Realm/Headers (= 2.7.0)
-  - Realm/Headers (2.7.0)
-  - SDVersion (4.0.2)
+  - ReactiveObjC (3.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - SDVersion (4.3.2)
   - SyntaxKit (1.0)
 
 DEPENDENCIES:
   - Bohr (from `https://github.com/SecondRenaissance/Bohr.git`)
+  - CocoaMarkdown (from `https://github.com/SecondRenaissance/CocoaMarkdown.git`)
   - Crashlytics
   - DateTools
   - DKNightVersion
@@ -48,6 +54,8 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   Bohr:
     :git: https://github.com/SecondRenaissance/Bohr.git
+  CocoaMarkdown:
+    :git: https://github.com/SecondRenaissance/CocoaMarkdown.git
   PeerTalk:
     :git: https://github.com/rsms/peertalk.git
   SyntaxKit:
@@ -55,31 +63,37 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Bohr:
-    :commit: 131316fc8b06f8e7e1674496ed2112752f46547a
+    :commit: 50f2301692f1c5ee120efbd5037276c7a405cc5e
     :git: https://github.com/SecondRenaissance/Bohr.git
+  CocoaMarkdown:
+    :commit: 349f41c3d545239cdaff0b477e0b6162b393c8cc
+    :git: https://github.com/SecondRenaissance/CocoaMarkdown.git
   PeerTalk:
-    :commit: 5de384b349a1d51fc148c45f8ce0ac46b9bce39e
+    :commit: 588303b43efa5082d654b6f75d1b84a6ba4b5b9e
     :git: https://github.com/rsms/peertalk.git
   SyntaxKit:
     :commit: 929049ce235c937f44b69dfe108c17599de421b4
     :git: https://github.com/SecondRenaissance/SyntaxKit.git
 
 SPEC CHECKSUMS:
-  Bohr: 17b150766e54e1fb8ff417d85b830c7caafa8b4a
-  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Bohr: 52ae0f37e4746dcdd31cc06163e7ef08e351285b
+  cmark: 0868ab0d93af82a0f3f4b69a313b5d2089af51c3
+  CocoaMarkdown: 2f44a87f6516939c8bb04b2a845ed3dc2a45b428
+  Crashlytics: a989ef242b66605577a425733797f810bd2725eb
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   DKNightVersion: eaa80cc4014b4bae7d4b535fd87ecc6a3c2767b3
-  DynamicColor: 3cdaa1e01c16e93ba744e0630f768373e0fc7a7d
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
+  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
   GDPerformanceView: d70d646bf7022a3dfd64222e4966f403bfffef19
-  IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
+  Ono: 80b1c686777d3f6d5d5ce6fcac8a74afef4ca197
   PeerTalk: f5389c286e4d477e59b73dfbf25c5c70a2464761
-  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
-  Realm: 07e5d3a9e0e41d65fd5f9f05150ed6295d0f093b
-  SDVersion: 7b472a749907c29fcba04dadb8ecb4eb9a9aeeab
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  SDVersion: 18f32c835c1543611fcfae3c6accd9a04b90597e
   SyntaxKit: 35312dbe32fd7c9809e9a1908ad8d2e30fb309b1
 
-PODFILE CHECKSUM: e4cdf95a4fce94744ca1defe217a64975a601e94
+PODFILE CHECKSUM: 4dc6bfbcb12131a87ce974744b3896aeedfcac2c
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0

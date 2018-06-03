@@ -57,4 +57,10 @@
 	self.setting.value = self.datePicker.date;
 }
 
+- (void)updateAppearance
+{
+    self.datePicker.tintColor = self.mainHighlightedColor;
+    [self.datePicker setValue:self.mainHighlightedColor forKeyPath:@"textColor"];
+}
+
 @end

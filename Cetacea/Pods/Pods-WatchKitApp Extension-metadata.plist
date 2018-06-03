@@ -46,9 +46,9 @@ SOFTWARE.
 			<key>socialMediaURL</key>
 			<string></string>
 			<key>summary</key>
-			<string>Objective-C library for detecting running device model and screen size.</string>
+			<string>Lightweight Cocoa library for detecting the running device's model and screen size.</string>
 			<key>version</key>
-			<string>4.0.2</string>
+			<string>4.3.2</string>
 		</dict>
 	</array>
 </dict>

@@ -202,6 +202,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00982A7771E82E5CDD479292 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		07F84CC86B378BC2D0664A66 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Cetacea-Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		0B4F89B5A178E45446B1B5DE /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		0D41890D1D268FA500530FD7 /* JZdayNightThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZdayNightThemeManager.h; sourceTree = "<group>"; };
@@ -446,6 +447,7 @@
 		3361A77206F8F9413EE97F9E /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		382EB448AC539559C7BDE080 /* Pods-Cetacea-Mac-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-metadata.plist"; path = "../Pods/Pods-Cetacea-Mac-metadata.plist"; sourceTree = "<group>"; };
 		38A74FCF07B079BE8E43E6AC /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
+		39AE87307F5FF7DAB7E246CB /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		3D3E616D817608673691375F /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		3D75EAC6EF3382F84E8B2727 /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
 		3F24F8665723DCE82EE16C2A /* Pods-Cetacea-Mac-settings-metadata.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "Pods-Cetacea-Mac-settings-metadata.plist"; path = "Cetacea-iOS/Cetacea-iOS/Settings.bundle/Pods-Cetacea-Mac-settings-metadata.plist"; sourceTree = "<group>"; };
@@ -1001,6 +1003,8 @@
 				446F86C9054F43E83B83297D /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				A549E2D0DA69BD1342B09ACC /* Pods-Cetacea-Mac-settings-metadata.plist */,
 				2BA8B22269C73AD448404A77 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				00982A7771E82E5CDD479292 /* Pods-Cetacea-Mac-settings-metadata.plist */,
+				39AE87307F5FF7DAB7E246CB /* Pods-Cetacea-Mac-settings-metadata.plist */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1341,13 +1345,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cetacea-Mac-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8F0164F5854ED5AFF646573 /* [CP] Embed Pods Frameworks */ = {
@@ -1356,9 +1363,32 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Cetacea-Mac/Pods-Cetacea-Mac-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaMarkdown-macOS/CocoaMarkdown.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools-macOS/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono-macOS/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC-macOS/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm-macOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/cmark-macOS/cmark.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicColor-macOS/DynamicColor.framework",
+				"${BUILT_PRODUCTS_DIR}/MMMarkdown-macOS/MMMarkdown.framework",
+				"${BUILT_PRODUCTS_DIR}/PeerTalk-macOS/PeerTalk.framework",
+				"${BUILT_PRODUCTS_DIR}/SDVersion-macOS/SDVersion.framework",
+				"${BUILT_PRODUCTS_DIR}/SyntaxKit-macOS/SyntaxKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMarkdown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cmark.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicColor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMMarkdown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeerTalk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDVersion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SyntaxKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

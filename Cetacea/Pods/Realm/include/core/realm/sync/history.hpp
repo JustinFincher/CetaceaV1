@@ -21,7 +21,8 @@
 #include <memory>
 #include <string>
 
-#include <realm/impl/continuous_transactions_history.hpp>
+#include <realm/impl/cont_transact_hist.hpp>
+#include <realm/sync/instruction_replication.hpp>
 #include <realm/sync/transform.hpp>
 
 #ifndef REALM_SYNC_HISTORY_HPP
@@ -55,15 +56,13 @@ struct SyncProgress {
 };
 
 
-class ClientHistory:
-        public TrivialReplication {
+class ClientHistoryBase :
+        public InstructionReplication {
 public:
     using version_type    = TrivialReplication::version_type;
     using file_ident_type = HistoryEntry::file_ident_type;
+    using salt_type       = std::int_fast64_t;
     using SyncTransactCallback = void(VersionID old_version, VersionID new_version);
-
-    class ChangesetCooker;
-    class Config;
 
     /// Get the version of the latest snapshot of the associated Realm, as well
     /// as the file identifier pair and the synchronization progress pair as
@@ -83,8 +82,8 @@ public:
     virtual void get_status(version_type& current_client_version,
                             file_ident_type& server_file_ident,
                             file_ident_type& client_file_ident,
-                            std::int_fast64_t& client_file_ident_secret,
-                            SyncProgress& progress) = 0;
+                            salt_type& client_file_ident_salt,
+                            SyncProgress& progress) const = 0;
 
     /// Stores the server assigned file identifier pair (server, client) in the
     /// associated Realm file, such that it is available via get_status() during
@@ -115,7 +114,7 @@ public:
     /// file when engaging in future synchronization sessions.
     virtual void set_file_ident_pair(file_ident_type server_file_ident,
                                      file_ident_type client_file_ident,
-                                     std::int_fast64_t client_file_ident_secret) = 0;
+                                     salt_type client_file_ident_salt) = 0;
 
     /// Stores the SyncProgress progress in the associated Realm file in a way
     /// that makes it available via get_status() during future synchronization
@@ -144,6 +143,7 @@ public:
     /// back.
     virtual void set_sync_progress(SyncProgress progress) = 0;
 
+/*
     /// Get the first history entry whose changeset produced a version that
     /// succeeds `begin_version` and, and does not succeed `end_version`, whose
     /// changeset was not produced by integration of a changeset received from
@@ -166,8 +166,36 @@ public:
                                                        version_type end_version,
                                                        HistoryEntry& entry,
                                                        std::unique_ptr<char[]>& buffer) const = 0;
+*/
+
+
+    struct UploadChangeset {
+        HistoryEntry::timestamp_type timestamp;
+        version_type client_version;
+        version_type server_version;
+        ChunkedBinaryData changeset;
+        std::unique_ptr<char[]> buffer;
+    };
+
+    /// find_uploadable_changesets() returns a vector of history entries. The
+    /// history entries are returned in order and starts from the first available
+    /// entry. The number of entries returned is at least one, if possible, and
+    /// is size limited by a soft limit. Returned changesets produced a version
+    /// that succeeds `begin_version` and, and does not succeed `end_version`.
+    /// Returned changesets are also locally produced and non-empty.
+    virtual std::vector<UploadChangeset> find_uploadable_changesets(version_type begin_version,
+                                                                    version_type end_version) const = 0;
 
     using RemoteChangeset = Transformer::RemoteChangeset;
+
+    // FIXME: Apparently, this feature is expected by object store, but why?
+    // What is it ultimately used for? (@tgoyne)
+    class SyncTransactReporter {
+    public:
+        virtual void report_sync_transact(VersionID old_version, VersionID new_version) = 0;
+    protected:
+        ~SyncTransactReporter() {}
+    };
 
     /// \brief Integrate a sequence of remote changesets using a single Realm
     /// transaction.
@@ -194,13 +222,25 @@ public:
                                                      const RemoteChangeset* changesets,
                                                      std::size_t num_changesets,
                                                      util::Logger* replay_logger,
-                                                     std::function<SyncTransactCallback>& callback) = 0;
+                                                     SyncTransactReporter* = nullptr) = 0;
+
+protected:
+    ClientHistoryBase(const std::string& realm_path);
+};
+
+
+
+class ClientHistory : public ClientHistoryBase {
+public:
+    class ChangesetCooker;
+    class Config;
 
     /// Get the persisted upload/download progress in bytes.
     virtual void get_upload_download_bytes(uint_fast64_t& downloaded_bytes,
                                            uint_fast64_t& downloadable_bytes,
                                            uint_fast64_t& uploaded_bytes,
-                                           uint_fast64_t& uploadable_bytes) = 0;
+                                           uint_fast64_t& uploadable_bytes,
+                                           uint_fast64_t& snapshot_version) = 0;
 
     /// See set_cooked_progress().
     struct CookedProgress {
@@ -330,8 +370,13 @@ std::unique_ptr<ClientHistory> make_client_history(const std::string& realm_path
 
 // Implementation
 
+inline ClientHistoryBase::ClientHistoryBase(const std::string& realm_path):
+    InstructionReplication{realm_path} // Throws
+{
+}
+
 inline ClientHistory::ClientHistory(const std::string& realm_path):
-    TrivialReplication(realm_path)
+    ClientHistoryBase{realm_path} // Throws
 {
 }
 

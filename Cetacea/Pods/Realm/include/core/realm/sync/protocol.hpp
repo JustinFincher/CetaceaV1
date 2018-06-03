@@ -26,8 +26,8 @@
 #include <realm/util/compression.hpp>
 #include <realm/util/logger.hpp>
 #include <realm/util/memory_stream.hpp>
-#include <realm/util/hex_dump.hpp>
-
+#include <realm/util/optional.hpp>
+#include <realm/impl/clamped_hex_dump.hpp>
 #include <realm/sync/transform.hpp>
 #include <realm/sync/history.hpp>
 
@@ -101,10 +101,22 @@ namespace sync {
 //
 //  17 Added PING and PONG messages. It is used for rtt monitoring and dead
 //     connection detection by both the client and the server.
+//
+//  18 Enhanced the session_ident to accept values of size up to at least 63 bits.
+//
+//  19 New instruction log format with stable object IDs and arrays of
+//     primitives (Generalized LinkList* commands to Container* commands)
+//     Message format is identical to version 18.
+//
+//  20 Added support for log compaction in DOWNLOAD message.
+//
+//  21 Removed "class_" prefix in instructions referencing tables.
+//
+//  22 Fixed a bug in the merge rule of MOVE vs SWAP.
 
 constexpr int get_current_protocol_version() noexcept
 {
-    return 17;
+    return 22;
 }
 
 /// \brief Protocol errors discovered by the server, and reported to the client
@@ -127,8 +139,10 @@ enum class ProtocolError {
     reuse_of_session_ident       = 107, // Overlapping reuse of session identifier (BIND)
     bound_in_other_session       = 108, // Client file bound in other session (IDENT)
     bad_message_order            = 109, // Bad input message order
-    pong_timeout                 = 110, // Pong timeout (FIXME: Should have been added to Client::Error instead)
-    malformed_http_request       = 111, // HTTP request is malformed
+    bad_decompression            = 110, // Error in decompression (UPLOAD)
+    bad_changeset_header_syntax  = 111, // Bad syntax in a changeset header (UPLOAD)
+    bad_changeset_size           = 112, // Bad size specified in changeset header (UPLOAD)
+    bad_changesets               = 113, // Bad changesets (UPLOAD)
 
     // Session level errors
     session_closed               = 200, // Session closed (no error)
@@ -145,6 +159,7 @@ enum class ProtocolError {
     diverging_histories          = 211, // Diverging histories (IDENT)
     bad_changeset                = 212, // Bad changeset (UPLOAD)
     disabled_session             = 213, // Disabled session
+    partial_sync_disabled        = 214, // Partial sync disabled (BIND)
 };
 
 inline constexpr bool is_session_level_error(ProtocolError error)
@@ -176,13 +191,12 @@ namespace sync {
 namespace protocol {
 
 using OutputBuffer = util::ResettableExpandableBufferOutputStream;
-using session_ident_type = uint_fast16_t;
+using session_ident_type = uint_fast64_t;
 using file_ident_type = uint_fast64_t;
 using version_type = uint_fast64_t;
 using timestamp_type  = uint_fast64_t;
 using request_ident_type    = uint_fast64_t;
-
-
+using ReceivedChangesets = std::vector<Transformer::RemoteChangeset>;
 
 
 class ClientProtocol {
@@ -220,6 +234,29 @@ public:
                             file_ident_type client_file_ident,
                             int_fast64_t client_file_ident_secret,
                             SyncProgress progress);
+
+    class UploadMessageBuilder {
+    public:
+        util::Logger& logger;
+
+        UploadMessageBuilder(util::Logger& logger,
+                             OutputBuffer& body_buffer,
+                             std::vector<char>& compression_buffer,
+                             util::compression::CompressMemoryArena& compress_memory_arena);
+
+        void add_changeset(version_type client_version, version_type server_version,
+                           timestamp_type timestamp, ChunkedBinaryData changeset);
+
+        void make_upload_message(OutputBuffer& out, session_ident_type session_ident);
+
+    private:
+        size_t m_num_changesets = 0;
+        OutputBuffer& m_body_buffer;
+        std::vector<char>& m_compression_buffer;
+        util::compression::CompressMemoryArena& m_compress_memory_arena;
+    };
+
+    UploadMessageBuilder make_upload_message_builder();
 
     void make_upload_message(OutputBuffer& out, session_ident_type session_ident,
                              version_type client_version, version_type server_version,
@@ -276,7 +313,6 @@ public:
         size_t header_size = 0;
         std::string message_type;
         in >> message_type;
-        logger.debug("message_type = %1", message_type);
 
         if (message_type == "download") {
             session_ident_type session_ident;
@@ -337,7 +373,7 @@ public:
             in.unsetf(std::ios_base::skipws);
             in.set_buffer(uncompressed_body.data(), uncompressed_body.data() + uncompressed_body_size);
 
-            std::vector<Transformer::RemoteChangeset> received_changesets;
+            ReceivedChangesets received_changesets;
 
             // Loop through the body and find the changesets.
             size_t position = 0;
@@ -346,14 +382,15 @@ public:
                 version_type client_version;
                 timestamp_type origin_timestamp;
                 file_ident_type origin_client_file_ident;
-                size_t changeset_size;
-                char sp_1, sp_2, sp_3, sp_4, sp_5;
+                size_t original_changeset_size, changeset_size;
+                char sp_1, sp_2, sp_3, sp_4, sp_5, sp_6;
 
                 in >> server_version >> sp_1 >> client_version >> sp_2 >> origin_timestamp >>
-                    sp_3 >> origin_client_file_ident >> sp_4 >> changeset_size >> sp_5;
+                    sp_3 >> origin_client_file_ident >> sp_4 >> original_changeset_size >>
+                    sp_5 >> changeset_size >> sp_6;
 
                 bool good_syntax = in && sp_1 == ' ' && sp_2 == ' ' &&
-                    sp_3 == ' ' && sp_4 == ' ' && sp_5 == ' ';
+                    sp_3 == ' ' && sp_4 == ' ' && sp_5 == ' ' && sp_6 == ' ';
 
                 if (!good_syntax) {
                     logger.error("Bad changeset header syntax");
@@ -382,15 +419,17 @@ public:
 
                 if (logger.would_log(util::Logger::Level::trace)) {
                     logger.trace("Received: DOWNLOAD CHANGESET(server_version=%1, client_version=%2, "
-                                  "origin_timestamp=%3, origin_client_file_ident=%4, changeset_size=%5)",
+                                  "origin_timestamp=%3, origin_client_file_ident=%4, original_changeset_size=%5, changeset_size=%6)",
                                   server_version, client_version, origin_timestamp,
-                                  origin_client_file_ident, changeset_size); // Throws
-                    logger.trace("Changeset: %1", util::hex_dump(changeset_data.data(), changeset_size)); // Throws
+                                  origin_client_file_ident, original_changeset_size, changeset_size); // Throws
+                    logger.trace("Changeset: %1",
+                                 _impl::clamped_hex_dump(changeset_data)); // Throws
                 }
 
                 Transformer::RemoteChangeset changeset_2(server_version, client_version,
                                                          changeset_data, origin_timestamp,
                                                          origin_client_file_ident);
+                changeset_2.original_changeset_size = original_changeset_size;
                 received_changesets.push_back(changeset_2); // Throws
             }
 
@@ -488,6 +527,14 @@ public:
 
 private:
     static constexpr size_t s_max_body_size = std::numeric_limits<size_t>::max();
+
+    // Permanent buffer to use for building messages.
+    OutputBuffer m_output_buffer;
+
+    // Permanent buffers to use for internal purposes such as compression.
+    std::vector<char> m_buffer;
+
+    util::compression::CompressMemoryArena m_compress_memory_arena;
 };
 
 
@@ -499,6 +546,9 @@ public:
         unknown_message             = 101, // Unknown type of input message
         bad_syntax                  = 102, // Bad syntax in input message head
         limits_exceeded             = 103, // Limits exceeded in input message
+        bad_decompression           = 104, // Error in decompression (UPLOAD)
+        bad_changeset_header_syntax = 105, // Bad syntax in changeset header (UPLOAD)
+        bad_changeset_size          = 106, // Changeset size doesn't fit in message (UPLOAD)
     };
 
     ServerProtocol(util::Logger& logger);
@@ -517,6 +567,7 @@ public:
         version_type server_version;
         version_type client_version;
         HistoryEntry entry;
+        size_t original_size;
     };
 
     void make_download_message(int protocol_version, OutputBuffer& out, session_ident_type session_ident,
@@ -568,6 +619,15 @@ public:
         return;
     }
 
+    // UploadChangeset is used to store received changesets in
+    // the UPLOAD message.
+    struct UploadChangeset {
+        version_type client_version;
+        version_type server_version;
+        timestamp_type timestamp;
+        BinaryData changeset;
+    };
+
     // parse_message_received takes a (WebSocket) message and parses it.
     // The result of the parsing is handled by an object of type Connection.
     // Typically, Connection would be the Connection class from server.cpp
@@ -583,28 +643,113 @@ public:
 
         if (message_type == "upload") {
             session_ident_type session_ident;
-            version_type client_version, server_version;
-            size_t changeset_size;
-            timestamp_type timestamp;
-            char sp_1, sp_2, sp_3, sp_4, sp_5, newline;
-            in >> sp_1 >> session_ident >> sp_2 >> client_version >> sp_3 >>
-                server_version >> sp_4 >> changeset_size >> sp_5 >> timestamp >>
+            int is_body_compressed;
+            size_t uncompressed_body_size, compressed_body_size;
+            char sp_1, sp_2, sp_3, sp_4, newline;
+            in >> sp_1 >> session_ident >> sp_2 >> is_body_compressed >> sp_3 >>
+                uncompressed_body_size >> sp_4 >> compressed_body_size >>
                 newline;
             bool good_syntax = in && sp_1 == ' ' && sp_2 == ' ' && sp_3 == ' ' &&
-                sp_4 == ' ' && sp_5 == ' ' && newline == '\n';
+                sp_4 == ' ' && newline == '\n';
+
             if (!good_syntax)
                 goto bad_syntax;
             header_size = size_t(in.tellg());
-            if (changeset_size > s_max_changeset_size)
+            if (uncompressed_body_size > s_max_body_size)
                 goto limits_exceeded;
-            if (header_size + changeset_size != size)
+
+            size_t body_size = is_body_compressed ? compressed_body_size : uncompressed_body_size;
+            if (header_size + body_size != size)
                 goto bad_syntax;
 
-            BinaryData changeset(data + header_size, changeset_size);
+            BinaryData body(data + header_size, body_size);
 
-            connection.receive_upload_message(session_ident, client_version,
-                                              server_version, changeset,
-                                              timestamp); // Throws
+            BinaryData uncompressed_body;
+            std::unique_ptr<char[]> uncompressed_body_buffer;
+            // if is_body_compressed == true, we must decompress the received body.
+            if (is_body_compressed) {
+                uncompressed_body_buffer.reset(new char[uncompressed_body_size]);
+                std::error_code ec = util::compression::decompress(body.data(),  compressed_body_size,
+                                                                   uncompressed_body_buffer.get(),
+                                                                   uncompressed_body_size);
+
+                if (ec) {
+                    logger.error("compression::inflate: %1", ec.message());
+                    connection.handle_protocol_error(Error::bad_decompression);
+                    return;
+                }
+
+                uncompressed_body = BinaryData(uncompressed_body_buffer.get(), uncompressed_body_size);
+            }
+            else {
+                uncompressed_body = body;
+            }
+
+            logger.debug("Upload message compression: is_body_compressed = %1, "
+                         "compressed_body_size=%2, uncompressed_body_size=%3",
+                         is_body_compressed, compressed_body_size, uncompressed_body_size);
+
+            util::MemoryInputStream in;
+            in.unsetf(std::ios_base::skipws);
+            in.set_buffer(uncompressed_body.data(), uncompressed_body.data() + uncompressed_body_size);
+
+            std::vector<UploadChangeset> upload_changesets;
+
+            // Loop through the body and find the changesets.
+            size_t position = 0;
+            while (position < uncompressed_body_size) {
+                version_type client_version;
+                version_type server_version;
+                timestamp_type timestamp;
+                size_t changeset_size;
+                char sp_1, sp_2, sp_3, sp_4;
+
+                in >> client_version >> sp_1 >> server_version >> sp_2 >> timestamp >>
+                    sp_3 >> changeset_size >> sp_4;
+
+                bool good_syntax = in && sp_1 == ' ' && sp_2 == ' ' &&
+                    sp_3 == ' ' && sp_4 == ' ';
+
+                if (!good_syntax) {
+                    logger.error("Bad changeset header syntax");
+                    connection.handle_protocol_error(Error::bad_changeset_header_syntax);
+                    return;
+                }
+
+                // Update position to the end of the change set
+                position = size_t(in.tellg()) + changeset_size;
+
+                if (position > uncompressed_body_size) {
+                    logger.error("Bad changeset size");
+                    connection.handle_protocol_error(Error::bad_changeset_size);
+                    return;
+                }
+
+                BinaryData changeset_data(uncompressed_body.data() +
+                                          size_t(in.tellg()), changeset_size);
+                in.seekg(position);
+
+                if (logger.would_log(util::Logger::Level::trace)) {
+                    logger.trace(
+                        "Received: UPLOAD CHANGESET(client_version=%1, "
+                        "server_version=%2, timestamp=%3, changeset_size=%4)",
+                        client_version, server_version, timestamp,
+                        changeset_size); // Throws
+                    logger.trace("Changeset: %1",
+                                 _impl::clamped_hex_dump(changeset_data)); // Throws
+                }
+
+                UploadChangeset upload_changeset {
+                    client_version,
+                    server_version,
+                    timestamp,
+                    changeset_data
+                };
+
+                upload_changesets.push_back(upload_changeset); // Throws
+            }
+
+            connection.receive_upload_message(session_ident,upload_changesets); // Throws
             return;
         }
         if (message_type == "mark") {
@@ -760,7 +905,7 @@ private:
     static constexpr size_t s_max_signed_user_token_size = 2048;
     static constexpr size_t s_max_client_info_size       = 1024;
     static constexpr size_t s_max_path_size              = 1024;
-    static constexpr size_t s_max_changeset_size = std::numeric_limits<size_t>::max();
+    static constexpr size_t s_max_body_size = std::numeric_limits<size_t>::max();
 
     util::compression::CompressMemoryArena m_compress_memory_arena;
 
@@ -769,8 +914,16 @@ private:
 
     // Outputbuffer to use for internal purposes such as creating the
     // download body.
-    OutputBuffer m_output_buffer;                                              
+    OutputBuffer m_output_buffer;
 };
+
+// make_authorization_header() makes the value of the Authorization header used in the
+// sync Websocket handshake.
+std::string make_authorization_header(const std::string& signed_user_token);
+
+// parse_authorization_header() parses the value of the Authorization header and returns
+// the signed_user_token. None is returned in case of syntax error.
+util::Optional<StringData> parse_authorization_header(const std::string& authorization_header);
 
 } // namespace protocol
 } // namespace sync

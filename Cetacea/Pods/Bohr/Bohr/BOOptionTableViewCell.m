@@ -10,29 +10,38 @@
 
 #import "BOTableViewCell+Subclass.h"
 
+@interface BOOptionTableViewCell()
+
+
+@end
+
 @implementation BOOptionTableViewCell
 
-@synthesize value = _value;
+@synthesize settingsValue = _settingsValue;
 
 - (void)setup {
-    self.value = NSIntegerMin;
+	self.settingsValue = NSIntegerMin;
 	self.selectionStyle = UITableViewCellSelectionStyleDefault;
 }
 
-- (void)setValue:(NSInteger)value {
-    _value = value;
+- (void)setSettingsValue:(NSInteger)settingsValue
+{
+	_settingsValue = settingsValue;
 }
 
-- (NSInteger)value {
-    return _value != NSIntegerMin ? _value : self.indexPath.row;
+- (NSInteger)settingsValue
+{
+	return _settingsValue != NSIntegerMin ? _settingsValue : self.indexPath.row;;
 }
 
-- (void)wasSelectedFromViewController:(BOTableViewController *)viewController {
-    self.setting.value = @(self.value);
+- (void)wasSelectedFromViewController:(BOTableViewController *)viewController
+{
+    self.setting.value = @(self.settingsValue);
 }
 
-- (void)settingValueDidChange {
-    BOOL isSelected = [self.setting.value integerValue] == self.value;
+- (void)settingValueDidChange
+{
+    BOOL isSelected = ([self.setting.value integerValue] == self.settingsValue);
 	self.accessoryType = isSelected ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 }
 
